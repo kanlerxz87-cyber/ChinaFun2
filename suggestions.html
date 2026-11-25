@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suggestions for Review — ChinaFun2</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <div class="brand">🇨🇳 ChinaFun2<small>Shanghai · Feb–Mar 2027 · 2 adults</small></div>
+  <nav class="mainnav" aria-label="Main">
+    <a href="index.html">Dashboard</a>
+    <a href="executive-summary.html">Summary</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="michelin.html">Michelin</a>
+    <a href="activities.html">Activities</a>
+    <a href="costs-booking.html">Costs &amp; Booking</a>
+    <a href="questions.html">Questions</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="flagged.html">Flagged</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <h1>Suggestions — review and choose before implementing</h1>
+  <p>This page is a <strong>decision backlog</strong>: each suggestion states the problem, the proposed change, effort, and impact. <strong>Nothing here is implemented yet</strong> — pick the best path first, then implement. Sorted by decision value (highest first).</p>
+
+  <div class="table-wrap"><table data-sortable>
+    <thead><tr><th data-sort>#</th><th data-sort>Suggestion</th><th data-sort>Problem it solves</th><th data-sort>Effort</th><th data-sort>Impact</th><th data-sort>Status</th></tr></thead>
+    <tbody>
+      <tr><td>S1</td><td><strong>Live price-check checklist with calendar reminders</strong> — add a “Re-check on 15 Nov 2026 / 1 Feb 2027” checklist + downloadable .ics reminders per hotel.</td><td>2027 rates don't exist yet; travellers forget the sweet-spot window and overpay.</td><td>Low (static page + .ics files)</td><td>High — saves ~23% per Hotels.com data</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S2</td><td><strong>Budget calculator</strong> — sliders for hotel/night + dining picks → live 7-night couple total (CNY + USD) with proxy-vs-actual toggle.</td><td>Totals are scattered across 3 pages; no single “what will this trip cost?” number.</td><td>Medium (vanilla JS, no backend)</td><td>High — single decision number</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S3</td><td><strong>Map view</strong> — Leaflet/OpenStreetMap pins for hotels + starred restaurants + activities, colour-coded by status, with 1-hr isochrone rings.</td><td>“Within 1 hour” is currently text-only; spatial clustering is hard to judge.</td><td>Medium (Leaflet CDN + GeoJSON)</td><td>High — visual cluster comparison</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S4</td><td><strong>Itinerary builder</strong> — drag dining + activities into a 7-day plan; auto-flags Monday closures + travel-time conflicts.</td><td>Day rhythm is static text; Monday-closure + transit conflicts are easy to miss.</td><td>High (state + localStorage)</td><td>High — prevents planning errors</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S5</td><td><strong>Verified social embeds</strong> — replace TikTok/Instagram search URLs with direct video embeds once stable links are captured (with consent/attribution).</td><td>Search URLs are less useful than direct videos; direct links rot quickly.</td><td>Low (manual curation)</td><td>Medium — richer previews</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S6</td><td><strong>CSV export + print stylesheet</strong> — one-click CSV download per table + clean print/PDF layout for offline review.</td><td>Tables are screen-only; offline/print review is awkward.</td><td>Low (Blob download + @media print)</td><td>Medium — offline decision-making</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S7</td><td><strong>Accessibility pass</strong> — WCAG contrast audit, focus states, screen-reader table captions, reduced-motion support.</td><td>Current CSS is mobile-first but not yet audited for WCAG.</td><td>Low–Medium</td><td>Medium — broader usability</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S8</td><td><strong>Multi-city comparison</strong> — add Beijing + Guangzhou/Shenzhen hotel/dining tables in the same format for side-by-side choice.</td><td>Shanghai-only view may miss a better fit if weather/budget priorities differ.</td><td>High (new research + pages)</td><td>Medium — only if Shanghai is rejected</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S9</td><td><strong>Change log + freshness badges</strong> — “Last verified” per row + git-driven changelog page.</td><td>Freshness is currently page-level (25 Nov 2026), not row-level.</td><td>Low (build script)</td><td>Low–Medium — trust signal</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+      <tr><td>S10</td><td><strong>Dark mode + language toggle (EN/中文)</strong> — respect prefers-color-scheme; toggle for Chinese venue names.</td><td>Daytime glare + Chinese-only signage at venues.</td><td>Low</td><td>Low — polish</td><td><span class="badge warn">Proposed — not implemented</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section">How to choose</h2>
+  <div class="card">
+    <ol class="tight">
+      <li><strong>Pick S1 + S2 first</strong> (highest decision value, lowest effort) — they directly affect money saved and budget clarity.</li>
+      <li><strong>Pick S3 or S4 next</strong> depending on whether spatial (map) or temporal (itinerary) planning is your bigger pain.</li>
+      <li><strong>Defer S8</strong> unless Shanghai is rejected — it doubles research scope.</li>
+      <li>Record your picks in <span class="mono">COORDINATION.md</span> (claim log) so parallel sessions don't duplicate work.</li>
+    </ol>
+  </div>
+
+  <div class="note"><strong>What NOT to do:</strong> Don't add live hotel-price scraping or auto-booking — Feb 2027 inventory isn't open, scraping violates OTA terms, and prices change hourly. The refundable-rate + re-price workflow (S1) is safer and cheaper to maintain.</div>
+</div>
+
+<footer>ChinaFun2 · <a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · © <span id="year">2026</span></footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

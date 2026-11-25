@@ -1,10 +1,8 @@
-name: Publish dashboard to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-      - arena/98127de1-chinafun2
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -13,40 +11,26 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
+  deploy:
+    # The protected github-pages environment is deployable from main only.
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Validate dashboard inputs
-        run: |
-          python -m json.tool data/research.json > /dev/null
-          python scripts/validate_research.py
-          node --check app.js
-
-      - name: Configure Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      - name: Assemble static site
-        shell: bash
-        run: |
-          mkdir -p _site/data
-          cp index.html hotels.html restaurants.html activities.html analysis.html sources.html styles.css app.js _site/
-          cp data/research.json _site/data/research.json
-
-      - name: Upload Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
-
+          path: "."
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

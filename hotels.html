@@ -1,16 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f5ef">
-  <meta name="description" content="Compare Shanghai hotel room fit, official seven-night rates, amenities, locations and what remains unverified for February 2027.">
-  <title>Hotels · Shanghai trip planner</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotels Ranked — ChinaFun2</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="hotels">
-  <div id="site"></div>
-  <noscript>This dashboard needs JavaScript enabled to load its source-linked research data.</noscript>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <div class="brand">🇨🇳 ChinaFun2<small>Shanghai · Feb–Mar 2027 · 2 adults</small></div>
+  <nav class="mainnav" aria-label="Main">
+    <a href="index.html">Dashboard</a>
+    <a href="executive-summary.html">Summary</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="michelin.html">Michelin</a>
+    <a href="activities.html">Activities</a>
+    <a href="costs-booking.html">Costs &amp; Booking</a>
+    <a href="questions.html">Questions</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="flagged.html">Flagged</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <h1>Hotels — ranked by Michelin density within 1 hour</h1>
+  <p>All 6 hotels meet your hard filters: <strong>private bathroom + queen bed or larger (king counts) + 2 adults</strong>. Rank = estimated count of Michelin-<em>starred</em> restaurants within ~60 min by metro/bus from the hotel district (2026 Guide: 51 starred in Shanghai). Counts are district-level estimates — verify door-to-door times in Amap/Google Maps before booking.</p>
+
+  <div class="note"><strong>💰 Pricing honesty:</strong> February 2027 nightly rates are <strong>not yet released</strong> for most properties. The “Feb 2027 (7 nights)” column is therefore <strong>blank / UNVERIFIED</strong> by design. The “Proxy Feb 2026” column shows comparable rates with source + date for budgeting only. <strong>Never treat a proxy as a 2027 quote.</strong> See <a href="costs-booking.html">Costs &amp; Booking</a> for exact re-check dates.</div>
+
+  <div class="toolbar">
+    <input type="search" data-filter="hotels-table" placeholder="Filter hotels… (try: Bund, spa, pool, Pudong)">
+    <span id="hotels-table-count" style="align-self:center;color:var(--muted);font-size:.9rem"></span>
+  </div>
+
+  <div class="table-wrap"><table id="hotels-table" data-sortable>
+    <thead><tr>
+      <th data-sort>Rank</th><th data-sort>Hotel (district)</th><th data-sort>Bed (queen+)</th><th data-sort>Bathroom (private)</th>
+      <th data-sort>Amenities</th><th data-sort>Metro</th><th data-sort>★ within 1 hr (est.)</th>
+      <th data-sort>Feb 2027 · 7 nights</th><th data-sort>Proxy Feb 2026 · 7 nights</th><th data-sort>Source</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>#1</strong></td>
+        <td><strong>Hyatt on the Bund, Shanghai</strong><br>Huangpu (Bund / Nanjing East Rd)<br><a href="https://www.hyatt.com/en-US/hotel/china/hyatt-on-the-bund-shanghai/shaon">Official site ↗</a></td>
+        <td>Queen / King — Deluxe Bund Suite River View Double Bed: 1 Queen, 80 m²; Club River View Double Bed: 1 Queen, 42–45 m²</td>
+        <td>Private — separate tub + shower, rainfall showerhead, robes/slippers</td>
+        <td>Spa, indoor pool, hot tub, sauna, 6 restaurants/bars (VUE Bar), fitness, free Wi-Fi, concierge, airport pick-up</td>
+        <td>Line 2/10 East Nanjing Rd; Line 10/14 Yuyuan Garden</td>
+        <td><strong>~28</strong><br><em>Huangpu cluster (Canton 8, T'ang Court, Bao Li Xuan…)</em></td>
+        <td><span class="badge bad">UNVERIFIED</span><br>— blank —<br><em>not yet released</em></td>
+        <td>~¥7,763 / $1,163<br><em>From ¥1,109/night listing</em></td>
+        <td><a href="https://www.trip.com/hotels/shanghai-hotel-detail-425378/hyatt-on-the-bund-shanghai/">Trip.com ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>#2</strong></td>
+        <td><strong>The Peninsula Shanghai</strong><br>Huangpu (Bund)<br><a href="https://www.peninsula.com/en/shanghai/the-peninsula-shanghai">Official site ↗</a></td>
+        <td>King — Deluxe Room: 1 king or 2 twins, pillow-top; suites: king</td>
+        <td>Private marble — spa-jet tub + TV, walk-in shower, double basins, dressing room</td>
+        <td>Peninsula Spa by ESPA, indoor pool, 5 restaurants/bars, Arcade (25+ brands), butler, BMW/Rolls-Royce transfers</td>
+        <td>Line 2/10 East Nanjing Rd (walk)</td>
+        <td><strong>~27</strong><br><em>Same Bund cluster as #1</em></td>
+        <td><span class="badge bad">UNVERIFIED</span><br>— blank —</td>
+        <td>— blank —<br><em>no reliable proxy captured</em></td>
+        <td><a href="https://www.forbestravelguide.com/hotels/shanghai-china/the-peninsula-shanghai">Forbes ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>#3</strong></td>
+        <td><strong>Shanghai Marriott Marquis City Centre</strong><br>Huangpu (People's Square)<br><a href="https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-hotel-city-centre/overview/">Official site ↗</a></td>
+        <td>King — Deluxe King 38 m²; Executive King 40 m²; Bund View King 38 m² (all 1 king)</td>
+        <td>Private — separate bath + shower, toiletries, robe, hairdryer</td>
+        <td>Indoor pool, spa + sauna, 3 restaurants, fitness, free Wi-Fi, parking, tea/coffee in all rooms</td>
+        <td>Line 1/2/8 People's Square (walk)</td>
+        <td><strong>~26</strong><br><em>Lines 1/2/8 → Huangpu + Jing'an + Changning</em></td>
+        <td><span class="badge bad">UNVERIFIED</span><br>— blank —</td>
+        <td>~¥8,694 / $1,302<br><em>~$186/night listing</em></td>
+        <td><a href="https://www.booking.com/hotel/cn/marriott-shanghai-city-centre.html">Booking.com ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>#4</strong></td>
+        <td><strong>Renaissance Shanghai Yu Garden Hotel</strong><br>Huangpu (Yu Garden / Old Town)<br><a href="https://www.marriott.com/en-us/hotels/shayg-renaissance-shanghai-yu-garden-hotel/overview/">Official site ↗</a></td>
+        <td>King <span class="badge warn">verify room type</span></td>
+        <td>Private <span class="badge warn">verify at booking</span></td>
+        <td>Club lounge (17F), indoor pool, spa/sauna, 3 restaurants, fitness, business centre</td>
+        <td>Line 10/14 Yuyuan Garden (next door)</td>
+        <td><strong>~25</strong><br><em>Walkable Huangpu cluster</em></td>
+        <td><span class="badge bad">UNVERIFIED</span><br>— blank —</td>
+        <td>— blank —</td>
+        <td><a href="https://uk.trip.com/hotels/shanghai-the-bund/hotels-c2m4189898/">Trip.com ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>#5</strong></td>
+        <td><strong>Grand Hyatt Shanghai (Jin Mao Tower)</strong><br>Pudong (Lujiazui)<br><a href="https://www.hyatt.com/en-US/hotel/china/grand-hyatt-shanghai/shagh">Official site ↗</a></td>
+        <td>King <span class="badge warn">confirm at booking</span></td>
+        <td>Private marble — deep bathtub + shower</td>
+        <td>Club Oasis (gym/spa/plunge pools/sauna), Sky Pool (180° views), 8 restaurants/bars, 24h business centre</td>
+        <td>Line 2 Lujiazui (walk)</td>
+        <td><strong>~18</strong><br><em>Pudong cluster small; most dining across river</em></td>
+        <td><span class="badge bad">UNVERIFIED</span><br>— blank —</td>
+        <td>— blank —</td>
+        <td><a href="https://ph.trip.com/hotels/shanghai-nanjing-road/hotels-c2m4190189/">Trip.com ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>#6</strong></td>
+        <td><strong>Hilton Shanghai City Center</strong><br>Huangpu (Huaihai Road)<br><a href="https://www.hilton.com/en/hotels/shaocis-hilton-shanghai-city-center/">Official site ↗</a></td>
+        <td>King / Queen <span class="badge warn">verify room type</span></td>
+        <td>Private <span class="badge warn">verify at booking</span></td>
+        <td>Indoor pool, fitness, restaurants/bars <span class="badge warn">verify Wi-Fi</span></td>
+        <td>Line 1/12/13 Shaanxi South Rd (walk)</td>
+        <td><strong>~24</strong><br><em>French Concession + Huangpu dining</em></td>
+        <td><span class="badge bad">UNVERIFIED</span><br>— blank —</td>
+        <td>— blank —</td>
+        <td><a href="https://www.hilton.com/en/locations/china/shanghai/">Hilton ↗</a></td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section">How the ranking was built (so you can audit it)</h2>
+  <div class="card">
+    <ol class="tight">
+      <li>Took the official <strong>MICHELIN Guide Shanghai|Jiangsu|Zhejiang 2026</strong> starred list (51 in Shanghai) with districts.</li>
+      <li>Mapped each hotel to its nearest metro hub and counted starred restaurants reachable within ~60 min by metro (Shanghai Metro network) — district-level estimate, not door-to-door routing.</li>
+      <li>Cross-checked bed/bathroom/amenities against official hotel pages + Trip.com/Booking.com property pages (linked per row).</li>
+      <li><strong>Limitation:</strong> exact counts depend on restaurant addresses + live metro times. Re-verify your top 2 picks in Amap (local) or Google Maps before booking. See <a href="flagged.html">Flagged page</a>.</li>
+    </ol>
+  </div>
+
+  <div class="note blue"><strong>💡 Tip:</strong> If dining density is your #1 priority, choose #1–#3 (Bund/People's Square). If skyline views + quiet are #1, choose #5 (Pudong) and budget ~20–40 min extra to cross the river for most starred dinners. Full trade-offs: <a href="executive-summary.html">Executive Summary</a>.</div>
+</div>
+
+<footer>ChinaFun2 · <a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · © <span id="year">2026</span></footer>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

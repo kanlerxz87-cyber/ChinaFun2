@@ -1,15 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Manual-review source register for official hotel, restaurant, Michelin, museum, activity, transit and social links used by the Shanghai trip planner.">
-  <title>Sources · Shanghai trip planner</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sources &amp; Methodology — ChinaFun2</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="sources">
-  <div id="site"></div>
-  <noscript>This dashboard needs JavaScript enabled to load its source-linked research data.</noscript>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <div class="brand">🇨🇳 ChinaFun2<small>Shanghai · Feb–Mar 2027 · 2 adults</small></div>
+  <nav class="mainnav" aria-label="Main">
+    <a href="index.html">Dashboard</a>
+    <a href="executive-summary.html">Summary</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="michelin.html">Michelin</a>
+    <a href="activities.html">Activities</a>
+    <a href="costs-booking.html">Costs &amp; Booking</a>
+    <a href="questions.html">Questions</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="flagged.html">Flagged</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <h1>Sources &amp; methodology</h1>
+  <p>Every table row links to at least one source below. <strong>Official sources</strong> (Michelin Guide, hotel brands, venue operators, government) take precedence over secondary aggregators. Anything that could not be confirmed is blank + flagged — see <a href="flagged.html">Flagged page</a>.</p>
+
+  <h2 class="section">Official sources (primary)</h2>
+  <div class="table-wrap"><table data-sortable>
+    <thead><tr><th data-sort>Source</th><th data-sort>Used for</th><th data-sort>Link</th></tr></thead>
+    <tbody>
+      <tr><td>MICHELIN Guide Shanghai|Jiangsu|Zhejiang 2026</td><td>Starred/Bib/Selected totals + statuses</td><td><a href="https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang">guide.michelin.com ↗</a></td></tr>
+      <tr><td>MICHELIN Guide — Taian Table page</td><td>3★ status</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table">guide.michelin.com ↗</a></td></tr>
+      <tr><td>MICHELIN Guide — Fu He Hui page</td><td>Hours, address, cuisine</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui">guide.michelin.com ↗</a></td></tr>
+      <tr><td>MICHELIN Guide — Canton 8 page</td><td>Hours, address</td><td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street">guide.michelin.com ↗</a></td></tr>
+      <tr><td>MICHELIN Guide — Beijing 2025</td><td>Beijing comparison</td><td><a href="https://guide.michelin.com/en/article/news-and-views/beijing-2025-starred-restaurants">guide.michelin.com ↗</a></td></tr>
+      <tr><td>Taian Table official FAQ</td><td>Menu price, deposit, 90-day window</td><td><a href="https://bookings.taian-table.com/faq">bookings.taian-table.com ↗</a></td></tr>
+      <tr><td>Shanghai Museum (official)</td><td>Hours, free timed entry, Monday closure</td><td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west">shanghaimuseum.net ↗</a></td></tr>
+      <tr><td>Oriental Pearl Tower (official)</td><td>Hours, ticket tiers</td><td><a href="https://www.orientalpearltower.com/">orientalpearltower.com ↗</a></td></tr>
+      <tr><td>Shanghai Tower (official)</td><td>Hours, ticket price</td><td><a href="https://www.shanghaitower.com/">shanghaitower.com ↗</a></td></tr>
+      <tr><td>Yu Garden (official)</td><td>Hours, tickets</td><td><a href="https://www.yugarden.com/">yugarden.com ↗</a></td></tr>
+      <tr><td>Shanghai Tourism (municipal)</td><td>Bund, Nanjing Road, French Concession</td><td><a href="https://www.shanghaitourism.org/">shanghaitourism.org ↗</a></td></tr>
+      <tr><td>State Council 2027 holidays (via Xinhua summaries)</td><td>Spring Festival 5–13 Feb 2027</td><td><a href="https://its.holiday/en/cn/2027">its.holiday ↗</a></td></tr>
+      <tr><td>Federal Reserve H.10 (FRED DEXCHUS)</td><td>USD/CNY 6.6770 (20 Nov 2026)</td><td><a href="https://fred.stlouisfed.org/series/DEXCHUS">fred.stlouisfed.org ↗</a></td></tr>
+      <tr><td>Hotel brands: Hyatt / Peninsula / Marriott / Hilton</td><td>Bed, bathroom, amenities</td><td><a href="https://www.hyatt.com/en-US/hotel/china/hyatt-on-the-bund-shanghai/shaon">Hyatt ↗</a> · <a href="https://www.peninsula.com/en/shanghai/the-peninsula-shanghai">Peninsula ↗</a> · <a href="https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-hotel-city-centre/overview/">Marriott ↗</a> · <a href="https://www.hilton.com/en/hotels/shaocis-hilton-shanghai-city-center/">Hilton ↗</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section">Secondary sources (cross-checks + proxies — labelled as such)</h2>
+  <div class="table-wrap"><table data-sortable>
+    <thead><tr><th data-sort>Source</th><th data-sort>Used for</th><th data-sort>Link</th></tr></thead>
+    <tbody>
+      <tr><td>Hotels.com 2026 Hotel Price Index (via Pinnacles List / RateRanger)</td><td>8–14-day sweet spot, ~23% saving</td><td><a href="https://thepinnacleslist.com/best-time-to-book-hotels/">thepinnacleslist.com ↗</a></td></tr>
+      <tr><td>Booking.com booking-window guide</td><td>2–3 months standard window</td><td><a href="https://www.booking.com/articles/when-is-the-best-time-to-book-a-hotel.en-gb.html">booking.com ↗</a></td></tr>
+      <tr><td>HotelsLove / KAYAK (via RateRanger)</td><td>4–8-week + last-minute windows</td><td><a href="https://hotelslove.com/guides/best-time-to-book-hotels/">hotelslove.com ↗</a></td></tr>
+      <tr><td>China Daily (Guangzhou 2025; Shenzhen debut)</td><td>Guangzhou/Shenzhen comparison</td><td><a href="https://www.chinadaily.com.cn/a/202507/05/WS6868a88ba31000e9a573a512.html">chinadaily.com.cn ↗</a></td></tr>
+      <tr><td>EastChinaTrip Shanghai Michelin guide</td><td>Per-person price estimates (flagged)</td><td><a href="https://www.eastchinatrip.com/shanghai-michelin-guide/">eastchinatrip.com ↗</a></td></tr>
+      <tr><td>Trip.com / Booking.com property pages</td><td>Hotel amenities + proxy rates</td><td><a href="https://www.trip.com/hotels/shanghai-hotel-detail-425378/hyatt-on-the-bund-shanghai/">trip.com ↗</a></td></tr>
+      <tr><td>YouTube (Taian Table, Canton 8 reviews)</td><td>Video links + price cross-checks</td><td><a href="https://www.youtube.com/watch?v=RYsEUZJSrN8">YouTube ↗</a> · <a href="https://www.youtube.com/watch?v=MerTf4Wl8Gg">YouTube ↗</a></td></tr>
+      <tr><td>US visa guides (ChinaForTravelers, Russiable)</td><td>L-visa $140, 10-yr, transit alternative</td><td><a href="https://chinafortravelers.com/guides/china-visa-for-us-citizens/">chinafortravelers.com ↗</a></td></tr>
+      <tr><td>Shanghai weather/packing guides</td><td>Feb/Mar temps, rain, packing</td><td><a href="https://www.shanghaitourism.org/what-to-pack-shanghai/">shanghaitourism.org ↗</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section">Methodology (auditable)</h2>
+  <div class="card">
+    <ol class="tight">
+      <li><strong>Destination:</strong> Compared starred counts (Shanghai 51 vs Beijing 33 vs Guangzhou+Shenzhen 28) + metro + day-trip access; selected Shanghai as single base. See Executive Summary.</li>
+      <li><strong>Hotel ranking:</strong> District-level count of starred restaurants within ~60 min by metro from each hotel hub (2026 Guide districts + Shanghai Metro network). Estimates labelled “est.” — verify door-to-door before booking.</li>
+      <li><strong>Pricing:</strong> 2027 hotel rates not yet released → blank + UNVERIFIED. Proxies (Feb 2026) shown separately with source + date. Dining couple totals = per-person × 2; official prices preferred, estimates flagged with ranges.</li>
+      <li><strong>Booking windows:</strong> Synthesised Hotels.com (8–14 days), Booking.com (2–3 months), HotelsLove/KAYAK (4–8 weeks / last-minute) into a refundable-rate + re-price workflow with calendar dates.</li>
+      <li><strong>Social links:</strong> YouTube direct/search + TikTok/Instagram search URLs (platforms block stable direct links). Labelled as search URLs on every row.</li>
+      <li><strong>Verification:</strong> Every row has ≥1 source link. Blanks = “not confirmed from official source yet”. Irregularities logged in <span class="mono">COORDINATION.md</span> + <a href="flagged.html">Flagged page</a>.</li>
+    </ol>
+  </div>
+
+  <h2 class="section">Data files (for reuse)</h2>
+  <div class="card">
+    <ul class="tight">
+      <li><a href="data/hotels.json">data/hotels.json</a> — 6 hotels with ranking, amenities, proxy pricing</li>
+      <li><a href="data/michelin.json">data/michelin.json</a> — 14 dining rows with status, hours, couple totals, social links</li>
+      <li><a href="data/activities.json">data/activities.json</a> — 12 activities with hours, tickets, social links</li>
+      <li><a href="data/costs.json">data/costs.json</a> — stay options, booking windows, practical essentials</li>
+    </ul>
+  </div>
+</div>
+
+<footer>ChinaFun2 · <a href="index.html">Dashboard</a> · <a href="flagged.html">Flagged</a> · © <span id="year">2026</span></footer>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
