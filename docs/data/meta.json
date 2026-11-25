@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "project": "ChinaFun2 — Trip Planning China (Shanghai base)",
+    "session": "86c14d15",
+    "accessed": "2026-11-25",
+    "trip_window": "2027-02-15 to 2027-03-23",
+    "preferred_window": "2027-02-15 to 2027-02-18",
+    "recommended_stay": "7 nights (within 1-2 week requirement)",
+    "party": "2 adults",
+    "room_requirement": "Private bathroom, queen bed or larger (king acceptable)",
+    "activity_radius": "≤60 minutes by subway or bus from hotel",
+    "exchange_rate": {
+      "pair": "USD/CNY",
+      "rate": 6.67,
+      "note": "1 USD = 6.67 CNY on 2026-11-25 (Trading Economics / MTFX). USD figures are indicative conversions only; CNY is the transaction currency. Rate will move — re-check before booking.",
+      "source": "https://tradingeconomics.com/china/currency"
+    },
+    "michelin_edition": "MICHELIN Guide Shanghai | Jiangsu | Zhejiang 2026 (released 2026-04-09). Shanghai subset: 156 restaurants, 51 starred (1×3-star, 12×2-star, 38×1-star), 35 Bib Gourmand, remainder Selected.",
+    "michelin_source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+    "verification_rule": "Every row links to a source. Values that could not be confirmed from an official/trusted source are blank and flagged 'Unverified — needs review'. Indicative hotel rates are 'from' nightly rates, not locked Feb-2027 quotes."
+  }
+}

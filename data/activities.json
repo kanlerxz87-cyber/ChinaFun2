@@ -1,0 +1,150 @@
+{
+  "activities": [
+    {
+      "id": "the-bund",
+      "name": "The Bund (Waitan) — waterfront promenade",
+      "district": "Huangpu",
+      "official_url": "https://www.shanghai.gov.cn/",
+      "cost_for_two_cny": "Free (outdoor promenade)",
+      "cost_for_two_usd": "Free",
+      "hours": "Open air, 24 hours (public waterfront). Best at dusk/night for Pudong skyline lights.",
+      "exceptions": "Crowded during CNY/Lantern Festival and weekends. Ferry to Pudong available (verify schedule).",
+      "transit_from_bund_base": "0 min (you are here) — Huangpu hotels walkable",
+      "verification": "Free public space — no ticket/hours to verify. Ferry schedule: Unverified — needs review.",
+      "social": {
+        "youtube": "https://www.youtube.com/watch?v=A0XMNMwa7UU",
+        "youtube_label": "Shanghai 4K walk: Bund to Yu Gardens (YouTube)",
+        "tiktok_search": "https://www.tiktok.com/search?q=The%20Bund%20Shanghai",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=The%20Bund%20Shanghai"
+      },
+      "notes": "Anchor activity for every Huangpu base. Pair with Canton 8 / Imperial Treasure / Mr & Mrs Bund."
+    },
+    {
+      "id": "shanghai-museum",
+      "name": "Shanghai Museum (People's Square)",
+      "district": "Huangpu (People's Square)",
+      "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west",
+      "cost_for_two_cny": "Free standard admission (timed ticket required)",
+      "cost_for_two_usd": "Free",
+      "hours": "Tue–Sun 09:00–17:00 (last entry 15:00). Closed Mondays (except national holidays). Evening sessions (09:00–21:00) on select days — check official WeChat.",
+      "exceptions": "Book via official WeChat Mini Program (overseas via Trip.com). Bring original ID. Capacity limits apply. Special exhibition 'On Top of the World Tree' runs 2026-07-09 to 2027-11-14 (People's Square hosts no other exhibitions during this period per museum).",
+      "transit_from_bund_base": "~10–15 min by metro (East Nanjing Rd → People's Square, Line 2) or walk ~20 min",
+      "verification": "Verified — official museum page (hours, booking, exhibition dates).",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=Shanghai+Museum+tour",
+        "tiktok_search": "https://www.tiktok.com/search?q=Shanghai%20Museum",
+        "instagram": "https://www.instagram.com/theshanghaimuseum/",
+        "instagram_label": "@theshanghaimuseum (official handle)"
+      },
+      "notes": "Bronze, ceramics, calligraphy. Allow 2–3 hours. Go at 09:00 opening on a weekday."
+    },
+    {
+      "id": "yu-garden",
+      "name": "Yu Garden (Yuyuan) — classical garden",
+      "district": "Huangpu (Old Town)",
+      "official_url": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "cost_for_two_cny": "¥80 (2 × ¥40 adult, peak season Apr–Jun / Sep–Nov; Feb is low season — confirm price)",
+      "cost_for_two_usd": "~$12",
+      "hours": "09:00–16:30 (last entry 16:00). Closed Mondays (except national holidays). CNY hours by separate notice.",
+      "exceptions": "⚠️ Secondary sources listing 08:30–17:00 are outdated — use official 09:00–16:30. Garden ≠ surrounding bazaar (bazaar is free, open district).",
+      "transit_from_bund_base": "~10 min walk from Bund south end; metro Yuyuan Garden (Lines 10/14)",
+      "verification": "Verified — official yugarden.com.cn visitor notice.",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=Yu+Garden+Shanghai+tour",
+        "tiktok_search": "https://www.tiktok.com/search?q=Yu%20Garden%20Shanghai",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Garden%20Shanghai"
+      },
+      "notes": "460-year-old Ming garden. 1–2 hours inside + bazaar outside. Arrive at 09:00 to beat crowds."
+    },
+    {
+      "id": "shanghai-tower",
+      "name": "Shanghai Tower — observation deck (118F)",
+      "district": "Pudong (Lujiazui)",
+      "official_url": "https://www.shanghaitower.com/",
+      "cost_for_two_cny": "¥360 (2 × ¥180 standard 118F; VIP 124F ¥240/person — confirm)",
+      "cost_for_two_usd": "~$54",
+      "hours": "⚠️ CONFLICTING: 08:30–22:00 (last entry 21:30) vs 10:00–21:00. Treat as Unverified — confirm on shanghaitower.com before visiting.",
+      "exceptions": "Passport/ID required. Book timed slot online. Haze can ruin views — check forecast; winter mornings after rain are clearest.",
+      "transit_from_bund_base": "~15–20 min by metro (East Nanjing Rd → Lujiazui, Line 2) + walk",
+      "verification": "Ticket ¥180: secondary consensus. Hours: Unverified — needs review (official site check required).",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=Shanghai+Tower+observation+deck",
+        "tiktok_search": "https://www.tiktok.com/search?q=Shanghai%20Tower%20deck",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Tower%20deck"
+      },
+      "notes": "China's tallest building (632 m). 1–1.5 hours. Best 60–90 min before sunset."
+    },
+    {
+      "id": "natural-history-museum",
+      "name": "Shanghai Natural History Museum",
+      "district": "Jing'an (Huaihai Road)",
+      "official_url": "https://www.snhm.org.cn/",
+      "cost_for_two_cny": "¥60 (2 × ¥30 adult; students ¥12, seniors 60–69 ¥25; under-6/under-1.3m free with reservation)",
+      "cost_for_two_usd": "~$9",
+      "hours": "Tue–Sun 09:00–17:00 (last entry 16:00). Closed Mondays (except public holidays). Saturdays sometimes extended to 20:00 — verify.",
+      "exceptions": "No on-site ticketing — book via official WeChat account/mini-program. Real-name reservation required. Popular theaters sell out fast.",
+      "transit_from_bund_base": "~20–25 min by metro (East Nanjing Rd → Natural History Museum, Line 13 via transfer)",
+      "verification": "Hours/ticket: secondary consensus (Trip.com + guides). Official site link provided — confirm before booking. Flagged for official re-check.",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=Shanghai+Natural+History+Museum",
+        "tiktok_search": "https://www.tiktok.com/search?q=Shanghai%20Natural%20History%20Museum",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Natural%20History%20Museum"
+      },
+      "notes": "Dinosaur skeletons + immersive theaters. Metro Line 13, Exit 1."
+    },
+    {
+      "id": "ocean-aquarium",
+      "name": "Shanghai Ocean Aquarium",
+      "district": "Pudong (Lujiazui)",
+      "official_url": "https://www.sh-aquarium.com/",
+      "cost_for_two_cny": "¥320 (2 × ¥160 adult; children 1–1.4 m ¥110; under 1 m free)",
+      "cost_for_two_usd": "~$48",
+      "hours": "Daily 09:00–18:00 (last entry 17:30). Weekends/holidays sometimes to 20:00–21:00 — verify. (Secondary sources; confirm on official site.)",
+      "exceptions": "Arrive early on weekends/holidays. Advance booking saves ~¥5/person per one source (verify).",
+      "transit_from_bund_base": "~20 min by metro (East Nanjing Rd → Lujiazui, Line 2)",
+      "verification": "Hours/ticket: secondary consensus — Unverified on official site in this pass. Needs review.",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=Shanghai+Ocean+Aquarium",
+        "tiktok_search": "https://www.tiktok.com/search?q=Shanghai%20Ocean%20Aquarium",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Ocean%20Aquarium"
+      },
+      "notes": "1388 Lujiazui Ring Road. Pair with Shanghai Tower + Oriental Pearl Tower area."
+    },
+    {
+      "id": "xintiandi",
+      "name": "Xintiandi — heritage shopping/dining district",
+      "district": "Huangpu (Shikumen)",
+      "official_url": "https://www.xintiandi.com/",
+      "cost_for_two_cny": "Free to walk (pay per shop/restaurant)",
+      "cost_for_two_usd": "Free",
+      "hours": "Open district (shops/restaurants have individual hours — verify per venue). T'ang Court (Langham) is here.",
+      "exceptions": "Crowded evenings/weekends. Lantern Festival decorations expected (verify 2027 program).",
+      "transit_from_bund_base": "~15 min by metro (East Nanjing Rd → Xintiandi, Line 10/12) or taxi ~10 min",
+      "verification": "District is public/open — no single hours. Venue hours: verify individually. Flagged for review.",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=Xintiandi+Shanghai+walk",
+        "tiktok_search": "https://www.tiktok.com/search?q=Xintiandi%20Shanghai",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=Xintiandi%20Shanghai"
+      },
+      "notes": "Shikumen stone-gate houses + modern retail. Good evening pairing with T'ang Court dinner."
+    },
+    {
+      "id": "french-concession",
+      "name": "French Concession — Wukang Road / Anfu Road walk",
+      "district": "Xuhui / Changning",
+      "official_url": "https://www.shanghai.gov.cn/",
+      "cost_for_two_cny": "Free to walk (pay per café/shop)",
+      "cost_for_two_usd": "Free",
+      "hours": "Open streets, 24 hours. Cafés/shops individual hours.",
+      "exceptions": "Best in morning light. Pair with Ji Pin Court (Xuhui) or Fu He Hui (Changning).",
+      "transit_from_bund_base": "~20–30 min by metro (Line 10/12 to Shaanxi South Rd / French Concession area)",
+      "verification": "Public streets — no ticket/hours. Flagged for review (no official single source).",
+      "social": {
+        "youtube_search": "https://www.youtube.com/results?search_query=French+Concession+Shanghai+Wukang+Road",
+        "tiktok_search": "https://www.tiktok.com/search?q=French%20Concession%20Shanghai",
+        "instagram_search": "https://www.instagram.com/explore/search/keyword/?q=French%20Concession%20Shanghai"
+      },
+      "notes": "Plane-tree streets, heritage villas. Low-effort, high-charm day. Fu He Hui is on Yuyuan Road nearby."
+    }
+  ]
+}
