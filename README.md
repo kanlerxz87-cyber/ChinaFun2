@@ -43,4 +43,4 @@ The root dashboard design from session `77604d1c`, category architecture/search 
 
 ## Publication
 
-Pages uses `main` root. `.github/workflows/pages.yml` deploys only from `main`; working branches are previews, not the public site. Merge the integration PR to publish. See [COORDINATION.md](COORDINATION.md) for prior claims, integration review and verification results, and [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for resolved presentation defects versus still-unverified research.
+Pages uses the configured automatic branch publisher, `main` root. `.github/workflows/pages.yml` is an explicit main-only manual fallback, not a second publisher on every push; working branches are previews, not the public site. Merging into main publishes automatically. See [COORDINATION.md](COORDINATION.md) for prior claims, integration review and verification results, and [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for resolved presentation defects versus still-unverified research.

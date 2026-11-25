@@ -1,8 +1,9 @@
-name: Deploy GitHub Pages
+# Settings -> Pages currently uses the automatic "Deploy from a branch"
+# publisher (main /). Do not run a second publisher on every main push.
+# Keep this workflow as an explicit, main-only recovery/migration fallback.
+name: Deploy GitHub Pages (manual fallback)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -15,22 +16,35 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_name: ${{ steps.artifact-name.outputs.name }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Name this immutable build artifact
+        id: artifact-name
+        run: echo "name=github-pages-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          name: ${{ steps.artifact-name.outputs.name }}
+          path: "."
   deploy:
-    # The protected github-pages environment is deployable from main only.
+    # Separate jobs allow retrying a failed deploy without uploading a duplicate.
+    needs: build
     if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "."
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ needs.build.outputs.artifact_name }}
