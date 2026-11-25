@@ -57,3 +57,9 @@ All tasks 1-8 done by single-session run. Flagged items (F1-F16) are published o
 - Shared outputs (docs/index.html nav, data/*.json) were finalised by this session as the single-session integration run.
 - To publish: enable Pages (Settings > Pages > /docs) — see README. Re-run `python3 scripts/verify.py` after any data edit and re-copy data/*.json to docs/data/.
 - 2026-11-25 86c14d15: Tasks 1-8 marked done. Site built (docs/index, hotels, restaurants, activities, dates, summary, suggestions, questions, flagged) + style.css/app.js. Local preview HTTP 200 on all pages.
+
+## Parallel-session note (2026-11-25, 86c14d15)
+- Discovered open PR #3 from session `77604d1c` (`arena/77604d1c-chinafun2`, root `index.html`/`data.js` dashboard: 5 hotels, 6 dining, 2 activities, conservative blanks for unverified price/transit/bathroom).
+- This session's scope is non-overlapping (`docs/**`, `data/*.json`) except `COORDINATION.md` + `README.md`. Do NOT merge either PR over the other without a final integration session that re-verifies combined data and resolves README/COORDINATION.
+- Integration options: (a) keep #3 at root (matches current Pages config: main `/`) and this site under `/docs/`; or (b) choose one dashboard. Current Pages API cannot be changed with this token (403 on POST/PUT) — repo owner enables `/docs` in Settings if option (a) with Docs as primary is preferred.
+- Corroboration from #3 worth carrying into integration: State Council Spring Festival 2027-02-05 to 2027-02-13 (english.www.gov.cn); Taian Table FAQ also at https://bookings.taian-table.com/faq (cf. this session's https://sh.taian-table.cn/faq/ — verify canonical domain at integration).
