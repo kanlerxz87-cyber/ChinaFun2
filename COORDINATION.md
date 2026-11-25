@@ -19,3 +19,5 @@ Session: `arena/b679d5a6-chinafun2` (Arena fixes the current branch name).
 - Irregularities: the 2024 and 2026 transit-country and port counts differ; use the latest rules. The State Department advisory and detailed guidance carry different issue dates. The Embassy notice describes a specific consular jurisdiction. 2027 rules, individual visa eligibility, and all hotel/restaurant/transit data remain unverified.
 - Integration request: incorporate the audit into the questions and flagged-for-review page after the owners of shared files finish. The flag is recorded here but has not yet appeared on a site page because those files are owned by other sessions.
 - GitHub Pages currently reports `main` at `/` as the built source. This branch is not the published source; no deployment or modification to `main` was attempted. On the first push, the required `git pull --rebase` found no remote branch; the new current branch was then pushed successfully.
+
+- Cross-branch coordination request and integration handoff: https://github.com/kanlerxz87-cyber/ChinaFun2/issues/2
