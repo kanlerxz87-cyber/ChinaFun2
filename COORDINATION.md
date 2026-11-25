@@ -134,3 +134,11 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - Merged `origin/main` at `6118a43` after discovering PR #7. Preserved the entire `shanghai-planner/` subtree unchanged; its independent validator passes (54 sources, 4 hotels, 8 restaurants, 4 activities).
 - Re-ran local HTTP verification after the merge: **33 HTML/JSON/CSS/JS resources return 200**; the 11 primary HTML pages retain zero missing local links/anchors. Search/sort/dashboard DOM tests pass. Fifteen review groups now include external-source fetch limitations (`L01`).
 - Added `.github/workflows/validate.yml` for deterministic generation, structural policy checks, retained-planner integrity and DOM interaction tests. The existing main-only Pages deployment remains intact.
+
+### Publication completed — PR #8
+
+- **Done:** PR #8 merged to `main` at `aba17cdc7a6ebb154243c7da7c0e6149ec8d10c9`; PR and main validation passed. GitHub's configured legacy Pages build/deploy run **45627648776 succeeded**; Pages API reports `built` from `main /`.
+- Live HTML content checked via page fetches: executive summary (four cities), hotels (16 records), all fifteen review groups, costs/checkpoints and entry audit. Root update confirmed using `index.html?v=aba17cdc` because the unversioned fetch initially returned an older cached snapshot. Public URL remains https://kanlerxz87-cyber.github.io/ChinaFun2/.
+- The separate custom Pages workflow initially reported no artifact despite an uploaded `github-pages` artifact being present afterward. The configured legacy deployment succeeded independently. Retried the failed custom run; do not confuse its initial failure with an unpublished site.
+- Follow-up hardening: version CSS/JS URLs together to reduce mixed cached data/renderer releases, and remove incomplete aggregator numbers from visible comparison tables entirely. They remain only in clearly labelled JSON audit observations; no unrelated official property link is used to suggest price verification. All local checks still pass.
+- Research gaps are still non-blocking publication flags, not claimed resolved: exact official 2027 rates, full route matrix/rankings, consistently explicit ensuite confirmation, exact 2027 venue notices, direct social post verification and traveler-specific entry eligibility.

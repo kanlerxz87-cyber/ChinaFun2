@@ -30,3 +30,7 @@ These checks **do not prove** external URL availability, all source contents, vi
 ## Parallel work retained
 
 The root dashboard and category filenames from merged sessions remain the primary site. The independent `research/entry-audit.md` is retained intact. The inherited pre-reconciliation JSON is explicitly marked superseded in `research/legacy-ledgers-2026-11-25.json`. PR #4's alternative `docs/` site was reviewed rather than merged wholesale. Newly merged PR #7's isolated `shanghai-planner/` subtree is retained separately and not silently substituted as the primary decision dataset.
+
+## Live publication check
+
+PR #8 merged at `aba17cdc7a6ebb154243c7da7c0e6149ec8d10c9`; configured Pages build/deploy run 45627648776 succeeded, and the Pages API reported `built`. Fetched the live executive summary, hotel table, flags, costs and entry-audit pages and confirmed new records. The initial unversioned root fetch returned cached older content; `index.html?v=aba17cdc` confirmed the updated root. Asset references are versioned in the follow-up to avoid mixed old-renderer/new-data caching. Incomplete aggregator figures are retained in JSON audit observations only, not visible comparison tables.
