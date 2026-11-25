@@ -1,0 +1,1045 @@
+{
+  "meta": {
+    "title": "China Vacation Planner — Shanghai research dashboard",
+    "checkedOn": "2026-11-25",
+    "destination": "Shanghai, China",
+    "destinationStatus": "provisional",
+    "stay": {
+      "checkIn": "2027-02-15",
+      "checkOut": "2027-02-22",
+      "nights": 7,
+      "adults": 2,
+      "status": "working comparison dates; not booked",
+      "whyTheseDates": "A seven-night sample inside the requested 15 February–23 March 2027 window, beginning in the preferred 15–18 February period."
+    },
+    "researchStatus": "In progress — facts and prices below are separated into verified, partial, and unverified. No final hotel ranking or transit-based Michelin cluster is claimed.",
+    "rankingStatus": "not ranked",
+    "rankingReason": "Only one official date-specific hotel quote was usable, it excludes taxes and fees, and one-hour subway/bus journey times from each hotel to Michelin restaurants have not been verified."
+  },
+  "sources": {
+    "holiday": {
+      "title": "China State Council — 2027 public-holiday schedule",
+      "url": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "type": "official government",
+      "checkedOn": "2026-11-25",
+      "supports": "Spring Festival break is 5–13 February 2027; 14 February is a make-up workday.",
+      "limitation": "The notice does not determine individual hotel, restaurant, or attraction operating schedules."
+    },
+    "penHotel": {
+      "title": "The Peninsula Shanghai — official hotel page",
+      "url": "https://www.peninsula.com/en/shanghai/5-star-luxury-hotel-bund",
+      "type": "official hotel",
+      "checkedOn": "2026-11-25",
+      "supports": "Bund location, hotel overview, indoor heated swimming pool, fitness centre, dining and spa links.",
+      "limitation": "General hotel amenities do not establish February 2027 availability."
+    },
+    "penRoom": {
+      "title": "The Peninsula Shanghai — Deluxe Room",
+      "url": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
+      "type": "official room page",
+      "checkedOn": "2026-11-25",
+      "supports": "King or twin configuration, maximum two adults, 54–59 m².",
+      "limitation": "The page alone does not spell out a private bathroom."
+    },
+    "penFactSheet": {
+      "title": "The Peninsula Shanghai — official fact sheet (2025)",
+      "url": "https://www.peninsula.com/-/media/files/shanghai/newsroom/2025/the-peninsula-shanghai-fact-sheet.pdf",
+      "type": "official hotel fact sheet",
+      "checkedOn": "2026-11-25",
+      "supports": "All accommodation includes deluxe marble bathrooms with walk-in showers and baths; 25 m indoor pool; spa and wellness centre.",
+      "limitation": "The fact sheet is a 2025 document, not a dated 2027 service or price confirmation."
+    },
+    "penRates": {
+      "title": "The Peninsula Shanghai — official dated reservations result, 15–22 February 2027",
+      "url": "https://secure.peninsula.com/?adult=2&arrive=2027-02-15&chain=5440&child=0&currency=CNY&depart=2027-02-22&hotel=24623&level=hotel&locale=en-GB&productcurrency=CNY&rooms=1",
+      "type": "official booking engine",
+      "checkedOn": "2026-11-25",
+      "supports": "Deluxe Room, one king bed, two adults, one room, seven nights; average nightly rates and rate conditions.",
+      "limitation": "Displayed average nightly rates explicitly exclude taxes and fees. The page did not provide a verified final payable total."
+    },
+    "langhamHotel": {
+      "title": "The Langham, Shanghai, Xintiandi — official hotel page",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/",
+      "type": "official hotel",
+      "checkedOn": "2026-11-25",
+      "supports": "Xintiandi location, metro access, hotel amenities, and official 2026 T’ang Court award statement.",
+      "limitation": "No usable room quote for 15–22 February 2027 was returned by the official booking flow."
+    },
+    "langhamRoom": {
+      "title": "The Langham, Shanghai — Superior Room",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/superior-room/",
+      "type": "official room page",
+      "checkedOn": "2026-11-25",
+      "supports": "King or twin beds, 40 m², up to three guests, marble bathroom with separate rain shower and heated floor.",
+      "limitation": "The room page verifies room features, not a February 2027 price or reservation."
+    },
+    "langhamDining": {
+      "title": "The Langham, Shanghai — T’ang Court official restaurant page",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "type": "official restaurant",
+      "checkedOn": "2026-11-25",
+      "supports": "2026 two-star claim, published hours, contact details, and menu link.",
+      "limitation": "The hours block says lunch and dinner are daily and also says ‘Off on Monday’; Monday service must be reconfirmed."
+    },
+    "langhamMenu": {
+      "title": "T’ang Court — official 2026 set-menu PDF",
+      "url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlshx-pdfs/tang-court/2026/seasonal-set-menu-selection-2026.pdf",
+      "type": "official menu PDF",
+      "checkedOn": "2026-11-25",
+      "supports": "Classic dim sum set for two CNY 888; all-day set for two CNY 2,288; prices include service charge and taxes.",
+      "limitation": "2026 menu snapshot; not a price or availability promise for February 2027."
+    },
+    "langhamMichelin": {
+      "title": "MICHELIN Guide — T’ang Court",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "Shanghai restaurant listing with two Michelin stars; 2026 edition award was also confirmed on the hotel page.",
+      "limitation": "Recheck the Guide before travel because awards can change by edition."
+    },
+    "langhamOffers": {
+      "title": "The Langham, Shanghai — official offers page",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/offers/",
+      "type": "official offers page",
+      "checkedOn": "2026-11-25",
+      "supports": "Current member and multi-night offers are described on the page.",
+      "limitation": "No 15–22 February 2027 room price was verified. The previously surfaced offer with a 14 November 2026 booking deadline has expired."
+    },
+    "langhamInstagram": {
+      "title": "The Langham Hotels & Resorts — Instagram",
+      "url": "https://www.instagram.com/langhamhotels/",
+      "type": "brand social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "Related brand social profile for the Shanghai hotel.",
+      "limitation": "Brand-level account; no T’ang Court-specific video was confirmed."
+    },
+    "bvlgariHotel": {
+      "title": "Bvlgari Hotel Shanghai — official hotel page",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai",
+      "type": "official hotel",
+      "checkedOn": "2026-11-25",
+      "supports": "Suhe Creek location, 82 rooms and suites, and hotel dining overview.",
+      "limitation": "No dated February 2027 room quote was returned."
+    },
+    "bvlgariRoom": {
+      "title": "Bvlgari Hotel Shanghai — Deluxe Room",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room",
+      "type": "official room page",
+      "checkedOn": "2026-11-25",
+      "supports": "King bed, 52 m², walk-in rain shower, his-and-hers basins and heated toilet listed as room features.",
+      "limitation": "The captured room page does not explicitly say ‘private bathroom’ or give a maximum occupancy; confirm both when requesting a dated quote."
+    },
+    "bvlgariSpa": {
+      "title": "Bvlgari Hotel Shanghai — official spa and pool page",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/spa-and-fitness/the-bvlgari-spa",
+      "type": "official amenity page",
+      "checkedOn": "2026-11-25",
+      "supports": "2,000 m² spa and fitness centre, 25 m indoor heated pool, published spa and pool hours.",
+      "limitation": "Hours and amenities are current page information, not a 2027 confirmation."
+    },
+    "baoHotel": {
+      "title": "Bvlgari Hotel Shanghai — Bao Li Xuan official page",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/dining/bao-li-xuan",
+      "type": "official restaurant",
+      "checkedOn": "2026-11-25",
+      "supports": "Restaurant in the historic Chamber of Commerce building within the Bvlgari Hotel complex; menu link and lunch/dinner hours.",
+      "limitation": "The official page does not specify operating days in the hours block."
+    },
+    "baoMenu": {
+      "title": "Bao Li Xuan — official menu PDF",
+      "url": "https://www.bulgarihotels.com/mgnl/dam/jcr:b07dc4e7-f129-4516-ac0d-4cd860fc3c9b/bvlgari-hotel-shanghai-bao-li-xuan-menu-en.pdf",
+      "type": "official menu PDF",
+      "checkedOn": "2026-11-25",
+      "supports": "Autumn set menu listed at CNY 1,788 per person; menu states prices include service fee and tax.",
+      "limitation": "Seasonal menu; the PDF does not promise the same offer or price for February 2027."
+    },
+    "baoMichelin": {
+      "title": "MICHELIN Guide — Bao Li Xuan",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "Two Michelin stars in the 2026 Shanghai Guide.",
+      "limitation": "Recheck the Guide before travel because awards can change by edition."
+    },
+    "bvlgariInstagram": {
+      "title": "Bvlgari Hotels & Resorts — Instagram",
+      "url": "https://www.instagram.com/bvlgarihotels/",
+      "type": "official brand social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "Official Bvlgari Hotels & Resorts account identified by Bvlgari’s official website.",
+      "limitation": "Brand-level account; no Bao Li Xuan or Il Ristorante-specific post was confirmed."
+    },
+    "bvlgariYoutube": {
+      "title": "Bvlgari Hotels & Resorts — YouTube",
+      "url": "https://www.youtube.com/@bvlgarihotels/",
+      "type": "official brand social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "Official Bvlgari Hotels & Resorts account linked from Bvlgari’s official website.",
+      "limitation": "Brand-level account; no Shanghai restaurant-specific video was confirmed."
+    },
+    "ilHotel": {
+      "title": "Bvlgari Hotel Shanghai — Il Ristorante – Niko Romito",
+      "url": "https://www.bulgarihotels.com/en-US/shanghai/dining/il-ristorante-niko-romito",
+      "type": "official restaurant",
+      "checkedOn": "2026-11-25",
+      "supports": "Restaurant location on the 47th floor, booking enquiry form, menu and published lunch/dinner hours.",
+      "limitation": "No Shanghai MICHELIN Guide distinction was verified in the reviewed sources; it is excluded from the verified star count."
+    },
+    "ilMenu": {
+      "title": "Il Ristorante – Niko Romito — official menu PDF",
+      "url": "https://www.bulgarihotels.com/mgnl/dam/jcr:f9e793b9-d86b-4d73-83a0-ae95cb2ea25a/bvlgari-hotel-shanghai-il-ristorante-niko-romito-menu-en.pdf",
+      "type": "official menu PDF",
+      "checkedOn": "2026-11-25",
+      "supports": "Tasting menu CNY 1,988 per person or CNY 3,488 per person with wine pairing; prices include tax and service fee.",
+      "limitation": "2026 menu snapshot; not a February 2027 offer."
+    },
+    "ritzHotel": {
+      "title": "The Ritz-Carlton Shanghai, Pudong — official hotel overview",
+      "url": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/overview/",
+      "type": "official hotel",
+      "checkedOn": "2026-11-25",
+      "supports": "Lujiazui location and ongoing public-area improvements including the Level 1 lobby and Level 55 spa.",
+      "limitation": "The renovation notice gives no completion date; its effect on February 2027 is unknown."
+    },
+    "ritzSpa": {
+      "title": "The Ritz-Carlton Shanghai, Pudong — official spa and amenities page",
+      "url": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/spa/",
+      "type": "official hotel amenity page",
+      "checkedOn": "2026-11-25",
+      "supports": "Spa on Level 55 with 1,500 m², heated indoor pool, daily spa hours 10:00–22:30, pool hours 06:00–22:00 and fitness-centre hours 06:00–22:00; spa appointment required.",
+      "limitation": "Current page information does not confirm February 2027 hours or when the renovation of the Level 55 spa will be complete."
+    },
+    "ritzRoom": {
+      "title": "The Ritz-Carlton Shanghai, Pudong — official rooms page",
+      "url": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/rooms/",
+      "type": "official room page",
+      "checkedOn": "2026-11-25",
+      "supports": "Guest-room options include one king bed; accessible options mention tubs or roll-in showers.",
+      "limitation": "A private bathroom and exact two-adult capacity for the selected standard room were not explicit in the captured room details."
+    },
+    "ritzDining": {
+      "title": "The Ritz-Carlton Shanghai, Pudong — official dining page",
+      "url": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/dining/",
+      "type": "official dining and award page",
+      "checkedOn": "2026-11-25",
+      "supports": "Hotel restaurant list, published Jin Xuan hours, and one Michelin star award for Jin Xuan in the 2026 Guide.",
+      "limitation": "No dated February 2027 hotel rate or complete couple meal price was verified."
+    },
+    "jinRestaurant": {
+      "title": "Jin Xuan Chinese Restaurant — official website",
+      "url": "https://www.jinxuanchineserestaurantshanghai.com/",
+      "type": "official restaurant",
+      "checkedOn": "2026-11-25",
+      "supports": "One Michelin star in the 2026 Guide, restaurant location, reservations, and operating hours.",
+      "limitation": "Current official menu is à la carte; no fixed complete meal total for two was verified."
+    },
+    "jinMenu": {
+      "title": "Jin Xuan — official à la carte menu PDF (August 2025 file)",
+      "url": "https://mds-assets.marriott.com/cms-platform-for-marriott/shasz-jin-xuan-chinese-restaurant/site-images/migrated-images/202508-jinxuan-menu.pdf",
+      "type": "official menu PDF",
+      "checkedOn": "2026-11-25",
+      "supports": "À la carte dish prices.",
+      "limitation": "The file is dated August 2025 and does not establish a current complete two-person meal price."
+    },
+    "jinMichelin": {
+      "title": "MICHELIN Guide — Jin Xuan",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "Restaurant Guide listing; the restaurant and hotel’s 2026 award statements confirm one star.",
+      "limitation": "Use the 2026 edition label from the restaurant/hotel’s official 2026 award statements."
+    },
+    "ritzInstagram": {
+      "title": "The Ritz-Carlton Shanghai, Pudong — Instagram profile",
+      "url": "https://www.instagram.com/ritzcarltonshanghai/",
+      "type": "related social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "A profile describing The Ritz-Carlton Shanghai, Pudong.",
+      "limitation": "No direct cross-link from the official hotel page was confirmed; venue-specific Jin Xuan video not verified."
+    },
+    "yiHotel": {
+      "title": "The Peninsula Shanghai — Yi Long Court official page",
+      "url": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/yi-long-court",
+      "type": "official restaurant",
+      "checkedOn": "2026-11-25",
+      "supports": "One Michelin star claim, 2/F location, published service times, contact and 2026 menu links.",
+      "limitation": "The page does not state operating days; reconfirm February 2027 service."
+    },
+    "yiMenu": {
+      "title": "Yi Long Court — official 2026 dim sum lunch menu",
+      "url": "https://www.peninsula.com/-/media/files/shanghai/menu/2026/yi-long-court/1029/ylc-dim-sum-lunch-menu-2026.pdf",
+      "type": "official menu PDF",
+      "checkedOn": "2026-11-25",
+      "supports": "Dim sum set lunch CNY 338 per person; menu says prices are subject to a 16.6% surcharge.",
+      "limitation": "The couple total shown in the dashboard is arithmetic from this 2026 menu; it is not a 2027 quote."
+    },
+    "yiMichelin": {
+      "title": "MICHELIN Guide — Yi Long Court",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "One Michelin star in the 2026 Shanghai Guide.",
+      "limitation": "Recheck the Guide before travel because awards can change by edition."
+    },
+    "sirHotel": {
+      "title": "The Peninsula Shanghai — Sir Elly’s official page",
+      "url": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/sir-ellys-restaurant",
+      "type": "official restaurant",
+      "checkedOn": "2026-11-25",
+      "supports": "Restaurant location, Wednesday–Sunday dinner hours, Monday/Tuesday closure exception, contacts and 2026 menu.",
+      "limitation": "A February 2027 reservation and final bill were not checked."
+    },
+    "sirMenu": {
+      "title": "Sir Elly’s — official 2026 menu PDF",
+      "url": "https://www.peninsula.com/-/media/files/shanghai/menu/2026/sir-ellys/0626/new-menu-in-se.pdf",
+      "type": "official menu PDF",
+      "checkedOn": "2026-11-25",
+      "supports": "Signature five-course menu CNY 1,288 per person; menu states prices are subject to a 16.6% surcharge.",
+      "limitation": "The displayed two-person total is calculated from the 2026 menu, not a 2027 price."
+    },
+    "sirMichelin": {
+      "title": "MICHELIN Guide — Sir Elly’s",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "2026 Guide listing; the captured page shows no Michelin-star icon.",
+      "limitation": "Dashboard labels this as Guide-listed with no star shown, not as a starred restaurant."
+    },
+    "penInstagram": {
+      "title": "The Peninsula Shanghai — Instagram profile",
+      "url": "https://www.instagram.com/thepeninsulashanghai/",
+      "type": "related social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "A profile describing itself as The Peninsula Shanghai, a Peninsula Hotels property.",
+      "limitation": "No direct link from the captured hotel page was confirmed; venue-specific restaurant video not verified."
+    },
+    "taianFaq": {
+      "title": "Taian Table — official FAQ and terms",
+      "url": "https://sh.taian-table.cn/faq/",
+      "type": "official restaurant and reservation page",
+      "checkedOn": "2026-11-25",
+      "supports": "Tuesday–Saturday dinner, booking times and duration, 90-day booking window, menu formats, current base prices, cancellation terms, add-ons and all-inclusive pricing.",
+      "limitation": "Menu prices can change with season and products; add-ons can increase the bill; availability for the requested date was not checked."
+    },
+    "taianMichelin": {
+      "title": "MICHELIN Guide — Taian Table",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "Three Michelin stars in the 2026 Shanghai Guide.",
+      "limitation": "Recheck the Guide before travel because awards can change by edition."
+    },
+    "taianInstagram": {
+      "title": "Stefan Stiller — Instagram profile",
+      "url": "https://www.instagram.com/stefan_stiller_taian_table/",
+      "type": "related chef social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "Profile describes its owner as chef/restaurateur of Taian Table.",
+      "limitation": "Chef profile, not a confirmed Taian Table venue account; no February 2027-specific video was confirmed."
+    },
+    "fuMichelin": {
+      "title": "MICHELIN Guide — Fu He Hui",
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "type": "MICHELIN Guide",
+      "checkedOn": "2026-11-25",
+      "supports": "Two Michelin stars in the 2026 Shanghai Guide; vegetarian cuisine and current published hours.",
+      "limitation": "The Guide page does not provide an exact complete meal cost for two; no venue-specific social-video profile was confirmed."
+    },
+    "museumEast": {
+      "title": "Shanghai Museum East — official visit information",
+      "url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
+      "type": "official museum visitor page",
+      "checkedOn": "2026-11-25",
+      "supports": "Regular hours, Tuesday closure, reservation rules, address, metro/bus access and optional audio-guide prices.",
+      "limitation": "No general admission price is stated on the page. Recheck the 2027 calendar and special-exhibition rules."
+    },
+    "museumWest": {
+      "title": "Shanghai Museum on People’s Square — official visit information",
+      "url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "type": "official museum visitor page",
+      "checkedOn": "2026-11-25",
+      "supports": "Regular hours, Monday closure, address, metro/bus access, reservation guidance, current special exhibition, optional audio-guide prices, and official footer links to its Instagram, YouTube and Douyin profiles.",
+      "limitation": "No general admission price is stated on the page. The current exhibition page’s reservation policy must be rechecked for February 2027."
+    },
+    "museumInstagram": {
+      "title": "The Shanghai Museum — Instagram",
+      "url": "https://www.instagram.com/theshanghaimuseum/",
+      "type": "official museum social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "The museum’s official visitor-page footer links this Instagram account.",
+      "limitation": "General museum account, not date-specific opening information."
+    },
+    "museumYoutube": {
+      "title": "The Shanghai Museum — YouTube",
+      "url": "https://www.youtube.com/@theshanghaimuseum",
+      "type": "official museum social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "The museum’s official visitor-page footer links this YouTube account.",
+      "limitation": "General museum account, not date-specific opening information."
+    },
+    "museumDouyin": {
+      "title": "The Shanghai Museum — Douyin",
+      "url": "https://www.douyin.com/user/MS4wLjABAAAAvgW-hMLuZNKCgJaueieZXzqQrEeaAace1q-NmJlZ_oE",
+      "type": "official museum social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "The museum’s official visitor-page footer links this Douyin account.",
+      "limitation": "General museum account, not date-specific opening information."
+    },
+    "disneyHome": {
+      "title": "Shanghai Disney Resort — official homepage",
+      "url": "https://www.shanghaidisneyresort.com/en/",
+      "type": "official attraction and ticketing site",
+      "checkedOn": "2026-11-25",
+      "supports": "Official ticketing channels and current site ticket offer context.",
+      "limitation": "The site’s direct park-hours and ticket-product routes did not expose a 15–22 February 2027 calendar in the captured page."
+    },
+    "disneyTicketFaq": {
+      "title": "Shanghai Disney Resort — official ticket-purchase FAQ",
+      "url": "https://www.shanghaidisneyresort.com/en/faq?fid=ticket-purchase",
+      "type": "official attraction FAQ",
+      "checkedOn": "2026-11-25",
+      "supports": "Official ticket purchase channels and reservation centre contact details.",
+      "limitation": "The FAQ is not a date-specific ticket quote or operating-hours calendar."
+    },
+    "disneyInstagram": {
+      "title": "Shanghai Disneyland — Instagram profile",
+      "url": "https://www.instagram.com/shanghaidisneyresort_park/",
+      "type": "related social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "Profile describes itself as the official Shanghai Disneyland account.",
+      "limitation": "The official website page captured here does not cross-link the profile; use the official site/app for hours and ticketing."
+    },
+    "towerPage": {
+      "title": "Top of Shanghai Observatory — Shanghai Tower official page",
+      "url": "https://en.shanghaitower.com/shagnhai.html",
+      "type": "official attraction page",
+      "checkedOn": "2026-11-25",
+      "supports": "Observatory location and visitor experience details; official ticket channels; inquiry hotline hours.",
+      "limitation": "No current visitor opening schedule or ticket price for the 2027 dates is stated on the captured page. Hotline hours are not attraction hours."
+    },
+    "towerVideo": {
+      "title": "Shanghai Tower — official Video Center",
+      "url": "https://en.shanghaitower.com/microvideo_2/2001.html",
+      "type": "official video page",
+      "checkedOn": "2026-11-25",
+      "supports": "Official Shanghai Tower video list.",
+      "limitation": "This is the venue’s website video page, not a verified YouTube/Instagram account."
+    },
+    "towerInstagram": {
+      "title": "Shanghai Tower — Instagram profile",
+      "url": "https://www.instagram.com/shanghaitower_official/",
+      "type": "related social profile",
+      "checkedOn": "2026-11-25",
+      "supports": "A Shanghai Tower account was found with the handle @shanghaitower_official.",
+      "limitation": "This Instagram account was not cross-linked from the official Tower website in the reviewed pages; treat it as a related profile, not an independently verified official channel."
+    },
+    "metroPlanner": {
+      "title": "Shanghai Metro — official Route & Fare Inquiry",
+      "url": "https://service.shmetro.com/en/",
+      "type": "official transit planner",
+      "checkedOn": "2026-11-25",
+      "supports": "The official English site exposes route, fare and estimated-arrival planning fields.",
+      "limitation": "The interactive form was not submitted in this research session; no hotel-to-restaurant journey time is claimed."
+    },
+    "transportApp": {
+      "title": "Shanghai Municipal Government — Suishenxing transport app information",
+      "url": "https://en.shanghai.gov.cn/nw48081/20231227/8cd749c0719048dbb2d949eaa2f9ad32.html",
+      "type": "official government transport information",
+      "checkedOn": "2026-11-25",
+      "supports": "English-language city transport app information, including metro and bus coverage.",
+      "limitation": "Does not provide the specific route times required for hotel ranking."
+    }
+  },
+  "overview": {
+    "executiveSummary": "Shanghai is a provisional destination and 15–22 February 2027 is a working seven-night comparison window for two adults, not a booking. One official date-specific hotel quote is available: The Peninsula Shanghai’s Deluxe Room, one king bed, at CNY 2,465 average per night on a non-refundable offer, or CNY 2,900 average per night on flexible/other displayed rates. Both displayed rates exclude taxes and fees, so no all-in hotel total is verified. The room information and 2025 hotel fact sheet document a king option, two-adult capacity and marble bathroom, but the final booking still needs a payable total. Other candidates have verified room/location/amenity details but no comparable dated rate. Current 2026 Michelin Guide distinctions and several 2026 menu prices are documented below; they are not promises for February 2027. No subway/bus journey-time matrix was verified, so hotels are deliberately unranked and no one-hour Michelin density is claimed.",
+    "holidayContext": "The official 2027 schedule lists the Spring Festival break as 5–13 February, with 14 February a make-up workday. The working check-in date is 15 February, after that break; this does not guarantee hotel pricing, restaurant opening, or attraction schedules.",
+    "findings": [
+      {
+        "title": "One dated hotel quote; no verified all-in bill",
+        "text": "The Peninsula quote is for 15–22 February 2027, two adults, one room and a king bed. CNY 2,465 × 7 = CNY 17,255 before taxes/fees on the non-refundable offer; CNY 2,900 × 7 = CNY 20,300 before taxes/fees on the flexible Premier Rate. These are arithmetic from displayed average nightly rates, not checkout totals.",
+        "status": "partial",
+        "sources": ["penRates", "penRoom", "penFactSheet"]
+      },
+      {
+        "title": "No defensible overall hotel rank yet",
+        "text": "Langham, Bvlgari and Ritz-Carlton do not have a comparable dated official rate. The one-hour public-transit restaurant catchment is also unverified. Property-area convenience and on-site dining are shown as context, not as a transit score.",
+        "status": "unverified",
+        "sources": ["langhamHotel", "bvlgariHotel", "ritzHotel", "metroPlanner"]
+      },
+      {
+        "title": "Six current 2026-starred restaurants in this researched set",
+        "text": "The 2026 Guide pages show T’ang Court (2 stars), Bao Li Xuan (2), Yi Long Court (1), Jin Xuan (1), Taian Table (3) and Fu He Hui (2). Sir Elly’s is listed in the 2026 Guide, but the captured page shows no star icon. Il Ristorante – Niko Romito’s Shanghai Guide distinction was not verified and is not counted.",
+        "status": "verified-current-edition",
+        "sources": ["langhamMichelin", "baoMichelin", "yiMichelin", "jinMichelin", "taianMichelin", "fuMichelin", "sirMichelin", "ilHotel"]
+      },
+      {
+        "title": "Menus are useful 2026 snapshots, not 2027 guarantees",
+        "text": "Official menu prices support example set-menu totals for two at T’ang Court, Bao Li Xuan, Il Ristorante, Yi Long Court and Sir Elly’s. Taian Table’s current FAQ lists base tasting-menu prices and says add-ons can increase the bill. Menu versions, opening days and availability must be rechecked before reserving.",
+        "status": "verified-current-menu",
+        "sources": ["langhamMenu", "baoMenu", "ilMenu", "yiMenu", "sirMenu", "taianFaq"]
+      },
+      {
+        "title": "Museum weekly schedules are published; 2027 operation still needs a final check",
+        "text": "The People’s Square museum is normally closed Monday; Shanghai Museum East is normally closed Tuesday. The published current schedule maps to the sample week, but future holiday, exhibition and opening-hour changes must be checked before visiting.",
+        "status": "verified-current-schedule",
+        "sources": ["museumEast", "museumWest", "holiday"]
+      }
+    ],
+    "stats": [
+      {"value": "7 nights", "label": "Working stay", "note": "15–22 Feb 2027 · two adults", "sources": ["penRates", "holiday"]},
+      {"value": "1 of 4", "label": "Dated hotel quotes", "note": "Official, but before taxes/fees", "sources": ["penRates", "langhamHotel", "bvlgariHotel", "ritzHotel"]},
+      {"value": "6", "label": "2026-starred venues", "note": "Within the researched restaurant set only", "sources": ["langhamMichelin", "baoMichelin", "yiMichelin", "jinMichelin", "taianMichelin", "fuMichelin"]},
+      {"value": "Not scored", "label": "Transit Michelin density", "note": "No route times verified", "sources": ["metroPlanner"]}
+    ],
+    "bookingTiming": "No reliable evidence identifies the cheapest future booking date across hotels. The Peninsula page currently says ‘Book before 8 Dec’ for its New Year offer; it is non-refundable and its taxes/fees are excluded. The Langham offer previously seen with a 14 November 2026 booking deadline has expired. Neither deadline predicts future pricing at other hotels.",
+    "bookingTimingSources": ["penRates", "langhamOffers"]
+  },
+  "hotels": [
+    {
+      "id": "peninsula",
+      "name": "The Peninsula Shanghai",
+      "area": "The Bund · Huangpu",
+      "location": "Official hotel description places it on the Bund riverfront promenade.",
+      "room": "Deluxe Room",
+      "bed": "The dated booking result selected one king bed; the room page lists king or twin configurations.",
+      "capacity": "Up to two adults, confirmed on the Deluxe Room page.",
+      "bathroom": {
+        "status": "partial",
+        "text": "The official hotel fact sheet says all accommodation includes deluxe marble bathrooms with walk-in showers and baths, but does not use the exact words ‘private bathroom’. Treat en-suite/private status as unconfirmed until the hotel confirms the selected room."
+      },
+      "amenities": [
+        "25 m indoor heated pool",
+        "Spa and wellness centre of more than 1,250 m² (2025 fact sheet)",
+        "Four hotel restaurants/lounges listed on the fact sheet"
+      ],
+      "quote": {
+        "status": "partial",
+        "dateRange": "15–22 February 2027 · 7 nights",
+        "guests": "2 adults · 1 room · 1 king bed",
+        "lowestRateLabel": "A Gift for the New Year",
+        "lowestNightlyAverage": "CNY 2,465",
+        "lowestPreTaxSevenNightMath": "CNY 17,255",
+        "flexibleRateLabel": "Peninsula Premier Rate",
+        "flexibleNightlyAverage": "CNY 2,900",
+        "flexiblePreTaxSevenNightMath": "CNY 20,300",
+        "otherRate": "Discover Shanghai: CNY 2,900 average/night; daily breakfast and CNY 1,800 hotel credit are listed.",
+        "allInPayableTotal": null,
+        "taxesAndFees": "Excluded from displayed average nightly rates; final total unverified.",
+        "offerDeadline": "Offer wording: ‘Book before 8 Dec’; exact cutoff time is not stated.",
+        "terms": "New Year offer: breakfast for up to two and Peninsula Time; non-refundable/non-amendable. Premier Rate: free cancellation/modification is listed; detailed cutoff terms were not captured."
+      },
+      "onPropertyRestaurants": ["Yi Long Court — 1 Michelin star (2026)", "Sir Elly’s — 2026 Guide-listed; no star icon shown on captured Guide page"],
+      "transitScore": null,
+      "rankStatus": "not ranked",
+      "notes": "Only usable dated hotel quote in the comparison. Price is not an all-in seven-night total.",
+      "sources": ["penHotel", "penRoom", "penFactSheet", "penRates", "yiHotel", "yiMichelin", "sirHotel", "sirMichelin"]
+    },
+    {
+      "id": "langham",
+      "name": "The Langham, Shanghai, Xintiandi",
+      "area": "Xintiandi · Huangpu",
+      "location": "Official page describes the hotel as centrally located and about a two-minute walk from Lines 1, 10, 13 and 14.",
+      "room": "Superior Room",
+      "bed": "King or twin beds; select king when booking.",
+      "capacity": "Up to three guests on the official room page.",
+      "bathroom": {
+        "status": "partial",
+        "text": "The room-specific amenities list a marble bathroom with separate rain shower and heated bathroom floor, but do not explicitly state ‘private bathroom’. Treat en-suite/private status as unconfirmed; confirm it for the selected room and bed configuration."
+      },
+      "amenities": [
+        "Indoor swimming pool",
+        "Chuan Spa",
+        "24-hour fitness centre"
+      ],
+      "quote": {
+        "status": "unverified",
+        "dateRange": "15–22 February 2027 requested",
+        "guests": "2 adults requested",
+        "lowestNightlyAverage": null,
+        "lowestPreTaxSevenNightMath": null,
+        "allInPayableTotal": null,
+        "taxesAndFees": null,
+        "terms": "No usable dated quote. Official booking attempts returned unrelated default dates/guest count. A previous official offer with a 14 November 2026 booking deadline is expired. Current offers do not provide a verified February quote."
+      },
+      "onPropertyRestaurants": ["T’ang Court — 2 Michelin stars (2026)"],
+      "transitScore": null,
+      "rankStatus": "not ranked",
+      "notes": "A room feature and nearby metro lines are verified, but no dated rate or hotel-to-restaurant transit journey time is verified.",
+      "sources": ["langhamHotel", "langhamRoom", "langhamOffers", "langhamDining", "langhamMichelin"]
+    },
+    {
+      "id": "bvlgari",
+      "name": "Bvlgari Hotel Shanghai",
+      "area": "Suhe Creek · Jing’an edge",
+      "location": "Official hotel page places the property on the Suhe Creek waterfront and describes the historic Chamber of Commerce building as part of the hotel complex.",
+      "room": "Deluxe Room",
+      "bed": "King bed; 52 m² on the official room page.",
+      "capacity": "Maximum occupancy for the selected room was not stated in the captured official room page; verify for two adults.",
+      "bathroom": {
+        "status": "partial",
+        "text": "Room features list a walk-in rain shower, his-and-hers basins and a heated toilet. The page does not explicitly say ‘private bathroom’; confirm that the booked room has its own bathroom."
+      },
+      "amenities": [
+        "2,000 m² spa and fitness centre",
+        "25 m indoor heated pool",
+        "Bao Li Xuan and Il Ristorante – Niko Romito on property/complex"
+      ],
+      "quote": {
+        "status": "unverified",
+        "dateRange": "15–22 February 2027 requested",
+        "guests": "2 adults requested",
+        "lowestNightlyAverage": null,
+        "lowestPreTaxSevenNightMath": null,
+        "allInPayableTotal": null,
+        "taxesAndFees": null,
+        "terms": "The official dated booking attempt returned general hotel information, not room availability or a rate."
+      },
+      "onPropertyRestaurants": ["Bao Li Xuan — 2 Michelin stars (2026)", "Il Ristorante – Niko Romito — Shanghai Guide distinction not verified"],
+      "transitScore": null,
+      "rankStatus": "not ranked",
+      "notes": "Verify two-adult occupancy, private bathroom wording and a seven-night dated quote before comparing.",
+      "sources": ["bvlgariHotel", "bvlgariRoom", "bvlgariSpa", "baoHotel", "baoMichelin", "ilHotel"]
+    },
+    {
+      "id": "ritz",
+      "name": "The Ritz-Carlton Shanghai, Pudong",
+      "area": "Lujiazui · Pudong",
+      "location": "Official page places the hotel in the Lujiazui financial and retail area in the upper floors of a 58-floor tower.",
+      "room": "Guest room — one king option",
+      "bed": "One king bed is listed on the official rooms page.",
+      "capacity": "Two-adult capacity for the selected standard room was not explicit in the captured room detail; verify.",
+      "bathroom": {
+        "status": "unverified",
+        "text": "The official room page describes accessible tubs/roll-in showers for room types and marble bathrooms for suites, but does not explicitly confirm a private bathroom for the selected standard king guest room."
+      },
+      "amenities": [
+        "Heated indoor pool: daily 06:00–22:00 on the current official page",
+        "Ritz-Carlton Spa: daily 10:00–22:30; appointment required",
+        "Fitness centre: daily 06:00–22:00; the page says in-house guests have 24-hour access",
+        "Club Lounge access depends on room/rate; not assumed included",
+        "Official notice says selected public areas, including the Level 1 lobby and Level 55 spa, are undergoing improvements; completion date not stated"
+      ],
+      "amenitiesReview": "Current schedules are not a February 2027 confirmation; the spa page and overview note public-area improvements without a completion date.",
+      "quote": {
+        "status": "unverified",
+        "dateRange": "15–22 February 2027 requested",
+        "guests": "2 adults requested",
+        "lowestNightlyAverage": null,
+        "lowestPreTaxSevenNightMath": null,
+        "allInPayableTotal": null,
+        "taxesAndFees": null,
+        "terms": "No dated rate was verified. The official Marriott reservation attempt returned an expired-session page rather than a quote."
+      },
+      "onPropertyRestaurants": ["Jin Xuan — 1 Michelin star (2026)"],
+      "transitScore": null,
+      "rankStatus": "not ranked",
+      "notes": "Renovation effects in February 2027, private-bathroom status and dated total remain unresolved.",
+      "sources": ["ritzHotel", "ritzRoom", "ritzSpa", "ritzDining", "jinRestaurant", "jinMichelin"]
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "tang-court",
+      "name": "T’ang Court",
+      "cluster": "The Langham, Shanghai, Xintiandi",
+      "onProperty": true,
+      "cuisine": "Cantonese",
+      "michelin": {
+        "status": "2 Michelin stars · 2026 Shanghai Guide",
+        "kind": "starred",
+        "stars": 2,
+        "guideYear": 2026
+      },
+      "address": "5/F, The Langham Xintiandi, 99 Madang Road, Huangpu.",
+      "coupleCost": {
+        "value": "CNY 888 (classic dim sum set for two) or CNY 2,288 (all-day set for two)",
+        "status": "verified-menu-snapshot",
+        "basis": "Official 2026 menu PDF; prices include service charge and tax.",
+        "limitation": "2026 menu only; February 2027 menu, prices and availability are unconfirmed."
+      },
+      "hours": "Lunch 11:30–14:00; dinner 17:30–21:00. The page says ‘daily’ and also ‘Off on Monday’—confirm Monday service.",
+      "booking": "Official page lists +86 21 2330 2430 and tlshx.tanghostess@langhamhotels.com; online reservation link is also provided.",
+      "transitVerification": null,
+      "social": ["langhamInstagram"],
+      "socialNote": "Brand-level Instagram only; no T’ang Court-specific video verified.",
+      "sources": ["langhamDining", "langhamMichelin", "langhamMenu"]
+    },
+    {
+      "id": "bao-li-xuan",
+      "name": "Bao Li Xuan",
+      "cluster": "Bvlgari Hotel Shanghai",
+      "onProperty": true,
+      "cuisine": "Guangdong/Cantonese",
+      "michelin": {
+        "status": "2 Michelin stars · 2026 Shanghai Guide",
+        "kind": "starred",
+        "stars": 2,
+        "guideYear": 2026
+      },
+      "address": "3/F, historic Shanghai Chamber of Commerce building within the Bvlgari Hotel complex.",
+      "coupleCost": {
+        "value": "CNY 3,576 for two (2 × CNY 1,788 Autumn set menu)",
+        "status": "verified-menu-snapshot",
+        "basis": "Official menu PDF lists CNY 1,788 per person and says prices include service fee and tax.",
+        "limitation": "Seasonal menu snapshot; not a February 2027 offer or reservation quote."
+      },
+      "hours": "Lunch 11:30–14:00; dinner 17:30–22:00. Operating days are not stated in the captured official hours block.",
+      "booking": "Official Bvlgari page includes a restaurant enquiry form and menu links.",
+      "transitVerification": null,
+      "social": ["bvlgariInstagram", "bvlgariYoutube"],
+      "socialNote": "Official Bvlgari brand accounts; restaurant-specific posts were not confirmed.",
+      "sources": ["baoHotel", "baoMichelin", "baoMenu"]
+    },
+    {
+      "id": "il-ristorante",
+      "name": "Il Ristorante – Niko Romito",
+      "cluster": "Bvlgari Hotel Shanghai",
+      "onProperty": true,
+      "cuisine": "Italian",
+      "michelin": {
+        "status": "Shanghai MICHELIN Guide distinction not verified; excluded from starred count",
+        "kind": "unverified",
+        "stars": null,
+        "guideYear": null
+      },
+      "address": "47th floor, Bvlgari Hotel Shanghai.",
+      "coupleCost": {
+        "value": "CNY 3,976 for two (tasting menu); CNY 6,976 for two with wine pairing",
+        "status": "verified-menu-snapshot",
+        "basis": "Official menu lists CNY 1,988 per person, or CNY 3,488 per person including wine pairing; tax and service fee included.",
+        "limitation": "2026 menu snapshot; not a February 2027 offer."
+      },
+      "hours": "Lunch 12:00–14:30; dinner 18:00–22:00. Operating days are not stated in the captured official page.",
+      "booking": "Official Bvlgari restaurant enquiry form; menu and contact options are on the restaurant page.",
+      "transitVerification": null,
+      "social": ["bvlgariInstagram", "bvlgariYoutube"],
+      "socialNote": "Official Bvlgari brand accounts; restaurant-specific posts were not confirmed.",
+      "sources": ["ilHotel", "ilMenu"]
+    },
+    {
+      "id": "yi-long-court",
+      "name": "Yi Long Court",
+      "cluster": "The Peninsula Shanghai",
+      "onProperty": true,
+      "cuisine": "Cantonese",
+      "michelin": {
+        "status": "1 Michelin star · 2026 Shanghai Guide",
+        "kind": "starred",
+        "stars": 1,
+        "guideYear": 2026
+      },
+      "address": "2/F, The Peninsula Shanghai, The Bund.",
+      "coupleCost": {
+        "value": "CNY 788.22 for two (2 × CNY 338 plus 16.6% surcharge; calculated)",
+        "status": "verified-menu-calculation",
+        "basis": "Official 2026 dim sum lunch menu lists CNY 338 per person and a 16.6% surcharge. Calculation: CNY 676 × 1.166 = CNY 788.216, rounded to CNY 788.22.",
+        "limitation": "2026 menu snapshot; verify no other charges and recheck the 2027 menu."
+      },
+      "hours": "Lunch 11:30–14:30; dinner 18:00–22:30. Operating days are not stated on the captured official page.",
+      "booking": "Official Peninsula booking form, phone +86 21 2327 6742, and yilongcourtpsh@peninsula.com.",
+      "transitVerification": null,
+      "social": ["penInstagram"],
+      "socialNote": "Related Peninsula Shanghai Instagram profile; no Yi Long Court-specific video or official-site cross-link verified.",
+      "sources": ["yiHotel", "yiMichelin", "yiMenu"]
+    },
+    {
+      "id": "sir-ellys",
+      "name": "Sir Elly’s Restaurant",
+      "cluster": "The Peninsula Shanghai",
+      "onProperty": true,
+      "cuisine": "Northern Italian",
+      "michelin": {
+        "status": "Listed in the 2026 MICHELIN Guide; no star icon shown on the captured page",
+        "kind": "guide-listed",
+        "stars": 0,
+        "guideYear": 2026
+      },
+      "address": "13/F, The Peninsula Shanghai.",
+      "coupleCost": {
+        "value": "CNY 3,003.62 for two (signature five-course menu; calculated with 16.6% surcharge)",
+        "status": "verified-menu-calculation",
+        "basis": "Official 2026 menu lists CNY 1,288 per person and says prices are subject to a 16.6% surcharge. Calculation: CNY 2,576 × 1.166 = CNY 3,003.616, rounded to CNY 3,003.62.",
+        "limitation": "2026 menu snapshot; verify no other charges and recheck the 2027 menu."
+      },
+      "hours": "Dinner 18:00–22:30 Wednesday–Sunday. Closed Monday and Tuesday, except public holidays (per official page).",
+      "booking": "Official Peninsula booking form, phone +86 21 2327 6756, and restaurant email on the venue page.",
+      "transitVerification": null,
+      "social": ["penInstagram"],
+      "socialNote": "Related Peninsula Shanghai Instagram profile; no Sir Elly’s-specific video or official-site cross-link verified.",
+      "sources": ["sirHotel", "sirMichelin", "sirMenu"]
+    },
+    {
+      "id": "jin-xuan",
+      "name": "Jin Xuan Chinese Restaurant",
+      "cluster": "The Ritz-Carlton Shanghai, Pudong",
+      "onProperty": true,
+      "cuisine": "Cantonese",
+      "michelin": {
+        "status": "1 Michelin star · 2026 Shanghai Guide",
+        "kind": "starred",
+        "stars": 1,
+        "guideYear": 2026
+      },
+      "address": "53/F, The Ritz-Carlton Shanghai, Pudong (official restaurant page also describes the 52nd floor in its address block).",
+      "coupleCost": {
+        "value": null,
+        "status": "unverified",
+        "basis": "Official menu is à la carte and contains individual dish prices, but no complete set or representative couple basket was selected.",
+        "limitation": "No exact two-person meal total is stated; no sample order has been invented."
+      },
+      "hours": "Sun–Thu 11:30–14:30 and 17:30–21:30; Fri–Sat 11:30–14:30 and 17:30–22:00.",
+      "booking": "Official reservation form; phone +86 21 2020 1717 and restaurantrsvn.pudong@ritzcarlton.com.",
+      "transitVerification": null,
+      "social": ["ritzInstagram"],
+      "socialNote": "Related hotel Instagram profile; official-site cross-link and Jin Xuan-specific video were not confirmed.",
+      "sources": ["jinRestaurant", "jinMichelin", "ritzDining", "jinMenu"]
+    },
+    {
+      "id": "taian-table",
+      "name": "Taian Table",
+      "cluster": "Independent restaurant · Changning",
+      "onProperty": false,
+      "cuisine": "Innovative tasting menu",
+      "michelin": {
+        "status": "3 Michelin stars · 2026 Shanghai Guide",
+        "kind": "starred",
+        "stars": 3,
+        "guideYear": 2026
+      },
+      "address": "101–102, Building 1, Garden Office, 161 Lane 465 Zhenning Road, Changning (MICHELIN Guide listing).",
+      "coupleCost": {
+        "value": "CNY 5,176 for two (10 courses) or CNY 5,776 for two (12 courses), before any add-on supplement",
+        "status": "verified-current-faq-calculation",
+        "basis": "Official FAQ: CNY 2,588 per person for 10 courses or CNY 2,888 per person for 12; prices are all-inclusive. Couple totals are multiplication by two.",
+        "limitation": "FAQ says prices may change with season/products and add-ons may cost extra; February 2027 availability was not checked."
+      },
+      "hours": "Dinner Tuesday–Saturday only; first booking 18:00, last booking 20:00; dinner lasts 2–3 hours.",
+      "booking": "Official website booking system; reservations accepted up to 90 days ahead. Availability not checked. The requested dates were 82–89 days away on 25 November 2026.",
+      "transitVerification": null,
+      "social": ["taianInstagram"],
+      "socialNote": "Chef/owner-related Instagram profile, not a confirmed venue account.",
+      "sources": ["taianFaq", "taianMichelin"]
+    },
+    {
+      "id": "fu-he-hui",
+      "name": "Fu He Hui",
+      "cluster": "Independent restaurant · Changning",
+      "onProperty": false,
+      "cuisine": "Vegetarian",
+      "michelin": {
+        "status": "2 Michelin stars · 2026 Shanghai Guide",
+        "kind": "starred",
+        "stars": 2,
+        "guideYear": 2026
+      },
+      "address": "1037 Yuyuan Road, Changning (MICHELIN Guide listing).",
+      "coupleCost": {
+        "value": null,
+        "status": "unverified",
+        "basis": "The official Guide page shows its price band and current hours, but no exact meal price for two.",
+        "limitation": "No official current menu with a complete couple total was verified."
+      },
+      "hours": "Daily 11:00–13:00 and 17:30–21:00 (current MICHELIN Guide listing).",
+      "booking": "The MICHELIN Guide page says the restaurant manages its own bookings and lists +86 21 3980 9188.",
+      "transitVerification": null,
+      "social": [],
+      "socialNote": "No official YouTube, Instagram or Douyin profile was confirmed in this research pass.",
+      "sources": ["fuMichelin"]
+    }
+  ],
+  "activities": [
+    {
+      "id": "museum-east",
+      "name": "Shanghai Museum East",
+      "type": "Museum",
+      "address": "1952 Century Avenue, Pudong.",
+      "hours": "Wednesday–Monday 10:00–18:00; last entry 17:00.",
+      "closures": "Closed Tuesday, except national holidays.",
+      "dateFit": "Using the published weekly schedule only: open Mon 15 Feb; closed Tue 16 Feb; open Wed 17–Mon 22 Feb 2027. This is a calendar mapping, not a future operating confirmation.",
+      "admissionCost": null,
+      "costStatus": "unverified",
+      "optionalCosts": "Audio guide: CNY 20 for Chinese or CNY 40 for English per set for permanent exhibitions; smart audio for special exhibitions may cost extra.",
+      "reservation": "Individual reservation is generally not required. Advance reservations are required for The Curio-City and Digital Gallery; special exhibitions may be ticketed. Groups of 20+ require a phone reservation seven days ahead.",
+      "transport": "Official page lists Metro Line 2 to Shanghai Science & Technology Museum (Exit 8), Line 4 to Xiangcheng Road (Exit 2), Line 6 to Pudian Road (Exit 1), and bus routes.",
+      "media": ["museumInstagram", "museumYoutube", "museumDouyin"],
+      "sources": ["museumEast"]
+    },
+    {
+      "id": "museum-west",
+      "name": "Shanghai Museum on People’s Square",
+      "type": "Museum",
+      "address": "201 Ren Min Da Dao, Huangpu; South Entrance on Wusheng Road.",
+      "hours": "Tuesday–Sunday 09:00–17:00; last entry 15:00. Day-and-evening sessions to 21:00 are also described, but future evening sessions must be checked.",
+      "closures": "Closed Monday, except national holidays.",
+      "dateFit": "Using the published weekly schedule only: closed Mon 15 Feb; open Tue 16–Sun 21 Feb; closed Mon 22 Feb 2027. This is a calendar mapping, not a future operating confirmation.",
+      "admissionCost": null,
+      "costStatus": "unverified",
+      "optionalCosts": "English audio-guide rental CNY 40 per set; the page lists a CNY 400/USD 50/passport deposit for foreign-language devices. Temporary-exhibition guides may be separate.",
+      "reservation": "The official page says advance ticket reservation is required during the ‘Ancient Civilizations of the Americas’ exhibition, scheduled 9 July 2026–14 November 2027. Confirm the February 2027 ticketing rule before visiting.",
+      "transport": "Official page lists Lines 1, 2 or 8 to People’s Square (Exit 1), Line 14 to Dashijie (Exit 4), and bus routes.",
+      "media": ["museumInstagram", "museumYoutube", "museumDouyin"],
+      "sources": ["museumWest"]
+    },
+    {
+      "id": "disneyland",
+      "name": "Shanghai Disneyland",
+      "type": "Theme park",
+      "address": "Shanghai Disney Resort, Pudong.",
+      "hours": null,
+      "closures": "Date-specific February 2027 park hours were not available in the reviewed official page; check the official Park Hours calendar close to the visit.",
+      "dateFit": "Not scheduled/verified for 15–22 February 2027.",
+      "admissionCost": null,
+      "costStatus": "unverified",
+      "optionalCosts": "The official site showed a current ‘starting from CNY 475’ ticket offer when checked; that is not a price for the requested 2027 dates.",
+      "reservation": "Use the official website/app/WeChat or listed official partners only. The direct park-hours/ticket routes did not return a date-specific 2027 result in the captured page.",
+      "transport": "Exact hotel-to-park transit time not researched; use official city transport information and the resort’s own arrival guidance.",
+      "media": ["disneyInstagram"],
+      "socialNote": "The profile identifies itself as the official Shanghai Disneyland account, but was not cross-linked from the reviewed official homepage; use the official site/app for ticketing and hours.",
+      "sources": ["disneyHome", "disneyTicketFaq"]
+    },
+    {
+      "id": "shanghai-tower",
+      "name": "Top of Shanghai Observatory · Shanghai Tower",
+      "type": "Observation deck / landmark",
+      "address": "Shanghai Tower, Lujiazui, Pudong; observatory on the 118th floor.",
+      "hours": null,
+      "closures": "The official page does not state an observatory opening schedule for the requested 2027 dates.",
+      "dateFit": "The official inquiry hotline is listed as Monday–Sunday 09:00–18:00; these are enquiry hours, not visit hours.",
+      "admissionCost": null,
+      "costStatus": "unverified",
+      "optionalCosts": "No official admission price was present in the captured attraction page.",
+      "reservation": "Official page lists Ctrip, LY.com, Lvmama, Meituan and Dianping as online ticket channels; confirm the 2027 product and price with the attraction.",
+      "transport": "Specific public-transit time from candidate hotels not verified.",
+      "media": ["towerVideo", "towerInstagram"],
+      "socialNote": "The Video Center is on the official Tower site; the Instagram profile was found by search but is not cross-linked from that site.",
+      "sources": ["towerPage"]
+    }
+  ],
+  "calendar": [
+    {"date": "2027-02-15", "day": "Monday", "museumEast": "Open on published regular schedule", "museumWest": "Closed on published regular schedule"},
+    {"date": "2027-02-16", "day": "Tuesday", "museumEast": "Closed on published regular schedule", "museumWest": "Open on published regular schedule"},
+    {"date": "2027-02-17", "day": "Wednesday", "museumEast": "Open on published regular schedule", "museumWest": "Open on published regular schedule"},
+    {"date": "2027-02-18", "day": "Thursday", "museumEast": "Open on published regular schedule", "museumWest": "Open on published regular schedule"},
+    {"date": "2027-02-19", "day": "Friday", "museumEast": "Open on published regular schedule", "museumWest": "Open on published regular schedule"},
+    {"date": "2027-02-20", "day": "Saturday", "museumEast": "Open on published regular schedule", "museumWest": "Open on published regular schedule"},
+    {"date": "2027-02-21", "day": "Sunday", "museumEast": "Open on published regular schedule", "museumWest": "Open on published regular schedule"},
+    {"date": "2027-02-22", "day": "Monday", "museumEast": "Open on published regular schedule", "museumWest": "Closed on published regular schedule"}
+  ],
+  "calendarSources": ["museumEast", "museumWest", "holiday"],
+  "transit": {
+    "status": "unverified",
+    "note": "No hotel-to-Michelin restaurant subway/bus time or fare is asserted. The Shanghai Metro English route/fare form is available for manual route testing, but no interactive route result was captured.",
+    "officialPlannerSources": ["metroPlanner", "transportApp"],
+    "rankingRule": "Do not count on-property restaurants as a verified subway/bus catchment. Keep same-building dining separate from one-hour public-transit density until route outputs are recorded."
+  },
+  "suggestions": [
+    {
+      "title": "Keep the sample dates, but treat the Peninsula number as pre-tax only",
+      "text": "If considering the current New Year offer, first ask the hotel to confirm the Deluxe Room’s private bathroom, the exact all-in total for two adults and seven nights, and the precise ‘Book before 8 Dec’ cutoff. Compare the non-refundable terms against the flexible rate before deciding.",
+      "kind": "review before booking",
+      "sources": ["penRates", "penRoom", "penFactSheet"]
+    },
+    {
+      "title": "Request same-date quotes from all four hotels",
+      "text": "Use 15–22 February 2027, two adults, one room, one king bed, private bathroom, seven nights, and request a final payable total with taxes/fees and cancellation terms. Do not rank hotels until the missing quotes are comparable.",
+      "kind": "research next step",
+      "sources": ["penRates", "langhamHotel", "bvlgariHotel", "ritzHotel"]
+    },
+    {
+      "title": "Build the Michelin score only after route checks",
+      "text": "For each hotel and restaurant, save a dated result from the official Shanghai Metro Route & Fare Inquiry (or another clearly documented official transit result). Record start station, end station, planned time, transfers, fare and estimated duration; otherwise leave the one-hour count blank.",
+      "kind": "research next step",
+      "sources": ["metroPlanner", "transportApp"]
+    },
+    {
+      "title": "Use hotel dining as a shortlist, not a citywide cluster score",
+      "text": "T’ang Court, Bao Li Xuan, Yi Long Court and Jin Xuan are verified hotel-property Michelin-star options in the 2026 edition. Their convenient location may help, but this does not establish the number of other starred or Guide-listed restaurants reachable within one hour by transit.",
+      "kind": "shortlist suggestion",
+      "sources": ["langhamMichelin", "baoMichelin", "yiMichelin", "jinMichelin"]
+    },
+    {
+      "title": "Schedule museum visits around the published weekly closures",
+      "text": "The current pages show People’s Square closed Mondays and Shanghai Museum East closed Tuesdays. The sample-week calendar below maps those rules to 2027 dates; reconfirm the museum announcements, evening sessions and exhibition ticket rules before travel.",
+      "kind": "itinerary suggestion",
+      "sources": ["museumEast", "museumWest", "holiday"]
+    },
+    {
+      "title": "Check Taian Table availability now if it is a priority",
+      "text": "Its FAQ says reservations are accepted up to 90 days ahead. On 25 November 2026, the sample stay dates are 82–89 days away. This makes the dates fall within the published booking window, but no seat availability or confirmed reservation was checked.",
+      "kind": "reservation suggestion",
+      "sources": ["taianFaq"]
+    },
+    {
+      "title": "Recheck prices, awards and activity calendars closer to the trip",
+      "text": "The menus are 2026 snapshots, Michelin status is the 2026 edition, and activity pages do not provide exact February 2027 ticket prices/hours for all venues. Reconfirm official menus, reservations, attraction schedules and any hotel renovation notices before payment.",
+      "kind": "review before booking",
+      "sources": ["langhamMenu", "baoMenu", "yiMenu", "sirMenu", "disneyHome", "towerPage", "ritzHotel"]
+    }
+  ],
+  "openQuestions": [
+    {
+      "topic": "Destination confirmation",
+      "known": "Shanghai is the current research candidate, but the vacation request did not specify a city.",
+      "unknown": "Whether Shanghai is the preferred China destination versus other cities.",
+      "resolve": "Keep Shanghai provisional; compare other destinations only if the research brief is expanded. No user input is required to preserve the current working plan.",
+      "priority": "medium",
+      "sources": ["penHotel", "langhamHotel", "bvlgariHotel", "ritzHotel"]
+    },
+    {
+      "topic": "Comparable seven-night hotel prices",
+      "known": "One Peninsula quote exists for 15–22 February 2027 and excludes taxes/fees.",
+      "unknown": "Dated all-in totals, room inventory, king availability and cancellation terms for Langham, Bvlgari and Ritz-Carlton; Peninsula’s payable total is also unknown.",
+      "resolve": "Run each official booking engine with the same dates, two adults and one king room; save the final checkout/quote page and fee breakdown.",
+      "priority": "high",
+      "sources": ["penRates", "langhamHotel", "bvlgariHotel", "ritzHotel"]
+    },
+    {
+      "topic": "Private bathroom and room capacity",
+      "known": "Peninsula’s official fact sheet says all accommodations include marble bathrooms; Langham’s Superior room lists a marble bathroom; Bvlgari lists room bathroom fixtures; Ritz lists a king room.",
+      "unknown": "Explicit private-bathroom wording, two-person occupancy and assigned king-bed confirmation are still needed for the final booked room at each property.",
+      "resolve": "Ask each hotel to confirm the exact room category in writing and check the final confirmation before paying.",
+      "priority": "high",
+      "sources": ["penRoom", "penFactSheet", "langhamRoom", "bvlgariRoom", "ritzRoom"]
+    },
+    {
+      "topic": "Transit-based Michelin density and hotel ranking",
+      "known": "Property areas, hotel access notes and 2026 Guide distinctions are documented.",
+      "unknown": "Verified subway/bus duration, fare and transfers from each hotel to each candidate restaurant; one-hour catchment totals.",
+      "resolve": "Use the official Metro planner for dated/time-specific routes and record results. Keep the ranking blank until equivalent routes and rates are available.",
+      "priority": "high",
+      "sources": ["metroPlanner", "transportApp", "langhamMichelin", "baoMichelin", "yiMichelin", "jinMichelin"]
+    },
+    {
+      "topic": "February 2027 restaurant availability, hours and prices",
+      "known": "Current 2026 Michelin awards, current published operating information and several official menu prices are linked.",
+      "unknown": "Whether awards, menus, opening days, menu prices and reservation availability remain the same in February 2027; T’ang Court has conflicting Monday wording.",
+      "resolve": "Recheck the 2027 Guide and venue pages; contact the restaurant for the exact date, time, set menu and complete bill. Confirm T’ang Court’s Monday schedule.",
+      "priority": "high",
+      "sources": ["langhamDining", "langhamMichelin", "baoHotel", "baoMichelin", "yiHotel", "sirHotel", "jinRestaurant", "taianFaq", "fuMichelin"]
+    },
+    {
+      "topic": "Activity ticket prices and dates",
+      "known": "Museum weekly hours and transport details are published; the People’s Square museum’s current exhibition is dated through November 2027.",
+      "unknown": "General museum admission cost, exact February 2027 ticket/exhibition rules, Disney daily hours/prices and Shanghai Tower visitor hours/price.",
+      "resolve": "Check official museum booking pages and the official Disney Park Hours/ticket calendar when dates are released; ask Shanghai Tower through its listed inquiry channel.",
+      "priority": "medium",
+      "sources": ["museumEast", "museumWest", "disneyHome", "disneyTicketFaq", "towerPage"]
+    },
+    {
+      "topic": "Cheapest upcoming hotel booking time",
+      "known": "Peninsula currently advertises a non-refundable rate with a stated ‘Book before 8 Dec’ deadline; one Langham offer deadline has passed.",
+      "unknown": "No reliable forecast or historical price series establishes when any hotel will be cheapest, and the alternatives have no comparable dated quotes.",
+      "resolve": "Compare live official rates and terms now; treat deadlines as offer expiration dates only, not evidence that waiting or booking now is universally cheapest.",
+      "priority": "medium",
+      "sources": ["penRates", "langhamOffers"]
+    },
+    {
+      "topic": "Venue-specific social/video links",
+      "known": "Some official hotel/museum accounts and related chef/property profiles are linked with verification notes; the museum visitor page directly links Instagram, YouTube and Douyin.",
+      "unknown": "A venue-specific YouTube, Instagram, TikTok or Douyin video profile for every restaurant and activity.",
+      "resolve": "Use only official website-linked profiles where confirmed; otherwise leave the venue-specific social field blank and flag it rather than inferring account ownership.",
+      "priority": "low",
+      "sources": ["langhamInstagram", "bvlgariInstagram", "penInstagram", "ritzInstagram", "taianInstagram", "museumInstagram", "museumYoutube", "museumDouyin", "disneyInstagram", "towerInstagram"]
+    }
+  ]
+}
