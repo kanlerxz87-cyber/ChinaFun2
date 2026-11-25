@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michelin Dining — ChinaFun2</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <div class="brand">🇨🇳 ChinaFun2<small>Shanghai · Feb–Mar 2027 · 2 adults</small></div>
+  <nav class="mainnav" aria-label="Main">
+    <a href="index.html">Dashboard</a>
+    <a href="executive-summary.html">Summary</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="michelin.html">Michelin</a>
+    <a href="activities.html">Activities</a>
+    <a href="costs-booking.html">Costs &amp; Booking</a>
+    <a href="questions.html">Questions</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="flagged.html">Flagged</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <h1>Michelin dining — starred vs listed, with couple totals</h1>
+  <p><strong>Guide:</strong> MICHELIN Guide Shanghai | Jiangsu | Zhejiang 2026 (first regional edition, 9 Apr 2026) — <strong>409 restaurants: 77 starred (1×3★, 14×2★, 62×1★), 164 Bib Gourmand, 168 Selected</strong>. Shanghai alone: 156 listed. <a href="https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang">Official announcement ↗</a></p>
+  <p><strong>Status key:</strong> <span class="badge info">Three / Two / One Star</span> = currently starred · <span class="badge warn">Bib Gourmand</span> = listed, good value, <strong>no star</strong> · <span class="badge warn">Selected (Plate)</span> = listed, <strong>no star</strong>. Couple total = per-person × 2 (food only, excl. drinks/service/tax unless stated). USD at 6.6770 (Fed H.10, 20 Nov 2026).</p>
+
+  <div class="note"><strong>📺 Social links:</strong> YouTube links are direct videos where verified; TikTok/Instagram links are <strong>search URLs</strong> (platforms block stable direct links without an account) — tap to see current posts for that restaurant. Hours/prices marked “Verify” must be re-checked on the linked Michelin page before travel (2027 hours not yet published).</div>
+
+  <div class="toolbar">
+    <input type="search" data-filter="michelin-table" placeholder="Filter dining… (try: Cantonese, vegetarian, 2 stars, Bib)">
+    <span id="michelin-table-count" style="align-self:center;color:var(--muted);font-size:.9rem"></span>
+  </div>
+
+  <div class="table-wrap"><table id="michelin-table" data-sortable>
+    <thead><tr>
+      <th data-sort>Restaurant (district)</th><th data-sort>Status</th><th data-sort>Days open</th><th data-sort>Hours</th>
+      <th data-sort>Exceptions / booking</th><th data-sort>Per person (CNY)</th><th data-sort>Couple total</th>
+      <th data-sort>Official link</th><th data-sort>Video / social</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Taian Table (泰安门)</strong><br>Changning<br><em>Modern European tasting</em></td>
+        <td><span class="badge info">Three Stars</span><br><em>Only 3★ in region</em></td>
+        <td>Tue–Sat<br><em>closed Sun–Mon*</em></td>
+        <td>Dinner only, single seating*</td>
+        <td>Menu changes ~6 wks; deposit ¥2,000/person; book 90 days ahead</td>
+        <td>¥2,888<br><em>¥2,588 (10-course) / ¥2,888 (12-course)</em></td>
+        <td><strong>¥5,776 / $865</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table">Michelin ↗</a><br><a href="https://bookings.taian-table.com/faq">Book / FAQ ↗</a></td>
+        <td><a href="https://www.youtube.com/watch?v=RYsEUZJSrN8">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Taian%20Table%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Taian%20Table%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Canton 8 (喜粤8号)</strong><br>Huangpu<br><em>Cantonese</em></td>
+        <td><span class="badge info">Two Stars</span></td>
+        <td>Mon–Sun (7 days)</td>
+        <td>11:00–14:00, 17:00–21:00</td>
+        <td>Reservation advised; small room. <em>Hours discrepancy flagged — see Flagged page.</em></td>
+        <td>~¥202 <span class="badge warn">est.</span><br><em>range ¥200–350</em></td>
+        <td><strong>¥404 / $61</strong> <em>(range ¥400–700)</em></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/watch?v=MerTf4Wl8Gg">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Canton%208%20Shanghai%20Michelin">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Canton%208%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Fu He Hui (福和慧)</strong><br>Changning<br><em>Vegetarian tasting</em></td>
+        <td><span class="badge info">Two Stars</span><br><em>see Flagged page*</em></td>
+        <td>Mon–Sun (7 days)</td>
+        <td>11:00–13:00, 17:30–21:00</td>
+        <td>Tasting only, no à la carte; book well ahead</td>
+        <td>~¥1,191 <span class="badge warn">est.</span><br><em>range ¥900–1,200</em></td>
+        <td><strong>¥2,382 / $357</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Fu+He+Hui+Shanghai+Michelin">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Fu%20He%20Hui%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>T'ang Court (唐阁)</strong><br>Huangpu<br><em>Cantonese</em></td>
+        <td><span class="badge info">Two Stars</span><br><em>promoted 2026</em></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>Hotel restaurant — confirm with hotel</td>
+        <td>~¥872 <span class="badge warn">est.</span></td>
+        <td><strong>¥1,744 / $261</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Tang+Court+Shanghai+Michelin">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Tang%20Court%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Tang%20Court%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Bao Li Xuan (宝丽轩)</strong><br>Jing'an<br><em>Cantonese</em></td>
+        <td><span class="badge info">Two Stars</span></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>—</td>
+        <td>~¥839 <span class="badge warn">est.</span></td>
+        <td><strong>¥1,678 / $251</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Bao+Li+Xuan+Shanghai">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Bao%20Li%20Xuan%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>8½ Otto e Mezzo Bombana</strong><br>Huangpu (Bund)<br><em>Italian</em></td>
+        <td><span class="badge info">Two Stars</span></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>—</td>
+        <td>— blank —<br><em>no verified price</em></td>
+        <td>— blank —</td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Otto+e+Mezzo+Bombana+Shanghai">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Otto%20e%20Mezzo%20Bombana%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Otto%20e%20Mezzo%20Bombana%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Da Vittorio Shanghai</strong><br>Huangpu (Bund)<br><em>Italian</em></td>
+        <td><span class="badge info">Two Stars</span></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>—</td>
+        <td>— blank —</td><td>— blank —</td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Da+Vittorio+Shanghai+Michelin">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Da%20Vittorio%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Da%20Vittorio%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Lao Zheng Xing (老正兴)</strong><br>Huangpu<br><em>Shanghainese (local)</em></td>
+        <td><span class="badge info">One Star</span></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>Best-value starred local pick</td>
+        <td>~¥148 <span class="badge warn">est.</span></td>
+        <td><strong>¥296 / $44</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Lao+Zheng+Xing+Shanghai">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Lao%20Zheng%20Xing%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Lao%20Zheng%20Xing%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Ren He Guan (仁和馆)</strong><br>Xuhui<br><em>Shanghainese (local)</em></td>
+        <td><span class="badge info">One Star</span></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>—</td>
+        <td>~¥186 <span class="badge warn">est.</span></td>
+        <td><strong>¥372 / $56</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Ren+He+Guan+Shanghai">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Ren%20He%20Guan%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Ren%20He%20Guan%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Jin Xuan (金轩)</strong><br>Pudong<br><em>Cantonese</em></td>
+        <td><span class="badge info">One Star</span></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>Key Pudong starred option</td>
+        <td>~¥708 <span class="badge warn">est.</span></td>
+        <td><strong>¥1,416 / $212</strong></td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Jin+Xuan+Shanghai+Michelin">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Jin%20Xuan%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Jin%20Xuan%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Vivant by Johnny Pham</strong><br><em>Contemporary French</em></td>
+        <td><span class="badge info">One Star</span><br><em>NEW 2026</em></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>New entry — book early; most likely to change</td>
+        <td>— blank —</td><td>— blank —</td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Vivant+Johnny+Pham+Shanghai">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Vivant%20Johnny%20Pham%20Shanghai">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Vivant%20Johnny%20Pham%20Shanghai">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Fabula</strong><br><em>Contemporary European</em></td>
+        <td><span class="badge info">One Star</span><br><em>NEW 2026</em></td>
+        <td>Verify ↗</td><td>Verify ↗</td><td>New entry — book early</td>
+        <td>— blank —</td><td>— blank —</td>
+        <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Fabula+Shanghai+Michelin">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Fabula%20Shanghai%20Michelin">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Fabula%20Shanghai%20Michelin">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>Bib Gourmand list (164 in region)</strong><br><em>Good value, listed</em></td>
+        <td><span class="badge warn">Bib Gourmand — NO star</span></td>
+        <td>Varies ↗</td><td>Varies ↗</td><td>Budget-friendly listed dining between splurges</td>
+        <td>Varies (¥-tier on page)</td><td>Varies</td>
+        <td><a href="https://guide.michelin.com/en/restaurants/bib-gourmand">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Shanghai+Bib+Gourmand+Michelin">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Shanghai%20Bib%20Gourmand">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Bib%20Gourmand">Instagram ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>MICHELIN Selected list (168 in region)</strong><br><em>Listed</em></td>
+        <td><span class="badge warn">Selected — NO star</span></td>
+        <td>Varies ↗</td><td>Varies ↗</td><td>Everyday listed dining</td>
+        <td>Varies</td><td>Varies</td>
+        <td><a href="https://guide.michelin.com/en/restaurants/the-plate-michelin">Michelin ↗</a></td>
+        <td><a href="https://www.youtube.com/results?search_query=Shanghai+Michelin+Selected+restaurants">▶ YouTube ↗</a><br><a href="https://www.tiktok.com/search?q=Shanghai%20Michelin%20Selected">TikTok ↗</a><br><a href="https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Michelin%20Selected">Instagram ↗</a></td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p><em>* Taian Table days/hours: verify on the booking page before travel (2027 schedule not yet published). Fu He Hui star discrepancy (1★ vs 2★ across sources) is detailed on the <a href="flagged.html">Flagged page</a> — the 2026 regional article (2★ retainer) is treated as authoritative.</em></p>
+
+  <h2 class="section">Clusters at a glance (where the stars are)</h2>
+  <div class="table-wrap"><table data-sortable>
+    <thead><tr><th data-sort>Cluster</th><th data-sort>Starred highlights</th><th data-sort>Best for</th><th data-sort>From Bund hotels</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Huangpu (Bund / Nanjing Rd)</strong></td><td>Canton 8 (2★), T'ang Court (2★), Imperial Treasure (2★), Lao Zheng Xing (1★), 8½ Otto e Mezzo (2★), Da Vittorio (2★)</td><td>Highest density; walkable from #1–#4 hotels</td><td>Walk – 20 min</td></tr>
+      <tr><td><strong>Jing'an</strong></td><td>Bao Li Xuan (2★), Tou Zao (2★, promoted), Seventh Son (1★), Sole (1★)</td><td>Cantonese + modern Chinese</td><td>Line 2/7 – ~20 min</td></tr>
+      <tr><td><strong>Changning</strong></td><td>Taian Table (3★), Fu He Hui (2★), Amazing Chinese Cuisine (2★, promoted), Fu 1039/1088 (1★)</td><td>Splurge + vegetarian + Shanghainese</td><td>Line 2/3/4 – ~25 min</td></tr>
+      <tr><td><strong>Pudong (Lujiazui)</strong></td><td>Jin Xuan (1★), Lei Garden Pudong (1★)</td><td>Staying in Pudong; skyline dining</td><td>Line 2 – ~15 min</td></tr>
+      <tr><td><strong>Xuhui / Minhang</strong></td><td>Ren He Guan (1★), Ji Pin Court (2★), Ming Court (1★), Zhou She (1★)</td><td>Local Shanghainese + airport-area dining</td><td>Line 1/9/12 – ~30 min</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<footer>ChinaFun2 · <a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · © <span id="year">2026</span></footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

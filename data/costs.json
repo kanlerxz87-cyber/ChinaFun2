@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "last_verified": "2026-11-25",
+    "exchange_rate_snapshot": "USD/CNY 6.6770 on 2026-11-20 (Federal Reserve H.10, FRED DEXCHUS) — snapshot, not a forecast"
+  },
+  "stay_options": [
+    {"id": "A", "checkin": "2027-02-15 (Mon)", "checkout": "2027-02-22 (Mon)", "nights": 7, "note": "Preferred-window opener. Starts 2 days after Spring Festival ends (13 Feb) + makeup workday 14 Feb. Lowest expected crowds/prices in window."},
+    {"id": "B", "checkin": "2027-02-16 (Tue)", "checkout": "2027-02-23 (Tue)", "nights": 7, "note": "Mid-week check-in (Tue) — typically cheaper than Fri/Sat arrivals per Hotels.com data."},
+    {"id": "C", "checkin": "2027-02-17 (Wed)", "checkout": "2027-02-24 (Wed)", "nights": 7, "note": "Mid-week check-in. Lantern Festival tail (20 Feb) may lift Suzhou/Yu Garden demand — book gardens early."},
+    {"id": "D", "checkin": "2027-02-18 (Thu)", "checkout": "2027-02-25 (Thu)", "nights": 7, "note": "Last preferred-start date. Thu check-in avoids weekend-arrival premium."},
+    {"id": "E", "checkin": "2027-03-01 (Mon)", "checkout": "2027-03-08 (Mon)", "nights": 7, "note": "Early-March alternative: warmer, drier, lower domestic demand than late Feb."},
+    {"id": "F", "checkin": "2027-03-15 (Mon)", "checkout": "2027-03-22 (Mon)", "nights": 7, "note": "Late-window alternative: mildest weather, spring flowers; ends 1 day before window closes (23 Mar)."}
+  ],
+  "booking_windows": [
+    {"window": "12 months out (Feb 2026)", "action": "Set price alerts; shortlist hotels; apply for L-visa early (10-year multi-entry, $140). Most Feb-2027 hotel inventory NOT yet open.", "source": "Hilton locations page (Feb 2027 horizon); Reddit r/chinatravel booking-horizon discussion"},
+    {"window": "3 months out (Nov 2026)", "action": "Chinese hotels typically open inventory ~3 months out — re-check shortlisted hotels on Trip.com + official sites; book refundable rate as placeholder.", "source": "r/chinatravel (Trip.com ~3-month horizon)"},
+    {"window": "2–3 months out (Dec 2026–Jan 2027)", "action": "Booking.com sweet spot for standard stays; lock in free-cancellation rate, then re-price later.", "source": "Booking.com booking-window guide"},
+    {"window": "4–8 weeks out (Dec 2026–Jan 2027)", "action": "Wholesale inventory loads; international-trip sweet spot per HotelsLove analysis.", "source": "HotelsLove booking-window guide"},
+    {"window": "8–14 days out (1–7 Feb 2027 for 15 Feb check-in)", "action": "Hotels.com 2026 Price Index sweet spot (~23% saving vs 4+ months out). Re-check + rebook if cheaper; cancel original inside free-cancellation deadline.", "source": "Hotels.com 2026 Hotel Price Index via The Pinnacles List / RateRanger"},
+    {"window": "Within 7 days", "action": "Last-minute discounts possible (KAYAK: up to 26–27% lower) but sold-out risk high for top Bund hotels — only if flexible.", "source": "KAYAK analysis via RateRanger"}
+  ],
+  "practical": {
+    "spring_festival_2027": "5–13 Feb 2027 (9 days), Lunar New Year Sat 6 Feb; makeup workdays Sun 31 Jan + Sun 14 Feb (State Council notice 5 Nov 2026)",
+    "visa_us": "US citizens need L tourist visa for round-trip tourism ($140, 10-year multi-entry, 4 business days standard / 2–3 express). Alternative: 240-hour visa-free transit ONLY with onward ticket to third country/region. No flights/hotels/itinerary required since Jan 2024.",
+    "weather_shanghai_feb": "Avg high ~10.7°C / low ~4.1°C, ~65mm rain, 10.4 wet days — cold + damp; warm coat, layers, waterproof shoes",
+    "weather_shanghai_mar": "Avg high ~14.9°C / low ~7.6°C, ~97mm rain, 12.7 wet days — changeable; light jacket + umbrella",
+    "metro": "Shanghai Metro 18+ lines, 387+ stations; Line 2 (Bund–Lujiazui–airports), Line 10 (Yu Garden–Xintiandi), Line 1/2/8 (People's Square hub). Official map: Shmetro (Shanghai Shentong Metro Group)."
+  }
+}
