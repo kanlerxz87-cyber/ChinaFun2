@@ -33,6 +33,10 @@ An evidence-first, mobile-friendly planning dashboard for a two-adult China trip
 - Shanghai Museum hours, current exhibition end date, entry/reservation rules and official social profiles are linked to the museum homepage; Yuyuan winter/spring evening schedule is linked to Shanghai Municipal Government. Re-check exact-date exceptions in 2027.
 - YouTube search shortcuts are discovery links, not claims that an individual creator/video is official. The Shanghai Museum row links its verified official YouTube and Instagram profiles. No third-party post was treated as a source of fact.
 
+## Existing detail-page audit
+
+The main branch already contained older research subpages and JSON data. A review found secondary-source pricing, proxy-rate guidance, estimated hotel-Michelin route counts, and transit legs that omit station/first-mile time. Those entries were not reused in the root dashboard; see [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for specific official sources and recommended corrections. The older pages remain in the repository and should not be treated as fully source-audited until those flags are closed.
+
 ## Important unverified items
 
 No live official seven-night hotel totals for two adults, “cheapest day to book,” hotel-specific one-hour public-transit reachability, or Michelin-restaurant counts inside those transit catchments were verified. Those values are blank by design. The site lists the question and a concrete next verification step rather than inventing a number.

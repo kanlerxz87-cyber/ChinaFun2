@@ -93,7 +93,7 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 | Review/integration task | Status | Owner | Scope |
 |---|---|---|---|
-| Replace root landing view with source-linked evidence-first dashboard; preserve existing pages/data/workflow | in progress | `77604d1c` / `arena/77604d1c-chinafun2` | `index.html`, `app.js`, `data.js`, `styles.css`, `README.md`, this board |
+| Replace root landing view with source-linked evidence-first dashboard; preserve existing pages/data/workflow | done | `77604d1c` / `arena/77604d1c-chinafun2` | `index.html`, `app.js`, `data.js`, `styles.css`, `README.md`, this board |
 | Audit already-published research claims and log corrections for final review | needs review | `77604d1c` / `arena/77604d1c-chinafun2` | `RESEARCH_REVIEW.md`, this board |
 
 ### Conflict / review notes
