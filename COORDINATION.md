@@ -27,7 +27,7 @@
 | T05 | Research: Costs, 7-night totals, booking-timing windows, visa, weather, holidays | **done** | 91622d32 | `data/costs.json`, `costs-booking.html` | Spring Festival 2027: 5–13 Feb (State Council). Preferred window starts 15 Feb = just after. |
 | T06 | Site build: landing dashboard + subpages, mobile-first CSS/JS, search/filter | **done** | 91622d32 | `index.html`, `executive-summary.html`, `questions.html`, `suggestions.html`, `flagged.html`, `sources.html`, `assets/css/style.css`, `assets/js/app.js` | Static GitHub Pages, no build step. |
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **done** | 91622d32 | all `*.html`, `data/*.json` | JSON validated (6+14+12 rows); internal links all resolve; preview 200s on all pages. |
-| T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **in progress** | 91622d32 | `.github/workflows/pages.yml`, Pages settings | Workflow added; Pages enable via API pending. |
+| T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 | `.github/workflows/pages.yml`, Pages settings | PR #1 merged to `main`; Pages build `built` 2026-11-25. Live: https://kanlerxz87-cyber.github.io/ChinaFun2/ |
 
 ### Status legend
 - `unclaimed` — no owner yet
