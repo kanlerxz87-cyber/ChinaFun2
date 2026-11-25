@@ -139,7 +139,7 @@
         "category": "MICHELIN Dining Appetite & Cuisine Mix",
         "question": "How many formal 2.5–3 hour Starred tasting-menu dinners (CNY 2,300–5,800 / $340–$860+ per couple) do you want versus relaxed Bib Gourmand / Selected lunches & bistros ($15–$150 per couple), and do either of you avoid shellfish, pork, offal, or alcohol?",
         "why_it_matters": "3★ Taian Table (intimate counter), 2★ Da Vittorio, and 2★ Fu He Hui release seats 30–60 days out and require credit-card deposits with strict 48–72h cancellation rules, whereas Bib Gourmand spots (`Da Hu Chun`, `Nanxiang`) are walk-in only.",
-        "discovery_action": "Pick 2–3 anchor Starred restaurants by Jan 10, 2027 (~35 days prior) and ask your booked hotel's English concierge (IHG / Radisson / Hyatt / Marriott) to place verified WeChat/Chope reservations and obtain current RMB set-menu PDFs for any restaurant with unpublished online pricing (`Bombana`, `Fu He Hui`, `Canton 8`, `Ling Long`)."
+        "discovery_action": "Pick 2–3 anchor Starred restaurants by Jan 10, 2027 (~35 days prior) and ask your booked hotel's English concierge (IHG / Radisson / Hyatt / Marriott) to place verified WeChat/Chope reservations and obtain current RMB set-menu PDFs for any restaurant with unpublished online pricing (`Bombana`, `Fu He Hui`, `Canton 8`, `Pierre Gagnaire`)."
       },
       {
         "id": "Q4",
@@ -190,7 +190,7 @@
       "id": "SUG-05",
       "status": "Proposed for Phase 2 Review",
       "title": "Concierge Email Generator to Resolve Blank 'Unverified' Restaurant Prices",
-      "problem_solved": "Six MICHELIN venues (`Bombana`, `Fu He Hui`, `Canton 8`, `Ling Long`, `Da Hu Chun`, `Nanxiang`) do not publish numeric RMB menus on official English websites.",
+      "problem_solved": "Six MICHELIN venues in our dataset (`Bombana`, `Fu He Hui`, `Canton 8`, `Pierre Gagnaire` lunch/dinner, `Da Hu Chun`, `Nanxiang`) do not publish readable numeric RMB menus on official English websites.",
       "recommendation": "Provide a pre-filled bilingual email template to send your hotel concierge 30 days out requesting current seasonal RMB set-menu PDFs so those 6 flagged cells can be promoted from `Unverified` to `Verified`."
     }
   ],
@@ -263,7 +263,7 @@
       "category": "Unverified Blank Fields (Strict No-Guessing Rule)",
       "status": "needs review",
       "item": "6 Restaurants & 2 Activities Have Blank Numeric Prices / Hours Where Official Sites Omit Figures",
-      "finding": "Per strict verification rules, numeric 2-adult prices were left blank (`\"\"`) and flagged `Unverified` for `8 ½ Otto e Mezzo Bombana` (¥¥¥¥), `Fu He Hui` (¥¥¥¥), `Canton 8` (¥¥), `Ling Long` (¥¥¥¥; operating hours also unpublished on MICHELIN page), `Le Comptoir de Pierre Gagnaire` lunch/dinner (Bfast CNY 634 verified; lunch/dinner PDF unreadable), `Da Hu Chun` (¥), `Nanxiang Steamed Bun` (¥), `Shanghai Museum People's Square` special-exhibit fee, and `Fotografiska Shanghai` WeChat ticket price.",
+      "finding": "Per strict verification rules, numeric 2-adult prices were left blank (`\"\"`) and flagged `Unverified` for `8 ½ Otto e Mezzo Bombana` (¥¥¥¥), `Fu He Hui` (¥¥¥¥), `Canton 8 (Huangpu)` (¥¥), `Da Hu Chun` (¥), and `Nanxiang Steamed Bun` (¥), plus partial `Unverified` for `le Comptoir de Pierre Gagnaire` lunch/dinner (Breakfast CNY 634 verified; lunch/dinner PDF unreadable), `Shanghai Museum People's Square` special-exhibit fee, and `Fotografiska Shanghai` WeChat ticket price.",
       "action_for_couple": "Never rely on guessed blog prices; official MICHELIN price-tier symbols (`¥` to `¥¥¥¥`) are shown for orientation, and your hotel concierge can confirm current seasonal RMB menus 30 days prior.",
       "official_source_url": "https://guide.michelin.com/us/en/shanghai-municipality/restaurants"
     },

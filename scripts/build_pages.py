@@ -554,7 +554,7 @@ def build_restaurants_page() -> str:
 
     rest_rows = []
     for r in REST_DATA["restaurants"]:
-        is_star = "Star" in r["michelin_category"]
+        is_star = r.get("stars", 0) > 0
         badge_cls = "badge-star" if is_star else "badge-guide"
         dist = r["michelin_distinction"]
         group_tag = f"{'starred' if is_star else 'guide'} {dist.lower()}"
