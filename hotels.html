@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotels &amp; Michelin Clusters — China Trip 2027</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a class="brand" href="index.html">China Trip 2027</a>
+      <nav>
+        <a href="index.html">Executive Summary</a>
+        <a class="active" href="hotels.html">Hotels</a>
+        <a href="restaurants.html">Michelin Restaurants</a>
+        <a href="activities.html">Activities</a>
+        <a href="questions-suggestions.html">Questions &amp; Suggestions</a>
+        <a href="review.html">Flagged for Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Hotels Ranked by Michelin Cluster Proximity</h1>
+    <p class="subtitle">Ranked by number of Michelin-starred / Guide-listed restaurants within &le; 1 hour by subway or bus. All rooms verified for Private Bathroom &amp; Queen+ bed for 2 adults.</p>
+
+    <div class="controls">
+      <input type="text" id="tableSearch" placeholder="Search hotels, districts..." />
+      <select id="cityFilter">
+        <option value="">All Cities</option>
+        <option value="shanghai">Shanghai</option>
+        <option value="beijing">Beijing</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Hotel Name</th>
+            <th>City &amp; District</th>
+            <th>Room Specs (2 Adults)</th>
+            <th>Michelin Cluster (&le; 1 hr)</th>
+            <th>7-Night Total (Feb 15–22, 2027)</th>
+            <th>Cheapest Booking Window</th>
+            <th>Official Source</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-city="shanghai">
+            <td><strong>#1</strong></td>
+            <td><a href="https://www.fairmont.com/en/hotels/shanghai/fairmont-peace-hotel.html" target="_blank" rel="noopener">Fairmont Peace Hotel</a></td>
+            <td>Shanghai (The Bund / Huangpu)</td>
+            <td>Private bathroom, King/Queen rooms</td>
+            <td>Shanghai 2026 Guide: 51 starred / 156 total across city; Huangpu/Bund &amp; Changning clusters &le; 35 min by Metro</td>
+            <td><span class="unverified">Blank — requires live 2027 booking check</span></td>
+            <td><span class="unverified">Blank — dynamic pricing</span></td>
+            <td><a href="https://www.fairmont.com/en/hotels/shanghai/fairmont-peace-hotel.html" target="_blank" rel="noopener">Fairmont Official</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="shanghai">
+            <td><strong>#2</strong></td>
+            <td><a href="https://www.peninsula.com/en/shanghai/5-star-luxury-hotel-bund" target="_blank" rel="noopener">The Peninsula Shanghai</a></td>
+            <td>Shanghai (The Bund / Huangpu)</td>
+            <td>Private marble bathroom, King/Queen rooms</td>
+            <td>Shanghai 2026 Guide: 51 starred / 156 total; on-site &amp; Bund/Pudong/Changning clusters &le; 35 min by Metro</td>
+            <td><span class="unverified">Blank — requires live 2027 booking check</span></td>
+            <td><span class="unverified">Blank — dynamic pricing</span></td>
+            <td><a href="https://www.peninsula.com/en/shanghai/special-offers/rooms/discover-shanghai" target="_blank" rel="noopener">Peninsula Official</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><strong>#3</strong></td>
+            <td><a href="https://www.peninsula.com/en/beijing/5-star-luxury-hotel-wangfujing" target="_blank" rel="noopener">The Peninsula Beijing</a></td>
+            <td>Beijing (Wangfujing / Dongcheng)</td>
+            <td>All-suite, private marble bathroom, King/Queen</td>
+            <td>Beijing 2027 Guide: 33 starred / 107 total; Jing (on-site) + Dongcheng/Chaoyang clusters &le; 35 min by Metro</td>
+            <td><span class="unverified">Blank — requires live 2027 booking check</span></td>
+            <td><span class="unverified">Blank — dynamic pricing</span></td>
+            <td><a href="https://www.peninsula.com/en/beijing/5-star-luxury-hotel-wangfujing" target="_blank" rel="noopener">Peninsula Official</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><strong>#4</strong></td>
+            <td><a href="https://waldorfastoria3.hilton.com/en/hotels/china/waldorf-astoria-beijing-BJSWAWA/index.html" target="_blank" rel="noopener">Waldorf Astoria Beijing</a></td>
+            <td>Beijing (Wangfujing / Dongcheng)</td>
+            <td>Private bathroom, King/Queen rooms</td>
+            <td>Beijing 2027 Guide: 33 starred / 107 total; 10-min walk to Forbidden City, &le; 35 min to Chaoyang cluster</td>
+            <td><span class="unverified">Blank — requires live 2027 booking check</span></td>
+            <td><span class="unverified">Blank — dynamic pricing</span></td>
+            <td><a href="https://waldorfastoria3.hilton.com/en/hotels/china/waldorf-astoria-beijing-BJSWAWA/index.html" target="_blank" rel="noopener">Hilton Official</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><strong>#5</strong></td>
+            <td><a href="https://www.rosewoodbj.cn/en/" target="_blank" rel="noopener">Rosewood Beijing</a></td>
+            <td>Beijing (Chaoyang CBD)</td>
+            <td>Private bathroom, King/Queen rooms</td>
+            <td>Beijing 2027 Guide: 33 starred / 107 total; directly above subway, &le; 25 min to Chaoyang 3-star cluster</td>
+            <td><span class="unverified">Blank — requires live 2027 booking check</span></td>
+            <td><span class="unverified">Blank — dynamic pricing</span></td>
+            <td><a href="https://www.rosewoodbj.cn/en/" target="_blank" rel="noopener">Rosewood Official</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    China Trip Planning Dashboard &middot; <a href="review.html">View Flagged Items</a>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelin Restaurants — China Trip 2027</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a class="brand" href="index.html">China Trip 2027</a>
+      <nav>
+        <a href="index.html">Executive Summary</a>
+        <a href="hotels.html">Hotels</a>
+        <a class="active" href="restaurants.html">Michelin Restaurants</a>
+        <a href="activities.html">Activities</a>
+        <a href="questions-suggestions.html">Questions &amp; Suggestions</a>
+        <a href="review.html">Flagged for Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Michelin Star &amp; Guide Restaurants</h1>
+    <p class="subtitle">Verified from official Michelin Guide 2026 (Shanghai) &amp; 2027 (Beijing) selections. Total prices are for 2 adults.</p>
+
+    <div class="controls">
+      <input type="text" id="tableSearch" placeholder="Search restaurants, cuisines, stars..." />
+      <select id="cityFilter">
+        <option value="">All Cities</option>
+        <option value="shanghai">Shanghai</option>
+        <option value="beijing">Beijing</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Restaurant</th>
+            <th>City &amp; District</th>
+            <th>Michelin Status</th>
+            <th>Total Cost (2 Adults)</th>
+            <th>Days Open, Hours &amp; Exceptions</th>
+            <th>Transit from Hotel</th>
+            <th>Social Media</th>
+            <th>Official Source</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-city="shanghai">
+            <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank" rel="noopener">Taian Table (泰安门)</a></td>
+            <td>Shanghai (Changning)</td>
+            <td>3 Michelin Stars + Green Star</td>
+            <td><span class="unverified">Blank — Michelin lists ¥¥¥¥ (no exact CNY range on page)</span></td>
+            <td><span class="unverified">Blank — hours not listed on Michelin page</span></td>
+            <td>~25–35 min Metro from Bund hotels</td>
+            <td>
+              <div class="social-links">
+                <a href="https://www.youtube.com/watch?v=RYsEUZJSrN8" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.tiktok.com/discover/taibat-restaurant-chinese-food" target="_blank" rel="noopener">TikTok</a>
+              </div>
+            </td>
+            <td><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table" target="_blank" rel="noopener">Michelin Guide</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="shanghai">
+            <td><a href="https://guide.michelin.com/jp/en/shanghai-municipality/shanghai/restaurant/fu-he-hui" target="_blank" rel="noopener">Fu He Hui (福和慧)</a></td>
+            <td>Shanghai (Changning)</td>
+            <td>2 Michelin Stars</td>
+            <td><span class="unverified">Blank — Michelin lists ¥¥¥¥</span></td>
+            <td>Mon–Sun: 11:00–13:00, 17:30–21:00 (check CNY 2027 holiday exceptions)</td>
+            <td>~25–30 min Metro from Bund hotels</td>
+            <td><span class="unverified">No verified link</span></td>
+            <td><a href="https://guide.michelin.com/jp/en/shanghai-municipality/shanghai/restaurant/fu-he-hui" target="_blank" rel="noopener">Michelin Guide</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="shanghai">
+            <td><a href="https://guide.michelin.com/gb/en/shanghai-municipality/shanghai/restaurant/canton-8-east-nanjing-road" target="_blank" rel="noopener">Canton 8 (East Nanjing Rd)</a></td>
+            <td>Shanghai (Huangpu)</td>
+            <td>2 Michelin Stars</td>
+            <td><span class="unverified">Blank — Michelin lists ¥¥</span></td>
+            <td><span class="unverified">Blank — reservations only before 11:30 &amp; 17:30</span></td>
+            <td>~5–10 min walk from Bund hotels</td>
+            <td>
+              <div class="social-links">
+                <a href="https://www.youtube.com/watch?v=ynxLsnBkVDA" target="_blank" rel="noopener">YouTube</a>
+              </div>
+            </td>
+            <td><a href="https://guide.michelin.com/gb/en/shanghai-municipality/shanghai/restaurant/canton-8-east-nanjing-road" target="_blank" rel="noopener">Michelin Guide</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><a href="https://guide.michelin.com/ee/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road" target="_blank" rel="noopener">Xin Rong Ji (Xinyuan South Rd)</a></td>
+            <td>Beijing (Chaoyang)</td>
+            <td>3 Michelin Stars (2027 Guide)</td>
+            <td>2,000 – 4,000 CNY (1,000–2,000 CNY/person)</td>
+            <td><span class="unverified">Blank — hours not listed on Michelin page</span></td>
+            <td>~20–30 min Metro from Wangfujing/CBD</td>
+            <td>
+              <div class="social-links">
+                <a href="https://www.youtube.com/watch?v=6SvqIT2SW7M" target="_blank" rel="noopener">YouTube</a>
+              </div>
+            </td>
+            <td><a href="https://guide.michelin.com/ee/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road" target="_blank" rel="noopener">Michelin Guide</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-the-2027-beijing-tianjin-selection" target="_blank" rel="noopener">Chao Shang Chao (Chaoyang)</a></td>
+            <td>Beijing (Chaoyang)</td>
+            <td>3 Michelin Stars (2027 Guide)</td>
+            <td><span class="unverified">Blank — Michelin lists ¥¥¥¥</span></td>
+            <td><span class="unverified">Blank — hours not listed on summary page</span></td>
+            <td>~15–25 min Metro from Rosewood/Wangfujing</td>
+            <td><span class="unverified">No verified link</span></td>
+            <td><a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-the-2027-beijing-tianjin-selection" target="_blank" rel="noopener">Michelin 2027 Press</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><a href="https://guide.michelin.com/us/en/california/article/dining-out/michelin-starred-vegetarian-restaurants-worldwide" target="_blank" rel="noopener">King's Joy (京兆尹)</a></td>
+            <td>Beijing (Dongcheng)</td>
+            <td>2 Michelin Stars + Green Star (2027 Guide)</td>
+            <td><span class="unverified">Blank — Michelin lists ¥¥¥</span></td>
+            <td><span class="unverified">Blank — hours not listed on summary page</span></td>
+            <td>~20 min Metro from Wangfujing hotels</td>
+            <td><span class="unverified">No verified link</span></td>
+            <td><a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-the-2027-beijing-tianjin-selection" target="_blank" rel="noopener">Michelin 2027 Press</a></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    China Trip Planning Dashboard &middot; <a href="review.html">View Flagged Items</a>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

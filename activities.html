@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities &amp; Attractions — China Trip 2027</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a class="brand" href="index.html">China Trip 2027</a>
+      <nav>
+        <a href="index.html">Executive Summary</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="restaurants.html">Michelin Restaurants</a>
+        <a class="active" href="activities.html">Activities</a>
+        <a href="questions-suggestions.html">Questions &amp; Suggestions</a>
+        <a href="review.html">Flagged for Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Activities &amp; Attractions (&le; 1 Hour Transit)</h1>
+    <p class="subtitle">Major cultural and sightseeing activities within 1 hour by subway, bus, or walking from the ranked hotels.</p>
+
+    <div class="controls">
+      <input type="text" id="tableSearch" placeholder="Search activities, cities..." />
+      <select id="cityFilter">
+        <option value="">All Cities</option>
+        <option value="shanghai">Shanghai</option>
+        <option value="beijing">Beijing</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Activity / Attraction</th>
+            <th>City &amp; District</th>
+            <th>Transit from Hotel</th>
+            <th>Cost (2 Adults)</th>
+            <th>Days Open, Hours &amp; Exceptions</th>
+            <th>Social Media</th>
+            <th>Official Source</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-city="shanghai">
+            <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797" target="_blank" rel="noopener">Shanghai Museum (People's Square)</a></td>
+            <td>Shanghai (Huangpu)</td>
+            <td>~15 min Metro/walk from Bund hotels</td>
+            <td>Free (special exhibitions extra)</td>
+            <td>Tue–Sun: 09:00–17:00 (last entry 16:00). Closed Mondays except public holidays.</td>
+            <td><span class="unverified">No verified link</span></td>
+            <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797" target="_blank" rel="noopener">Shanghai Museum Official</a></td>
+            <td><span class="badge badge-verified">Verified</span></td>
+          </tr>
+          <tr data-city="shanghai">
+            <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004684" target="_blank" rel="noopener">Shanghai Museum East</a></td>
+            <td>Shanghai (Pudong)</td>
+            <td>~25–35 min Metro from Bund hotels</td>
+            <td>Free (special exhibitions extra)</td>
+            <td>Wed–Mon: 10:00–18:00 (last entry 17:00). Closed Tuesdays except public holidays.</td>
+            <td><span class="unverified">No verified link</span></td>
+            <td><a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004684" target="_blank" rel="noopener">Shanghai Museum Official</a></td>
+            <td><span class="badge badge-verified">Verified</span></td>
+          </tr>
+          <tr data-city="shanghai">
+            <td>Yu Garden (Classical Garden) &amp; Yuyuan Bazaar</td>
+            <td>Shanghai (Huangpu)</td>
+            <td>~15–20 min walk/Metro from Bund hotels</td>
+            <td>80 CNY total (40 CNY/adult); Bazaar is free</td>
+            <td>Garden: Tue–Sun 09:00–16:30 (last entry 16:00), closed Mondays except holidays. Bazaar: daily.</td>
+            <td>
+              <div class="social-links">
+                <a href="https://www.youtube.com/watch?v=TAIigBV6rPM" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.tiktok.com/channel/shanghai-garden?lang=en" target="_blank" rel="noopener">TikTok</a>
+              </div>
+            </td>
+            <td><span class="unverified">Secondary guide (official site not crawled)</span></td>
+            <td><span class="badge badge-review">Needs Review</span></td>
+          </tr>
+          <tr data-city="beijing">
+            <td><a href="https://en.dpm.org.cn/" target="_blank" rel="noopener">The Palace Museum (Forbidden City)</a></td>
+            <td>Beijing (Dongcheng)</td>
+            <td>~10–20 min walk/Metro from Wangfujing hotels</td>
+            <td>80 CNY total off-season (Nov 1–Mar 31: 40 CNY/adult)</td>
+            <td>Tue–Sun: 08:30–16:30 (off-season Nov–Mar; last entry 15:30). Closed Mondays except public holidays.</td>
+            <td>
+              <div class="social-links">
+                <a href="https://www.youtube.com/playlist?list=PL1F694F8FED27A424" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.tiktok.com/@chinesewithmia/video/7296337923547434272?lang=en" target="_blank" rel="noopener">TikTok</a>
+              </div>
+            </td>
+            <td><a href="https://en.dpm.org.cn/" target="_blank" rel="noopener">Palace Museum Official</a></td>
+            <td><span class="badge badge-verified">Verified</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    China Trip Planning Dashboard &middot; <a href="review.html">View Flagged Items</a>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
