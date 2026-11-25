@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "destination_city": "Shanghai, China",
+    "party_size": 2,
+    "transit_constraint": "All 12 activities are reachable within ≤60 minutes door-to-door via Shanghai Metro or downtown bus from all 7 ranked central hotels (9 of 12 are within ≤20 minutes). Note: Suburban Zhujiajiao Water Town (~68–78 min on Line 17) is intentionally excluded from the ≤60-min core table and documented in Flagged Review.",
+    "fx_reference": {
+      "pair": "USD/CNY",
+      "rate": 6.7141,
+      "as_of_date": "2026-11-16",
+      "source_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026111609021177769/index.html"
+    }
+  },
+  "activities": [
+    {
+      "id": "act-the-bund",
+      "name": "The Bund Waterfront Promenade & RMB 2 Huangpu Ferry",
+      "chinese_name": "外滩滨江步道 & 东金线轮渡",
+      "category": "Iconic Skyline & Architecture",
+      "district": "Huangpu",
+      "address": "East Zhongshan Road No. 1 (Waibaidu Bridge to Jinling East Rd Ferry Wharf), Huangpu, Shanghai",
+      "metro_route_from_hubs": "Walk 5 min from EDITION / 12–14 min from Crowne Plaza & Radisson Blu; or Metro Line 2 / 10 to East Nanjing Rd Exit 2 (~8 min total).",
+      "travel_time_min": 8,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "Promenade: Open 24/7 | Public Bund Ferry (Jinling E Rd – Dongchang Rd): Daytime departures every ~15–20 min (10-min crossing)",
+      "exceptions": "Confirmed Official Winter Rule (Nov–Apr, covering Feb–Mar 2027): Bund & Lujiazui decorative architectural lights operate 17:00–21:00 (vs 19:00–22:00 May–Oct). Arrive before 20:30 so skyline lights do not switch off mid-stroll.",
+      "cost_2_adults_cny": "CNY 0 promenade (CNY 8 round-trip for 2 adults on RMB 2 public ferry)",
+      "cost_2_adults_usd": "$0.00 ($1.19 w/ public ferry)",
+      "official_source_url": "https://english.shanghai.gov.cn/en-144-hourtransfer-stayinShanghai/20240104/11c79bb6632944aea9814cee6ec823bb.html",
+      "verification_status": "Verified (Official Shanghai Municipal Gov Portal)",
+      "social_links": [
+        { "platform": "YouTube", "label": "The Bund & Skyline 4K Walking Tour", "url": "https://www.youtube.com/watch?v=I2b9UOSu3FM" },
+        { "platform": "TikTok", "label": "The Bund Shanghai Guide (@jacmartin_)", "url": "https://www.tiktok.com/@jacmartin_/video/7457133077710638342" },
+        { "platform": "TikTok", "label": "Top Favourite Things in Shanghai (@heyfionawang)", "url": "https://www.tiktok.com/@heyfionawang/video/7416592486145068306" },
+        { "platform": "Instagram", "label": "@regentshanghaionthebund (Bund Skyline Views)", "url": "https://www.instagram.com/regentshanghaionthebund/" }
+      ]
+    },
+    {
+      "id": "act-shanghai-museum-east",
+      "name": "Shanghai Museum East (Permanent Chinese Treasures Wing)",
+      "chinese_name": "上海博物馆东馆",
+      "category": "National Museum & Culture",
+      "district": "Pudong New Area",
+      "address": "1952 Century Avenue, Pudong New Area, Shanghai",
+      "metro_route_from_hubs": "Metro Line 2 direct from People's Square / East Nanjing Rd / Jing'an Temple to Shanghai Science & Technology Museum Station (~15–18 min).",
+      "travel_time_min": 16,
+      "days_open": "Wednesday – Monday",
+      "operating_hours": "10:00 – 18:00 (Last entry 17:00)",
+      "exceptions": "Closed every Tuesday (except PRC public holidays). Walk-in entry with original passport (no advance reservation required for permanent galleries since Sept 15, 2024; Curio-City & Digital Gallery still require WeChat slot). CRITICAL 2026–2027 NOTE: Hosts all permanent Chinese bronze/jade/ceramics galleries while People's Square branch runs a single Americas special exhibition.",
+      "cost_2_adults_cny": "CNY 0 (Free permanent-gallery admission with passport)",
+      "cost_2_adults_usd": "$0.00",
+      "official_source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-east",
+      "secondary_official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004684",
+      "verification_status": "Verified (Official Shanghai Museum)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Shanghai Museum Tour — Ancient Chinese Art", "url": "https://www.youtube.com/watch?v=OUtolwvTmAc" },
+        { "platform": "TikTok", "label": "Shanghai Museum Discover Feed", "url": "https://www.tiktok.com/discover/shanghai-museum" },
+        { "platform": "Instagram", "label": "@theshanghaimuseum (Official)", "url": "https://www.instagram.com/theshanghaimuseum/" }
+      ]
+    },
+    {
+      "id": "act-shanghai-museum-peoples-sq",
+      "name": "Shanghai Museum on People's Square (Special Exhibition Pavilion)",
+      "chinese_name": "上海博物馆人民广场馆",
+      "category": "National Museum & Special Exhibition",
+      "district": "Huangpu (People's Square)",
+      "address": "201 Ren Min Da Dao (South Entrance on Wusheng Road), Huangpu, Shanghai",
+      "metro_route_from_hubs": "Walk 4–10 min from Radisson Blu, Crowne Plaza & Treasury Hotel; 1 stop on Line 1/2/8 from Xintiandi or EDITION (~8 min).",
+      "travel_time_min": 6,
+      "days_open": "Tuesday – Sunday",
+      "operating_hours": "Day Session: 09:00 – 17:00 (Last entry 15:00) | Selected Day & Evening Sessions: 09:00 – 21:00 (Last entry 19:00)",
+      "exceptions": "Closed every Monday (except PRC national holidays). CONFIRMED 2026–2027 EXCEPTION: From July 9, 2026 – Nov 14, 2027, hosts ONLY 'On Top of the World Tree: Ancient Civilizations of the Americas' and NO permanent Chinese displays. Overseas visitors book via Trip.com / official WeChat; special-exhibition ticket price varies by exhibition (left blank below).",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd": "",
+      "unverified_fields": ["2027 special-exhibition ticket price for 'Ancient Civilizations of the Americas' (venue entry free for qualifying concessions, exhibition ticket required)"],
+      "official_source_url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/en/service/visit-west",
+      "verification_status": "Hours & 2027 Exhibition Rule Verified; Special-Exhibit Ticket Price Unverified",
+      "social_links": [
+        { "platform": "YouTube", "label": "Shanghai Museum Tour", "url": "https://www.youtube.com/watch?v=OUtolwvTmAc" },
+        { "platform": "TikTok", "label": "Shanghai Museum Guide", "url": "https://www.tiktok.com/discover/shanghai-museum" },
+        { "platform": "Instagram", "label": "@theshanghaimuseum (Official)", "url": "https://www.instagram.com/theshanghaimuseum/" }
+      ]
+    },
+    {
+      "id": "act-yu-garden",
+      "name": "Yu Garden (Yuyuan Classical Garden & Lantern Show)",
+      "chinese_name": "豫园 & 豫园商城灯会",
+      "category": "Ming-Dynasty Classical Garden & Heritage",
+      "district": "Huangpu (Old City)",
+      "address": "No. 168 Fuyou Road / South Gate No. 279 Yuyuan Old Street, Huangpu, Shanghai (Yuyuan Bazaar at No. 265 Middle Fangbang Rd)",
+      "metro_route_from_hubs": "Metro Line 10 or Line 14 to Yuyuan Garden Station (1 stop from East Nanjing Rd or Xintiandi, ~10–12 min door-to-door).",
+      "travel_time_min": 11,
+      "days_open": "Daytime Garden: Tue – Sun | Winter Night Tour (Jan–Apr): Fri – Sun | Surrounding Yuyuan Bazaar: 24/7",
+      "operating_hours": "Daytime & Extended Light Hours: 09:00 – 16:30 standard / up to 21:50 on Night-Tour dates | Winter Night Tour ('Yu Xiang Shan Lin', Jan–Apr): Fri–Sun 18:00 – 21:20 (Last entry 20:30)",
+      "exceptions": "Winter Night Tour closed Mon–Thu evenings (except public holidays). MAJOR FEB 2027 EXCEPTION: Lantern Festival falls on Sat Feb 20, 2027 — Yuyuan Bazaar switches from free entry to timed peak holiday cordon tickets with extreme crowds 17:30–21:30; visit Tue–Thu morning at 09:00 opening for serene garden views.",
+      "cost_2_adults_cny": "CNY 80 daytime (CNY 40/adult) | CNY 300–436 Night Tour (CNY 150–218/adult)",
+      "cost_2_adults_usd": "$11.92 daytime ($44.68–$64.94 Night Tour)",
+      "official_source_url": "https://english.shanghai.gov.cn/en-Parks/20241118/3ab0a509201343a59102f9bc63a3aab4.html",
+      "secondary_official_url": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
+      "verification_status": "Verified (Official Shanghai Municipal Gov Portal)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Is Visiting Yu Garden Worth It? (4K)", "url": "https://www.youtube.com/watch?v=Ay96PAha8uQ" },
+        { "platform": "YouTube", "label": "Shanghai Night Walk Yuyuan Garden 2026", "url": "https://www.youtube.com/watch?v=JaxkeyUJWU8" },
+        { "platform": "TikTok", "label": "Shanghai 3-Day Itinerary incl. Yu Garden (@nessahuangg)", "url": "https://www.tiktok.com/@nessahuangg/video/7544320215559965957" }
+      ]
+    },
+    {
+      "id": "act-shanghai-tower",
+      "name": "Top of Shanghai Observatory (Shanghai Tower 118F — 546m)",
+      "chinese_name": "上海中心「上海之巅」118层观光厅",
+      "category": "Supertall Observatory & Skyline",
+      "district": "Pudong New Area (Lujiazui)",
+      "address": "No. 501 Middle Yincheng Road, Lujiazui, Pudong New Area, Shanghai",
+      "metro_route_from_hubs": "Metro Line 2 or Line 14 to Lujiazui Station (1–2 stops from East Nanjing Rd, People's Square, or Xintiandi; ~12–16 min).",
+      "travel_time_min": 14,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "08:30 – 21:30",
+      "exceptions": "Visibility inside the 546m cloud deck drops to zero in late-Feb / March rain or low stratus clouds — check Lujiazui spire visibility from The Bund before buying tickets; passport required at B1 security.",
+      "cost_2_adults_cny": "CNY 360 standard 118F (CNY 180/adult) | CNY 536 w/ 125–126F Sky632 Damper Light Show (CNY 268/adult)",
+      "cost_2_adults_usd": "$53.62 standard ($79.83 w/ Sky632)",
+      "official_source_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20241104/578f01e9857f4d8ca6b9c3cf422bf44e.html",
+      "secondary_official_url": "https://english.shanghai.gov.cn/en-FestivalsCelebrations/20250911/9502fe309abc41a9a2f61966e5725b6a.html",
+      "verification_status": "Verified (Official Shanghai Municipal Gov Portal)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Shanghai Tower 118th Floor Observatory Tour", "url": "https://www.youtube.com/watch?v=6ssEi4Esd7s" },
+        { "platform": "TikTok", "label": "Shanghai Skyline & Tower Guide (@nessahuangg)", "url": "https://www.tiktok.com/@nessahuangg/video/7544320215559965957" },
+        { "platform": "Instagram", "label": "@shanghaitower_official (Official)", "url": "https://www.instagram.com/shanghaitower_official/" }
+      ]
+    },
+    {
+      "id": "act-museum-of-art-pudong",
+      "name": "Museum of Art Pudong (MAP — Jean Nouvel Bund-View Galleries)",
+      "chinese_name": "浦东美术馆 (MAP)",
+      "category": "Architecture, Contemporary Art & Night View",
+      "district": "Pudong New Area (Lujiazui Riverfront)",
+      "address": "No. 2777 Binjiang Avenue, Pudong New Area, Shanghai",
+      "metro_route_from_hubs": "Metro Line 2 to Lujiazui Station Exit 2 + scenic 8-min elevated walkway stroll (~16–20 min from People's Square / EDITION).",
+      "travel_time_min": 18,
+      "days_open": "Monday – Sunday (Daily per live 2026–2027 homepage)",
+      "operating_hours": "10:00 – 21:00 (Last admission 20:00)",
+      "exceptions": "Prior booking requirement cancelled for daily visits (enter directly with ticket); tickets are non-refundable once sold. Note: 'Carolina Caycedo: A Tribute to Whales' closes Feb 21, 2027 — individual gallery floors rotate irregularly between exhibitions.",
+      "cost_2_adults_cny": "CNY 161 Night Session – CNY 201 Full-Day Fixed Date (Official Trip.com foreign-visitor portal: $24–$30 for 2 adults)",
+      "cost_2_adults_usd": "$24.00 Night – $30.00 Full-Day",
+      "official_source_url": "https://www.museumofartpd.org.cn/en/visit",
+      "secondary_official_url": "https://www.trip.com/travel-guide/attraction/shanghai/museum-of-art-pudong-124908212/",
+      "verification_status": "Verified (Official MAP site + MAP-linked Official Foreign Ticketing Partner)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Exploring MAP — Museum of Art Pudong 4K HDR", "url": "https://www.youtube.com/watch?v=oy-EqRZXMh8" },
+        { "platform": "TikTok", "label": "Museum of Art Pudong Tour (@maiubaan)", "url": "https://www.tiktok.com/@maiubaan/video/7488302181112761607" },
+        { "platform": "TikTok", "label": "Exploring Art at MAP Shanghai (@cathy_tsenaye)", "url": "https://www.tiktok.com/@cathy_tsenaye/video/7395098394231901456" }
+      ]
+    },
+    {
+      "id": "act-fotografiska-shanghai",
+      "name": "Fotografiska Shanghai (Suzhou Creek Warehouse Night Art & Bar)",
+      "chinese_name": "Fotografiska 上海影像艺术中心",
+      "category": "Late-Night Photography Museum & Creekside Date",
+      "district": "Jing'an (Suzhou Creek)",
+      "address": "No. 127 Guangfu Road, Jing'an District, Shanghai",
+      "metro_route_from_hubs": "Metro Line 8 or Line 12 to Qufu Road Station (1 stop from People's Square Radisson Blu, ~9 min door-to-door; 6 min walk from Bvlgari Shanghai).",
+      "travel_time_min": 9,
+      "days_open": "Monday – Sunday (Galleries & Café Bar Open Daily)",
+      "operating_hours": "Exhibition Galleries: 10:30 – 23:00 | Ground Café Bar: 10:00 – 22:00",
+      "exceptions": "1F Bistro MONA & Gelateria are CLOSED on Mondays (Galleries & Café Bar remain open until 23:00/22:00 every Monday, making it Shanghai's best Monday-night museum date!). Official English site links to WeChat mini-program for ticketing without listing RMB figure in HTML (price left blank below).",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd": "",
+      "unverified_fields": ["Exact RMB exhibition ticket price (sold via official Fotografiska WeChat mini-program; not rendered on shanghai.fotografiska.com/en/visit HTML)"],
+      "official_source_url": "https://shanghai.fotografiska.com/en/visit",
+      "verification_status": "Hours & Restaurant Exceptions Verified on Official Site; Ticket Price Unverified",
+      "social_links": [
+        { "platform": "YouTube", "label": "Exploring Fotografiska Shanghai 4K Walk Tour", "url": "https://www.youtube.com/watch?v=VK8HqJSzWLw" },
+        { "platform": "Instagram", "label": "@fotografiska.shanghai (Official)", "url": "https://www.instagram.com/fotografiska.shanghai/" }
+      ]
+    },
+    {
+      "id": "act-huangpu-river-cruise",
+      "name": "Huangpu River 50-Min Skyline Night Cruise (Shiliupu Wharf)",
+      "chinese_name": "浦江游览（十六铺码头精华游）",
+      "category": "Romantic Night Cruise",
+      "district": "Huangpu (South Bund)",
+      "address": "B1, No. 1 Shiliupu Wharf, No. 491 East Zhongshan Road No. 2, Huangpu, Shanghai",
+      "metro_route_from_hubs": "Metro Line 10 or Line 14 to Yuyuan Garden Station + 8-min walk to Shiliupu Wharf (~16 min from central hotels).",
+      "travel_time_min": 16,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "Day & Evening Sailings ~11:00 – 21:30 (Peak illuminated sailings 18:00 – 20:30 in winter)",
+      "exceptions": "Cruises suspend temporarily during dense Huangpu River fog or typhoon/gale warnings. Book 18:30–19:30 sailing in Feb–Mar so Bund & Lujiazui lights (off at 21:00 in winter!) stay illuminated throughout the entire 50-min voyage.",
+      "cost_2_adults_cny": "CNY 240 standard 50-min cruise (CNY 120/adult)",
+      "cost_2_adults_usd": "$35.75",
+      "official_source_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20241104/578f01e9857f4d8ca6b9c3cf422bf44e.html",
+      "secondary_official_url": "https://english.shanghai.gov.cn/en-FestivalsCelebrations/20250911/9502fe309abc41a9a2f61966e5725b6a.html",
+      "verification_status": "Verified (Official Shanghai Municipal Gov Portal)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Shanghai Huangpu River Night Cruise 4K", "url": "https://www.youtube.com/watch?v=CKslFiCjggs" },
+        { "platform": "YouTube", "label": "Huangpu River Cruise Tour (2026)", "url": "https://www.youtube.com/watch?v=VuDyjTOk75k" },
+        { "platform": "TikTok", "label": "Shanghai Cruise & Night Highlights (@heyfionawang)", "url": "https://www.tiktok.com/@heyfionawang/video/7416592486145068306" }
+      ]
+    },
+    {
+      "id": "act-xintiandi-shikumen",
+      "name": "Shanghai Xintiandi Shikumen Lanes & Evening Cocktail Walk",
+      "chinese_name": "上海新天地石库门街区",
+      "category": "Heritage Lanes, Cafés & Nightlife",
+      "district": "Huangpu (Xintiandi)",
+      "address": "Lane 181 Taicang Road, Huangpu District, Shanghai",
+      "metro_route_from_hubs": "0–2 min walk from The Langham & Andaz Xintiandi; 1–2 stops on Metro Line 1 or Line 10 from People's Square / East Nanjing Rd (~10 min).",
+      "travel_time_min": 10,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "Open-air Shikumen lanes: 24/7 | Boutiques & cafés: ~10:00 – 22:00 | Cocktail bars: until 00:00 – 02:00",
+      "exceptions": "Adjacent Historic Site of the First CPC National Congress memorial museum closes Mondays; Xintiandi open-air lanes, Polux, T'ang Court, and cocktail terraces remain open daily.",
+      "cost_2_adults_cny": "CNY 0 (Free historic lane walk)",
+      "cost_2_adults_usd": "$0.00",
+      "official_source_url": "https://english.shanghai.gov.cn/en-PlanANightOut/20231217/2f954a83b78945ffb7dac1038e6797c4.html",
+      "secondary_official_url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260414/ea83dc4d6d614dd6a6b62e804235e0ec.html",
+      "verification_status": "Verified (Official Shanghai Municipal Gov Portal)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Xintiandi Shanghai 4K HDR Walking Tour (2026)", "url": "https://www.youtube.com/watch?v=2QSxoFqjSHo" },
+        { "platform": "TikTok", "label": "Shanghai Xintiandi & Must-Dos (@heyfionawang)", "url": "https://www.tiktok.com/@heyfionawang/video/7416592486145068306" },
+        { "platform": "Instagram", "label": "@panlongxintiandi_sh (Xintiandi Brand)", "url": "https://www.instagram.com/panlongxintiandi_sh/" }
+      ]
+    },
+    {
+      "id": "act-tianzifang",
+      "name": "Tianzifang Shikumen Artisan Alleyways & French Concession Stroll",
+      "chinese_name": "田子坊艺术街区",
+      "category": "Artisan Lanes & Republic-Era Architecture",
+      "district": "Huangpu (DapuQiao / Former French Concession border)",
+      "address": "Alley 210, Taikang Road, Huangpu District, Shanghai",
+      "metro_route_from_hubs": "Metro Line 9 to Dapuqiao Station Exit 1 (1 stop from Xintiandi via Line 13->9 or ~16 min from People's Square via Line 8->9).",
+      "travel_time_min": 16,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "Alleyways: Open 24/7 | Independent studios, tea rooms & craft shops: ~10:00 – 21:30",
+      "exceptions": "Residential Shikumen upper floors remain inhabited — keep voices low after 21:00; narrow lanes bottleneck during rainy weekend afternoons.",
+      "cost_2_adults_cny": "CNY 0 (Free admission)",
+      "cost_2_adults_usd": "$0.00",
+      "official_source_url": "https://english.shanghai.gov.cn/en-ScenicSpots/20250220/07accc0710864d548ccc1edf621c353f.html",
+      "verification_status": "Verified (Official Shanghai Municipal Gov Portal)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Tianzifang, Xintiandi & French Concession 4K Walk", "url": "https://www.youtube.com/watch?v=PsRr5kSkxTc" },
+        { "platform": "TikTok", "label": "Things to Do in Shanghai — Tianzifang", "url": "https://www.tiktok.com/discover/things-to-do-in-shanghai" }
+      ]
+    },
+    {
+      "id": "act-jade-buddha-temple",
+      "name": "Jade Buddha Temple (1882 Burmese White-Jade Buddhas)",
+      "chinese_name": "上海玉佛禅寺",
+      "category": "Buddhist Heritage & Vegetarian Noodle Sanctuary",
+      "district": "Putuo / Jing'an border",
+      "address": "No. 170 Anyuan Road, Putuo District, Shanghai",
+      "metro_route_from_hubs": "Metro Line 13 direct from Xintiandi or Nanjing West Rd to Jiangning Road Station Exit 3 + 6-min walk (~16–18 min).",
+      "travel_time_min": 17,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "08:00 – 16:30 (Admission ends at 16:30)",
+      "exceptions": "1st & 15th days of the Lunar Month (incl. Lantern Festival Sat Feb 20, 2027 = 1st Lunar Month 15th day!) open earlier at ~07:00 with heavy local incense crowds. Courtyard entry is now Free; optional Jade Buddha Chamber upstairs may charge separate small fee.",
+      "cost_2_adults_cny": "CNY 0 main temple courtyard entry",
+      "cost_2_adults_usd": "$0.00",
+      "official_source_url": "https://www.trip.com/travel-guide/attraction/shanghai/shanghai-jade-buddha-temple-75617?curr=USD&locale=en-XX",
+      "verification_status": "Verified via Official Ctrip/Trip.com Attraction Listing (Standalone yufotemple.com English page offline)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Shanghai Old Town & Jade Buddha Temple 4K", "url": "https://www.youtube.com/watch?v=2lGPfJpFYtU" },
+        { "platform": "TikTok", "label": "Jade Buddha Temple Shanghai Videos", "url": "https://www.tiktok.com/discover/jade-buddha-temple-shanghai-%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B1%E0%B8%94" }
+      ]
+    },
+    {
+      "id": "act-shanghai-disneyland",
+      "name": "Shanghai Disney Resort (World's Only Zootopia Land & TRON)",
+      "chinese_name": "上海迪士尼度假区",
+      "category": "Theme Park Full-Day Excursion",
+      "district": "Pudong New Area",
+      "address": "310 Huangzhao Road, Chuansha New Town, Pudong New Area, Shanghai",
+      "metro_route_from_hubs": "Metro Line 8 (from People's Square, 8 stops) or Line 10 (from East Nanjing Rd / Xintiandi) -> transfer at Oriental Sports Center / Jiaotong Univ. to Line 11 terminus Disney Resort Station (~49–55 min door-to-door).",
+      "travel_time_min": 52,
+      "days_open": "Monday – Sunday (Daily)",
+      "operating_hours": "Park typically 08:30 – 20:30 or 21:30 (Disneytown 10:00 – 22:00; exact daily hours released on rolling 30-day official calendar)",
+      "exceptions": "Multi-tier dynamic pricing across RMB 475 – RMB 799/adult; Feb 16–28 weekdays after Spring Festival fall in lower Regular/Weekday tiers vs weekend surges. Original physical passports mandatory at turnstiles (passport serves as park ticket!).",
+      "cost_2_adults_cny": "CNY 950 – CNY 1,598 (RMB 475 Regular – RMB 799 Peak per adult)",
+      "cost_2_adults_usd": "$141.49 – $238.01",
+      "official_source_url": "https://shcorporate.shanghaidisneyresort.com/wp-content/uploads/2025/08/Press-Release-Shanghai-Disney-Resort-Welcomes-a-Golden-Autumn-With-All-Things-Duffy-and-Friends-a-Wicked-Fun-Halloween-and-Holiday-Celebrations.pdf",
+      "secondary_official_url": "https://www.shanghaidisneyresort.com/",
+      "verification_status": "Verified (Official Shanghai Disney Resort Corporate Press Release)",
+      "social_links": [
+        { "platform": "YouTube", "label": "Zootopia: Hot Pursuit Full 4K POV — Shanghai Disneyland", "url": "https://www.youtube.com/watch?v=gxpVWd-ofnM" },
+        { "platform": "TikTok", "label": "Shanghai Disneyland Channel", "url": "https://www.tiktok.com/channel/disneyland-shanghai?lang=en" },
+        { "platform": "Instagram", "label": "@shanghaidisneyresort (Official)", "url": "https://www.instagram.com/shanghaidisneyresort/" }
+      ]
+    }
+  ]
+}
