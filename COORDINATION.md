@@ -86,3 +86,20 @@ _None yet._
 - [ ] No hallucinated prices/hours — proxies labelled with source + date
 - [ ] Site builds with no broken internal links; mobile layout checked
 - [ ] GitHub Pages live URL recorded here: _TBD_
+
+## Session `77604d1c` handoff and final-integration notes
+
+The initial review on branch `arena/77604d1c-chinafun2` found only the starter README and no coordination claims. While this session was building a standalone evidence-first dashboard, PR #1 from session `91622d32` was merged to `main` (commit `7546538`) and its overlapping dashboard/data files appeared. This was discovered after PR #3 was opened; do not discard the merged work. Session `77604d1c` is now acting as the final integration/review pass on the current branch, preserving the existing subpages and deployment workflow while making the root dashboard evidence-first.
+
+| Review/integration task | Status | Owner | Scope |
+|---|---|---|---|
+| Replace root landing view with source-linked evidence-first dashboard; preserve existing pages/data/workflow | in progress | `77604d1c` / `arena/77604d1c-chinafun2` | `index.html`, `app.js`, `data.js`, `styles.css`, `README.md`, this board |
+| Audit already-published research claims and log corrections for final review | needs review | `77604d1c` / `arena/77604d1c-chinafun2` | `RESEARCH_REVIEW.md`, this board |
+
+### Conflict / review notes
+- PR #3 (`https://github.com/kanlerxz87-cyber/ChinaFun2/pull/3`) initially conflicted because the earlier session merged while this branch was active. This rebase is preserving the merged subpages, workflow, and task log. Never force-push or delete their files.
+- GitHub Pages currently reports `built` from the `main` branch root. The main branch also has a successful Pages build action after PR #1; the exact public URL is `https://kanlerxz87-cyber.github.io/ChinaFun2/`.
+- Audit issue: the existing `flagged.html` itself records secondary/aggregator-based restaurant price estimates and derived couple totals, estimated hotel Michelin counts based on districts rather than route times, and non-official activity URLs. These contradict the user's strict “official source or blank” rule; they are flagged in `RESEARCH_REVIEW.md`. The new root dashboard does not reuse those values.
+- Audit issue: the existing flagged page states hotel rates are “not yet released” as a general statement and suggests proxy 2026 prices. Do not present proxy rates as verified 2027 rates; use official date-specific quote only or blank.
+- Independent fact checks for the new root dashboard: the official 2027 State Council schedule; current official MICHELIN Guide pages and releases; hotel brand room pages; Taian Table official FAQ; Shanghai Museum official homepage; Shanghai government Yuyuan notice. New dashboard facts/unknowns are in `data.js` with direct official source links.
+- Verification: Node syntax checks; data-source requirements; internal anchor audit; local static-server 200 smoke checks; `git diff --check`. Pages deploy status checked via GitHub API.
