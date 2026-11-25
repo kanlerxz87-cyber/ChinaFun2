@@ -1,0 +1,247 @@
+/* Verified fact ledger. Unknown fields are intentionally empty strings. */
+window.TRIP_DATA = {
+  dates: [
+    {
+      title: 'Preferred-start 7-night stay',
+      dates: 'Mon Feb 15 → Mon Feb 22, 2027',
+      nights: '7 nights',
+      fit: 'Meets the 1–2 week request and uses preferred start date',
+      price: '',
+      priceNote: 'Official 2-adult, 7-night total not verified',
+      source: 'https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html',
+      sourceLabel: 'Official 2027 holiday notice'
+    },
+    {
+      title: 'Preferred-start 14-night stay',
+      dates: 'Mon Feb 15 → Mon Mar 1, 2027',
+      nights: '14 nights',
+      fit: 'Meets 2-week upper limit; compare transport/second city costs separately',
+      price: '',
+      priceNote: 'Official 2-adult, 14-night total not verified',
+      source: 'https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html',
+      sourceLabel: 'Official 2027 holiday notice'
+    }
+  ],
+  hotels: [
+    {
+      name: 'The Shanghai EDITION',
+      area: '199 Nanjing Road East, Shanghai 200002',
+      evidence: 'Official room inventory includes guest rooms with 1 King; hotel room description mentions bathroom amenities and soaking tub.',
+      bed: '1 King (room type listed)',
+      bath: '',
+      amenities: 'Official overview lists on-site restaurants, bars, indoor pool, spa, fitness center and 24-hour room service.',
+      total: '',
+      transit: '',
+      fitNote: 'Private bathroom not explicitly confirmed in the reviewed room-page excerpt; confirm before booking.',
+      roomSource: 'https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/',
+      propertySource: 'https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/',
+      bookSource: 'https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/',
+      youtube: 'The Shanghai EDITION Shanghai hotel room tour'
+    },
+    {
+      name: 'Grand Hyatt Shanghai',
+      area: 'Jin Mao Tower, 88 Century Avenue, Pudong, Shanghai 200121',
+      evidence: 'Official room inventory lists King-bed room types; room descriptions include 24-hour room service, concierge and deep-soaking bathtub.',
+      bed: '1 King (room type listed)',
+      bath: '',
+      amenities: 'Official room descriptions list 24-hour room service and concierge; room detail lists minibar, Wi-Fi and in-room safe.',
+      total: '',
+      transit: '',
+      fitNote: 'Private bathroom not explicitly confirmed in the reviewed room-page excerpt; confirm before booking.',
+      roomSource: 'https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms',
+      propertySource: 'https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/overview',
+      bookSource: 'https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms',
+      youtube: 'Grand Hyatt Shanghai room tour'
+    },
+    {
+      name: 'Hyatt on the Bund, Shanghai',
+      area: '199 Huang Pu Road, Shanghai 200080',
+      evidence: 'Official room inventory lists King-bed room types; the room description identifies a spacious marble bathroom.',
+      bed: '1 King (room type listed)',
+      bath: '',
+      amenities: 'Official room detail lists 24-hour room service, complimentary high-speed Wi-Fi, minibar and marble bath.',
+      total: '',
+      transit: '',
+      fitNote: 'Private bathroom not explicitly confirmed in the reviewed room-page excerpt; confirm before booking.',
+      roomSource: 'https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai/rooms',
+      propertySource: 'https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai',
+      bookSource: 'https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai/rooms',
+      youtube: 'Hyatt on the Bund Shanghai room tour'
+    },
+    {
+      name: 'Rosewood Beijing',
+      area: 'Jing Guang Centre, Hujialou, Chaoyang District, Beijing 100020',
+      evidence: 'Official Grand Deluxe Room page lists one king bed and one full marble bath.',
+      bed: '1 King (Grand Deluxe Room)',
+      bath: '',
+      amenities: 'Official room page lists Wi-Fi, in-room dining, minibar, walk-in wardrobe and 24-hour in-room dining.',
+      total: '',
+      transit: '',
+      fitNote: 'Room page says “one full marble bath” but does not explicitly state “private”; confirm ensuite status for the chosen room.',
+      roomSource: 'https://www.rosewoodhotels.com/en/beijing/accommodation/rooms/grand-deluxe-room',
+      propertySource: 'https://www.rosewoodhotels.com/en/beijing',
+      bookSource: 'https://www.rosewoodhotels.com/en/beijing/reservations/select-a-service',
+      youtube: 'Rosewood Beijing Grand Deluxe Room tour'
+    },
+    {
+      name: 'Regent Beijing',
+      area: '99 Jinbao Street, Dongcheng District, Beijing 100005',
+      evidence: 'Official room page lists Classic Room with 1 King option and marble bathroom with tub and rain shower.',
+      bed: '1 King (Classic Room option)',
+      bath: '',
+      amenities: 'Official hotel page describes indoor pool, spa, dining venues and subway access nearby.',
+      total: '',
+      transit: '',
+      fitNote: 'Private bathroom not explicitly stated for the Classic Room; confirm exact room bath arrangement with the hotel.',
+      roomSource: 'https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail/rooms-and-suites',
+      propertySource: 'https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail',
+      bookSource: 'https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail/rooms-and-suites',
+      youtube: 'Regent Beijing Classic Room tour'
+    }
+  ],
+  clusters: [
+    {
+      city: 'Beijing',
+      edition: '2026 city selection',
+      count: '32 starred restaurants',
+      detail: '2 three-star · 6 two-star · 24 one-star',
+      comparability: 'Current city-level count in the latest official Beijing release reviewed.',
+      source: 'https://guide.michelin.com/en/article/news-and-views/michelin-guide-beijing-2026'
+    },
+    {
+      city: 'Shanghai',
+      edition: '2025 city selection',
+      count: '52 starred restaurants',
+      detail: '2 three-star · 9 two-star · 41 one-star',
+      comparability: '2026 MICHELIN release combines Shanghai, Jiangsu and Zhejiang (77 stars regional total); do not treat the regional total as Shanghai-only.',
+      source: 'https://guide.michelin.com/en/article/news-and-views/shanghai-2025-starred-restaurants',
+      regionalSource: 'https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang'
+    }
+  ],
+  restaurants: [
+    {
+      city: 'Shanghai',
+      name: 'Taian Table',
+      status: '3 MICHELIN Stars · 2026',
+      distinction: 'Starred',
+      cuisine: 'Innovative',
+      guideBand: '¥¥¥¥ (guide band; not a meal quote)',
+      coupleTotal: '¥5,176 (10-course) / ¥5,776 (12-course), calculated from the venue-published ¥2,588 / ¥2,888 per person; supplements excluded.',
+      hours: 'Tue–Sat, dinner bookings 18:00–20:00 (first/last booking times); dinner lasts 2–3 hours.',
+      exceptions: '2027 holiday exceptions not confirmed. Venue says menu price may change seasonally; add-ons incur supplements. Tax/fee inclusion is not stated.',
+      guide: 'https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table',
+      venue: 'https://bookings.taian-table.com/faq',
+      video: 'Taian Table Shanghai restaurant'
+    },
+    {
+      city: 'Shanghai',
+      name: 'Fu He Hui',
+      status: '2 MICHELIN Stars · 2026',
+      distinction: 'Starred',
+      cuisine: 'Vegetarian',
+      guideBand: '¥¥¥¥ (guide band; not a meal quote)',
+      coupleTotal: '',
+      hours: 'Daily 11:00–13:00 and 17:30–21:00 (MICHELIN Guide listing).',
+      exceptions: '2027 holiday exceptions not confirmed; verify seasonal set menu and reservation directly.',
+      guide: 'https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui',
+      venue: '',
+      video: 'Fu He Hui Shanghai restaurant'
+    },
+    {
+      city: 'Beijing',
+      name: "King's Joy",
+      status: '2 MICHELIN Stars · 2026',
+      distinction: 'Starred',
+      cuisine: 'Vegetarian',
+      guideBand: '¥¥¥¥ (guide band; not a meal quote)',
+      coupleTotal: '',
+      hours: 'Daily 11:00–22:00 (MICHELIN Guide listing).',
+      exceptions: '2027 holiday exceptions not confirmed; check service times and menu directly.',
+      guide: 'https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/king-s-joy',
+      venue: 'https://www.kingsjoy.com/',
+      video: "King's Joy Beijing restaurant"
+    },
+    {
+      city: 'Beijing',
+      name: 'Trb Hutong',
+      status: '1 MICHELIN Star · 2026',
+      distinction: 'Starred',
+      cuisine: 'French Contemporary',
+      guideBand: '¥¥¥¥ (guide band; not a meal quote)',
+      coupleTotal: '',
+      hours: 'Daily 11:30–14:30 and 17:30–22:00 (MICHELIN Guide listing).',
+      exceptions: '2027 holiday exceptions not confirmed; check menus, service and booking availability directly.',
+      guide: 'https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/trb-hutong',
+      venue: 'https://www.trbhutong.com/',
+      video: 'TRB Hutong Beijing restaurant'
+    },
+    {
+      city: 'Shanghai',
+      name: 'Hong Yu Fang',
+      status: 'MICHELIN Guide listed · no star badge shown on reviewed page',
+      distinction: 'Guide listing · not a star',
+      cuisine: 'Dim Sum',
+      guideBand: '¥ (guide band; not a meal quote)',
+      coupleTotal: '',
+      hours: 'MICHELIN page lists daily 10:00–22:00.',
+      exceptions: 'The same MICHELIN page describes the restaurant as “open in the morning only”; source details conflict. Confirm hours directly before planning.',
+      guide: 'https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang',
+      venue: '',
+      video: 'Hong Yu Fang Shanghai restaurant'
+    },
+    {
+      city: 'Beijing',
+      name: 'Jing Hua Lou',
+      status: 'Bib Gourmand · MICHELIN Guide Beijing 2026 (not a Star)',
+      distinction: 'Bib Gourmand · not a star',
+      cuisine: 'Beijing Cuisine',
+      guideBand: '¥¥ (guide band; not a meal quote)',
+      coupleTotal: '',
+      hours: '',
+      exceptions: 'Reviewed MICHELIN page does not show hours; confirm the date-specific schedule with the venue.',
+      guide: 'https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/jing-hua-lou',
+      venue: '',
+      video: 'Jing Hua Lou Beijing restaurant'
+    }
+  ],
+  activities: [
+    {
+      city: 'Shanghai',
+      name: 'Shanghai Museum — People’s Square',
+      schedule: 'Official homepage: 09:00–17:00; during the listed Ancient Civilizations of the Americas exhibition, latest entry is 15:00. Closed Monday except national holidays.',
+      exception: 'The museum lists the exhibition through Nov 14, 2027 and says advance reservation is required during it. Reconfirm the February 2027 entry rules and any holiday schedule.',
+      cost: '',
+      source: 'https://www.shanghaimuseum.net/mu/frontend/pg/en/index',
+      officialLink: 'https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west',
+      video: 'Shanghai Museum People’s Square visit',
+      socials: ['https://www.youtube.com/@theshanghaimuseum','https://www.instagram.com/theshanghaimuseum']
+    },
+    {
+      city: 'Shanghai',
+      name: 'Yuyuan Garden — winter/spring night tour',
+      schedule: 'Official Shanghai government notice: Fri–Sun, 18:00–21:20 in Jan–Apr and Nov–Dec; last entry 20:30.',
+      exception: 'Notice says Mon–Thu evening closure except public holidays. This is a published seasonal schedule, not a guarantee for Feb 2027; check the garden’s dated notice before visiting.',
+      cost: '',
+      source: 'https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html',
+      officialLink: 'https://www.yugarden.com.cn/',
+      video: 'Yuyuan Garden Shanghai night tour'
+    }
+  ],
+  questions: [
+    {q:'Which city should anchor the trip?', answer:'Not specified. Shanghai and Beijing are researched as candidates; no final city is assumed.', next:'Choose one city or approve a split stay; then recalculate rates and transit catchments city-by-city.', state:'Open'},
+    {q:'What are the exact departure and return dates?', answer:'Preferred start is Feb 15–18, 2027; trip duration is 1–2 weeks. Exact checkout date is undecided.', next:'Compare Feb 15–22 (7 nights) with Feb 15–Mar 1 (14 nights), and check airfare for both.', state:'Partly answered'},
+    {q:'Does each candidate room have a private bathroom?', answer:'The reviewed official room pages show bathroom/bath details but do not explicitly certify a private bathroom for these specific room categories.', next:'Ask the hotel to confirm the exact bookable room is ensuite/private, then retain the written confirmation.', state:'Open · blocker'},
+    {q:'Which hotel has the best verified 7-night total for two?', answer:'No official date-specific total was captured. All quote cells are blank.', next:'Query each hotel’s official booking engine for 2 adults, 1 room, Feb 15–22, taxes included and identical cancellation terms.', state:'Open · blocker'},
+    {q:'When is the cheapest time to book?', answer:'No verified price history or future rate calendar was available to establish the lowest booking date.', next:'Record refundable quotes at regular intervals; choose based on observed price and cancellation flexibility.', state:'Open'},
+    {q:'Can attractions and restaurants be reached within one hour by subway or bus?', answer:'Not established. No hotel has been chosen, and no official route-planner itinerary was verified for each destination/time.', next:'Once a hotel is chosen, check each destination via current city transit directions for weekday/weekend departure times.', state:'Open · blocker'},
+    {q:'Which venues are open on the exact visit days in 2027?', answer:'Published regular hours are shown where available; 2027 holiday/event exceptions are not confirmed.', next:'Re-check each official venue calendar and bookable dates before finalizing each day.', state:'Open'},
+    {q:'What dining budget is acceptable for two?', answer:'Not provided. Michelin price symbols are only guide bands; the couple-total estimates are blank.', next:'Set a per-meal ceiling, then compare published set-menu prices and supplements on restaurant booking pages.', state:'Open'},
+    {q:'How should visa, flights, mobility and dietary constraints affect the plan?', answer:'No traveler passport/visa, flight, accessibility, food allergy or mobility details were given.', next:'Verify entry requirements from the appropriate government source after identifying passport nationality; add constraints before selecting hotel/route.', state:'Open'}
+  ],
+  suggestions: [
+    {id:'city', title:'Choose a primary city before rate-shopping', desc:'Keep Shanghai and Beijing as alternatives until the dining/activity priorities and flight plan are weighed. Avoid claiming a Michelin winner based on non-comparable edition scopes.', impact:'Highest decision value', effort:'Low', rec:'Recommended first'},
+    {id:'transit', title:'Add dated transit-time verification', desc:'For each shortlisted hotel, calculate official subway/bus travel to every selected activity and restaurant at representative trip times; count only reachable venues ≤60 minutes.', impact:'Directly answers the 1-hour rule', effort:'Medium', rec:'Recommended after city choice'},
+    {id:'price', title:'Add a price-tracking log and total-cost model', desc:'Capture official live 7-night totals for two adults, taxes, cancellation terms and room bed/bath details; preserve dated snapshots to compare actual booking-time changes.', impact:'Makes value ranking possible', effort:'Medium', rec:'Recommended before booking'},
+    {id:'itinerary', title:'Build a day-by-day plan only after the blockers clear', desc:'Group nearby activities, reserve Michelin meals against confirmed opening days, and keep a weather/closure alternative for each day.', impact:'Reduces avoidable backtracking', effort:'Medium', rec:'Later step'}
+  ]
+};
