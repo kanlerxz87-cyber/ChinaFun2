@@ -128,3 +128,9 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - Published venue costs are separate from exact 2027 tickets/bills. Taian FAQ current menu arithmetic and Yu Garden current winter daytime adult pricing retained; unsupported Panda Base hours/tickets blank because the fetched official introduction does not substantiate them.
 - Search shortcuts are labelled search, not verified official social posts. Renovation/closure/event notices remain a specific review item; Ultraviolet is not a bookable candidate. Hilton Wangfujing fetch failure is recorded, not quietly counted as a fresh room verification.
 - Evidence notes and test limits: `research/integration-verification-2026-11-25.md`. Historical findings in `RESEARCH_REVIEW.md` remain below a current reconciliation update.
+
+### Latest-main reconciliation and final pre-publication checks
+
+- Merged `origin/main` at `6118a43` after discovering PR #7. Preserved the entire `shanghai-planner/` subtree unchanged; its independent validator passes (54 sources, 4 hotels, 8 restaurants, 4 activities).
+- Re-ran local HTTP verification after the merge: **33 HTML/JSON/CSS/JS resources return 200**; the 11 primary HTML pages retain zero missing local links/anchors. Search/sort/dashboard DOM tests pass. Fifteen review groups now include external-source fetch limitations (`L01`).
+- Added `.github/workflows/validate.yml` for deterministic generation, structural policy checks, retained-planner integrity and DOM interaction tests. The existing main-only Pages deployment remains intact.
