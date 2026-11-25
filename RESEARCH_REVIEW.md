@@ -1,3 +1,26 @@
+# Integration update — 25 November 2026 · session 55de3f9a
+
+The audit below is retained as a **historical review**, not a description of the current pages. The dashboard and ten static detail pages now share canonical JSON records and one generated `data.js` ledger.
+
+## Presentation corrections completed
+
+- Cross-linked root and all detail pages, including the independent entry audit from branch `b679d5a6`; retained its original Markdown intact.
+- Expanded to Shanghai, Beijing, Guangzhou and Chengdu: 16 hotel candidates, 24 actual dining venues, 22 activity records. Removed two generic “example” rows from the venue table; distinction explanations remain in the page introduction.
+- Removed unsupported secondary cash menus, proxy 2026 hotel totals, district-estimated one-hour counts and rank numbers from official columns. Preserved the inherited datasets in `research/legacy-ledgers-2026-11-25.json` as explicitly superseded audit material.
+- Corrected temporal planning to Nov 25, 2026: 82–85 days before preferred starts; concrete 90/60/30/14-day checkpoints. No evidence establishes the cheapest booking day. Aggregator observations are quarantined with missing room/stay/tax/cancellation metadata; they are not verified 2027 quotes or demonstrated savings.
+- Corrected Yu Garden's daytime schedule/adult winter ticket and Shanghai Museum closure/reservation caveats. Monday Feb 15 is not used for these venues in the draft.
+- Shanghai 2026 city subset is 51 starred, 156 listed; the regional 77 is not a Shanghai total. Guangzhou's 2026 official release reports **52 Bib Gourmand + 45 Selected**, not the earlier 51/46 research snapshot. Chengdu uses its 2027 city release, and that edition difference is explicit.
+- Re-fetched the official regional MICHELIN release, Taian FAQ, Yu Garden visitor page, Panda Base introduction, Sofitel Sunrich and Marriott/Ritz-Carlton property pages during integration. The Panda introduction does not support opening hours or admission, so those cells stay blank. Hilton Wangfujing's fetch failed; no new room facts were asserted from it.
+- Social links explicitly say search/profile; no unverified direct post is represented as official evidence.
+
+## Research intentionally still open
+
+Official 2027 seven-night quotes, consistently explicit private ensuite room confirmation, complete hotel-to-venue public-transit routing and rankings, date-specific menus/tickets, 2027 closure/renovation notices, direct creator-video verification and personal entry eligibility remain **needs review**. Every record links the applicable visible `flagged.html` groups. Structural tests are not external fact verification.
+
+The open `arena/86c14d15` PR #4 was reviewed, not merged wholesale: its “from nightly × 7” totals and sampled/district route rankings do not meet the exact official-quote and complete door-to-door standards. Its alternative `docs/` site is not silently selected as the Pages source. This integration retains the already merged root/category architecture.
+
+---
+
 # Research review and integration flags
 
 Reviewed 2026-11-25 after fetching the newly merged `main` tree (PR #1, merge `7546538`). This is an audit of claims in the pre-existing `data/*.json`, `flagged.html`, and README—not a replacement of that research. The current root dashboard in `index.html` is deliberately stricter; the older detail pages were retained, but should not be treated as decision-ready until the open checks below are closed.

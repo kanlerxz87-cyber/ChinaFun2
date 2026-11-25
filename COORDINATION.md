@@ -104,3 +104,33 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - Independent fact checks for the new root dashboard: the official 2027 State Council schedule; current official MICHELIN Guide pages and releases; hotel brand room pages; Taian Table official FAQ; Shanghai Museum official homepage; Shanghai government Yuyuan notice. New dashboard facts/unknowns are in `data.js` with direct official source links.
 - Verification: Node syntax checks; data-source requirements; internal anchor audit; local static-server 200 smoke checks; `git diff --check`. Pages deploy status checked via GitHub API.
 - Deployment irregularity: the inherited workflow triggered on `arena/*` and its protected `github-pages` environment rejected this branch (`Branch ... is not allowed to deploy`). Restrict workflow pushes to `main` and guard the deploy job to `refs/heads/main`; local preview remains available on the branch. The successful main-branch Pages deployment is the publication path.
+
+## Session `55de3f9a` — evidence reconciliation and publication, 2026-11-25
+
+**Scope:** root dashboard, existing category pages and JSON, cross-city extension, source-policy cleanup, entry audit integration, verification and publication. This is a reconciliation of merged work, not a replacement with the alternative `docs/` build. Original session claim log is retained at `research/session-55de3f9a-initial-coordination.md`; prior task/history entries above are historical.
+
+| Task | Current status | Result / remaining discovery |
+|---|---|---|
+| Integrate merged main and retain independent audits | done | Root dashboard design and category paths retained; original `b679d5a6` entry audit linked and rendered. PR #4 reviewed, not merged wholesale. New PR #7 isolated subtree will be merged unchanged. |
+| Four-city executive / hotel / dining / activity records | done · factual gaps need review | 16 hotel candidates, 24 restaurants, 22 activity records; Shanghai/Beijing/Guangzhou/Chengdu. City/edition distinctions explicit. |
+| Remove unsupported official price / transit / ranking claims | done | Secondary cash-menu estimates, proxy 2026 totals and estimated district counts removed from official fields. Original research retained in labelled audit JSON. |
+| Exact seven-night official quotes and cheapest booking lead time | needs review | No official date-specific quotes or comparable price history. Prior aggregator observations quarantined, not treated as 2027 rates or proven savings. Monitoring checkpoints are calendar arithmetic. |
+| Exact Queen+/King private ensuite room fit | needs review | Preserve supported official room descriptions; newly checked Sofitel Superior King and St. Regis City-view King. Require explicit private-bathroom/category confirmation. |
+| Complete <=60-minute public-transit matrix and rank | needs review | All rank/count/duration fields blank. Choose city and exact departure times, then record first/last mile, waits and transfers before ranking. |
+| Search/sort, accessible controls and cross-page navigation | done | 11 root HTML pages; 10 static details generated from canonical JSON, no-JS fallback, mobile navigation, visible review flags. |
+| Structural / local HTTP / DOM tests | done | `verify_project.py`: all root local links/anchors, official source on every table row, flags, dates, canonical parity and JS syntax. HTTP 200 for 24 current HTML/JSON/CSS/JS resources. JSDOM interaction tests pass. No visual-browser or complete external-link claim. |
+| Main publication and live deployment check | in progress | Finish integration merge on this working branch; push only this branch, open PR, merge explicit PR number, check main Pages run and live content. |
+
+### Important research corrections
+
+- Today is Nov 25, 2026: preferred Feb 15–18 starts are **82–85 days away**, not “Feb 2026 now.” 90-day targets Nov 17–20; 60-day Dec 17–20; 30-day Jan 16–19; 14-day Feb 1–4. These are recheck dates, not a proven optimum.
+- Official Shanghai 2026 city subset: **51 starred / 156 listed**, distinct from 77 regional. Guangzhou 2026 release: **20 starred / 117 listed; 52 Bib, 45 Selected** (earlier 51/46 snapshot superseded). Chengdu 2027: **15 starred / 84 listed**. Mixed editions clearly labelled.
+- Published venue costs are separate from exact 2027 tickets/bills. Taian FAQ current menu arithmetic and Yu Garden current winter daytime adult pricing retained; unsupported Panda Base hours/tickets blank because the fetched official introduction does not substantiate them.
+- Search shortcuts are labelled search, not verified official social posts. Renovation/closure/event notices remain a specific review item; Ultraviolet is not a bookable candidate. Hilton Wangfujing fetch failure is recorded, not quietly counted as a fresh room verification.
+- Evidence notes and test limits: `research/integration-verification-2026-11-25.md`. Historical findings in `RESEARCH_REVIEW.md` remain below a current reconciliation update.
+
+### Latest-main reconciliation and final pre-publication checks
+
+- Merged `origin/main` at `6118a43` after discovering PR #7. Preserved the entire `shanghai-planner/` subtree unchanged; its independent validator passes (54 sources, 4 hotels, 8 restaurants, 4 activities).
+- Re-ran local HTTP verification after the merge: **33 HTML/JSON/CSS/JS resources return 200**; the 11 primary HTML pages retain zero missing local links/anchors. Search/sort/dashboard DOM tests pass. Fifteen review groups now include external-source fetch limitations (`L01`).
+- Added `.github/workflows/validate.yml` for deterministic generation, structural policy checks, retained-planner integrity and DOM interaction tests. The existing main-only Pages deployment remains intact.

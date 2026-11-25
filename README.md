@@ -1,44 +1,46 @@
-# China Trip Planning
+# China trip planning desk
 
-An evidence-first, mobile-friendly planning dashboard for a two-adult China trip in the **February 15–March 23, 2027** window. It separates confirmed source facts from open questions; values not supported by a reviewed official source are intentionally left blank.
+Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Mar 23, 2027**, with **Feb 15–18 preferred starts** and a **seven-night working stay**.
 
-## Open the site
+**Live site:** https://kanlerxz87-cyber.github.io/ChinaFun2/
 
-- GitHub repository Pages is already configured to publish the `main` branch root: <https://kanlerxz87-cyber.github.io/ChinaFun2/>.
-- This working branch is not the Pages source. Once this branch is merged into `main`, GitHub Pages' existing legacy root publishing should build the root `index.html` automatically. Until then use the local preview or GitHub branch files.
-- Local preview (from the repository root):
+## Start here
 
-  ```sh
-  python3 -m http.server 8000
-  ```
+- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional research-first base; Beijing, Guangzhou and Chengdu remain real alternatives, not a fabricated value ranking.
+- [Hotels](hotels.html): 16 candidates, exact Queen+/King and private ensuite fit where supported; room confirmation, official seven-night total and route rank stay blank when unverified.
+- [Michelin](michelin.html): 24 actual venues, distinctions/editions, hours and current published menu arithmetic where available. No secondary cash estimates.
+- [Activities](activities.html): 22 records, published schedules, closure traps, product-specific couple tickets, and explicitly unqualified excursions.
+- [Dates & costs](costs-booking.html): preferred-start and later seven-night windows through Mar 23; actual 90/60/30/14-day calendar checkpoints.
+- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-  Then open `http://localhost:8000`.
+Today is **Nov 25, 2026**, 82–85 days before the preferred starts. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
 
-## Project files
+## Research discipline
 
-- `index.html` — dashboard sections: executive summary, dates, hotel candidates, Michelin clusters, activities, decision questions, suggestions, and review flags.
-- `styles.css` — responsive layouts, navigation, card/table-like data blocks, and small-screen behavior.
-- `data.js` — source-linked data ledger. Empty values mean **unverified**, not zero.
-- `app.js` — renders cards and source links; suggestion buttons only select an option for review and do not modify any research or apply a proposal.
-- `COORDINATION.md` — shared task board, source and verification notes, and flagged issues.
+A source link verifies only its stated scope. Empty official fields mean **unverified**, never zero or unavailable inventory. A published regular admission price is not a confirmed 2027 ticket. A Guide ¥ band is not a cash meal estimate. No hotel has a recorded complete ≤60-minute public-transit catchment; no rank is assigned.
 
-## Research scope and verified facts
+MICHELIN release comparisons are labelled by city scope and edition: Shanghai's 2026 city subset has 51 starred venues (not the 77 regional total), Beijing 2026 has 32, Guangzhou 2026 has 20, and Chengdu 2027 has 15. These are not hotel accessibility scores or a same-edition league table. All sources and remaining caveats are linked on the site.
 
-- The official mainland China public-holiday page lists the 2027 Spring Festival holiday as **February 5–13, 2027**: [State Council, 2027 public holidays](https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html). The sample stay dates in the dashboard are calendar calculations from the requested preferred start, not hotel bookings.
-- The **February 15–22, 2027** sample is 7 nights; **February 15–March 1, 2027** is 14 nights. These satisfy the requested 1–2 week length, although the user’s preferred vacation span (Feb 15–18) is only four calendar days.
-- The official MICHELIN Beijing 2026 release reports 32 starred restaurants: 2 with three stars, 6 with two, 24 with one: [MICHELIN Guide Beijing 2026](https://guide.michelin.com/en/article/news-and-views/michelin-guide-beijing-2026).
-- The MICHELIN Shanghai 2025 city release reported 52 starred restaurants: 2 three-star, 9 two-star, 41 one-star: [MICHELIN Guide Shanghai 2025](https://guide.michelin.com/en/article/news-and-views/shanghai-2025-starred-restaurants). The 2026 Shanghai–Jiangsu–Zhejiang release is a different regional scope: [MICHELIN Guide regional 2026 release](https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang). These totals are not presented as like-for-like city rankings.
-- Restaurant star labels, Michelin-only/Bib Gourmand distinctions and listed hours are sourced to individual MICHELIN Guide venue pages; Taian Table’s published menu prices/hours link to its official FAQ. Restaurant-couple total arithmetic is shown only for its currently published menu examples and is not a 2027 quote. Hong Yu Fang’s MICHELIN page contains conflicting hours in its own table and description; both are flagged.
-- Hotel candidates appear only where the reviewed official hotel page identifies a king bed or equivalent room category: The Shanghai EDITION, Grand Hyatt Shanghai, Hyatt on the Bund, Rosewood Beijing and Regent Beijing. The exact private-bathroom requirement, 2027 room allocation and live date-specific rate were not confirmed; candidates are therefore not labelled compliant or ranked.
-- Shanghai Museum hours, current exhibition end date, entry/reservation rules and official social profiles are linked to the museum homepage; Yuyuan winter/spring evening schedule is linked to Shanghai Municipal Government. Re-check exact-date exceptions in 2027.
-- YouTube search shortcuts are discovery links, not claims that an individual creator/video is official. The Shanghai Museum row links its verified official YouTube and Instagram profiles. No third-party post was treated as a source of fact.
+Both travelers' passport nationality, entry eligibility, exact duration, budget and dietary needs remain unknown. The [original independent entry audit](research/entry-audit.md) is retained intact. Do not infer nationality from location. Social searches and independent videos are discovery aids, not official evidence.
 
-## Existing detail-page audit
+## Maintain / test / preview
 
-The main branch already contained older research subpages and JSON data. A review found secondary-source pricing, proxy-rate guidance, estimated hotel-Michelin route counts, and transit legs that omit station/first-mile time. Those entries were not reused in the root dashboard; see [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for specific official sources and recommended corrections. The older pages remain in the repository and should not be treated as fully source-audited until those flags are closed.
+Canonical records: `data/{brief,hotels,michelin,activities,costs,flags}.json`.
 
-## Important unverified items
+```sh
+python3 scripts/build_pages.py       # Regenerate 10 detail pages and data.js
+python3 scripts/verify_project.py    # Links, anchors, sources, flags, dates, data parity
+node --check app.js
+node --check assets/js/app.js
+python3 -m http.server 8000 --bind 0.0.0.0
+# In another shell, optionally check all resources over HTTP:
+python3 scripts/verify_project.py --base-url http://127.0.0.1:8000/
+```
 
-No live official seven-night hotel totals for two adults, “cheapest day to book,” hotel-specific one-hour public-transit reachability, or Michelin-restaurant counts inside those transit catchments were verified. Those values are blank by design. The site lists the question and a concrete next verification step rather than inventing a number.
+Open local port 8000. All browser resource paths are relative, including under the GitHub Pages `/ChinaFun2/` prefix. Detail pages are static and usable without JavaScript; search and keyboard-accessible sort progressively enhance them. The dashboard uses generated `data.js`; its no-JavaScript message links the static summary.
 
-The project does **not** decide the city, nationality/visa needs, exact outbound/return flights, meal budget, accessibility requirements, dietary constraints, or the preferred balance between sightseeing and fine dining. The site’s “Open questions” and “Suggestions” sections explain why each item matters and how to discover it.
+The root dashboard design from session `77604d1c`, category architecture/search from `91622d32`, and audit from `b679d5a6` are retained and reconciled. `research/legacy-ledgers-2026-11-25.json` preserves superseded research **for audit only**, not as booking evidence. `scripts/integrate_research.py` documents the one-time migration and must not be rerun on the reconciled datasets. Use `build_pages.py` for ongoing edits.
+
+## Publication
+
+Pages uses `main` root. `.github/workflows/pages.yml` deploys only from `main`; working branches are previews, not the public site. Merge the integration PR to publish. See [COORDINATION.md](COORDINATION.md) for prior claims, integration review and verification results, and [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for resolved presentation defects versus still-unverified research.

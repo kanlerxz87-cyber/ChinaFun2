@@ -1,0 +1,34 @@
+name: Validate planning desk
+
+on:
+  push:
+    branches: [main, arena/55de3f9a-chinafun2]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check reproducible detail pages and dashboard data
+        run: |
+          python3 scripts/build_pages.py
+          git diff --exit-code -- '*.html' data.js
+      - name: Check sources, links, flags, dates and JavaScript syntax
+        run: python3 scripts/verify_project.py
+      - name: Retained independent planner integrity
+        run: python3 shanghai-planner/scripts/validate_research.py
+      - name: Install DOM-test tooling (not shipped to Pages)
+        run: npm install --prefix .cache/browser-tests --no-save --package-lock=false jsdom@26
+      - name: Test search, sort and dashboard interactions
+        run: NODE_PATH=.cache/browser-tests/node_modules node scripts/test_ui.cjs

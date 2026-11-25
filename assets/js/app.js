@@ -36,16 +36,20 @@ document.addEventListener('DOMContentLoaded', function () {
         var tbody = table.querySelector('tbody');
         var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
         var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
-        headers.forEach(function (h) { h.removeAttribute('data-dir'); });
+        headers.forEach(function (h) { h.removeAttribute('data-dir'); h.removeAttribute('aria-sort'); });
         th.setAttribute('data-dir', dir);
+        th.setAttribute('aria-sort', dir === 'asc' ? 'ascending' : 'descending');
         rows.sort(function (a, b) {
           var av = (a.children[idx] ? a.children[idx].textContent : '').trim().toLowerCase();
           var bv = (b.children[idx] ? b.children[idx].textContent : '').trim().toLowerCase();
-          var an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
-          var bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          // Unknowns are never treated as zero and remain last in either order.
+          var aBlank = av === '' || av === '—';
+          var bBlank = bv === '' || bv === '—';
+          if (aBlank !== bBlank) return aBlank ? 1 : -1;
+          var numeric = /^-?\d+(\.\d+)?$/;
           var cmp;
-          if (!isNaN(an) && !isNaN(bn) && av !== '' && bv !== '') cmp = an - bn;
-          else cmp = av.localeCompare(bv);
+          if (numeric.test(av) && numeric.test(bv)) cmp = Number(av) - Number(bv);
+          else cmp = av.localeCompare(bv, undefined, { numeric: true });
           return dir === 'asc' ? cmp : -cmp;
         });
         rows.forEach(function (r) { tbody.appendChild(r); });
