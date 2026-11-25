@@ -93,7 +93,7 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 | Review/integration task | Status | Owner | Scope |
 |---|---|---|---|
-| Replace root landing view with source-linked evidence-first dashboard; preserve existing pages/data/workflow | done | `77604d1c` / `arena/77604d1c-chinafun2` | `index.html`, `app.js`, `data.js`, `styles.css`, `README.md`, this board |
+| Replace root landing view with source-linked evidence-first dashboard; preserve existing pages/data/workflow | done | `77604d1c` / `arena/77604d1c-chinafun2` | `index.html`, `app.js`, `data.js`, `styles.css`, `README.md`, `.github/workflows/pages.yml`, this board |
 | Audit already-published research claims and log corrections for final review | needs review | `77604d1c` / `arena/77604d1c-chinafun2` | `RESEARCH_REVIEW.md`, this board |
 
 ### Conflict / review notes
@@ -103,3 +103,4 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - Audit issue: the existing flagged page states hotel rates are “not yet released” as a general statement and suggests proxy 2026 prices. Do not present proxy rates as verified 2027 rates; use official date-specific quote only or blank.
 - Independent fact checks for the new root dashboard: the official 2027 State Council schedule; current official MICHELIN Guide pages and releases; hotel brand room pages; Taian Table official FAQ; Shanghai Museum official homepage; Shanghai government Yuyuan notice. New dashboard facts/unknowns are in `data.js` with direct official source links.
 - Verification: Node syntax checks; data-source requirements; internal anchor audit; local static-server 200 smoke checks; `git diff --check`. Pages deploy status checked via GitHub API.
+- Deployment irregularity: the inherited workflow triggered on `arena/*` and its protected `github-pages` environment rejected this branch (`Branch ... is not allowed to deploy`). Restrict workflow pushes to `main` and guard the deploy job to `refs/heads/main`; local preview remains available on the branch. The successful main-branch Pages deployment is the publication path.
