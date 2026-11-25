@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flagged for Review — ChinaFun2</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <div class="brand">ChinaFun2<small>Flagged for review — does not block browsing</small></div>
+  <nav class="main">
+    <a href="index.html">Home</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Restaurants</a><a href="activities.html">Activities</a><a href="dates.html">Dates & Booking</a><a href="summary.html">Summary</a><a href="suggestions.html">Suggestions</a><a href="questions.html">Questions</a><a class="active" href="flagged.html">⚠ Flagged</a>
+  </nav>
+</div></header>
+<div class="wrap">
+  <h1>⚠ Flagged for review</h1>
+  <p class="muted">Per the repo rules, <em>needs review</em> items are published here and do not block the rest of the site. Each item says what conflicts, which source wins for now, and how to clear it. Do not treat flagged prices/hours as final.</p>
+
+  <div class="card"><h2>Critical</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>Item</th><th>What conflicts</th><th>Used for now</th><th>How to clear</th></tr></thead><tbody>
+      <tr><td>F1</td><td><strong>Ultraviolet — CLOSED</strong></td><td>Historic 3-star listings still circulate; reservations unavailable since May 2025.</td><td><span class="badge bad">Closed 29 Mar 2025</span> — removed from guide; Taian Table is sole 3★.</td><td>None — do not book. Any “Ultraviolet tickets” seller is a scam risk.</td></tr>
+      <tr><td>F2</td><td><strong>102 House — open status</strong></td><td>One listing titled “(Closed)” vs Michelin 2026 retaining 2 stars; hours also conflict.</td><td>Star status shown; price/hours marked Unverified; excluded from “must-book”.</td><td>Phone/email confirmation; log answer in COORDINATION.md.</td></tr>
+      <tr><td>F3</td><td><strong>All hotel Feb-2027 live totals</strong></td><td>Live dated inventory not capturable in this pass; nightly “from” rates vary by provider/date.</td><td>Indicative nightly × 7, labelled indicative, with booking links.</td><td>Suggestion S1 — capture 15–22 Feb 2027 totals (Sunday) and replace.</td></tr>
+    </tbody></table></div></div>
+
+  <div class="card" style="margin-top:14px"><h2>Hours conflicts (secondary sources disagree)</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>Venue</th><th>Conflict</th><th>How to clear</th></tr></thead><tbody>
+      <tr><td>F4</td><td>Shanghai Tower deck</td><td>08:30–22:00 vs 10:00–21:00 (tickets ¥180 consistent).</td><td>Official site shanghaitower.com before the Pudong day.</td></tr>
+      <tr><td>F5</td><td>Yu Garden</td><td>Official 09:00–16:30 (closed Mon) vs older 08:30–17:00 listings.</td><td><span class="badge ok">Official wins</span> — already applied; CNY hours still to publish.</td></tr>
+      <tr><td>F6</td><td>T'ang Court Mondays</td><td>Official Langham page says “daily” and “Off on Monday”.</td><td>Phone +86 21 2330 2430; check menu PDF.</td></tr>
+      <tr><td>F7</td><td>Bao Li Xuan dinner end</td><td>Official 17:30–22:00 vs older 21:00 close.</td><td><span class="badge ok">Official wins</span> — already applied.</td></tr>
+      <tr><td>F8</td><td>Shanghai Ocean Aquarium</td><td>09:00–18:00 vs holiday extensions 20:00–21:00.</td><td>Official site check in Jan 2027.</td></tr>
+      <tr><td>F9</td><td>Mr &amp; Mrs Bund / Sir Elly's hours</td><td>Multiple conflicting listings; star status corrected to Selected.</td><td>Official sites (mmbund.com / Peninsula) before visiting.</td></tr>
+    </tbody></table></div></div>
+
+  <div class="card" style="margin-top:14px"><h2>Price & data gaps (left blank or ranged, never invented)</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>Gap</th><th>Treatment on this site</th></tr></thead><tbody>
+      <tr><td>F10</td><td>Most restaurant for-two prices lack an official published menu price (PDF/WeChat-only menus).</td><td>Ranged estimates labelled by source; “Unverified — needs review” until the official menu is captured.</td></tr>
+      <tr><td>F11</td><td>Huaiyang Delights (new 1★): address, price, hours not yet extracted.</td><td>Cells blank + flagged. Michelin new-star status is verified.</td></tr>
+      <tr><td>F12</td><td>Hyatt on the Bund / Park Hyatt / Atour X official bed-bathroom confirmation incomplete; Atour X official site not verified.</td><td>Flagged in each hotel row; confirm on the official/booking page before paying.</td></tr>
+      <tr><td>F13</td><td>Social links: several are search links, not verified official accounts.</td><td>Labelled “search”. Suggestion S11 replaces with verified handles.</td></tr>
+      <tr><td>F14</td><td>Full-guide counts: hotel ranking uses a 20-restaurant depth sample, not all 156 listings.</td><td>Method stated on Dates page. Suggestion S5 extends to full guide.</td></tr>
+      <tr><td>F15</td><td>Vivant price conflict (¥980–1,480 vs ¥1,888+10%).</td><td>Wide range shown + flag. Confirm seasonal menu at booking.</td></tr>
+      <tr><td>F16</td><td>Ji Pin Court district mis-listed as Pudong in one secondary source.</td><td>Corrected to Xuhui per ViaMichelin. Address verified on Michelin page.</td></tr>
+    </tbody></table></div></div>
+
+  <div class="callout"><strong>Cleared already:</strong> Ultraviolet closure (F1 evidence), Yu Garden official hours (F5), Bao Li Xuan official hours (F7), Taian Table price/hours (official FAQ), Shanghai Museum hours/booking (official page), Michelin 2026 star list (official release). Clearing a flag = add the official source link to the JSON row and note it in <code>COORDINATION.md</code>.</div>
+  <footer>Flagged items never block browsing. They block only the specific booking that depends on them.</footer>
+</div>
+</body>
+</html>

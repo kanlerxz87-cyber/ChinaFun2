@@ -1,0 +1,26 @@
+{
+  "social": {
+    "note": "Social links live inside each row of data/restaurants.json and data/activities.json (social.youtube / youtube_search, tiktok_search, instagram / instagram_search) so tables stay in sync. This file is the coverage index.",
+    "coverage": {
+      "restaurants_total": 20,
+      "restaurants_with_youtube": 20,
+      "restaurants_with_tiktok": 20,
+      "restaurants_with_instagram": 20,
+      "activities_total": 8,
+      "activities_with_youtube": 8,
+      "activities_with_tiktok": 8,
+      "activities_with_instagram": 8
+    },
+    "official_handles_verified": [
+      {"venue": "Taian Table", "instagram": "https://www.instagram.com/stefan_stiller_taian_table/", "via": "SCMP 100 Top Tables profile"},
+      {"venue": "Fu He Hui", "instagram": "https://www.instagram.com/fuhehui/", "via": "secondary listings (verify on venue contact before relying)"},
+      {"venue": "Shanghai Museum", "instagram": "https://www.instagram.com/theshanghaimuseum/", "via": "official museum channels"}
+    ],
+    "direct_videos_verified": [
+      {"venue": "Taian Table", "youtube": "https://www.youtube.com/watch?v=RYsEUZJSrN8"},
+      {"venue": "Canton 8", "youtube": "https://www.youtube.com/watch?v=ynxLsnBkVDA"},
+      {"venue": "The Bund", "youtube": "https://www.youtube.com/watch?v=A0XMNMwa7UU"}
+    ],
+    "rule": "All other entries use labelled search links (YouTube/TikTok/Instagram search URLs) rather than invented handles. Suggestion S11: replace searches with verified official accounts."
+  }
+}

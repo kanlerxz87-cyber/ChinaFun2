@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Activities — ChinaFun2 Shanghai</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <div class="brand">ChinaFun2<small>Activities within 1 hour of your hotel</small></div>
+  <nav class="main">
+    <a href="index.html">Home</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Restaurants</a><a class="active" href="activities.html">Activities</a><a href="dates.html">Dates & Booking</a><a href="summary.html">Summary</a><a href="suggestions.html">Suggestions</a><a href="questions.html">Questions</a><a href="flagged.html">⚠ Flagged</a>
+  </nav>
+</div></header>
+<div class="wrap">
+  <h1>Activities — all within 1 hour by subway/bus</h1>
+  <p class="muted">Transit times are from a Huangpu (Bund / People's Square) base. From Park Hyatt (Pudong), add ~15–25 min for Puxi sights. Cost is the <strong>total for 2 adults</strong>. February in Shanghai is cold and damp (~2–9 °C) — plan indoor anchors (museums) and go to viewpoints on the clearest morning.</p>
+  <div class="controls no-print">
+    <input id="q" type="search" placeholder="Search activity, district…">
+    <select id="fCost"><option value="">Any cost</option><option value="free">Free only</option><option value="paid">Paid only</option></select>
+  </div>
+  <div class="table-scroll"><table class="data" id="tbl"><thead><tr>
+    <th>Activity</th><th>Cost for 2 (total)</th><th>Open days / hours / exceptions</th><th>Transit from Bund base</th><th>Official link</th><th>Watch / social</th><th>Verification</th>
+  </tr></thead><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+
+  <div class="grid cols2" style="margin-top:14px">
+    <div class="card"><h2>A perfect 7-day rhythm (15–22 Feb)</h2>
+      <ul class="tight">
+        <li><strong>Mon 15</strong> — Arrive. Bund at dusk. Canton 8 dinner (2★, best value).</li>
+        <li><strong>Tue 16</strong> — Shanghai Museum (09:00). Lao Zheng Xing lunch. Xintiandi evening.</li>
+        <li><strong>Wed 17</strong> — Yu Garden (09:00 sharp) + bazaar. Fu He Hui dinner (2★ vegetarian).</li>
+        <li><strong>Thu 18</strong> — French Concession walk. Ji Pin Court lunch. T'ang Court dinner*.</li>
+        <li><strong>Fri 19</strong> — Pudong: Shanghai Tower + Ocean Aquarium. Da Vittorio dinner.</li>
+        <li><strong>Sat 20</strong> — Lantern Festival: Yu Garden bazaar lights (expect crowds). Taian Table (3★) — book first.</li>
+        <li><strong>Sun 21</strong> — Natural History Museum or Bao Li Xuan lunch. Bund farewell walk.</li>
+        <li><strong>Mon 22</strong> — Depart. *Check Monday closures: Shanghai Museum, Yu Garden, Natural History Museum, Da Vittorio, Vivant are shut Mondays; T'ang Court Monday status needs confirmation.</li>
+      </ul>
+    </div>
+    <div class="card"><h2>Good to know</h2>
+      <ul class="tight">
+        <li><strong>Metro:</strong> Lines 2 &amp; 10 link the Bund ↔ People's Square ↔ Jing'an ↔ Lujiazui. All activities above are ≤30 min from the Bund except Changning/Xuhui dining (~35 min max).</li>
+        <li><strong>Booking:</strong> Shanghai Museum + Natural History Museum need timed WeChat reservations (overseas visitors can use Trip.com). Yu Garden, Shanghai Tower and the Aquarium sell timed tickets online.</li>
+        <li><strong>Weather:</strong> Pack a down jacket, layers, hat/gloves/scarf and waterproof shoes. Heated interiors + cold damp streets = dress in removable layers.</li>
+      </ul>
+      <p><a href="questions.html">Open questions (visa, payments, apps) →</a></p>
+    </div>
+  </div>
+  <footer>Hours verified against official venue pages where available; conflicting secondary hours are flagged <span class="badge warn">Needs review</span>. Confirm the day-of-visit hours on the official link — CNY/Lantern Festival schedules are published separately.</footer>
+</div>
+<script src="assets/app.js"></script>
+<script>
+let ALL=[];
+function render(){
+  const q=(document.getElementById("q").value||"").toLowerCase();
+  const fc=document.getElementById("fCost").value;
+  let rows=ALL.filter(a=>{
+    if(fc==="free" && !/free/i.test(a.cost_for_two_cny)) return false;
+    if(fc==="paid" && /free/i.test(a.cost_for_two_cny)) return false;
+    if(q && !(a.name+" "+a.district).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  const tb=document.querySelector("#tbl tbody");
+  if(!rows.length){ tb.innerHTML='<tr><td colspan="7">No activities match. Clear the filters.</td></tr>'; return; }
+  tb.innerHTML=rows.map(a=>`<tr>
+    <td data-label="Activity"><strong>${esc(a.name)}</strong><br><span class="muted small">📍 ${esc(a.district)}<br>${esc(a.notes)}</span></td>
+    <td data-label="Cost for 2"><strong>${esc(a.cost_for_two_cny)}</strong><br><span class="muted small">${esc(a.cost_for_two_usd)}</span></td>
+    <td data-label="Hours"><strong>${esc(a.hours)}</strong><br><span class="small muted">${esc(a.exceptions)}</span></td>
+    <td data-label="Transit">${esc(a.transit_from_bund_base)}</td>
+    <td data-label="Official">${link(a.official_url,"Official ↗")}</td>
+    <td data-label="Social">${socialLinks(a.social)}</td>
+    <td data-label="Verification">${verifyBadge(a.verification)}<br><span class="small muted">${esc(a.verification)}</span></td>
+  </tr>`).join("");
+}
+(async()=>{
+  const d=await loadJSON("data/activities.json"); ALL=d.activities; render();
+  ["q","fCost"].forEach(id=>document.getElementById(id).addEventListener("input",render));
+})();
+</script>
+</body>
+</html>

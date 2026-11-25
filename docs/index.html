@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChinaFun2 — Shanghai Trip Dashboard</title>
+<meta name="description" content="Mobile trip dashboard: hotels ranked by Michelin restaurants within 1 hour, verified prices for 2 adults, hours and social links.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <div class="brand">ChinaFun2<small>Shanghai Trip Dashboard · 2 adults · 7 nights</small></div>
+  <nav class="main">
+    <a class="active" href="index.html">Home</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="activities.html">Activities</a>
+    <a href="dates.html">Dates & Booking</a>
+    <a href="summary.html">Summary</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="questions.html">Questions</a>
+    <a href="flagged.html">⚠ Flagged</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap" style="padding-bottom:0">
+  <h1>Shanghai, 7 nights for two — hotels ranked by Michelin restaurants within 1 hour</h1>
+  <p>Recommended base: <strong>Huangpu (The Bund / East Nanjing Road / People's Square)</strong>. Recommended dates: <strong>Mon 15 Feb – Mon 22 Feb 2027</strong> (right after the CNY holiday, includes Lantern Festival Sat 20 Feb). Every price below is verified or clearly flagged.</p>
+  <div>
+    <span class="pill">Trip window 15 Feb – 23 Mar 2027</span>
+    <span class="pill">Preferred start 15–18 Feb 2027</span>
+    <span class="pill">2 adults</span>
+    <span class="pill">Queen bed or larger + private bathroom</span>
+    <span class="pill">≤60 min by subway/bus</span>
+  </div>
+  <p class="small" style="color:#d1fae5">Last researched 25 Nov 2026 · Exchange 1 USD = 6.67 CNY (indicative) · MICHELIN Guide Shanghai | Jiangsu | Zhejiang 2026</p>
+</div></div>
+
+<div class="wrap">
+  <div class="callout teal"><strong>How to use this dashboard in 2 minutes:</strong> 1) Pick a hotel on the <a href="hotels.html">Hotels page</a> (ranked by Michelin count, then indicative 7-night cost). 2) Pick 3–4 dinners on the <a href="restaurants.html">Restaurants page</a> — every cost is the <em>total for 2 adults</em>. 3) Check <a href="dates.html">Dates &amp; Booking</a> for the cheapest booking window with actual calendar dates, then book on the official links. Anything we could not verify is blank and marked <span class="badge warn">Needs review</span> — see <a href="flagged.html">Flagged</a>.</div>
+
+  <div class="grid cols4">
+    <div class="card"><div class="kpi">7</div><div class="kpi-label">Hotels compared (queen/king + private bathroom)</div><p class="small"><a href="hotels.html">See ranked table →</a></p></div>
+    <div class="card"><div class="kpi">20</div><div class="kpi-label">Restaurants researched in depth (17 starred + 2 Selected + 1 closed)</div><p class="small"><a href="restaurants.html">See restaurant table →</a></p></div>
+    <div class="card"><div class="kpi">8</div><div class="kpi-label">Activities within 1 hour</div><p class="small"><a href="activities.html">See activities →</a></p></div>
+    <div class="card"><div class="kpi">51</div><div class="kpi-label">Starred restaurants in Shanghai 2026 (full guide: 156)</div><p class="small"><a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang" target="_blank" rel="noopener">Michelin off. release ↗</a></p></div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h2>Top picks — best bases for a couple</h2>
+    <p class="muted">Ranked first by Michelin restaurants within 60 minutes (sample of 20 researched), then by indicative 7-night cost. Indicative = verified “from” nightly rate × 7, before final taxes/fees — tap through for the live quote for your exact dates.</p>
+    <div id="topHotels"><p class="muted">Loading hotels…</p></div>
+    <p><a class="btn" href="hotels.html">Compare all 7 hotels</a> <a class="btn secondary" href="dates.html">When to book (actual dates)</a></p>
+  </div>
+
+  <div class="grid cols2" style="margin-top:14px">
+    <div class="card">
+      <h2>Best-value fine dining (total for 2)</h2>
+      <ul class="tight">
+        <li><strong>Canton 8</strong> — 2 stars, ~<strong>¥404–800 for two</strong> — widely cited as Shanghai's most affordable 2-star.</li>
+        <li><strong>Lao Zheng Xing</strong> — 1 star Shanghainese, ~<strong>¥296–370 for two</strong>.</li>
+        <li><strong>Fu He Hui</strong> — 2 stars vegetarian, <strong>¥1,776–1,998 for two</strong> (set menus).</li>
+        <li><strong>Taian Table</strong> — 3 stars, <strong>¥5,176–5,776 for two</strong> (verified: ¥2,588–2,888 pp).</li>
+      </ul>
+      <p><a href="restaurants.html">All restaurants with hours + YouTube/TikTok/Instagram →</a></p>
+    </div>
+    <div class="card">
+      <h2>Budget snapshot (7 nights, 2 adults)</h2>
+      <p class="small">Use the calculator: hotel + dinners + activities. This is a planning estimate — restaurants/activities use verified or ranged totals already shown on their pages.</p>
+      <div class="calc">
+        <div><label for="cHotel">Hotel 7-night total (USD)</label><input id="cHotel" type="number" value="805" min="0"></div>
+        <div><label for="cDine">4 dinners for 2 (USD)</label><input id="cDine" type="number" value="650" min="0"></div>
+        <div><label for="cAct">Activities for 2 (USD)</label><input id="cAct" type="number" value="120" min="0"></div>
+        <button class="btn" id="cBtn" type="button">Calculate</button>
+      </div>
+      <p id="cOut" class="kpi" style="margin-top:10px">$1,575 <span class="small muted">estimated (excl. flights/visa/local transport)</span></p>
+      <p class="small muted">Tip: set hotel to your pick from the Hotels page (e.g. Hyatt on the Bund $805 indicative). Dinners: budget ~$60 (Canton 8) to ~$866 (Taian Table) per dinner for two.</p>
+    </div>
+  </div>
+
+  <div class="grid cols3" style="margin-top:14px">
+    <div class="card"><h3>🗓 Dates & booking</h3><p class="muted">Why 15–22 Feb works, CNY/Lantern timing, and the cheapest booking window with actual dates.</p><p><a href="dates.html">Open Dates &amp; Booking →</a></p></div>
+    <div class="card"><h3>📋 Executive summary</h3><p class="muted">One-page decision brief: city choice, hotel ranking, must-book restaurants, risks.</p><p><a href="summary.html">Open Summary →</a></p></div>
+    <div class="card"><h3>❓ Questions & gaps</h3><p class="muted">What we still don't know, why it matters, and exactly how to discover it.</p><p><a href="questions.html">Open Questions →</a></p></div>
+  </div>
+
+  <div class="callout"><strong>Verification promise:</strong> Every table row carries a link to an official or trusted source for manual review. If a value could not be confirmed from an official source, the cell is left blank or ranged and flagged <span class="badge warn">Needs review</span> on the <a href="flagged.html">Flagged for Review</a> page. Nothing is inferred. Currency: 1 USD = 6.67 CNY (25 Nov 2026) — CNY is the transaction currency.</div>
+
+  <footer>ChinaFun2 · Session 86c14d15 · Sources accessed 25 Nov 2026 · MICHELIN Guide 2026 (Shanghai) is the star-status authority. Indicative hotel rates are not locked quotes — always confirm the live total for 15–22 Feb 2027 on the booking link before paying. <a href="flagged.html">Flagged items</a> · <a href="suggestions.html">Improve this site</a></footer>
+</div>
+
+<script src="assets/app.js"></script>
+<script>
+(async()=>{
+  try{
+    const data = await loadJSON("data/hotels.json");
+    const hotels = [...data.hotels].sort((a,b)=> (b.michelin_sample_within_1h-a.michelin_sample_within_1h) || (a.seven_night_indicative_usd-b.seven_night_indicative_usd));
+    const top = hotels.slice(0,3);
+    document.getElementById("topHotels").innerHTML = top.map((h,i)=>`
+      <div class="rank" style="margin:12px 0;padding-bottom:12px;border-bottom:1px solid var(--line)">
+        <div class="rank-num">${i+1}</div>
+        <div>
+          <strong>${esc(h.name)}</strong> <span class="badge info">${esc(h.district)}</span><br>
+          <span class="small muted">${esc(h.room_type)} · ${esc(h.bed)} · ${esc(h.private_bathroom)}</span><br>
+          <span class="kpi" style="font-size:1.15rem">${money(h.seven_night_indicative_usd)} / 7 nights</span>
+          <span class="muted small">(${cny(h.seven_night_indicative_cny)} · ${money(h.indicative_nightly_usd)}/night indicative)</span> ·
+          <strong>${h.michelin_sample_within_1h} researched Michelin within 1h (${h.michelin_starred_sample_within_1h} starred)</strong><br>
+          <span class="small">${link(h.official_url,"Official hotel ↗")} · ${link(h.booking_url,"Live prices ↗")} · ${link(h.source_url,"Price source ↗")} · <span class="badge warn">Live Feb-2027 quote: Needs review</span></span>
+        </div>
+      </div>`).join("") + '<p class="small muted">Full table with all 7 hotels, metro, amenities and sources on the Hotels page. Indicative totals = “from” nightly × 7; the live booking page is the final price.</p>';
+  }catch(e){
+    document.getElementById("topHotels").innerHTML = '<p class="muted">Could not load hotel data. Open <a href="hotels.html">Hotels</a> directly or check <a href="data/hotels.json">hotels.json</a>.</p>';
+  }
+  document.getElementById("cBtn").addEventListener("click",()=>{
+    const t = (Number(document.getElementById("cHotel").value)||0)+(Number(document.getElementById("cDine").value)||0)+(Number(document.getElementById("cAct").value)||0);
+    document.getElementById("cOut").innerHTML = "$"+t.toLocaleString("en-US")+' <span class="small muted">estimated (excl. flights/visa/local transport) · ≈ ¥'+(t*6.67).toLocaleString("en-US")+'</span>';
+  });
+})();
+</script>
+</body>
+</html>

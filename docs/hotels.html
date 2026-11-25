@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotels — ChinaFun2 Shanghai</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <div class="brand">ChinaFun2<small>Hotels ranked by Michelin within 1 hour</small></div>
+  <nav class="main">
+    <a href="index.html">Home</a><a class="active" href="hotels.html">Hotels</a><a href="restaurants.html">Restaurants</a><a href="activities.html">Activities</a><a href="dates.html">Dates & Booking</a><a href="summary.html">Summary</a><a href="suggestions.html">Suggestions</a><a href="questions.html">Questions</a><a href="flagged.html">⚠ Flagged</a>
+  </nav>
+</div></header>
+<div class="wrap">
+  <h1>Hotels — ranked by Michelin restaurants within 1 hour</h1>
+  <p class="muted">Requirement: 2 adults, queen bed or larger, private bathroom. Cost is the <strong>total for 7 nights</strong>. Ranking is by researched Michelin restaurants reachable in ≤60 min by subway/bus (sample of 20 restaurants researched in depth; full Shanghai guide has 156 listings — see methodology on <a href="dates.html#method">Dates &amp; Booking</a>), then by indicative 7-night cost. <strong>Indicative</strong> means a verified “from” nightly rate × 7 — it is not a locked quote for Feb 2027. The live total for your exact dates on the booking link is the final price.</p>
+  <div class="callout teal"><strong>Best booking window:</strong> For a 15 Feb 2027 check-in, the 12-week sweet spot was ~23 Nov 2026 (just passed) — so book <strong>now</strong>, and re-check prices on a Sunday. For an 18 Feb check-in, target ~26 Nov 2026. See <a href="dates.html">Dates &amp; Booking</a> for the full calendar. Always compare the live 7-night total, not the nightly rate.</div>
+  <div class="controls no-print">
+    <input id="q" type="search" placeholder="Search hotel, district, metro…">
+    <select id="fDistrict"><option value="">All districts</option><option>Huangpu</option><option>Pudong</option></select>
+    <select id="sSort"><option value="rank">Sort: Rank (Michelin → cheapest)</option><option value="cheap">Sort: Cheapest 7-night first</option><option value="expensive">Sort: Most expensive first</option><option value="michelin">Sort: Most Michelin first</option></select>
+  </div>
+  <div class="table-scroll"><table class="data" id="tbl"><thead><tr>
+    <th>Rank</th><th>Hotel</th><th>Room / Bed / Bath</th><th>7-night total (total for stay)</th><th>Michelin ≤1h</th><th>Links</th><th>Status</th>
+  </tr></thead><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+
+  <div class="card" style="margin-top:14px">
+    <h2>How to read this table</h2>
+    <ul class="tight">
+      <li><strong>7-night total</strong> = indicative nightly × 7, in USD with CNY underneath (1 USD = 6.67 CNY, 25 Nov 2026). Taxes/fees can add ~10–15% — confirm the live total.</li>
+      <li><strong>Michelin ≤1h</strong> counts the 20 restaurants on the Restaurants page that are ≤60 min by subway/bus from the hotel. All six Huangpu hotels tie at 18/20 (the far-west Amazing Chinese Cuisine villa + one other exceed 60 min at peak). Park Hyatt (Pudong) is 17/20.</li>
+      <li><strong>Official</strong> = hotel's own site (room/bed/bathroom). <strong>Live prices</strong> = booking engine — set dates to your 7 nights and compare the total. <strong>Price source</strong> = page where the indicative nightly was captured.</li>
+    </ul>
+    <p class="small muted">Every row must have a source link. Where the live Feb-2027 quote could not be captured, the status is flagged <span class="badge warn">Needs review</span> and the 7-night figure is labelled indicative only.</p>
+  </div>
+  <footer>Indicative rates accessed 25 Nov 2026. Live totals for 15–22 Feb 2027 will differ (Lantern Festival demand). Confirm bed type and private bathroom on the official room page before paying.</footer>
+</div>
+<script src="assets/app.js"></script>
+<script>
+let ALL=[];
+function render(){
+  const q=(document.getElementById("q").value||"").toLowerCase();
+  const fd=document.getElementById("fDistrict").value;
+  const sort=document.getElementById("sSort").value;
+  let rows=ALL.filter(h=>{
+    if(fd && !h.district.includes(fd)) return false;
+    if(q && !(h.name+" "+h.district+" "+h.address+" "+h.nearest_metro).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  if(sort==="cheap") rows.sort((a,b)=>a.seven_night_indicative_usd-b.seven_night_indicative_usd);
+  if(sort==="expensive") rows.sort((a,b)=>b.seven_night_indicative_usd-a.seven_night_indicative_usd);
+  if(sort==="michelin") rows.sort((a,b)=>b.michelin_sample_within_1h-a.michelin_sample_within_1h);
+  if(sort==="rank") rows.sort((a,b)=>(b.michelin_sample_within_1h-a.michelin_sample_within_1h)||(a.seven_night_indicative_usd-b.seven_night_indicative_usd));
+  const tb=document.querySelector("#tbl tbody");
+  if(!rows.length){ tb.innerHTML='<tr><td colspan="7">No hotels match. Clear the filters.</td></tr>'; return; }
+  tb.innerHTML=rows.map(h=>{
+    const rank = ALL.slice().sort((a,b)=>(b.michelin_sample_within_1h-a.michelin_sample_within_1h)||(a.seven_night_indicative_usd-b.seven_night_indicative_usd)).indexOf(h)+1;
+    return `<tr>
+      <td data-label="Rank"><span class="rank-num">${rank}</span></td>
+      <td data-label="Hotel"><strong>${esc(h.name)}</strong><br><span class="muted small">${esc(h.district)} · ${esc(h.address)}<br>🚇 ${esc(h.nearest_metro)}<br>Amenities: ${esc(h.amenities)}</span></td>
+      <td data-label="Room / Bed / Bath"><strong>${esc(h.room_type)}</strong><br>🛏 ${esc(h.bed)}<br>🚿 ${esc(h.private_bathroom)}</td>
+      <td data-label="7-night total"><strong>${money(h.seven_night_indicative_usd)} total</strong><br><span class="muted small">${cny(h.seven_night_indicative_cny)} · ${money(h.indicative_nightly_usd)}/night (${cny(h.indicative_nightly_cny)})<br>Live Feb-2027 quote: ${h.feb2027_locked_rate?esc(h.feb2027_locked_rate):"— "}<span class="badge warn">Needs review</span></span></td>
+      <td data-label="Michelin ≤1h"><strong>${h.michelin_sample_within_1h}/20</strong> researched<br><span class="muted small">${h.michelin_starred_sample_within_1h} starred · ${h.michelin_2plus_sample_within_1h} × 2★+</span></td>
+      <td data-label="Links">${h.official_url?link(h.official_url,"Official hotel ↗"):'<span class="badge warn">Official site unverified</span>'}<br>${link(h.booking_url,"Live prices ↗")}<br>${link(h.source_url,"Price source ↗")}</td>
+      <td data-label="Status">${verifyBadge(h.verification)}<br><span class="small muted">${esc(h.verification)}<br>${esc(h.notes)}</span></td>
+    </tr>`;
+  }).join("");
+}
+(async()=>{
+  const d=await loadJSON("data/hotels.json"); ALL=d.hotels; render();
+  ["q","fDistrict","sSort"].forEach(id=>document.getElementById(id).addEventListener("input",render));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suggestions — ChinaFun2</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <div class="brand">ChinaFun2<small>Suggestions — review before implementing</small></div>
+  <nav class="main">
+    <a href="index.html">Home</a><a href="hotels.html">Hotels</a><a href="restaurants.html">Restaurants</a><a href="activities.html">Activities</a><a href="dates.html">Dates & Booking</a><a href="summary.html">Summary</a><a class="active" href="suggestions.html">Suggestions</a><a href="questions.html">Questions</a><a href="flagged.html">⚠ Flagged</a>
+  </nav>
+</div></header>
+<div class="wrap">
+  <h1>Suggestions to improve decision-making</h1>
+  <p class="muted">Nothing here is implemented yet. Review each suggestion, choose a path, then implement. Priority: <strong>P0</strong> = blocks a confident booking decision · <strong>P1</strong> = materially improves the decision · <strong>P2</strong> = polish.</p>
+
+  <div class="card"><h2>P0 — do before booking anything non-refundable</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>Suggestion</th><th>Why it helps</th><th>Effort</th></tr></thead><tbody>
+      <tr><td>S1</td><td><strong>Capture live 7-night totals for 15–22 Feb 2027</strong> for all 7 hotels (screenshot + date-stamp) and replace indicative figures.</td><td>Removes the single largest uncertainty: the actual payable total incl. taxes/fees during Lantern Festival week.</td><td>Low — 7 booking pages, one sitting (Sunday check).</td></tr>
+      <tr><td>S2</td><td><strong>Confirm 102 House open status</strong> by phone/email and record the answer.</td><td>A secondary listing says “(Closed)” while Michelin retains 2 stars. No itinerary should depend on it until resolved.</td><td>Low — one contact.</td></tr>
+      <tr><td>S3</td><td><strong>Confirm T'ang Court Monday opening + Bao Li Xuan current menu price</strong> from the official PDFs.</td><td>Official Langham page contradicts itself on Mondays; Bvlgari menu is PDF-only. Both affect the Thu/Fri plan.</td><td>Low — download 2 PDFs.</td></tr>
+      <tr><td>S4</td><td><strong>Verify Shanghai Tower + Aquarium hours on official sites</strong> and lock the Pudong day.</td><td>Secondary sources conflict (08:30–22:00 vs 10:00–21:00). Prevents a wasted cross-river trip.</td><td>Low — 2 official pages.</td></tr>
+    </tbody></table></div></div>
+
+  <div class="card" style="margin-top:14px"><h2>P1 — materially better decisions</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>Suggestion</th><th>Why it helps</th><th>Effort</th></tr></thead><tbody>
+      <tr><td>S5</td><td><strong>Extend Michelin counts to all 156 Shanghai listings</strong> per hotel (geocode + metro-time matrix).</td><td>Current rank uses a 20-restaurant depth sample. A full count would separate the six tied Huangpu hotels honestly.</td><td>High — Michelin list extraction + transit model.</td></tr>
+      <tr><td>S6</td><td><strong>Add Bib Gourmand value shortlist</strong> (35 in Shanghai 2026) with for-two totals.</td><td>Best budget dining tier is currently absent; ideal for non-tasting-menu nights.</td><td>Medium — Michelin Bib pages.</td></tr>
+      <tr><td>S7</td><td><strong>Add per-restaurant booking links + cancellation/deposit terms</strong> (e.g. Taian Table ¥2,000 pp deposit).</td><td>Deposits and 90-day windows drive the booking order; surfacing them prevents missed windows.</td><td>Medium.</td></tr>
+      <tr><td>S8</td><td><strong>Hotel live-price tracker:</strong> re-check the same 7-night total weekly until booked; log the lowest Sunday price.</td><td>Turns the “cheapest time to book” claim from a platform sample into observed evidence for these hotels.</td><td>Low/week.</td></tr>
+      <tr><td>S9</td><td><strong>Map view</strong> (hotel pins + Michelin density heat) alongside the tables.</td><td>Some travellers decide spatially faster than by rank; keeps the 1-hour rule visual.</td><td>Medium.</td></tr>
+    </tbody></table></div></div>
+
+  <div class="card" style="margin-top:14px"><h2>P2 — polish</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>Suggestion</th><th>Why it helps</th><th>Effort</th></tr></thead><tbody>
+      <tr><td>S10</td><td><strong>Print / PDF one-pager</strong> of the final itinerary (hide filters, print stylesheet already present).</td><td>Offline use in Shanghai without data roaming.</td><td>Low.</td></tr>
+      <tr><td>S11</td><td><strong>Official social handles only:</strong> replace search links with verified official accounts where they exist; keep searches labelled as searches.</td><td>Search links can surface imitators; official handles are safer for menus/closures.</td><td>Medium.</td></tr>
+      <tr><td>S12</td><td><strong>Chinese-name + address cards</strong> (show to taxi drivers) for every restaurant/activity.</td><td>Reduces navigation errors; addresses already collected in the data.</td><td>Low.</td></tr>
+      <tr><td>S13</td><td><strong>Accessibility pass:</strong> larger tap targets, contrast check, screen-reader labels on tables.</td><td>Mobile-first brief — worth a formal check before the trip.</td><td>Low.</td></tr>
+    </tbody></table></div></div>
+
+  <div class="callout"><strong>How to choose:</strong> Approve P0 items first (they gate the booking). Then pick one P1 (S5 or S6 give the biggest decision lift). Log your choice in <code>COORDINATION.md</code> before editing shared files, per the repo rules.</div>
+  <footer>Suggestions are proposals only — no data on this site changes until a suggestion is approved and implemented.</footer>
+</div>
+</body>
+</html>
