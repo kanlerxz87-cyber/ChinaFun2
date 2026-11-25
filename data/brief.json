@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "reviewed": "2026-11-25",
+    "travelers": 2,
+    "window": [
+      "2027-02-15",
+      "2027-03-23"
+    ],
+    "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
+    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+  },
+  "dates": [
+    {
+      "title": "Preferred-start 7-night stay",
+      "dates": "Mon Feb 15 → Mon Feb 22, 2027",
+      "nights": "7 nights",
+      "fit": "Meets the 1–2 week request and uses preferred start date",
+      "price": "",
+      "priceNote": "Official 2-adult, 7-night total not verified",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "sourceLabel": "Official 2027 holiday notice"
+    },
+    {
+      "title": "Preferred-start 14-night stay",
+      "dates": "Mon Feb 15 → Mon Mar 1, 2027",
+      "nights": "14 nights",
+      "fit": "Meets 2-week upper limit; compare transport/second city costs separately",
+      "price": "",
+      "priceNote": "Official 2-adult, 14-night total not verified",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "sourceLabel": "Official 2027 holiday notice"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Which city should anchor the trip?",
+      "answer": "No city chosen. Shanghai, Beijing, Guangzhou and Chengdu are compared. Shanghai is a provisional planning choice only.",
+      "next": "Choose one city or approve a split stay; then recalculate rates and transit catchments city-by-city.",
+      "state": "Open"
+    },
+    {
+      "q": "What are the exact departure and return dates?",
+      "answer": "Preferred start is Feb 15–18, 2027; trip duration is 1–2 weeks. Exact checkout date is undecided.",
+      "next": "Compare Feb 15–22 (7 nights) with Feb 15–Mar 1 (14 nights), and check airfare for both.",
+      "state": "Partly answered"
+    },
+    {
+      "q": "Does each candidate room have a private bathroom?",
+      "answer": "The reviewed official room pages show bathroom/bath details but do not explicitly certify a private bathroom for these specific room categories.",
+      "next": "Ask the hotel to confirm the exact bookable room is ensuite/private, then retain the written confirmation.",
+      "state": "Open · blocker"
+    },
+    {
+      "q": "Which hotel has the best verified 7-night total for two?",
+      "answer": "No official date-specific total was captured. All quote cells are blank.",
+      "next": "Query each hotel’s official booking engine for 2 adults, 1 room, Feb 15–22, taxes included and identical cancellation terms.",
+      "state": "Open · blocker"
+    },
+    {
+      "q": "When is the cheapest time to book?",
+      "answer": "No verified price history or future rate calendar was available to establish the lowest booking date.",
+      "next": "Record refundable quotes at regular intervals; choose based on observed price and cancellation flexibility.",
+      "state": "Open"
+    },
+    {
+      "q": "Can attractions and restaurants be reached within one hour by subway or bus?",
+      "answer": "Not established. No hotel has been chosen, and no official route-planner itinerary was verified for each destination/time.",
+      "next": "Once a hotel is chosen, check each destination via current city transit directions for weekday/weekend departure times.",
+      "state": "Open · blocker"
+    },
+    {
+      "q": "Which venues are open on the exact visit days in 2027?",
+      "answer": "Published regular hours are shown where available; 2027 holiday/event exceptions are not confirmed.",
+      "next": "Re-check each official venue calendar and bookable dates before finalizing each day.",
+      "state": "Open"
+    },
+    {
+      "q": "What dining budget is acceptable for two?",
+      "answer": "Not provided. MICHELIN bands are relative; Taian Table has current menu arithmetic, while other official couple totals remain blank.",
+      "next": "Set a per-meal ceiling, then compare published set-menu prices and supplements on restaurant booking pages.",
+      "state": "Open"
+    },
+    {
+      "q": "How should visa, flights, mobility and dietary constraints affect the plan?",
+      "answer": "No traveler passport/visa, flight, accessibility, food allergy or mobility details were given.",
+      "next": "Verify entry requirements from the appropriate government source after identifying passport nationality; add constraints before selecting hotel/route.",
+      "state": "Open"
+    },
+    {
+      "q": "Seven nights, three nights, or up to two weeks?",
+      "answer": "Seven nights is the working comparison, not a confirmed reservation. Feb 15–18 is treated as a preferred start window, not a three-night stay.",
+      "next": "Confirm exact start, duration, total hotel/food budget, dietary needs and both passport nationalities without posting document numbers.",
+      "state": "Open · blocker"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "city",
+      "title": "Choose a primary city before rate-shopping",
+      "desc": "Keep Shanghai and Beijing as alternatives until the dining/activity priorities and flight plan are weighed. Avoid claiming a Michelin winner based on non-comparable edition scopes.",
+      "impact": "Highest decision value",
+      "effort": "Low",
+      "rec": "Recommended first"
+    },
+    {
+      "id": "transit",
+      "title": "Add dated transit-time verification",
+      "desc": "For each shortlisted hotel, calculate official subway/bus travel to every selected activity and restaurant at representative trip times; count only reachable venues ≤60 minutes.",
+      "impact": "Directly answers the 1-hour rule",
+      "effort": "Medium",
+      "rec": "Recommended after city choice"
+    },
+    {
+      "id": "price",
+      "title": "Add a price-tracking log and total-cost model",
+      "desc": "Capture official live 7-night totals for two adults, taxes, cancellation terms and room bed/bath details; preserve dated snapshots to compare actual booking-time changes.",
+      "impact": "Makes value ranking possible",
+      "effort": "Medium",
+      "rec": "Recommended before booking"
+    },
+    {
+      "id": "itinerary",
+      "title": "Build a day-by-day plan only after the blockers clear",
+      "desc": "Group nearby activities, reserve Michelin meals against confirmed opening days, and keep a weather/closure alternative for each day.",
+      "impact": "Reduces avoidable backtracking",
+      "effort": "Medium",
+      "rec": "Later step"
+    }
+  ]
+}

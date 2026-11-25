@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "reviewed": "2026-11-25",
+    "travelers": 2,
+    "window": [
+      "2027-02-15",
+      "2027-03-23"
+    ],
+    "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
+    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+  },
+  "flags": [
+    {
+      "id": "H01",
+      "scope": "All hotels and date windows",
+      "issue": "No official 2027 seven-night total for two captured. No cheapest hotel/date claim; inventory is unknown, not necessarily unreleased.",
+      "next": "Capture exact stay, room, occupancy, currency, taxes, cancellation deadline and timestamp from brand engine.",
+      "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "H02",
+      "scope": "All hotels",
+      "issue": "Exact Queen+/King room and explicit ensuite/private-bathroom fit not consistently confirmed. Existing official room descriptions retained; secondary specifications removed.",
+      "next": "Confirm the bookable room category directly with the property.",
+      "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "H03",
+      "scope": "All hotels and activities",
+      "issue": "No complete <=60-minute subway/bus route set. Counts, ranks and door-to-door times intentionally blank.",
+      "next": "Record origin, destination, departure time, first/last-mile walking, wait and transfer time using official transit directions.",
+      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "R01",
+      "scope": "All restaurants except published Taian menu",
+      "issue": "No reliable official cash total for two, including service/tax/drinks. ¥ tiers are not amounts.",
+      "next": "Obtain dated venue menu; Taian arithmetic excludes add-ons and is not a 2027 guarantee.",
+      "source": "https://bookings.taian-table.com/faq",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "R02",
+      "scope": "All dining / city counts",
+      "issue": "Mixed Guide editions; city selection totals are not hotel catchments. Some restaurant hours and 2027 closures unconfirmed.",
+      "next": "Recheck individual Guide and venue calendar before reservations.",
+      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "R03",
+      "scope": "Hong Yu Fang",
+      "issue": "Guide hours table says 10:00–22:00 while text says morning only.",
+      "next": "Confirm directly before scheduling.",
+      "source": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "R04",
+      "scope": "Ultraviolet",
+      "issue": "Reported closed March 2025; excluded from active shortlist and 2026 Shanghai count.",
+      "next": "Do not reserve against historical 2025 three-star listings; reconfirm any reopening.",
+      "source": "https://guide.michelin.com/en/article/news-and-views/shanghai-2025-starred-restaurants",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "A01",
+      "scope": "All activities",
+      "issue": "Current prices and schedules are not guaranteed date-specific 2027 inventory; blank costs are unknown, not free.",
+      "next": "Recheck ticket product, reservation release, special exhibitions and 2027 notices on linked official pages.",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "A02",
+      "scope": "Museum / garden closures; outlying trips",
+      "issue": "Monday/Tuesday closures constrain planning. Suzhou/Hangzhou/Mutianyu are not demonstrated <=60-minute trips.",
+      "next": "Use Monday for public outdoor sights; record full public-transit routes before approving excursions.",
+      "source": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "A03",
+      "scope": "Shanghai Tower / Yu Garden / renovation notices",
+      "issue": "Older conflicting hours and garden prices superseded by current official visitor rules; renovation/event closures remain unverified, not assumed absent.",
+      "next": "Recheck official dated operating notices; do not mix garden, bazaar, festival and night tickets.",
+      "source": "https://www.shanghaitower.com/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "B01",
+      "scope": "Booking lead-time analysis",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim.",
+      "next": "Use the dated checkpoints as a monitoring plan, not a price prediction.",
+      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "B02",
+      "scope": "OTA observations / Sukhothai anomaly",
+      "issue": "Aggregator figures are quarantined from official columns. Prior $35,148 Sukhothai observation is an unexplained outlier, not a validated seven-night price.",
+      "next": "Exclude until room/date/currency/tax data are reproducible; never use 2026 proxies as 2027 prices.",
+      "source": "https://www.sukhothai.com/shanghai/en",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "S01",
+      "scope": "Social / video links",
+      "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
+      "next": "Verify creator, venue and upload date before relying on a post.",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E01",
+      "scope": "Entry / visa / health / dates",
+      "issue": "Passport nationality, visa eligibility, onward routing and exact duration unknown. 240h transit is conditional; a 14-night stay cannot be assumed eligible.",
+      "next": "Confirm with applicable consulate, airline and current official rules; see entry audit.",
+      "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "L01",
+      "scope": "External source access / Hilton Beijing Wangfujing",
+      "issue": "Hilton property-page fetch failed during integration. Structural tests check local links and official domains, not complete external reachability or source content.",
+      "next": "Reopen the linked official property page and confirm the exact room; do not treat an inaccessible page as fresh verification. Recheck other external source links before booking.",
+      "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
+      "status": "needs review · non-blocking publication"
+    }
+  ]
+}

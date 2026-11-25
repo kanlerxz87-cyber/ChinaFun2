@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "reviewed": "2026-11-25",
+    "travelers": 2,
+    "window": [
+      "2027-02-15",
+      "2027-03-23"
+    ],
+    "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
+    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+  },
+  "stay_options": [
+    {
+      "checkin": "2027-02-15",
+      "checkout": "2027-02-22",
+      "nights": 7,
+      "official_total": "",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01"
+      ]
+    },
+    {
+      "checkin": "2027-02-16",
+      "checkout": "2027-02-23",
+      "nights": 7,
+      "official_total": "",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01"
+      ]
+    },
+    {
+      "checkin": "2027-02-17",
+      "checkout": "2027-02-24",
+      "nights": 7,
+      "official_total": "",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01"
+      ]
+    },
+    {
+      "checkin": "2027-02-18",
+      "checkout": "2027-02-25",
+      "nights": 7,
+      "official_total": "",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01"
+      ]
+    },
+    {
+      "checkin": "2027-03-01",
+      "checkout": "2027-03-08",
+      "nights": 7,
+      "official_total": "",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01"
+      ]
+    },
+    {
+      "checkin": "2027-03-16",
+      "checkout": "2027-03-23",
+      "nights": 7,
+      "official_total": "",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01"
+      ]
+    }
+  ],
+  "booking_windows": [
+    {
+      "lead_days": 90,
+      "target_start": "2026-11-17",
+      "target_end": "2026-11-20",
+      "action": "Past reference checkpoint, not a proven cheapest day.",
+      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "flags": [
+        "H01",
+        "B01"
+      ]
+    },
+    {
+      "lead_days": 60,
+      "target_start": "2026-12-17",
+      "target_end": "2026-12-20",
+      "action": "Compare like-for-like refundable official quotes now through this checkpoint.",
+      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "flags": [
+        "H01",
+        "B01"
+      ]
+    },
+    {
+      "lead_days": 30,
+      "target_start": "2027-01-16",
+      "target_end": "2027-01-19",
+      "action": "Reprice; do not assume a spike is inevitable.",
+      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "flags": [
+        "H01",
+        "B01"
+      ]
+    },
+    {
+      "lead_days": 14,
+      "target_start": "2027-02-01",
+      "target_end": "2027-02-04",
+      "action": "Recheck only if the existing rate can still be cancelled without penalty.",
+      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "flags": [
+        "H01",
+        "B01"
+      ]
+    }
+  ],
+  "practical": [],
+  "aggregator_observations": [
+    {
+      "city": "Shanghai",
+      "hotel": "Okura Garden",
+      "reported_usd_7night_60d": 901,
+      "reported_usd_7night_90d": 901,
+      "reported_usd_7night_30d": 992,
+      "source": "https://traveldeals.com/prices/shanghai",
+      "observed": "2026-11-25",
+      "checkin": "",
+      "checkout": "",
+      "room": "",
+      "taxes_and_cancellation": "",
+      "status": "UNVERIFIED prior research observation; missing exact stay/room/query evidence. Not a quote, forecast, official rate or demonstrated saving.",
+      "flags": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "city": "Shanghai",
+      "hotel": "Holiday Inn Nanjing Road",
+      "reported_usd_7night_60d": 1038,
+      "reported_usd_7night_90d": 1055,
+      "reported_usd_7night_30d": 2372,
+      "source": "https://traveldeals.com/prices/shanghai",
+      "observed": "2026-11-25",
+      "checkin": "",
+      "checkout": "",
+      "room": "",
+      "taxes_and_cancellation": "",
+      "status": "UNVERIFIED prior research observation; missing exact stay/room/query evidence. Not a quote, forecast, official rate or demonstrated saving.",
+      "flags": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "city": "Shanghai",
+      "hotel": "Westin Bund Center",
+      "reported_usd_7night_60d": 1287,
+      "reported_usd_7night_90d": 1388,
+      "reported_usd_7night_30d": 2113,
+      "source": "https://traveldeals.com/prices/shanghai",
+      "observed": "2026-11-25",
+      "checkin": "",
+      "checkout": "",
+      "room": "",
+      "taxes_and_cancellation": "",
+      "status": "UNVERIFIED prior research observation; missing exact stay/room/query evidence. Not a quote, forecast, official rate or demonstrated saving.",
+      "flags": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "city": "Beijing",
+      "hotel": "Regent",
+      "reported_usd_7night_60d": 1434,
+      "reported_usd_7night_90d": null,
+      "reported_usd_7night_30d": 2155,
+      "source": "https://traveldeals.com/prices/beijing",
+      "observed": "2026-11-25",
+      "checkin": "",
+      "checkout": "",
+      "room": "",
+      "taxes_and_cancellation": "",
+      "status": "UNVERIFIED prior research observation; missing exact stay/room/query evidence. Not a quote, forecast, official rate or demonstrated saving.",
+      "flags": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "hotel": "Sofitel Sunrich",
+      "reported_usd_7night_60d": 764,
+      "reported_usd_7night_90d": 893,
+      "reported_usd_7night_30d": 1170,
+      "source": "https://traveldeals.com/prices/guangzhou",
+      "observed": "2026-11-25",
+      "checkin": "",
+      "checkout": "",
+      "room": "",
+      "taxes_and_cancellation": "",
+      "status": "UNVERIFIED prior research observation; missing exact stay/room/query evidence. Not a quote, forecast, official rate or demonstrated saving.",
+      "flags": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "city": "Chengdu",
+      "hotel": "St. Regis",
+      "reported_usd_7night_60d": 1068,
+      "reported_usd_7night_90d": null,
+      "reported_usd_7night_30d": 1589,
+      "source": "https://traveldeals.com/prices/chengdu",
+      "observed": "2026-11-25",
+      "checkin": "",
+      "checkout": "",
+      "room": "",
+      "taxes_and_cancellation": "",
+      "status": "UNVERIFIED prior research observation; missing exact stay/room/query evidence. Not a quote, forecast, official rate or demonstrated saving.",
+      "flags": [
+        "B01",
+        "B02"
+      ]
+    }
+  ]
+}
