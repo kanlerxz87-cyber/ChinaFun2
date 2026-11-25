@@ -21,13 +21,13 @@
 | ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
 |----|------|--------|-----------------|----------------|-----------------|
 | T01 | Coordination setup + repo scaffold (this file, README, folder structure) | **done** | 91622d32 | `COORDINATION.md`, `README.md`, `data/`, `assets/`, `*.html` | Starting from empty repo (only README). |
-| T02 | Research: Michelin Guide Shanghai\|Jiangsu\|Zhejiang 2026 (official) + Beijing/Guangzhou context | **done** | 91622d32 | `data/michelin.json`, `michelin.html` | Official source: guide.michelin.com 2026 regional edition (409 restaurants, 77 stars). |
-| T03 | Research: Hotels (private bathroom, queen+ bed, 2 adults) + 1-hour Michelin ranking method | **done** | 91622d32 | `data/hotels.json`, `hotels.html` | Feb 2027 rates not yet bookable for most properties — flagged unverified, proxy only. |
-| T04 | Research: Activities within 1 hr + hours/days/exceptions + social links | **done** | 91622d32 | `data/activities.json`, `activities.html` | Every row needs official link + YouTube/TikTok/Instagram link or explicit gap flag. |
-| T05 | Research: Costs, 7-night totals, booking-timing windows, visa, weather, holidays | **done** | 91622d32 | `data/costs.json`, `costs-booking.html` | Spring Festival 2027: 5–13 Feb (State Council). Preferred window starts 15 Feb = just after. |
-| T06 | Site build: landing dashboard + subpages, mobile-first CSS/JS, search/filter | **done** | 91622d32 | `index.html`, `executive-summary.html`, `questions.html`, `suggestions.html`, `flagged.html`, `sources.html`, `assets/css/style.css`, `assets/js/app.js` | Static GitHub Pages, no build step. |
-| T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **done** | 91622d32 | all `*.html`, `data/*.json` | JSON validated (6+14+12 rows); internal links all resolve; preview 200s on all pages. |
-| T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **in progress** | 91622d32 | `.github/workflows/pages.yml`, Pages settings | Workflow added; Pages enable via API pending. |
+| T02 | Research: Michelin Guide Shanghai\|Jiangsu\|Zhejiang 2026 (official) + Beijing/Guangzhou context | **needs review** | 91622d32 | `data/michelin.json`, `michelin.html` | Official guide/star identities remain useful; several prices are from secondary aggregators and couple totals are derived. See `RESEARCH_REVIEW.md`; do not treat as official menu prices. |
+| T03 | Research: Hotels (private bathroom, queen+ bed, 2 adults) + 1-hour Michelin ranking method | **needs review** | 91622d32 | `data/hotels.json`, `hotels.html` | Room details cite non-official sources in places; F9 explicitly uses district estimates rather than route timing. Candidate entries only until exact room and ≤60-minute routing are verified. |
+| T04 | Research: Activities within 1 hr + hours/days/exceptions + social links | **needs review** | 91622d32 | `data/activities.json`, `activities.html` | Several URLs/ticket prices are not official, transit times are estimates or exclude rail station/first-mile legs. See `RESEARCH_REVIEW.md`. |
+| T05 | Research: Costs, 7-night totals, booking-timing windows, visa, weather, holidays | **needs review** | 91622d32 | `data/costs.json`, `costs-booking.html` | Proxy rates and general booking-window sources do not establish exact official 2027 totals or a cheapest booking day. Keep official quote fields blank until captured. |
+| T06 | Site build: landing dashboard + subpages, mobile-first CSS/JS, search/filter | **done** | 91622d32 + 77604d1c | root dashboard and category pages | Original category pages remain; root dashboard is replaced with a source-linked, unknowns-first executive view. |
+| T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
+| T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -81,11 +81,11 @@ _None yet._
 
 ## Final integration checklist (for integration session)
 
-- [ ] `git pull --rebase` clean; no overlapping scopes violated
-- [ ] Every table row has ≥1 official-source link; unverified cells blank + flagged
-- [ ] No hallucinated prices/hours — proxies labelled with source + date
-- [ ] Site builds with no broken internal links; mobile layout checked
-- [ ] GitHub Pages live URL recorded here: _TBD_
+- [x] Integration rebase completed; merged session files and workflow preserved.
+- [ ] Every row across all legacy category pages has ≥1 official-source link; unverified cells blank + flagged (root dashboard passes; legacy data audit remains open).
+- [ ] No unsupported prices/hours or route estimates in legacy pages (needs review; see `RESEARCH_REVIEW.md`).
+- [x] Static root site / resource smoke tests passed; internal dashboard anchors resolve; main Pages build completed successfully.
+- [x] GitHub Pages live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/ (Pages API `built`; main deployment run 45622361150 succeeded).
 
 ## Session `77604d1c` handoff and final-integration notes
 
