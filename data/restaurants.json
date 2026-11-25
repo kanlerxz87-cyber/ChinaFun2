@@ -1,0 +1,907 @@
+{
+  "metadata": {
+    "destination_city": "Shanghai, China",
+    "selection_basis": "Mainland China's #1 MICHELIN Guide cluster: 156 total restaurants announced at the 2026 Shanghai ceremony (1×3★, 12×2★, 38×1★, 35 Bib Gourmand, 70 MICHELIN Selected) and 154 active listings live in the MICHELIN Guide Shanghai Municipality directory as of Nov 25, 2026 (1×3★, 11×2★, 38×1★, 34 Bib Gourmand, 70 Selected), concentrated along Shanghai Metro Lines 1, 2, 10, 12, and 14.",
+    "michelin_directory_url": "https://guide.michelin.com/en/cn/shanghai-municipality/shanghai/restaurants",
+    "michelin_ceremony_source_url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang",
+    "fx_reference": {
+      "pair": "USD/CNY",
+      "rate": 6.7141,
+      "as_of_date": "2026-11-16",
+      "source_label": "People's Bank of China / CFETS Official Central Parity Announcement (Nov 16, 2026)",
+      "source_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026111609021177769/index.html"
+    },
+    "national_cluster_benchmarks": [
+      {
+        "city": "Shanghai (2026 Edition — Primary Cluster)",
+        "three_star": 1,
+        "two_star": 11,
+        "one_star": 38,
+        "total_starred": 50,
+        "bib_gourmand": 34,
+        "michelin_selected": 70,
+        "total_listed": 154,
+        "note": "156 announced in 2026 ceremony (1×3★, 12×2★, 38×1★, 35 Bib, 70 Selected); 154 active live in Nov 2026 directory.",
+        "source_url": "https://guide.michelin.com/gb/en/shanghai-municipality/restaurants/1-star-michelin"
+      },
+      {
+        "city": "Beijing (2026 Edition)",
+        "three_star": 2,
+        "two_star": 4,
+        "one_star": 26,
+        "total_starred": 32,
+        "bib_gourmand": 21,
+        "michelin_selected": 46,
+        "total_listed": 99,
+        "note": "2nd largest Mainland cluster; colder late-Feb temperatures than Shanghai.",
+        "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-beijing-2026"
+      },
+      {
+        "city": "Chengdu (2027 Edition — Released Sept 2026)",
+        "three_star": 0,
+        "two_star": 2,
+        "one_star": 13,
+        "total_starred": 15,
+        "bib_gourmand": 30,
+        "michelin_selected": 39,
+        "total_listed": 84,
+        "note": "First 2027 Mainland China edition released Sept 2026; strong Bib Gourmand value.",
+        "source_url": "https://guide.michelin.com/hk/en/article/michelin-guide-ceremony/the-michelin-guide-chengdu-2027-celebrates-culinary-growth-with-two-new-one-star-restaurants"
+      }
+    ],
+    "shanghai_micro_clusters": [
+      {
+        "cluster_id": "bund-huangpu",
+        "name": "The Bund, Rockbund & Yu Garden (Huangpu East)",
+        "metro_lines": ["Line 2", "Line 10", "Line 14"],
+        "key_stations": ["East Nanjing Road", "Yuyuan Garden"],
+        "highlights": "Highest concentration of waterfront 1★/2★ European & Cantonese fine dining plus century-old Bib Gourmand dumpling landmarks."
+      },
+      {
+        "cluster_id": "xintiandi-laoximen",
+        "name": "Xintiandi, Huaihai Rd & Laoximen (Huangpu Central)",
+        "metro_lines": ["Line 1", "Line 8", "Line 10", "Line 13"],
+        "key_stations": ["Site of the First CPC National Congress · Xintiandi", "South Huangpi Road", "Laoximen"],
+        "highlights": "Shikumen heritage dining hub anchored by 2★ T'ang Court, 2★ Canton 8, and Bib Gourmand French bistro Polux."
+      },
+      {
+        "cluster_id": "suzhou-creek-jingan-east",
+        "name": "Suzhou Creek / North Shanxi Rd (Jing'an–Huangpu Border)",
+        "metro_lines": ["Line 10", "Line 12"],
+        "key_stations": ["Tiantong Road"],
+        "highlights": "Bvlgari Hotel Shanghai culinary enclave housing both 2★ Bao Li Xuan and 1★ Il Ristorante - Niko Romito one stop from East Nanjing Rd."
+      },
+      {
+        "cluster_id": "jingan-changning-west",
+        "name": "West Nanjing Rd, Jing'an Temple & Zhenning/Yuyuan Rd (Jing'an–Changning)",
+        "metro_lines": ["Line 2", "Line 7", "Line 11", "Line 14"],
+        "key_stations": ["Jing'an Temple", "Jiangsu Road"],
+        "highlights": "Home to Shanghai's sole 3★ restaurant (Taian Table), 2★ vegetarian icon Fu He Hui, and MICHELIN Selected steakhouses."
+      },
+      {
+        "cluster_id": "xuhui-ffc",
+        "name": "Former French Concession (Xuhui)",
+        "metro_lines": ["Line 1", "Line 7", "Line 9", "Line 10"],
+        "key_stations": ["Zhaojiabang Road", "Hengshan Road", "Jiashan Road"],
+        "highlights": "Tree-lined shikumen villas featuring 1★ Le Comptoir de Pierre Gagnaire (Capella) and Shanghainese 1★ classics."
+      },
+      {
+        "cluster_id": "lujiazui-pudong",
+        "name": "Lujiazui Riverfront (Pudong)",
+        "metro_lines": ["Line 2", "Line 14"],
+        "key_stations": ["Lujiazui"],
+        "highlights": "1 subway stop across the Huangpu River from East Nanjing Rd; home to 1★ Yong Yi Ting and 36F skyline dining at Jade on 36."
+      }
+    ]
+  },
+  "restaurants": [
+    {
+      "id": "rest-taian-table",
+      "name": "Taian Table",
+      "chinese_name": "泰安门",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "3 MICHELIN Stars",
+      "stars": 3,
+      "cuisine": "Innovative",
+      "cluster_id": "jingan-changning-west",
+      "district": "Changning",
+      "address": " Garden Office, Building 1, Alley 161, 465 Zhenning Road, Changning, Shanghai",
+      "nearest_metro": "Jiangsu Road Station (Metro Lines 2 & 11), ~10 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 5,176 – CNY 5,776",
+      "cost_2_adults_usd_ref": "$771 – $860",
+      "cost_2_adults_numeric_min_cny": 5176,
+      "cost_2_adults_numeric_max_cny": 5776,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official FAQ: Seasonal 10-course menu CNY 2,588/person or 12-course menu CNY 2,888/person × 2 adults; prices are all-inclusive (no extra service charge).",
+      "open_days": "Tuesday – Saturday",
+      "operating_hours": "Dinner only: Reservation seatings 18:00 – 20:00",
+      "hours_verification_status": "Verified",
+      "exceptions": "Closed Sunday & Monday; closed for lunch; reservations open max 90 days ahead (Feb 15, 2027 opened Nov 17, 2026; Mar 9, 2027 opens Dec 9, 2026); CNY 2,000/person deposit; smart casual (no shorts/flip-flops); no 2-person private tables (counter seating around open kitchen).",
+      "official_url": "https://sh.taian-table.cn/faq/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "menu_source_url": "https://sh.taian-table.cn/faq/",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "YouTube Full Review",
+            "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8"
+          },
+          {
+            "label": "YouTube Shorts",
+            "url": "https://www.youtube.com/shorts/1Z01UZSP8-w"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok Search/Feature",
+            "url": "https://www.tiktok.com/discover/shanghai-restaurant1560"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Exec Chef @christiaan.stoop",
+            "url": "https://www.instagram.com/christiaan.stoop/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-da-vittorio",
+      "name": "Da Vittorio",
+      "chinese_name": "Da Vittorio 意大利餐厅",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "2 MICHELIN Stars",
+      "stars": 2,
+      "cuisine": "Italian",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (South Bund / BFC)",
+      "address": "3F, Building N3, Bund Finance Centre, 600 Zhongshan Dong Er Road, Huangpu, Shanghai",
+      "nearest_metro": "Yuyuan Garden Station (Metro Lines 10 & 14), ~10 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 5,254 – CNY 9,654",
+      "cost_2_adults_usd_ref": "$783 – $1,438",
+      "cost_2_adults_numeric_min_cny": 5254,
+      "cost_2_adults_numeric_max_cny": 9654,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official PDF Menu: Il Mare tasting RMB 2,388 pp + 10% service (CNY 5,253.60/2 adults); Carta Bianca RMB 2,888 pp + 10% (CNY 6,353.60/2 adults); White Truffle Menu RMB 4,388 pp + 10% (CNY 9,653.60/2 adults). 3-course à la carte ~CNY 4,567+/2 adults incl. 10%.",
+      "open_days": "Tuesday – Sunday",
+      "operating_hours": "Lunch 12:00 – 13:30; Dinner 18:00 – 21:30",
+      "hours_verification_status": "Verified",
+      "exceptions": "Closed Mondays. Tasting menu ordered per entire table. 2027 public holiday exceptions unverified on official page.",
+      "official_url": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
+      "menu_source_url": "https://www.davittorio.com/images/davittorio/ristorante/shanghai/menu-da-vittorio-shanghai.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Da Vittorio Brand Video",
+            "url": "https://www.youtube.com/watch?v=L1uS-t8c5zQ"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @davittorioristorante",
+            "url": "https://www.instagram.com/davittorioristorante/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-otto-e-mezzo",
+      "name": "8 ½ Otto e Mezzo Bombana",
+      "chinese_name": "8 ½ Otto e Mezzo Bombana",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "2 MICHELIN Stars",
+      "stars": 2,
+      "cuisine": "Italian",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (Rockbund / The Bund)",
+      "address": "6F–7F, Associate Mission Building, 169 Yuanmingyuan Road, Huangpu, Shanghai",
+      "nearest_metro": "East Nanjing Road Station (Metro Lines 2 & 10), ~7 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd_ref": "",
+      "cost_2_adults_numeric_min_cny": null,
+      "cost_2_adults_numeric_max_cny": null,
+      "cost_verification_status": "Unverified (Official MICHELIN tier ¥¥¥¥ confirmed; numeric RMB menu prices not published on ottoemezzobombana.com)",
+      "cost_basis": "Flagged Unverified: Official website lists dishes without numeric RMB prices; MICHELIN Guide confirms top price tier ¥¥¥¥ ('Spare no expense'). Left blank rather than inferring from third-party blogs.",
+      "open_days": "Dinner: Monday – Sunday | Lunch: Thursday – Sunday",
+      "operating_hours": "Lunch (Thu–Sun): 12:00 – 13:30 (Bar until 15:00); Dinner (Mon–Sun): 18:00 – 21:00 (Bar until 00:00)",
+      "hours_verification_status": "Verified",
+      "exceptions": "Closed for lunch Monday – Wednesday. Dress code: Smart casual (no shorts, sleeveless shirts, or sandals/open-toed shoes for gentlemen).",
+      "official_url": "https://www.ottoemezzobombana.com/branch/shanghai/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana",
+      "menu_source_url": "https://www.ottoemezzobombana.com/branch/shanghai/",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "YouTube Feature",
+            "url": "https://www.youtube.com/watch?v=LtmHnG6sU3Q"
+          },
+          {
+            "label": "Chef Dish Prep",
+            "url": "https://www.youtube.com/watch?v=6W_gH8bkSww"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok Bund Dining Feature",
+            "url": "https://www.tiktok.com/discover/meet-the-bund-shanghai-restaurant"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Official @ottoemezzobombanashanghai",
+            "url": "https://www.instagram.com/ottoemezzobombanashanghai/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-tang-court",
+      "name": "T'ang Court",
+      "chinese_name": "唐阁",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "2 MICHELIN Stars (Promoted 2026)",
+      "stars": 2,
+      "cuisine": "Cantonese",
+      "cluster_id": "xintiandi-laoximen",
+      "district": "Huangpu (Xintiandi)",
+      "address": "5F, The Langham, Shanghai, Xintiandi, 99 Madang Road, Huangpu, Shanghai",
+      "nearest_metro": "Site of the First CPC National Congress · South Huangpi Road (Lines 1 & 14) or Xintiandi (Lines 10 & 13), ~4 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 888 – CNY 2,288",
+      "cost_2_adults_usd_ref": "$132 – $341",
+      "cost_2_adults_numeric_min_cny": 888,
+      "cost_2_adults_numeric_max_cny": 2288,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official 2026 Langham Set Menu PDF: Dim Sum Selection Lunch Set CNY 888 for 2 persons; Classic Cantonese All-Day Set CNY 2,288 for 2 persons (all prices inclusive of service charge and tax). Best 2-Star lunch value in Shanghai.",
+      "open_days": "Tuesday – Sunday",
+      "operating_hours": "Lunch 11:30 – 14:00; Dinner 17:30 – 21:00",
+      "hours_verification_status": "Verified",
+      "exceptions": "Closed Mondays ('Off on Monday'). Reserved tables are held for a maximum of 15 minutes.",
+      "official_url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
+      "menu_source_url": "https://www.langhamhotels.com/content/dam/langhamhotels/dynamicmedia/asia/the-langham-shanghai-xintiandi-tlshx/dine/tang-court/menu-2026/Tang%20Court%20Set%20Menu.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Langham Shanghai Feature",
+            "url": "https://www.youtube.com/watch?v=KCrT9s1jFGk"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @langhamhotels",
+            "url": "https://www.instagram.com/langhamhotels/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-bao-li-xuan",
+      "name": "Bao Li Xuan",
+      "chinese_name": "宝丽轩",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "2 MICHELIN Stars",
+      "stars": 2,
+      "cuisine": "Cantonese",
+      "cluster_id": "suzhou-creek-jingan-east",
+      "district": "Jing'an (Suzhou Creek)",
+      "address": "3F, Chamber of Commerce Shanghai, Bvlgari Hotel Shanghai, Lane 108, North Shanxi Road, Jing'an, Shanghai",
+      "nearest_metro": "Tiantong Road Station (Metro Lines 10 & 12), ~4 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 3,576 (Set) | ~CNY 600 – 1,000 (Dim Sum Lunch)",
+      "cost_2_adults_usd_ref": "$533 (Set) | ~$89 – $149 (Dim Sum)",
+      "cost_2_adults_numeric_min_cny": 600,
+      "cost_2_adults_numeric_max_cny": 3576,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official Bvlgari Set Menu PDF: Bao Li Xuan Set Menu CNY 1,788/person × 2 = CNY 3,576 (tax & service fee included). Official Lunch Dim Sum items CNY 36 – CNY 148 each (6–8 baskets + tea ~CNY 600–1,000 for 2 adults).",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch 11:30 – 14:00; Dinner 17:30 – 22:00",
+      "hours_verification_status": "Verified (MICHELIN + Bvlgari site; specific 2027 holiday closures Unverified)",
+      "exceptions": "Dim sum menu available lunch only; Alaskan King Crab dishes require 24-hour advance order.",
+      "official_url": "https://www.bulgarihotels.com/en-US/shanghai/dining/bao-li-xuan",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "menu_source_url": "https://www.bulgarihotels.com/mgnl/dam/jcr:069b9987-a03f-44fd-b1f8-e326cf9608b9/bvlgari-hotel-shanghai-blx-menu-en.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Bao Li Xuan 2-Star Tour",
+            "url": "https://www.youtube.com/watch?v=6zxepoFgqJk"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @bulgarihotels",
+            "url": "https://www.instagram.com/bulgarihotels/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-fu-he-hui",
+      "name": "Fu He Hui",
+      "chinese_name": "福和慧",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "2 MICHELIN Stars",
+      "stars": 2,
+      "cuisine": "Vegetarian",
+      "cluster_id": "jingan-changning-west",
+      "district": "Changning",
+      "address": "1037 Yuyuan Road, Changning, Shanghai",
+      "nearest_metro": "Jiangsu Road Station (Metro Lines 2 & 11, Exit 7), ~3 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd_ref": "",
+      "cost_2_adults_numeric_min_cny": null,
+      "cost_2_adults_numeric_max_cny": null,
+      "cost_verification_status": "Unverified (Official MICHELIN tier ¥¥¥¥ confirmed; no standalone official website publishing current numeric RMB set prices)",
+      "cost_basis": "Flagged Unverified: MICHELIN Guide confirms seasonal set menus only and ¥¥¥¥ price tier, but Fu He Hui has no official web menu PDF. Left blank rather than quoting third-party vlog figures.",
+      "open_days": "Monday – Sunday",
+      "operating_hours": "Lunch 11:00 – 13:00; Dinner 17:30 – 21:00",
+      "hours_verification_status": "Verified (MICHELIN Guide Shanghai)",
+      "exceptions": "Serves seasonal vegetarian tasting sets only; private rooms available; 2027 holiday closures Unverified.",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "menu_source_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "YouTube Shorts Review",
+            "url": "https://www.youtube.com/shorts/7APfxnHcnMw"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok Fu He Hui Feature",
+            "url": "https://www.tiktok.com/discover/conde-restaurant-shanghai-menu"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Official @fuhehui",
+            "url": "https://www.instagram.com/fuhehui/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-canton-8",
+      "name": "Canton 8 (Huangpu)",
+      "chinese_name": "喜粤8号 (汝南街)",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "2 MICHELIN Stars",
+      "stars": 2,
+      "cuisine": "Cantonese",
+      "cluster_id": "xintiandi-laoximen",
+      "district": "Huangpu (Runan Street)",
+      "address": "63 Runan Street, Huangpu, Shanghai",
+      "nearest_metro": "Jumen Road Station (Line 13) or Laoximen / Xintiandi area, ~10 min walk",
+      "michelin_price_tier": "¥¥",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd_ref": "",
+      "cost_2_adults_numeric_min_cny": null,
+      "cost_2_adults_numeric_max_cny": null,
+      "cost_verification_status": "Unverified (Official MICHELIN moderate tier ¥¥ confirmed; no official standalone website publishing numeric RMB menu)",
+      "cost_basis": "Flagged Unverified: Famous globally as one of the world's lowest-priced 2-Star MICHELIN restaurants (official MICHELIN tier ¥¥ 'A moderate spend'), but no official website publishes a current 2026/2027 menu price sheet.",
+      "open_days": "",
+      "operating_hours": "",
+      "hours_verification_status": "Unverified (MICHELIN Guide page omits weekly hours; phone booking +86 21 6301 8289 required to confirm)",
+      "exceptions": "Booking essential per MICHELIN Guide (+86 21 6301 8289); weekly hours and holiday schedule Unverified online.",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "menu_source_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "YouTube 2-Star Review",
+            "url": "https://www.youtube.com/watch?v=yvWT26VaVnk"
+          },
+          {
+            "label": "Canton 8 Shanghai Vlog",
+            "url": "https://www.youtube.com/watch?v=1V1Yqa9yCYQ"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok @eatplorer Video",
+            "url": "https://www.tiktok.com/@eatplorer/video/7337290694689639688"
+          },
+          {
+            "label": "TikTok Canton 8 Guide",
+            "url": "https://www.tiktok.com/discover/canton-8-shanghai-reservation"
+          }
+        ],
+        "instagram": []
+      }
+    },
+    {
+      "id": "rest-yi-long-court",
+      "name": "Yi Long Court",
+      "chinese_name": "逸龙阁",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "1 MICHELIN Star",
+      "stars": 1,
+      "cuisine": "Cantonese",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (The Bund)",
+      "address": "2F, The Peninsula Shanghai, 32 Zhongshan Dong Yi Road, Huangpu, Shanghai",
+      "nearest_metro": "East Nanjing Road Station (Metro Lines 2 & 10), ~8 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 695 – CNY 2,304",
+      "cost_2_adults_usd_ref": "$104 – $343",
+      "cost_2_adults_numeric_min_cny": 695,
+      "cost_2_adults_numeric_max_cny": 2304,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official Peninsula Shanghai Dining Offer: Dim Sum Lunch Set RMB 298* pp; Chef's Signature Tasting Set RMB 988* pp + 16.6% Peninsula surcharge (verified on Peninsula Shanghai 2026 menu tariff) = CNY 695 – CNY 2,304 total for 2 adults.",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch 11:30 – 14:30; Dinner 18:00 – 22:30",
+      "hours_verification_status": "Verified (Peninsula Shanghai Guest Services Directory PDF)",
+      "exceptions": "Non-smoking throughout; smart casual dress code; 16.6% hotel surcharge applies to '*' prices.",
+      "official_url": "https://www.peninsula.com/en/shanghai/special-offers/dining/sumptuous-set-menus-at-yi-long-court",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "menu_source_url": "https://www.peninsula.com/-/media/files/shanghai/2025-room/1127/20251127-guest-servicese.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Peninsula Shanghai Feature",
+            "url": "https://www.youtube.com/watch?v=DjTvFBc_ZGE"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @thepeninsulashanghai",
+            "url": "https://www.instagram.com/thepeninsulashanghai/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-niko-romito",
+      "name": "Il Ristorante - Niko Romito",
+      "chinese_name": "Il Ristorante - Niko Romito",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "1 MICHELIN Star",
+      "stars": 1,
+      "cuisine": "Italian",
+      "cluster_id": "suzhou-creek-jingan-east",
+      "district": "Jing'an (Suzhou Creek)",
+      "address": "47F, Bvlgari Hotel Shanghai, Lane 108, North Shanxi Road, Jing'an, Shanghai",
+      "nearest_metro": "Tiantong Road Station (Metro Lines 10 & 12), ~4 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 2,360 – CNY 3,976",
+      "cost_2_adults_usd_ref": "$352 – $592",
+      "cost_2_adults_numeric_min_cny": 2360,
+      "cost_2_adults_numeric_max_cny": 3976,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official Bvlgari Menu PDF: Menu Degustazione CNY 1,988/person × 2 = CNY 3,976 (all prices include tax and service fee). 3-course à la carte (2 appetizers + 2 pastas/mains) ~CNY 2,360 – CNY 3,400 for 2 adults.",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch 12:00 – 14:30; Dinner 18:00 – 22:00",
+      "hours_verification_status": "Verified",
+      "exceptions": "Menu Degustazione must be ordered for the entire table; 2027 holiday hours Unverified.",
+      "official_url": "https://www.bulgarihotels.com/en-US/shanghai/dining/il-ristorante-niko-romito",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/il-ristorante-niko-romito-563683",
+      "menu_source_url": "https://www.bulgarihotels.com/mgnl/dam/jcr:f9e793b9-d86b-4d73-83a0-ae95cb2ea25a/bvlgari-hotel-shanghai-il-ristorante-niko-romito-menu-en.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Bvlgari Hotel Shanghai Tour",
+            "url": "https://www.youtube.com/watch?v=ReD37Pwm9Rs"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @bulgarihotels",
+            "url": "https://www.instagram.com/bulgarihotels/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-pierre-gagnaire",
+      "name": "le Comptoir de Pierre Gagnaire",
+      "chinese_name": "le Comptoir de Pierre Gagnaire",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "1 MICHELIN Star",
+      "stars": 1,
+      "cuisine": "French Contemporary",
+      "cluster_id": "xuhui-ffc",
+      "district": "Xuhui (Former French Concession)",
+      "address": "Capella Shanghai, Jian Ye Li, 480 West Jianguo Road, Xuhui, Shanghai",
+      "nearest_metro": "Zhaojiabang Road (Lines 7 & 9) or Jiashan Road (Lines 9 & 12), ~8 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd_ref": "",
+      "cost_2_adults_numeric_min_cny": null,
+      "cost_2_adults_numeric_max_cny": null,
+      "cost_verification_status": "Unverified for Lunch/Dinner (Capella Breakfast Set verified at CNY 634/2 adults incl. 10%; Lunch/Dinner PDF failed text extraction; MICHELIN tier ¥¥¥¥)",
+      "cost_basis": "Flagged Unverified for Lunch/Dinner: Capella's official Breakfast Set PDF verifies RMB 288 pp + 10% service (CNY 633.60/2 adults), while the Lunch & Dinner PDF link returned an extraction error. Left blank for Lunch/Dinner per strict rule.",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch 12:00 – 14:00; Dinner 18:00 – 20:30 (Breakfast Mon–Thu 07:00–10:00; Fri–Sun & Public Holidays 07:00–10:30)",
+      "hours_verification_status": "Verified (MICHELIN Guide + Capella Shanghai)",
+      "exceptions": "Extended breakfast hours until 10:30 on Friday–Sunday and PRC public holidays; dinner last seating/closing 20:30.",
+      "official_url": "https://capellahotels.com/en/capella-shanghai/dining/le-comptoir-de-pierre-gagnaire",
+      "michelin_url": "https://guide.michelin.com/gb/en/shanghai-municipality/shanghai/restaurant/le-comptoir-de-pierre-gagnaire",
+      "menu_source_url": "https://capellahotels.com/assets/docs/shanghai/Capella_Shanghai_Breakfast_Menu.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Capella Jian Ye Li & Pierre Gagnaire",
+            "url": "https://www.youtube.com/watch?v=cGmurtK06y0"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @capellashanghai",
+            "url": "https://www.instagram.com/capellashanghai/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-yong-yi-ting",
+      "name": "Yong Yi Ting",
+      "chinese_name": "雍颐庭",
+      "michelin_category": "Currently Has a MICHELIN Star",
+      "michelin_distinction": "1 MICHELIN Star",
+      "stars": 1,
+      "cuisine": "Jiangzhe",
+      "cluster_id": "lujiazui-pudong",
+      "district": "Pudong (Lujiazui)",
+      "address": "LG/F, Mandarin Oriental Pudong, 111 South Pudong Road, Pudong, Shanghai",
+      "nearest_metro": "Lujiazui Station (Metro Lines 2 & 14), ~10 min walk",
+      "michelin_price_tier": "¥¥¥",
+      "cost_2_adults_cny": "CNY 892 (Lunch Dim Sum Set) – CNY 2,350 (À la carte Dinner)",
+      "cost_2_adults_usd_ref": "$133 – $350",
+      "cost_2_adults_numeric_min_cny": 892,
+      "cost_2_adults_numeric_max_cny": 2350,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official Mandarin Oriental PDF Menu: Lunch Dim Sum Set Menu CNY 388/person × 2 + 15% service charge (incl. VAT) = CNY 892.40 total for 2 adults (minimum 2 persons). Seasonal à la carte dishes CNY 88 – CNY 866 + 15% service (~CNY 1,750–2,350 for 2 adults).",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch 11:30 – 14:30; Dinner 17:30 – 21:30",
+      "hours_verification_status": "Verified",
+      "exceptions": "Lunch Dim Sum Set requires minimum 2 persons; all menu prices subject to 15% service charge (inclusive of government taxes).",
+      "official_url": "https://www.mandarinoriental.com/en/shanghai/pudong/dine/yong-yi-ting",
+      "michelin_url": "https://guide.michelin.com/kr/en/shanghai-municipality/shanghai/restaurant/yong-yi-ting",
+      "menu_source_url": "https://mandarin-oriental-hotel-group.frontify.com/d/W7X3394S5j3C/yong-yi-ting-lunch-dim-sum-menu",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "2026 Yong Yi Ting Tasting Review",
+            "url": "https://www.youtube.com/watch?v=dB6waRFQXzY"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @mo_pudong",
+            "url": "https://www.instagram.com/mo_pudong/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-polux",
+      "name": "Polux",
+      "chinese_name": "Polux by Paul Pairet",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "Bib Gourmand",
+      "stars": 0,
+      "cuisine": "French Cafe / Bistro",
+      "cluster_id": "xintiandi-laoximen",
+      "district": "Huangpu (Xintiandi North Block)",
+      "address": "Unit 5, Lane 181, Taicang Road, Xintiandi, Huangpu, Shanghai",
+      "nearest_metro": "Site of the First CPC National Congress · South Huangpi Road (Lines 1 & 14) or Xintiandi (Lines 10 & 13), ~4 min walk",
+      "michelin_price_tier": "¥¥",
+      "cost_2_adults_cny": "CNY 320 – CNY 860",
+      "cost_2_adults_usd_ref": "$48 – $128",
+      "cost_2_adults_numeric_min_cny": 320,
+      "cost_2_adults_numeric_max_cny": 860,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official Polux Menu: Express Lunch Set (starter + main + coffee/tea) CNY 160/person × 2 = CNY 320. Full à la carte dinner (2 starters ¥80–190 + 2 mains ¥140–180 + 2 desserts ¥60–110) = CNY 560 – CNY 860 for 2 adults.",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "11:00 – 22:00 (official site) | 10:00 – 22:00 (MICHELIN Guide)",
+      "hours_verification_status": "Verified with Minor Discrepancy Flagged",
+      "exceptions": "Flagged Irregularity: poluxbypp.com lists 11:00am–10:00pm daily whereas guide.michelin.com lists 10:00–22:00 (weekend brunch starts earlier).",
+      "official_url": "https://www.poluxbypp.com/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/polux",
+      "menu_source_url": "https://www.poluxbypp.com/",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Paul Pairet Polux Feature",
+            "url": "https://www.youtube.com/shorts/9_LLzEGw_Lc"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @poluxbypp",
+            "url": "https://www.instagram.com/poluxbypp/"
+          },
+          {
+            "label": "Chef @paulpairet",
+            "url": "https://www.instagram.com/paulpairet/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-da-hu-chun",
+      "name": "Da Hu Chun (Middle Sichuan Road)",
+      "chinese_name": "大壶春 (四川中路)",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "Bib Gourmand",
+      "stars": 0,
+      "cuisine": "Dim Sum (Shengjianbao)",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (The Bund)",
+      "address": "136 Middle Sichuan Road, Huangpu, Shanghai",
+      "nearest_metro": "East Nanjing Road Station (Metro Lines 2 & 10), ~6 min walk",
+      "michelin_price_tier": "¥",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd_ref": "",
+      "cost_2_adults_numeric_min_cny": null,
+      "cost_2_adults_numeric_max_cny": null,
+      "cost_verification_status": "Unverified (Official MICHELIN lowest budget tier ¥ 'On a budget' confirmed; historic shop publishes no official web menu)",
+      "cost_basis": "Flagged Unverified: MICHELIN Guide confirms budget tier ¥ ('On a budget'), famous for prawn & pork pan-fried buns since 1932, without an official website menu sheet. Left blank rather than citing social media clips.",
+      "open_days": "Monday – Sunday",
+      "operating_hours": "08:00 – 21:00",
+      "hours_verification_status": "Verified (MICHELIN Guide Shanghai)",
+      "exceptions": "Walk-in counter service only; no reservations; 2027 holiday hours Unverified.",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
+      "menu_source_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Da Hu Chun Shengjianbao Vlog",
+            "url": "https://www.youtube.com/watch?v=yIrD0BGq0w8"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok Da Hu Chun Shanghai",
+            "url": "https://www.tiktok.com/discover/da-hu-chun-shanghai"
+          }
+        ],
+        "instagram": []
+      }
+    },
+    {
+      "id": "rest-nanxiang",
+      "name": "Nanxiang Steamed Bun (City God Temple)",
+      "chinese_name": "南翔馒头店 (城隍庙)",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "Bib Gourmand",
+      "stars": 0,
+      "cuisine": "Dim Sum (Xiaolongbao)",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (Yu Garden)",
+      "address": "85 Yuyuan Road, Huangpu, Shanghai",
+      "nearest_metro": "Yuyuan Garden Station (Metro Lines 10 & 14), ~5 min walk",
+      "michelin_price_tier": "¥",
+      "cost_2_adults_cny": "",
+      "cost_2_adults_usd_ref": "",
+      "cost_2_adults_numeric_min_cny": null,
+      "cost_2_adults_numeric_max_cny": null,
+      "cost_verification_status": "Unverified (Official MICHELIN lowest budget tier ¥ 'On a budget' confirmed; no official standalone website publishing numeric RMB menu)",
+      "cost_basis": "Flagged Unverified: Century-old Yu Garden landmark confirmed in MICHELIN Bib Gourmand tier ¥, but no official web menu is published.",
+      "open_days": "",
+      "operating_hours": "",
+      "hours_verification_status": "Unverified (MICHELIN Guide page omits weekly hours; tied to Yuyuan Bazaar complex hours)",
+      "exceptions": "Peak queues expected Feb 15–20, 2027 due to Yuyuan Lantern Festival culminating Sat Feb 20, 2027.",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/nanxiang-steamed-bun-city-god-temple",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/nanxiang-steamed-bun-city-god-temple",
+      "menu_source_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/nanxiang-steamed-bun-city-god-temple",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Yu Garden Branch Video",
+            "url": "https://www.youtube.com/watch?v=spvPE72BP3M"
+          },
+          {
+            "label": "Xiaolongbao Rolling",
+            "url": "https://www.youtube.com/watch?v=oKIYeyfajaE"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok Nanxiang Yu Garden",
+            "url": "https://www.tiktok.com/discover/nan-xiang-steamed-bun-shanghai-di-yuyuan-di-mana"
+          }
+        ],
+        "instagram": []
+      }
+    },
+    {
+      "id": "rest-mr-mrs-bund",
+      "name": "Mr & Mrs Bund",
+      "chinese_name": "Mr & Mrs Bund",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "MICHELIN Selected",
+      "stars": 0,
+      "cuisine": "French Contemporary",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (Bund 18)",
+      "address": "6F, Bund 18, 18 Zhongshan Dong Yi Road, Huangpu, Shanghai",
+      "nearest_metro": "East Nanjing Road Station (Metro Lines 2 & 10), ~6 min walk",
+      "michelin_price_tier": "¥¥¥",
+      "cost_2_adults_cny": "CNY 660 (Weekday Lunch) – CNY 990+ (Weekend Brunch)",
+      "cost_2_adults_usd_ref": "$98 – $147+",
+      "cost_2_adults_numeric_min_cny": 660,
+      "cost_2_adults_numeric_max_cny": 990,
+      "cost_verification_status": "Verified (Lunch/Brunch Sets); Dinner À La Carte Unverified numeric total",
+      "cost_basis": "Official mmbund.com/food/: Weekday Lunch Express RMB 300 pp + 10% service = CNY 660 for 2 adults; Weekend 3-course Brunch RMB 450 pp + 10% = CNY 990 for 2 adults. Evening à la carte numeric PDF not posted online.",
+      "open_days": "Monday – Sunday (Every Day)",
+      "operating_hours": "Lunch 11:30 – 14:30; Dinner 17:30 – 22:00",
+      "hours_verification_status": "Verified",
+      "exceptions": "Weekday Lunch Express is NOT available during PRC national holidays and special events (note: Feb 15–18, 2027 are regular post-holiday workdays).",
+      "official_url": "https://www.mmbund.com/food/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/mr-mrs-bund",
+      "menu_source_url": "https://www.mmbund.com/food/",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Mr & Mrs Bund Tour",
+            "url": "https://www.youtube.com/watch?v=GWHeponjm5M"
+          }
+        ],
+        "tiktok": [
+          {
+            "label": "TikTok Bund Rooftop Review",
+            "url": "https://www.tiktok.com/discover/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3the-bund-shanghai"
+          }
+        ],
+        "instagram": [
+          {
+            "label": "Chef @paulpairet (@mmbbypp)",
+            "url": "https://www.instagram.com/paulpairet/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-sir-ellys",
+      "name": "Sir Elly's",
+      "chinese_name": "艾利爵士餐厅",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "MICHELIN Selected",
+      "stars": 0,
+      "cuisine": "Italian Contemporary",
+      "cluster_id": "bund-huangpu",
+      "district": "Huangpu (The Bund)",
+      "address": "13F, The Peninsula Shanghai, 32 Zhongshan Dong Yi Road, Huangpu, Shanghai",
+      "nearest_metro": "East Nanjing Road Station (Metro Lines 2 & 10), ~8 min walk",
+      "michelin_price_tier": "¥¥¥¥",
+      "cost_2_adults_cny": "CNY 1,735 – CNY 3,004",
+      "cost_2_adults_usd_ref": "$258 – $447",
+      "cost_2_adults_numeric_min_cny": 1735,
+      "cost_2_adults_numeric_max_cny": 3004,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official June 2026 Peninsula PDF Menu: Signature 5-Course Menu RMB 1,288* pp × 2 + 16.6% surcharge = CNY 3,003.62 for 2 adults; 3-course à la carte dinner ~CNY 1,735 – CNY 2,600 for 2 adults incl. 16.6% surcharge.",
+      "open_days": "Wednesday – Sunday",
+      "operating_hours": "Dinner 18:00 – 22:30 (Bar Tue–Thu & Sun 17:00–00:00, Fri–Sat 17:00–01:00)",
+      "hours_verification_status": "Verified",
+      "exceptions": "Restaurant closed Monday and Tuesday, excluding public holidays; smart casual dress code; minors not permitted in the bar; non-smoking.",
+      "official_url": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/sir-ellys-restaurant",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "menu_source_url": "https://www.peninsula.com/-/media/files/shanghai/menu/2026/sir-ellys/0626/new-menu-in-se.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Sir Elly's Rooftop Tour",
+            "url": "https://www.youtube.com/watch?v=CYSo45ryKsE"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @thepeninsulashanghai",
+            "url": "https://www.instagram.com/thepeninsulashanghai/"
+          },
+          {
+            "label": "Chef @chef_eugeniocannoni",
+            "url": "https://www.instagram.com/chef_eugeniocannoni/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-1515-west",
+      "name": "The 1515 West Chophouse",
+      "chinese_name": "1515牛排馆",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "MICHELIN Selected",
+      "stars": 0,
+      "cuisine": "Steakhouse",
+      "cluster_id": "jingan-changning-west",
+      "district": "Jing'an (West Nanjing Road)",
+      "address": "4F, Jing An Shangri-La, 1218 Middle Yan'an Road, Jing'an, Shanghai",
+      "nearest_metro": "Jing'an Temple Station (Metro Lines 2, 7 & 14), ~3 min walk",
+      "michelin_price_tier": "¥¥¥",
+      "cost_2_adults_cny": "CNY 1,368 – CNY 2,090",
+      "cost_2_adults_usd_ref": "$204 – $311",
+      "cost_2_adults_numeric_min_cny": 1368,
+      "cost_2_adults_numeric_max_cny": 2090,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official May 2026 Shangri-La PDF Menu: 2 starters + 2 individual Wagyu cuts + 2 sides + 2 desserts = CNY 1,368; or with shared 800g Signature Dry-Aged Rangers Valley T-Bone (CNY 1,398) = CNY 2,090 for 2 adults (all prices inclusive of 10% service charge & VAT).",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch Daily 11:30 – 14:00; Dinner Sun–Thu 17:30 – 21:30, Fri–Sat 17:30 – 22:00",
+      "hours_verification_status": "Verified",
+      "exceptions": "Friday & Saturday dinner extended to 22:00; Live band in bar Thu–Sat 20:00–23:45; smart casual dress code.",
+      "official_url": "https://www.shangri-la.com/shanghai/jinganshangrila/dining/restaurants/the-1515-west-chophouse-and-bar/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/1515-west-chophouse",
+      "menu_source_url": "https://sitecore-cd-imgr.shangri-la.com/MediaFiles/D/9/8/%7BD98D1DC7-AE6A-42EC-AA21-2A04E75F1FF6%7D20260521_SLJN_1515_Food%20Menu.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "1515 West Chophouse Vlog",
+            "url": "https://www.youtube.com/watch?v=Dz3FvuDoAVM"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @1515_west_chophouse_and_bar",
+            "url": "https://www.instagram.com/1515_west_chophouse_and_bar/"
+          },
+          {
+            "label": "Hotel @jinganshangrila",
+            "url": "https://www.instagram.com/jinganshangrila/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rest-jade-on-36",
+      "name": "Jade on 36",
+      "chinese_name": "翡翠36餐厅",
+      "michelin_category": "Listed in MICHELIN Guide (No Star)",
+      "michelin_distinction": "MICHELIN Selected",
+      "stars": 0,
+      "cuisine": "French Contemporary",
+      "cluster_id": "lujiazui-pudong",
+      "district": "Pudong (Lujiazui)",
+      "address": "36F, Grand Tower, Pudong Shangri-La, 33 Fucheng Road, Pudong, Shanghai",
+      "nearest_metro": "Lujiazui Station (Metro Lines 2 & 14), ~5 min walk",
+      "michelin_price_tier": "¥¥¥",
+      "cost_2_adults_cny": "CNY 776 (3-Course Lunch) – CNY 2,176 (6-Course Dinner)",
+      "cost_2_adults_usd_ref": "$116 – $324",
+      "cost_2_adults_numeric_min_cny": 776,
+      "cost_2_adults_numeric_max_cny": 2176,
+      "cost_verification_status": "Verified",
+      "cost_basis": "Official June 2026 Shangri-La Lunch & Dinner PDF Menus: 3-course Lunch CNY 388 pp × 2 = CNY 776; 5-course Dinner CNY 788 pp × 2 = CNY 1,576; 6-course Dinner CNY 1,088 pp × 2 = CNY 2,176 (inclusive of 10% service charge and prevailing government VAT).",
+      "open_days": "Monday – Sunday (Daily)",
+      "operating_hours": "Lunch Mon–Fri 11:30 – 14:00, Sat–Sun 11:00 – 14:30; Dinner Daily 17:30 – 22:00",
+      "hours_verification_status": "Verified",
+      "exceptions": "Weekend lunch opens 30 minutes earlier (11:00–14:30 Sat–Sun); non-smoking; smart casual dress code.",
+      "official_url": "https://www.shangri-la.com/restaurants-bars/shanghai/pudongshangrila/jade-on-36/",
+      "michelin_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jade-on-36",
+      "menu_source_url": "https://sitecore-cd-imgr.shangri-la.com/MediaFiles/2/E/F/%7B2EFEDEC1-6EA4-4C32-A959-B3141225FBD9%7DJade%20on%2036%20Restaurant%20Dinner%20Menu-20260609.pdf",
+      "social_links": {
+        "youtube": [
+          {
+            "label": "Official Shangri-La Jade on 36 Video",
+            "url": "https://www.youtube.com/watch?v=QL8Kbg72oMQ"
+          }
+        ],
+        "tiktok": [],
+        "instagram": [
+          {
+            "label": "Official @pudongshangrila",
+            "url": "https://www.instagram.com/pudongshangrila/"
+          }
+        ]
+      }
+    }
+  ]
+}
