@@ -807,15 +807,15 @@
       "city": "Guangzhou",
       "name": "Chen Clan Ancestral Hall (Guangdong Folk Art Museum)",
       "area": "Liwan · West Guangzhou",
-      "hours": "09:00–17:30 (ticket sales stop 17:00, clearing 17:15 per official gzcjc.com.cn visitor page)",
+      "hours": "Wed–Mon 09:00–17:30 (ticket sales & entry stop 17:00); CLOSED TUESDAYS except national statutory holidays",
       "exceptions": "Official museum page (gzcjc.com.cn) does not specify a weekly closure day or regular fare; a 2023 gz.gov.cn exhibition notice cited last-Monday closures (Feb 22, 2027) for that show — verify general Monday status & ticket fee directly before visiting.",
-      "cost": "",
+      "cost": "¥20 = 2 × ¥10 adult admission (seniors 60+ & under-18 free with ID per Guangzhou Municipal Culture & Tourism Bureau notice)",
       "duration": "1.5–2 h",
       "transit": "",
       "transit_flag": "No verified door-to-door <=60 min route logged yet.",
-      "officialLink": "https://www.gzcjc.com.cn/MYwebsite/rc/my_fwxq.htm?token=bfbdec9b14e24756a34bab9c0eb77fa1&subpath=854&leixing=a98536",
+      "officialLink": "https://www.gz.gov.cn/zwgk/zdly/shgysyjs/ggwhty/ggwh/content/post_9864493.html",
       "officialLabel": "Chen Clan Museum official visitor page",
-      "official_url": "https://www.gz.gov.cn/guangzhouinternational/home/whatson/content/post_9209869.html",
+      "official_url": "https://www.gz.gov.cn/zwgk/zdly/shgysyjs/ggwhty/ggwh/content/post_9864493.html",
       "videoLink": "https://www.youtube.com/watch?v=xuFknUp-xrg",
       "videoLabel": "YouTube tour (Mar 2025, third-party)",
       "socials": {
@@ -834,6 +834,12 @@
           "platform": "YouTube",
           "label": "Jan 2025 architecture walkthrough (third-party)",
           "url": "https://www.youtube.com/watch?v=yqmljLoE3SY",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Mar 2026 Chen Clan Ancestral Hall architecture walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=8zt9um_tkBk",
           "kind": "Direct video"
         }
       ],

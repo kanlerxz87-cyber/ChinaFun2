@@ -53,9 +53,9 @@
       "status": "3 MICHELIN Stars · 2026",
       "cuisine": "Innovative",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥4,576–¥5,176 = 2 × (¥2,288–¥2,588) for 10/12-course set menu per venue FAQ; excludes drinks, supplements & any 2027 price change",
+      "coupleTotal": "¥5,176 (Classic, 2 × ¥2,588) / ¥5,776 (Seasonal, 2 × ¥2,888) per current bookings.taian-table.com/faq; excludes drinks, supplements & any 2027 price change",
       "hours": "Tue–Sat Dinner (counter seatings per venue booking system); Closed Sun & Mon (confirm 2027 schedule on bookings.taian-table.com)",
-      "exceptions": "No 2027 Spring Festival schedule published yet; check monthly booking release directly.",
+      "exceptions": "Bookings open up to 90 days ahead with ¥2,000/person deposit (Feb 15–18, 2027 dates are already inside the 90-day window on Nov 26, 2026). Official homepage: https://sh.taian-table.cn/.",
       "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
       "officialLabel": "MICHELIN Guide",
       "venue": "https://bookings.taian-table.com/faq",
@@ -71,6 +71,18 @@
           "label": "Jul 2026 tasting review (third-party)",
           "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8",
           "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@stefan_stiller_taian_table (Chef & Restaurateur profile)",
+          "url": "https://www.instagram.com/stefan_stiller_taian_table/",
+          "kind": "Official profile"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Taian Table Shanghai menu & dining clips (third-party)",
+          "url": "https://www.tiktok.com/discover/taian-table-shanghai-prices",
+          "kind": "Topic hub"
         }
       ],
       "flags": [
@@ -146,7 +158,7 @@
       "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Cantonese",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥888 (Classic Dim Sum Lunch Set for Two) or ¥2,288 (All Day Set Menu for Two), inclusive of service charge & tax per 2026 Langham PDF; confirm 2027 menu",
+      "coupleTotal": "¥888 Classic Lunch Set (2 × ¥444) / ¥2,288 All-Day Tasting Menu (2 × ¥1,144), incl. service charge & tax per official Langham PDF",
       "hours": "Lunch 11:30–14:00; Dinner 17:30–21:00 (CONFLICT: official Langham page says both 'daily' and 'Off on Monday' — verify directly)",
       "exceptions": "Monday contradiction flagged (R05); confirm Feb/Mar 2027 Spring Festival schedule and exact set pricing via Langham concierge.",
       "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court",
@@ -251,7 +263,7 @@
       "cuisine": "Italian",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "Lunch Thu–Sun 12:00–13:30 (last order 13:30); Dinner Mon–Sun 18:00–21:00 (last order 21:00); Cocktail Bar Mon–Sun 17:30–22:30",
+      "hours": "Lunch Thu–Sun 12:00–13:30; Dinner daily 18:00–21:00 (official Shanghai branch page; MICHELIN Guide lists daily dinner)",
       "exceptions": "No published menu price on official web page; confirm 2027 seasonal menu and Feb holiday dates.",
       "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-1-2-otto-e-mezzo-bombana",
       "officialLabel": "MICHELIN Guide",
@@ -293,7 +305,7 @@
       "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Italian",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "Official English menu PDF lists Il Mare di Da Vittorio RMB 2,388 & White Truffle RMB 4,388 (+10% service charge) under Tasting Menus ('Shared for the whole table'; confirm per-person vs table basis and 2027 pricing)",
+      "coupleTotal": "¥5,253.60 Carta Bianca (2 × ¥2,388 + 10% SC) / ¥9,653.60 Truffle menu (2 × ¥4,388 + 10% SC) on davittorio.com (Il Mare PDF ¥1,880–¥2,680/pp + 10% SC also published)",
       "hours": "Tue–Sun: Lunch 12:00–13:30, Dinner 18:00–21:30; Closed Monday",
       "exceptions": "Online booking via Resvea requires USD $100/person deposit; confirm 2027 seasonal menu & holiday hours.",
       "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio",
@@ -305,7 +317,14 @@
         "tiktok": "https://www.tiktok.com/search?q=Da%20Vittorio%20Shanghai",
         "instagram": "https://www.instagram.com/explore/tags/davittorioshanghai/"
       },
-      "reviews": [],
+      "reviews": [
+        {
+          "platform": "TikTok",
+          "label": "Bund Finance Centre venue building walkthrough (third-party)",
+          "url": "https://www.tiktok.com/@demas/video/7418946011114016007",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
@@ -505,15 +524,15 @@
       "name": "Fabula",
       "area": "Shanghai",
       "edition": "2026",
-      "status": "1 MICHELIN Star · 2026",
+      "status": "MICHELIN Guide Selected (no star) · 2026",
       "cuisine": "Innovative (Neo-Sino-French)",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "Wed–Sun 19:00–23:00; Closed Monday & Tuesday (reservation only)",
-      "exceptions": "Online booking via Resvea requires USD $100/person deposit; confirm 2027 tasting menu price & holiday dates.",
+      "hours": "Official site lists Wed–Sun 19:00–23:00 (closed Mon–Tue); MICHELIN Guide lists Tue–Sun 18:00–22:00",
+      "exceptions": "Selected in 2026 MICHELIN Guide (not a Star). Tuesday opening and 18:00 vs 19:00 seating differ between official site and Guide; confirm directly.",
       "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
       "officialLabel": "MICHELIN Guide",
-      "venue": "https://www.fabula.restaurant/",
+      "venue": "https://fabula.restaurant/",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
       "socials": {
         "youtube": "https://www.youtube.com/results?search_query=Fabula+Shanghai+Michelin+review",
@@ -742,12 +761,12 @@
       "status": "1 MICHELIN Star · 2026",
       "cuisine": "French Contemporary",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
+      "coupleTotal": "¥1,812.40–¥2,042.40 lunch (2 × ¥788–¥888 + 15% SC); ¥3,882.40 Discovery (2 × ¥1,688 + 15% SC); ¥5,262.40 Degustation (2 × ¥2,288 + 15% SC) per official trbhutong.com/menu",
       "hours": "Daily Lunch 11:30–14:30; Dinner 17:30–22:00 (verified Nov 26, 2026 on MICHELIN Guide)",
-      "exceptions": "Set inside a historic temple courtyard; confirm 2027 menu pricing & holiday closures on trbhutong.com.",
+      "exceptions": "Official menu states +15% service charge; optional wine pairings (+¥788–¥1,188/pp + 15% SC) and 2027 holiday menus separate.",
       "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
       "officialLabel": "MICHELIN Guide",
-      "venue": "https://www.trbhutong.com/",
+      "venue": "https://trbhutong.com/menu",
       "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
       "socials": {
         "youtube": "https://www.youtube.com/results?search_query=TRB+Hutong+Beijing+review",

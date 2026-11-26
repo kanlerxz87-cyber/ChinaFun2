@@ -173,3 +173,14 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 ### Claim log (2026-11-26)
 - `2026-11-26` · `99044301` · Read `COORDINATION.md`; claimed full audit, social review integration, and UX/validator upgrade on `arena/99044301-chinafun2`. Preserved `shanghai-planner/`, `research/final-verification-2026-11-26.md`, and all prior session archives intact.
 - `2026-11-26` · `99044301` · Reconciled cleanly with merged PR #12 (`371b0dc`), re-verified all validators + JSDOM + local HTTP checks, proceeding to merge PR #13 & confirm live GitHub Pages deployment.
+
+---
+
+## Session `5e433db0` — Line-by-line room/menu/ticket primary-source reconciliation onto `main` (`e29fd91`), 2026-11-26
+
+**Branch:** `arena/5e433db0-chinafun2` (merged cleanly with `origin/main` `e29fd91`, preserving 100% of PRs #12, #13 & #14 plus `shanghai-planner/`)
+
+| ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
+|----|------|--------|-----------------|----------------|-----------------|
+| T09-5e433db0 | Primary-source verification audit across 2027 State Council holidays, hotel room/bath pages, Michelin Guide + venue menus, attraction ticketing portals, and direct social review URLs | **done** | `5e433db0` | `research/session-5e433db0-audit.md`, `scripts/audit_5e433db0.py`, `COORDINATION.md` | Documented primary-source verification and automated content-integrity checks (`audit_5e433db0.py`). |
+| T10-5e433db0 | Additive reconciliation onto merged `main` (`e29fd91`), factual bug fixes (`fabula` Selected vs 1★, `taian-table` current FAQ menu totals & 90-day window), hotel bed/bath fill (`14/20` beds, `7/20` baths), `trb-hutong` & `chen-clan` official pricing, and dashboard city filter pills | **done · publishing PR** | `5e433db0` | `data/{hotels,michelin,activities}.json`, `scripts/{build_pages,verify_project,audit_5e433db0,test_ui}.*`, `index.html`, `app.js`, `styles.css`, `*.html`, `data.js`, `RESEARCH_REVIEW.md`, `README.md`, `.github/workflows/validate.yml` | Preserved all 20 hotels, 27 restaurants, 29 activities, 17 flags, `research/final-verification-2026-11-26.md`, and `research/live-audit-2026-11-26.md` from PRs #12–#14 while fixing `fabula` distinction, updating `taian-table` / `trb-hutong` / `tang-court` / `da-vittorio` published menu totals, adding `chen-clan` official `¥20` two-adult fare + Tuesday closure, filling 7 official hotel bathroom specs & 7 additional hotel bed specs, and adding interactive city filter pills to `index.html`. |
