@@ -25,9 +25,10 @@ class Document(HTMLParser):
  def handle_endtag(self,t):
   if t=='tr' and self.row is not None:self.rows.append(self.row);self.row=None
   if t=='tbody':self.body=False
-OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
+OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','gzcjc.com.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','tiantanpark.com','summerpalace.net.cn','dpm.org.cn','mutianyugreatwall.com','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
 def official(u):
- h=(urlsplit(u).hostname or '').removeprefix('www.');return h in OFFICIAL and u.startswith('https://')
+ h=(urlsplit(u).hostname or '').lower().removeprefix('www.')
+ return u.startswith('https://') and any(h==domain or h.endswith('.'+domain) for domain in OFFICIAL)
 files=list(P.glob('*.html'));docs={x:Document(x.read_text()) for x in files}
 for f,d in docs.items():
  text=f.read_text();check('name="viewport"' in text,f'{f.name}: missing mobile viewport');check('id="main"' in text,f'{f.name}: missing main landmark')
@@ -48,6 +49,7 @@ for name,key in [('hotels','hotels'),('michelin','restaurants'),('activities','a
  rows=load(name)[key];ids=[x['id'] for x in rows];check(len(ids)==len(set(ids)),name+': duplicate records')
  for x in rows:
   check(official(x['official_url']),name+': non-official source '+x['id'])
+  for item in x.get('additional_sources',[]):check(official(item.get('url','')),name+': non-official additional source '+x['id'])
   check(bool(x['flags']),name+': missing flags '+x['id'])
   for flag in x['flags']:check(flag in flagids,'unknown flag '+flag)
   check(len(x.get('socials',{}))>=3 or name=='hotels',name+': missing discovery platforms '+x['id'])
