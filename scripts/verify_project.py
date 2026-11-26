@@ -25,7 +25,7 @@ class Document(HTMLParser):
  def handle_endtag(self,t):
   if t=='tr' and self.row is not None:self.rows.append(self.row);self.row=None
   if t=='tbody':self.body=False
-OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
+OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','shanghaimuseum.cn','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
 def official(u):
  h=(urlsplit(u).hostname or '').removeprefix('www.');return h in OFFICIAL and u.startswith('https://')
 files=list(P.glob('*.html'));docs={x:Document(x.read_text()) for x in files}

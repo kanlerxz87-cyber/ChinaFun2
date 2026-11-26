@@ -71,7 +71,7 @@
       "scope": "All activities",
       "issue": "Current prices and schedules are not guaranteed date-specific 2027 inventory; blank costs are unknown, not free.",
       "next": "Recheck ticket product, reservation release, special exhibitions and 2027 notices on linked official pages.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -111,7 +111,7 @@
       "scope": "Social / video links",
       "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
       "next": "Verify creator, venue and upload date before relying on a post.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -128,6 +128,14 @@
       "issue": "Hilton property-page fetch failed during integration. Structural tests check local links and official domains, not complete external reachability or source content.",
       "next": "Reopen the linked official property page and confirm the exact room; do not treat an inaccessible page as fresh verification. Recheck other external source links before booking.",
       "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "A04",
+      "scope": "Shanghai Museum — People’s Square",
+      "issue": "Previous free-admission claim was removed. All visitors must purchase tickets during the Americas exhibition through November 14, 2027; the total for two adults has not been verified. The museum says its old .net website will cease on January 1, 2027.",
+      "next": "Check the official ticket channel for a two-adult price and the specific visit date; verify evening sessions and any exceptions directly.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     }
   ]

@@ -1216,17 +1216,18 @@ window.TRIP_DATA = {
       "id": "shanghai-museum",
       "name": "Shanghai Museum — People’s Square",
       "city": "Shanghai",
-      "schedule": "09:00–17:00; last entry 15:00 under current exhibition notice. Closed Monday except national holidays.",
-      "cost": "General admission ¥0; special exhibitions may charge.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "officialLink": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "exception": "Advance reservation required under exhibition notice through Nov 14, 2027; recheck specific exhibition fees. Closed Mon Feb 15 and 22 under normal rules.",
+      "schedule": "Tue–Sun 09:00–17:00, last entry 15:00; closed Monday except national holidays. Evening session hours differ; check museum announcements.",
+      "cost": "",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "officialLink": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "official_url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "exception": "During the exhibition through Nov 14, 2027, the venue hosts no other exhibitions; visitors must purchase tickets. Two-adult price unverified. Check special hours and exact visit date.",
       "transit": "",
       "flags": [
         "A01",
         "A02",
-        "S01"
+        "S01",
+        "A04"
       ],
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Shanghai%20Museum%20%E2%80%94%20People%E2%80%99s%20Square%20Shanghai",
@@ -1992,7 +1993,7 @@ window.TRIP_DATA = {
       "scope": "All activities",
       "issue": "Current prices and schedules are not guaranteed date-specific 2027 inventory; blank costs are unknown, not free.",
       "next": "Recheck ticket product, reservation release, special exhibitions and 2027 notices on linked official pages.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -2032,7 +2033,7 @@ window.TRIP_DATA = {
       "scope": "Social / video links",
       "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
       "next": "Verify creator, venue and upload date before relying on a post.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -2049,6 +2050,14 @@ window.TRIP_DATA = {
       "issue": "Hilton property-page fetch failed during integration. Structural tests check local links and official domains, not complete external reachability or source content.",
       "next": "Reopen the linked official property page and confirm the exact room; do not treat an inaccessible page as fresh verification. Recheck other external source links before booking.",
       "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "A04",
+      "scope": "Shanghai Museum — People’s Square",
+      "issue": "Previous free-admission claim was removed. All visitors must purchase tickets during the Americas exhibition through November 14, 2027; the total for two adults has not been verified. The museum says its old .net website will cease on January 1, 2027.",
+      "next": "Check the official ticket channel for a two-adult price and the specific visit date; verify evening sessions and any exceptions directly.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     }
   ]
