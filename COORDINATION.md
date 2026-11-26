@@ -148,3 +148,11 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+## Current-session claim — `3a60fcf4` (2026-11-26)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| T09 — Follow-up final compliance audit against the current user brief; correct stale date-dependent copy, verify strict row/source policy and identify/fix evidence gaps without presenting estimates as facts | **in progress** | `3a60fcf4` / `arena/3a60fcf4-chinafun2` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, root `*.html`, `data/*.json`, `app.js`, `styles.css`, `scripts/verify_project.py`, `research/` |
+
+**Claim note:** Prior tasks are already integrated on `main`; there are no current active owners listed above. This is a follow-up final-integration/audit pass on the assigned branch, not a new branch or an attempt to replace earlier session work. Historical research remains flagged unless independently re-verified against an official source.
