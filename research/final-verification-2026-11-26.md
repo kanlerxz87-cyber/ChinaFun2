@@ -65,4 +65,7 @@ These are structural, local HTTP, and DOM interaction checks. They do **not** pr
 
 ## Publication status
 
-Branch publication and the live GitHub Pages result are pending the current branch’s pull request and main-branch deployment check. The existing open PR #4 belongs to another branch and was not modified. Update this section with the current PR/check/deployment IDs after the active branch’s publication is verified.
+- PR [#12](https://github.com/kanlerxz87-cyber/ChinaFun2/pull/12) was merged on 2026-11-26 at 19:33:42 UTC as merge commit `371b0dca8e72cd64a24cb97e1e407160b445da18`.
+- The post-merge main validation run [45884555103](https://github.com/kanlerxz87-cyber/ChinaFun2/actions/runs/45884555103) completed successfully on that merge SHA.
+- The GitHub Pages build/deployment run [45884553334](https://github.com/kanlerxz87-cyber/ChinaFun2/actions/runs/45884553334) completed successfully on the same SHA. Pages deployment `8094332413` reports `success` for `https://kanlerxz87-cyber.github.io/ChinaFun2/`; the Pages API reports `built`, sourced from `main` `/`.
+- These GitHub API and workflow results verify publication configuration/deployment. An independent HTTP fetch of the public Pages host was not made from this sandbox, whose outbound host access is restricted. The unrelated open PR #4 was not modified.
