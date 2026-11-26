@@ -54,6 +54,11 @@ for name,key in [('hotels','hotels'),('michelin','restaurants'),('activities','a
   if name=='hotels':
    for k in ['total','transit','activityTransit','rank']:check(x[k]=='',x['id']+': unsupported official metric '+k)
  for city in ['Shanghai','Beijing','Guangzhou','Chengdu']:check(any(x['city']==city for x in rows),name+': missing city '+city)
+# Regression: the exhibition-period visit page does not substantiate a free ticket.
+museum=next(x for x in load('activities')['activities'] if x['id']=='shanghai-museum')
+check(museum['cost']=='','museum exhibition ticket cost must remain blank until verified')
+check('A04' in museum['flags'],'museum exhibition caveat missing')
+check(museum['official_url']=='https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west','museum visit source drift')
 for x in load('costs')['stay_options']:
  start=date.fromisoformat(x['checkin']);end=date.fromisoformat(x['checkout']);check((end-start).days==7,'stay not 7 nights');check(start>=date(2027,2,15) and end<=date(2027,3,23),'stay outside window');check(official(x['source']),'stay missing official source')
 for x in load('costs')['booking_windows']:

@@ -129,6 +129,14 @@
       "next": "Reopen the linked official property page and confirm the exact room; do not treat an inaccessible page as fresh verification. Recheck other external source links before booking.",
       "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
       "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "A04",
+      "scope": "Shanghai Museum — People’s Square",
+      "issue": "The official visit page does not establish free admission for the current exhibition or mandate advance booking for individual visitors. Its published schedule permits later evening sessions; exact dates and ticket cost are unverified.",
+      "next": "Check the museum’s current exhibition ticket and evening-session notices before scheduling or paying.",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
+      "status": "needs review · non-blocking publication"
     }
   ]
 }
