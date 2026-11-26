@@ -153,7 +153,7 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 | Task | Status | Owner | Scope |
 |---|---|---|---|
-| Audit current site against strict source policy; correct concrete defects and verify publication | in progress | `708d6b98` | `COORDINATION.md`, `data.js`, root generated HTML, `scripts/`, `.github/workflows/` if required |
+| Audit current site against strict source policy; correct concrete defects and verify publication | needs review | `708d6b98` | `COORDINATION.md`, `README.md`, `data/activities.json`, `data/flags.json`, `data.js`, root generated HTML, `scripts/` |
 
 Claim: previous integration tasks above are historical; this session will preserve independent planner and research files, and will record any unresolved issues. The session branch is fixed by the workspace as `arena/708d6b98-chinafun2`.
 
