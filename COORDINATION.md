@@ -148,3 +148,19 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+---
+
+## Session `5e433db0` — Line-by-line official verification, social-link audit, and 2026-11-26 integration (`arena/5e433db0-chinafun2`)
+
+**Session ID:** `5e433db0` (branch `arena/5e433db0-chinafun2`, base `04b6d65c` of `main`)
+**Claimed timestamp (UTC):** `2026-11-26`
+
+| ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
+|----|------|--------|-----------------|----------------|-----------------|
+| T09-5e433db0 | Line-by-line official-source audit of all hotels, Michelin restaurants, activities, 2026-11-26 date/lead-time updates, and verified social media review links | **in progress** | `5e433db0` | `COORDINATION.md`, `research/session-5e433db0-audit.md`, `scripts/audit_5e433db0.py` | Prior `2026-11-25` claims (>29h old, no recent commits on `main`) are completed/needs-review. Scoped first to isolated audit files before final integration rebase onto `main`. |
+| T10-5e433db0 | Final integration rebase, shared ledger/UI enhancements, broken-link/DOM/HTTP checks, PR to `main`, merge, and live GitHub Pages confirmation | **unclaimed → queued after T09-5e433db0** | `5e433db0` | Shared root outputs (`data/*.json`, `scripts/build_pages.py`, `scripts/verify_project.py`, `*.html`, `data.js`, `app.js`, `styles.css`, `assets/`, `README.md`, `RESEARCH_REVIEW.md`) | Will `git pull --rebase origin main` before touching shared files so any parallel session merges on `main` are preserved without conflict or data loss. |
+
+### Change requests logged by `5e433db0` (prior to integration step)
+- Requesting integration-stage updates to `data/*.json`, `scripts/build_pages.py`, `scripts/verify_project.py`, root `*.html`, `data.js`, `app.js`, `styles.css`, `README.md`, and `RESEARCH_REVIEW.md` after line-by-line official verification completes in `research/session-5e433db0-audit.md`, preserving any upstream commits merged into `main` in the interim.
+
