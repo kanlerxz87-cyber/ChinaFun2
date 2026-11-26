@@ -51,7 +51,7 @@ class Document(HTMLParser):
 OFFICIAL = {
     'guide.michelin.com', 'michelin.com',
     'marriott.com', 'ritzcarlton.com', 'hyatt.com', 'ihg.com', 'rosewoodhotels.com',
-    'hilton.com', 'shangri-la.com', 'okura-nikko.com', 'sukhothai.com', 'shanghai.sukhothai.com',
+    'hilton.com', 'shangri-la.com', 'okura-nikko.com', 'okura.com', 'sukhothai.com', 'shanghai.sukhothai.com',
     'all.accor.com', 'peninsula.com', 'langhamhotels.com', 'bulgarihotels.com',
     'mandarinoriental.com', 'fourseasons.com', 'thehousecollective.com',
     'grandcentralhotelshanghai.com', 'gardenhotelshanghai.com', 'upperhouse.com',
@@ -63,7 +63,7 @@ OFFICIAL = {
     'xintiandi.com', 'english.beijing.gov.cn', 'intl.dpm.org.cn', 'dpm.org.cn',
     'tiantanpark.com', 'summerpalace.net.cn', 'mutianyugreatwall.com',
     'en.mutianyugreatwall.com', 'pcticket.chnmuseum.cn',
-    'gz.gov.cn', 'gzcjc.com.cn', 'lyylj.gz.gov.cn', 'cantontower.com', 'mallpc.cantontower.com', 'chimelong.com',
+    'gz.gov.cn', 'gzcjc.com.cn', 'gzchenjiaci.com', 'lyylj.gz.gov.cn', 'cantontower.com', 'mallpc.cantontower.com', 'chimelong.com',
     'panda.org.cn', 'm.panda.org.cn', 'wuhouci.net.cn', 'en.wuhouci.net.cn',
     'cddfct.com', 'gochengdu.cn', 'suzhou.gov.cn', 'hangzhou.gov.cn',
     'english.www.gov.cn', 'travel.state.gov', 'us.china-embassy.gov.cn', 'cdc.gov',
@@ -117,6 +117,8 @@ for name, key in [('hotels', 'hotels'), ('michelin', 'restaurants'), ('activitie
     check(len(ids) == len(set(ids)), name + ': duplicate records')
     for x in rows:
         check(official(x['official_url']), name + ': non-official source ' + x['id'])
+        if name == 'hotels' and x.get('roomSource'):
+            check(official(x['roomSource']), f'hotels: non-official roomSource {x["id"]}: {x["roomSource"]}')
         if name == 'michelin' and x.get('venue'):
             check(official(x['venue']), f'michelin: non-official venue {x["id"]}: {x["venue"]}')
         if name == 'activities' and x.get('officialLink'):

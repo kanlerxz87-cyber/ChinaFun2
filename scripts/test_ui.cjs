@@ -36,6 +36,14 @@ assert.equal(d.querySelector('.menu-toggle').getAttribute('aria-expanded'), 'fal
 d.querySelector('[data-suggestion]').click();
 assert(d.querySelector('#suggestion-feedback').textContent.startsWith('Selected for review:'));
 
+// Test dashboard interactive city filter pills
+d.querySelector('#hotel-filters [data-city-mode="all"]').click();
+assert.equal(d.querySelectorAll('#hotel-list article').length, 20);
+d.querySelector('#hotel-filters [data-city-mode="Guangzhou"]').click();
+assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
+d.querySelector('#hotel-filters [data-city-mode="featured"]').click();
+assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
+
 for (const [file, id, city, count] of [
   ['hotels.html', 'hotels', 'Guangzhou', 3],
   ['michelin.html', 'restaurants', 'Chengdu', 4],

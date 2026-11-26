@@ -30,6 +30,7 @@ Canonical records: `data/{brief,hotels,michelin,activities,costs,flags}.json`.
 ```sh
 python3 scripts/build_pages.py       # Regenerate 10 detail pages and data.js
 python3 scripts/verify_project.py    # Links, anchors, sources, flags, dates, data parity
+python3 scripts/audit_5e433db0.py    # Nov 26 primary-source content invariants
 node --check app.js
 node --check assets/js/app.js
 python3 -m http.server 8000 --bind 0.0.0.0

@@ -1,3 +1,21 @@
+# Primary-source audit & reconciliation — 26 November 2026 · session 5e433db0
+
+Full line-by-line audit table: [`research/session-5e433db0-audit.md`](research/session-5e433db0-audit.md). Automated checker: `python3 scripts/audit_5e433db0.py`.
+
+## Newly verified & resolved on 26 Nov 2026
+
+- **Temporal & holiday baseline:** Updated review snapshot to **Nov 26, 2026** (**81 days** before Feb 15, 2027 and **84 days** before Feb 18, 2027 — inside Taian Table’s 90-day reservation window). Confirmed State Council 2027 Spring Festival statutory holiday (**Feb 5–13, 2027**, 9 days; **Jan 31 & Feb 14** make-up workdays; **Mon Feb 15** regular Monday so museum/garden Monday closures apply; **Sat Feb 20** Lantern Festival `正月十五`).
+- **Hotel room & private-bathroom evidence (16 candidates):** Verified **13 of 16** Queen+/King room options and **11 of 16** explicit marble/in-room private bathrooms directly from static brand room pages (`Peninsula Shanghai`, `Shanghai Marriott Marquis City Centre` rebrand from `Shanghai Marriott Hotel City Centre`, `Okura Garden Hotel Shanghai` on `okura.com`, `Jing An Shangri-La`, `The Sukhothai Shanghai` on `shanghai.sukhothai.com`, `The Shanghai EDITION`, `Grand Hyatt Shanghai`, `Hyatt on the Bund`, `Rosewood Beijing`, `Regent Beijing`, and `The Ritz-Carlton Guangzhou`). Three WAF-gated pages (`Renaissance Yu Garden`, `Hilton Shanghai City Center`, `Hilton Beijing Wangfujing`) and two JS-modal bath descriptions (`Sofitel Guangzhou Sunrich`, `The St. Regis Chengdu`) stay explicitly blank and flagged (`H02`, `L01`).
+- **Michelin couple menu totals & cleanup (26 venues):** Verified **6 official published two-adult set-menu bases** (`Mi Xun Teahouse` `¥620`; `T'ang Court` `¥888` lunch / `¥2,288` all-day; `TRB Hutong` `¥1,812.40` lunch / `¥3,882.40` / `¥5,262.40` incl. 15% SC; `Bao Li Xuan` `¥3,576`; `Taian Table` `¥5,176` / `¥5,776`; `Da Vittorio` `¥5,253.60` / `¥9,653.60` incl. 10% SC). Removed the leftover non-official blog link (`rachelgouk.com`) from `canton-8` and enforced `official(u)` validation across all secondary URL fields in `scripts/verify_project.py`. Added Bib Gourmand benchmarks `Yu Yuen` (Guangzhou `¥¥`) and `Gan Ji Fei Chang Fen` (Chengdu `¥`, daily `10:00–22:00`).
+- **Sightseeing admissions & closure traps (23 records):** Resolved **8 previously blank two-adult admission cells** from primary official portals (`Chengdu Panda Base` `¥110`, `Wuhou Shrine` `¥100`, `Mutianyu Great Wall` `¥90` base gate, `Canton Tower` `¥300` 433m deck, `Chen Clan Ancestral Hall` `¥20` + **Tuesday weekly closure**, `Huangpu River Cruise` `¥240` Essence Day Tour, `Suzhou Humble Administrator's Garden` `¥140` off-season, `Hangzhou West Lake` `¥0` lakeshore / `¥80` electric car loop) and added **`Shanghai Museum East — Pudong`** (`¥0` walk-in, open Mondays, closed Tuesdays) alongside the People’s Square Jul 2026–Nov 2027 permanent-gallery renovation alert.
+- **Social media review links & interactive city filters:** Added verified direct YouTube review URLs (`11` restaurants + `21` activities), official museum/venue Instagram profiles, and TikTok videos/topic hubs clearly distinguished from `(search)` fallbacks, plus interactive city filter pills across both `index.html` and detail tables.
+
+## Still intentionally open (non-blocking flags)
+
+Live Feb 2027 7-night checkout totals (`H01`), WAF/modal room confirmations on 5 hotels (`H02`, `L01`), door-to-door `<=60 min` public-transit route matrices and hotel rankings (`H03`), venue-specific 2027 Spring/Lantern Festival operating notices (`R02`, `A01`), `Hong Yu Fang` / `Fabula` schedule conflicts (`R03`), and traveler passport/visa eligibility (`E01`).
+
+---
+
 # Integration update — 25 November 2026 · session 55de3f9a
 
 The audit below is retained as a **historical review**, not a description of the current pages. The dashboard and ten static detail pages now share canonical JSON records and one generated `data.js` ledger. Statements about the open PR and publication state below describe the 25 Nov review snapshot.

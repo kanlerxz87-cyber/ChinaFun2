@@ -5,7 +5,7 @@ import json, html, re
 from pathlib import Path
 
 P = Path(__file__).resolve().parents[1]
-VER = '20261126-v3'
+VER = '20261126-v4'
 
 def read(n):
     return json.loads((P / 'data' / f'{n}.json').read_text())
@@ -79,7 +79,7 @@ def page(file, title, desc, body):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0f172a"><meta name="description" content="{e(desc)}"><title>{e(title)} · China trip planning desk</title><link rel="stylesheet" href="assets/css/style.css?v={VER}"><script src="assets/js/app.js?v={VER}" defer></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="topbar-inner"><a class="brand" href="index.html">中 China trip <small>Evidence-first planning desk</small></a><nav class="mainnav" aria-label="Main navigation">{nav}</nav></div></header>
 <main id="main" class="wrap"><section class="hero"><p class="eyebrow">TWO ADULTS · FEB 15–MAR 23, 2027</p><h1>{e(title)}</h1><p>{e(desc)}</p><div class="chips"><span class="chip">Reviewed Nov 26, 2026</span><span class="chip">1–2 wk &amp; 2–4 wk options</span><span class="chip">Official facts ≠ 2027 guarantees</span></div></section>
-<div class="note">A dash (—) means unverified on official sources, never zero. Prices are in CNY unless labelled USD. No hotel has a verified one-hour public-transit catchment or an official all-in 2027 quote. <a href="flagged.html">See all {len(F)} review flags</a>.</div>{body}</main><footer>ChinaFun2 · 2 adults · Evidence-first research snapshot (Nov 26, 2026), not a booking service. <a href="index.html">Back to dashboard</a> · <a href="research/entry-audit.md">Original entry audit</a></footer></body></html>'''
+<div class="note">A dash (—) means unverified on official sources, never zero. Prices are in CNY unless labelled USD. No hotel has a verified one-hour public-transit catchment or an official all-in 2027 quote. <a href="flagged.html">See all {len(F)} review flags</a>.</div>{body}</main><footer>ChinaFun2 · 2 adults · Evidence-first research snapshot (Nov 26, 2026), not a booking service. <a href="index.html">Back to dashboard</a> · <a href="research/entry-audit.md">Original entry audit</a> · <a href="research/session-5e433db0-audit.md">Session 5e433db0 audit</a></footer></body></html>'''
     (P / file).write_text(out)
 
 def table(id, headers, rows, filter=True, city_chips=False):
