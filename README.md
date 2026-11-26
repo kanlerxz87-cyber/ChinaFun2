@@ -13,7 +13,7 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 - [Dates & costs](costs-booking.html): 7-night and 2–4 week stay windows through Mar 23, plus 90/60/30/14-day calendar checkpoints.
 - [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html) (19 flags), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. Full live audit logs are recorded in [research/line-by-line-audit-2026-11-26.md](research/line-by-line-audit-2026-11-26.md), [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md), and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
+As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. Full live audit logs are recorded in [research/line-by-line-audit-2026-11-26.md](research/line-by-line-audit-2026-11-26.md), [research/session-5e433db0-audit.md](research/session-5e433db0-audit.md), [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md), and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
 
 ## Research discipline
 

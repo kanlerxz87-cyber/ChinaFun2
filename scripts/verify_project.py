@@ -51,7 +51,7 @@ class Document(HTMLParser):
 OFFICIAL = {
     'guide.michelin.com', 'michelin.com',
     'marriott.com', 'ritzcarlton.com', 'hyatt.com', 'ihg.com', 'rosewoodhotels.com',
-    'hilton.com', 'shangri-la.com', 'okura-nikko.com', 'sukhothai.com', 'shanghai.sukhothai.com',
+    'hilton.com', 'shangri-la.com', 'okura-nikko.com', 'okura.com', 'sukhothai.com', 'shanghai.sukhothai.com',
     'all.accor.com', 'peninsula.com', 'langhamhotels.com', 'bulgarihotels.com',
     'mandarinoriental.com', 'fourseasons.com', 'thehousecollective.com',
     'grandcentralhotelshanghai.com', 'gardenhotelshanghai.com', 'upperhouse.com',
