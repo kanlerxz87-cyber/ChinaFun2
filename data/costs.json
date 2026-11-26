@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -76,7 +76,7 @@
       "lead_days": 90,
       "target_start": "2026-11-17",
       "target_end": "2026-11-20",
-      "action": "Past reference checkpoint, not a proven cheapest day.",
+      "action": "Passed (9–6 days ago as of Nov 26, 2026); historical reference checkpoint only, not a proven cheapest day.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
@@ -87,7 +87,7 @@
       "lead_days": 60,
       "target_start": "2026-12-17",
       "target_end": "2026-12-20",
-      "action": "Compare like-for-like refundable official quotes now through this checkpoint.",
+      "action": "Next upcoming checkpoint (in 21–24 days): compare like-for-like refundable official 7-night quotes now vs Dec 17–20.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
@@ -98,7 +98,7 @@
       "lead_days": 30,
       "target_start": "2027-01-16",
       "target_end": "2027-01-19",
-      "action": "Reprice; do not assume a spike is inevitable.",
+      "action": "30-day reprice checkpoint: re-query identical room/tax/cancellation terms; rebook if official direct total drops.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
@@ -109,7 +109,7 @@
       "lead_days": 14,
       "target_start": "2027-02-01",
       "target_end": "2027-02-04",
-      "action": "Recheck only if the existing rate can still be cancelled without penalty.",
+      "action": "Final pre-Spring-Festival recheck: reprice only while existing refundable reservation remains inside free-cancellation window.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",

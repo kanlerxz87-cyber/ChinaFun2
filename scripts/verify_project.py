@@ -1,5 +1,5 @@
 """No dependencies. Structural/source-policy checks, not external fact verification."""
-import argparse, json, re, subprocess
+import argparse, json, subprocess
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote, urljoin
@@ -25,7 +25,21 @@ class Document(HTMLParser):
  def handle_endtag(self,t):
   if t=='tr' and self.row is not None:self.rows.append(self.row);self.row=None
   if t=='tbody':self.body=False
-OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
+OFFICIAL={
+ 'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com',
+ 'rosewoodhotels.com','hilton.com','stories.hilton.com','shangri-la.com','okura-nikko.com',
+ 'sukhothai.com','shanghai.sukhothai.com','all.accor.com','peninsula.com','langhamhotels.com',
+ 'upperhouse.com','mandarinoriental.com','bulgarihotels.com','capellahotels.com',
+ 'ottoemezzobombana.com','bookings.taian-table.com','kingsjoy.com','trbhutong.com',
+ 'jinxuanchineserestaurantshanghai.com','vivantshanghai.com','fabula.restaurant','restaurantlinglong.com',
+ 'shanghaimuseum.net','shanghaimuseum.cn','reservation.shanghaimuseum.net','yugarden.com.cn',
+ 'english.shanghai.gov.cn','shanghaitower.com','en.shanghaitower.com','orientalpearltower.com',
+ 'powerstationofart.com','xintiandi.com','shanghaidisneyresort.com','intl.dpm.org.cn',
+ 'english.beijing.gov.cn','en.mutianyugreatwall.com','gz.gov.cn','cantontower.com',
+ 'panda.org.cn','wuhouci.net.cn','jinshasitemuseum.com','suzhou.gov.cn','hangzhou.gov.cn',
+ 'english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov'
+}
+BANNED_LINK_HOSTS={'rachelgouk.com','lameloise.com.cn','www.lameloise.com.cn','uvbypp.cc','nswsw.zhanlingxc.top','traveldeals.com'}
 def official(u):
  h=(urlsplit(u).hostname or '').removeprefix('www.');return h in OFFICIAL and u.startswith('https://')
 files=list(P.glob('*.html'));docs={x:Document(x.read_text()) for x in files}
@@ -33,21 +47,25 @@ for f,d in docs.items():
  text=f.read_text();check('name="viewport"' in text,f'{f.name}: missing mobile viewport');check('id="main"' in text,f'{f.name}: missing main landmark')
  for ref in d.refs:
   u=urlsplit(ref)
+  if u.hostname and u.hostname.removeprefix('www.') in BANNED_LINK_HOSTS:
+   errors.append(f'{f.name}: banned/quarantined external link {ref}')
   if u.scheme or u.netloc:continue
   target=(f.parent/unquote(u.path)).resolve() if u.path else f
   check(target.is_relative_to(P) and target.exists(),f'{f.name}: missing local resource {ref}')
   if u.fragment and target in docs:check(unquote(u.fragment) in docs[target].ids,f'{f.name}: missing anchor {ref}')
  for row in d.rows:check(any(official(u) for u in row),f'{f.name}: table row has no official source: {row[:2]}')
- for stale in ['Feb 2026 (now)','~28','not yet released','Verify ↗','eastchinatrip.com','its.holiday','chinafortravelers.com']:
+ for stale in ['Feb 2026 (now)','~28','not yet released','Verify ↗','eastchinatrip.com','its.holiday','chinafortravelers.com','nswsw.zhanlingxc.top']:
   check(stale not in text,f'{f.name}: stale unsupported assertion {stale}')
-# Verify canonical data, all source links, blank official metrics, review references.
 def load(n):return json.loads((P/'data'/f'{n}.json').read_text())
+for n in ['brief','hotels','michelin','activities','costs','flags']:
+ check(load(n)['meta']['reviewed']=='2026-11-26',f'{n}.json: stale meta.reviewed')
 F=load('flags')['flags'];flagids={x['id'] for x in F}
 for x in F:check(x['id'] in docs[P/'flagged.html'].ids,'unpublished flag '+x['id'])
 for name,key in [('hotels','hotels'),('michelin','restaurants'),('activities','activities')]:
  rows=load(name)[key];ids=[x['id'] for x in rows];check(len(ids)==len(set(ids)),name+': duplicate records')
  for x in rows:
   check(official(x['official_url']),name+': non-official source '+x['id'])
+  if name=='michelin' and x.get('venue'):check(official(x['venue']),name+': non-official venue source '+x['id'])
   check(bool(x['flags']),name+': missing flags '+x['id'])
   for flag in x['flags']:check(flag in flagids,'unknown flag '+flag)
   check(len(x.get('socials',{}))>=3 or name=='hotels',name+': missing discovery platforms '+x['id'])
@@ -58,7 +76,6 @@ for x in load('costs')['stay_options']:
  start=date.fromisoformat(x['checkin']);end=date.fromisoformat(x['checkout']);check((end-start).days==7,'stay not 7 nights');check(start>=date(2027,2,15) and end<=date(2027,3,23),'stay outside window');check(official(x['source']),'stay missing official source')
 for x in load('costs')['booking_windows']:
  for end,k in [(date(2027,2,15),'target_start'),(date(2027,2,18),'target_end')]:check((end-date.fromisoformat(x[k])).days==x['lead_days'],'wrong lead-time date')
-# JavaScript syntax and deterministic generated-ledger parity.
 for f in ['data.js','app.js','assets/js/app.js']:
  r=subprocess.run(['node','--check',str(P/f)],capture_output=True,text=True);check(r.returncode==0,r.stderr)
 js=(P/'data.js').read_text();D=json.loads(js[js.index('=')+1:].strip().removesuffix(';'))

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -11,120 +11,140 @@
   },
   "dates": [
     {
-      "title": "Preferred-start 7-night stay",
+      "title": "Preferred-start 7-night stay (1 week)",
       "dates": "Mon Feb 15 → Mon Feb 22, 2027",
       "nights": "7 nights",
-      "fit": "Meets the 1–2 week request and uses preferred start date",
+      "fit": "Uses preferred Feb 15–18 start window; standardized 7-night hotel comparison baseline in a single base city",
       "price": "",
-      "priceNote": "Official 2-adult, 7-night total not verified",
+      "priceNote": "Official 2-adult, 7-night checkout total not verified on live booking engines",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "sourceLabel": "Official 2027 holiday notice"
     },
     {
-      "title": "Preferred-start 14-night stay",
+      "title": "Preferred-start 14-night stay (2 weeks)",
       "dates": "Mon Feb 15 → Mon Mar 1, 2027",
       "nights": "14 nights",
-      "fit": "Meets 2-week upper limit; compare transport/second city costs separately",
+      "fit": "Covers upper end of 1–2 week target; supports a two-city split (e.g., 7 nights Shanghai + 7 nights Beijing/Chengdu/Guangzhou)",
       "price": "",
-      "priceNote": "Official 2-adult, 14-night total not verified",
+      "priceNote": "Official 2-adult, 14-night total + intercity rail/airfare not verified",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "sourceLabel": "Official 2027 holiday notice"
+    },
+    {
+      "title": "Post-Lantern-Festival 7-night stay",
+      "dates": "Mon Mar 1 → Mon Mar 8, 2027",
+      "nights": "7 nights",
+      "fit": "Avoids immediate post-Spring-Festival return wave and Lantern Festival (Feb 20, 2027); enters spring panda-base hours in Chengdu",
+      "price": "",
+      "priceNote": "Official 2-adult, 7-night checkout total not verified on live booking engines",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "sourceLabel": "Official 2027 holiday notice"
+    },
+    {
+      "title": "Extended 21- to 28-night window (3–4 weeks)",
+      "dates": "Mon Feb 15 → Mon Mar 15, 2027 (or Tue Feb 23 → Tue Mar 23, 2027)",
+      "nights": "21–28 nights",
+      "fit": "Fits optional 2–4 week span inside Feb 15–Mar 23; note 240-hour (10-day) transit-without-visa cannot cover stays over 10 days",
+      "price": "",
+      "priceNote": "Requires full tourist (L) visa for most foreign passports; official multi-week hotel totals unverified",
+      "source": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm",
+      "sourceLabel": "Official 240h transit & visa rule"
     }
   ],
   "questions": [
     {
       "q": "Which city should anchor the trip?",
-      "answer": "No city chosen. Shanghai, Beijing, Guangzhou and Chengdu are compared. Shanghai is a provisional planning choice only.",
-      "next": "Choose one city or approve a split stay; then recalculate rates and transit catchments city-by-city.",
+      "answer": "No city chosen yet. Shanghai (51 starred · 2026 subset), Beijing (32 starred · 2026), Guangzhou (20 starred · 2026 subset) and Chengdu (15 starred · 2027) are compared. Shanghai has the deepest verified dining and hotel shortlist.",
+      "next": "Choose one anchor city for 7 nights or a two-city split for 14+ nights; then compute hotel-to-venue transit times.",
       "state": "Open"
     },
     {
-      "q": "What are the exact departure and return dates?",
-      "answer": "Preferred start is Feb 15–18, 2027; trip duration is 1–2 weeks. Exact checkout date is undecided.",
-      "next": "Compare Feb 15–22 (7 nights) with Feb 15–Mar 1 (14 nights), and check airfare for both.",
+      "q": "What are the exact departure and return dates (1–2 weeks vs 2–4 weeks)?",
+      "answer": "Preferred start is Feb 15–18, 2027 (81–84 days from Nov 26, 2026) within the overall Feb 15–Mar 23 window; trip length is 1–2 weeks or potentially 2–4 weeks.",
+      "next": "Lock exact length (7, 14, 21, or 28 nights) first: stays above 10 days cannot use China's 240-hour visa-free transit rule.",
       "state": "Partly answered"
     },
     {
-      "q": "Does each candidate room have a private bathroom?",
-      "answer": "The reviewed official room pages show bathroom/bath details but do not explicitly certify a private bathroom for these specific room categories.",
-      "next": "Ask the hotel to confirm the exact bookable room is ensuite/private, then retain the written confirmation.",
+      "q": "Does each candidate room have a private bathroom and Queen+ bed for two?",
+      "answer": "Official hotel room pages confirm King or Double-Queen bed configurations and marble/spa bath fixtures across shortlisted properties, but category-specific checkout terms must still confirm private ensuite allocation for two adults.",
+      "next": "Select the specific King/Queen room category on the brand booking engine and retain written ensuite confirmation on the reservation.",
       "state": "Open · blocker"
     },
     {
       "q": "Which hotel has the best verified 7-night total for two?",
-      "answer": "No official date-specific total was captured. All quote cells are blank.",
-      "next": "Query each hotel’s official booking engine for 2 adults, 1 room, Feb 15–22, taxes included and identical cancellation terms.",
+      "answer": "No official date-specific Feb–Mar 2027 7-night checkout total was retrievable without interactive browser rate sessions. All official 7-night quote cells remain blank.",
+      "next": "Query each finalist hotel's official booking engine for 2 adults, 1 King/Queen room, Feb 15–22 (and Mar 1–8), all taxes/service charges included, with identical cancellation cutoffs.",
       "state": "Open · blocker"
     },
     {
-      "q": "When is the cheapest time to book?",
-      "answer": "No verified price history or future rate calendar was available to establish the lowest booking date.",
-      "next": "Record refundable quotes at regular intervals; choose based on observed price and cancellation flexibility.",
+      "q": "When is the cheapest upcoming time to book?",
+      "answer": "As of Nov 26, 2026 (81–84 days out), the 90-day mark (Nov 17–20) has passed; upcoming reprice checkpoints are Dec 17–20 (60d), Jan 16–19 (30d), and Feb 1–4, 2027 (14d). No verified historical price curve proves a single cheapest day.",
+      "next": "Book a fully refundable direct room rate now as a ceiling, then re-check identical room/tax quotes on Dec 17–20 and Jan 16–19.",
       "state": "Open"
     },
     {
-      "q": "Can attractions and restaurants be reached within one hour by subway or bus?",
-      "answer": "Not established. No hotel has been chosen, and no official route-planner itinerary was verified for each destination/time.",
-      "next": "Once a hotel is chosen, check each destination via current city transit directions for weekday/weekend departure times.",
+      "q": "Can attractions and Michelin restaurants be reached within <=60 minutes by subway or bus?",
+      "answer": "Not yet established from timestamped official transit directions. Outlying excursions (Mutianyu Great Wall, Suzhou, Hangzhou, Zhujiajiao, Dujiangyan) exceed or lack <=60-minute public-transit proof.",
+      "next": "Once a finalist hotel is picked, record door-to-door subway/bus durations (walk + wait + ride + transfer) at representative lunch/dinner/morning hours.",
       "state": "Open · blocker"
     },
     {
-      "q": "Which venues are open on the exact visit days in 2027?",
-      "answer": "Published regular hours are shown where available; 2027 holiday/event exceptions are not confirmed.",
-      "next": "Re-check each official venue calendar and bookable dates before finalizing each day.",
-      "state": "Open"
+      "q": "Which venues are closed or restricted during Feb 15–Mar 23, 2027?",
+      "answer": "Confirmed closures: Jinsha Site Museum in Chengdu is closed Dec 5, 2025 – Apr 30, 2027; Ultraviolet in Shanghai closed in 2025 and is delisted from the 2026 MICHELIN Guide; Shanghai Museum People's Square runs paid special exhibition only (Jul 9, 2026 – Nov 14, 2027), while East Campus offers walk-in permanent galleries.",
+      "next": "Avoid closed venues, keep Monday/Tuesday museum closure rules in view, and recheck 2027 Lantern Festival (Feb 20) hours before booking.",
+      "state": "Partly answered"
     },
     {
-      "q": "What dining budget is acceptable for two?",
-      "answer": "Not provided. MICHELIN bands are relative; Taian Table has current menu arithmetic, while other official couple totals remain blank.",
-      "next": "Set a per-meal ceiling, then compare published set-menu prices and supplements on restaurant booking pages.",
+      "q": "What dining budget is acceptable for two adults?",
+      "answer": "Official published 2-adult menu totals are now verified for 5 Shanghai venues: Yi Long Court (¥695 dim sum lunch / ¥2,304 dinner), T'ang Court (¥888 lunch / ¥2,288 all-day set), Sir Elly's (¥3,004 5-course set), Bao Li Xuan (¥3,576 degustation), and Taian Table (¥5,176–¥5,776 before supplements). Other venues publish only relative ¥–¥¥¥¥ bands.",
+      "next": "Set a couple per-meal budget ceiling and mix 1–2 splurge set menus with ¥/¥¥ Bib Gourmand and 1-Star Shanghainese/Cantonese venues.",
       "state": "Open"
     },
     {
       "q": "How should visa, flights, mobility and dietary constraints affect the plan?",
-      "answer": "No traveler passport/visa, flight, accessibility, food allergy or mobility details were given.",
-      "next": "Verify entry requirements from the appropriate government source after identifying passport nationality; add constraints before selecting hotel/route.",
-      "state": "Open"
+      "answer": "Traveler passport nationalities, departure airport, dietary restrictions, and mobility preferences are still unspecified.",
+      "next": "Confirm both travelers' passport nationalities against official Chinese embassy/NIA visa rules before purchasing non-refundable flights.",
+      "state": "Open · blocker"
     },
     {
-      "q": "Seven nights, three nights, or up to two weeks?",
-      "answer": "Seven nights is the working comparison, not a confirmed reservation. Feb 15–18 is treated as a preferred start window, not a three-night stay.",
-      "next": "Confirm exact start, duration, total hotel/food budget, dietary needs and both passport nationalities without posting document numbers.",
+      "q": "Seven nights, two weeks, or up to four weeks?",
+      "answer": "Seven nights (Feb 15–22, 2027) is the standardized hotel comparison unit; Feb 15–18 is treated as the preferred start window rather than a 3-night trip.",
+      "next": "Confirm exact start date, total nights, dining/hotel budget ceiling, and dietary needs to move from research shortlist to day-by-day reservations.",
       "state": "Open · blocker"
     }
   ],
   "suggestions": [
     {
       "id": "city",
-      "title": "Choose a primary city before rate-shopping",
-      "desc": "Keep Shanghai and Beijing as alternatives until the dining/activity priorities and flight plan are weighed. Avoid claiming a Michelin winner based on non-comparable edition scopes.",
+      "title": "Lock primary city + stay length (7 vs 14–28 nights) before rate-shopping",
+      "desc": "Decide whether this is a 7-night single-city break (Shanghai or Beijing) or a 14–28 night multi-city route, since stays beyond 10 days require a full visa rather than 240-hour transit.",
       "impact": "Highest decision value",
       "effort": "Low",
       "rec": "Recommended first"
     },
     {
-      "id": "transit",
-      "title": "Add dated transit-time verification",
-      "desc": "For each shortlisted hotel, calculate official subway/bus travel to every selected activity and restaurant at representative trip times; count only reachable venues ≤60 minutes.",
-      "impact": "Directly answers the 1-hour rule",
-      "effort": "Medium",
-      "rec": "Recommended after city choice"
-    },
-    {
       "id": "price",
-      "title": "Add a price-tracking log and total-cost model",
-      "desc": "Capture official live 7-night totals for two adults, taxes, cancellation terms and room bed/bath details; preserve dated snapshots to compare actual booking-time changes.",
-      "impact": "Makes value ranking possible",
+      "title": "Hold a refundable 7-night ceiling rate now, then reprice at 60d / 30d / 14d",
+      "desc": "At 81–84 days out (Nov 26, 2026), capture live refundable 2-adult King/Queen quotes for Feb 15–22 and Mar 1–8 on official brand engines, then recheck on Dec 17–20, Jan 16–19, and Feb 1–4.",
+      "impact": "Establishes verified cheapest booking window",
       "effort": "Medium",
-      "rec": "Recommended before booking"
+      "rec": "Recommended immediately after city choice"
     },
     {
-      "id": "itinerary",
-      "title": "Build a day-by-day plan only after the blockers clear",
-      "desc": "Group nearby activities, reserve Michelin meals against confirmed opening days, and keep a weather/closure alternative for each day.",
-      "impact": "Reduces avoidable backtracking",
+      "id": "transit",
+      "title": "Run a timestamped <=60-minute subway/bus matrix for 2–3 finalist hotels",
+      "desc": "Measure door-to-door public transit (including walk and transfer time) from each finalist hotel to active 2026/2027 Michelin venues and open attractions before assigning ranks.",
+      "impact": "Directly answers the 1-hour transit rule",
       "effort": "Medium",
-      "rec": "Later step"
+      "rec": "Recommended before locking hotel"
+    },
+    {
+      "id": "closures",
+      "title": "Route around confirmed 2026–2027 closures, renovations, and Monday/Tuesday traps",
+      "desc": "Substitute Shanghai Museum East (closed Tue) for People's Square's partial gallery closure, skip closed Jinsha Site Museum and Ultraviolet, and check Ritz-Carlton Pudong's public-area renovation status before booking.",
+      "impact": "Prevents wasted vacation days & bad bookings",
+      "effort": "Low",
+      "rec": "Ready to apply to itinerary"
     }
   ]
 }
