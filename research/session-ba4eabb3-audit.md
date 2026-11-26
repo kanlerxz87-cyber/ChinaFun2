@@ -105,3 +105,18 @@ Every entry was verified directly against `guide.michelin.com` plus linked offic
   - **Direct Verified YouTube Review Videos:** Taian Table (`youtube.com/watch?v=RYsEUZJSrN8`), Ultraviolet by Paul Pairet (`youtube.com/watch?v=W5aXeO3EcbA`), Canton 8 (`youtube.com/watch?v=MerTf4Wl8Gg`), 8 ½ Otto e Mezzo Bombana Shanghai (`youtube.com/watch?v=LtmHnG6sU3Q`), Xin Rong Ji Beijing (`youtube.com/watch?v=6SvqIT2SW7M`), King's Joy (`youtube.com/watch?v=mT6hdUcRRIs`), Power Station of Art (`youtube.com/watch?v=50zqPIVoHPk`), Yu Garden (`youtube.com/watch?v=Ay96PAha8uQ`), Palace Museum & Temple of Heaven (`youtube.com/watch?v=D3Xd1-EFCW8`), Chengdu Panda Base (`youtube.com/watch?v=hRqICU0MMAE`).
   - **Direct Verified TikTok Review Videos:** Yu Garden (`tiktok.com/@via..li/video/7484076179041897758`), Palace Museum / Forbidden City (`tiktok.com/@around_the_world_with_u/video/7346881308695481632`).
 - Every restaurant and activity row retains clean, labeled `YouTube`, `Instagram`, and `TikTok` links (direct video/account where verified, plus platform search links clearly labeled `(Review Search — Non-official)` where no canonical single handle is published), and third-party social links are never counted as official venue sources.
+
+---
+
+## 6. Post-Rebase Live Link Verification on `origin/main` (`d26aaf2` / PRs #12–#16)
+
+After rebasing cleanly onto `origin/main` (`d26aaf2`) to preserve 100% of PRs #12–#16 (`a16d9048`, `99044301`, `5e433db0`, `ae77cbdf`), a live `fetch_page` pass across all merged records uncovered and fixed **11 remaining broken (404 / HTTP 500) or wrong-city-redirecting official links**:
+1. `tang-court`: `/restaurant/t-ang-court` redirected to **Hong Kong (Tsim Sha Tsui)** -> fixed to `/restaurant/t-ang-court-506725` (Shanghai).
+2. `da-vittorio`: `/restaurant/da-vittorio` redirected to **Brusaporto, Italy** -> fixed to `/restaurant/da-vittorio-570570` (Shanghai).
+3. `otto-mezzo`: `/restaurant/8-1-2-otto-e-mezzo-bombana` redirected to **Macau (Cotai)** -> fixed to `/restaurant/8-%C2%BD-otto-e-mezzo-bombana` (Shanghai).
+4. `chao-shang-chao`: `/restaurant/chao-shang-chao-chaoyang` returned **404** -> fixed to `/restaurant/chao-shang-chao` (Beijing).
+5. `taian-gz`: `/restaurant/taian-table-guangzhou` returned **404** -> fixed to `/restaurant/taian-table-1195975` + added official `https://gz.taian-table.cn/`.
+6. `imperial-treasure-gz`: `/restaurant/imperial-treasure-fine-chinese-cuisine-guangzhou` returned **404** -> fixed to `/restaurant/imperial-treasure-fine-chinese-cuisine-559150` + added official `https://www.imperialtreasure.com.cn/china`.
+7. `xin-rong-ji-cd` & `yu-zhi-lan`: `/sichuan-province/chengdu/...` returned **404** -> fixed to `/chengdu-municipality/chengdu/restaurant/xin-rong-ji-1207940` and `/yu-zhi-lan-1196150` (and canonicalized `silver-pot` & `mi-xun-teahouse` to `/chengdu-municipality/`).
+8. `dufu-cottage`: `cddfct.com/go-c20.htm` returned **HTTP 500** -> updated primary link to live `gochengdu.cn/en/article/happy_life_in_chengdu/4589` (`200 OK`, flagged `L01`), and enriched `wuhou` with official `wuhouci.net.cn` procurement notice for the **2027 Wuhou Shrine Chengdu Temple Fair (`2027武侯祠成都大庙会`)**.
+9. Added Guangzhou Bib Gourmand **`xiang-qun`** and Chengdu MICHELIN Selected **`wu-yue-gong`** so all four cities explicitly contrast Currently Starred vs. MICHELIN Guide-Listed (non-starred) venues (`27` hotels, `37` restaurants, `31` activities, `19` flags).

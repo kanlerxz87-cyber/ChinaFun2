@@ -55,7 +55,8 @@ OFFICIAL = {
     'all.accor.com', 'peninsula.com', 'langhamhotels.com', 'bulgarihotels.com',
     'mandarinoriental.com', 'fourseasons.com', 'thehousecollective.com',
     'grandcentralhotelshanghai.com', 'gardenhotelshanghai.com', 'upperhouse.com',
-    'bookings.taian-table.com', 'sh.taian-table.cn', 'ottoemezzobombana.com', 'davittorio.com',
+    'bookings.taian-table.com', 'sh.taian-table.cn', 'taian-table.cn', 'imperialtreasure.com.cn',
+    'ottoemezzobombana.com', 'davittorio.com',
     'jinxuanchineserestaurantshanghai.com', 'vivantshanghai.com', 'fabula.restaurant',
     'kingsjoy.com', 'trbhutong.com', 'bingsheng.com', 'xinrongji.com',
     'capellahotels.com', 'restaurantlinglong.com', 'stories.hilton.com',
@@ -103,6 +104,7 @@ for f, d in docs.items():
         'Feb 2026 (now)', '~28', 'not yet released', 'Verify ↗',
         'eastchinatrip.com', 'its.holiday', 'chinafortravelers.com',
         'rachelgouk.com', '1 MICHELIN Stars', 'nswsw.zhanlingxc.top',
+        'shayg-renaissance', 'sichuan-province/chengdu',
     ]:
         check(stale not in text, f'{f.name}: stale/disallowed assertion {stale}')
 

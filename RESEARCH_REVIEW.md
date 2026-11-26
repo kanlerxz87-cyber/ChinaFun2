@@ -1,3 +1,19 @@
+# Live external URL & Guide-listed completeness update — 26 November 2026 · session ba4eabb3
+
+Reconciled onto `origin/main` (`d26aaf2`, preserving PRs #12–#16 in full) and ran a live `fetch_page` check across every merged external URL (`research/session-ba4eabb3-audit.md`):
+- **Fixed 11 broken (404 / HTTP 500) or wrong-city-redirecting official links** that remained on `main`:
+  - `tang-court`: `/restaurant/t-ang-court` redirected to **Hong Kong (Tsim Sha Tsui)** -> fixed to Shanghai `/restaurant/t-ang-court-506725`.
+  - `da-vittorio`: `/restaurant/da-vittorio` redirected to **Brusaporto, Italy** -> fixed to Shanghai `/restaurant/da-vittorio-570570`.
+  - `otto-mezzo`: `/restaurant/8-1-2-otto-e-mezzo-bombana` redirected to **Macau (Cotai)** -> fixed to Shanghai `/restaurant/8-%C2%BD-otto-e-mezzo-bombana`.
+  - `chao-shang-chao`: `/restaurant/chao-shang-chao-chaoyang` returned **404** -> fixed to Beijing `/restaurant/chao-shang-chao`.
+  - `taian-gz`: `/restaurant/taian-table-guangzhou` returned **404** -> fixed to Guangzhou `/restaurant/taian-table-1195975` + official `https://gz.taian-table.cn/`.
+  - `imperial-treasure-gz`: `/restaurant/imperial-treasure-fine-chinese-cuisine-guangzhou` returned **404** -> fixed to Guangzhou `/restaurant/imperial-treasure-fine-chinese-cuisine-559150` + official `https://www.imperialtreasure.com.cn/china`.
+  - `xin-rong-ji-cd` & `yu-zhi-lan`: `/sichuan-province/chengdu/...` returned **404** -> fixed to `/chengdu-municipality/chengdu/restaurant/xin-rong-ji-1207940` and `/yu-zhi-lan-1196150` (plus canonicalized `silver-pot` & `mi-xun-teahouse` to `/chengdu-municipality/` and blocked `sichuan-province/chengdu` in `verify_project.py`).
+  - `dufu-cottage`: standalone `cddfct.com/go-c20.htm` returned **HTTP 500** -> updated primary link to live `gochengdu.cn/en/article/happy_life_in_chengdu/4589` (`200 OK`, flagged `L01`), and enriched `wuhou` with official `wuhouci.net.cn` procurement notice for the **2027 Wuhou Shrine Chengdu Temple Fair (`2027武侯祠成都大庙会`)**.
+- **Completed Guide-Listed (Bib Gourmand / Selected) coverage across all 4 cities (`37` restaurants total)**: added Guangzhou Bib Gourmand **`Xiang Qun (Longjin East Road)`** (`¥`, `10:00–22:00`) and Chengdu MICHELIN Selected **`Wu Yue Gong (CD Courtyard)`** (`¥¥`) so Shanghai, Beijing, Guangzhou, and Chengdu each explicitly compare Currently Starred vs. MICHELIN Guide-Listed (non-starred) venues.
+
+---
+
 # Primary-source audit & verification update — 26 November 2026 · session ae77cbdf
 
 Completed a fresh line-by-line primary-source verification pass on **2026-11-26** (`81–84 days` before the `2027-02-15` to `2027-02-18` preferred start window) across all `data/*.json` files, root dashboard, and 10 generated static detail pages while preserving `shanghai-planner/` and `research/` intact:

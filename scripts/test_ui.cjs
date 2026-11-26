@@ -51,7 +51,7 @@ assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
 
 for (const [file, id, city, count] of [
   ['hotels.html', 'hotels', 'Guangzhou', 4],
-  ['michelin.html', 'restaurants', 'Chengdu', 4],
+  ['michelin.html', 'restaurants', 'Chengdu', 5],
   ['activities.html', 'activities', 'Beijing', 6],
 ]) {
   const dom = load(file, ['assets/js/app.js']);
