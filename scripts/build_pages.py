@@ -5,7 +5,7 @@ import json, html, re
 from pathlib import Path
 
 P = Path(__file__).resolve().parents[1]
-VER = '20261126-v5'
+VER = '20261126-v6'
 
 def read(n):
     return json.loads((P / 'data' / f'{n}.json').read_text())
@@ -321,7 +321,7 @@ page(
     '<li>Third-party aggregator prices are quarantined in JSON only and never enter official hotel quote columns.</li>'
     '<li>Direct YouTube, TikTok and Instagram review links are clearly separated from official evidence and labelled as third-party commentary or official venue profiles.</li>'
     '<li>City-wide MICHELIN counts are never treated as 60-minute hotel transit catchments. Blank (—) means unverified, never zero.</li>'
-    '</ol><p><a href="RESEARCH_REVIEW.md">Full reconciliation audit</a> · <a href="research/entry-audit.md">Original entry audit</a> · <a href="COORDINATION.md">Coordination history</a></p></div>'
+    '</ol><p><a href="RESEARCH_REVIEW.md">Full reconciliation audit</a> · <a href="research/session-ba4eabb3-audit.md">2026-11-26 external URL &amp; primary-source audit (ba4eabb3)</a> · <a href="research/line-by-line-audit-2026-11-26.md">2026-11-26 audit (ae77cbdf)</a> · <a href="research/session-5e433db0-audit.md">2026-11-26 audit (5e433db0)</a> · <a href="research/live-audit-2026-11-26.md">2026-11-26 audit (99044301)</a> · <a href="research/final-verification-2026-11-26.md">2026-11-26 activity audit (a16d9048)</a> · <a href="research/entry-audit.md">Original entry audit</a> · <a href="COORDINATION.md">Coordination history</a></p></div>'
     + table('sources', ['Record / scope', 'Official source'], [[e(n), link(u, u)] for u, n in unique.items() if u]),
 )
 

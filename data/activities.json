@@ -1100,7 +1100,7 @@
       "name": "Wuhou Shrine Museum & Jinli Ancient Street",
       "area": "Wuhou District · Chengdu",
       "hours": "Daily 09:00–18:00 (last ticket sale 17:00); adjacent Jinli Ancient Street stays open later into the evening",
-      "exceptions": "English ticket page notes 14-day real-name booking (child/student concession wording differs slightly between EN & ZH pages). Verify 2027 Chengdu Great Temple Fair dates (often runs through Lantern Festival in late Feb/early Mar).",
+      "exceptions": "English ticket page notes 14-day real-name booking (child/student concession wording differs slightly between EN & ZH pages). Official wuhouci.net.cn procurement confirms active planning for the 2027 Wuhou Shrine Chengdu Temple Fair (2027武侯祠成都大庙会), which may introduce special evening hours/tickets around late Feb 2027.",
       "cost": "¥100 = 2 × ¥50 (Wuhou Shrine adult admission; Jinli Ancient Street public access is free)",
       "duration": "2.5–3.5 h",
       "transit": "",
@@ -1136,15 +1136,15 @@
       "city": "Chengdu",
       "name": "Du Fu Thatched Cottage Museum",
       "area": "Qingyang District · West Chengdu",
-      "hours": "Daily 09:00–18:00 (last entry 17:00; verified Nov 26, 2026 on official cddfct.com)",
-      "exceptions": "Open daily including Mondays; annual Spring Festival / Lantern Festival Poetry Cultural Event runs Feb–Mar during regular hours (09:00–18:00).",
+      "hours": "Daily 09:00–18:00 (verified Nov 26, 2026 via Chengdu Official Portal; reconfirm last-entry cutoff directly as cddfct.com returned HTTP 500)",
+      "exceptions": "Open daily including Mondays; annual Spring Festival / Lantern Festival Poetry Cultural Event runs Feb–Mar during regular hours (09:00–18:00). Standalone cddfct.com returned HTTP 500 on Nov 26, 2026 (L01).",
       "cost": "¥100 = 2 × ¥50 adult admission",
       "duration": "2–2.5 h",
       "transit": "",
       "transit_flag": "No verified door-to-door <=60 min route logged yet.",
-      "officialLink": "https://www.cddfct.com/go-c20.htm",
-      "officialLabel": "Du Fu Cottage official site",
-      "official_url": "https://www.cddfct.com/go-c20.htm",
+      "officialLink": "https://www.gochengdu.cn/en/article/happy_life_in_chengdu/4589",
+      "officialLabel": "Chengdu Official Portal (Du Fu Cottage schedule)",
+      "official_url": "https://www.gochengdu.cn/en/article/happy_life_in_chengdu/4589",
       "videoLink": "https://www.youtube.com/watch?v=u2YX3wP7xUM",
       "videoLabel": "YouTube walk (Mar 2025, third-party)",
       "socials": {
@@ -1169,6 +1169,7 @@
       "flags": [
         "A01",
         "H03",
+        "L01",
         "S01"
       ],
       "dashboard": false
