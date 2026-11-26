@@ -61,8 +61,9 @@ OFFICIAL = {
     'shanghaimuseum.net', 'shanghaimuseum.cn', 'yugarden.com.cn', 'english.shanghai.gov.cn',
     'shanghaitower.com', 'en.shanghaitower.com', 'orientalpearltower.com', 'powerstationofart.com',
     'xintiandi.com', 'english.beijing.gov.cn', 'intl.dpm.org.cn', 'dpm.org.cn',
+    'tiantanpark.com', 'summerpalace.net.cn', 'mutianyugreatwall.com',
     'en.mutianyugreatwall.com', 'pcticket.chnmuseum.cn',
-    'gz.gov.cn', 'lyylj.gz.gov.cn', 'cantontower.com', 'mallpc.cantontower.com', 'chimelong.com',
+    'gz.gov.cn', 'gzcjc.com.cn', 'lyylj.gz.gov.cn', 'cantontower.com', 'mallpc.cantontower.com', 'chimelong.com',
     'panda.org.cn', 'm.panda.org.cn', 'wuhouci.net.cn', 'en.wuhouci.net.cn',
     'cddfct.com', 'gochengdu.cn', 'suzhou.gov.cn', 'hangzhou.gov.cn',
     'english.www.gov.cn', 'travel.state.gov', 'us.china-embassy.gov.cn', 'cdc.gov',
@@ -70,8 +71,8 @@ OFFICIAL = {
 SOCIAL_HOSTS = {'youtube.com', 'youtu.be', 'tiktok.com', 'instagram.com'}
 
 def official(u):
-    h = (urlsplit(u).hostname or '').removeprefix('www.')
-    return h in OFFICIAL and u.startswith('https://')
+    h = (urlsplit(u).hostname or '').lower().removeprefix('www.')
+    return u.startswith('https://') and any(h == domain or h.endswith('.' + domain) for domain in OFFICIAL)
 
 def social_ok(u):
     h = (urlsplit(u).hostname or '').removeprefix('www.')
