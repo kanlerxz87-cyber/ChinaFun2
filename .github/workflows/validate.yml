@@ -2,7 +2,7 @@ name: Validate planning desk
 
 on:
   push:
-    branches: [main, arena/55de3f9a-chinafun2, arena/5e433db0-chinafun2]
+    branches: [main, 'arena/**']
   pull_request:
     branches: [main]
 
@@ -32,5 +32,5 @@ jobs:
         run: python3 shanghai-planner/scripts/validate_research.py
       - name: Install DOM-test tooling (not shipped to Pages)
         run: npm install --prefix .cache/browser-tests --no-save --package-lock=false jsdom@26
-      - name: Test search, sort and dashboard interactions
+      - name: Test search, city chips, sort and dashboard interactions
         run: NODE_PATH=.cache/browser-tests/node_modules node scripts/test_ui.cjs

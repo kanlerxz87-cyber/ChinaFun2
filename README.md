@@ -1,19 +1,19 @@
 # China trip planning desk
 
-Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Mar 23, 2027**, with **Feb 15–18 preferred starts** and a **seven-night working stay**.
+Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Mar 23, 2027**, with **Feb 15–18 preferred starts** supporting both **1–2 week** and **2–4 week** itineraries.
 
 **Live site:** https://kanlerxz87-cyber.github.io/ChinaFun2/
 
 ## Start here
 
-- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional research-first base; Beijing, Guangzhou and Chengdu remain real alternatives, with interactive city filter pills across hotel, dining and activity views.
-- [Hotels](hotels.html): 16 candidates; 13/16 Queen+/King beds and 11/16 private/marble bathrooms verified from static official brand room pages (`Shanghai Marriott Marquis City Centre` rebrand and updated `shanghai.sukhothai.com` / `okura.com` portals included). Official seven-night total and route rank stay blank until live checkout quotes and transit matrices are recorded.
-- [Michelin](michelin.html): 26 actual venues across four cities (including Bib Gourmand benchmarks in Beijing, Guangzhou and Chengdu), distinctions/editions, hours, **6 official published two-adult set-menu totals**, and direct YouTube/Instagram/TikTok review links distinguished from search fallbacks.
-- [Activities](activities.html): 23 records (including Shanghai Museum East alongside the People’s Square Jul 2026–Nov 2027 renovation alert), published schedules, Monday & Tuesday closure traps (including Chen Clan Ancestral Hall’s Tuesday closure), official two-adult ticket totals across all major museums/towers/gardens, and explicitly unqualified intercity excursions.
-- [Dates & costs](costs-booking.html): preferred-start and later seven-night windows through Mar 23; actual 90/60/30/14-day calendar checkpoints.
-- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), [entry/health audit](entry-audit.html), and [Nov 26 primary-source audit](research/session-5e433db0-audit.md).
+- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional 7-night research base; Beijing, Guangzhou and Chengdu remain full alternatives (or multi-city 2–4 week pairings), with zero fabricated value rankings.
+- [Hotels](hotels.html): 20 candidates across 4 cities with interactive city filter chips and live-verified official room specs where published; dated 2027 all-in totals, literal private-bath confirmation and ≤60m transit ranks stay blank when unverified.
+- [Michelin](michelin.html): 27 curated listings across 4 cities with separated Days/Hours, Exceptions/Deposits, Official Links (MICHELIN + venue) and clearly labelled third-party YouTube/TikTok/Instagram reviews.
+- [Activities](activities.html): 29 verified attractions across 4 cities with Monday/Tuesday closure traps, Shanghai Museum East vs People's Square Americas-only notice, Mar 1 Panda Base & Mar 16 Mutianyu seasonal switches, two-adult ticket costs and direct third-party walkthrough videos.
+- [Dates & costs](costs-booking.html): 7-night and 2–4 week stay windows through Mar 23, plus 90/60/30/14-day calendar checkpoints.
+- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html) (17 flags), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-Today is **Nov 26, 2026**, **81–84 days** before the preferred Feb 15–18 starts — already inside Taian Table’s 90-day reservation window. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
+As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. Full live audit logs are recorded in [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md) and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
 
 ## Research discipline
 

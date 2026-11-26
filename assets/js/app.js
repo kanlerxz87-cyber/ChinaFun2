@@ -1,47 +1,49 @@
-// ChinaFun2 — vanilla JS: mobile nav active state, table search/filter, sort, count
+// ChinaFun2 — vanilla JS: active nav, combined city-chip + text search filter, accessible sort
 document.addEventListener('DOMContentLoaded', function () {
-  // Active nav
   var path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('nav.mainnav a').forEach(function (a) {
     if (a.getAttribute('href') === path) a.classList.add('active');
   });
 
-  // Generic table filter: input[data-filter] filters rows in table[data-table]
-  document.querySelectorAll('input[data-filter]').forEach(function (input) {
-    var tableId = input.getAttribute('data-filter');
+  function applyTableFilters(tableId) {
     var table = document.getElementById(tableId);
     if (!table) return;
-    input.addEventListener('input', function () {
-      var q = input.value.trim().toLowerCase();
-      var rows = table.querySelectorAll('tbody tr');
-      var shown = 0;
-      rows.forEach(function (row) {
-        var hit = row.textContent.toLowerCase().indexOf(q) !== -1;
-        row.style.display = hit ? '' : 'none';
-        if (hit) shown++;
-      });
-      var counter = document.getElementById(tableId + '-count');
-      if (counter) counter.textContent = shown + ' of ' + rows.length + ' rows shown';
-      document.querySelectorAll('[data-quick-filter="' + tableId + '"]').forEach(function (btn) {
-        var match = btn.getAttribute('data-value').toLowerCase() === q;
-        btn.classList.toggle('active', match);
-        btn.setAttribute('aria-pressed', match ? 'true' : 'false');
-      });
+    var input = document.querySelector('input[data-filter="' + tableId + '"]');
+    var activeChip = document.querySelector('button[data-city-filter="' + tableId + '"].active');
+    var q = input ? input.value.trim().toLowerCase() : '';
+    var city = activeChip ? (activeChip.getAttribute('data-city') || '').trim().toLowerCase() : '';
+    var rows = table.querySelectorAll('tbody tr');
+    var shown = 0;
+    rows.forEach(function (row) {
+      var text = row.textContent.toLowerCase();
+      var firstCell = (row.children[0] ? row.children[0].textContent : '').toLowerCase();
+      var hitQuery = !q || text.indexOf(q) !== -1;
+      var hitCity = !city || firstCell.indexOf(city) !== -1;
+      var hit = hitQuery && hitCity;
+      row.style.display = hit ? '' : 'none';
+      if (hit) shown++;
     });
+    var counter = document.getElementById(tableId + '-count');
+    if (counter) counter.textContent = shown + ' of ' + rows.length + ' rows shown';
+  }
+
+  document.querySelectorAll('input[data-filter]').forEach(function (input) {
+    var tableId = input.getAttribute('data-filter');
+    input.addEventListener('input', function () { applyTableFilters(tableId); });
   });
 
-  // Quick city filter pills
-  document.querySelectorAll('[data-quick-filter]').forEach(function (btn) {
+  document.querySelectorAll('button[data-city-filter]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var tableId = btn.getAttribute('data-quick-filter');
-      var input = document.getElementById(tableId + '-search');
-      if (!input) return;
-      input.value = btn.getAttribute('data-value') || '';
-      input.dispatchEvent(new Event('input'));
+      var tableId = btn.getAttribute('data-city-filter');
+      document.querySelectorAll('button[data-city-filter="' + tableId + '"]').forEach(function (b) {
+        var on = b === btn;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+      applyTableFilters(tableId);
     });
   });
 
-  // Sortable headers: th[data-sort] sorts its column
   document.querySelectorAll('table[data-sortable]').forEach(function (table) {
     var headers = table.querySelectorAll('th[data-sort]');
     headers.forEach(function (th) {
@@ -58,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         rows.sort(function (a, b) {
           var av = (a.children[idx] ? a.children[idx].textContent : '').trim().toLowerCase();
           var bv = (b.children[idx] ? b.children[idx].textContent : '').trim().toLowerCase();
-          // Unknowns are never treated as zero and remain last in either order.
           var aBlank = av === '' || av === '—';
           var bBlank = bv === '' || bv === '—';
           if (aBlank !== bBlank) return aBlank ? 1 : -1;
@@ -73,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Footer year
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 });

@@ -71,12 +71,55 @@
       ]
     }
   ],
+  "extended_windows": [
+    {
+      "label": "2-week stay (14 nights)",
+      "checkin": "2027-02-15",
+      "checkout": "2027-03-01",
+      "nights": 14,
+      "official_total": "",
+      "notes": "Upper edge of 1–2 week brief; exceeds 240h (10-day) transit-without-visa ceiling. Compare single-base vs 2-city high-speed rail split.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01",
+        "E01"
+      ]
+    },
+    {
+      "label": "3-week multi-city stay (21 nights)",
+      "checkin": "2027-02-15",
+      "checkout": "2027-03-08",
+      "nights": 21,
+      "official_total": "",
+      "notes": "Fits 2–4 week scope; spans Chengdu Panda Base Mar 1 summer-hours switch. Requires standard visa or verified visa-free nationality.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01",
+        "E01",
+        "A02"
+      ]
+    },
+    {
+      "label": "4-week / max window (28–36 nights)",
+      "checkin": "2027-02-15",
+      "checkout": "2027-03-23",
+      "nights": 36,
+      "official_total": "",
+      "notes": "Uses full Feb 15–Mar 23 travel boundary (or 28 nights ending Mar 15); spans both Mar 1 Panda Base and Mar 16 Mutianyu seasonal switches.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "flags": [
+        "H01",
+        "E01",
+        "A02"
+      ]
+    }
+  ],
   "booking_windows": [
     {
       "lead_days": 90,
       "target_start": "2026-11-17",
       "target_end": "2026-11-20",
-      "action": "Past reference checkpoint, not a proven cheapest day.",
+      "action": "Past reference checkpoint (as of Nov 26, 2026 we are 81–84 days before Feb 15–18); not a proven cheapest day.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
@@ -87,7 +130,7 @@
       "lead_days": 60,
       "target_start": "2026-12-17",
       "target_end": "2026-12-20",
-      "action": "Compare like-for-like refundable official quotes now through this checkpoint.",
+      "action": "Compare like-for-like refundable official hotel quotes now through this 60-day checkpoint.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
@@ -98,7 +141,7 @@
       "lead_days": 30,
       "target_start": "2027-01-16",
       "target_end": "2027-01-19",
-      "action": "Reprice; do not assume a spike is inevitable.",
+      "action": "Reprice refundable bookings and begin tracking 30-day Michelin reservation release dates; do not assume a spike is inevitable.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
@@ -109,11 +152,12 @@
       "lead_days": 14,
       "target_start": "2027-02-01",
       "target_end": "2027-02-04",
-      "action": "Recheck only if the existing rate can still be cancelled without penalty.",
+      "action": "Final free-cancellation hotel recheck and 14-day Chengdu Panda Base / 7-day Beijing museum ticket prep (note China Spring Festival is Feb 5–13).",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",
-        "B01"
+        "B01",
+        "A01"
       ]
     }
   ],

@@ -13,120 +13,136 @@
     {
       "id": "H01",
       "scope": "All hotels and date windows",
-      "issue": "No official 2027 seven-night total for two captured. No cheapest hotel/date claim; inventory is unknown, not necessarily unreleased.",
-      "next": "Capture exact stay, room, occupancy, currency, taxes, cancellation deadline and timestamp from brand engine.",
-      "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
+      "issue": "No official 2027 7-night or 14-night all-in total for two adults captured. Prior Peninsula Shanghai pre-tax observation (¥24,850 for Feb 15–22, 2027) and undated 'from' widgets (Jing An Shangri-La, Mandarin Oriental Guangzhou) are excluded from official total columns.",
+      "next": "Capture exact stay, room, occupancy, currency, taxes/service charge, cancellation deadline and timestamp from each hotel brand booking engine.",
+      "source": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "H02",
       "scope": "All hotels",
-      "issue": "13 of 16 hotels show Queen/King beds and 11 of 16 show explicit marble/in-room bathroom fixtures on static official room pages, but WAF/JS-gated room pages (Renaissance Yu Garden, Hilton Shanghai City Center, Hilton Beijing Wangfujing) and exact rate-card categories still require checkout confirmation.",
-      "next": "Confirm the bookable room category directly with the property.",
+      "issue": "Official room pages verify King/Twin beds and marble/rain-shower bathrooms for several candidates (Peninsula, Langham Xintiandi, Bvlgari, Ritz-Carlton Pudong, Mandarin Oriental Guangzhou, Marriott Marquis, Jing An Shangri-La), but rarely print literal 'private/en-suite bathroom' wording on the category card.",
+      "next": "Confirm exact Queen+/King bed guarantee and explicit private/en-suite bathroom status directly with the property before booking.",
       "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "H03",
       "scope": "All hotels and activities",
-      "issue": "No complete <=60-minute subway/bus route set. Counts, ranks and door-to-door times intentionally blank.",
-      "next": "Record origin, destination, departure time, first/last-mile walking, wait and transfer time using official transit directions.",
+      "issue": "No complete <=60-minute door-to-door subway/bus route set has been logged. Michelin catchment counts, hotel rankings and door-to-door times remain intentionally blank.",
+      "next": "Record origin, destination, departure time, first/last-mile walking, wait and transfer time using official city transit planners.",
       "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
       "status": "needs review · non-blocking publication"
     },
     {
+      "id": "H04",
+      "scope": "The Ritz-Carlton Shanghai, Pudong / Jin Xuan & updated hotel URLs",
+      "issue": "The Ritz-Carlton Shanghai, Pudong posted an official notice of ongoing public-area enhancement works commencing Oct 1, 2026 (1F lobby/retail, 3F banquet, 55F spa; no completion date published). Separately, The Sukhothai Shanghai moved its official site to shanghai.sukhothai.com.",
+      "next": "Verify February/March 2027 renovation status and noise/access impact directly with The Ritz-Carlton Shanghai, Pudong before booking rooms or Jin Xuan.",
+      "source": "https://www.jinxuanchineserestaurantshanghai.com/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
       "id": "R01",
-      "scope": "Restaurants without an official published set-menu price (20 of 26)",
-      "issue": "Six venues publish official set-menu totals for two adults (Taian Table, T'ang Court, Bao Li Xuan, Da Vittorio, TRB Hutong, Mi Xun Teahouse); all remaining listings show relative MICHELIN ¥–¥¥¥¥ bands only, and published menus can change before Feb 2027.",
-      "next": "Obtain dated venue menu; Taian arithmetic excludes add-ons and is not a 2027 guarantee.",
+      "scope": "Michelin dining cash totals",
+      "issue": "MICHELIN ¥ tiers are relative guide bands, never cash quotes. Official 2026 venue menu arithmetic is shown only where published by the restaurant (Taian Table, T'ang Court, Bao Li Xuan, Yi Long Court, Sir Elly's, Da Vittorio tasting PDF note, Mi Xun Teahouse Hot Pot for Two); all other couple totals remain blank.",
+      "next": "Reconfirm 2027 seasonal menus, mandatory service charges, beverages and deposits (e.g., $100/person on Resvea for Da Vittorio and Fabula) directly with each venue.",
       "source": "https://bookings.taian-table.com/faq",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R02",
       "scope": "All dining / city counts",
-      "issue": "Mixed Guide editions; city selection totals are not hotel catchments. Some restaurant hours and 2027 closures unconfirmed.",
-      "next": "Recheck individual Guide and venue calendar before reservations.",
+      "issue": "Mixed MICHELIN Guide editions (Shanghai/Beijing/Guangzhou 2026 vs Chengdu 2027); city selection totals are not 60-minute hotel transit catchments. Spring Festival 2027 (Feb 5–13) and post-holiday closures are not yet published.",
+      "next": "Recheck each venue's official calendar and reservation release window before locking dining nights.",
       "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R03",
       "scope": "Hong Yu Fang",
-      "issue": "Guide hours table says 10:00–22:00 while text says morning only.",
-      "next": "Confirm directly before scheduling.",
-      "source": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "issue": "Official MICHELIN Guide page states 'Open in the morning only' in its editorial text while its hours panel lists 10:00–22:00 daily; also note it is MICHELIN Guide Selected (no star).",
+      "next": "Confirm actual morning service hours directly before scheduling.",
+      "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R04",
       "scope": "Ultraviolet",
-      "issue": "Reported closed March 2025; excluded from active shortlist and 2026 Shanghai count.",
-      "next": "Do not reserve against historical 2025 three-star listings; reconfirm any reopening.",
+      "issue": "Reported closed March 2025; excluded from active shortlist and 2026 Shanghai star counts.",
+      "next": "Do not plan around historical 2025 three-star listings; reconfirm any future reopening from official channels.",
       "source": "https://guide.michelin.com/en/article/news-and-views/shanghai-2025-starred-restaurants",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "R05",
+      "scope": "T'ang Court / Canton 8 / King's Joy / Jin Xuan live audit catches (2026-11-26)",
+      "issue": "1) Non-official third-party dining blog link removed from Canton 8 (MICHELIN lists no official website). 2) T'ang Court's official Langham page contradicts itself ('daily' vs 'Off on Monday'). 3) Live MICHELIN Guide lists King's Joy Beijing at 2 Stars (older YouTube videos call it 3 Stars). 4) Ritz-Carlton Pudong enhancement notice affects Jin Xuan's building.",
+      "next": "Always rely on official venue/MICHELIN pages over older third-party videos; confirm T'ang Court Monday status directly.",
+      "source": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "A01",
       "scope": "All activities",
-      "issue": "Current prices and schedules are not guaranteed date-specific 2027 inventory; blank costs are unknown, not free.",
-      "next": "Recheck ticket product, reservation release, special exhibitions and 2027 notices on linked official pages.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "issue": "Published regular/off-season prices and hours are not guaranteed 2027 holiday inventory; blank costs or hours mean unverified on official pages, never free or closed.",
+      "next": "Recheck ticket product, passport real-name reservation release (7–14 days ahead), special exhibitions and 2027 Spring Festival notices.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "A02",
-      "scope": "Museum / garden closures; outlying trips",
-      "issue": "Monday/Tuesday closures constrain planning. Suzhou/Hangzhou/Mutianyu are not demonstrated <=60-minute trips.",
-      "next": "Use Monday for public outdoor sights; record full public-transit routes before approving excursions.",
+      "scope": "Closures, seasonal switches & outlying trips",
+      "issue": "Monday closures hit Shanghai Museum People's Square, Yu Garden, PSA, Forbidden City, NMC and Beijing inner park halls (Shanghai Museum East closes Tuesdays instead). Chengdu Panda Base shifts to summer hours on Mar 1; Mutianyu shifts to peak hours on Mar 16. Mutianyu, Chimelong, Suzhou and Hangzhou are not demonstrated <=60-minute public-transit trips.",
+      "next": "Schedule Shanghai Museum East or open outdoor walks on Mondays; check seasonal switch dates for Mar 1–23 visits.",
       "source": "https://www.yugarden.com.cn/page/articleview/message.html",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "A03",
-      "scope": "Shanghai Tower / Yu Garden / renovation notices",
-      "issue": "Older conflicting hours and garden prices superseded by current official visitor rules; renovation/event closures remain unverified, not assumed absent.",
-      "next": "Recheck official dated operating notices; do not mix garden, bazaar, festival and night tickets.",
-      "source": "https://www.shanghaitower.com/",
+      "scope": "Shanghai Museum People's Square / Shanghai Tower / Oriental Pearl / Chen Clan Hall",
+      "issue": "2026-11-26 live official audit findings: (1) Shanghai Museum People's Square hosts ONLY the ticketed Americas exhibition (Jul 9, 2026–Nov 14, 2027) with no permanent galleries—go to Shanghai Museum East for permanent collections; (2) Shanghai Tower 118F ticket is ¥180/pp (¥360/2), but official observatory hours are NOT published on en.shanghaitower.com and are blanked; (3) Oriental Pearl website failed to load (hours/base price blanked); (4) Chen Clan Hall's gzcjc.com.cn page lists 09:00–17:30 (last ticket 17:00) without stating a weekly closure day or regular fare (a 2023 gz.gov.cn exhibition post cited last-Monday closures for that show).",
+      "next": "Book Shanghai Museum East for free permanent galleries; recheck Shanghai Tower and Oriental Pearl official hours before ticketing.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "B01",
       "scope": "Booking lead-time analysis",
-      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim.",
-      "next": "Use the dated checkpoints as a monitoring plan, not a price prediction.",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-26 we are 81–84 days before Feb 15–18, 2027.",
+      "next": "Use the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints as a refundable repricing plan, not a forecast.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "B02",
       "scope": "OTA observations / Sukhothai anomaly",
-      "issue": "Aggregator figures are quarantined from official columns. Prior $35,148 Sukhothai observation is an unexplained outlier, not a validated seven-night price.",
-      "next": "Exclude until room/date/currency/tax data are reproducible; never use 2026 proxies as 2027 prices.",
+      "issue": "Third-party aggregator figures are quarantined in data/costs.json and excluded from official hotel quote columns. Prior $35,148 Sukhothai figure is an unexplained outlier, not a verified 7-night quote.",
+      "next": "Exclude aggregator outliers until room/date/currency/tax terms are reproduced on the official hotel engine.",
       "source": "https://shanghai.sukhothai.com/en/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "S01",
-      "scope": "Social / video links",
-      "issue": "Direct indexed YouTube reviews, verified venue/museum Instagram profiles, and TikTok videos/topic pages are labelled distinctly from search fallbacks, but creator reviews are third-party opinions and never override official venue hours or fares.",
-      "next": "Verify creator, venue and upload date before relying on a post.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "scope": "Social media & video links",
+      "issue": "Direct YouTube, TikTok and Instagram review/profile links collected on 2026-11-26 are third-party commentary (except clearly labelled official venue/museum/tourism accounts) and are never treated as evidence for prices, stars or operating hours. Platform search shortcuts are explicitly labelled 'Search'.",
+      "next": "Check creator upload date and confirm all hours, prices and star tiers on linked official pages.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "E01",
-      "scope": "Entry / visa / health / dates",
-      "issue": "Passport nationality, visa eligibility, onward routing and exact duration unknown. 240h transit is conditional; a 14-night stay cannot be assumed eligible.",
-      "next": "Confirm with applicable consulate, airline and current official rules; see entry audit.",
+      "scope": "Entry / visa / health / 1–2 week vs 2–4 week duration",
+      "issue": "Passport nationalities, visa eligibility, onward routing and final trip length (1–2 weeks vs 2–4 weeks within Feb 15–Mar 23, 2027) are unconfirmed. China's 240-hour (10-day) transit without visa is strictly conditional and CANNOT cover a 14-night or 2–4 week stay.",
+      "next": "Confirm passport nationalities and duration first, then verify visa or visa-free eligibility via official embassy/NIA channels (see entry-audit.html).",
       "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "L01",
-      "scope": "External WAF/JS-gated hotel room pages (Hilton & Renaissance Yu Garden)",
-      "issue": "Static non-browser fetches to Hilton Shanghai City Center, Hilton Beijing Wangfujing, and Renaissance Shanghai Yu Garden /rooms/ returned WAF/500 responses. Their bed/bath cells remain intentionally blank rather than inferred.",
-      "next": "Reopen the linked official property page and confirm the exact room; do not treat an inaccessible page as fresh verification. Recheck other external source links before booking.",
+      "scope": "External source reachability (2026-11-26)",
+      "issue": "Several official property/venue pages returned bot blocks or timeouts during automated fetches (Oriental Pearl Tower, Canton Tower root, Hilton Wangfujing & City Center rooms, Renaissance Yu Garden rooms, Sukhothai rooms, Upper House Studio 60, Peninsula booking SPA).",
+      "next": "Open affected official links manually in a browser before booking; never treat an unreachable page as fresh confirmation.",
       "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
       "status": "needs review · non-blocking publication"
     }

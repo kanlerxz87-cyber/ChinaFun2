@@ -18,7 +18,11 @@ Live Feb 2027 7-night checkout totals (`H01`), WAF/modal room confirmations on 5
 
 # Integration update — 25 November 2026 · session 55de3f9a
 
-The audit below is retained as a **historical review**, not a description of the current pages. The dashboard and ten static detail pages now share canonical JSON records and one generated `data.js` ledger.
+The audit below is retained as a **historical review**, not a description of the current pages. The dashboard and ten static detail pages now share canonical JSON records and one generated `data.js` ledger. Statements about the open PR and publication state below describe the 25 Nov review snapshot.
+
+## Calendar and scope addendum — 26 November 2026 · session a16d9048
+
+The 25 Nov calculation of 82–85 days before Feb 15–18 is retained as a dated historical checkpoint. Date-sensitive copy was recalculated on 26 Nov to **81–84 days**. That follow-up was a targeted, record-by-record reconciliation of the 22 activity sources only; hotel, restaurant, cost, entry, and health records were not re-reviewed. See [`research/final-verification-2026-11-26.md`](research/final-verification-2026-11-26.md) for the evidence, remaining unknowns, and final verification/publication results.
 
 ## Presentation corrections completed
 
