@@ -9,7 +9,8 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Session ID for this branch:** `91622d32` (branch `arena/91622d32-chinafun2`, base `3ef9a88` of `main`)
+**Historical initial session:** `91622d32` (branch `arena/91622d32-chinafun2`, base `3ef9a88` of `main`)
+**Current integration session (2026-11-26):** `c7463ba9` (branch `arena/c7463ba9-chinafun2`, base `04b6d65` of `main`)
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
 **Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
@@ -28,6 +29,7 @@
 | T06 | Site build: landing dashboard + subpages, mobile-first CSS/JS, search/filter | **done** | 91622d32 + 77604d1c | root dashboard and category pages | Original category pages remain; root dashboard is replaced with a source-linked, unknowns-first executive view. |
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
 | T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
+| T09 | Current integration re-audit of the published site; reconcile requested deliverables, source policy, build/tests and publication record | **in progress** | c7463ba9 | `COORDINATION.md`, `research/final-audit-2026-11-26.md`, `RESEARCH_REVIEW.md`, `README.md`, `scripts/verify_project.py`, `scripts/build_pages.py`, `scripts/test_ui.cjs`, `data/*.json`, `data.js`, root `*.html`, `app.js`, `styles.css`, `assets/css/style.css` | Current branch is a snapshot of `main`; preserve source-backed facts, leave unsupported values blank, and list remaining gaps. Shared detail-page CSS and UI tests are included because direct-video disclosures are rendered there. No work in the separate open `docs/` PR scope. |
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -42,6 +44,7 @@
 | Date (UTC) | Session | Action |
 |------------|---------|--------|
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
+| 2026-11-26 | c7463ba9 | Claimed T09 for the current-branch final integration re-audit; scope includes the root Pages site and audit reports, canonical JSON/build outputs, verifier, shared detail-page CSS, and UI interaction tests. Existing open PR #4 (`docs/` site) is out of scope. |
 
 ## Change requests (file owned by another session)
 
@@ -148,3 +151,12 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+### Current-branch source refresh — 26 Nov 2026 (session `c7463ba9`)
+
+- Bounded source refresh added date/content/caveat-labelled direct creator videos to 10 restaurant and 16 activity records. Search/profile shortcuts are disclosed as unverified-review discovery links; known branch, star-claim, age and price mismatches are called out. Private/unavailable TRB Hutong, Silver Pot and Mi Xun Teahouse clips remain excluded.
+- Corrected activity sources and blanked unsupported costs/schedules: Shanghai Museum's conflicting current/2025 visitor rules are explicit; unsupported Shanghai Tower values and PSA general admission are blank; Oriental Pearl, Chen Clan, Huangpu cruise and other unconfirmed ticket fields stay blank. Palace Museum and Temple of Heaven search-result-derived facts are explicitly labelled as not directly fetched.
+- Current detailed findings: `research/final-audit-2026-11-26.md`; bounded historical/current reconciliation: top of `RESEARCH_REVIEW.md`. Top-level page labels now say audit snapshot, Nov 26, not a claim that every fact was rechecked.
+- **Local checks passed:** builder (10 detail pages), `scripts/verify_project.py`, JSDOM UI tests including direct-link counts and private-video exclusions, retained planner validator (54 sources), Node/Python syntax, whitespace check, and local HTTP smoke test (33 resources).
+- **Publication check:** GitHub API reports current `main` at `04b6d65`; Pages is `built`, public and HTTPS-enforced from `main /`, with latest build tied to that same commit. PR #11 (`https://github.com/kanlerxz87-cyber/ChinaFun2/pull/11`) is open from this branch; validation run `45884160205` passed. These working-branch changes are not deployed until merge. Separate PR #4 remains open and out of scope. Public `github.io` content was not fetched in this environment.
+- Still unresolved: exact 2027 hotel totals/room fit, full door-to-door transit matrix/rankings, current/future venue schedules and ticket products, all closure/renovation notices, restaurant bills and traveler-specific entry eligibility. These remain flags, not inferred facts.

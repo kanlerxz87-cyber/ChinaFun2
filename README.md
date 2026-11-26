@@ -13,7 +13,7 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 - [Dates & costs](costs-booking.html): preferred-start and later seven-night windows through Mar 23; actual 90/60/30/14-day calendar checkpoints.
 - [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-Today is **Nov 25, 2026**, 82–85 days before the preferred starts. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
+Audit snapshot: **Nov 26, 2026**, 81–84 days before the preferred starts. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof. Individual factual claims retain their own source dates; this snapshot is not a blanket re-verification of every external source.
 
 ## Research discipline
 
@@ -21,7 +21,7 @@ A source link verifies only its stated scope. Empty official fields mean **unver
 
 MICHELIN release comparisons are labelled by city scope and edition: Shanghai's 2026 city subset has 51 starred venues (not the 77 regional total), Beijing 2026 has 32, Guangzhou 2026 has 20, and Chengdu 2027 has 15. These are not hotel accessibility scores or a same-edition league table. All sources and remaining caveats are linked on the site.
 
-Both travelers' passport nationality, entry eligibility, exact duration, budget and dietary needs remain unknown. The [original independent entry audit](research/entry-audit.md) is retained intact. Do not infer nationality from location. Social searches and independent videos are discovery aids, not official evidence.
+Both travelers' passport nationality, entry eligibility, exact duration, budget and dietary needs remain unknown. The [original independent entry audit](research/entry-audit.md) is retained intact. Do not infer nationality from location. Direct creator videos are linked only where public page metadata and venue/content were checked, with dates and branch/content caveats. They are third-party context, not evidence for current MICHELIN status, venue hours, prices or 2027 operations. Links labelled search/profile are discovery aids, not verified reviews; unavailable private videos are excluded.
 
 ## Maintain / test / preview
 
@@ -30,6 +30,9 @@ Canonical records: `data/{brief,hotels,michelin,activities,costs,flags}.json`.
 ```sh
 python3 scripts/build_pages.py       # Regenerate 10 detail pages and data.js
 python3 scripts/verify_project.py    # Links, anchors, sources, flags, dates, data parity
+npm install --prefix .cache/browser-tests --no-save --package-lock=false jsdom@26
+NODE_PATH=.cache/browser-tests/node_modules node scripts/test_ui.cjs
+python3 shanghai-planner/scripts/validate_research.py
 node --check app.js
 node --check assets/js/app.js
 python3 -m http.server 8000 --bind 0.0.0.0
@@ -43,4 +46,4 @@ The root dashboard design from session `77604d1c`, category architecture/search 
 
 ## Publication
 
-Pages uses the configured automatic branch publisher, `main` root. `.github/workflows/pages.yml` is an explicit main-only manual fallback, not a second publisher on every push; working branches are previews, not the public site. Merging into main publishes automatically. See [COORDINATION.md](COORDINATION.md) for prior claims, integration review and verification results, and [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for resolved presentation defects versus still-unverified research.
+Pages uses the configured automatic branch publisher, `main` root. `.github/workflows/pages.yml` is an explicit main-only manual fallback, not a second publisher on every push; working branches are previews, not the public site. Merging into main publishes automatically. See [COORDINATION.md](COORDINATION.md) for prior claims, [the Nov 26 final audit](research/final-audit-2026-11-26.md) for this refresh and [RESEARCH_REVIEW.md](RESEARCH_REVIEW.md) for historical reconciliation and still-unverified research.
