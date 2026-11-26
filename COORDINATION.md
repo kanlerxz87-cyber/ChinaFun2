@@ -148,3 +148,20 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+---
+
+## Session `ae77cbdf` — 2026-11-26 line-by-line verification, social review enrichment & final integration
+
+**Active branch:** `arena/ae77cbdf-chinafun2` (branched from `main` at `04b6d65c2474889984132e5a2b2f51a518332128`)
+**Handoff check:** All claims on `main` above are from `2026-11-25` (>24 hours old; all marked `done` or `needs review`, and session `55de3f9a` completed publication via PRs #8–#10). Per the >60-minute handoff and final-integration rules, session `ae77cbdf` claims the 2026-11-26 verification, enrichment, and integration pass below while preserving all prior sessions' retained research and subtrees (`shanghai-planner/`, `research/`).
+
+| ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
+|----|------|--------|-----------------|----------------|-----------------|
+| T09 | Line-by-line official-source verification of hotels, Michelin venues, activities, and costs/dates (updated to 2026-11-26; 1–2 week & 2–4 week windows) | **in progress** | `ae77cbdf` | `COORDINATION.md`, `data/*.json`, `RESEARCH_REVIEW.md`, `research/line-by-line-audit-2026-11-26.md` | Check every official URL and claim; remove non-official `rachelgouk.com` venue link; verify Shanghai Museum exhibition/domain status, hotel room pages, and Michelin venue pages; keep unconfirmed 2027 prices/routes blank + flagged. |
+| T10 | Social media review discovery & verification (YouTube, TikTok, Instagram review links alongside restaurants & activities) | **in progress** | `ae77cbdf` | `data/michelin.json`, `data/activities.json`, `data/flags.json` | Find and verify real creator/review links across YouTube, TikTok, and Instagram where verifiable; clearly distinguish third-party social reviews from official venue sources. |
+| T11 | Final site integration, build/link/DOM verification, PR to `main`, merge, and live GitHub Pages check | **in progress** | `ae77cbdf` | `README.md`, `index.html`, `app.js`, `assets/`, `styles.css`, `scripts/`, `.github/workflows/validate.yml`, generated `*.html` & `data.js` | Rebase onto latest `origin/main` before each push without discarding any merged parallel work; run all validators + HTTP + DOM checks before PR & merge. |
+
+### Claim log update (2026-11-26)
+- `2026-11-26` (`ae77cbdf`): Read `COORDINATION.md` on `main` (`04b6d65`); claimed `T09`–`T11` on `arena/ae77cbdf-chinafun2` and pushed claim immediately.
+
