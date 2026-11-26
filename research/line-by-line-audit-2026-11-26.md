@@ -16,7 +16,7 @@
 3. **Ultraviolet by Paul Pairet & Lan Ting — CLOSED / DELISTED IN 2026 MICHELIN GUIDE (`R04`)**
    - Official `2026 MICHELIN Guide Shanghai | Jiangsu | Zhejiang` release (`guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang`, unveiled April 9, 2026) lists **only 1 Three-MICHELIN-Star restaurant (`Taian Table`)**. `Ultraviolet` closed in March 2025 (`uvbypp.cc` returns HTTP 500; `guide.michelin.com/.../ultraviolet-by-paul-pairet` returns 404). Legacy Bib Gourmand slug `/lan-ting` also returns 404.
 4. **Standalone `lameloise.com.cn` Script-Injection Quarantine (`R05`)**
-   - Static fetch of `https://www.lameloise.com.cn/` on `2026-11-26` returned an injected external script (`https://nswsw.zhanlingxc.top/h5.js`) inside menu link markup. Added `lameloise.com.cn` and `nswsw.zhanlingxc.top` to `BANNED_LINK_HOSTS` in `scripts/verify_project.py` and linked only the verified Shanghai MICHELIN page (`guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686`).
+   - Static fetch of `lameloise[.]com[.]cn` on `2026-11-26` returned an injected external script (`nswsw[.]zhanlingxc[.]top/h5.js`) inside menu link markup. Added `lameloise.com.cn` to `BANNED_LINK_HOSTS` in `scripts/verify_project.py` and linked only the verified Shanghai MICHELIN page (`guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686`).
 5. **Removed Non-Official Blog Link & Fixed Stale Slugs / Rebrands (`R06`, `H04`)**
    - Removed non-official food blog URL `rachelgouk.com` from `canton-8` and broken `/ren-he-guan` duplicate from `ren-he-guan`.
    - Updated `Xin Rong Ji (Nanyang Road)` to its live 2026 MICHELIN Guide identity **The House of Rong** (`the-house-of-rong`, 2★).

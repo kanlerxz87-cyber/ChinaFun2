@@ -15,9 +15,9 @@ window.TRIP_DATA = {
       "title": "Preferred-start 7-night stay (1 week)",
       "dates": "Mon Feb 15 → Mon Feb 22, 2027",
       "nights": "7 nights",
-      "fit": "Uses preferred Feb 15–18 start window; standardized 7-night hotel comparison baseline in a single base city",
+      "fit": "Baseline 1-week single-city stay starting on preferred date (2 days after official Feb 5–13 Spring Festival break)",
       "price": "",
-      "priceNote": "Official 2-adult, 7-night checkout total not verified on live booking engines",
+      "priceNote": "Official 2-adult, 7-night all-in total not verified",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "sourceLabel": "Official 2027 holiday notice"
     },
@@ -25,9 +25,19 @@ window.TRIP_DATA = {
       "title": "Preferred-start 14-night stay (2 weeks)",
       "dates": "Mon Feb 15 → Mon Mar 1, 2027",
       "nights": "14 nights",
-      "fit": "Covers upper end of 1–2 week target; supports a two-city split (e.g., 7 nights Shanghai + 7 nights Beijing/Chengdu/Guangzhou)",
+      "fit": "Upper edge of 1–2 week brief or entry point for 2–4 week split stay; exceeds 240h (10-day) transit-without-visa ceiling",
       "price": "",
-      "priceNote": "Official 2-adult, 14-night total + intercity rail/airfare not verified",
+      "priceNote": "Official 2-adult, 14-night total and intercity rail/flights not verified",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "sourceLabel": "Official 2027 holiday notice"
+    },
+    {
+      "title": "Extended 3–4 week multi-city window",
+      "dates": "Mon Feb 15 → Mon Mar 15 (28n) or Tue Mar 23, 2027 (36n)",
+      "nights": "21–36 nights",
+      "fit": "Fits 2–4 week planning scope up to Mar 23 return limit; spans Mar 1 Panda Base & Mar 16 Mutianyu seasonal hour switches; requires visa/visa-free check",
+      "price": "",
+      "priceNote": "Official multi-city hotel and domestic rail/air totals not verified",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "sourceLabel": "Official 2027 holiday notice"
     },
@@ -40,2280 +50,3481 @@ window.TRIP_DATA = {
       "priceNote": "Official 2-adult, 7-night checkout total not verified on live booking engines",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "sourceLabel": "Official 2027 holiday notice"
-    },
-    {
-      "title": "Extended 21- to 28-night window (3–4 weeks)",
-      "dates": "Mon Feb 15 → Mon Mar 15, 2027 (or Tue Feb 23 → Tue Mar 23, 2027)",
-      "nights": "21–28 nights",
-      "fit": "Fits optional 2–4 week span inside Feb 15–Mar 23; note 240-hour (10-day) transit-without-visa cannot cover stays over 10 days",
-      "price": "",
-      "priceNote": "Requires full tourist (L) visa for most foreign passports; official multi-week hotel totals unverified",
-      "source": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm",
-      "sourceLabel": "Official 240h transit & visa rule"
     }
   ],
   "questions": [
     {
-      "q": "Which city should anchor the trip?",
-      "answer": "No city chosen yet. Shanghai (51 starred · 2026 subset), Beijing (32 starred · 2026), Guangzhou (20 starred · 2026 subset) and Chengdu (15 starred · 2027) are compared. Shanghai has the deepest verified dining and hotel shortlist.",
-      "next": "Choose one anchor city for 7 nights or a two-city split for 14+ nights; then compute hotel-to-venue transit times.",
+      "q": "Which city (or multi-city split) should anchor the trip?",
+      "answer": "No city chosen yet. Shanghai, Beijing, Guangzhou and Chengdu are compared side-by-side with equal evidence rules.",
+      "next": "Choose one base city (for 7 nights) or a 2–3 city rail/flight split (for 14–28 nights), then run door-to-door transit and rate checks.",
       "state": "Open"
     },
     {
-      "q": "What are the exact departure and return dates (1–2 weeks vs 2–4 weeks)?",
-      "answer": "Preferred start is Feb 15–18, 2027 (81–84 days from Nov 26, 2026) within the overall Feb 15–Mar 23 window; trip length is 1–2 weeks or potentially 2–4 weeks.",
-      "next": "Lock exact length (7, 14, 21, or 28 nights) first: stays above 10 days cannot use China's 240-hour visa-free transit rule.",
+      "q": "Is the trip 1–2 weeks or 2–4 weeks within Feb 15–Mar 23, 2027?",
+      "answer": "Preferred start is Feb 15–18, 2027 (currently 81–84 days away as of Nov 26, 2026); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
+      "next": "Decide between 7 nights (Feb 15–22), 14 nights (Feb 15–Mar 1), or 21–36 nights (ending by Mar 23) and check visa limits for stays over 10 days.",
+      "state": "Open · blocker"
+    },
+    {
+      "q": "Does each candidate room guarantee Queen/King bedding and a private bathroom?",
+      "answer": "Official room pages verified on Nov 26, 2026 confirm King/Twin beds and marble bathrooms at Peninsula SH, Langham Xintiandi, Bvlgari SH, Ritz-Carlton Pudong and Mandarin Oriental Guangzhou, but rarely print literal 'private/en-suite' wording.",
+      "next": "Confirm exact bed guarantee and explicit private/en-suite bathroom wording in writing from the chosen hotel before payment.",
+      "state": "Partly answered · blocker"
+    },
+    {
+      "q": "Which hotel has the best verified all-in total for two adults?",
+      "answer": "No official date-specific all-in 2027 total was captured. All official quote cells remain blank (a prior pre-tax ¥24,850 Peninsula SH observation and undated 'from' widgets are excluded).",
+      "next": "Query each shortlisted hotel's official booking engine for 2 adults, 1 room, exact dates, taxes/service included and identical cancellation terms.",
+      "state": "Open · blocker"
+    },
+    {
+      "q": "When is the cheapest time to book?",
+      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 26, 2026 (81–84 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
+      "next": "Lock a refundable official rate early and reprice at the 60d/30d/14d checkpoints without assuming a guaranteed spike or drop.",
+      "state": "Open"
+    },
+    {
+      "q": "Can shortlisted attractions and Michelin venues be reached within 60 minutes by subway or bus?",
+      "answer": "Not established. No hotel is chosen and no dated door-to-door transit routes have been recorded. Outlying sights (Mutianyu, Chimelong, Suzhou/Hangzhou) are explicitly flagged.",
+      "next": "After picking a city and shortlist of 3–4 hotels, log official subway/bus durations including walk/wait/transfer times at planned visit hours.",
+      "state": "Open · blocker"
+    },
+    {
+      "q": "Which venues have closure traps or seasonal switches during Feb 15–Mar 23, 2027?",
+      "answer": "Confirmed full-window closure: Jinsha Site Museum in Chengdu is closed Dec 5, 2025 – Apr 30, 2027. Shanghai Museum People's Square runs only its ticketed Americas exhibition through Nov 14, 2027 (use East Campus for free permanent galleries, open Mondays). Ultraviolet closed in 2025; Chengdu Panda Base shifts hours Mar 1; Mutianyu shifts hours Mar 16.",
+      "next": "Re-verify each venue's dated 2027 calendar and real-name passport ticket release window (7–14 days out) before finalizing daily order.",
       "state": "Partly answered"
     },
     {
-      "q": "Does each candidate room have a private bathroom and Queen+ bed for two?",
-      "answer": "Official hotel room pages confirm King or Double-Queen bed configurations and marble/spa bath fixtures across shortlisted properties, but category-specific checkout terms must still confirm private ensuite allocation for two adults.",
-      "next": "Select the specific King/Queen room category on the brand booking engine and retain written ensuite confirmation on the reservation.",
-      "state": "Open · blocker"
-    },
-    {
-      "q": "Which hotel has the best verified 7-night total for two?",
-      "answer": "No official date-specific Feb–Mar 2027 7-night checkout total was retrievable without interactive browser rate sessions. All official 7-night quote cells remain blank.",
-      "next": "Query each finalist hotel's official booking engine for 2 adults, 1 King/Queen room, Feb 15–22 (and Mar 1–8), all taxes/service charges included, with identical cancellation cutoffs.",
-      "state": "Open · blocker"
-    },
-    {
-      "q": "When is the cheapest upcoming time to book?",
-      "answer": "As of Nov 26, 2026 (81–84 days out), the 90-day mark (Nov 17–20) has passed; upcoming reprice checkpoints are Dec 17–20 (60d), Jan 16–19 (30d), and Feb 1–4, 2027 (14d). No verified historical price curve proves a single cheapest day.",
-      "next": "Book a fully refundable direct room rate now as a ceiling, then re-check identical room/tax quotes on Dec 17–20 and Jan 16–19.",
+      "q": "What dining budget is acceptable for two?",
+      "answer": "Six venues publish 2026 official 2-adult menu bases: Mi Xun Teahouse (¥620 hot pot set), Yi Long Court (¥788.22 dim sum lunch), T'ang Court (¥888 lunch / ¥2,288 set), Sir Elly's (¥3,003.62 dinner), Bao Li Xuan (¥3,576 degustation), and Taian Table (¥5,176–¥5,776 tasting). All other restaurants publish only relative ¥–¥¥¥¥ guide bands.",
+      "next": "Set a per-meal ceiling for two adults, note $100/person deposits (Da Vittorio, Fabula), and confirm 2027 seasonal pricing directly.",
       "state": "Open"
     },
     {
-      "q": "Can attractions and Michelin restaurants be reached within <=60 minutes by subway or bus?",
-      "answer": "Not yet established from timestamped official transit directions. Outlying excursions (Mutianyu Great Wall, Suzhou, Hangzhou, Zhujiajiao, Dujiangyan) exceed or lack <=60-minute public-transit proof.",
-      "next": "Once a finalist hotel is picked, record door-to-door subway/bus durations (walk + wait + ride + transfer) at representative lunch/dinner/morning hours.",
-      "state": "Open · blocker"
-    },
-    {
-      "q": "Which venues are closed or restricted during Feb 15–Mar 23, 2027?",
-      "answer": "Confirmed closures: Jinsha Site Museum in Chengdu is closed Dec 5, 2025 – Apr 30, 2027; Ultraviolet in Shanghai closed in 2025 and is delisted from the 2026 MICHELIN Guide; Shanghai Museum People's Square runs paid special exhibition only (Jul 9, 2026 – Nov 14, 2027), while East Campus offers walk-in permanent galleries.",
-      "next": "Avoid closed venues, keep Monday/Tuesday museum closure rules in view, and recheck 2027 Lantern Festival (Feb 20) hours before booking.",
-      "state": "Partly answered"
-    },
-    {
-      "q": "What dining budget is acceptable for two adults?",
-      "answer": "Official published 2-adult menu totals are now verified for 5 Shanghai venues: Yi Long Court (¥695 dim sum lunch / ¥2,304 dinner), T'ang Court (¥888 lunch / ¥2,288 all-day set), Sir Elly's (¥3,004 5-course set), Bao Li Xuan (¥3,576 degustation), and Taian Table (¥5,176–¥5,776 before supplements). Other venues publish only relative ¥–¥¥¥¥ bands.",
-      "next": "Set a couple per-meal budget ceiling and mix 1–2 splurge set menus with ¥/¥¥ Bib Gourmand and 1-Star Shanghainese/Cantonese venues.",
+      "q": "How do passports, visas, flights, mobility and dietary needs constrain the plan?",
+      "answer": "No passport nationality, departure airport, mobility limit or allergy/dietary preference was supplied.",
+      "next": "Confirm both passport nationalities (without sharing passport numbers) to check visa vs 240h transit rules, plus any dietary/accessibility requirements.",
       "state": "Open"
-    },
-    {
-      "q": "How should visa, flights, mobility and dietary constraints affect the plan?",
-      "answer": "Traveler passport nationalities, departure airport, dietary restrictions, and mobility preferences are still unspecified.",
-      "next": "Confirm both travelers' passport nationalities against official Chinese embassy/NIA visa rules before purchasing non-refundable flights.",
-      "state": "Open · blocker"
-    },
-    {
-      "q": "Seven nights, two weeks, or up to four weeks?",
-      "answer": "Seven nights (Feb 15–22, 2027) is the standardized hotel comparison unit; Feb 15–18 is treated as the preferred start window rather than a 3-night trip.",
-      "next": "Confirm exact start date, total nights, dining/hotel budget ceiling, and dietary needs to move from research shortlist to day-by-day reservations.",
-      "state": "Open · blocker"
     }
   ],
   "suggestions": [
     {
       "id": "city",
-      "title": "Lock primary city + stay length (7 vs 14–28 nights) before rate-shopping",
-      "desc": "Decide whether this is a 7-night single-city break (Shanghai or Beijing) or a 14–28 night multi-city route, since stays beyond 10 days require a full visa rather than 240-hour transit.",
+      "title": "Choose a primary city (or 2–3 city split) before rate-shopping",
+      "desc": "Decide between a single-base 7-night stay (Shanghai or Beijing) versus a 14–28 night multi-city rail loop before running hotel quote logs.",
       "impact": "Highest decision value",
       "effort": "Low",
-      "rec": "Recommended first"
+      "rec": "Recommended first · review before applying"
+    },
+    {
+      "id": "duration-visa",
+      "title": "Resolve 1–2 week vs 2–4 week duration and visa path early",
+      "desc": "Stays over 10 days cannot rely on China's 240-hour transit-without-visa program; confirming exact nights and passport nationalities unlocks flight and visa timing.",
+      "impact": "Prevents entry/booking rework",
+      "effort": "Low",
+      "rec": "Recommended first · review before applying"
+    },
+    {
+      "id": "transit",
+      "title": "Run dated <=60-minute public-transit matrix for top 3 hotels",
+      "desc": "Once a base city is selected, measure official subway/bus travel times (walk + wait + transfer) to every shortlisted Michelin venue and museum at actual meal/visit hours.",
+      "impact": "Directly answers the 1-hour rule",
+      "effort": "Medium",
+      "rec": "Recommended after city choice"
     },
     {
       "id": "price",
-      "title": "Hold a refundable 7-night ceiling rate now, then reprice at 60d / 30d / 14d",
-      "desc": "At 81–84 days out (Nov 26, 2026), capture live refundable 2-adult King/Queen quotes for Feb 15–22 and Mar 1–8 on official brand engines, then recheck on Dec 17–20, Jan 16–19, and Feb 1–4.",
-      "impact": "Establishes verified cheapest booking window",
+      "title": "Start a timestamped official hotel quote log at the 60d/30d/14d marks",
+      "desc": "Record like-for-like 2-adult all-in refundable totals (taxes & fees included) from official hotel engines so real price movement replaces guesswork.",
+      "impact": "Makes fair value comparison possible",
       "effort": "Medium",
       "rec": "Recommended immediately after city choice"
     },
     {
-      "id": "transit",
-      "title": "Run a timestamped <=60-minute subway/bus matrix for 2–3 finalist hotels",
-      "desc": "Measure door-to-door public transit (including walk and transfer time) from each finalist hotel to active 2026/2027 Michelin venues and open attractions before assigning ranks.",
-      "impact": "Directly answers the 1-hour transit rule",
+      "id": "itinerary",
+      "title": "Sequence days around Monday/Tuesday closures and Mar 1/Mar 16 switches",
+      "desc": "Put Shanghai Museum East (open Mondays) or outdoor walks on Mondays, book 7–14 day passport museum slots on release day, and keep indoor rain/cold backups.",
+      "impact": "Eliminates avoidable closure traps",
       "effort": "Medium",
       "rec": "Recommended before locking hotel"
-    },
-    {
-      "id": "closures",
-      "title": "Route around confirmed 2026–2027 closures, renovations, and Monday/Tuesday traps",
-      "desc": "Substitute Shanghai Museum East (closed Tue) for People's Square's partial gallery closure, skip closed Jinsha Site Museum and Ultraviolet, and check Ritz-Carlton Pudong's public-area renovation status before booking.",
-      "impact": "Prevents wasted vacation days & bad bookings",
-      "effort": "Low",
-      "rec": "Ready to apply to itinerary"
     }
   ],
   "hotels": [
     {
-      "id": "the-langham-shanghai-xintiandi",
-      "name": "The Langham, Shanghai, Xintiandi",
+      "id": "edition",
       "city": "Shanghai",
-      "area": "99 Madang Road, Xintiandi, Huangpu, Shanghai 200021",
-      "bed": "1 King (1.8m · Superior / Deluxe Room, 40–43 m²)",
+      "name": "The Shanghai EDITION",
+      "area": "Nanjing East Road · Huangpu",
+      "bed": "1 King (Loft / Deluxe categories listed)",
       "bath": "",
-      "evidence": "Official rooms page lists Superior and Deluxe Rooms (40–43 m²) with 1.8m King bed option and marble bathroom with separate rain shower and bathtub.",
-      "amenities": "Home to 2-MICHELIN-Star T'ang Court; Chuan Spa, heated indoor pool, 24-hour fitness studio, direct Xintiandi metro proximity.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Confirm explicit private ensuite allocation and 2-adult refundable 7-night total on Langham booking engine.",
-      "roomSource": "https://www.langhamhotels.com/en/the-langham/shanghai/rooms/",
-      "propertySource": "https://www.langhamhotels.com/en/the-langham/shanghai/",
-      "bookSource": "https://www.langhamhotels.com/en/the-langham/shanghai/rooms/",
-      "official_url": "https://www.langhamhotels.com/en/the-langham/shanghai/rooms/",
-      "youtube": "The Langham Shanghai Xintiandi room tour",
+      "tier": "Luxury",
+      "evidence": "Official Marriott rooms page lists 1 King room categories and bathroom fittings (e.g., freestanding bath in some categories); literal 'private/en-suite bathroom' wording is not explicitly printed.",
+      "fitNote": "Central Huangpu location near Nanjing East Road; check exact room category and all-in 2027 rate on Marriott.com.",
+      "roomSource": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
+      "official_url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
+      "sourceLabel": "Official Marriott rooms page",
       "flags": [
         "H01",
         "H02",
         "H03"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": true
     },
     {
       "id": "peninsula-shanghai",
+      "city": "Shanghai",
       "name": "The Peninsula Shanghai",
-      "city": "Shanghai",
-      "area": "No. 32 The Bund, 32 Zhongshan Dong Yi Road, Shanghai 200002",
-      "bed": "1 King (Deluxe Room · 54–59 m², max 3 guests)",
+      "area": "The Bund · Huangpu",
+      "bed": "King or Twin (Deluxe Room, 54–59 m², max 2 adults)",
       "bath": "",
-      "evidence": "Official Deluxe Room page lists 54–59 m² floorplan with King bed option and spacious marble bathroom featuring spa mood lighting, deep soaking tub and separate rain shower.",
-      "amenities": "Home to 1-MICHELIN-Star Yi Long Court and MICHELIN-Selected Sir Elly's; Peninsula Spa, indoor heated pool, fitness center.",
       "total": "",
+      "totalNote": "No official 2027 all-in total verified (prior pre-tax ¥24,850 observation excluded pending taxes/fees)",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Select King Deluxe Room (not Twin) and confirm private ensuite + tax-inclusive 7-night quote on Peninsula engine.",
+      "tier": "Luxury",
+      "evidence": "Verified Nov 26, 2026 on official Deluxe Room page: 54–59 m², King or Twin bed, walk-in closet, spacious marble bathroom with built-in TV & mood lighting, Peninsula Time flexible check-in/out; houses 1★ Yi Long Court and MICHELIN Selected Sir Elly's. Literal 'private/en-suite' phrasing not printed.",
+      "fitNote": "Official room specs confirmed; prior Nov 2026 observation of ¥24,850 pre-tax for Feb 15–22, 2027 on secure.peninsula.com excluded from official total until taxes, service charge and cancellation terms are verified.",
       "roomSource": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
-      "propertySource": "https://www.peninsula.com/en/shanghai/5-star-luxury-hotel-bund",
-      "bookSource": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
       "official_url": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
-      "youtube": "The Peninsula Shanghai Deluxe Room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "the-shanghai-edition",
-      "name": "The Shanghai EDITION",
-      "city": "Shanghai",
-      "area": "199 Nanjing Road East, Huangpu, Shanghai 200002",
-      "bed": "1 King or 1 Queen (ANICHINI linens · official rooms page)",
-      "bath": "",
-      "evidence": "Official rooms page confirms King and Queen beds and bathrooms with double vanity, white stone soaking tub, separate rainforest shower and Le Labo amenities.",
-      "amenities": "On-site restaurants, rooftop bars overlooking the Bund & Pudong, indoor pool, spa, fitness center and 24-hour room service.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Private bathroom not literally labelled 'private' on room-overview copy; retain written ensuite confirmation at checkout.",
-      "roomSource": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
-      "propertySource": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/overview/",
-      "bookSource": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
-      "official_url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
-      "youtube": "The Shanghai EDITION Shanghai hotel room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "waldorf-astoria-shanghai-bund",
-      "name": "Waldorf Astoria Shanghai on the Bund",
-      "city": "Shanghai",
-      "area": "No. 2 Zhongshan Dong Yi Road, Huangpu, Shanghai 200002",
-      "bed": "1 King or Double Queen (King Deluxe / Double Queen Deluxe · Sleeps 3)",
-      "bath": "",
-      "evidence": "Official Hilton rooms inventory lists King Deluxe Room and Double Queen Deluxe Room (260 rooms & suites total) with marble bathrooms.",
-      "amenities": "Home to 1-MICHELIN-Star Ling Long (1F); Peacock Alley Lounge, luxury spa, fitness center, indoor pool, heritage Shanghai Club wing.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Confirm exact King/Queen Deluxe category, 10% service + VAT inclusion, and private ensuite status on Hilton checkout.",
-      "roomSource": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/rooms/",
-      "propertySource": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/",
-      "bookSource": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/rooms/",
-      "official_url": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/rooms/",
-      "youtube": "Waldorf Astoria Shanghai on the Bund room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "andaz-xintiandi-shanghai",
-      "name": "Andaz Xintiandi, Shanghai",
-      "city": "Shanghai",
-      "area": "88 Songshan Road, Xintiandi, Huangpu, Shanghai 200021",
-      "bed": "1 King (2m bed · 1 King Bed room, ~41 m²)",
-      "bath": "",
-      "evidence": "Official Hyatt rooms page (property code 'shaaz') confirms ~41 m² guestroom with 2m King bed, oversized LED-lit bathtub, rain shower and heated bathroom floor.",
-      "amenities": "Complimentary non-alcoholic minibar snacks/drinks, indoor heated pool, fitness center, steps from Xintiandi dining.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Use official code 'shaaz' (not legacy 'shazc'); confirm private bathroom wording and 7-night total on Hyatt booking engine.",
-      "roomSource": "https://www.hyatt.com/andaz/en-US/shaaz-andaz-xintiandi-shanghai/rooms",
-      "propertySource": "https://www.hyatt.com/andaz/en-US/shaaz-andaz-xintiandi-shanghai",
-      "bookSource": "https://www.hyatt.com/andaz/en-US/shaaz-andaz-xintiandi-shanghai/rooms",
-      "official_url": "https://www.hyatt.com/andaz/en-US/shaaz-andaz-xintiandi-shanghai/rooms",
-      "youtube": "Andaz Xintiandi Shanghai King room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "upper-house-shanghai",
-      "name": "Upper House Shanghai (formerly The Middle House)",
-      "city": "Shanghai",
-      "area": "366 Shi Men Yi Road, HKRI Taikoo Hui, Jing'an, Shanghai 200041",
-      "bed": "1 King (Studio 50 / 60 / 70 · 50–70 m²)",
-      "bath": "",
-      "evidence": "Swire Hotels rebranded The Middle House to Upper House Shanghai; official rooms page confirms Studio 50/60/70 (50–70 m²) with King bed and spa-inspired bathroom with soaking tub.",
-      "amenities": "MI XUN Spa, heated indoor pool, 24-hour gym, Frasca & Sui Tang Li dining, direct Nanjing West Road metro hub access.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Search under rebranded name Upper House Shanghai; confirm private ensuite allocation and 2027 7-night total directly.",
-      "roomSource": "https://www.upperhouse.com/en/shanghai/rooms/",
-      "propertySource": "https://www.upperhouse.com/en/shanghai/",
-      "bookSource": "https://www.upperhouse.com/en/shanghai/rooms/",
-      "official_url": "https://www.upperhouse.com/en/shanghai/rooms/",
-      "youtube": "The Middle House Upper House Shanghai Studio room tour",
+      "sourceLabel": "Official Peninsula Deluxe Room page",
       "flags": [
         "H01",
         "H02",
         "H03",
-        "H04"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "jing-an-shangri-la-shanghai",
-      "name": "Jing An Shangri-La, Shanghai",
-      "city": "Shanghai",
-      "area": "1218 Middle Yan'an Road, Jing'an Kerry Centre, Shanghai 200040",
-      "bed": "1 King (Deluxe Room · approx. 42 m², Floors 31–43)",
-      "bath": "",
-      "evidence": "Official Deluxe Room page confirms approx. 42 m² guestroom on floors 31–43 with King or Twin option and marble-clad bathroom featuring heated floor, soaking tub and glass-enclosed shower.",
-      "amenities": "Sky-lit 25m indoor pool, CHI The Spa, health club, six restaurants/bars, connected to Jing'an Temple metro interchange (Lines 2/7/14).",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Select King Deluxe category and retain written private-ensuite confirmation and refundable 7-night quote.",
-      "roomSource": "https://www.shangri-la.com/en/shanghai/jinganshangrila/rooms-suites/rooms/deluxe-room/",
-      "propertySource": "https://www.shangri-la.com/en/shanghai/jinganshangrila/",
-      "bookSource": "https://www.shangri-la.com/en/shanghai/jinganshangrila/rooms-suites/",
-      "official_url": "https://www.shangri-la.com/en/shanghai/jinganshangrila/rooms-suites/rooms/deluxe-room/",
-      "youtube": "Jing An Shangri-La Shanghai Deluxe King room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "the-sukhothai-shanghai",
-      "name": "The Sukhothai Shanghai",
-      "city": "Shanghai",
-      "area": "380 Weihai Road, Jing'an District, Shanghai 200041",
-      "bed": "1 King (Executive / Studio room inventory, 44–382 m²)",
-      "bath": "",
-      "evidence": "Official property overview (shanghai.sukhothai.com, MICHELIN Key 2025 & 2026) confirms 201 rooms and suites starting at 44 m²; room-subpage static fetch failed so exact bath wording remains flagged.",
-      "amenities": "25-meter heated indoor pool, fitness studio, The Retreat spa, La Scala Italian dining, Nanjing West Road metro proximity.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Prior $35,148 aggregator outlier remains quarantined (B02); open official booking engine to verify King + private ensuite.",
-      "roomSource": "https://shanghai.sukhothai.com/en/",
-      "propertySource": "https://shanghai.sukhothai.com/en/",
-      "bookSource": "https://shanghai.sukhothai.com/en/",
-      "official_url": "https://shanghai.sukhothai.com/en/",
-      "youtube": "The Sukhothai Shanghai room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03",
-        "B02",
         "L01"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": true
     },
     {
       "id": "marriott-city-centre",
+      "city": "Shanghai",
       "name": "Shanghai Marriott Marquis City Centre",
-      "city": "Shanghai",
-      "area": "555 Middle Xizang Road, People's Square, Huangpu, Shanghai 200003",
-      "bed": "1 King (Deluxe King Guest Room)",
-      "bath": "",
-      "evidence": "Official Marriott rooms page (shamc-shanghai-marriott-marquis-city-centre) confirms Deluxe Guest Room 1 King with marble bathroom, separate bathtub and shower.",
-      "amenities": "25m heated indoor swimming pool, 24-hour fitness center, executive lounge, steps from People's Square interchange (Lines 1/2/8).",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Select 1-King room rate and verify private ensuite + tax-inclusive 7-night 2027 total on Marriott checkout.",
-      "roomSource": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/rooms/",
-      "propertySource": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/overview/",
-      "bookSource": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/rooms/",
-      "official_url": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/rooms/",
-      "youtube": "Shanghai Marriott Marquis City Centre room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "renaissance-yugarden",
-      "name": "Renaissance Shanghai Yu Garden Hotel",
-      "city": "Shanghai",
-      "area": "159 South Henan Road, Huangpu, Shanghai 200010",
-      "bed": "1 King (Deluxe Room, One King · 336 rooms)",
-      "bath": "",
-      "evidence": "Official Marriott rooms page (corrected code 'shasy') confirms Deluxe Room One King inventory and warns that King/Twin bed types cannot be swapped after booking.",
-      "amenities": "Indoor swimming pool, fitness center, ROOF bar overlooking Yu Garden/skyline, YONE restaurant, Line 10 Yuyuan Garden station access.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Marriott page warns bed choice cannot be swapped; lock One King explicitly and confirm private ensuite bath before booking.",
-      "roomSource": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
-      "propertySource": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
-      "bookSource": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
-      "official_url": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
-      "youtube": "Renaissance Shanghai Yu Garden Hotel King room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03",
-        "H04"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "hilton-city-center",
-      "name": "Hilton Shanghai City Center",
-      "city": "Shanghai",
-      "area": "488 West Yan'an Road, Jing'an / Changning border, Shanghai 200050",
-      "bed": "1 King (Deluxe King Guest Room · 381 rooms & suites)",
-      "bath": "",
-      "evidence": "Official Hilton property location page (corrected code 'shamshi') and Hilton APAC opening release confirm 488 West Yan'an Road address and Deluxe King Guest Room inventory.",
-      "amenities": "Osteria Twelve 16 Italian restaurant, Lobby Bar, Executive Lounge, indoor pool, fitness center, 1 km to Jing'an Temple & Kerry Centre.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Use official Hilton code 'shamshi' (legacy 'shaocis' returns HTTP 500); confirm private ensuite bath and 2027 7-night quote.",
-      "roomSource": "https://stories.hilton.com/apac/releases/hilton-hotels-resorts-returns-to-the-heart-of-shanghai-with-the-opening-of-hilton-shanghai-city-center",
-      "propertySource": "https://www.hilton.com/en/hotels/shamshi-hilton-shanghai-city-center/hotel-location/",
-      "bookSource": "https://www.hilton.com/en/hotels/shamshi-hilton-shanghai-city-center/hotel-location/",
-      "official_url": "https://www.hilton.com/en/hotels/shamshi-hilton-shanghai-city-center/hotel-location/",
-      "youtube": "Hilton Shanghai City Center Deluxe King room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03",
-        "H04"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "okura-garden-hotel-shanghai",
-      "name": "Okura Garden Hotel Shanghai",
-      "city": "Shanghai",
-      "area": "58 Mao Ming Road (S.), Former French Concession, Shanghai 200020",
+      "area": "People's Square · Huangpu",
       "bed": "",
       "bath": "",
-      "evidence": "Official property identity and address confirmed. Booking-widget placeholder JPY0 / no availability is not a rate or proof of date-specific inventory.",
-      "amenities": "Private landscaped gardens, Wi-Fi, indoor swimming pool, tennis courts and health club; near South Shaanxi Road metro (Lines 1/10/12).",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Confirm exact King/Queen room category, private bathroom and 2027 rate availability directly with Okura.",
-      "roomSource": "https://www.okura-nikko.com/china/shanghai/okura-garden-hotel-shanghai/",
-      "propertySource": "https://www.okura-nikko.com/china/shanghai/okura-garden-hotel-shanghai/",
-      "bookSource": "https://www.okura-nikko.com/china/shanghai/okura-garden-hotel-shanghai/",
-      "official_url": "https://www.okura-nikko.com/china/shanghai/okura-garden-hotel-shanghai/",
-      "youtube": "Okura Garden Hotel Shanghai room tour",
+      "tier": "Upscale",
+      "evidence": "Verified Nov 26, 2026 on canonical Marriott rooms page: People's Square location, marble bathroom with double vanity, lighted mirror, robe/slippers, complimentary Wi-Fi, 24h room service; exact bookable category bed specs behind live date selector.",
+      "fitNote": "Confirm exact King/Queen category, private-bathroom wording and dated 2027 all-in total on Marriott.com.",
+      "roomSource": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/rooms/",
+      "official_url": "https://www.marriott.com/en-us/hotels/shamc-shanghai-marriott-marquis-city-centre/rooms/",
+      "sourceLabel": "Official Marriott rooms page",
       "flags": [
         "H01",
         "H02",
         "H03"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": true
     },
     {
-      "id": "grand-hyatt-shanghai",
-      "name": "Grand Hyatt Shanghai",
+      "id": "the-langham-shanghai-xintiandi",
       "city": "Shanghai",
-      "area": "Jin Mao Tower, 88 Century Avenue, Pudong, Shanghai 200121",
-      "bed": "1 King (room type listed)",
+      "name": "The Langham, Shanghai, Xintiandi",
+      "area": "Xintiandi · Huangpu",
+      "bed": "King or Twin (Superior Room, 40 m², max 3 guests)",
       "bath": "",
-      "evidence": "Official room inventory lists King-bed room types on high floors of Jin Mao Tower with deep-soaking marble bathtub.",
-      "amenities": "24-hour room service, concierge, sky pool, minibar, Wi-Fi and in-room safe in Lujiazui financial district.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Pudong river-crossing adds transfer minutes to Puxi dining clusters; confirm private bathroom and transit times before booking.",
-      "roomSource": "https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms",
-      "propertySource": "https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/overview",
-      "bookSource": "https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms",
-      "official_url": "https://www.hyatt.com/grand-hyatt/en-US/shagh-grand-hyatt-shanghai/rooms",
-      "youtube": "Grand Hyatt Shanghai room tour",
+      "tier": "Luxury",
+      "evidence": "Verified Nov 26, 2026 on official Superior Room page: 40 m², King or Twin, marble bathroom with separate rain shower & heated floor, Diptyque bath amenities, 24h in-room dining; houses 2★ T'ang Court. Literal 'private/en-suite' phrasing not printed.",
+      "fitNote": "Xintiandi metro hub with on-site 2★ Michelin dining; verify all-in 2027 rate and exact King guarantee directly.",
+      "roomSource": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/superior-room/",
+      "official_url": "https://www.langhamhotels.com/en/the-langham/shanghai/stay/rooms/superior-room/",
+      "sourceLabel": "Official Langham Superior Room page",
       "flags": [
         "H01",
         "H02",
         "H03"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
+    },
+    {
+      "id": "bvlgari-hotel-shanghai",
+      "city": "Shanghai",
+      "name": "Bvlgari Hotel Shanghai",
+      "area": "Suhe Creek · Jing'an",
+      "bed": "King (Deluxe Room, 52 m²)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Luxury",
+      "evidence": "Verified Nov 26, 2026 on official Deluxe Room page: 52 m², King bed, marble bathroom with his-and-hers basins, walk-in rain shower, Toto heated toilet and walk-in closet; houses 2★ Bao Li Xuan. Literal 'private/en-suite' phrasing not printed.",
+      "fitNote": "On-site 2★ Bao Li Xuan; confirm 2027 dates, taxes and cancellation policy on bulgarihotels.com.",
+      "roomSource": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room",
+      "official_url": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room",
+      "sourceLabel": "Official Bvlgari Deluxe Room page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "dashboard": false
     },
     {
       "id": "the-ritz-carlton-shanghai-pudong",
-      "name": "The Ritz-Carlton Shanghai, Pudong",
       "city": "Shanghai",
-      "area": "Shanghai IFC, 8 Century Avenue, Lujiazui, Pudong, Shanghai 200120",
-      "bed": "1 King (City View / Bund River View Guest Room)",
+      "name": "The Ritz-Carlton Shanghai, Pudong",
+      "area": "Lujiazui · Pudong",
+      "bed": "1 King (Guest Room: City / Skyline / Bund view)",
       "bath": "",
-      "evidence": "Official Marriott offers & property pages confirm 1 King Bed Guest Room categories, 49F Club Lounge, indoor heated pool and Jacuzzi.",
-      "amenities": "Home to 1-MICHELIN-Star Jin Xuan (53F) and Flair rooftop bar; direct Lujiazui Line 2/14 metro access via Shanghai IFC.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "RENOVATION NOTICE (H04): Official Jin Xuan site announces enhancement work in 1F lobby/retail, 3F banquet hall & 55F spa starting Oct 1, 2026 — verify Feb 2027 impact before booking.",
-      "roomSource": "https://www.marriott.com/offers/stay-for-longer-OFF-207474/SHASZ-shasz-the-ritz-carlton-shanghai-pudong",
-      "propertySource": "https://www.jinxuanchineserestaurantshanghai.com/",
-      "bookSource": "https://www.marriott.com/offers/stay-for-longer-OFF-207474/SHASZ-shasz-the-ritz-carlton-shanghai-pudong",
-      "official_url": "https://www.marriott.com/offers/stay-for-longer-OFF-207474/SHASZ-shasz-the-ritz-carlton-shanghai-pudong",
-      "youtube": "Ritz-Carlton Shanghai Pudong Bund View King room tour",
+      "tier": "Luxury",
+      "evidence": "Verified Nov 26, 2026 on official Marriott/Ritz-Carlton rooms page: 1 King guest rooms in Pudong IFC; houses 1★ Jin Xuan. ENHANCEMENT ALERT: official notice states public-area enhancement works began Oct 1, 2026 (1F lobby/retail, 3F banquet, 55F spa; no completion date stated).",
+      "fitNote": "Check February/March 2027 renovation status and noise/access impact directly before booking rooms or Jin Xuan.",
+      "roomSource": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/rooms/",
+      "official_url": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/rooms/",
+      "sourceLabel": "Official Ritz-Carlton rooms page",
       "flags": [
         "H01",
         "H02",
         "H03",
         "H04"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
     },
     {
-      "id": "hyatt-on-the-bund-shanghai",
-      "name": "Hyatt on the Bund, Shanghai",
+      "id": "jing-an-shangri-la-shanghai",
       "city": "Shanghai",
-      "area": "199 Huang Pu Road, North Bund, Hongkou, Shanghai 200080",
-      "bed": "1 King (Superior King / Bund View King · 42–300 m²)",
+      "name": "Jing An Shangri-La Shanghai",
+      "area": "Jing'an Temple · Jing'an",
+      "bed": "",
       "bath": "",
-      "evidence": "Official Hyatt overview confirms 620 guest rooms (42–300 m²) including Superior King and Bund View King with spacious marble bathroom.",
-      "amenities": "25m × 12.5m indoor heated pool with whirlpool, Vue Bar rooftop, 24-hour room service, complimentary Wi-Fi.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified (undated widget 'From USD 318.32 Avg/Night' excluded)",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Confirm walk distance to nearest metro station and explicit private ensuite wording before booking.",
-      "roomSource": "https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai/rooms",
-      "propertySource": "https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai",
-      "bookSource": "https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai/rooms",
-      "official_url": "https://www.hyatt.com/grand-hyatt/en-US/shang-hyatt-on-the-bund-shanghai/rooms",
-      "youtube": "Hyatt on the Bund Shanghai room tour",
+      "tier": "Luxury",
+      "evidence": "Verified Nov 26, 2026 on official Deluxe Room page: approx. 42 m², spacious marble bathroom with rain shower head & heated marble floor, Wi-Fi, coffee/tea, minibar. Specific bed type not printed on summary page; undated widget rate excluded.",
+      "fitNote": "Jing'an Temple interchange; verify dated 2027 King/Queen availability and all-in quote directly.",
+      "roomSource": "https://www.shangri-la.com/shanghai/jinganshangrila/rooms-suites/rooms/deluxe-room/",
+      "official_url": "https://www.shangri-la.com/shanghai/jinganshangrila/rooms-suites/rooms/deluxe-room/",
+      "sourceLabel": "Official Shangri-La Deluxe Room page",
       "flags": [
         "H01",
         "H02",
         "H03"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
     },
     {
-      "id": "rosewood-beijing",
-      "name": "Rosewood Beijing",
-      "city": "Beijing",
-      "area": "Jing Guang Centre, Hujialou, Chaoyang District, Beijing 100020",
-      "bed": "1 King (Grand Deluxe Room)",
+      "id": "grand-central-hotel-shanghai",
+      "city": "Shanghai",
+      "name": "Grand Central Hotel Shanghai",
+      "area": "Nanjing East Road · Huangpu",
+      "bed": "",
       "bath": "",
-      "evidence": "Official Grand Deluxe Room page lists one king bed and one full marble bath.",
-      "amenities": "Indoor pool, Sense spa, six restaurants/lounges, walk-in wardrobe, 24-hour in-room dining, direct Hujialou Subway Lines 6/10 access.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Room page states 'one full marble bath'; confirm private ensuite status and 2027 7-night quote on Rosewood engine.",
-      "roomSource": "https://www.rosewoodhotels.com/en/beijing/accommodation/rooms/grand-deluxe-room",
-      "propertySource": "https://www.rosewoodhotels.com/en/beijing",
-      "bookSource": "https://www.rosewoodhotels.com/en/beijing/reservations/select-a-service",
-      "official_url": "https://www.rosewoodhotels.com/en/beijing/accommodation/rooms/grand-deluxe-room",
-      "youtube": "Rosewood Beijing Grand Deluxe Room tour",
+      "tier": "Mid-upper",
+      "evidence": "Official hotel site accessible; room-level Queen+/King bed, private bathroom wording and dated 2027 rates require direct booking check.",
+      "fitNote": "Check exact room category, bed size, private bathroom and all-in 2027 total directly.",
+      "roomSource": "https://www.grandcentralhotelshanghai.com/",
+      "official_url": "https://www.grandcentralhotelshanghai.com/",
+      "sourceLabel": "Official hotel site",
       "flags": [
         "H01",
         "H02",
         "H03"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
+    },
+    {
+      "id": "the-middle-house",
+      "city": "Shanghai",
+      "name": "Upper House Shanghai (formerly The Middle House)",
+      "area": "West Nanjing Road · Jing'an",
+      "bed": "1 King (Studio 50 / 60 / 70 · 50–70 m²)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Luxury",
+      "evidence": "Swire Hotels rebranded The Middle House to Upper House Shanghai; official rooms page confirms Studio 50/60/70 (50–70 m²) with King bed and spa-inspired bathroom.",
+      "fitNote": "HKRI Taikoo Hui / Nanjing West Rd hub; verify literal private ensuite wording and all-in 2027 7-night rate at upperhouse.com.",
+      "roomSource": "https://www.upperhouse.com/en/shanghai/rooms/",
+      "official_url": "https://www.upperhouse.com/en/shanghai/rooms/",
+      "sourceLabel": "Official Upper House Shanghai rooms",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "the-sukhothai-shanghai",
+      "city": "Shanghai",
+      "name": "The Sukhothai Shanghai",
+      "area": "West Nanjing Road · Jing'an",
+      "bed": "",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified (prior $35,148 outlier quarantined)",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Luxury",
+      "evidence": "Property moved to shanghai.sukhothai.com (Nov 26, 2026); rooms subpage blocked automated fetch. Prior $35,148 7-night outlier quarantined in flags.",
+      "fitNote": "Open official site manually to verify exact room bed/bathroom and dated 2027 all-in rate.",
+      "roomSource": "https://shanghai.sukhothai.com/en/",
+      "official_url": "https://shanghai.sukhothai.com/en/",
+      "sourceLabel": "Official Sukhothai Shanghai site",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "B02",
+        "L01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "the-westin-bund-center-shanghai",
+      "city": "Shanghai",
+      "name": "The Westin Bund Center, Shanghai",
+      "area": "The Bund · Huangpu",
+      "bed": "",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Upscale",
+      "evidence": "Official Marriott property page; verify exact room category bed size, private bathroom wording and dated 2027 all-in total.",
+      "fitNote": "Aggregator observations quarantined; obtain live Marriott.com quote for exact dates.",
+      "roomSource": "https://www.marriott.com/en-us/hotels/shawi-the-westin-bund-center-shanghai/overview/",
+      "official_url": "https://www.marriott.com/en-us/hotels/shawi-the-westin-bund-center-shanghai/overview/",
+      "sourceLabel": "Official Marriott page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "B02"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "renaissance-shanghai-yu-garden",
+      "city": "Shanghai",
+      "name": "Renaissance Shanghai Yu Garden Hotel",
+      "area": "Yu Garden · Huangpu",
+      "bed": "1 King (Deluxe Room, One King · 336 rooms)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Upscale",
+      "evidence": "Official Marriott rooms page (corrected code 'shasy') confirms Deluxe Room One King inventory and explicitly warns that King/Twin bed types cannot be swapped after booking.",
+      "fitNote": "Lock One King explicitly at checkout (no post-booking bed swaps); confirm literal private ensuite bath and all-in 2027 7-night total.",
+      "roomSource": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
+      "official_url": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
+      "sourceLabel": "Official Marriott rooms page (shasy)",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "L01",
+        "H04"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "okura-garden-hotel-shanghai",
+      "city": "Shanghai",
+      "name": "Okura Garden Hotel Shanghai",
+      "area": "Former French Concession · Huangpu",
+      "bed": "",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Mid-upper",
+      "evidence": "Official Okura hotel page; confirm bookable room bed size, private bathroom wording and dated 2027 all-in total directly.",
+      "fitNote": "Aggregator observations quarantined; obtain live official quote for exact dates.",
+      "roomSource": "https://www.gardenhotelshanghai.com/en/",
+      "official_url": "https://www.gardenhotelshanghai.com/en/",
+      "sourceLabel": "Official hotel site",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "B02"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "the-peninsula-beijing",
+      "city": "Beijing",
+      "name": "The Peninsula Beijing",
+      "area": "Wangfujing · Dongcheng",
+      "bed": "King or Twin (all-suite hotel; confirm specific suite bedding)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Luxury",
+      "evidence": "Official Peninsula Beijing all-suite property in Wangfujing; confirm specific suite bed config, explicit private-bathroom wording and dated 2027 all-in total.",
+      "fitNote": "Central Dongcheng candidate; check official Peninsula booking engine for exact 2027 dates.",
+      "roomSource": "https://www.peninsula.com/en/beijing/5-star-luxury-hotel-wangfujing",
+      "official_url": "https://www.peninsula.com/en/beijing/5-star-luxury-hotel-wangfujing",
+      "sourceLabel": "Official Peninsula Beijing page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "dashboard": false
     },
     {
       "id": "regent-beijing",
+      "city": "Beijing",
       "name": "Regent Beijing",
-      "city": "Beijing",
-      "area": "99 Jinbao Street, Dongcheng District, Beijing 100005",
-      "bed": "1 King (Classic Room option)",
+      "area": "Jinbao Street · Dongcheng",
+      "bed": "",
       "bath": "",
-      "evidence": "Official room page lists Classic Room with 1 King option and marble bathroom with soaking tub and rain shower.",
-      "amenities": "Indoor pool, spa, multiple dining venues, immediate Dengshikou Subway Line 5 access near Wangfujing & Forbidden City.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Confirm exact Classic King ensuite arrangement and 2027 7-night total on IHG booking engine.",
-      "roomSource": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail/rooms-and-suites",
-      "propertySource": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
-      "bookSource": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail/rooms-and-suites",
-      "official_url": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail/rooms-and-suites",
-      "youtube": "Regent Beijing Classic Room tour",
+      "tier": "Luxury",
+      "evidence": "Official IHG hotel detail page; confirm bookable room bed size, private bathroom and dated 2027 all-in total directly.",
+      "fitNote": "Aggregator observations quarantined; verify on ihg.com for exact dates.",
+      "roomSource": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "official_url": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "sourceLabel": "Official IHG page",
       "flags": [
         "H01",
         "H02",
-        "H03"
+        "H03",
+        "B02"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "china-world-summit-wing-beijing",
-      "name": "China World Summit Wing, Beijing",
-      "city": "Beijing",
-      "area": "No. 1 Jianguomenwai Avenue, Chaoyang CBD, Beijing 100004",
-      "bed": "1 King (Executive ~55 m² / Premier ~65 m² / Grand Premier ~75 m², Levels 64–77)",
-      "bath": "",
-      "evidence": "Official Shangri-La rooms overview confirms Levels 64–77 guestrooms (55–75 m²) with King bed options and marble bathrooms containing soaking tub, separate rainforest shower stall and double basins.",
-      "amenities": "Infinity pool on Level 78, CHI Spa, Atmosphere Bar (L80), direct Guomao Subway Lines 1/10 interchange access.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Select King category and confirm private ensuite status + refundable 7-night 2027 total on Shangri-La engine.",
-      "roomSource": "https://www.shangri-la.com/en/beijing/chinaworldsummitwing/rooms-suites/",
-      "propertySource": "https://www.shangri-la.com/en/beijing/chinaworldsummitwing/",
-      "bookSource": "https://www.shangri-la.com/en/beijing/chinaworldsummitwing/rooms-suites/",
-      "official_url": "https://www.shangri-la.com/en/beijing/chinaworldsummitwing/rooms-suites/",
-      "youtube": "China World Summit Wing Beijing Premier King room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
     },
     {
       "id": "hilton-beijing-wangfujing",
-      "name": "Hilton Beijing Wangfujing",
       "city": "Beijing",
-      "area": "8 Wangfujing East Street, Dongcheng, Beijing",
-      "bed": "1 King (Deluxe Plus Room / King Premiere Suite inventory)",
+      "name": "Hilton Beijing Wangfujing",
+      "area": "Wangfujing · Dongcheng",
+      "bed": "",
       "bath": "",
-      "evidence": "Official Hilton property details confirm 8 Wangfujing East Street location (0.5 km to Forbidden City), Deluxe Plus Room with walk-in rain shower and bathroom TV, and King Premiere Suite.",
-      "amenities": "Indoor rooftop pool, fitness center, spa, Executive Lounge, Chynna & Vasco's restaurants; Wi-Fi free for Hilton Honors direct bookings.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Open live Hilton rate selector in browser to confirm exact 1-King room category, private ensuite bath, and 2027 7-night total.",
+      "tier": "Upscale",
+      "evidence": "Hilton official property page returned automated fetch error; open manually in browser to verify bed, private bathroom and 2027 all-in rate.",
+      "fitNote": "Flagged L01 for manual browser verification on hilton.com.",
       "roomSource": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
-      "propertySource": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/hotel-location/",
-      "bookSource": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
       "official_url": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
-      "youtube": "Hilton Beijing Wangfujing King room tour",
+      "sourceLabel": "Official Hilton page",
       "flags": [
         "H01",
         "H02",
         "H03",
         "L01"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
     },
     {
       "id": "mandarin-oriental-guangzhou",
-      "name": "Mandarin Oriental, Guangzhou",
       "city": "Guangzhou",
-      "area": "389 Tianhe Road, Taikoo Hui, Tianhe District, Guangzhou 510620",
-      "bed": "1 King (Deluxe Room · 60 m² / 646 sq ft)",
+      "name": "Mandarin Oriental, Guangzhou",
+      "area": "Tianhe · Taikoo Hui",
+      "bed": "King or Twin (Deluxe Room, 60 m²)",
       "bath": "",
-      "evidence": "Official Deluxe Room page lists 60 m² room with King or Twin bed, walk-in wardrobe, and spa-inspired bathroom split into dry zone (toilet + twin vanity) and wet zone (circular bathtub + rainforest shower); page displays baseline 'Rate Per Night: CNY 2,623.50' (not a dated 2027 7-night quote).",
-      "amenities": "Home to 2-MICHELIN-Star Jiang by Chef Fei; heated outdoor 25m pool, spa, fitness center, direct Shipaiqiao Line 3 / Taikoo Hui access.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified (undated widget 'CNY 2,623.50 avg/night' excluded)",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Baseline room-page rate (CNY 2,623.50/night) is not multiplied into official 2027 totals; query exact Feb–Mar 2027 dates with taxes/service included.",
+      "tier": "Luxury",
+      "evidence": "Verified Nov 26, 2026 on official Deluxe Room page: 60 m², King or Twin, dry/wet spa-inspired bathroom with circular bathtub & rainforest shower, walk-in wardrobe, Nespresso; houses 2★ Jiang by Chef Fei. Literal 'private/en-suite' phrasing not printed; undated widget rate excluded.",
+      "fitNote": "Direct Taikoo Hui mall/metro access and on-site 2★ Jiang by Chef Fei; confirm dated 2027 all-in total directly.",
       "roomSource": "https://www.mandarinoriental.com/en/guangzhou/tianhe/stay/deluxe-room",
-      "propertySource": "https://www.mandarinoriental.com/en/guangzhou/tianhe",
-      "bookSource": "https://www.mandarinoriental.com/en/guangzhou/tianhe/stay/deluxe-room",
       "official_url": "https://www.mandarinoriental.com/en/guangzhou/tianhe/stay/deluxe-room",
-      "youtube": "Mandarin Oriental Guangzhou Deluxe King room tour",
+      "sourceLabel": "Official Mandarin Oriental Deluxe Room page",
       "flags": [
         "H01",
         "H02",
         "H03"
       ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      "dashboard": false
+    },
+    {
+      "id": "four-seasons-hotel-guangzhou",
+      "city": "Guangzhou",
+      "name": "Four Seasons Hotel Guangzhou",
+      "area": "Zhujiang New Town · Tianhe",
+      "bed": "",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Luxury",
+      "evidence": "Official Four Seasons property page; confirm room bed size, private bathroom wording and dated 2027 all-in total.",
+      "fitNote": "Zhujiang New Town candidate; verify live rate on fourseasons.com.",
+      "roomSource": "https://www.fourseasons.com/guangzhou/",
+      "official_url": "https://www.fourseasons.com/guangzhou/",
+      "sourceLabel": "Official Four Seasons page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "dashboard": false
     },
     {
       "id": "sofitel-guangzhou-sunrich",
+      "city": "Guangzhou",
       "name": "Sofitel Guangzhou Sunrich",
-      "city": "Guangzhou",
-      "area": "988 Guangzhou Da Dao Zhong, Tianhe District, Guangzhou",
-      "bed": "1 King · Superior Room (48 m²)",
-      "bath": "",
-      "evidence": "Official Accor page lists SUPERIOR ROOM, 1 King Bed; 48 m²; maximum occupancy 4.",
-      "amenities": "Indoor pool, So SPA, fitness center, five dining venues and lounge bar in Tianhe.",
-      "total": "",
-      "transit": "",
-      "activityTransit": "",
-      "rank": "",
-      "fitNote": "Confirm explicit private ensuite wording, cancellation cutoff, and dated Feb–Mar 2027 7-night total on Accor engine.",
-      "roomSource": "https://all.accor.com/hotel/6318/index.en.shtml",
-      "propertySource": "https://all.accor.com/hotel/6318/index.en.shtml",
-      "bookSource": "https://all.accor.com/hotel/6318/index.en.shtml",
-      "official_url": "https://all.accor.com/hotel/6318/index.en.shtml",
-      "youtube": "Sofitel Guangzhou Sunrich Superior King room tour",
-      "flags": [
-        "H01",
-        "H02",
-        "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
-    },
-    {
-      "id": "the-ritz-carlton-guangzhou",
-      "name": "The Ritz-Carlton, Guangzhou",
-      "city": "Guangzhou",
-      "area": "3 Xing'an Road, Pearl River New City, Tianhe District, Guangzhou",
+      "area": "Tianhe CBD · Guangzhou",
       "bed": "",
       "bath": "",
-      "evidence": "Official accommodation overview describes standalone marble tubs and Pearl River/city views; exact 1-King room category and private ensuite wording require checkout confirmation.",
-      "amenities": "Home to 1-MICHELIN-Star Lai Heen; heated outdoor pool, spa, 24-hour fitness center near Canton Tower across Pearl River.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Confirm exact King room category, private ensuite bath, and 2027 7-night total on Marriott/Ritz-Carlton engine.",
-      "roomSource": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/rooms/",
-      "propertySource": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/overview/",
-      "bookSource": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/overview/",
-      "official_url": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/rooms/",
-      "youtube": "Ritz-Carlton Guangzhou Deluxe room tour",
+      "tier": "Upscale",
+      "evidence": "Official Accor property page; confirm room bed size, private bathroom and dated 2027 all-in total directly.",
+      "fitNote": "Aggregator observations quarantined; verify on all.accor.com for exact dates.",
+      "roomSource": "https://all.accor.com/hotel/6318/index.en.shtml",
+      "official_url": "https://all.accor.com/hotel/6318/index.en.shtml",
+      "sourceLabel": "Official Accor page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "B02"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "the-st-regis-chengdu",
+      "city": "Chengdu",
+      "name": "The St. Regis Chengdu",
+      "area": "Chunxi Road · Jinjiang",
+      "bed": "",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Luxury",
+      "evidence": "Official Marriott/St. Regis property page; confirm room bed size, private bathroom and dated 2027 all-in total directly.",
+      "fitNote": "Central Chunxi Road location; aggregator observations quarantined.",
+      "roomSource": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
+      "official_url": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
+      "sourceLabel": "Official Marriott page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "B02"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "waldorf-astoria-shanghai-bund",
+      "city": "Shanghai",
+      "name": "Waldorf Astoria Shanghai on the Bund",
+      "area": "No. 2 Zhongshan Dong Yi Rd · The Bund",
+      "bed": "1 King or Double Queen (King Deluxe / Double Queen Deluxe)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Ultra-luxury",
+      "evidence": "Official Hilton rooms inventory lists King Deluxe Room and Double Queen Deluxe Room (260 rooms & suites) with marble bathrooms; home to 1★ Ling Long.",
+      "fitNote": "Heritage Bund Club + tower wings; confirm explicit private ensuite bath and 2027 7-night tax-inclusive quote on Hilton.com.",
+      "roomSource": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/rooms/",
+      "official_url": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/rooms/",
+      "sourceLabel": "Official Hilton rooms page",
       "flags": [
         "H01",
         "H02",
         "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      ]
     },
     {
-      "id": "upper-house-chengdu",
-      "name": "Upper House Chengdu (formerly The Temple House)",
-      "city": "Chengdu",
-      "area": "81 Bitieshi Street, Taikoo Li, Jinjiang District, Chengdu 610021",
-      "bed": "1 King (Studio 60 · 63 m² / Studio 70 · 72 m²)",
+      "id": "andaz-xintiandi-shanghai",
+      "city": "Shanghai",
+      "name": "Andaz Xintiandi, Shanghai",
+      "area": "88 Songshan Rd · Xintiandi · Huangpu",
+      "bed": "1 King (2m bed · ~41 m² King room)",
       "bath": "",
-      "evidence": "Swire Hotels rebranded The Temple House to Upper House Chengdu; official rooms page confirms Studio 60 (63 m²) and Studio 70 (72 m²) with King bed option and spa-inspired bathroom.",
-      "amenities": "Home to 1-MICHELIN-Star & Green-Star Mi Xun Teahouse; MI XUN Spa, indoor lap pool, gym, steps from Chunxi Road / Taikoo Li.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Book via rebranded upperhouse.com/en/chengdu/; confirm private ensuite bath and dated 2027 7-night total.",
-      "roomSource": "https://www.upperhouse.com/en/chengdu/rooms/",
-      "propertySource": "https://www.upperhouse.com/en/chengdu/",
-      "bookSource": "https://www.upperhouse.com/en/chengdu/rooms/",
-      "official_url": "https://www.upperhouse.com/en/chengdu/rooms/",
-      "youtube": "The Temple House Upper House Chengdu Studio 60 tour",
+      "tier": "Luxury lifestyle",
+      "evidence": "Official Hyatt rooms page (code 'shaaz') confirms ~41 m² guestroom with 2m King bed, oversized LED-lit bathtub, rain shower and heated bathroom floor.",
+      "fitNote": "Steps from Xintiandi & 2★ T'ang Court; confirm literal private ensuite wording and all-in 2027 rate on Hyatt.com.",
+      "roomSource": "https://www.hyatt.com/andaz/en-US/shaaz-andaz-xintiandi-shanghai/rooms",
+      "official_url": "https://www.hyatt.com/andaz/en-US/shaaz-andaz-xintiandi-shanghai/rooms",
+      "sourceLabel": "Official Hyatt rooms page",
+      "flags": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "id": "hilton-city-center",
+      "city": "Shanghai",
+      "name": "Hilton Shanghai City Center",
+      "area": "488 West Yan'an Rd · Jing'an / Changning border",
+      "bed": "1 King (Deluxe King Guest Room · 381 rooms)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Upper upscale",
+      "evidence": "Official Hilton property page (corrected code 'shamshi') and Hilton APAC opening release confirm 488 West Yan'an Rd address and Deluxe King Guest Room inventory.",
+      "fitNote": "Opened 2026 near Jing'an Temple & Wukang/Anfu Rd; use code 'shamshi' (legacy 'shaocis' HTTP 500) and verify private ensuite + 2027 quote.",
+      "roomSource": "https://www.hilton.com/en/hotels/shamshi-hilton-shanghai-city-center/hotel-location/",
+      "official_url": "https://www.hilton.com/en/hotels/shamshi-hilton-shanghai-city-center/hotel-location/",
+      "sourceLabel": "Official Hilton property page",
       "flags": [
         "H01",
         "H02",
         "H03",
         "H04"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      ]
     },
     {
-      "id": "the-st-regis-chengdu",
-      "name": "The St. Regis Chengdu",
-      "city": "Chengdu",
-      "area": "88 Tidu Street, Qingyang District, Chengdu 610016",
-      "bed": "1 King · Guest room, City view",
+      "id": "rosewood-beijing",
+      "city": "Beijing",
+      "name": "Rosewood Beijing",
+      "area": "Jing Guang Centre · Hujialou · Chaoyang",
+      "bed": "1 King (Grand Deluxe Room)",
       "bath": "",
-      "evidence": "Official room inventory lists Guest room, 1 King, City view alongside separate 2-Double options.",
-      "amenities": "Signature butler service, fitness center, indoor heated pool and seasonal outdoor pool near Tianfu Square / Chunxi Road.",
       "total": "",
+      "totalNote": "No official 2027 7-night total verified",
       "transit": "",
       "activityTransit": "",
       "rank": "",
-      "fitNote": "Select 1-King room category (not 2-Double) and confirm private ensuite bath + 2027 7-night quote on Marriott engine.",
-      "roomSource": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/rooms/",
-      "propertySource": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
-      "bookSource": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/overview/",
-      "official_url": "https://www.marriott.com/en-us/hotels/ctuxr-the-st-regis-chengdu/rooms/",
-      "youtube": "The St Regis Chengdu King room tour",
+      "tier": "Ultra-luxury",
+      "evidence": "Official Grand Deluxe Room page lists one king bed and one full marble bath, indoor pool and Sense spa.",
+      "fitNote": "Direct Hujialou Subway Lines 6/10 interchange; confirm private ensuite wording and dated 2027 7-night quote.",
+      "roomSource": "https://www.rosewoodhotels.com/en/beijing/accommodation/rooms/grand-deluxe-room",
+      "official_url": "https://www.rosewoodhotels.com/en/beijing/accommodation/rooms/grand-deluxe-room",
+      "sourceLabel": "Official Rosewood room page",
       "flags": [
         "H01",
         "H02",
         "H03"
-      ],
-      "quote_date": "",
-      "checkin": "",
-      "checkout": ""
+      ]
+    },
+    {
+      "id": "china-world-summit-wing-beijing",
+      "city": "Beijing",
+      "name": "China World Summit Wing, Beijing",
+      "area": "No. 1 Jianguomenwai Ave · Guomao CBD · Chaoyang",
+      "bed": "1 King (Executive / Premier / Grand Premier · 55–75 m², L64–77)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Ultra-luxury",
+      "evidence": "Official Shangri-La rooms overview confirms Levels 64–77 guestrooms (55–75 m²) with King bed options and marble bathrooms with soaking tub and rain shower.",
+      "fitNote": "Direct Guomao Subway Lines 1/10 interchange; confirm private ensuite bath and 2027 7-night rate.",
+      "roomSource": "https://www.shangri-la.com/en/beijing/chinaworldsummitwing/rooms-suites/",
+      "official_url": "https://www.shangri-la.com/en/beijing/chinaworldsummitwing/rooms-suites/",
+      "sourceLabel": "Official Shangri-La rooms",
+      "flags": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "id": "the-ritz-carlton-guangzhou",
+      "city": "Guangzhou",
+      "name": "The Ritz-Carlton, Guangzhou",
+      "area": "3 Xing'an Rd · Pearl River New City · Tianhe",
+      "bed": "",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Ultra-luxury",
+      "evidence": "Official accommodation overview describes standalone marble tubs and Pearl River views; home to 1★ Lai Heen. Exact 1-King room category requires checkout selection.",
+      "fitNote": "Across Pearl River from Canton Tower; verify 1-King + private ensuite allocation and 2027 7-night total.",
+      "roomSource": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/rooms/",
+      "official_url": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/rooms/",
+      "sourceLabel": "Official Ritz-Carlton rooms",
+      "flags": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "id": "upper-house-chengdu",
+      "city": "Chengdu",
+      "name": "Upper House Chengdu (formerly The Temple House)",
+      "area": "81 Bitieshi St · Taikoo Li · Jinjiang",
+      "bed": "1 King (Studio 60 · 63 m² / Studio 70 · 72 m²)",
+      "bath": "",
+      "total": "",
+      "totalNote": "No official 2027 7-night total verified",
+      "transit": "",
+      "activityTransit": "",
+      "rank": "",
+      "tier": "Ultra-luxury",
+      "evidence": "Swire Hotels rebranded The Temple House to Upper House Chengdu; official rooms page confirms Studio 60 (63 m²) King bed and spa bathroom; home to 1★+Green★ Mi Xun Teahouse.",
+      "fitNote": "Central Chunxi Rd / Taikoo Li location; confirm literal private ensuite wording and all-in 2027 7-night total.",
+      "roomSource": "https://www.upperhouse.com/en/chengdu/rooms/",
+      "official_url": "https://www.upperhouse.com/en/chengdu/rooms/",
+      "sourceLabel": "Official Upper House Chengdu rooms",
+      "flags": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
     }
   ],
   "clusters": [
     {
       "city": "Shanghai",
-      "edition": "2026 · city subset of Shanghai–Jiangsu–Zhejiang",
-      "count": "51 starred · 156 listed",
-      "detail": "1 three-star (Taian Table; Ultraviolet closed in 2025) · 12 two-star · 38 one-star. Full 3-province regional release totals 77 starred / 409 listed.",
-      "comparability": "Deepest verified menu-pricing and hotel-dining shortlist; city counts are not <=60-minute hotel transit catchments.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang"
+      "count": "51 starred (city) · 77 (regional)",
+      "edition": "2026 Shanghai–Jiangsu–Zhejiang edition",
+      "note": "Regional guide covers three areas; Shanghai city subset has 51 starred restaurants (Ultraviolet closed Mar 2025, excluded). Not a 1-hour hotel transit radius.",
+      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "sourceLabel": "Official MICHELIN release"
     },
     {
       "city": "Beijing",
-      "edition": "2026 · city selection",
       "count": "32 starred",
-      "detail": "2 three-star (Xin Rong Ji Xinyuan South Rd, Chao Shang Chao) · 6 two-star · 24 one-star.",
-      "comparability": "Imperial-monument + hutong fine-dining alternative; hotel rates and <=60-minute transit radii remain open.",
-      "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-beijing-2026"
+      "edition": "2026 Beijing edition",
+      "note": "City-wide guide total; not a 1-hour hotel radius. Live MICHELIN Guide verified King's Joy at 2 Stars (ignore older 3-star videos).",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/beijing-2026-stars-green-star-bib-gourmand-special-awards",
+      "sourceLabel": "Official MICHELIN release"
     },
     {
       "city": "Guangzhou",
-      "edition": "2026 · city subset of Guangzhou–Shenzhen",
-      "count": "20 starred · 117 listed",
-      "detail": "0 three-star · 3 two-star · 17 one-star; 52 Bib Gourmand and 45 Selected in the combined release.",
-      "comparability": "Warmest Feb–Mar climate and Cantonese value dining; do not merge Shenzhen counts into Guangzhou.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-stars-guangzhou-shenzhen-2026"
+      "count": "20 starred (city)",
+      "edition": "2026 Guangdong edition",
+      "note": "Guangzhou city subset inside the Guangdong Guide; not a 1-hour hotel radius.",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-first-michelin-guide-guangdong-2026-celebrates-cantonese-cuisine",
+      "sourceLabel": "Official MICHELIN release"
     },
     {
       "city": "Chengdu",
-      "edition": "2027 · city selection",
-      "count": "15 starred · 84 listed",
-      "detail": "1 three-star (Xin Rong Ji) · 1 two-star (Yu Zhi Lan) · 13 one-star; 32 Bib Gourmand and 37 Selected.",
-      "comparability": "Sichuan gastronomy + giant pandas (note Jinsha Site Museum closed through Apr 30, 2027); 2027 edition differs from 2026 cities.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-stars-chengdu-2027"
+      "count": "15 starred",
+      "edition": "2027 Chengdu edition",
+      "note": "Newer 2027 guide edition; not directly comparable to 2026 editions without noting year. Includes 1★+Green Star Mi Xun Teahouse.",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-chengdu-2027",
+      "sourceLabel": "Official MICHELIN release"
     }
   ],
   "restaurants": [
     {
       "id": "taian-table",
       "city": "Shanghai",
-      "name": "Taian Table (泰安门 · sole Shanghai 3★)",
+      "name": "Taian Table",
+      "area": "Changning (Zhenning Rd)",
+      "edition": "2026",
       "status": "3 MICHELIN Stars · 2026",
-      "distinction": "Starred · 3★",
       "cuisine": "Innovative",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥5,176 (10-course) / ¥5,776 (12-course) = 2 × ¥2,588 / ¥2,888 published at bookings.taian-table.com/faq; add-ons & beverages extra.",
-      "hours": "Tue–Sat, dinner bookings 18:00–20:00 (closed Sun–Mon); meal duration 2–3 hours.",
-      "exceptions": "Bookings open up to 90 days out with ¥2,000/person deposit; seasonal menu pricing and 2027 holiday closures require confirmation.",
-      "guide": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "coupleTotal": "¥5,176–¥5,776 = 2 × (¥2,588 / ¥2,888) for 10/12-course tasting menu per live bookings.taian-table.com/faq (¥2,000/person deposit; add-ons & beverages extra)",
+      "hours": "Tue–Sat dinner only, bookings 18:00–20:00 (2–3 hr duration); closed Sun & Mon per bookings.taian-table.com/faq",
+      "exceptions": "No 2027 Spring Festival schedule published yet; check monthly booking release directly.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "officialLabel": "MICHELIN Guide",
       "venue": "https://bookings.taian-table.com/faq",
-      "video": "Taian Table Shanghai restaurant",
-      "official_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Taian+Table+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/taiantableshanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jul 2026 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@stefan_stiller_taian_table (Chef-founder profile)",
+          "url": "https://www.instagram.com/stefan_stiller_taian_table/",
+          "kind": "Official profile"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Shanghai 3-Star tasting walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=9FbSPG4We0M",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R02",
-        "R04",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube review (2026)": "https://www.youtube.com/watch?v=RYsEUZJSrN8",
-        "YouTube review (2)": "https://www.youtube.com/watch?v=9FbSPG4We0M",
-        "Chef Stefan Stiller IG": "https://www.instagram.com/stefan_stiller_taian_table/",
-        "TikTok search": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai"
-      }
-    },
-    {
-      "id": "tang-court",
-      "city": "Shanghai",
-      "name": "T'ang Court (唐阁 · The Langham Xintiandi)",
-      "status": "2 MICHELIN Stars (promoted 1★→2★ in 2026) · 2026",
-      "distinction": "Starred · 2★",
-      "cuisine": "Cantonese",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥888 (Seasonal Dim Sum Lunch Set for Two) / ¥2,288 (Seasonal All-Day Set Menu for Two), incl. service charge & tax per official 2026 Langham PDF.",
-      "hours": "11:30–14:00 and 17:30–21:00 (Langham lists Mon–Sun; MICHELIN Guide lists Tue–Sun).",
-      "exceptions": "Monday open/closed discrepancy between Langham and MICHELIN (R05); 2027 seasonal set validity requires reconfirmation.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
-      "venue": "https://www.langhamhotels.com/content/dam/langham-hotels/hotels/asia/tlshx/dining/tang-court/documents/seasonal-set-menu-selection-2026.pdf",
-      "video": "T'ang Court Shanghai Langham",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
-      "flags": [
-        "R02",
-        "R05",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=T%27ang%20Court%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Tang%20Court%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Tang%20Court%20Shanghai"
-      }
-    },
-    {
-      "id": "bao-li-xuan",
-      "city": "Shanghai",
-      "name": "Bao Li Xuan (宝丽轩 · Bulgari Hotel)",
-      "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
-      "cuisine": "Cantonese",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥3,576 = 2 × ¥1,788 Chef's Degustation Menu (incl. 10% service charge + 6% VAT per official Bulgari menu PDF); tea & wine pairing extra.",
-      "hours": "Mon–Fri 11:30–14:00, Sat–Sun 11:30–14:30; Dinner daily 17:30–22:00 (Bulgari Hotel & MICHELIN Guide).",
-      "exceptions": "48-hour advance order required for select banquet specialties on official PDF; recheck 2027 seasonal pricing.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
-      "venue": "https://www.bulgarihotels.com/.rest/dam/jcr:090d737a-581c-4633-9ba4-76cdbc8ba5e4/bao-li-xuan-menu-en.pdf",
-      "video": "Bao Li Xuan Bulgari Hotel Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
-      "flags": [
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube review": "https://www.youtube.com/watch?v=6zxepoFgqJk",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Bao%20Li%20Xuan%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20Shanghai"
-      }
-    },
-    {
-      "id": "yi-long-court",
-      "city": "Shanghai",
-      "name": "Yi Long Court (逸龙阁 · The Peninsula Shanghai)",
-      "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
-      "cuisine": "Cantonese",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥695 (Dim Sum Lunch for 2: 2 × ¥298 + 16.6% surcharge) / ¥2,304 (Chef's Tasting Dinner for 2: 2 × ¥988 + 16.6% surcharge), per official Peninsula offer.",
-      "hours": "Daily 11:30–14:30 and 18:00–22:30 (The Peninsula Shanghai & MICHELIN Guide).",
-      "exceptions": "16.6% surcharge included in calculated couple total; confirm 2027 seasonal menu rollover and blackout dates.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
-      "venue": "https://www.peninsula.com/en/shanghai/special-offers/dining/sumptuous-set-menus-at-yi-long-court",
-      "video": "Yi Long Court Peninsula Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
-      "flags": [
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Yi%20Long%20Court%20Peninsula%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yi%20Long%20Court%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Yi%20Long%20Court%20Shanghai"
-      }
-    },
-    {
-      "id": "sir-elly-s",
-      "city": "Shanghai",
-      "name": "Sir Elly's (艾利爵士顶层餐厅 · The Peninsula Shanghai)",
-      "status": "MICHELIN Guide Selected · 2026 (not a star)",
-      "distinction": "Guide Selected · not a star",
-      "cuisine": "European Contemporary",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥3,004 (5-course menu for 2: 2 × ¥1,288 + 16.6% surcharge per official Peninsula Q1 2026 menu PDF; caviar add-on +¥250/person + 16.6%).",
-      "hours": "Wed–Sun 18:00–22:30; closed Mon–Tue (The Peninsula Shanghai & MICHELIN Guide).",
-      "exceptions": "Non-starred Guide Selected benchmark showing high-end Bund rooftop pricing; confirm Q1 2027 menu update.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
-      "venue": "https://www.peninsula.com/-/media/03-shanghai-property/dining/2026/q1/new-menu-in-se.pdf",
-      "video": "Sir Ellys Peninsula Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
-      "flags": [
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Sir%20Ellys%20Peninsula%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Sir%20Ellys%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Sir%20Ellys%20Shanghai"
-      }
-    },
-    {
-      "id": "fu-he-hui",
-      "city": "Shanghai",
-      "name": "Fu He Hui (福和慧)",
-      "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
-      "cuisine": "Vegetarian",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 11:00–13:00 and 17:30–21:00 (MICHELIN Guide listing; 1037 Yuyuan Road, Changning).",
-      "exceptions": "Official set-menu tariff not published on static venue web page; confirm seasonal vegetarian tasting price when booking.",
-      "guide": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
-      "venue": "",
-      "video": "Fu He Hui Shanghai restaurant",
-      "official_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube review": "https://www.youtube.com/watch?v=9kg84n9XtD4",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Fu%20He%20Hui%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai"
-      }
+      "dashboard": true
     },
     {
       "id": "canton-8",
       "city": "Shanghai",
-      "name": "Canton 8 (喜粤8号 · Runan Street)",
+      "name": "Canton 8 (Runan Street)",
+      "area": "Huangpu (63 Runan St)",
+      "edition": "2026",
       "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
       "cuisine": "Cantonese",
       "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Live MICHELIN page (No. 63 Runan Street, Huangpu) omits hours and menu prices; prior non-official blog link removed (R06).",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "exceptions": "MICHELIN Guide lists no official website or operating hours (+86 21 6733 7123). Non-official blog link removed during Nov 26, 2026 audit; confirm hours & 2027 holiday status by phone/concierge.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "video": "Canton 8 Runan Street Shanghai",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Canton+8+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Canton%208%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/canton8shanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2026 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=ynxLsnBkVDA",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Jan 2026 lunch review (third-party)",
+          "url": "https://www.youtube.com/watch?v=MerTf4Wl8Gg",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@eatplorer review clip (third-party)",
+          "url": "https://www.tiktok.com/@eatplorer/video/7337290694689639688",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Reservation tips discover page",
+          "url": "https://www.tiktok.com/discover/canton-8-shanghai-reservation",
+          "kind": "TikTok discover"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Canton 8 Runan St review (third-party)",
+          "url": "https://www.youtube.com/watch?v=yvWT26VaVnk",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@cornettomind Canton 8 clip (third-party)",
+          "url": "https://www.tiktok.com/@cornettomind/video/7495712482594393352",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
-        "R06",
+        "R05",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "tang-court",
+      "city": "Shanghai",
+      "name": "T'ang Court",
+      "area": "Xintiandi (The Langham, 5F)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥888 (Classic Dim Sum Lunch Set for Two) or ¥2,288 (All Day Set Menu for Two), inclusive of service charge & tax per 2026 Langham PDF; confirm 2027 menu",
+      "hours": "Lunch 11:30–14:00; Dinner 17:30–21:00 (CONFLICT: official Langham page says both 'daily' and 'Off on Monday' — verify directly)",
+      "exceptions": "Monday contradiction flagged (R05); confirm Feb/Mar 2027 Spring Festival schedule and exact set pricing via Langham concierge.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court",
       "socials": {
-        "YouTube review (1)": "https://www.youtube.com/watch?v=yvWT26VaVnk",
-        "YouTube review (2025)": "https://www.youtube.com/watch?v=1V1Yqa9yCYQ",
-        "TikTok review (1)": "https://www.tiktok.com/@cornettomind/video/7495712482594393352",
-        "TikTok review (2)": "https://www.tiktok.com/@eatplorer/video/7337290694689639688"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Tang+Court+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Tang%20Court%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/tangcourtshanghai/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "R05",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "bao-li-xuan",
+      "city": "Shanghai",
+      "name": "Bao Li Xuan",
+      "area": "Suhe Creek (Bvlgari Hotel)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥3,576 = 2 × ¥1,788 (Autumn Set Menu incl. service fee & tax; beverage pairing +¥800/pp; lunch dim sum à la carte ¥36–¥148 per official PDF); confirm 2027 seasonal menu",
+      "hours": "Lunch 11:30–14:00; Dinner 17:30–22:00 (official Bvlgari page does not specify operating days or closed days)",
+      "exceptions": "Confirm operating days and Feb/Mar 2027 seasonal menu directly with Bvlgari Hotel Shanghai.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.bulgarihotels.com/en-US/shanghai/dining/bao-li-xuan",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Bao+Li+Xuan+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20Shanghai",
+        "instagram": "https://www.instagram.com/bulgarihotels/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Bao Li Xuan dining video (third-party)",
+          "url": "https://www.youtube.com/watch?v=6zxepoFgqJk",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@bulgarihotels (official brand profile)",
+          "url": "https://www.instagram.com/bulgarihotels/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": true
+    },
+    {
+      "id": "fu-he-hui",
+      "city": "Shanghai",
+      "name": "Fu He Hui",
+      "area": "Changning (1037 Yuyuan Rd)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Vegetarian",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Daily Lunch 11:00–13:00; Dinner 17:30–21:00 (verified Nov 26, 2026 on MICHELIN Guide)",
+      "exceptions": "Set menus only (seasonal); direct booking via +86 21 3980 9188. Confirm 2027 holiday hours.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Fu+He+Hui+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/fuhehui/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Fu He Hui vegetarian tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=9kg84n9XtD4",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
     },
     {
       "id": "otto-mezzo",
       "city": "Shanghai",
-      "name": "8½ Otto e Mezzo Bombana",
+      "name": "8½ Otto e Mezzo BOMBANA",
+      "area": "Rockbund · Huangpu (169 Yuanmingyuan Rd)",
+      "edition": "2026",
       "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
       "cuisine": "Italian",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "Thu–Sun 12:00–13:30 & 18:00–21:00; Mon–Wed 18:00–21:00 (MICHELIN Guide; official site lists dinner 18:00–22:30).",
-      "exceptions": "Dinner last-seating cutoff differs between MICHELIN (21:00) and official branch page (22:30) (R05); no menu prices published online.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana",
+      "hours": "Lunch Thu–Sun 12:00–13:30 (last order 13:30); Dinner Mon–Sun 18:00–21:00 (last order 21:00); Cocktail Bar Mon–Sun 17:30–22:30",
+      "exceptions": "No published menu price on official web page; confirm 2027 seasonal menu and Feb holiday dates.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-1-2-otto-e-mezzo-bombana",
+      "officialLabel": "MICHELIN Guide",
       "venue": "https://www.ottoemezzobombana.com/branch/shanghai/",
-      "video": "8 1/2 Otto e Mezzo Bombana Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-1-2-otto-e-mezzo-bombana",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Otto+e+Mezzo+Bombana+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Otto%20e%20Mezzo%20Bombana%20Shanghai",
+        "instagram": "https://www.instagram.com/ottoemezzobombanashanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Shanghai dining vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=LtmHnG6sU3Q",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@ottoemezzobombanashanghai (official venue profile)",
+          "url": "https://www.instagram.com/ottoemezzobombanashanghai/",
+          "kind": "Official profile"
+        },
+        {
+          "platform": "YouTube",
+          "label": "8½ Otto e Mezzo Bombana feature (third-party)",
+          "url": "https://www.youtube.com/watch?v=5G988isZ16M",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
-        "R05",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube feature": "https://www.youtube.com/watch?v=5G988isZ16M",
-        "Official Instagram": "https://www.instagram.com/ottoemezzobombanashanghai/",
-        "TikTok search": "https://www.tiktok.com/search?q=Otto%20e%20Mezzo%20Bombana%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "da-vittorio",
       "city": "Shanghai",
-      "name": "Da Vittorio Shanghai",
+      "name": "Da Vittorio",
+      "area": "BFC Bund Finance Center · Huangpu",
+      "edition": "2026",
       "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
       "cuisine": "Italian",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Tue–Sun 12:00–13:30 and 18:00–21:30; closed Monday (MICHELIN Guide listing; BFC, 600 Zhongshan East 2nd Rd).",
-      "exceptions": "Closed Mondays (including Mon Feb 15 & Mon Feb 22 under regular rules); menu prices require direct reservation inquiry.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
-      "venue": "",
-      "video": "Da Vittorio Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
+      "coupleTotal": "Official English menu PDF lists Il Mare di Da Vittorio RMB 2,388 & White Truffle RMB 4,388 (+10% service charge) under Tasting Menus ('Shared for the whole table'; confirm per-person vs table basis and 2027 pricing)",
+      "hours": "Tue–Sun: Lunch 12:00–13:30, Dinner 18:00–21:30; Closed Monday",
+      "exceptions": "Online booking via Resvea requires USD $100/person deposit; confirm 2027 seasonal menu & holiday hours.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Da+Vittorio+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Da%20Vittorio%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/davittorioshanghai/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Da%20Vittorio%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Da%20Vittorio%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Da%20Vittorio%20Shanghai"
-      }
+      "dashboard": false
     },
     {
-      "id": "the-house-of-rong",
+      "id": "yi-long-court",
       "city": "Shanghai",
-      "name": "The House of Rong (荣府宴 · formerly Xin Rong Ji Nanyang Rd)",
-      "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
-      "cuisine": "Taizhou",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Official 2026 MICHELIN Guide redirects legacy xin-rong-ji-nanyang-road slug to 'The House of Rong' at 170 Nanyang Road, Jing'an (R06); hours & menu unstated on Guide page.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/the-house-of-rong",
-      "venue": "",
-      "video": "The House of Rong Xin Rong Ji Nanyang Road Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/the-house-of-rong",
-      "flags": [
-        "R01",
-        "R02",
-        "R06",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=The%20House%20of%20Rong%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=The%20House%20of%20Rong%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Nanyang%20Road%20Shanghai"
-      }
-    },
-    {
-      "id": "ling-long",
-      "city": "Shanghai",
-      "name": "Ling Long (玲珑 · Waldorf Astoria on the Bund)",
+      "name": "Yi Long Court",
+      "area": "The Bund (The Peninsula Shanghai)",
+      "edition": "2026",
       "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
-      "cuisine": "Innovative",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 16:00–01:00 (MICHELIN Guide listing; 105, 1F, Waldorf Astoria, 2 Zhongshan Dong Yi Road).",
-      "exceptions": "Verified 1 MICHELIN Star on live 2026 Guide (correcting older 2-Star references; R06); tasting-menu tariff requires direct inquiry.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ling-long-1209951",
-      "venue": "https://restaurantlinglong.com/",
-      "video": "Ling Long Shanghai Chef Jason Liu",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ling-long-1209951",
-      "flags": [
-        "R01",
-        "R02",
-        "R06",
-        "S01"
-      ],
-      "socials": {
-        "YouTube Chef feature": "https://www.youtube.com/watch?v=WyFLi3ck0EI",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Ling%20Long%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Ling%20Long%20Shanghai"
-      }
-    },
-    {
-      "id": "le-comptoir-pierre-gagnaire",
-      "city": "Shanghai",
-      "name": "le Comptoir de Pierre Gagnaire (Capella Shanghai)",
-      "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
-      "cuisine": "French",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Lunch daily 12:00–14:00; Dinner daily 18:00–20:30 (Capella Shanghai & MICHELIN Guide; 480 West Jianguo Rd, Xuhui).",
-      "exceptions": "Capella PDFs confirm 3-course lunch & 6-course dinner with whole-table unified set policy + 10% service charge, but custom PDF font omits main price digits (mocktail add-on ¥148, M5 beef supplement +¥389 visible).",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/le-comptoir-de-pierre-gagnaire",
-      "venue": "https://capellahotels.com/en/capella-shanghai/dining/le-comptoir-de-pierre-gagnaire",
-      "video": "le Comptoir de Pierre Gagnaire Capella Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/le-comptoir-de-pierre-gagnaire",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=le%20Comptoir%20de%20Pierre%20Gagnaire%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=le%20Comptoir%20de%20Pierre%20Gagnaire%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Capella%20Shanghai%20Pierre%20Gagnaire"
-      }
-    },
-    {
-      "id": "maison-lameloise",
-      "city": "Shanghai",
-      "name": "Maison Lameloise (莱美露滋 · 68F Shanghai Tower)",
-      "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
-      "cuisine": "French Contemporary",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "SECURITY WARNING (R05): Standalone lameloise.com.cn exhibited third-party script injection on Nov 26, 2026 and is not linked; use only guide.michelin.com slug maison-lameloise-563686 (not /maison-lameloise, which is Chagny, France).",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
-      "venue": "",
-      "video": "Maison Lameloise Shanghai Tower 68F",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
-      "flags": [
-        "R01",
-        "R02",
-        "R05",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Maison%20Lameloise%20Shanghai%20Tower",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Maison%20Lameloise%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Maison%20Lameloise%20Shanghai"
-      }
-    },
-    {
-      "id": "jin-xuan",
-      "city": "Shanghai",
-      "name": "Jin Xuan (金轩 · 53F Ritz-Carlton Pudong)",
-      "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
       "cuisine": "Cantonese",
-      "guideBand": "¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 11:30–14:30; Dinner 17:30–21:30 (MICHELIN Guide; official venue site lists 17:30–22:00).",
-      "exceptions": "Official venue site notes Ritz-Carlton Pudong 1F lobby/retail, 3F banquet & 55F spa enhancement works started Oct 1, 2026 (H04, R05); confirm 53F dining access.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
-      "venue": "https://www.jinxuanchineserestaurantshanghai.com/",
-      "video": "Jin Xuan Ritz-Carlton Pudong Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥788.22 = 2 × ¥338 + 16.6% surcharge (Weekday Dim Sum Lunch Set per 2026 Peninsula PDF; excludes tea/drinks & 2027 changes)",
+      "hours": "Lunch 11:30–14:30; Dinner 18:00–22:00 (confirm specific operating days & Feb 2027 holiday hours on Peninsula page)",
+      "exceptions": "Confirm 2027 Spring Festival dim sum/dinner availability directly via Peninsula Shanghai.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/yi-long-court-cantonese",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Yi+Long+Court+Peninsula+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Yi%20Long%20Court%20Shanghai",
+        "instagram": "https://www.instagram.com/thepeninsulashanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "Instagram",
+          "label": "@thepeninsulashanghai (official hotel profile)",
+          "url": "https://www.instagram.com/thepeninsulashanghai/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
-        "R05",
-        "H04",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Jin%20Xuan%20Ritz%20Carlton%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jin%20Xuan%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Jin%20Xuan%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "lao-zheng-xing",
       "city": "Shanghai",
-      "name": "Lao Zheng Xing (老正兴 · Huangpu)",
+      "name": "Lao Zheng Xing (Huangpu)",
+      "area": "Huangpu (556 Fuzhou Rd)",
+      "edition": "2026",
       "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
       "cuisine": "Shanghainese",
       "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Heritage Shanghainese venue (556 Fuzhou Road, Huangpu) near People's Square; hours and 2027 holiday schedule not shown on MICHELIN page.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "exceptions": "No official website or operating hours listed on MICHELIN Guide (+86 21 6322 2624); confirm hours & holiday closures directly.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "video": "Lao Zheng Xing Shanghai",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Lao+Zheng+Xing+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Lao%20Zheng%20Xing%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/laozhengxing/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Lao%20Zheng%20Xing%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Lao%20Zheng%20Xing%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Lao%20Zheng%20Xing%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "ren-he-guan",
       "city": "Shanghai",
-      "name": "Ren He Guan (仁和馆 · Zhaojiabang Road)",
+      "name": "Ren He Guan (Zhaojiabang Road)",
+      "area": "Xuhui (407 Zhaojiabang Rd)",
+      "edition": "2026",
       "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
       "cuisine": "Shanghainese",
       "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "407 Zhaojiabang Road, Xuhui; broken /ren-he-guan duplicate URL removed (R06). Confirm service hours & crab-roe seasonal pricing directly.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road",
+      "exceptions": "No official website or operating hours listed on MICHELIN Guide (+86 21 6403 0731); confirm queue/booking policy & 2027 holiday hours directly.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "video": "Ren He Guan Shanghai",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Ren+He+Guan+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Ren%20He%20Guan%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/renheguan/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2025 dining vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=szt1Lu7IeHs",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@jyu.eats review clip (third-party)",
+          "url": "https://www.tiktok.com/@jyu.eats/video/7458778956662148382",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@nom_life review clip (third-party)",
+          "url": "https://www.tiktok.com/@nom_life/video/7619913097515420958",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
-        "R06",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "jin-xuan",
+      "city": "Shanghai",
+      "name": "Jin Xuan",
+      "area": "Lujiazui · Pudong (Ritz-Carlton 53F)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Sun–Thu: Lunch 11:30–14:30, Dinner 17:30–21:30; Fri–Sat: Lunch 11:30–14:30, Dinner 17:30–22:00",
+      "exceptions": "RENOVATION NOTICE (H04/R05): Ritz-Carlton Shanghai Pudong began public-area enhancement works Oct 1, 2026 (1F/3F/55F; no end date). Confirm Feb/Mar 2027 restaurant access & holiday schedule.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.jinxuanchineserestaurantshanghai.com/",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Ren%20He%20Guan%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Ren%20He%20Guan%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Ren%20He%20Guan%20Shanghai"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Jin+Xuan+Ritz+Carlton+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Jin%20Xuan%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/jinxuanshanghai/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "R05",
+        "H03",
+        "H04",
+        "S01"
+      ],
+      "dashboard": false
     },
     {
       "id": "vivant",
       "city": "Shanghai",
       "name": "Vivant by Johnny Pham",
-      "status": "1 MICHELIN Star (newly awarded in 2026) · 2026",
-      "distinction": "Starred · 1★",
+      "area": "Huangpu (279 Beihai Rd)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
       "cuisine": "French Contemporary",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Newly awarded 1 Star in Apr 2026 Guide (550 Middle Sichuan Road, Huangpu); official site vivantshanghai.com requires booking inquiry for menu pricing & hours.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
-      "venue": "https://vivantshanghai.com/",
-      "video": "Vivant by Johnny Pham Shanghai",
+      "exceptions": "Official website does not print static hours or menu prices (venue Instagram bio notes Tue–Sat dinner — treat as social cue only and confirm directly).",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.vivantshanghai.com/",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Vivant+Johnny+Pham+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Vivant%20Shanghai",
+        "instagram": "https://www.instagram.com/vivant_shanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "Instagram",
+          "label": "@vivant_shanghai (venue profile)",
+          "url": "https://www.instagram.com/vivant_shanghai/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Vivant%20by%20Johnny%20Pham%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Vivant%20by%20Johnny%20Pham%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Vivant%20by%20Johnny%20Pham%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "fabula",
       "city": "Shanghai",
       "name": "Fabula",
-      "status": "1 MICHELIN Star (newly awarded in 2026) · 2026",
-      "distinction": "Starred · 1★",
-      "cuisine": "Innovative",
+      "area": "Shanghai",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Innovative (Neo-Sino-French)",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "Wed–Sun 19:00–23:00; closed Mon–Tue (MICHELIN Guide listing; dining by reservation only).",
-      "exceptions": "Newly awarded 1 Star in Apr 2026 Guide (6F, 128 Second Huqiu Road, Huangpu); tasting-menu price requires direct reservation inquiry.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
-      "venue": "https://fabula.restaurant/",
-      "video": "Fabula restaurant Shanghai",
+      "hours": "Wed–Sun 19:00–23:00; Closed Monday & Tuesday (reservation only)",
+      "exceptions": "Online booking via Resvea requires USD $100/person deposit; confirm 2027 tasting menu price & holiday dates.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.fabula.restaurant/",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Fabula+Shanghai+Michelin+review",
+        "tiktok": "https://www.tiktok.com/search?q=Fabula%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/fabulashanghai/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Fabula%20Shanghai%20Michelin",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Fabula%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Fabula%20Shanghai"
-      }
+      "dashboard": false
     },
     {
-      "id": "da-hu-chun",
+      "id": "sir-ellys",
       "city": "Shanghai",
-      "name": "Da Hu Chun (大壶春 · Middle Sichuan Road)",
-      "status": "Bib Gourmand · 2026 (not a star)",
-      "distinction": "Bib Gourmand · not a star",
-      "cuisine": "Dim Sum / Shengjianbao",
-      "guideBand": "¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 08:00–21:00 (MICHELIN Guide listing; 136 Middle Sichuan Road, Huangpu, steps from the Bund).",
-      "exceptions": "Counter-service shengjianbao institution since 1932; menu prices not listed on official MICHELIN page.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
-      "venue": "",
-      "video": "Da Hu Chun Shanghai shengjianbao",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
+      "name": "Sir Elly's",
+      "area": "The Bund (The Peninsula Shanghai 13F)",
+      "edition": "2026",
+      "status": "MICHELIN Guide Selected (no star) · 2026",
+      "cuisine": "European Contemporary",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥3,003.62 = 2 × ¥1,288 + 16.6% surcharge (4-course tasting dinner per 2026 Peninsula PDF; excludes wine & 2027 changes)",
+      "hours": "Wed–Sun Dinner 18:00–22:30; Closed Monday & Tuesday",
+      "exceptions": "Included for contrast: MICHELIN Guide Selected (NO star) with Bund rooftop terrace views; confirm 2027 schedule.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/sir-ellys-restaurant",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Sir+Ellys+Peninsula+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Sir%20Ellys%20Shanghai",
+        "instagram": "https://www.instagram.com/sirellys.restaurant/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Sir Elly's dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=DjTvFBc_ZGE",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@sirellys.restaurant (official venue profile)",
+          "url": "https://www.instagram.com/sirellys.restaurant/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube review": "https://www.youtube.com/watch?v=fmv_OA2NCk4",
-        "TikTok review (verified)": "https://www.tiktok.com/@hereis_jess/video/7654844815703608596",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Da%20Hu%20Chun%20Shanghai"
-      }
-    },
-    {
-      "id": "mi-thai",
-      "city": "Shanghai",
-      "name": "Mi Thai (Anfu Road)",
-      "status": "Bib Gourmand · 2026 (not a star)",
-      "distinction": "Bib Gourmand · not a star",
-      "cuisine": "Thai",
-      "guideBand": "¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 10:30–22:00 (MICHELIN Guide listing; 2F, 195 Anfu Road, Xuhui).",
-      "exceptions": "Verified on live slug mi-thai-an-fu-road (legacy /mi-thai 404s); set lunch praised by inspectors, cash menu total unverified.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/mi-thai-an-fu-road",
-      "venue": "",
-      "video": "Mi Thai Anfu Road Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/mi-thai-an-fu-road",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Mi%20Thai%20Anfu%20Road%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Mi%20Thai%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Mi%20Thai%20Shanghai"
-      }
-    },
-    {
-      "id": "yuge-zhanjiang",
-      "city": "Shanghai",
-      "name": "Yuge · Zhanjiang (粤哥·湛江 · Jing'an)",
-      "status": "Bib Gourmand · 2026 (not a star)",
-      "distinction": "Bib Gourmand · not a star",
-      "cuisine": "Cantonese",
-      "guideBand": "¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Inspector text notes open until 02:00 for late-night supper; exact opening time not tabulated on MICHELIN page.",
-      "exceptions": "358 West Yan'an Road, Jing'an (+86 139 1690 6148); MICHELIN advises pre-ordering signature Zhanjiang chicken.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yu-ge-zhan-jiang-jingan",
-      "venue": "",
-      "video": "Yuge Zhanjiang Jingan Shanghai",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yu-ge-zhan-jiang-jingan",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Yuge%20Zhanjiang%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yuge%20Zhanjiang%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Yuge%20Zhanjiang%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "hong-yu-fang",
       "city": "Shanghai",
       "name": "Hong Yu Fang",
-      "status": "MICHELIN Guide Selected · 2026 (not a star)",
-      "distinction": "Guide Selected · not a star",
+      "area": "Huangpu (B1-06 Mix 6, 686 S. Xizang Rd)",
+      "edition": "2026",
+      "status": "MICHELIN Guide Selected (no star) · 2026",
       "cuisine": "Dim Sum",
       "guideBand": "¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "Schedule block lists daily 10:00–22:00 (B1-06, Mix 6, 686 South Xizang Rd, Huangpu).",
-      "exceptions": "CONFLICTING SOURCE (R03): Same MICHELIN page states 'Open in the morning only' in inspector prose; call +86 158 0077 2430 before visiting.",
-      "guide": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "hours": "CONFLICT on MICHELIN page: hours panel says Daily 10:00–22:00 while editorial text says 'Open in the morning only'",
+      "exceptions": "Not starred (Guide Selected). Confirm actual morning service window directly (+86 158 0077 2430).",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "video": "Hong Yu Fang Shanghai restaurant",
-      "official_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Hong+Yu+Fang+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Hong%20Yu%20Fang%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/hongyufang/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
         "R03",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Hong%20Yu%20Fang%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Hong%20Yu%20Fang%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Hong%20Yu%20Fang%20Shanghai"
-      }
+      "dashboard": true
     },
     {
-      "id": "beijing-xin-rong-ji-xinyuan-south-road",
+      "id": "xin-rong-ji-bj",
       "city": "Beijing",
       "name": "Xin Rong Ji (Xinyuan South Road)",
+      "area": "Chaoyang · Beijing",
+      "edition": "2026",
       "status": "3 MICHELIN Stars · 2026",
-      "distinction": "Starred · 3★",
       "cuisine": "Taizhou",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "1F, West Wing, Bulgari Hotel building, 8 Xinyuan South Rd, Chaoyang; hours and seasonal seafood market pricing require direct reservation inquiry.",
-      "guide": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
-      "venue": "",
-      "video": "Xin Rong Ji Xinyuan South Road Beijing",
+      "exceptions": "Confirm regular hours, reservation window & 2027 Spring Festival schedule directly via xinrongji.com or concierge.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.xinrongji.com/",
       "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Xin+Rong+Ji+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/xinrongji/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2025 3-star review (third-party)",
+          "url": "https://www.youtube.com/watch?v=6SvqIT2SW7M",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Xin%20Rong%20Ji%20Beijing%203%20Michelin",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xin%20Rong%20Ji%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Beijing"
-      }
+      "dashboard": false
     },
     {
-      "id": "beijing-chao-shang-chao",
+      "id": "chao-shang-chao",
       "city": "Beijing",
       "name": "Chao Shang Chao (Chaoyang)",
+      "area": "Chaoyang · Beijing",
+      "edition": "2026",
       "status": "3 MICHELIN Stars · 2026",
-      "distinction": "Starred · 3★",
       "cuisine": "Chao Zhou",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "L4, CP Center, 20 Jinhe East Road, Chaoyang; hours and 2027 holiday schedule require direct confirmation.",
-      "guide": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao",
+      "exceptions": "Confirm opening hours, private/main dining minimums & 2027 holiday dates directly.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao-chaoyang",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "video": "Chao Shang Chao Beijing 3 Michelin",
-      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao",
+      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao-chaoyang",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Chao+Shang+Chao+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=Chao%20Shang%20Chao%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/chaoshangchao/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2026 3-star review (third-party)",
+          "url": "https://www.youtube.com/watch?v=SQ9JzAqNpjY",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "May 2025 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=tIBbLQB8Ueo",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Chao%20Shang%20Chao%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chao%20Shang%20Chao%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Chao%20Shang%20Chao%20Beijing"
-      }
+      "dashboard": false
     },
     {
-      "id": "king-s-joy",
+      "id": "kings-joy",
       "city": "Beijing",
-      "name": "King's Joy (京兆尹)",
+      "name": "King's Joy",
+      "area": "Dongcheng (2 Wudaoying Hutong)",
+      "edition": "2026",
       "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
       "cuisine": "Vegetarian",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "",
-      "exceptions": "2 Wudaoying Hutong, Dongcheng (+86 10 8404 9191); live 2026 MICHELIN page omits hours block and menu prices (three 10+ course vegetarian/vegan menus described).",
-      "guide": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "hours": "Daily 11:00–22:00 (verified Nov 26, 2026 on MICHELIN Guide)",
+      "exceptions": "Live MICHELIN Guide shows 2 Stars (ignore older 3-star videos, R05); three lacto-ovo menus (vegan on request). Confirm 2027 holiday hours.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "officialLabel": "MICHELIN Guide",
       "venue": "https://www.kingsjoy.com/",
-      "video": "King's Joy Beijing restaurant",
-      "official_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Kings+Joy+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=Kings%20Joy%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/kingsjoybeijing/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Mar 2026 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=mT6hdUcRRIs",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Feb 2024 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=jnZ_d6uAPLs",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@thesamtyler dining clip (third-party)",
+          "url": "https://www.tiktok.com/@thesamtyler/video/7429173283184020754",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "R05",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=King%27s%20Joy%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=King%27s%20Joy%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=King%27s%20Joy%20Beijing"
-      }
+      "dashboard": false
     },
     {
       "id": "trb-hutong",
       "city": "Beijing",
-      "name": "Trb Hutong",
+      "name": "TRB Hutong",
+      "area": "Dongcheng (23 Shatan North St)",
+      "edition": "2026",
       "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
       "cuisine": "French Contemporary",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "Daily 11:30–14:30 and 17:30–22:00 (MICHELIN Guide listing; 23 Shatan North Street, Dongcheng).",
-      "exceptions": "2027 holiday exceptions and set-menu tariff require direct confirmation at trbhutong.com.",
-      "guide": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "hours": "Daily Lunch 11:30–14:30; Dinner 17:30–22:00 (verified Nov 26, 2026 on MICHELIN Guide)",
+      "exceptions": "Set inside a historic temple courtyard; confirm 2027 menu pricing & holiday closures on trbhutong.com.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "officialLabel": "MICHELIN Guide",
       "venue": "https://www.trbhutong.com/",
-      "video": "TRB Hutong Beijing restaurant",
-      "official_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=TRB+Hutong+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=TRB%20Hutong%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/trbhutong/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "taian-gz",
+      "city": "Guangzhou",
+      "name": "Taian Table (Guangzhou)",
+      "area": "Yuexiu · Guangzhou",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Innovative",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Confirm seatings, tasting menu price & 2027 holiday schedule directly with Guangzhou branch.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/taian-table-guangzhou",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/taian-table-guangzhou",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Trb%20Hutong%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Trb%20Hutong%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Trb%20Hutong%20Beijing"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Taian+Table+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Taian%20Table%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/taiantableguangzhou/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "jiang",
+      "city": "Guangzhou",
+      "name": "Jiang by Chef Fei",
+      "area": "Tianhe (Mandarin Oriental Guangzhou)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Lunch Mon–Fri 11:30–14:30, Sat–Sun & Public Holidays 10:00–15:00; Dinner Daily 17:30–22:00",
+      "exceptions": "Official Mandarin Oriental dining page verified Nov 26, 2026; confirm 2027 Spring Festival reservation lead time.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.mandarinoriental.com/en/guangzhou/tianhe/dine/jiang-by-chef-fei",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Jiang+by+Chef+Fei+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Jiang%20by%20Chef%20Fei%20Guangzhou",
+        "instagram": "https://www.instagram.com/mo_guangzhou/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2024 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=_EklcxRlpck",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@mo_guangzhou (official hotel profile)",
+          "url": "https://www.instagram.com/mo_guangzhou/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "imperial-treasure-gz",
+      "city": "Guangzhou",
+      "name": "Imperial Treasure Fine Chinese Cuisine (Guangzhou)",
+      "area": "Tianhe (IGC Mall)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Confirm dim sum/dinner hours and 2027 holiday schedule directly.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/imperial-treasure-fine-chinese-cuisine-guangzhou",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/imperial-treasure-fine-chinese-cuisine-guangzhou",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Imperial+Treasure+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Imperial%20Treasure%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/imperialtreasureguangzhou/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "bingsheng",
+      "city": "Guangzhou",
+      "name": "BingSheng Mansion",
+      "area": "Tianhe · Guangzhou",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Confirm exact operating hours & 2027 holiday schedule via bingsheng.com or concierge.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.bingsheng.com/",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=BingSheng+Mansion+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=BingSheng%20Mansion%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/bingshengmansion/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2026 Cantonese review (third-party)",
+          "url": "https://www.youtube.com/watch?v=MElCeNUJLTw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Oct 2025 dining vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=oQEFZ8NaaGU",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "May 2025 food review (third-party)",
+          "url": "https://www.youtube.com/watch?v=P7PDzqeJhQY",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "BingSheng Guangzhou review (third-party)",
+          "url": "https://www.youtube.com/watch?v=FMjhPSgRA_w",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "xin-rong-ji-cd",
+      "city": "Chengdu",
+      "name": "Xin Rong Ji (Chengdu)",
+      "area": "Wuhou · Chengdu",
+      "edition": "2027",
+      "status": "3 MICHELIN Stars · 2027",
+      "cuisine": "Taizhou",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "2027 Chengdu MICHELIN Guide edition; confirm hours & holiday calendar via xinrongji.com.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/xin-rong-ji-chengdu",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.xinrongji.com/",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/xin-rong-ji-chengdu",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Xin+Rong+Ji+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/xinrongjichengdu/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "yu-zhi-lan",
+      "city": "Chengdu",
+      "name": "Yu Zhi Lan",
+      "area": "Qingyang · Chengdu",
+      "edition": "2027",
+      "status": "2 MICHELIN Stars · 2027",
+      "cuisine": "Sichuan",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Very small intimate dining room; book far ahead and confirm 2027 Spring Festival schedule directly.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/yu-zhi-lan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/yu-zhi-lan",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Yu+Zhi+Lan+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Yu%20Zhi%20Lan%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/yuzhilan/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2025 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=N0sUApoNLlg",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "silver-pot",
+      "city": "Chengdu",
+      "name": "Silver Pot",
+      "area": "Jinjiang · Chengdu",
+      "edition": "2027",
+      "status": "1 MICHELIN Star · 2027",
+      "cuisine": "Sichuan",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "2027 Chengdu MICHELIN Guide edition; confirm hours & 2027 holiday closures directly.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/silver-pot",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/silver-pot",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Silver+Pot+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Silver%20Pot%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/silverpotchengdu/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jun 2025 Sichuan review (third-party)",
+          "url": "https://www.youtube.com/watch?v=9_sWXD_J0Wg",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Dec 2023 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=HghLw5mcsNU",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "mi-xun",
+      "city": "Chengdu",
+      "name": "Mi Xun Teahouse",
+      "area": "Taikoo Li (The Upper House Chengdu)",
+      "edition": "2027",
+      "status": "1 MICHELIN Star + MICHELIN Green Star · 2027",
+      "cuisine": "Vegetarian",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥620 / set (Vegetarian Hot Pot for Two per official Upper House Chengdu offer page; confirm tax/service & Feb/Mar 2027 availability)",
+      "hours": "Daily: Lunch 12:00–14:00, Afternoon Tea 14:00–17:30, Dinner 17:30–22:00",
+      "exceptions": "Verified Nov 26, 2026 on Upper House Chengdu dining page; holds both 1 Star and MICHELIN Green Star. Confirm Feb/Mar 2027 menu.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/mi-xun-teahouse",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.upperhouse.com/en/chengdu/restaurants-and-bars/mi-xun-teahouse/",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/mi-xun-teahouse",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Mi+Xun+Teahouse+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Mi%20Xun%20Teahouse%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/mixunteahouse/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Chengdu vegetarian teahouse video (third-party)",
+          "url": "https://www.youtube.com/watch?v=Q7TQLQ3DuGw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Chengdu teahouse discover page",
+          "url": "https://www.tiktok.com/discover/chengdu-teahouse",
+          "kind": "TikTok discover"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Mi Xun Teahouse feature (third-party)",
+          "url": "https://www.youtube.com/watch?v=cjUKLVJud1I",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "the-house-of-rong",
+      "city": "Shanghai",
+      "name": "The House of Rong (荣府宴 · formerly Xin Rong Ji Nanyang Rd)",
+      "area": "Jing'an (170 Nanyang Rd)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Taizhou",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Renamed from Xin Rong Ji (Nanyang Road) on the 2026 MICHELIN Guide (R06); hours and seasonal seafood menu pricing require direct inquiry.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/the-house-of-rong",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/the-house-of-rong",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=The+House+of+Rong+Shanghai",
+        "tiktok": "https://www.tiktok.com/search?q=The%20House%20of%20Rong%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=The%20House%20of%20Rong%20Shanghai"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "R06",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "ling-long",
+      "city": "Shanghai",
+      "name": "Ling Long (玲珑 · Waldorf Astoria on the Bund)",
+      "area": "The Bund · Huangpu (2 Zhongshan Dong Yi Rd)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Innovative",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Daily 16:00–01:00 (MICHELIN Guide listing)",
+      "exceptions": "Verified 1 MICHELIN Star on live 2026 Guide (correcting older 2★ references; R06); tasting-menu tariff requires direct reservation inquiry.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ling-long-1209951",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://restaurantlinglong.com/",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ling-long-1209951",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Ling+Long+Shanghai+Michelin",
+        "tiktok": "https://www.tiktok.com/search?q=Ling%20Long%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Ling%20Long%20Shanghai"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Chef Jason Liu Ling Long Shanghai feature",
+          "url": "https://www.youtube.com/watch?v=WyFLi3ck0EI",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "R06",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "le-comptoir-pierre-gagnaire",
+      "city": "Shanghai",
+      "name": "le Comptoir de Pierre Gagnaire (Capella Shanghai)",
+      "area": "Xuhui (480 West Jianguo Rd)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "French",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Lunch daily 12:00–14:00; Dinner daily 18:00–20:30 (Capella Shanghai & MICHELIN Guide)",
+      "exceptions": "Official Capella PDFs confirm 3-course lunch & 6-course dinner (+10% service charge, whole-table unified set policy), but custom PDF font hides main price digits.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/le-comptoir-de-pierre-gagnaire",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://capellahotels.com/en/capella-shanghai/dining/le-comptoir-de-pierre-gagnaire",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/le-comptoir-de-pierre-gagnaire",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=le+Comptoir+de+Pierre+Gagnaire+Shanghai",
+        "tiktok": "https://www.tiktok.com/search?q=Capella%20Shanghai%20Pierre%20Gagnaire",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Capella%20Shanghai"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "maison-lameloise",
+      "city": "Shanghai",
+      "name": "Maison Lameloise (莱美露滋 · 68F Shanghai Tower)",
+      "area": "Lujiazui · Pudong (501 Yincheng Middle Rd, 68F)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "French Contemporary",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "SECURITY WARNING (R06): Standalone lameloise.com.cn exhibited injected external script markup on Nov 26, 2026 and is quarantined; book only via official MICHELIN slug maison-lameloise-563686 or Shanghai Tower concierge.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Maison+Lameloise+Shanghai+Tower",
+        "tiktok": "https://www.tiktok.com/search?q=Maison%20Lameloise%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Maison%20Lameloise%20Shanghai"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "R06",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "da-hu-chun",
+      "city": "Shanghai",
+      "name": "Da Hu Chun (大壶春 · Middle Sichuan Road)",
+      "area": "Huangpu (136 Middle Sichuan Rd)",
+      "edition": "2026",
+      "status": "Bib Gourmand (no star) · 2026",
+      "cuisine": "Dim Sum / Shengjianbao",
+      "guideBand": "¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Daily 08:00–21:00 (MICHELIN Guide listing)",
+      "exceptions": "Counter-service pan-fried bun institution since 1932 steps from the Bund; cash menu prices not printed on MICHELIN page.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Da+Hu+Chun+Shanghai",
+        "tiktok": "https://www.tiktok.com/search?q=Da%20Hu%20Chun%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Da%20Hu%20Chun%20Shanghai"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Da Hu Chun shengjianbao review (third-party)",
+          "url": "https://www.youtube.com/watch?v=fmv_OA2NCk4",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@hereis_jess Da Hu Chun review (third-party)",
+          "url": "https://www.tiktok.com/@hereis_jess/video/7654844815703608596",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "mi-thai",
+      "city": "Shanghai",
+      "name": "Mi Thai (Anfu Road)",
+      "area": "Xuhui (2F, 195 Anfu Rd)",
+      "edition": "2026",
+      "status": "Bib Gourmand (no star) · 2026",
+      "cuisine": "Thai",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Daily 10:30–22:00 (MICHELIN Guide listing)",
+      "exceptions": "Verified on live slug mi-thai-an-fu-road (legacy /mi-thai 404s); pairs with Wukang/Anfu walk.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/mi-thai-an-fu-road",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/mi-thai-an-fu-road",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Mi+Thai+Anfu+Road+Shanghai",
+        "tiktok": "https://www.tiktok.com/search?q=Mi%20Thai%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Mi%20Thai%20Shanghai"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "yuge-zhanjiang",
+      "city": "Shanghai",
+      "name": "Yuge · Zhanjiang (粤哥·湛江 · Jing'an)",
+      "area": "Jing'an (358 West Yan'an Rd)",
+      "edition": "2026",
+      "status": "Bib Gourmand (no star) · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Open until 02:00 per MICHELIN inspector note (exact opening hour unstated)",
+      "exceptions": "Late-night Cantonese supper option (+86 139 1690 6148); pre-order signature Zhanjiang chicken.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yu-ge-zhan-jiang-jingan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yu-ge-zhan-jiang-jingan",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Yuge+Zhanjiang+Shanghai",
+        "tiktok": "https://www.tiktok.com/search?q=Yuge%20Zhanjiang%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Yuge%20Zhanjiang%20Shanghai"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ]
     },
     {
       "id": "jing-hua-lou",
       "city": "Beijing",
       "name": "Jing Hua Lou",
-      "status": "Bib Gourmand · 2026 (not a star)",
-      "distinction": "Bib Gourmand · not a star",
+      "area": "Chaoyang (Datun North Rd)",
+      "edition": "2026",
+      "status": "Bib Gourmand (no star) · 2026",
       "cuisine": "Beijing Cuisine",
       "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "2F, Bldg 111, Huizhong North Lane, Chaoyang (+86 10 6485 9548); live MICHELIN page does not display hours or cash prices.",
-      "guide": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/jing-hua-lou",
+      "exceptions": "2F, Bldg 111, Huizhong North Lane (+86 10 6485 9548); live MICHELIN page omits hours and cash menu totals.",
+      "official": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/jing-hua-lou",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "video": "Jing Hua Lou Beijing restaurant",
       "official_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/jing-hua-lou",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Jing+Hua+Lou+Beijing",
+        "tiktok": "https://www.tiktok.com/search?q=Jing%20Hua%20Lou%20Beijing",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Jing%20Hua%20Lou%20Beijing"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Jing%20Hua%20Lou%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jing%20Hua%20Lou%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Jing%20Hua%20Lou%20Beijing"
-      }
-    },
-    {
-      "id": "guangzhou-jiang-by-chef-fei",
-      "city": "Guangzhou",
-      "name": "Jiang by Chef Fei (Mandarin Oriental, Guangzhou)",
-      "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred · 2★",
-      "cuisine": "Cantonese",
-      "guideBand": "¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Lunch Mon–Fri 11:30–14:30, Sat–Sun 10:00–15:00 (Mandarin Oriental; MICHELIN lists 11:00–14:30); Dinner daily 17:30–22:00.",
-      "exceptions": "3F, Mandarin Oriental, 389 Tianhe Road; lunch start-time minor discrepancy noted (R05), menu prices require direct inquiry.",
-      "guide": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
-      "venue": "https://www.mandarinoriental.com/en/guangzhou/tianhe/dine/jiang-by-chef-fei",
-      "video": "Jiang by Chef Fei Guangzhou",
-      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
-      "flags": [
-        "R01",
-        "R02",
-        "R05",
-        "S01"
-      ],
-      "socials": {
-        "YouTube review": "https://www.youtube.com/watch?v=_EklcxRlpck",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jiang%20by%20Chef%20Fei%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Jiang%20by%20Chef%20Fei%20Guangzhou"
-      }
-    },
-    {
-      "id": "guangzhou-bingsheng-mansion",
-      "city": "Guangzhou",
-      "name": "BingSheng Mansion (炳胜公馆 · Xiancun Road)",
-      "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred · 1★",
-      "cuisine": "Cantonese",
-      "guideBand": "¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "5F, Pearl River New City, 2 Xiancun Road, Tianhe; hours and cash menu totals not displayed on live MICHELIN page.",
-      "guide": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
-      "venue": "",
-      "video": "BingSheng Mansion Guangzhou",
-      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube BingSheng review": "https://www.youtube.com/watch?v=FMjhPSgRA_w",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=BingSheng%20Mansion%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=BingSheng%20Guangzhou"
-      }
-    },
-    {
-      "id": "chengdu-xin-rong-ji-1207940",
-      "city": "Chengdu",
-      "name": "Xin Rong Ji (Chengdu · sole Chengdu 3★)",
-      "status": "3 MICHELIN Stars · 2027",
-      "distinction": "Starred · 3★",
-      "cuisine": "Taizhou",
-      "guideBand": "¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Sole 3-Star restaurant in the 2027 Chengdu MICHELIN Guide; hours and menu pricing require direct venue reservation inquiry.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/xin-rong-ji-1207940",
-      "venue": "",
-      "video": "Xin Rong Ji Chengdu",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/xin-rong-ji-1207940",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Xin%20Rong%20Ji%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xin%20Rong%20Ji%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Chengdu"
-      }
-    },
-    {
-      "id": "chengdu-yu-zhi-lan-1196150",
-      "city": "Chengdu",
-      "name": "Yu Zhi Lan (玉芝兰)",
-      "status": "2 MICHELIN Stars · 2027",
-      "distinction": "Starred · 2★",
-      "cuisine": "Sichuan",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "24 Changfa Street, Qingyang; advance reservation mandatory and tasting-menu pricing requires direct venue confirmation.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/yu-zhi-lan-1196150",
-      "venue": "",
-      "video": "Yu Zhi Lan Chengdu",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/yu-zhi-lan-1196150",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Yu%20Zhi%20Lan%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Zhi%20Lan%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Yu%20Zhi%20Lan%20Chengdu"
-      }
-    },
-    {
-      "id": "chengdu-silver-pot",
-      "city": "Chengdu",
-      "name": "Silver Pot (银锅)",
-      "status": "1 MICHELIN Star · 2027",
-      "distinction": "Starred · 1★",
-      "cuisine": "Sichuan",
-      "guideBand": "¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Contemporary Sichuan dining in Gaoxin / High-Tech Zone; confirm hours and set/a-la-carte menu directly.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/silver-pot",
-      "venue": "",
-      "video": "Silver Pot Chengdu",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/silver-pot",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Silver%20Pot%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Silver%20Pot%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Silver%20Pot%20Chengdu"
-      }
-    },
-    {
-      "id": "chengdu-mi-xun-teahouse",
-      "city": "Chengdu",
-      "name": "Mi Xun Teahouse (谧寻茶室 · Upper House Chengdu)",
-      "status": "1 MICHELIN Star + Green Star · 2027",
-      "distinction": "Starred · 1★ + Green★",
-      "cuisine": "Vegetarian",
-      "guideBand": "¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 12:00–22:00 (Upper House Chengdu & MICHELIN Guide listing).",
-      "exceptions": "Located inside rebranded Upper House Chengdu (formerly The Temple House, H04); confirm dining vs afternoon-tea seating windows.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/mi-xun-teahouse",
-      "venue": "https://www.upperhouse.com/en/chengdu/restaurants-and-bars/mi-xun-teahouse/",
-      "video": "Mi Xun Teahouse Chengdu",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/mi-xun-teahouse",
-      "flags": [
-        "R01",
-        "R02",
-        "H04",
-        "S01"
-      ],
-      "socials": {
-        "YouTube feature": "https://www.youtube.com/watch?v=cjUKLVJud1I",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Mi%20Xun%20Teahouse%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Mi%20Xun%20Teahouse%20Chengdu"
-      }
+      ]
     }
   ],
   "activities": [
     {
       "id": "shanghai-museum-east",
-      "name": "Shanghai Museum East Campus (Pudong · permanent galleries)",
       "city": "Shanghai",
-      "schedule": "Wed–Mon 10:00–18:00 (last entry 17:00); closed Tuesday except national holidays.",
-      "cost": "¥0 general permanent-gallery walk-in entry with valid passport/ID; special exhibitions separate",
-      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/infomation/visit-east",
-      "officialLink": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "official_url": "https://www.shanghaimuseum.cn/mu/frontend/pg/infomation/visit-east",
-      "exception": "Primary recommended museum campus for Feb–Mar 2027 while People's Square permanent galleries are closed (A04). Open Mondays (closed Tuesdays).",
+      "name": "Shanghai Museum East (Permanent Galleries)",
+      "area": "Century Avenue · Pudong",
+      "hours": "Wed–Mon 10:00–18:00 (last entry 17:00); Closed Tuesdays except national holidays",
+      "exceptions": "OPEN MONDAYS (ideal when People's Square & Yu Garden close). General admission is free with passport/ID scan at B1 East Gate without advance booking; Curio-City & Digital Gallery require Special Reservation; special exhibitions ticketed separately.",
+      "cost": "¥0 general permanent galleries (special exhibitions ticketed separately)",
+      "duration": "2.5–4 h",
       "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet (depends on hotel).",
+      "officialLink": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
+      "officialLabel": "Shanghai Museum East",
+      "official_url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
+      "videoLink": "https://www.youtube.com/watch?v=qz6W-svkMRk",
+      "videoLabel": "YouTube walkthrough (Oct 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Shanghai+Museum+East+walkthrough",
+        "tiktok": "https://www.tiktok.com/search?q=Shanghai%20Museum%20East",
+        "instagram": "https://www.instagram.com/theshanghaimuseum/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Oct 2026 Shanghai Museum East walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=qz6W-svkMRk",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@theshanghaimuseum (official museum profile)",
+          "url": "https://www.instagram.com/theshanghaimuseum/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "A01",
         "A02",
-        "A04",
+        "A03",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube reopening tour": "https://www.youtube.com/watch?v=bqU3WbL6xac",
-        "Official Museum YouTube": "https://www.youtube.com/@theshanghaimuseum",
-        "Official Museum Instagram": "https://www.instagram.com/theshanghaimuseum/",
-        "TikTok search": "https://www.tiktok.com/search?q=Shanghai%20Museum%20East"
-      }
+      "dashboard": true
     },
     {
       "id": "shanghai-museum",
-      "name": "Shanghai Museum — People’s Square (special exhibition only)",
       "city": "Shanghai",
-      "schedule": "Tue–Sun 09:00–17:00 (last entry 15:00 under current exhibition notice); closed Monday except national holidays.",
+      "name": "Shanghai Museum — People's Square (Americas Exhibition Only)",
+      "area": "People's Square · Huangpu",
+      "hours": "Tue–Sun 09:00–17:00 (last entry 15:00); evening sessions 09:00–21:00 (last entry 19:00); Closed Mondays except national holidays",
+      "exceptions": "CRITICAL 2026–2027 NOTICE (verified Nov 26, 2026): From Jul 9, 2026 to Nov 14, 2027, People's Square hosts ONLY the ticketed exhibition 'On Top of the World Tree: Ancient Civilizations of the Americas'—NO other/permanent galleries are open here (visit East branch for permanent collections). Overseas tickets via Trip.com / WeChat.",
       "cost": "",
-      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/infomation/visit-west",
-      "officialLink": "https://reservation.shanghaimuseum.net",
-      "official_url": "https://www.shanghaimuseum.cn/mu/frontend/pg/infomation/visit-west",
-      "exception": "PARTIAL CLOSURE NOTICE (A04): Official notice states Jul 9, 2026 – Nov 14, 2027 only a paid special exhibition is open at People's Square (advance reservation required; exact exhibition fee not stated on general visitor page). Closed Mon Feb 15 & Feb 22.",
+      "duration": "2–3 h",
       "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "officialLabel": "Shanghai Museum People's Square",
+      "official_url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
+      "videoLink": "https://www.youtube.com/watch?v=3Sp9S5htFlo",
+      "videoLabel": "YouTube visitor guide (third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Shanghai+Museum+Peoples+Square+Americas+exhibition",
+        "tiktok": "https://www.tiktok.com/search?q=Shanghai%20Museum%20Peoples%20Square",
+        "instagram": "https://www.instagram.com/theshanghaimuseum/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Shanghai Museum visitor guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=3Sp9S5htFlo",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@theshanghaimuseum (official museum profile)",
+          "url": "https://www.instagram.com/theshanghaimuseum/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "A01",
         "A02",
-        "A04",
+        "A03",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "Official Museum YouTube": "https://www.youtube.com/@theshanghaimuseum",
-        "Official Museum Instagram": "https://www.instagram.com/theshanghaimuseum/",
-        "TikTok search": "https://www.tiktok.com/search?q=Shanghai%20Museum%20Peoples%20Square"
-      }
+      "dashboard": true
     },
     {
       "id": "yu-garden",
-      "name": "Yu Garden — daytime classical garden (not bazaar)",
       "city": "Shanghai",
-      "schedule": "Tue–Sun 09:00–16:30 (last entry 16:00); closed Monday except national holidays.",
-      "cost": "¥60 = 2 × ¥30 (Dec–Mar off-peak standard adult daytime admission)",
-      "source": "https://www.yugarden.com.cn/page/articleview/message.html",
-      "officialLink": "https://www.yugarden.com.cn/page/articleview/message.html",
-      "official_url": "https://www.yugarden.com.cn/page/articleview/message.html",
-      "exception": "Monday closure includes Feb 15 & Feb 22 under regular rules. Separate from free Yuyuan Bazaar streets and paid Lantern Festival / night-tour events (Feb 20, 2027 is Lantern Festival).",
+      "name": "Yu Garden (Classical Garden)",
+      "area": "Old City · Huangpu",
+      "hours": "Tue–Sun 09:00–16:30 (last entry 16:00); Closed Mondays except national holidays",
+      "exceptions": "Classical Garden ticket is separate from free Yuyuan Bazaar streets and separate from ticketed Winter Night Tour (Fri–Sun 18:00–21:20, ¥150–¥218/pp) or Spring Festival Lantern Festival announcements.",
+      "cost": "¥60 = 2 × ¥30 (Dec 1 – Mar 31 off-season daytime adult ticket)",
+      "duration": "1.5–2.5 h",
       "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "officialLabel": "Yu Garden official notice",
+      "official_url": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "videoLink": "https://www.youtube.com/watch?v=Ay96PAha8uQ",
+      "videoLabel": "YouTube guide (Apr 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Yu+Garden+Shanghai+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Yu%20Garden%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/yugardenshanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Apr 2025 Yu Garden guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=Ay96PAha8uQ",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Yu Garden walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=K1sloREQ6bI",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Yu Garden visitor tips discover page",
+          "url": "https://www.tiktok.com/discover/yu-garden-shanghai-how-to-go",
+          "kind": "TikTok discover"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@arafcamelshoes Yu Garden clip (third-party)",
+          "url": "https://www.tiktok.com/@arafcamelshoes/video/7428972675730525472",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "A01",
         "A02",
         "A03",
-        "S01"
-      ],
-      "socials": {
-        "YouTube review (2026)": "https://www.youtube.com/watch?v=TAIigBV6rPM",
-        "YouTube tour (2)": "https://www.youtube.com/watch?v=hNXTlKNqVGk",
-        "TikTok review (verified)": "https://www.tiktok.com/@arafcamelshoes/video/7428972675730525472",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Garden%20Shanghai"
-      }
-    },
-    {
-      "id": "yuyuan-night",
-      "name": "Yu Garden — seasonal night tour",
-      "city": "Shanghai",
-      "schedule": "Published seasonal notice: Fri–Sun 18:00–21:20 (last entry 20:30); closed Mon–Thu except public holidays.",
-      "cost": "¥300–¥436 = 2 × ¥150–¥218 published seasonal notice (2027 Lantern Festival surcharges unconfirmed)",
-      "source": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
-      "officialLink": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
-      "official_url": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
-      "exception": "Published municipal seasonal notice, not a confirmed Feb–Mar 2027 ticket schedule; recheck before booking.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A03",
-        "S01"
-      ],
-      "socials": {
-        "YouTube Yu Garden (2026)": "https://www.youtube.com/watch?v=TAIigBV6rPM",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yuyuan%20Garden%20night%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Yu%20Garden%20night%20Shanghai"
-      }
-    },
-    {
-      "id": "the-bund",
-      "name": "The Bund waterfront promenade & Bund Ferry",
-      "city": "Shanghai",
-      "schedule": "Promenade open 24h; architectural illumination 17:00–21:00 (Nov–Apr winter schedule per Shanghai Gov).",
-      "cost": "¥0 promenade walk (optional Jinling East Rd – Dongchang Rd Bund Ferry: ¥4 = 2 × ¥2 one-way, 10 min)",
-      "source": "https://english.shanghai.gov.cn/en-144-hourtransfer-stayinShanghai/20240104/11c79bb6632944aea9814cee6ec823bb.html",
-      "officialLink": "https://english.shanghai.gov.cn/en-144-hourtransfer-stayinShanghai/20240104/11c79bb6632944aea9814cee6ec823bb.html",
-      "official_url": "https://english.shanghai.gov.cn/en-144-hourtransfer-stayinShanghai/20240104/11c79bb6632944aea9814cee6ec823bb.html",
-      "exception": "Arrive before 17:00–21:00 illumination cutoff in Feb–Mar; crowd controls may apply on holiday evenings.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "S01"
-      ],
-      "socials": {
-        "YouTube walk (May 2026)": "https://www.youtube.com/watch?v=I2b9UOSu3FM",
-        "YouTube 4K tour (Apr 2026)": "https://www.youtube.com/watch?v=euvrgJKqrNc",
-        "TikTok night view (1)": "https://www.tiktok.com/@meetinshanghai/video/7391354468329114911",
-        "TikTok Bund view (2)": "https://www.tiktok.com/@jacmartin_/video/7457133077710638342",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=The%20Bund%20Shanghai"
-      }
-    },
-    {
-      "id": "shanghai-tower",
-      "name": "Shanghai Tower — Top of Shanghai Observatory (118F · 546m)",
-      "city": "Shanghai",
-      "schedule": "08:30–22:00 (municipal observatory schedule; official site lists hotline 09:00–18:00 — reconfirm last entry).",
-      "cost": "¥360 = 2 × ¥180 standard 118F adult ticket (per Shanghai Municipal Gov notice)",
-      "source": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250409/ee03e0a7bc6e4d87acc0a1cbe5d8ca49.html",
-      "officialLink": "https://en.shanghaitower.com/shagnhai.html",
-      "official_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250409/ee03e0a7bc6e4d87acc0a1cbe5d8ca49.html",
-      "exception": "Visibility-dependent high-altitude deck; check cloud ceiling and 126F damper add-on availability before purchasing.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A03",
-        "S01"
-      ],
-      "socials": {
-        "YouTube 118F tour": "https://www.youtube.com/watch?v=6ssEi4Esd7s",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Tower%20118F",
-        "TikTok search": "https://www.tiktok.com/search?q=Shanghai%20Tower%20Observatory"
-      }
-    },
-    {
-      "id": "shanghai-disneyland",
-      "name": "Shanghai Disneyland",
-      "city": "Shanghai",
-      "schedule": "Date-specific park hours published on official resort calendar (typically 08:30–20:30/21:30).",
-      "cost": "From ¥950 = 2 × ¥475 standard 1-Day Ticket (2-Day Early Bird from ¥1,508 = 2 × ¥754; 1-Day + Premier Access from ¥1,740 = 2 × ¥870)",
-      "source": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
-      "officialLink": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
-      "official_url": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
-      "exception": "Date-tiered pricing rises on weekends/holidays; buy via official Disney app/site only with passport numbers. Metro Line 11 terminus (~45–65 min from central Puxi; verify hotel-specific transit).",
-      "transit": "",
-      "flags": [
-        "A01",
         "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube vlog (Jan 2026)": "https://www.youtube.com/watch?v=YZDwOmIt4gw",
-        "YouTube review (2)": "https://www.youtube.com/watch?v=f1Rf6hFtGjk",
-        "Official Resort Instagram": "https://www.instagram.com/shanghaidisneyresort_park/",
-        "TikTok search": "https://www.tiktok.com/search?q=Shanghai%20Disneyland"
-      }
+      "dashboard": true
     },
     {
       "id": "power-station-art",
-      "name": "Power Station of Art (上海当代艺术博物馆)",
       "city": "Shanghai",
-      "schedule": "Tue–Sun 11:00–19:00 (last entry 18:00); closed Monday except national holidays.",
-      "cost": "General entry ¥0 (special exhibitions priced separately)",
-      "source": "https://www.powerstationofart.com/visit-and-tickets",
-      "officialLink": "https://www.powerstationofart.com/",
-      "official_url": "https://www.powerstationofart.com/visit-and-tickets",
-      "exception": "Closed Mon Feb 15 & Feb 22 under regular rules; check exhibition changeover dates around late Feb 2027 (current Liu Jiakun show runs to Feb 21, 2027).",
+      "name": "Power Station of Art (PSA)",
+      "area": "Huangpu Riverside (678 Miaojiang Rd)",
+      "hours": "Tue–Sun 11:00–19:00 (last entry 18:00); Closed Mondays; open national public holidays",
+      "exceptions": "Regular/collection exhibitions are free; special exhibitions ticketed separately. Official schedule shows special exhibitions running into Feb 2027 (Liu Jiakun & Jiang Dahai through Feb 28; Liu Jianhua through Feb 21).",
+      "cost": "¥0 regular/collection exhibitions (special exhibitions ticketed separately)",
+      "duration": "2–3 h",
       "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.powerstationofart.com/visit-and-tickets",
+      "officialLabel": "PSA official visitor page",
+      "official_url": "https://www.powerstationofart.com/visit-and-tickets",
+      "videoLink": "https://www.youtube.com/watch?v=hr0IhUbi8xY",
+      "videoLabel": "YouTube review (May 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Power+Station+of+Art+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Power%20Station%20of%20Art%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/powerstationofart/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "May 2026 PSA walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=hr0IhUbi8xY",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "A01",
         "A02",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "shanghai-tower",
+      "city": "Shanghai",
+      "name": "Shanghai Tower (118F Top of Shanghai)",
+      "area": "Lujiazui · Pudong",
+      "hours": "",
+      "exceptions": "HOURS BLANKED (A03): en.shanghaitower.com only prints inquiry hotline hours (09:00–18:00) and does NOT publish observatory opening hours. Check live winter hours and weather visibility before ticketing.",
+      "cost": "¥360 = 2 × ¥180 (118F regular adult ticket verified via Shanghai Municipal Gov May 2026; Sky632 combo ¥268/pp)",
+      "duration": "1.5–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://en.shanghaitower.com/shagnhai.html",
+      "officialLabel": "Shanghai Tower + Shanghai Gov",
+      "official_url": "https://english.shanghai.gov.cn/en-FestivalsCelebrations/20260515/ee03e0a7bc6e4d87acc0a1cbe5d8ca49.html",
+      "videoLink": "https://www.youtube.com/watch?v=rB8xptA-2V8",
+      "videoLabel": "YouTube deck review (third-party)",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Power%20Station%20of%20Art%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Power%20Station%20of%20Art%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Power%20Station%20of%20Art%20Shanghai"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Shanghai+Tower+observation+deck+review",
+        "tiktok": "https://www.tiktok.com/search?q=Shanghai%20Tower%20observation%20deck",
+        "instagram": "https://www.instagram.com/explore/tags/shanghaitower/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "118F observation deck review (third-party)",
+          "url": "https://www.youtube.com/watch?v=rB8xptA-2V8",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@traveltomtom deck clip (third-party)",
+          "url": "https://www.tiktok.com/@traveltomtom/video/7282390862808517920",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A03",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
     },
     {
       "id": "oriental-pearl",
-      "name": "Oriental Pearl Tower",
       "city": "Shanghai",
-      "schedule": "09:00–21:00 (current schedule)",
+      "name": "Oriental Pearl Radio & TV Tower",
+      "area": "Lujiazui · Pudong",
+      "hours": "",
+      "exceptions": "HOURS & BASE TICKET BLANKED (A03/L01): orientalpearltower.com failed to load on Nov 26, 2026. Shanghai Gov cites a Sky Walking + Art Toy Museum combo (¥259/pp), not standalone deck admission.",
       "cost": "",
-      "source": "https://www.orientalpearltower.com/",
+      "duration": "1.5–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
       "officialLink": "https://www.orientalpearltower.com/",
+      "officialLabel": "Oriental Pearl Tower (manual check)",
       "official_url": "https://www.orientalpearltower.com/",
-      "exception": "Official site static fetch blocked (L01) and multiple sphere/cruise ticket bundles exist; couple total left blank until bundle is chosen.",
-      "transit": "",
+      "videoLink": "https://www.youtube.com/watch?v=WZMeiA6wDmQ",
+      "videoLabel": "YouTube walkthrough (third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Oriental+Pearl+Tower+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Oriental%20Pearl%20Tower%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/orientalpearltower/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Oriental Pearl visitor walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=WZMeiA6wDmQ",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Shanghai skyline towers comparison (third-party)",
+          "url": "https://www.youtube.com/watch?v=BxRhDjhXi7I",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "A01",
+        "A03",
+        "H03",
         "L01",
         "S01"
       ],
-      "socials": {
-        "YouTube tour (Jun 2026)": "https://www.youtube.com/watch?v=2kN3DSlRr94",
-        "YouTube tour (2)": "https://www.youtube.com/watch?v=lql_4YSqGg8",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Oriental%20Pearl%20Tower%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Oriental%20Pearl%20Tower%20Shanghai"
-      }
+      "dashboard": false
     },
     {
-      "id": "nanjing-road",
-      "name": "Nanjing Road pedestrian street",
+      "id": "the-bund",
       "city": "Shanghai",
-      "schedule": "Public outdoor street open 24h; malls/shops typically 10:00–22:00.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
+      "name": "The Bund Waterfront Promenade",
+      "area": "Waitan · Huangpu",
+      "hours": "Open public waterfront promenade (24/7; night skyline illumination typically evening—confirm winter switch-off time)",
+      "exceptions": "Open Mondays (great Monday anchor); crowd control may apply during major holiday evenings.",
+      "cost": "¥0 public waterfront",
+      "duration": "1.5–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
       "officialLink": "https://english.shanghai.gov.cn/",
+      "officialLabel": "Shanghai Municipal Portal",
       "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Ideal Monday arrival option when museums and Yu Garden are closed.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "S01"
-      ],
+      "videoLink": "https://www.youtube.com/watch?v=Tr9nsosBjRw",
+      "videoLabel": "YouTube Bund walk (Feb 2025, third-party)",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Nanjing%20Road%20Shanghai%20walk",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Nanjing%20Road%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Nanjing%20Road%20Shanghai"
-      }
-    },
-    {
-      "id": "french-concession",
-      "name": "Wukang / Anfu Road neighborhood walk",
-      "city": "Shanghai",
-      "schedule": "Public outdoor streets open 24h; cafés/boutiques typically 10:00–21:00.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Pairs naturally with Xuhui Bib Gourmand / 1-Star dining (Mi Thai, Le Comptoir, Ren He Guan).",
-      "transit": "",
-      "flags": [
-        "A01",
-        "S01"
+        "youtube": "https://www.youtube.com/results?search_query=The+Bund+Shanghai+night+walk",
+        "tiktok": "https://www.tiktok.com/search?q=The%20Bund%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/thebundshanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2025 Bund walking tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=Tr9nsosBjRw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Nov 2025 Bund evening walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=DGbwfqSrCVc",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@meetinshanghai Bund night clip",
+          "url": "https://www.tiktok.com/@meetinshanghai/video/7391354468329114911",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@jacmartin_ Bund skyline clip (third-party)",
+          "url": "https://www.tiktok.com/@jacmartin_/video/7457133077710638342",
+          "kind": "Direct video"
+        }
       ],
-      "socials": {
-        "YouTube Xuhui walk (Oct 2026)": "https://www.youtube.com/watch?v=mAdMLJ33Uw4",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Wukang%20Road%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Anfu%20Road%20Shanghai"
-      }
-    },
-    {
-      "id": "xintiandi",
-      "name": "Xintiandi shikumen district",
-      "city": "Shanghai",
-      "schedule": "Open-air precinct open daily; individual shops/restaurants keep separate hours.",
-      "cost": "¥0 open-air street access",
-      "source": "https://www.xintiandi.com/",
-      "officialLink": "https://www.xintiandi.com/",
-      "official_url": "https://www.xintiandi.com/",
-      "exception": "Adjacent to The Langham (T'ang Court) and Andaz Xintiandi; open Mondays.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Xintiandi%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xintiandi%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Xintiandi%20Shanghai"
-      }
-    },
-    {
-      "id": "huangpu-cruise",
-      "name": "Huangpu River evening cruise",
-      "city": "Shanghai",
-      "schedule": "",
-      "cost": "",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Operator pier (Shiliupu), departure slot and cabin tier not yet selected; compare against the ¥2 public Bund Ferry.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Huangpu%20River%20cruise%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Huangpu%20River%20cruise%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Huangpu%20River%20cruise%20Shanghai"
-      }
-    },
-    {
-      "id": "zhujiajiao",
-      "name": "Zhujiajiao Ancient Water Town & Kezhi Garden (Qingpu)",
-      "city": "Shanghai",
-      "schedule": "Canal streets open daily; Kezhi Garden open daily 08:30–17:00 (per Shanghai Gov).",
-      "cost": "¥0 town street entry; Kezhi Garden ¥40 = 2 × ¥20 (boat rides separate)",
-      "source": "https://english.shanghai.gov.cn/en-CityTour/20241012/d16e922011a9404fae8d4b78f7fa2b2e.html",
-      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20240925/6a29a3c41f3947cfbb6538390b9f033d.html",
-      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20241012/d16e922011a9404fae8d4b78f7fa2b2e.html",
-      "exception": "Suburban Qingpu water town (Metro Line 17); exceeds <=60-minute central transit target, so treat as an optional half/full-day excursion (A02).",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube 4K guide": "https://www.youtube.com/watch?v=rEGUhkSE_RU",
-        "YouTube walk (Dec 2025)": "https://www.youtube.com/watch?v=EAdQpCGYF80",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Zhujiajiao%20Water%20Town",
-        "TikTok search": "https://www.tiktok.com/search?q=Zhujiajiao%20Shanghai"
-      }
-    },
-    {
-      "id": "suzhou-daytrip",
-      "name": "Suzhou classical gardens day trip",
-      "city": "Suzhou",
-      "schedule": "",
-      "cost": "",
-      "source": "https://www.suzhou.gov.cn/",
-      "officialLink": "https://www.suzhou.gov.cn/",
-      "official_url": "https://www.suzhou.gov.cn/",
-      "exception": "Outside the four base-city shortlist; high-speed rail + station transfers exceed <=60-minute door-to-door rule (A02).",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Suzhou%20day%20trip%20from%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Suzhou%20Gardens",
-        "TikTok search": "https://www.tiktok.com/search?q=Suzhou%20day%20trip"
-      }
-    },
-    {
-      "id": "hangzhou-daytrip",
-      "name": "Hangzhou West Lake day trip",
-      "city": "Hangzhou",
-      "schedule": "",
-      "cost": "",
-      "source": "https://www.hangzhou.gov.cn/",
-      "officialLink": "https://www.hangzhou.gov.cn/",
-      "official_url": "https://www.hangzhou.gov.cn/",
-      "exception": "Outside the four base-city shortlist; intercity rail + local transfers exceed <=60-minute door-to-door rule (A02).",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Hangzhou%20West%20Lake%20day%20trip",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=West%20Lake%20Hangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Hangzhou%20West%20Lake"
-      }
-    },
-    {
-      "id": "forbidden-city",
-      "name": "The Palace Museum (Forbidden City)",
-      "city": "Beijing",
-      "schedule": "Nov 1 – Mar 31: Tue–Sun 08:30–16:30 (last entry 15:30); closed Mondays except statutory holidays.",
-      "cost": "¥80 = 2 × ¥40 off-season general entry (Treasure & Clock Galleries ¥10/person each extra)",
-      "source": "https://intl.dpm.org.cn/visit.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://intl.dpm.org.cn/visit.html",
-      "exception": "Real-name passport booking opens 7 days out at 20:00 Beijing time on intl.dpm.org.cn; closed Mon Feb 15 & Mon Feb 22 under regular rules.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube tour (Mar 2026)": "https://www.youtube.com/watch?v=j1g4CGbNCAM",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Forbidden%20City%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Forbidden%20City%20Beijing"
-      }
-    },
-    {
-      "id": "temple-heaven",
-      "name": "Temple of Heaven",
-      "city": "Beijing",
-      "schedule": "Park & inner monuments have separate winter hours; inner monuments closed Monday.",
-      "cost": "¥56 = 2 × ¥28 off-season through-ticket (Nov–Mar)",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Hall of Prayer for Good Harvests, Echo Wall & Circular Mound closed Mondays; buy full through-ticket rather than park-only gate ticket.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube tour (Mar 2026)": "https://www.youtube.com/watch?v=C2nVYUPw34g",
-        "YouTube 4K walk": "https://www.youtube.com/watch?v=VJzWwuvqc1Q",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Temple%20of%20Heaven%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Temple%20of%20Heaven%20Beijing"
-      }
-    },
-    {
-      "id": "summer-palace",
-      "name": "Summer Palace (颐和园)",
-      "city": "Beijing",
-      "schedule": "Nov–Mar winter hours; inner courtyard sites close Mondays (confirm exact gate cutoff before visit).",
-      "cost": "¥40 = 2 × ¥20 off-season gate entry; ¥100 = 2 × ¥50 off-season combination ticket",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Kunming Lake boats suspended during winter ice period; Subway Line 4 Beigongmen Station access.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube vlog (Jul 2026)": "https://www.youtube.com/watch?v=9Wi1TIvbeLo",
-        "YouTube guide (Dec 2025)": "https://www.youtube.com/watch?v=FunMBs7U50I",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Summer%20Palace%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Summer%20Palace%20Beijing"
-      }
-    },
-    {
-      "id": "mutianyu",
-      "name": "Mutianyu Great Wall",
-      "city": "Beijing",
-      "schedule": "Nov 16 – Mar 15: daily 08:00–17:30 (ticket sales 08:00–16:30, check-in 08:00–17:00); Mar 16 – Nov 15: Mon–Fri 07:30–18:00, Sat–Sun 07:30–18:30.",
-      "cost": "",
-      "source": "https://en.mutianyugreatwall.com/article/4KFdNO5ybgr",
-      "officialLink": "https://en.mutianyugreatwall.com/article/4KFdNO5ybgr",
-      "official_url": "https://en.mutianyugreatwall.com/article/4KFdNO5ybgr",
-      "exception": "Official JS ticket page does not expose static tariff (L01); Huairou district location (~70 km) exceeds <=60-minute public-transit target — treat as full-day excursion (A02).",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "L01",
-        "S01"
-      ],
-      "socials": {
-        "YouTube tour (May 2026)": "https://www.youtube.com/watch?v=cbkUOBIAf84",
-        "TikTok Mutianyu (1)": "https://www.tiktok.com/@megsandalex/video/7687658288120450307",
-        "TikTok Mutianyu (2)": "https://www.tiktok.com/@monikkuu/video/7463492752823586053",
-        "Official Mutianyu IG": "https://www.instagram.com/mutianyu_greatwall_official/"
-      }
-    },
-    {
-      "id": "canton-tower",
-      "name": "Canton Tower",
-      "city": "Guangzhou",
-      "schedule": "09:30–22:30 (current published schedule)",
-      "cost": "",
-      "source": "https://www.cantontower.com/",
-      "officialLink": "https://www.cantontower.com/",
-      "official_url": "https://www.cantontower.com/",
-      "exception": "Official site static fetch failed (L01) and multiple observation/Bubble Tram height tiers exist; select exact deck bundle before quoting couple total.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "L01",
-        "S01"
-      ],
-      "socials": {
-        "YouTube tour (Apr 2026)": "https://www.youtube.com/watch?v=u39NU97il_s",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Canton%20Tower%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Canton%20Tower%20Guangzhou"
-      }
-    },
-    {
-      "id": "chen-clan",
-      "name": "Chen Clan Ancestral Hall (Guangdong Folk Art Museum)",
-      "city": "Guangzhou",
-      "schedule": "09:00–17:30; regular Tuesday closure reported — confirm museum notice.",
-      "cost": "",
-      "source": "https://www.gz.gov.cn/",
-      "officialLink": "https://www.gz.gov.cn/",
-      "official_url": "https://www.gz.gov.cn/",
-      "exception": "Municipal portal cited; verify 2027 museum ticket & Tuesday closure schedule directly before visiting.",
-      "transit": "",
-      "flags": [
-        "A01",
-        "A02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube guide (Jun 2026)": "https://www.youtube.com/watch?v=jFzhxVTs8xc",
-        "YouTube 4K walk": "https://www.youtube.com/watch?v=xuFknUp-xrg",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chen%20Clan%20Ancestral%20Hall",
-        "TikTok search": "https://www.tiktok.com/search?q=Chen%20Clan%20Ancestral%20Hall"
-      }
-    },
-    {
-      "id": "shamian",
-      "name": "Shamian Island heritage walk",
-      "city": "Guangzhou",
-      "schedule": "Public outdoor pedestrian avenues open 24h.",
-      "cost": "¥0 for public street walk",
-      "source": "https://www.gz.gov.cn/",
-      "officialLink": "https://www.gz.gov.cn/",
-      "official_url": "https://www.gz.gov.cn/",
-      "exception": "Shaded heritage riverfront island near Huangsha Metro Station (Lines 1/6).",
-      "transit": "",
-      "flags": [
-        "A01",
-        "S01"
-      ],
-      "socials": {
-        "YouTube Shamian tour": "https://youtu.be/adt-fxMQOTk",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Shamian%20Island%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Shamian%20Island%20Guangzhou"
-      }
-    },
-    {
-      "id": "panda-base",
-      "name": "Chengdu Research Base of Giant Panda Breeding",
-      "city": "Chengdu",
-      "schedule": "Nov 1 – Feb 28: 08:00–16:30 (morning slot 08:00–12:00, afternoon 12:00–16:30); Mar 1 – Oct 31: 07:30–17:00.",
-      "cost": "¥110 = 2 × ¥55 standard adult admission (in-park shuttle bus extra)",
-      "source": "https://www.panda.org.cn/en/service/ticket/",
-      "officialLink": "https://www.panda.org.cn/en/about/introduction/",
-      "official_url": "https://www.panda.org.cn/en/service/ticket/",
-      "exception": "Real-name timed booking opens up to 14 days ahead; book morning entry slot when pandas are most active. Schedule shifts from 08:00 to 07:30 opening on Mar 1, 2027.",
-      "transit": "",
       "flags": [
         "A01",
         "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "nanjing-road",
+      "city": "Shanghai",
+      "name": "Nanjing Road Pedestrian Street",
+      "area": "Huangpu (People's Square to The Bund)",
+      "hours": "Open public pedestrian street (shops/malls set individual hours)",
+      "exceptions": "Open Mondays; pairs directly with Bund evening stroll.",
+      "cost": "¥0 public street",
+      "duration": "1–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://english.shanghai.gov.cn/",
+      "officialLabel": "Shanghai Municipal Portal",
+      "official_url": "https://english.shanghai.gov.cn/",
+      "videoLink": "https://www.youtube.com/watch?v=omyo_Mf_o8o",
+      "videoLabel": "YouTube street walk (third-party)",
       "socials": {
-        "YouTube tour (Jun 2025)": "https://www.youtube.com/watch?v=ctSmsWF4-Vo",
-        "YouTube guide (2)": "https://www.youtube.com/watch?v=d_LfbKc54jI",
-        "TikTok Chengdu Panda hub": "https://www.tiktok.com/discover/chengdu-panda-base?lang=en",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chengdu%20Panda%20Base"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Nanjing+Road+Shanghai+walk",
+        "tiktok": "https://www.tiktok.com/search?q=Nanjing%20Road%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/nanjingroad/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Nanjing Road walking tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=omyo_Mf_o8o",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Nanjing Road night stroll (third-party)",
+          "url": "https://www.youtube.com/watch?v=uuEdf1jOtdU",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "french-concession",
+      "city": "Shanghai",
+      "name": "Former French Concession (Wukang Rd & Anfu Rd)",
+      "area": "Xuhui / Huangpu",
+      "hours": "Open public tree-lined streets (cafes, boutiques & historic houses set own hours)",
+      "exceptions": "Open Mondays; Wukang Building intersection gets very crowded on weekends.",
+      "cost": "¥0 street walking",
+      "duration": "2–3 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://english.shanghai.gov.cn/",
+      "officialLabel": "Shanghai Municipal Portal",
+      "official_url": "https://english.shanghai.gov.cn/",
+      "videoLink": "https://www.youtube.com/watch?v=mAdMLJ33Uw4",
+      "videoLabel": "YouTube walking guide (third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=French+Concession+Wukang+Road+Shanghai",
+        "tiktok": "https://www.tiktok.com/search?q=French%20Concession%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/wukangroad/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "French Concession walking guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=mAdMLJ33Uw4",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Wukang & Anfu Rd walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=9_lJLIc-YXw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@nessahuangg Shanghai highlights (third-party)",
+          "url": "https://www.tiktok.com/@nessahuangg/video/7544320215559965957",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "xintiandi",
+      "city": "Shanghai",
+      "name": "Xintiandi Shikumen District",
+      "area": "Huangpu",
+      "hours": "Open pedestrian lifestyle district (individual shops/restaurants set own hours)",
+      "exceptions": "Open Mondays; directly adjacent to The Langham & T'ang Court.",
+      "cost": "¥0 street access",
+      "duration": "1.5–2.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://english.shanghai.gov.cn/",
+      "officialLabel": "Shanghai Municipal Portal",
+      "official_url": "https://english.shanghai.gov.cn/",
+      "videoLink": "https://www.youtube.com/results?search_query=Xintiandi+Shanghai+walking+tour",
+      "videoLabel": "YouTube search (unverified)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Xintiandi+Shanghai+walking+tour",
+        "tiktok": "https://www.tiktok.com/search?q=Xintiandi%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/xintiandi/"
+      },
+      "reviews": [
+        {
+          "platform": "TikTok",
+          "label": "Where to go in Shanghai discover page",
+          "url": "https://www.tiktok.com/discover/where-to-go-in-shanghai-china",
+          "kind": "TikTok discover"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "zhujiajiao",
+      "city": "Shanghai",
+      "name": "Zhujiajiao Water Town (or Suzhou / Hangzhou rail day trip)",
+      "area": "Qingpu District (outlying — >60 min check required)",
+      "hours": "Canal streets open daily; Kezhi Garden daily 08:30–17:00 (per Shanghai Municipal Gov)",
+      "exceptions": "OUTLYING FLAG (A02/H03): Qingpu Metro Line 17 or high-speed rail to Suzhou/Hangzhou is NOT verified <=60 minutes door-to-door.",
+      "cost": "¥0 town street entry; Kezhi Garden ¥40 = 2 × ¥20 (boat rides separate)",
+      "duration": "Half–full day",
+      "transit": "",
+      "transit_flag": "Outlying excursion — not verified <=60 min door-to-door.",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20241012/d16e922011a9404fae8d4b78f7fa2b2e.html",
+      "officialLabel": "Shanghai Municipal Portal",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20241012/d16e922011a9404fae8d4b78f7fa2b2e.html",
+      "videoLink": "https://www.youtube.com/results?search_query=Zhujiajiao+Water+Town+Shanghai+day+trip",
+      "videoLabel": "YouTube search (unverified)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Zhujiajiao+Water+Town+Shanghai+day+trip",
+        "tiktok": "https://www.tiktok.com/search?q=Zhujiajiao%20Water%20Town",
+        "instagram": "https://www.instagram.com/explore/tags/zhujiajiao/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Zhujiajiao Water Town 4K guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=rEGUhkSE_RU",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Dec 2025 Zhujiajiao walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=EAdQpCGYF80",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "forbidden-city",
+      "city": "Beijing",
+      "name": "Forbidden City (The Palace Museum)",
+      "area": "Dongcheng · Central Beijing",
+      "hours": "Nov 1 – Mar 31 off-season: Tue–Sun 08:30–16:30 (last entry 15:30); Closed Mondays except national holidays & Lunar New Year's Eve",
+      "exceptions": "STRICT BOOKING RULE: NO same-day tickets sold. Real-name passport booking opens 20:00 BJT 7 days ahead (foreign visitors can book via official English portal). Treasure Gallery & Clock Gallery +¥10/pp each.",
+      "cost": "¥80 = 2 × ¥40 (off-season general admission; optional galleries +¥20/couple each)",
+      "duration": "3–4 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://intl.dpm.org.cn/visit.html",
+      "officialLabel": "Palace Museum official visit page",
+      "official_url": "https://intl.dpm.org.cn/visit.html",
+      "videoLink": "https://www.youtube.com/watch?v=zqJnXYS_a9E",
+      "videoLabel": "YouTube visitor guide (third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Forbidden+City+Beijing+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Forbidden%20City%20Beijing",
+        "instagram": "https://www.instagram.com/visitbeijingofficial/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Forbidden City visitor walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=zqJnXYS_a9E",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Palace Museum history & tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=WlRweVwbzDQ",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@youyou.xing0 ticket/visit clip (third-party)",
+          "url": "https://www.tiktok.com/@youyou.xing0/video/7641412189923904776",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@visitbeijingofficial (official tourism profile)",
+          "url": "https://www.instagram.com/visitbeijingofficial/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "national-museum-china",
+      "city": "Beijing",
+      "name": "National Museum of China (NMC)",
+      "area": "East Tian'anmen Square · Dongcheng",
+      "hours": "Tue–Sun 09:00–17:00 (last entry 16:00, clearing 16:30); Closed Mondays except public holidays",
+      "exceptions": "Real-name passport reservation required up to 7 days in advance at 17:00 BJT (strict security check). Confirmed NMC booking also grants same-day Tian'anmen Square access.",
+      "cost": "¥0 (free with mandatory 7-day advance passport reservation)",
+      "duration": "2.5–4 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://pcticket.chnmuseum.cn/museum-en/",
+      "officialLabel": "NMC official English ticketing",
+      "official_url": "https://pcticket.chnmuseum.cn/museum-en/",
+      "videoLink": "https://www.youtube.com/watch?v=PpPs2B4aF1s",
+      "videoLabel": "YouTube walkthrough (Apr 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=National+Museum+of+China+Beijing+tour",
+        "tiktok": "https://www.tiktok.com/search?q=National%20Museum%20of%20China%20Beijing",
+        "instagram": "https://www.instagram.com/visitbeijingofficial/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Apr 2025 NMC museum walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=PpPs2B4aF1s",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "temple-heaven",
+      "city": "Beijing",
+      "name": "Temple of Heaven Park",
+      "area": "Dongcheng · Southern Central Beijing",
+      "hours": "Nov 1 – Mar 31 off-season: Park daily 06:30–22:00 (last entry 21:00); Hall of Prayer / Echo Wall / Circular Mound Tue–Sun 08:00–17:00 (last entry 16:30), Closed Mondays except statutory holidays",
+      "exceptions": "Park grounds stay open on Mondays for walking, but the iconic Hall of Prayer for Good Harvests and inner monuments close Mondays.",
+      "cost": "¥20 = 2 × ¥10 (off-season park only) or ¥56 = 2 × ¥28 (off-season combined through-ticket)",
+      "duration": "2–3 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/",
+      "officialLabel": "Beijing Municipal Portal",
+      "official_url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/",
+      "videoLink": "https://www.youtube.com/watch?v=B43bg6wG_JM",
+      "videoLabel": "YouTube tour (Mar 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Temple+of+Heaven+Beijing+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Temple%20of%20Heaven%20Beijing",
+        "instagram": "https://www.instagram.com/visitbeijingofficial/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Mar 2026 Temple of Heaven tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=B43bg6wG_JM",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Mar 2025 visitor guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=PaXGsf_0qss",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@wadeandtaylor Beijing tips (third-party)",
+          "url": "https://www.tiktok.com/@wadeandtaylor/video/7429005950222257454",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "summer-palace",
+      "city": "Beijing",
+      "name": "Summer Palace (Yiheyuan)",
+      "area": "Haidian · Northwest Beijing",
+      "hours": "Nov 1 – Mar 31 off-season: Park daily 06:30–19:00 (last entry 18:00); inner paid halls Tue–Sun 08:30–17:00 (last entry 16:30), Closed Mondays except statutory holidays",
+      "exceptions": "Outer lakefront & Long Corridor remain accessible on Mondays; Tower of Buddhist Incense and inner courtyards close Mondays.",
+      "cost": "¥40 = 2 × ¥20 (off-season park only) or ¥100 = 2 × ¥50 (off-season combined ticket)",
+      "duration": "3–4 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet (check subway Line 4 time from chosen hotel).",
+      "officialLink": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/index.html",
+      "officialLabel": "Beijing Municipal Portal",
+      "official_url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/index.html",
+      "videoLink": "https://www.youtube.com/watch?v=FunMBs7U50I",
+      "videoLabel": "YouTube tour (Dec 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Summer+Palace+Beijing+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Summer%20Palace%20Beijing",
+        "instagram": "https://www.instagram.com/visitbeijingofficial/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Dec 2025 Summer Palace walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=FunMBs7U50I",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Summer Palace highlights (third-party)",
+          "url": "https://www.youtube.com/watch?v=R1QOwdZblC8",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@haleyandzach_ Beijing clip (third-party)",
+          "url": "https://www.tiktok.com/@haleyandzach_/video/7269438610909318446",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "beihai-park",
+      "city": "Beijing",
+      "name": "Beihai Park",
+      "area": "Xicheng (Northwest of Forbidden City)",
+      "hours": "Nov 1 – Mar 31 off-season: Park daily 06:30–20:00 (last entry 19:30); inner courtyards Tue–Sun 08:30–17:00 (last entry 16:30), Closed Mondays except Round City & statutory holidays",
+      "exceptions": "Easy Monday park walk right next to Jingshan/Forbidden City; foreign passport holders can also reserve via phone +86 (010) 6403 7972.",
+      "cost": "¥10 = 2 × ¥5 (off-season park only) or ¥30 = 2 × ¥15 (off-season combined ticket)",
+      "duration": "1.5–2.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/beihaipark/overview/202301/t20230111_2896592.html",
+      "officialLabel": "Beijing Municipal Portal",
+      "official_url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/beihaipark/overview/202301/t20230111_2896592.html",
+      "videoLink": "https://www.youtube.com/watch?v=3gu_qyMvlTM",
+      "videoLabel": "YouTube walk (May 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Beihai+Park+Beijing+walk",
+        "tiktok": "https://www.tiktok.com/search?q=Beihai%20Park%20Beijing",
+        "instagram": "https://www.instagram.com/visitbeijingofficial/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "May 2025 Beihai Park tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=3gu_qyMvlTM",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Beihai Park & White Dagoba walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=eOgnjBhGMaM",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "mutianyu",
+      "city": "Beijing",
+      "name": "Mutianyu Great Wall",
+      "area": "Huairou District (outlying — >60 min trip)",
+      "hours": "Nov 16 – Mar 15 off-season: Daily 08:00–17:30; FROM MAR 16 peak season: Mon–Fri 07:30–18:00, Sat–Sun 07:30–18:30 (ticket sales stop 1h early, entry 30m early)",
+      "exceptions": "SEASONAL SWITCH ON MAR 16, 2027 (within our Feb 15–Mar 23 window!). OUTLYING FLAG (A02/H03): Huairou Great Wall is NOT a <=60-minute public-transit trip from central Beijing.",
+      "cost": "¥80 = 2 × ¥40 basic admission (+ optional RT shuttle ¥30 = 2×¥15 + optional RT cable car ¥280 = 2×¥140; full combo ~¥390 for two)",
+      "duration": "Half–full day",
+      "transit": "",
+      "transit_flag": "Outlying excursion (Huairou) — exceeds <=60 min public-transit target.",
+      "officialLink": "https://en.mutianyugreatwall.com/pdf/one-day",
+      "officialLabel": "Mutianyu official guide",
+      "official_url": "https://en.mutianyugreatwall.com/pdf/one-day",
+      "videoLink": "https://www.youtube.com/watch?v=KqH94FAwk-Y",
+      "videoLabel": "YouTube guide (Apr 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Mutianyu+Great+Wall+Beijing+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Mutianyu%20Great%20Wall",
+        "instagram": "https://www.instagram.com/explore/tags/mutianyugreatwall/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Apr 2026 Mutianyu DIY guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=KqH94FAwk-Y",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Jun 2026 cable car & toboggan vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=kU9huPVdVlM",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@megsandalex Great Wall tips (third-party)",
+          "url": "https://www.tiktok.com/@megsandalex/video/7687658288120450307",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@monikkuu Mutianyu winter clip (third-party)",
+          "url": "https://www.tiktok.com/@monikkuu/video/7463492752823586053",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@mutianyu_greatwall_official (official park IG)",
+          "url": "https://www.instagram.com/mutianyu_greatwall_official/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "canton-tower",
+      "city": "Guangzhou",
+      "name": "Canton Tower",
+      "area": "Haizhu · Pearl River South Bank",
+      "hours": "Daily 09:30–22:30 (ticket hall & last entry 09:30–22:00); Monday maintenance delays: Bubble Tram opens 15:00 (17:00 last Mon of month), Sky Drop opens 12:00 (17:00 last Mon)",
+      "exceptions": "Root site cantontower.com timed out on Nov 26, 2026; official ticketing & ride rules verified via mallpc.cantontower.com. Weather can halt outdoor rooftop rides.",
+      "cost": "¥300 = 2 × ¥150 (433m Indoor Observatory); Bubble Tram pkg ¥596 (2×¥298); 488m All-in-One ¥796 (2×¥398)",
+      "duration": "1.5–2.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://mallpc.cantontower.com/ticket",
+      "officialLabel": "Canton Tower official ticketing",
+      "official_url": "https://mallpc.cantontower.com/ticket",
+      "videoLink": "https://www.youtube.com/watch?v=ZuZlcFWMMPA",
+      "videoLabel": "YouTube review (Jul 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Canton+Tower+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Canton%20Tower%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/cantontower/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jul 2026 Canton Tower review (third-party)",
+          "url": "https://www.youtube.com/watch?v=ZuZlcFWMMPA",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@aereon.wong Canton Tower clip (third-party)",
+          "url": "https://www.tiktok.com/@aereon.wong/video/7477936184677780743",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@guangzhoutraveler1 skyline tips (third-party)",
+          "url": "https://www.tiktok.com/@guangzhoutraveler1/video/7532093906234707230",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "L01",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "chen-clan",
+      "city": "Guangzhou",
+      "name": "Chen Clan Ancestral Hall (Guangdong Folk Art Museum)",
+      "area": "Liwan · West Guangzhou",
+      "hours": "09:00–17:30 (ticket sales stop 17:00, clearing 17:15 per official gzcjc.com.cn visitor page)",
+      "exceptions": "Official museum page (gzcjc.com.cn) does not specify a weekly closure day or regular fare; a 2023 gz.gov.cn exhibition notice cited last-Monday closures (Feb 22, 2027) for that show — verify general Monday status & ticket fee directly before visiting.",
+      "cost": "",
+      "duration": "1.5–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.gzcjc.com.cn/MYwebsite/rc/my_fwxq.htm?token=bfbdec9b14e24756a34bab9c0eb77fa1&subpath=854&leixing=a98536",
+      "officialLabel": "Chen Clan Museum official visitor page",
+      "official_url": "https://www.gz.gov.cn/guangzhouinternational/home/whatson/content/post_9209869.html",
+      "videoLink": "https://www.youtube.com/watch?v=xuFknUp-xrg",
+      "videoLabel": "YouTube tour (Mar 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Chen+Clan+Ancestral+Hall+Guangzhou",
+        "tiktok": "https://www.tiktok.com/search?q=Chen%20Clan%20Ancestral%20Hall%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/chenclanancestralhall/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Mar 2025 Chen Clan Hall tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=xuFknUp-xrg",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Jan 2025 architecture walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=yqmljLoE3SY",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "A03",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "shamian",
+      "city": "Guangzhou",
+      "name": "Shamian Island Historic Quarter",
+      "area": "Liwan · Pearl River",
+      "hours": "Open public historic pedestrian island (24/7; cafes & galleries set own hours)",
+      "exceptions": "Open daily including Mondays; quiet tree-shaded historic architecture.",
+      "cost": "¥0 public island walk",
+      "duration": "1.5–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.gz.gov.cn/guangzhouinternational/",
+      "officialLabel": "Guangzhou Municipal Portal",
+      "official_url": "https://www.gz.gov.cn/guangzhouinternational/",
+      "videoLink": "https://www.youtube.com/watch?v=vM_ni-0Rw6o",
+      "videoLabel": "YouTube walk (Jan 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Shamian+Island+Guangzhou+walk",
+        "tiktok": "https://www.tiktok.com/search?q=Shamian%20Island%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/shamianisland/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2025 Shamian Island walking tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=vM_ni-0Rw6o",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "yuexiu-park",
+      "city": "Guangzhou",
+      "name": "Yuexiu Park (Five Rams Statue & Zhenhai Tower)",
+      "area": "Yuexiu · Central Guangzhou",
+      "hours": "Daily 06:00–22:00 (verified Nov 26, 2026 via Guangzhou Forestry & Landscaping Bureau)",
+      "exceptions": "General park entry is free; Guangzhou's annual Spring Festival Yuexiu Lantern Show runs into late Feb/early Mar with a separate ticketed lantern zone — confirm 2027 dates.",
+      "cost": "¥0 general park admission (seasonal lantern zone & Guangzhou Museum inside Zhenhai Tower ticketed separately)",
+      "duration": "2–3 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://lyylj.gz.gov.cn/stly/gyjq/yxgy/fwzn/content/post_5611184.html",
+      "officialLabel": "Guangzhou Parks Bureau",
+      "official_url": "https://lyylj.gz.gov.cn/stly/gyjq/yxgy/fwzn/content/post_5611184.html",
+      "videoLink": "https://www.youtube.com/watch?v=fA1QpC2QAoU",
+      "videoLabel": "YouTube walk (Oct 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Yuexiu+Park+Guangzhou+walk",
+        "tiktok": "https://www.tiktok.com/search?q=Yuexiu%20Park%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/yuexiupark/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Oct 2025 Yuexiu Park tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=fA1QpC2QAoU",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Aug 2025 Five Rams & park walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=q0vNausUiGo",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "pearl-river-cruise",
+      "city": "Guangzhou",
+      "name": "Pearl River Night Cruise",
+      "area": "Tianzi / Dashatou / Canton Tower Piers",
+      "hours": "Evening sailings (exact pier schedules & winter departures vary by operator; confirm 2027 timetable)",
+      "exceptions": "Ticket pricing depends on pier, deck level & operator; confirm official pier schedule directly.",
+      "cost": "",
+      "duration": "1–1.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.gz.gov.cn/guangzhouinternational/",
+      "officialLabel": "Guangzhou Municipal Portal",
+      "official_url": "https://www.gz.gov.cn/guangzhouinternational/",
+      "videoLink": "https://www.youtube.com/results?search_query=Pearl+River+Night+Cruise+Guangzhou",
+      "videoLabel": "YouTube search (unverified)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Pearl+River+Night+Cruise+Guangzhou",
+        "tiktok": "https://www.tiktok.com/search?q=Pearl%20River%20Night%20Cruise%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/pearlrivercruise/"
+      },
+      "reviews": [],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "chimelong-safari",
+      "city": "Guangzhou",
+      "name": "Chimelong Safari Park",
+      "area": "Panyu District (outlying — verify metro time)",
+      "hours": "Mon–Fri 09:30–18:00; Sat–Sun 09:30–18:30 (confirm 2027 Feb/Mar daily calendar on chimelong.com)",
+      "exceptions": "OUTLYING FLAG (A02/H03): Panyu Resort via Metro Line 3/7 may exceed 60 min door-to-door depending on hotel. Dynamic regular vs peak-day pricing applies.",
+      "cost": "¥600 (2 × ¥300 regular weekday adult) / ¥700 (2 × ¥350 peak/weekend adult); confirm 2027 calendar",
+      "duration": "Half–full day",
+      "transit": "",
+      "transit_flag": "Outlying Panyu district — verify exact metro + shuttle time from chosen hotel.",
+      "officialLink": "https://www.chimelong.com/gz/safaripark/",
+      "officialLabel": "Chimelong Safari Park official site",
+      "official_url": "https://www.chimelong.com/gz/safaripark/",
+      "videoLink": "https://www.youtube.com/watch?v=6fPELjgLDTk",
+      "videoLabel": "YouTube park vlog (third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Chimelong+Safari+Park+Guangzhou+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Chimelong%20Safari%20Park%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/chimelongsafaripark/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Chimelong Safari Park walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=6fPELjgLDTk",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Safari Park cable car & pandas (third-party)",
+          "url": "https://www.youtube.com/watch?v=b5Oirkq5VTc",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "panda-base",
+      "city": "Chengdu",
+      "name": "Chengdu Research Base of Giant Panda Breeding",
+      "area": "Chenghua · North Chengdu",
+      "hours": "NOV–FEB (incl. Feb 15–28, 2027): Entry 08:00–16:30 (Morning 08:00–12:00 / Afternoon 12:00–16:30), park clears 17:30. FROM MAR 1 (Mar–Oct): Entry 07:30–17:00, clears 18:00",
+      "exceptions": "SEASONAL SWITCH ON MAR 1, 2027 (A02)! Real-name online reservation up to 14 days ahead with original passport; go at morning opening when pandas are most active. Note: No. 6 Giant Panda Villa & Panda Art Museum close Mondays (main base remains open Mondays).",
+      "cost": "¥110 = 2 × ¥55 adult admission (optional park sightseeing bus ¥60 = 2 × ¥30)",
+      "duration": "3–4 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet (Metro Line 3 + shuttle from central Chengdu).",
+      "officialLink": "https://m.panda.org.cn/en/service/ticket/",
+      "officialLabel": "Panda Base official ticketing",
+      "official_url": "https://m.panda.org.cn/en/service/ticket/",
+      "videoLink": "https://www.youtube.com/watch?v=1j7s2ScamT0",
+      "videoLabel": "YouTube guide (Oct 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Chengdu+Panda+Base+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Chengdu%20Panda%20Base",
+        "instagram": "https://www.instagram.com/explore/tags/chengdupandabase/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Oct 2025 Panda Base visitor guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=1j7s2ScamT0",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Sep 2025 morning panda tips (third-party)",
+          "url": "https://www.youtube.com/watch?v=l9bDs00utZI",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Panda Base walking tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=u7vNVDnZOqo",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "A02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
     },
     {
       "id": "wuhou",
-      "name": "Wuhou Shrine Museum & adjacent Jinli Street",
       "city": "Chengdu",
-      "schedule": "Wuhou Shrine Museum daily 09:00–18:00 (ticket sales stop 17:00); adjacent Jinli street open later.",
-      "cost": "¥100 = 2 × ¥50 Wuhou Shrine full-price adult admission (Jinli street entry ¥0)",
-      "source": "https://www.wuhouci.net.cn/",
-      "officialLink": "https://www.wuhouci.net.cn/",
-      "official_url": "https://www.wuhouci.net.cn/",
-      "exception": "Paid Three Kingdoms museum shrine and free Jinli snack/lantern street have separate gates and hours; confirm 2027 Temple Fair notice.",
+      "name": "Wuhou Shrine Museum & Jinli Ancient Street",
+      "area": "Wuhou District · Chengdu",
+      "hours": "Daily 09:00–18:00 (last ticket sale 17:00); adjacent Jinli Ancient Street stays open later into the evening",
+      "exceptions": "English ticket page notes 14-day real-name booking (child/student concession wording differs slightly between EN & ZH pages). Verify 2027 Chengdu Great Temple Fair dates (often runs through Lantern Festival in late Feb/early Mar).",
+      "cost": "¥100 = 2 × ¥50 (Wuhou Shrine adult admission; Jinli Ancient Street public access is free)",
+      "duration": "2.5–3.5 h",
       "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://en.wuhouci.net.cn/visit-ticket",
+      "officialLabel": "Wuhou Shrine official ticket rules",
+      "official_url": "https://en.wuhouci.net.cn/visit-ticket",
+      "videoLink": "https://www.youtube.com/watch?v=iiORD6tEVpU",
+      "videoLabel": "YouTube tour (Jun 2025, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Wuhou+Shrine+Jinli+Street+Chengdu",
+        "tiktok": "https://www.tiktok.com/search?q=Wuhou%20Shrine%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/wuhoushrine/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jun 2025 Wuhou Shrine & Jinli tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=iiORD6tEVpU",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "A01",
+        "A02",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "dufu-cottage",
+      "city": "Chengdu",
+      "name": "Du Fu Thatched Cottage Museum",
+      "area": "Qingyang District · West Chengdu",
+      "hours": "Daily 09:00–18:00 (last entry 17:00; verified Nov 26, 2026 on official cddfct.com)",
+      "exceptions": "Open daily including Mondays; annual Spring Festival / Lantern Festival Poetry Cultural Event runs Feb–Mar during regular hours (09:00–18:00).",
+      "cost": "¥100 = 2 × ¥50 adult admission",
+      "duration": "2–2.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.cddfct.com/go-c20.htm",
+      "officialLabel": "Du Fu Cottage official site",
+      "official_url": "https://www.cddfct.com/go-c20.htm",
+      "videoLink": "https://www.youtube.com/watch?v=u2YX3wP7xUM",
+      "videoLabel": "YouTube walk (Mar 2025, third-party)",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Wuhou%20Shrine%20Jinli%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Wuhou%20Shrine%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Jinli%20Street%20Chengdu"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Du+Fu+Thatched+Cottage+Chengdu",
+        "tiktok": "https://www.tiktok.com/search?q=Du%20Fu%20Thatched%20Cottage%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/dufuthatchedcottage/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Mar 2025 Du Fu Cottage tour (third-party)",
+          "url": "https://www.youtube.com/watch?v=u2YX3wP7xUM",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Bamboo garden walkthrough (third-party)",
+          "url": "https://www.youtube.com/watch?v=ffVfjd2rpnA",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "peoples-park",
+      "city": "Chengdu",
+      "name": "People's Park & Heming Teahouse",
+      "area": "Qingyang · Central Chengdu",
+      "hours": "Public urban park open daily from early morning to evening (teahouses set individual daytime/evening hours)",
+      "exceptions": "Open Mondays; classic outdoor bamboo-chair gaiwan tea experience.",
+      "cost": "¥0 park entry (tea paid à la carte at teahouse)",
+      "duration": "1.5–2.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.gochengdu.cn/",
+      "officialLabel": "Chengdu Official Portal",
+      "official_url": "https://www.gochengdu.cn/",
+      "videoLink": "https://www.youtube.com/watch?v=Q7TQLQ3DuGw",
+      "videoLabel": "YouTube teahouse vlog (third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Peoples+Park+Heming+Teahouse+Chengdu",
+        "tiktok": "https://www.tiktok.com/search?q=Peoples%20Park%20Chengdu%20teahouse",
+        "instagram": "https://www.instagram.com/explore/tags/chengdupeoplespark/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Chengdu teahouse culture video (third-party)",
+          "url": "https://www.youtube.com/watch?v=Q7TQLQ3DuGw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Chengdu teahouse discover page",
+          "url": "https://www.tiktok.com/discover/chengdu-teahouse",
+          "kind": "TikTok discover"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "kuanzhai-alley",
+      "city": "Chengdu",
+      "name": "Kuanzhai Alley (Wide & Narrow Alleys)",
+      "area": "Qingyang · Central Chengdu",
+      "hours": "Open historic pedestrian alleys (shops, teahouses & eateries set individual daytime/evening hours)",
+      "exceptions": "Open Mondays; very busy afternoons and weekends—morning strolls are quieter.",
+      "cost": "¥0 public alleys",
+      "duration": "1.5–2 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.gochengdu.cn/en/article/happy_life_in_chengdu/4589",
+      "officialLabel": "Chengdu Official Portal",
+      "official_url": "https://www.gochengdu.cn/en/article/happy_life_in_chengdu/4589",
+      "videoLink": "https://www.youtube.com/results?search_query=Kuanzhai+Alley+Chengdu+walking+tour",
+      "videoLabel": "YouTube search (unverified)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Kuanzhai+Alley+Chengdu+walking+tour",
+        "tiktok": "https://www.tiktok.com/search?q=Kuanzhai%20Alley%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/kuanzhaialley/"
+      },
+      "reviews": [],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "taikoo-li-cd",
+      "city": "Chengdu",
+      "name": "Taikoo Li Chengdu & Daci Temple",
+      "area": "Jinjiang (Chunxi Road)",
+      "hours": "Open-air architectural shopping/courtyard district open daily; Daci Temple daytime hours vary (confirm on site)",
+      "exceptions": "Open Mondays; directly houses Mi Xun Teahouse (1★ + Green Star) inside The Upper House Chengdu.",
+      "cost": "¥0 public streets & temple courtyard",
+      "duration": "1.5–2.5 h",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.gochengdu.cn/",
+      "officialLabel": "Chengdu Official Portal",
+      "official_url": "https://www.gochengdu.cn/",
+      "videoLink": "https://www.youtube.com/results?search_query=Taikoo+Li+Chengdu+Daci+Temple+walk",
+      "videoLabel": "YouTube search (unverified)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Taikoo+Li+Chengdu+Daci+Temple+walk",
+        "tiktok": "https://www.tiktok.com/search?q=Taikoo%20Li%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/taikoolichengdu/"
+      },
+      "reviews": [],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "shanghai-disneyland",
+      "city": "Shanghai",
+      "name": "Shanghai Disneyland",
+      "area": "Chuansha New Town · Pudong (Metro Line 11 terminus)",
+      "hours": "Date-specific park hours published on official resort calendar (typically 08:30–20:30/21:30)",
+      "exceptions": "Date-tiered pricing rises on weekends/holidays; purchase with passport numbers via official resort site/app. Metro Line 11 ride from central Puxi is ~45–65 min depending on hotel.",
+      "cost": "From ¥950 = 2 × ¥475 standard 1-Day Ticket (2-Day Early Bird from ¥1,508 = 2 × ¥754; 1-Day + Premier Access from ¥1,740 = 2 × ¥870)",
+      "duration": "Full day (8–12 h)",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
+      "officialLabel": "Shanghai Disney Resort Tickets",
+      "official_url": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
+      "videoLink": "https://www.youtube.com/watch?v=YZDwOmIt4gw",
+      "videoLabel": "YouTube vlog (Jan 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Shanghai+Disneyland+2026+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Shanghai%20Disneyland",
+        "instagram": "https://www.instagram.com/shanghaidisneyresort_park/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2026 Shanghai Disneyland vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=YZDwOmIt4gw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@shanghaidisneyresort_park (official park profile)",
+          "url": "https://www.instagram.com/shanghaidisneyresort_park/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ]
     },
     {
       "id": "jinsha-site-museum",
-      "name": "Jinsha Site Museum — CLOSED FOR UPGRADES THROUGH APR 30, 2027",
       "city": "Chengdu",
-      "schedule": "CLOSED Dec 5, 2025 – Apr 30, 2027 per official museum notice (do not schedule for Feb–Mar 2027).",
+      "name": "Jinsha Site Museum — CLOSED THROUGH APR 30, 2027",
+      "area": "2 Jinsha Site Rd · Qingyang District",
+      "hours": "CLOSED Dec 5, 2025 – Apr 30, 2027 per official museum notice (do not schedule for Feb–Mar 2027)",
+      "exceptions": "CONFIRMED FULL-WINDOW CLOSURE (A04): Closed across 100% of Feb 15 – Mar 23, 2027 for comprehensive facility upgrades (enquiry: 028-87303511). Substitute Wuhou Shrine or Du Fu Thatched Cottage.",
       "cost": "",
-      "source": "https://www.jinshasitemuseum.com/info/4707",
-      "officialLink": "https://www.jinshasitemuseum.com/",
-      "official_url": "https://www.jinshasitemuseum.com/info/4707",
-      "exception": "CONFIRMED FULL-WINDOW CLOSURE (A04): Closed across the entire Feb 15 – Mar 23, 2027 trip window for comprehensive facility upgrades (enquiry: 028-87303511). Substitute Wuhou Shrine or Chengdu Museum.",
+      "duration": "Closed",
       "transit": "",
+      "transit_flag": "Site closed during trip window.",
+      "officialLink": "https://www.jinshasitemuseum.com/info/4707",
+      "officialLabel": "Official Jinsha Closure Notice",
+      "official_url": "https://www.jinshasitemuseum.com/info/4707",
+      "videoLink": "",
+      "videoLabel": "",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Jinsha+Site+Museum+Chengdu",
+        "tiktok": "https://www.tiktok.com/search?q=Jinsha%20Site%20Museum",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Jinsha%20Site%20Museum"
+      },
+      "reviews": [],
       "flags": [
         "A04",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Jinsha%20Site%20Museum%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jinsha%20Site%20Museum",
-        "TikTok search": "https://www.tiktok.com/search?q=Jinsha%20Site%20Museum"
-      }
+      "dashboard": true
     }
   ],
   "costs": {
@@ -2389,12 +3600,55 @@ window.TRIP_DATA = {
         ]
       }
     ],
+    "extended_windows": [
+      {
+        "label": "2-week stay (14 nights)",
+        "checkin": "2027-02-15",
+        "checkout": "2027-03-01",
+        "nights": 14,
+        "official_total": "",
+        "notes": "Upper edge of 1–2 week brief; exceeds 240h (10-day) transit-without-visa ceiling. Compare single-base vs 2-city high-speed rail split.",
+        "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+        "flags": [
+          "H01",
+          "E01"
+        ]
+      },
+      {
+        "label": "3-week multi-city stay (21 nights)",
+        "checkin": "2027-02-15",
+        "checkout": "2027-03-08",
+        "nights": 21,
+        "official_total": "",
+        "notes": "Fits 2–4 week scope; spans Chengdu Panda Base Mar 1 summer-hours switch. Requires standard visa or verified visa-free nationality.",
+        "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+        "flags": [
+          "H01",
+          "E01",
+          "A02"
+        ]
+      },
+      {
+        "label": "4-week / max window (28–36 nights)",
+        "checkin": "2027-02-15",
+        "checkout": "2027-03-23",
+        "nights": 36,
+        "official_total": "",
+        "notes": "Uses full Feb 15–Mar 23 travel boundary (or 28 nights ending Mar 15); spans both Mar 1 Panda Base and Mar 16 Mutianyu seasonal switches.",
+        "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+        "flags": [
+          "H01",
+          "E01",
+          "A02"
+        ]
+      }
+    ],
     "booking_windows": [
       {
         "lead_days": 90,
         "target_start": "2026-11-17",
         "target_end": "2026-11-20",
-        "action": "Passed (9–6 days ago as of Nov 26, 2026); historical reference checkpoint only, not a proven cheapest day.",
+        "action": "Past reference checkpoint (as of Nov 26, 2026 we are 81–84 days before Feb 15–18); not a proven cheapest day.",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
@@ -2405,7 +3659,7 @@ window.TRIP_DATA = {
         "lead_days": 60,
         "target_start": "2026-12-17",
         "target_end": "2026-12-20",
-        "action": "Next upcoming checkpoint (in 21–24 days): compare like-for-like refundable official 7-night quotes now vs Dec 17–20.",
+        "action": "Compare like-for-like refundable official hotel quotes now through this 60-day checkpoint.",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
@@ -2416,7 +3670,7 @@ window.TRIP_DATA = {
         "lead_days": 30,
         "target_start": "2027-01-16",
         "target_end": "2027-01-19",
-        "action": "30-day reprice checkpoint: re-query identical room/tax/cancellation terms; rebook if official direct total drops.",
+        "action": "Reprice refundable bookings and begin tracking 30-day Michelin reservation release dates; do not assume a spike is inevitable.",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
@@ -2427,11 +3681,12 @@ window.TRIP_DATA = {
         "lead_days": 14,
         "target_start": "2027-02-01",
         "target_end": "2027-02-04",
-        "action": "Final pre-Spring-Festival recheck: reprice only while existing refundable reservation remains inside free-cancellation window.",
+        "action": "Final free-cancellation hotel recheck and 14-day Chengdu Panda Base / 7-day Beijing museum ticket prep (note China Spring Festival is Feb 5–13).",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
-          "B01"
+          "B01",
+          "A01"
         ]
       }
     ],
@@ -2550,106 +3805,98 @@ window.TRIP_DATA = {
   "flags": [
     {
       "id": "H01",
-      "scope": "All hotels and 7-night date windows",
-      "issue": "No official date-specific Feb–Mar 2027 seven-night checkout total for two adults was captured from live booking engines (which require interactive browser rate sessions). Room-page baseline rates (e.g., Mandarin Oriental Guangzhou's published CNY 2,623.50/night) are noted in evidence only, never multiplied into official 2027 7-night totals.",
-      "next": "Capture exact stay dates, room category, 2-adult occupancy, currency, all taxes/service fees, cancellation cutoff and timestamp directly from each brand booking engine.",
-      "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
+      "scope": "All hotels and date windows",
+      "issue": "No official 2027 7-night or 14-night all-in total for two adults captured. Prior Peninsula Shanghai pre-tax observation (¥24,850 for Feb 15–22, 2027) and undated 'from' widgets (Jing An Shangri-La, Mandarin Oriental Guangzhou) are excluded from official total columns.",
+      "next": "Capture exact stay, room, occupancy, currency, taxes/service charge, cancellation deadline and timestamp from each hotel brand booking engine.",
+      "source": "https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "H02",
-      "scope": "All hotels — room category & private ensuite confirmation",
-      "issue": "Official room pages confirm King or Double-Queen bed classes and marble/spa bath fixtures across all shortlisted hotels, but most luxury room pages describe bath amenities without using the literal word 'private' or guaranteeing bed type on base rates (Renaissance Yu Garden explicitly warns bed type cannot be swapped after booking).",
-      "next": "Select an explicit 1-King or Double-Queen room rate and obtain written confirmation of private ensuite bath + 2-adult occupancy before paying any deposit.",
-      "source": "https://www.marriott.com/en-us/hotels/shasy-renaissance-shanghai-yu-garden-hotel/rooms/",
+      "scope": "All hotels",
+      "issue": "Official room pages verify King/Twin beds and marble/rain-shower bathrooms for several candidates (Peninsula, Langham Xintiandi, Bvlgari, Ritz-Carlton Pudong, Mandarin Oriental Guangzhou, Marriott Marquis, Jing An Shangri-La), but rarely print literal 'private/en-suite bathroom' wording on the category card.",
+      "next": "Confirm exact Queen+/King bed guarantee and explicit private/en-suite bathroom status directly with the property before booking.",
+      "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "H03",
-      "scope": "All hotels, restaurants, and activities — <=60-minute transit rule",
-      "issue": "No complete door-to-door <=60-minute subway/bus route matrix (including first/last-mile walk, platform wait, and transfer time) has been recorded for representative trip hours. Hotel Michelin counts, ranks, and activity transit cells remain blank rather than estimated from district centroids.",
-      "next": "Once a base city and 2–3 finalist hotels are selected, record weekday/weekend public-transit directions to each target restaurant and open attraction.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang",
+      "scope": "All hotels and activities",
+      "issue": "No complete <=60-minute door-to-door subway/bus route set has been logged. Michelin catchment counts, hotel rankings and door-to-door times remain intentionally blank.",
+      "next": "Record origin, destination, departure time, first/last-mile walking, wait and transfer time using official city transit planners.",
+      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "H04",
-      "scope": "Hotel rebrands, property codes & Ritz-Carlton Pudong renovation",
-      "issue": "2026 audit uncovered stale URLs and an active renovation: The Middle House and The Temple House rebranded to Upper House Shanghai and Upper House Chengdu (upperhouse.com); Renaissance Yu Garden uses Marriott code 'shasy' (not 'shayg'); Hilton Shanghai City Center uses 'shamshi' (not 'shaocis'); and The Ritz-Carlton Shanghai, Pudong (Jin Xuan) posted an official public-area enhancement notice for its 1F lobby/retail, 3F banquet hall, and 55F spa starting October 1, 2026.",
-      "next": "Use the updated official property URLs and confirm with The Ritz-Carlton Shanghai, Pudong whether lobby/spa works continue into Feb–Mar 2027.",
+      "scope": "The Ritz-Carlton Shanghai, Pudong / Jin Xuan & updated hotel URLs",
+      "issue": "2026 property code, rebrand & renovation updates: Swire rebranded The Middle House and The Temple House to Upper House Shanghai and Upper House Chengdu (upperhouse.com); Renaissance Shanghai Yu Garden uses Marriott code 'shasy' (legacy 'shayg' 404s); Hilton Shanghai City Center uses 'shamshi' (legacy 'shaocis' returns HTTP 500); and The Ritz-Carlton Shanghai, Pudong (Jin Xuan 1★) posted an official public-area enhancement notice for its 1F lobby/retail, 3F banquet hall, and 55F spa starting October 1, 2026.",
+      "next": "Verify February/March 2027 renovation status and noise/access impact directly with The Ritz-Carlton Shanghai, Pudong before booking rooms or Jin Xuan.",
       "source": "https://www.jinxuanchineserestaurantshanghai.com/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R01",
-      "scope": "Restaurants without published official 2-adult menu pricing",
-      "issue": "Five Shanghai venues now have verified official published 2-adult menu totals (Taian Table ¥5,176–¥5,776; Bao Li Xuan ¥3,576; Sir Elly's ¥3,004; Yi Long Court ¥695 / ¥2,304; T'ang Court ¥888 / ¥2,288). All other shortlisted restaurants publish only relative MICHELIN ¥–¥¥¥¥ tiers or unpriced menus (e.g., Capella Shanghai's Le Comptoir PDFs omit numeric digits in embedded font).",
-      "next": "Leave unconfirmed couple totals blank; request dated 2027 set/a-la-carte menus and 10%–16.6% service/VAT rules directly from each venue before booking.",
+      "scope": "Michelin dining cash totals",
+      "issue": "MICHELIN ¥ tiers are relative guide bands, never cash quotes. Official 2026 venue menu arithmetic is shown only where published by the restaurant (Taian Table, T'ang Court, Bao Li Xuan, Yi Long Court, Sir Elly's, Da Vittorio tasting PDF note, Mi Xun Teahouse Hot Pot for Two); all other couple totals remain blank.",
+      "next": "Reconfirm 2027 seasonal menus, mandatory service charges, beverages and deposits (e.g., $100/person on Resvea for Da Vittorio and Fabula) directly with each venue.",
       "source": "https://bookings.taian-table.com/faq",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R02",
-      "scope": "All dining / city cluster counts & 2027 holiday schedules",
-      "issue": "MICHELIN city counts come from mixed Guide editions (Shanghai 2026 subset of 409-venue regional release; Beijing 2026; Guangzhou 2026 subset of Guangzhou–Shenzhen; Chengdu 2027) and do not represent <=60-minute hotel catchments. Several MICHELIN pages omit regular operating hours, and Feb–Mar 2027 holiday closures are unconfirmed.",
-      "next": "Recheck each individual MICHELIN listing and official restaurant reservation calendar before locking dining dates.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang",
+      "scope": "All dining / city counts",
+      "issue": "Mixed MICHELIN Guide editions (Shanghai/Beijing/Guangzhou 2026 vs Chengdu 2027); city selection totals are not 60-minute hotel transit catchments. Spring Festival 2027 (Feb 5–13) and post-holiday closures are not yet published.",
+      "next": "Recheck each venue's official calendar and reservation release window before locking dining nights.",
+      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R03",
-      "scope": "Hong Yu Fang — internal MICHELIN schedule contradiction",
-      "issue": "Live MICHELIN Guide page lists daily 10:00–22:00 in the schedule block while the inspector review text states 'Open in the morning only'.",
-      "next": "Call +86 158 0077 2430 or visit in the morning only until hours are confirmed directly.",
-      "source": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "scope": "Hong Yu Fang",
+      "issue": "Official MICHELIN Guide page states 'Open in the morning only' in its editorial text while its hours panel lists 10:00–22:00 daily; also note it is MICHELIN Guide Selected (no star).",
+      "next": "Confirm actual morning service hours directly before scheduling.",
+      "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R04",
-      "scope": "Ultraviolet by Paul Pairet & Lan Ting — closed / delisted in 2026",
-      "issue": "Ultraviolet closed its public restaurant in March 2025, uvbypp.cc returns HTTP 500, and the venue is removed from the 2026 MICHELIN Guide Shanghai (leaving Taian Table as Shanghai's sole 3-Star restaurant). Prior Bib Gourmand entry Lan Ting (/lan-ting) also returns 404 on the 2026 MICHELIN Guide.",
-      "next": "Do not attempt to book Ultraviolet or rely on pre-2026 third-party Shanghai 3-Star / Bib Gourmand lists.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang",
+      "scope": "Ultraviolet",
+      "issue": "Reported closed March 2025; excluded from active shortlist and 2026 Shanghai star counts.",
+      "next": "Do not plan around historical 2025 three-star listings; reconfirm any future reopening from official channels.",
+      "source": "https://guide.michelin.com/en/article/news-and-views/shanghai-2025-starred-restaurants",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "R05",
-      "scope": "Venue vs MICHELIN hours discrepancies & Maison Lameloise website security warning",
-      "issue": "T'ang Court lists Mon–Sun on Langham's official page vs Tue–Sun on MICHELIN; 8½ Otto e Mezzo Bombana lists dinner until 22:30 on its website vs 21:00 on MICHELIN; Jin Xuan lists dinner until 22:00 vs 21:30 on MICHELIN; Jiang by Chef Fei lists 11:30/10:00 lunch start on Mandarin Oriental vs 11:00 on MICHELIN. Separately, Maison Lameloise Shanghai's standalone domain (lameloise.com.cn) exhibited an injected third-party script tag during Nov 26, 2026 audit and is quarantined from clickable links.",
-      "next": "Confirm exact Monday/cutoff hours directly with the hotel concierge when reserving, and use only guide.michelin.com or Shanghai Tower concierge for Maison Lameloise.",
-      "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
-      "status": "needs review · non-blocking publication"
-    },
-    {
-      "id": "R06",
-      "scope": "2026 MICHELIN Guide Shanghai renames & star-count corrections",
-      "issue": "Xin Rong Ji (170 Nanyang Road) now appears on the official 2026 MICHELIN Guide as 'The House of Rong' (2 Stars). Ling Long at Waldorf Astoria on the Bund (ling-long-1209951) holds 1 MICHELIN Star in 2026 (correcting older 2-Star references). Prior non-official blog link (rachelgouk.com) on Canton 8 and broken /ren-he-guan slug were removed.",
-      "next": "Book and search under current 2026 official names and MICHELIN slugs.",
-      "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/the-house-of-rong",
+      "scope": "T'ang Court / Canton 8 / King's Joy / Jin Xuan live audit catches (2026-11-26)",
+      "issue": "1) Non-official third-party dining blog link removed from Canton 8 (MICHELIN lists no official website). 2) T'ang Court's official Langham page contradicts itself ('daily' vs 'Off on Monday'). 3) Live MICHELIN Guide lists King's Joy Beijing at 2 Stars (older YouTube videos call it 3 Stars). 4) Ritz-Carlton Pudong enhancement notice affects Jin Xuan's building.",
+      "next": "Always rely on official venue/MICHELIN pages over older third-party videos; confirm T'ang Court Monday status directly.",
+      "source": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "A01",
-      "scope": "All activities — 2027 ticket inventory & seasonal transitions",
-      "issue": "Published 2026 ticket prices and schedules are not guaranteed date-specific 2027 inventory; blank costs (Oriental Pearl bundles, Mutianyu JS ticket portal, Canton Tower height tiers, Chen Clan Ancestral Hall) mean unconfirmed on static official pages, never free. Note seasonal cutovers inside Feb 15–Mar 23: Chengdu Panda Base switches hours on Mar 1, and Mutianyu switches to peak hours on Mar 16.",
-      "next": "Recheck exact 2027 date-tiered fares, advance booking release windows (7–14 days), and bundle inclusions on linked official sites.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "scope": "All activities",
+      "issue": "Published regular/off-season prices and hours are not guaranteed 2027 holiday inventory; blank costs or hours mean unverified on official pages, never free or closed.",
+      "next": "Recheck ticket product, passport real-name reservation release (7–14 days ahead), special exhibitions and 2027 Spring Festival notices.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "A02",
-      "scope": "Weekly museum closures & >60-minute outlying excursions",
-      "issue": "Monday closures affect Shanghai Museum People's Square, Yu Garden, Power Station of Art, Forbidden City, and Temple of Heaven inner sites (including Mon Feb 15 and Mon Feb 22 under regular rules); Shanghai Museum East closes Tuesdays. Suzhou, Hangzhou, Zhujiajiao, and Mutianyu Great Wall are outlying day trips without <=60-minute public-transit proof.",
-      "next": "Schedule Bund, Nanjing Road, Xintiandi, or Shanghai Museum East on Mondays; treat outlying excursions as dedicated day trips outside near-hotel counts.",
+      "scope": "Closures, seasonal switches & outlying trips",
+      "issue": "Monday closures hit Shanghai Museum People's Square, Yu Garden, PSA, Forbidden City, NMC and Beijing inner park halls (Shanghai Museum East closes Tuesdays instead). Chengdu Panda Base shifts to summer hours on Mar 1; Mutianyu shifts to peak hours on Mar 16. Mutianyu, Chimelong, Suzhou and Hangzhou are not demonstrated <=60-minute public-transit trips.",
+      "next": "Schedule Shanghai Museum East or open outdoor walks on Mondays; check seasonal switch dates for Mar 1–23 visits.",
       "source": "https://www.yugarden.com.cn/page/articleview/message.html",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "A03",
-      "scope": "Shanghai Tower / Yu Garden ticket separation",
-      "issue": "Shanghai Tower's official English page lists observatory height (546m, 118F) and hotline hours (09:00–18:00) while municipal notice confirms standard ¥180 adult ticket (¥360 for two). Yu Garden daytime classical garden (¥30 Dec–Mar), Yuyuan Bazaar (free street area), and seasonal night tour (¥150–¥218/person Fri–Sun) are separate products.",
-      "next": "Confirm 2027 Lantern Festival (Feb 20, 2027) operating rules and purchase only the intended ticket product.",
-      "source": "https://www.shanghaitower.com/",
+      "scope": "Shanghai Museum People's Square / Shanghai Tower / Oriental Pearl / Chen Clan Hall",
+      "issue": "2026-11-26 live official audit findings: (1) Shanghai Museum People's Square hosts ONLY the ticketed Americas exhibition (Jul 9, 2026–Nov 14, 2027) with no permanent galleries—go to Shanghai Museum East for permanent collections; (2) Shanghai Tower 118F ticket is ¥180/pp (¥360/2), but official observatory hours are NOT published on en.shanghaitower.com and are blanked; (3) Oriental Pearl website failed to load (hours/base price blanked); (4) Chen Clan Hall's gzcjc.com.cn page lists 09:00–17:30 (last ticket 17:00) without stating a weekly closure day or regular fare (a 2023 gz.gov.cn exhibition post cited last-Monday closures for that show).",
+      "next": "Book Shanghai Museum East for free permanent galleries; recheck Shanghai Tower and Oriental Pearl official hours before ticketing.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -2662,42 +3909,50 @@ window.TRIP_DATA = {
     },
     {
       "id": "B01",
-      "scope": "Booking lead-time analysis (81–84 days out as of Nov 26, 2026)",
-      "issue": "The 90-day mark (Nov 17–20, 2026) has passed; upcoming checkpoints are Dec 17–20 (60d), Jan 16–19 (30d), and Feb 1–4, 2027 (14d). Prior 30/60/90-day aggregator observations lack reproducible room/date/tax query metadata and do not prove a 30–56% savings window.",
-      "next": "Use the dated checkpoints as a refundable direct-rate repricing log rather than a price forecast.",
+      "scope": "Booking lead-time analysis",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-26 we are 81–84 days before Feb 15–18, 2027.",
+      "next": "Use the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints as a refundable repricing plan, not a forecast.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "B02",
-      "scope": "Quarantined OTA observations / Sukhothai outlier",
-      "issue": "Legacy traveldeals.com figures remain quarantined from official hotel columns. The prior $35,148 Sukhothai figure is an unverified outlier, not a 7-night room rate.",
-      "next": "Never copy aggregator observations or 2026 single-night proxies into official 2027 quote cells.",
+      "scope": "OTA observations / Sukhothai anomaly",
+      "issue": "Third-party aggregator figures are quarantined in data/costs.json and excluded from official hotel quote columns. Prior $35,148 Sukhothai figure is an unexplained outlier, not a verified 7-night quote.",
+      "next": "Exclude aggregator outliers until room/date/currency/tax terms are reproduced on the official hotel engine.",
       "source": "https://shanghai.sukhothai.com/en/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "S01",
-      "scope": "YouTube, TikTok & Instagram review and discovery links",
-      "issue": "Direct verified YouTube, TikTok, and Instagram review/profile URLs are now attached wherever confirmed during the Nov 26, 2026 audit, alongside labelled platform search links where platform-specific direct posts were not confirmed. Social posts reflect creator visit dates and are never treated as authoritative for 2027 hours or prices.",
-      "next": "Always cross-check creator review details against the linked official venue/museum/MICHELIN source before booking.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "scope": "Social media & video links",
+      "issue": "Direct YouTube, TikTok and Instagram review/profile links collected on 2026-11-26 are third-party commentary (except clearly labelled official venue/museum/tourism accounts) and are never treated as evidence for prices, stars or operating hours. Platform search shortcuts are explicitly labelled 'Search'.",
+      "next": "Check creator upload date and confirm all hours, prices and star tiers on linked official pages.",
+      "source": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "E01",
-      "scope": "Entry, visa, 240-hour transit & passport validity",
-      "issue": "Traveler passport nationalities, onward third-country routing, and exact trip length remain unknown. China's 240-hour (10-day) visa-free transit rule requires an eligible passport and confirmed onward ticket to a third country/region, so it cannot cover 14- to 28-night stays.",
-      "next": "Verify visa or transit eligibility directly with the Chinese embassy/consulate and NIA rules once passport nationality and exact stay length are chosen.",
-      "source": "https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm",
+      "scope": "Entry / visa / health / 1–2 week vs 2–4 week duration",
+      "issue": "Passport nationalities, visa eligibility, onward routing and final trip length (1–2 weeks vs 2–4 weeks within Feb 15–Mar 23, 2027) are unconfirmed. China's 240-hour (10-day) transit without visa is strictly conditional and CANNOT cover a 14-night or 2–4 week stay.",
+      "next": "Confirm passport nationalities and duration first, then verify visa or visa-free eligibility via official embassy/NIA channels (see entry-audit.html).",
+      "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "L01",
-      "scope": "Static-fetch limits on interactive booking & ticketing portals",
-      "issue": "Several official portals (hotel rate calendars, Mutianyu's JS ticket page, Oriental Pearl Tower, Canton Tower) require interactive browser sessions or block static crawlers. Structural validation verifies local links and official domains, not live external availability.",
-      "next": "Open linked official portals in a standard browser to capture live 2027 checkout quotes before paying deposits.",
+      "scope": "External source reachability (2026-11-26)",
+      "issue": "Several official property/venue pages returned bot blocks or timeouts during automated fetches (Oriental Pearl Tower, Canton Tower root, Hilton Wangfujing & City Center rooms, Renaissance Yu Garden rooms, Sukhothai rooms, Upper House Studio 60, Peninsula booking SPA).",
+      "next": "Open affected official links manually in a browser before booking; never treat an unreachable page as fresh confirmation.",
       "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "R06",
+      "scope": "2026 MICHELIN Guide renames, star corrections & Maison Lameloise website quarantine",
+      "issue": "Xin Rong Ji (170 Nanyang Road) now appears on the live 2026 MICHELIN Guide Shanghai as 'The House of Rong' (2★). Ling Long at Waldorf Astoria on the Bund (ling-long-1209951) holds 1 MICHELIN Star (correcting older 2★ references). Prior Bib Gourmand Lan Ting (/lan-ting) returns 404. Separately, Maison Lameloise Shanghai's standalone domain (lameloise.com.cn) served an injected external script tag on Nov 26, 2026 and is quarantined from clickable links.",
+      "next": "Search and reserve under current 2026 official names/slugs, and use only guide.michelin.com (maison-lameloise-563686) or Shanghai Tower concierge for Maison Lameloise.",
+      "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
       "status": "needs review · non-blocking publication"
     }
   ]

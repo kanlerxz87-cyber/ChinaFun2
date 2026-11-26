@@ -6,7 +6,7 @@ Completed a fresh line-by-line primary-source verification pass on **2026-11-26*
   - **Jinsha Site Museum (`jinshasitemuseum.com/info/4707`)**: Officially **CLOSED `2025-12-05` through `2027-04-30`** for facility upgrades (spanning the entire `2027-02-15` to `2027-03-23` trip window). Added explicit closure row and `A04` review flag.
   - **Shanghai Museum (`shanghaimuseum.cn`)**: People's Square Campus (`visit-west`) runs a paid special exhibition only (`2026-07-09` through `2027-11-14`, advance booking required, fee unstated on general page), whereas **Shanghai Museum East Campus (`visit-east`, Pudong)** offers free walk-in permanent galleries (`Wed–Mon 10:00–18:00`, closed Tue). Both campuses are now explicitly separated (`A04`).
   - **Ultraviolet by Paul Pairet & Lan Ting (`R04`)**: Confirmed `Ultraviolet` closed in March 2025 (`uvbypp.cc` HTTP 500) and was delisted from the 2026 MICHELIN Guide Shanghai (leaving `Taian Table` as Shanghai's sole 3-Star); `Lan Ting` (`/lan-ting`) also returns 404 on the 2026 Guide.
-  - **Third-party script injection quarantined (`R05`)**: Standalone `lameloise.com.cn` returned an injected external `<script src="https://nswsw.zhanlingxc.top/h5.js">` tag during static fetch on `2026-11-26`; quarantined in `BANNED_LINK_HOSTS` in `scripts/verify_project.py` while retaining official `guide.michelin.com/.../maison-lameloise-563686`.
+  - **Third-party script injection quarantined (`R06`)**: Standalone `lameloise.com.cn` returned an injected external `<script>` tag (`nswsw[.]zhanlingxc[.]top/h5.js`) during static fetch on `2026-11-26`; quarantined in `BANNED_LINK_HOSTS` in `scripts/verify_project.py` while retaining official `guide.michelin.com/.../maison-lameloise-563686`.
   - **Non-official link & broken slugs removed (`R06`, `H04`)**: Removed food-blog URL `rachelgouk.com` from `canton-8` and 404 `/ren-he-guan` duplicate; updated `Xin Rong Ji (Nanyang Road)` to its 2026 Guide name **The House of Rong** (`the-house-of-rong`); verified `Ling Long` (`ling-long-1209951`) as **1 MICHELIN Star** (`16:00–01:00`); updated Swire rebrands **Upper House Shanghai** and **Upper House Chengdu** (`upperhouse.com`); fixed broken Marriott (`shasy`), Hilton (`shamshi`), and Hyatt (`shaaz`) property codes; and flagged **The Ritz-Carlton Shanghai, Pudong**'s Oct 1, 2026 lobby/banquet/spa enhancement notice (`H04`).
 - **Expanded official verified pricing & schedules**:
   - Added **four new official published 2-adult menu totals** alongside `Taian Table` (`¥5,176 / ¥5,776`): `T'ang Court` (`¥888` dim sum lunch / `¥2,288` all-day set for 2 per 2026 Langham PDF), `Bao Li Xuan` (`¥3,576` degustation for 2 incl. `10% + 6%` per Bulgari PDF), `Yi Long Court` (`¥695` lunch / `¥2,304` dinner for 2 incl. `16.6%` per Peninsula offer), and non-starred Guide Selected `Sir Elly's` (`¥3,004` 5-course set for 2 incl. `16.6%` per Peninsula Q1 2026 PDF).
@@ -17,7 +17,11 @@ Completed a fresh line-by-line primary-source verification pass on **2026-11-26*
 
 # Integration update — 25 November 2026 · session 55de3f9a
 
-The audit below is retained as a **historical review**, not a description of the current pages. The dashboard and ten static detail pages now share canonical JSON records and one generated `data.js` ledger.
+The audit below is retained as a **historical review**, not a description of the current pages. The dashboard and ten static detail pages now share canonical JSON records and one generated `data.js` ledger. Statements about the open PR and publication state below describe the 25 Nov review snapshot.
+
+## Calendar and scope addendum — 26 November 2026 · session a16d9048
+
+The 25 Nov calculation of 82–85 days before Feb 15–18 is retained as a dated historical checkpoint. Date-sensitive copy was recalculated on 26 Nov to **81–84 days**. That follow-up was a targeted, record-by-record reconciliation of the 22 activity sources only; hotel, restaurant, cost, entry, and health records were not re-reviewed. See [`research/final-verification-2026-11-26.md`](research/final-verification-2026-11-26.md) for the evidence, remaining unknowns, and final verification/publication results.
 
 ## Presentation corrections completed
 
