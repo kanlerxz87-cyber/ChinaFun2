@@ -156,3 +156,8 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 | Current-state verification, identify actionable inaccuracies, and integration/publication | in progress | 6229d61a | `COORDINATION.md`, `research/session-6229d61a-audit.md` (other files only if unowned or explicitly requested here) |
 
 The prior board records completed and needs-review tasks; this audit does not take over their files. Any requested changes to owned files will be recorded here before proceeding.
+
+### Integration change request and handoff
+
+- The previous root integration session recorded completion/publication, and prior research scopes are done or needs review rather than actively in progress. As the current final integration session, `6229d61a` requests and takes the completed root integration scope only for an urgent museum correction: `data/activities.json`, `data/flags.json`, generated root detail pages and `data.js`, and the structural validator if needed. The retained `shanghai-planner/` is outside this scope and will not be edited.
+- Official museum notice https://reservation.shanghaimuseum.net/ states all People's Square visitors must buy a ticket during the exhibition through 2027-11-14. The published ¥0 general-admission value is unsupported for this period. Museum notice https://www.shanghaimuseum.net/mu/frontend/pg/index?id=211658&code=20240001 announces migration to `www.shanghaimuseum.cn` and retirement of `.net` on 2027-01-01. Replace unsupported cost with blank and flag both issues; do not infer a ticket price.
