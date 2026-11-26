@@ -20,12 +20,17 @@ function load(file, scripts) {
 
 const home = load('index.html', ['data.js', 'app.js']);
 const d = home.window.document;
-assert.equal(d.querySelectorAll('#date-table article').length, 3);
+assert.equal(d.querySelectorAll('#date-table article').length, 4);
 assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
 assert.equal(d.querySelectorAll('#dining-list article').length, 3);
 assert.equal(d.querySelectorAll('#cluster-list article').length, 4);
-assert.equal(d.querySelectorAll('#activity-list article').length, 3);
+assert.equal(d.querySelectorAll('#activity-list article').length, 4);
 assert(!d.body.textContent.includes('undefined'));
+const detailNavText = d.querySelector('.detail-nav').textContent;
+assert(detailNavText.includes(`(${home.window.TRIP_DATA.hotels.length})`));
+assert(detailNavText.includes(`(${home.window.TRIP_DATA.restaurants.length})`));
+assert(detailNavText.includes(`(${home.window.TRIP_DATA.activities.length})`));
+assert(detailNavText.includes(`(${home.window.TRIP_DATA.flags.length})`));
 
 d.querySelector('.menu-toggle').click();
 assert.equal(d.querySelector('.menu-toggle').getAttribute('aria-expanded'), 'true');
@@ -38,14 +43,14 @@ assert(d.querySelector('#suggestion-feedback').textContent.startsWith('Selected 
 
 // Test dashboard interactive city filter pills
 d.querySelector('#hotel-filters [data-city-mode="all"]').click();
-assert.equal(d.querySelectorAll('#hotel-list article').length, 20);
+assert.equal(d.querySelectorAll('#hotel-list article').length, 27);
 d.querySelector('#hotel-filters [data-city-mode="Guangzhou"]').click();
-assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
+assert.equal(d.querySelectorAll('#hotel-list article').length, 4);
 d.querySelector('#hotel-filters [data-city-mode="featured"]').click();
 assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
 
 for (const [file, id, city, count] of [
-  ['hotels.html', 'hotels', 'Guangzhou', 3],
+  ['hotels.html', 'hotels', 'Guangzhou', 4],
   ['michelin.html', 'restaurants', 'Chengdu', 4],
   ['activities.html', 'activities', 'Beijing', 6],
 ]) {

@@ -39,6 +39,16 @@
       "priceNote": "Official multi-city hotel and domestic rail/air totals not verified",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "sourceLabel": "Official 2027 holiday notice"
+    },
+    {
+      "title": "Post-Lantern-Festival 7-night stay",
+      "dates": "Mon Mar 1 → Mon Mar 8, 2027",
+      "nights": "7 nights",
+      "fit": "Avoids immediate post-Spring-Festival return wave and Lantern Festival (Feb 20, 2027); enters spring panda-base hours in Chengdu",
+      "price": "",
+      "priceNote": "Official 2-adult, 7-night checkout total not verified on live booking engines",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "sourceLabel": "Official 2027 holiday notice"
     }
   ],
   "questions": [
@@ -80,13 +90,13 @@
     },
     {
       "q": "Which venues have closure traps or seasonal switches during Feb 15–Mar 23, 2027?",
-      "answer": "Live Nov 26, 2026 audit confirmed: Shanghai Museum People's Square hosts ONLY the ticketed Americas exhibit (Jul 2026–Nov 2027) with permanent galleries moved to East (closed Tue, open Mon); Panda Base switches hours Mar 1; Mutianyu switches Mar 16; Ritz-Carlton Pudong has ongoing Oct 2026 enhancements; exact 2027 Spring Festival adjustments remain unannounced.",
+      "answer": "Confirmed full-window closure: Jinsha Site Museum in Chengdu is closed Dec 5, 2025 – Apr 30, 2027. Shanghai Museum People's Square runs only its ticketed Americas exhibition through Nov 14, 2027 (use East Campus for free permanent galleries, open Mondays). Ultraviolet closed in 2025; Chengdu Panda Base shifts hours Mar 1; Mutianyu shifts hours Mar 16.",
       "next": "Re-verify each venue's dated 2027 calendar and real-name passport ticket release window (7–14 days out) before finalizing daily order.",
       "state": "Partly answered"
     },
     {
       "q": "What dining budget is acceptable for two?",
-      "answer": "Not provided. Six venues now show official published 2026 menu arithmetic (Taian Table, T'ang Court, Bao Li Xuan, Yi Long Court, Sir Elly's, Mi Xun Teahouse; plus Da Vittorio tasting PDF note), while all other cash totals remain blank.",
+      "answer": "Six venues publish 2026 official 2-adult menu bases: Mi Xun Teahouse (¥620 hot pot set), Yi Long Court (¥788.22 dim sum lunch), T'ang Court (¥888 lunch / ¥2,288 set), Sir Elly's (¥3,003.62 dinner), Bao Li Xuan (¥3,576 degustation), and Taian Table (¥5,176–¥5,776 tasting). All other restaurants publish only relative ¥–¥¥¥¥ guide bands.",
       "next": "Set a per-meal ceiling for two adults, note $100/person deposits (Da Vittorio, Fabula), and confirm 2027 seasonal pricing directly.",
       "state": "Open"
     },
@@ -128,7 +138,7 @@
       "desc": "Record like-for-like 2-adult all-in refundable totals (taxes & fees included) from official hotel engines so real price movement replaces guesswork.",
       "impact": "Makes fair value comparison possible",
       "effort": "Medium",
-      "rec": "Recommended before booking"
+      "rec": "Recommended immediately after city choice"
     },
     {
       "id": "itinerary",
@@ -136,7 +146,7 @@
       "desc": "Put Shanghai Museum East (open Mondays) or outdoor walks on Mondays, book 7–14 day passport museum slots on release day, and keep indoor rain/cold backups.",
       "impact": "Eliminates avoidable closure traps",
       "effort": "Medium",
-      "rec": "Later step"
+      "rec": "Recommended before locking hotel"
     }
   ]
 }

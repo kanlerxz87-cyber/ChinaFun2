@@ -5,7 +5,7 @@ import json, html, re
 from pathlib import Path
 
 P = Path(__file__).resolve().parents[1]
-VER = '20261126-v4'
+VER = '20261126-v5'
 
 def read(n):
     return json.loads((P / 'data' / f'{n}.json').read_text())
@@ -121,7 +121,7 @@ sh_a = sum(1 for x in A if x['city'] == 'Shanghai')
 summary = f'''<div class="grid">
 <article class="card"><h2>Provisional 7-night base: Shanghai</h2><p>For a 1-week trip (Mon Feb 15 → Mon Feb 22, 2027), Shanghai has the deepest verified shortlist in this ledger ({sh_h} hotels, {sh_m} restaurants, {sh_a} activities). This is a planning frame—not proof that Shanghai is cheapest or fastest by transit.</p></article>
 <article class="card"><h2>2–4 week multi-city alternative</h2><p>If extending to 14–36 nights (ending by Tue Mar 23, 2027), pair Shanghai with Beijing, Guangzhou or Chengdu by high-speed rail/air. Stays over 10 days cannot rely on China’s 240-hour transit-without-visa program (<a href="entry-audit.html">entry audit</a>).</p></article>
-<article class="card"><h2>Key Nov 26, 2026 audit alerts</h2><p><strong>Shanghai Museum People’s Square</strong> hosts ONLY the ticketed Americas exhibit (Jul 2026–Nov 2027)—permanent galleries are at <strong>Shanghai Museum East</strong> (open Mondays!). <strong>Shanghai Tower</strong> hours are unconfirmed online and blanked. <strong>Panda Base</strong> shifts hours Mar 1; <strong>Mutianyu</strong> shifts Mar 16. <strong>Ritz-Carlton Pudong</strong> has ongoing Oct 2026 enhancement works.</p></article>
+<article class="card"><h2>Key Nov 26, 2026 audit alerts</h2><p><strong>Jinsha Site Museum (Chengdu)</strong> is CLOSED Dec 5, 2025–Apr 30, 2027 (<a href="flagged.html#A04">A04</a>). <strong>Shanghai Museum People’s Square</strong> hosts ONLY the ticketed Americas exhibit (Jul 2026–Nov 2027)—permanent galleries are at <strong>Shanghai Museum East</strong> (open Mondays!). <strong>Shanghai Tower</strong> hours are unconfirmed online and blanked. <strong>Panda Base</strong> shifts hours Mar 1; <strong>Mutianyu</strong> shifts Mar 16. <strong>Ritz-Carlton Pudong</strong> has ongoing Oct 2026 enhancement works; standalone <code>lameloise.com.cn</code> is quarantined (<a href="flagged.html#R06">R06</a>).</p></article>
 </div>'''
 summary += table('cities', ['City', 'Edition / scope', 'Starred venues', 'Decision context & caveats', 'Official source'], cityrows)
 summary += '''<h2 class="section">A practical seven-night Shanghai draft — not a qualified transit itinerary</h2>

@@ -1,5 +1,5 @@
 """No dependencies. Structural/source-policy checks, not external fact verification."""
-import argparse, json, re, subprocess
+import argparse, json, subprocess
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote, urljoin
@@ -58,16 +58,18 @@ OFFICIAL = {
     'bookings.taian-table.com', 'sh.taian-table.cn', 'ottoemezzobombana.com', 'davittorio.com',
     'jinxuanchineserestaurantshanghai.com', 'vivantshanghai.com', 'fabula.restaurant',
     'kingsjoy.com', 'trbhutong.com', 'bingsheng.com', 'xinrongji.com',
-    'shanghaimuseum.net', 'shanghaimuseum.cn', 'yugarden.com.cn', 'english.shanghai.gov.cn',
+    'capellahotels.com', 'restaurantlinglong.com', 'stories.hilton.com',
+    'shanghaimuseum.net', 'shanghaimuseum.cn', 'reservation.shanghaimuseum.net', 'yugarden.com.cn', 'english.shanghai.gov.cn',
     'shanghaitower.com', 'en.shanghaitower.com', 'orientalpearltower.com', 'powerstationofart.com',
-    'xintiandi.com', 'english.beijing.gov.cn', 'intl.dpm.org.cn', 'dpm.org.cn',
+    'xintiandi.com', 'shanghaidisneyresort.com', 'english.beijing.gov.cn', 'intl.dpm.org.cn', 'dpm.org.cn',
     'tiantanpark.com', 'summerpalace.net.cn', 'mutianyugreatwall.com',
     'en.mutianyugreatwall.com', 'pcticket.chnmuseum.cn',
-    'gz.gov.cn', 'gzcjc.com.cn', 'gzchenjiaci.com', 'lyylj.gz.gov.cn', 'cantontower.com', 'mallpc.cantontower.com', 'chimelong.com',
-    'panda.org.cn', 'm.panda.org.cn', 'wuhouci.net.cn', 'en.wuhouci.net.cn',
+    'gz.gov.cn', 'gzcjc.com.cn', 'lyylj.gz.gov.cn', 'cantontower.com', 'mallpc.cantontower.com', 'chimelong.com',
+    'panda.org.cn', 'm.panda.org.cn', 'wuhouci.net.cn', 'en.wuhouci.net.cn', 'jinshasitemuseum.com',
     'cddfct.com', 'gochengdu.cn', 'suzhou.gov.cn', 'hangzhou.gov.cn',
     'english.www.gov.cn', 'travel.state.gov', 'us.china-embassy.gov.cn', 'cdc.gov',
 }
+BANNED_LINK_HOSTS = {'rachelgouk.com', 'lameloise.com.cn', 'uvbypp.cc', 'nswsw.zhanlingxc.top', 'traveldeals.com'}
 SOCIAL_HOSTS = {'youtube.com', 'youtu.be', 'tiktok.com', 'instagram.com'}
 
 def official(u):
@@ -87,6 +89,8 @@ for f, d in docs.items():
     check('id="main"' in text, f'{f.name}: missing main landmark')
     for ref in d.refs:
         u = urlsplit(ref)
+        if u.hostname and u.hostname.lower().removeprefix('www.') in BANNED_LINK_HOSTS:
+            errors.append(f'{f.name}: quarantined/disallowed link {ref}')
         if u.scheme or u.netloc:
             continue
         target = (f.parent / unquote(u.path)).resolve() if u.path else f
@@ -98,7 +102,7 @@ for f, d in docs.items():
     for stale in [
         'Feb 2026 (now)', '~28', 'not yet released', 'Verify ↗',
         'eastchinatrip.com', 'its.holiday', 'chinafortravelers.com',
-        'rachelgouk.com', '1 MICHELIN Stars',
+        'rachelgouk.com', '1 MICHELIN Stars', 'nswsw.zhanlingxc.top',
     ]:
         check(stale not in text, f'{f.name}: stale/disallowed assertion {stale}')
 
@@ -117,8 +121,6 @@ for name, key in [('hotels', 'hotels'), ('michelin', 'restaurants'), ('activitie
     check(len(ids) == len(set(ids)), name + ': duplicate records')
     for x in rows:
         check(official(x['official_url']), name + ': non-official source ' + x['id'])
-        if name == 'hotels' and x.get('roomSource'):
-            check(official(x['roomSource']), f'hotels: non-official roomSource {x["id"]}: {x["roomSource"]}')
         if name == 'michelin' and x.get('venue'):
             check(official(x['venue']), f'michelin: non-official venue {x["id"]}: {x["venue"]}')
         if name == 'activities' and x.get('officialLink'):

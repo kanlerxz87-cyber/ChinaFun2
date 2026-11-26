@@ -137,6 +137,12 @@
           "label": "Yu Garden visitor tips discover page",
           "url": "https://www.tiktok.com/discover/yu-garden-shanghai-how-to-go",
           "kind": "TikTok discover"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@arafcamelshoes Yu Garden clip (third-party)",
+          "url": "https://www.tiktok.com/@arafcamelshoes/video/7428972675730525472",
+          "kind": "Direct video"
         }
       ],
       "flags": [
@@ -305,6 +311,18 @@
           "label": "Nov 2025 Bund evening walk (third-party)",
           "url": "https://www.youtube.com/watch?v=DGbwfqSrCVc",
           "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@meetinshanghai Bund night clip",
+          "url": "https://www.tiktok.com/@meetinshanghai/video/7391354468329114911",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@jacmartin_ Bund skyline clip (third-party)",
+          "url": "https://www.tiktok.com/@jacmartin_/video/7457133077710638342",
+          "kind": "Direct video"
         }
       ],
       "flags": [
@@ -445,15 +463,15 @@
       "city": "Shanghai",
       "name": "Zhujiajiao Water Town (or Suzhou / Hangzhou rail day trip)",
       "area": "Qingpu District (outlying — >60 min check required)",
-      "hours": "Water-town streets open daily; individual historic halls & boat docks set daytime hours (confirm 2027 schedule)",
+      "hours": "Canal streets open daily; Kezhi Garden daily 08:30–17:00 (per Shanghai Municipal Gov)",
       "exceptions": "OUTLYING FLAG (A02/H03): Qingpu Metro Line 17 or high-speed rail to Suzhou/Hangzhou is NOT verified <=60 minutes door-to-door.",
-      "cost": "",
+      "cost": "¥0 town street entry; Kezhi Garden ¥40 = 2 × ¥20 (boat rides separate)",
       "duration": "Half–full day",
       "transit": "",
       "transit_flag": "Outlying excursion — not verified <=60 min door-to-door.",
-      "officialLink": "https://english.shanghai.gov.cn/",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20241012/d16e922011a9404fae8d4b78f7fa2b2e.html",
       "officialLabel": "Shanghai Municipal Portal",
-      "official_url": "https://english.shanghai.gov.cn/",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20241012/d16e922011a9404fae8d4b78f7fa2b2e.html",
       "videoLink": "https://www.youtube.com/results?search_query=Zhujiajiao+Water+Town+Shanghai+day+trip",
       "videoLabel": "YouTube search (unverified)",
       "socials": {
@@ -461,7 +479,20 @@
         "tiktok": "https://www.tiktok.com/search?q=Zhujiajiao%20Water%20Town",
         "instagram": "https://www.instagram.com/explore/tags/zhujiajiao/"
       },
-      "reviews": [],
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Zhujiajiao Water Town 4K guide (third-party)",
+          "url": "https://www.youtube.com/watch?v=rEGUhkSE_RU",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Dec 2025 Zhujiajiao walk (third-party)",
+          "url": "https://www.youtube.com/watch?v=EAdQpCGYF80",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "A01",
         "A02",
@@ -742,6 +773,18 @@
           "label": "@megsandalex Great Wall tips (third-party)",
           "url": "https://www.tiktok.com/@megsandalex/video/7687658288120450307",
           "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@monikkuu Mutianyu winter clip (third-party)",
+          "url": "https://www.tiktok.com/@monikkuu/video/7463492752823586053",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@mutianyu_greatwall_official (official park IG)",
+          "url": "https://www.instagram.com/mutianyu_greatwall_official/",
+          "kind": "Official profile"
         }
       ],
       "flags": [
@@ -1229,6 +1272,75 @@
         "S01"
       ],
       "dashboard": false
+    },
+    {
+      "id": "shanghai-disneyland",
+      "city": "Shanghai",
+      "name": "Shanghai Disneyland",
+      "area": "Chuansha New Town · Pudong (Metro Line 11 terminus)",
+      "hours": "Date-specific park hours published on official resort calendar (typically 08:30–20:30/21:30)",
+      "exceptions": "Date-tiered pricing rises on weekends/holidays; purchase with passport numbers via official resort site/app. Metro Line 11 ride from central Puxi is ~45–65 min depending on hotel.",
+      "cost": "From ¥950 = 2 × ¥475 standard 1-Day Ticket (2-Day Early Bird from ¥1,508 = 2 × ¥754; 1-Day + Premier Access from ¥1,740 = 2 × ¥870)",
+      "duration": "Full day (8–12 h)",
+      "transit": "",
+      "transit_flag": "No verified door-to-door <=60 min route logged yet.",
+      "officialLink": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
+      "officialLabel": "Shanghai Disney Resort Tickets",
+      "official_url": "https://www.shanghaidisneyresort.com/en/commerce/product?id=ThemePark",
+      "videoLink": "https://www.youtube.com/watch?v=YZDwOmIt4gw",
+      "videoLabel": "YouTube vlog (Jan 2026, third-party)",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Shanghai+Disneyland+2026+guide",
+        "tiktok": "https://www.tiktok.com/search?q=Shanghai%20Disneyland",
+        "instagram": "https://www.instagram.com/shanghaidisneyresort_park/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2026 Shanghai Disneyland vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=YZDwOmIt4gw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@shanghaidisneyresort_park (official park profile)",
+          "url": "https://www.instagram.com/shanghaidisneyresort_park/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "A01",
+        "H03",
+        "S01"
+      ]
+    },
+    {
+      "id": "jinsha-site-museum",
+      "city": "Chengdu",
+      "name": "Jinsha Site Museum — CLOSED THROUGH APR 30, 2027",
+      "area": "2 Jinsha Site Rd · Qingyang District",
+      "hours": "CLOSED Dec 5, 2025 – Apr 30, 2027 per official museum notice (do not schedule for Feb–Mar 2027)",
+      "exceptions": "CONFIRMED FULL-WINDOW CLOSURE (A04): Closed across 100% of Feb 15 – Mar 23, 2027 for comprehensive facility upgrades (enquiry: 028-87303511). Substitute Wuhou Shrine or Du Fu Thatched Cottage.",
+      "cost": "",
+      "duration": "Closed",
+      "transit": "",
+      "transit_flag": "Site closed during trip window.",
+      "officialLink": "https://www.jinshasitemuseum.com/info/4707",
+      "officialLabel": "Official Jinsha Closure Notice",
+      "official_url": "https://www.jinshasitemuseum.com/info/4707",
+      "videoLink": "",
+      "videoLabel": "",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Jinsha+Site+Museum+Chengdu",
+        "tiktok": "https://www.tiktok.com/search?q=Jinsha%20Site%20Museum",
+        "instagram": "https://www.instagram.com/explore/search/keyword/?q=Jinsha%20Site%20Museum"
+      },
+      "reviews": [],
+      "flags": [
+        "A04",
+        "S01"
+      ],
+      "dashboard": true
     }
   ]
 }

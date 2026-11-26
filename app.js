@@ -56,7 +56,7 @@
     badgeSel: '#hotel-count-badge',
     items: D.hotels,
     noun: 'hotels',
-    renderItem: (x, i) => `<article class="data-card hotel-card"><div class="data-card-head"><div><span class="card-kicker">CANDIDATE ${String(i+1).padStart(2,'0')} · ${esc(x.city.toUpperCase())}</span><h4>${esc(x.name)}</h4><p class="card-sub">${esc(x.area)}</p></div><span class="tag tag-rose">Not ranked</span></div><div class="field-grid">${field('Bed shown on official page',x.bed)}${field('Private bathroom verified?',x.bath)}${field('2027 all-in total · 2 adults',x.total)}${field('Hotel → Michelin ≤60 min',x.transit)}${field('Official room evidence',x.evidence,{wide:true})}${field('Qualification note',x.fitNote,{wide:true})}</div><div class="card-foot card-foot-multi">${link(x.roomSource,x.sourceLabel || 'Official room page')}${link('hotels.html','Full 20-hotel comparison','video-link')}</div></article>`
+    renderItem: (x, i) => `<article class="data-card hotel-card"><div class="data-card-head"><div><span class="card-kicker">CANDIDATE ${String(i+1).padStart(2,'0')} · ${esc(x.city.toUpperCase())}</span><h4>${esc(x.name)}</h4><p class="card-sub">${esc(x.area)}</p></div><span class="tag tag-rose">Not ranked</span></div><div class="field-grid">${field('Bed shown on official page',x.bed)}${field('Private bathroom verified?',x.bath)}${field('2027 all-in total · 2 adults',x.total)}${field('Hotel → Michelin ≤60 min',x.transit)}${field('Official room evidence',x.evidence,{wide:true})}${field('Qualification note',x.fitNote,{wide:true})}</div><div class="card-foot card-foot-multi">${link(x.roomSource,x.sourceLabel || 'Official room page')}${link('hotels.html',`Full ${D.hotels.length}-hotel comparison`,'video-link')}</div></article>`
   });
 
   const renderClusters = () => {
