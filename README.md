@@ -13,7 +13,7 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 - [Dates & costs](costs-booking.html): preferred-start and later seven-night windows through Mar 23; actual 90/60/30/14-day calendar checkpoints.
 - [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-Today is **Nov 25, 2026**, 82–85 days before the preferred starts. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
+As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. This updates the calendar arithmetic and records a targeted activity-source pass only; hotel, dining, cost, entry and health records were not re-reviewed and retain their prior review dates. Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
 
 ## Research discipline
 
