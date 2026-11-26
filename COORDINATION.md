@@ -9,7 +9,8 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Session ID for this branch:** `91622d32` (branch `arena/91622d32-chinafun2`, base `3ef9a88` of `main`)
+**Historical initial session:** `91622d32` (branch `arena/91622d32-chinafun2`, base `3ef9a88` of `main`)
+**Current integration session (2026-11-26):** `c7463ba9` (branch `arena/c7463ba9-chinafun2`, base `04b6d65` of `main`)
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
 **Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
@@ -28,6 +29,7 @@
 | T06 | Site build: landing dashboard + subpages, mobile-first CSS/JS, search/filter | **done** | 91622d32 + 77604d1c | root dashboard and category pages | Original category pages remain; root dashboard is replaced with a source-linked, unknowns-first executive view. |
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
 | T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
+| T09 | Current integration re-audit of the published site; reconcile requested deliverables, source policy, build/tests and publication record | **in progress** | c7463ba9 | `COORDINATION.md`, `research/final-audit-2026-11-26.md`, `README.md`, `scripts/verify_project.py`, root `*.html`, `data.js`, `styles.css` | Current branch is a snapshot of `main`; preserve source-backed facts, leave unsupported values blank, and list remaining gaps. No work in the separate open `docs/` PR scope. |
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -42,6 +44,7 @@
 | Date (UTC) | Session | Action |
 |------------|---------|--------|
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
+| 2026-11-26 | c7463ba9 | Claimed T09 for the current-branch final integration re-audit; scope is the current root Pages site, its audit/report, verifier, and root navigation/data presentation. Existing open PR #4 (`docs/` site) is out of scope. |
 
 ## Change requests (file owned by another session)
 
