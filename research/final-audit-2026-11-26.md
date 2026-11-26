@@ -36,7 +36,8 @@ Canonical activity and restaurant data live in `data/activities.json` and `data/
 - Restaurant bills, all 2027 opening/holiday exceptions, renovation/event notices and traveler-specific China entry eligibility remain unresolved. Passport nationality and personal circumstances were not provided; see the retained [entry audit](entry-audit.md).
 - Current published prices and schedules above are not guarantees for February 2027. Check official booking channels close to the date.
 - PR #4 remains **open** (`docs/` proposal, head `arena/86c14d15-chinafun2`) and is outside this audit’s file scope.
-- The GitHub API reports current `main` at `04b6d65` (2026-11-25 13:55 UTC) and Pages `built`, public, HTTPS-enforced, from `main /`; the latest Pages build record points to that same `04b6d65` commit. A manual-fallback deploy at the preceding `eab8820` revision (run `45628203203`) failed, while the current main Pages build is successful. This verifies the configured build target/status, not rendered public content. The current working-branch changes are not included in that deployment. Public `github.io` content was not fetched in this environment.
+- This refresh is committed on `arena/c7463ba9-chinafun2` at `642e753` and proposed in [PR #11](https://github.com/kanlerxz87-cyber/ChinaFun2/pull/11), which remains open pending review. Its `Validate planning desk` check (run `45884160205`) passed. PR #11 is not merged, so its changes are not yet deployed.
+- The GitHub API reports current `main` at `04b6d65` (2026-11-25 13:55 UTC) and Pages `built`, public, HTTPS-enforced, from `main /`; the latest Pages build record points to that same `04b6d65` commit. A manual-fallback deploy at the preceding `eab8820` revision (run `45628203203`) failed, while the current main Pages build is successful. This verifies the configured build target/status, not rendered public content. Public `github.io` content was not fetched in this environment.
 
 ## Local verification
 
