@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -12,644 +12,1061 @@
   "clusters": [
     {
       "city": "Shanghai",
-      "edition": "2026 · city subset of regional release",
-      "count": "51 starred · 156 listed",
-      "detail": "1 three-star · 12 two-star · 38 one-star. The 77-starred regional count is NOT Shanghai.",
-      "comparability": "City counts are not hotel transit catchments. Shanghai is the provisional research-first choice, not a proven cheapest winner.",
-      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang"
+      "count": "51 starred (city) · 77 (regional)",
+      "edition": "2026 Shanghai–Jiangsu–Zhejiang edition",
+      "note": "Regional guide covers three areas; Shanghai city subset has 51 starred restaurants (Ultraviolet closed Mar 2025, excluded). Not a 1-hour hotel transit radius.",
+      "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "sourceLabel": "Official MICHELIN release"
     },
     {
       "city": "Beijing",
-      "edition": "2026 · city selection",
       "count": "32 starred",
-      "detail": "2 three-star · 6 two-star · 24 one-star. Culture-led alternative.",
-      "comparability": "Choose if imperial monuments outweigh the Shanghai restaurant shortlist; rates and routes unresolved.",
-      "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-beijing-2026"
+      "edition": "2026 Beijing edition",
+      "note": "City-wide guide total; not a 1-hour hotel radius. Live MICHELIN Guide verified King's Joy at 2 Stars (ignore older 3-star videos).",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/beijing-2026-stars-green-star-bib-gourmand-special-awards",
+      "sourceLabel": "Official MICHELIN release"
     },
     {
       "city": "Guangzhou",
-      "edition": "2026 · city subset of Guangzhou–Shenzhen",
-      "count": "20 starred · 117 listed",
-      "detail": "3 two-star · 17 one-star; 52 Bib Gourmand and 45 Selected in the release.",
-      "comparability": "Cantonese-food alternative; live listings can change after release. Do not combine Shenzhen counts.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-stars-guangzhou-shenzhen-2026"
+      "count": "20 starred (city)",
+      "edition": "2026 Guangdong edition",
+      "note": "Guangzhou city subset inside the Guangdong Guide; not a 1-hour hotel radius.",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-first-michelin-guide-guangdong-2026-celebrates-cantonese-cuisine",
+      "sourceLabel": "Official MICHELIN release"
     },
     {
       "city": "Chengdu",
-      "edition": "2027 · city selection",
-      "count": "15 starred · 84 listed",
-      "detail": "1 three-star · 1 two-star · 13 one-star; 32 Bib Gourmand and 37 Selected.",
-      "comparability": "Sichuan-food / panda alternative; edition differs from other cities, not a same-year league table.",
-      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-stars-chengdu-2027"
+      "count": "15 starred",
+      "edition": "2027 Chengdu edition",
+      "note": "Newer 2027 guide edition; not directly comparable to 2026 editions without noting year. Includes 1★+Green Star Mi Xun Teahouse.",
+      "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-chengdu-2027",
+      "sourceLabel": "Official MICHELIN release"
     }
   ],
   "restaurants": [
     {
+      "id": "taian-table",
       "city": "Shanghai",
       "name": "Taian Table",
+      "area": "Changning (Zhenning Rd)",
+      "edition": "2026",
       "status": "3 MICHELIN Stars · 2026",
-      "distinction": "Starred",
       "cuisine": "Innovative",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "¥5,176 (10-course) / ¥5,776 (12-course), calculated from the venue-published ¥2,588 / ¥2,888 per person; supplements excluded.",
-      "hours": "Tue–Sat, dinner bookings 18:00–20:00 (first/last booking times); dinner lasts 2–3 hours.",
-      "exceptions": "2027 holiday exceptions not confirmed. Venue says menu price may change seasonally; add-ons incur supplements. Tax/fee inclusion is not stated.",
-      "guide": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "coupleTotal": "¥4,576–¥5,176 = 2 × (¥2,288–¥2,588) for 10/12-course set menu per venue FAQ; excludes drinks, supplements & any 2027 price change",
+      "hours": "Tue–Sat Dinner (counter seatings per venue booking system); Closed Sun & Mon (confirm 2027 schedule on bookings.taian-table.com)",
+      "exceptions": "No 2027 Spring Festival schedule published yet; check monthly booking release directly.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "officialLabel": "MICHELIN Guide",
       "venue": "https://bookings.taian-table.com/faq",
-      "video": "Taian Table Shanghai restaurant",
-      "id": "taian-table",
-      "official_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Taian+Table+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/taiantableshanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jul 2026 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Taian%20Table%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Taian%20Table%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai"
-      }
-    },
-    {
-      "city": "Shanghai",
-      "name": "Fu He Hui",
-      "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred",
-      "cuisine": "Vegetarian",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 11:00–13:00 and 17:30–21:00 (MICHELIN Guide listing).",
-      "exceptions": "2027 holiday exceptions not confirmed; verify seasonal set menu and reservation directly.",
-      "guide": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
-      "venue": "",
-      "video": "Fu He Hui Shanghai restaurant",
-      "id": "fu-he-hui",
-      "official_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Fu%20He%20Hui%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Fu%20He%20Hui%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai"
-      }
-    },
-    {
-      "city": "Beijing",
-      "name": "King's Joy",
-      "status": "2 MICHELIN Stars · 2026",
-      "distinction": "Starred",
-      "cuisine": "Vegetarian",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 11:00–22:00 (MICHELIN Guide listing).",
-      "exceptions": "2027 holiday exceptions not confirmed; check service times and menu directly.",
-      "guide": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/king-s-joy",
-      "venue": "https://www.kingsjoy.com/",
-      "video": "King's Joy Beijing restaurant",
-      "id": "king-s-joy",
-      "official_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/king-s-joy",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=King%27s%20Joy%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=King%27s%20Joy%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=King%27s%20Joy%20Beijing"
-      }
-    },
-    {
-      "city": "Beijing",
-      "name": "Trb Hutong",
-      "status": "1 MICHELIN Star · 2026",
-      "distinction": "Starred",
-      "cuisine": "French Contemporary",
-      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "Daily 11:30–14:30 and 17:30–22:00 (MICHELIN Guide listing).",
-      "exceptions": "2027 holiday exceptions not confirmed; check menus, service and booking availability directly.",
-      "guide": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/trb-hutong",
-      "venue": "https://www.trbhutong.com/",
-      "video": "TRB Hutong Beijing restaurant",
-      "id": "trb-hutong",
-      "official_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/trb-hutong",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Trb%20Hutong%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Trb%20Hutong%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Trb%20Hutong%20Beijing"
-      }
-    },
-    {
-      "city": "Shanghai",
-      "name": "Hong Yu Fang",
-      "status": "MICHELIN Guide listed · no star badge shown on reviewed page",
-      "distinction": "Guide listing · not a star",
-      "cuisine": "Dim Sum",
-      "guideBand": "¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "MICHELIN page lists daily 10:00–22:00.",
-      "exceptions": "The same MICHELIN page describes the restaurant as “open in the morning only”; source details conflict. Confirm hours directly before planning.",
-      "guide": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
-      "venue": "",
-      "video": "Hong Yu Fang Shanghai restaurant",
-      "id": "hong-yu-fang",
-      "official_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
-      "flags": [
-        "R01",
-        "R02",
-        "S01",
-        "R03"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Hong%20Yu%20Fang%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Hong%20Yu%20Fang%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Hong%20Yu%20Fang%20Shanghai"
-      }
-    },
-    {
-      "city": "Beijing",
-      "name": "Jing Hua Lou",
-      "status": "Bib Gourmand · MICHELIN Guide Beijing 2026 (not a Star)",
-      "distinction": "Bib Gourmand · not a star",
-      "cuisine": "Beijing Cuisine",
-      "guideBand": "¥¥ (guide band; not a meal quote)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Reviewed MICHELIN page does not show hours; confirm the date-specific schedule with the venue.",
-      "guide": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/jing-hua-lou",
-      "venue": "",
-      "video": "Jing Hua Lou Beijing restaurant",
-      "id": "jing-hua-lou",
-      "official_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/jing-hua-lou",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Jing%20Hua%20Lou%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jing%20Hua%20Lou%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Jing%20Hua%20Lou%20Beijing"
-      }
+      "dashboard": true
     },
     {
       "id": "canton-8",
-      "name": "Canton 8 (喜粤8号, Huangpu)",
       "city": "Shanghai",
+      "name": "Canton 8 (Runan Street)",
+      "area": "Huangpu (63 Runan St)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Cantonese",
-      "distinction": "2 Stars",
-      "status": "Two Stars · 2026",
-      "guideBand": "",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
-      "venue": "https://rachelgouk.com/listings/canton-8/",
+      "exceptions": "MICHELIN Guide lists no official website or operating hours (+86 21 6733 7123). Non-official blog link removed during Nov 26, 2026 audit; confirm hours & 2027 holiday status by phone/concierge.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Canton+8+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Canton%208%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/canton8shanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2026 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=ynxLsnBkVDA",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Jan 2026 lunch review (third-party)",
+          "url": "https://www.youtube.com/watch?v=MerTf4Wl8Gg",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@eatplorer review clip (third-party)",
+          "url": "https://www.tiktok.com/@eatplorer/video/7337290694689639688",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Reservation tips discover page",
+          "url": "https://www.tiktok.com/discover/canton-8-shanghai-reservation",
+          "kind": "TikTok discover"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "R05",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "tang-court",
-      "name": "T'ang Court (唐阁)",
       "city": "Shanghai",
+      "name": "T'ang Court",
+      "area": "Xintiandi (The Langham, 5F)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Cantonese",
-      "distinction": "2 Stars",
-      "status": "Two Stars (promoted 1★→2★ in 2026) · 2026",
-      "guideBand": "",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court-506725",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥888 (Classic Dim Sum Lunch Set for Two) or ¥2,288 (All Day Set Menu for Two), inclusive of service charge & tax per 2026 Langham PDF; confirm 2027 menu",
+      "hours": "Lunch 11:30–14:00; Dinner 17:30–21:00 (CONFLICT: official Langham page says both 'daily' and 'Off on Monday' — verify directly)",
+      "exceptions": "Monday contradiction flagged (R05); confirm Feb/Mar 2027 Spring Festival schedule and exact set pricing via Langham concierge.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/t-ang-court",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Tang+Court+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Tang%20Court%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/tangcourtshanghai/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "R05",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=T%27ang%20Court%20%28%E5%94%90%E9%98%81%29%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=T%27ang%20Court%20%28%E5%94%90%E9%98%81%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=T%27ang%20Court%20%28%E5%94%90%E9%98%81%29%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "bao-li-xuan",
-      "name": "Bao Li Xuan (宝丽轩)",
       "city": "Shanghai",
+      "name": "Bao Li Xuan",
+      "area": "Suhe Creek (Bvlgari Hotel)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Cantonese",
-      "distinction": "2 Stars",
-      "status": "Two Stars · 2026",
-      "guideBand": "",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥3,576 = 2 × ¥1,788 (Autumn Set Menu incl. service fee & tax; beverage pairing +¥800/pp; lunch dim sum à la carte ¥36–¥148 per official PDF); confirm 2027 seasonal menu",
+      "hours": "Lunch 11:30–14:00; Dinner 17:30–22:00 (official Bvlgari page does not specify operating days or closed days)",
+      "exceptions": "Confirm operating days and Feb/Mar 2027 seasonal menu directly with Bvlgari Hotel Shanghai.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.bulgarihotels.com/en-US/shanghai/dining/bao-li-xuan",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/bao-li-xuan",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Bao+Li+Xuan+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20Shanghai",
+        "instagram": "https://www.instagram.com/bulgarihotels/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Bao Li Xuan dining video (third-party)",
+          "url": "https://www.youtube.com/watch?v=6zxepoFgqJk",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@bulgarihotels (official brand profile)",
+          "url": "https://www.instagram.com/bulgarihotels/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
+      "dashboard": true
+    },
+    {
+      "id": "fu-he-hui",
+      "city": "Shanghai",
+      "name": "Fu He Hui",
+      "area": "Changning (1037 Yuyuan Rd)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Vegetarian",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Daily Lunch 11:00–13:00; Dinner 17:30–21:00 (verified Nov 26, 2026 on MICHELIN Guide)",
+      "exceptions": "Set menus only (seasonal); direct booking via +86 21 3980 9188. Confirm 2027 holiday hours.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Fu+He+Hui+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/fuhehui/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
     },
     {
       "id": "otto-mezzo",
-      "name": "8½ Otto e Mezzo Bombana",
       "city": "Shanghai",
+      "name": "8½ Otto e Mezzo BOMBANA",
+      "area": "Rockbund · Huangpu (169 Yuanmingyuan Rd)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Italian",
-      "distinction": "2 Stars",
-      "status": "Two Stars · 2026",
-      "guideBand": "",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-%C2%BD-otto-e-mezzo-bombana",
+      "hours": "Lunch Thu–Sun 12:00–13:30 (last order 13:30); Dinner Mon–Sun 18:00–21:00 (last order 21:00); Cocktail Bar Mon–Sun 17:30–22:30",
+      "exceptions": "No published menu price on official web page; confirm 2027 seasonal menu and Feb holiday dates.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-1-2-otto-e-mezzo-bombana",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.ottoemezzobombana.com/branch/shanghai/",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/8-1-2-otto-e-mezzo-bombana",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Otto+e+Mezzo+Bombana+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Otto%20e%20Mezzo%20Bombana%20Shanghai",
+        "instagram": "https://www.instagram.com/ottoemezzobombanashanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Shanghai dining vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=LtmHnG6sU3Q",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@ottoemezzobombanashanghai (official venue profile)",
+          "url": "https://www.instagram.com/ottoemezzobombanashanghai/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=8%C2%BD%20Otto%20e%20Mezzo%20Bombana%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=8%C2%BD%20Otto%20e%20Mezzo%20Bombana%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=8%C2%BD%20Otto%20e%20Mezzo%20Bombana%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "da-vittorio",
-      "name": "Da Vittorio Shanghai",
       "city": "Shanghai",
+      "name": "Da Vittorio",
+      "area": "BFC Bund Finance Center · Huangpu",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
       "cuisine": "Italian",
-      "distinction": "2 Stars",
-      "status": "Two Stars · 2026",
-      "guideBand": "",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
-      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio-570570",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "Official English menu PDF lists Il Mare di Da Vittorio RMB 2,388 & White Truffle RMB 4,388 (+10% service charge) under Tasting Menus ('Shared for the whole table'; confirm per-person vs table basis and 2027 pricing)",
+      "hours": "Tue–Sun: Lunch 12:00–13:30, Dinner 18:00–21:30; Closed Monday",
+      "exceptions": "Online booking via Resvea requires USD $100/person deposit; confirm 2027 seasonal menu & holiday hours.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-vittorio",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Da+Vittorio+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Da%20Vittorio%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/davittorioshanghai/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "yi-long-court",
+      "city": "Shanghai",
+      "name": "Yi Long Court",
+      "area": "The Bund (The Peninsula Shanghai)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥788.22 = 2 × ¥338 + 16.6% surcharge (Weekday Dim Sum Lunch Set per 2026 Peninsula PDF; excludes tea/drinks & 2027 changes)",
+      "hours": "Lunch 11:30–14:30; Dinner 18:00–22:00 (confirm specific operating days & Feb 2027 holiday hours on Peninsula page)",
+      "exceptions": "Confirm 2027 Spring Festival dim sum/dinner availability directly via Peninsula Shanghai.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/yi-long-court-cantonese",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/yi-long-court",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Da%20Vittorio%20Shanghai%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Da%20Vittorio%20Shanghai%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Da%20Vittorio%20Shanghai%20Shanghai"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Yi+Long+Court+Peninsula+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Yi%20Long%20Court%20Shanghai",
+        "instagram": "https://www.instagram.com/thepeninsulashanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "Instagram",
+          "label": "@thepeninsulashanghai (official hotel profile)",
+          "url": "https://www.instagram.com/thepeninsulashanghai/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
     },
     {
       "id": "lao-zheng-xing",
-      "name": "Lao Zheng Xing (老正兴, Huangpu)",
       "city": "Shanghai",
-      "cuisine": "Shanghainese (local)",
-      "distinction": "1 Star",
-      "status": "One Star · 2026",
-      "guideBand": "",
+      "name": "Lao Zheng Xing (Huangpu)",
+      "area": "Huangpu (556 Fuzhou Rd)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Shanghainese",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "exceptions": "No official website or operating hours listed on MICHELIN Guide (+86 21 6322 2624); confirm hours & holiday closures directly.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Lao+Zheng+Xing+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Lao%20Zheng%20Xing%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/laozhengxing/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Lao%20Zheng%20Xing%20%28%E8%80%81%E6%AD%A3%E5%85%B4%2C%20Huangpu%29%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Lao%20Zheng%20Xing%20%28%E8%80%81%E6%AD%A3%E5%85%B4%2C%20Huangpu%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Lao%20Zheng%20Xing%20%28%E8%80%81%E6%AD%A3%E5%85%B4%2C%20Huangpu%29%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "ren-he-guan",
-      "name": "Ren He Guan (仁和馆)",
       "city": "Shanghai",
-      "cuisine": "Shanghainese (local)",
-      "distinction": "1 Star",
-      "status": "One Star · 2026",
-      "guideBand": "",
+      "name": "Ren He Guan (Zhaojiabang Road)",
+      "area": "Xuhui (407 Zhaojiabang Rd)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Shanghainese",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan",
+      "exceptions": "No official website or operating hours listed on MICHELIN Guide (+86 21 6403 0731); confirm queue/booking policy & 2027 holiday hours directly.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Ren+He+Guan+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Ren%20He%20Guan%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/renheguan/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2025 dining vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=szt1Lu7IeHs",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@jyu.eats review clip (third-party)",
+          "url": "https://www.tiktok.com/@jyu.eats/video/7458778956662148382",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@nom_life review clip (third-party)",
+          "url": "https://www.tiktok.com/@nom_life/video/7619913097515420958",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "jin-xuan",
-      "name": "Jin Xuan (金轩)",
       "city": "Shanghai",
+      "name": "Jin Xuan",
+      "area": "Lujiazui · Pudong (Ritz-Carlton 53F)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
       "cuisine": "Cantonese",
-      "distinction": "1 Star",
-      "status": "One Star · 2026",
-      "guideBand": "",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
+      "hours": "Sun–Thu: Lunch 11:30–14:30, Dinner 17:30–21:30; Fri–Sat: Lunch 11:30–14:30, Dinner 17:30–22:00",
+      "exceptions": "RENOVATION NOTICE (H04/R05): Ritz-Carlton Shanghai Pudong began public-area enhancement works Oct 1, 2026 (1F/3F/55F; no end date). Confirm Feb/Mar 2027 restaurant access & holiday schedule.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.jinxuanchineserestaurantshanghai.com/",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/jin-xuan",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Jin+Xuan+Ritz+Carlton+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Jin%20Xuan%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/jinxuanshanghai/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "R05",
+        "H03",
+        "H04",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Jin%20Xuan%20%28%E9%87%91%E8%BD%A9%29%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jin%20Xuan%20%28%E9%87%91%E8%BD%A9%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Jin%20Xuan%20%28%E9%87%91%E8%BD%A9%29%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "vivant",
-      "name": "Vivant by Johnny Pham",
       "city": "Shanghai",
-      "cuisine": "Contemporary French",
-      "distinction": "1 Star",
-      "status": "One Star · 2026",
-      "guideBand": "",
+      "name": "Vivant by Johnny Pham",
+      "area": "Huangpu (279 Beihai Rd)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "French Contemporary",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
+      "exceptions": "Official website does not print static hours or menu prices (venue Instagram bio notes Tue–Sat dinner — treat as social cue only and confirm directly).",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.vivantshanghai.com/",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/vivant-by-johnny-pham",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Vivant+Johnny+Pham+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Vivant%20Shanghai",
+        "instagram": "https://www.instagram.com/vivant_shanghai/"
+      },
+      "reviews": [
+        {
+          "platform": "Instagram",
+          "label": "@vivant_shanghai (venue profile)",
+          "url": "https://www.instagram.com/vivant_shanghai/",
+          "kind": "Official profile"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Vivant%20by%20Johnny%20Pham%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Vivant%20by%20Johnny%20Pham%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Vivant%20by%20Johnny%20Pham%20Shanghai"
-      }
+      "dashboard": false
     },
     {
       "id": "fabula",
-      "name": "Fabula",
       "city": "Shanghai",
-      "cuisine": "Contemporary European",
-      "distinction": "1 Star",
-      "status": "One Star · 2026",
-      "guideBand": "",
+      "name": "Fabula",
+      "area": "Shanghai",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Innovative (Neo-Sino-French)",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
-      "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
-      "venue": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
+      "hours": "Wed–Sun 19:00–23:00; Closed Monday & Tuesday (reservation only)",
+      "exceptions": "Online booking via Resvea requires USD $100/person deposit; confirm 2027 tasting menu price & holiday dates.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.fabula.restaurant/",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/fabula",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Fabula+Shanghai+Michelin+review",
+        "tiktok": "https://www.tiktok.com/search?q=Fabula%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/fabulashanghai/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Fabula%20Shanghai",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Fabula%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Fabula%20Shanghai"
-      }
+      "dashboard": false
     },
     {
-      "id": "beijing-xin-rong-ji-xinyuan-south-road",
+      "id": "sir-ellys",
+      "city": "Shanghai",
+      "name": "Sir Elly's",
+      "area": "The Bund (The Peninsula Shanghai 13F)",
+      "edition": "2026",
+      "status": "MICHELIN Guide Selected (no star) · 2026",
+      "cuisine": "European Contemporary",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥3,003.62 = 2 × ¥1,288 + 16.6% surcharge (4-course tasting dinner per 2026 Peninsula PDF; excludes wine & 2027 changes)",
+      "hours": "Wed–Sun Dinner 18:00–22:30; Closed Monday & Tuesday",
+      "exceptions": "Included for contrast: MICHELIN Guide Selected (NO star) with Bund rooftop terrace views; confirm 2027 schedule.",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/sir-ellys-restaurant",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/sir-elly-s",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Sir+Ellys+Peninsula+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Sir%20Ellys%20Shanghai",
+        "instagram": "https://www.instagram.com/sirellys.restaurant/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Sir Elly's dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=DjTvFBc_ZGE",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@sirellys.restaurant (official venue profile)",
+          "url": "https://www.instagram.com/sirellys.restaurant/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "hong-yu-fang",
+      "city": "Shanghai",
+      "name": "Hong Yu Fang",
+      "area": "Huangpu (B1-06 Mix 6, 686 S. Xizang Rd)",
+      "edition": "2026",
+      "status": "MICHELIN Guide Selected (no star) · 2026",
+      "cuisine": "Dim Sum",
+      "guideBand": "¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "CONFLICT on MICHELIN page: hours panel says Daily 10:00–22:00 while editorial text says 'Open in the morning only'",
+      "exceptions": "Not starred (Guide Selected). Confirm actual morning service window directly (+86 158 0077 2430).",
+      "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/hong-yu-fang",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Hong+Yu+Fang+Shanghai+review",
+        "tiktok": "https://www.tiktok.com/search?q=Hong%20Yu%20Fang%20Shanghai",
+        "instagram": "https://www.instagram.com/explore/tags/hongyufang/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "R03",
+        "H03",
+        "S01"
+      ],
+      "dashboard": true
+    },
+    {
+      "id": "xin-rong-ji-bj",
+      "city": "Beijing",
       "name": "Xin Rong Ji (Xinyuan South Road)",
-      "city": "Beijing",
-      "cuisine": "Taizhou",
-      "distinction": "3 Stars",
+      "area": "Chaoyang · Beijing",
+      "edition": "2026",
       "status": "3 MICHELIN Stars · 2026",
-      "guideBand": "¥¥¥¥ (relative band, not cash)",
+      "cuisine": "Taizhou",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
-      "venue": "",
+      "exceptions": "Confirm regular hours, reservation window & 2027 Spring Festival schedule directly via xinrongji.com or concierge.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.xinrongji.com/",
       "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Xin+Rong+Ji+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/xinrongji/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2025 3-star review (third-party)",
+          "url": "https://www.youtube.com/watch?v=6SvqIT2SW7M",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing"
-      }
+      "dashboard": false
     },
     {
-      "id": "beijing-chao-shang-chao",
-      "name": "Chao Shang Chao",
+      "id": "chao-shang-chao",
       "city": "Beijing",
-      "cuisine": "Chao Zhou",
-      "distinction": "3 Stars",
+      "name": "Chao Shang Chao (Chaoyang)",
+      "area": "Chaoyang · Beijing",
+      "edition": "2026",
       "status": "3 MICHELIN Stars · 2026",
-      "guideBand": "¥¥¥¥ (relative band, not cash)",
+      "cuisine": "Chao Zhou",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
       "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao",
+      "exceptions": "Confirm opening hours, private/main dining minimums & 2027 holiday dates directly.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao-chaoyang",
+      "officialLabel": "MICHELIN Guide",
       "venue": "",
-      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao",
+      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/chao-shang-chao-chaoyang",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Chao+Shang+Chao+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=Chao%20Shang%20Chao%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/chaoshangchao/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2026 3-star review (third-party)",
+          "url": "https://www.youtube.com/watch?v=SQ9JzAqNpjY",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "May 2025 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=tIBbLQB8Ueo",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Chao%20Shang%20Chao%20Beijing",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chao%20Shang%20Chao%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Chao%20Shang%20Chao%20Beijing"
-      }
+      "dashboard": false
     },
     {
-      "id": "guangzhou-jiang-by-chef-fei",
-      "name": "Jiang by Chef Fei",
-      "city": "Guangzhou",
-      "cuisine": "Cantonese",
-      "distinction": "2 Stars",
+      "id": "kings-joy",
+      "city": "Beijing",
+      "name": "King's Joy",
+      "area": "Dongcheng (2 Wudaoying Hutong)",
+      "edition": "2026",
       "status": "2 MICHELIN Stars · 2026",
-      "guideBand": "¥¥¥ (relative band, not cash)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
-      "venue": "",
-      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Jiang%20by%20Chef%20Fei%20Guangzhou",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jiang%20by%20Chef%20Fei%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Jiang%20by%20Chef%20Fei%20Guangzhou"
-      }
-    },
-    {
-      "id": "guangzhou-bingsheng-mansion",
-      "name": "BingSheng Mansion (Xiancun Road)",
-      "city": "Guangzhou",
-      "cuisine": "Cantonese",
-      "distinction": "1 Stars",
-      "status": "1 MICHELIN Stars · 2026",
-      "guideBand": "¥¥¥ (relative band, not cash)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
-      "venue": "",
-      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou"
-      }
-    },
-    {
-      "id": "chengdu-yu-zhi-lan-1196150",
-      "name": "Yu Zhi Lan",
-      "city": "Chengdu",
-      "cuisine": "Sichuan",
-      "distinction": "2 Stars",
-      "status": "2 MICHELIN Stars · 2027",
-      "guideBand": "¥¥¥¥ (relative band, not cash)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/yu-zhi-lan-1196150",
-      "venue": "",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/yu-zhi-lan-1196150",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Yu%20Zhi%20Lan%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Zhi%20Lan%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Yu%20Zhi%20Lan%20Chengdu"
-      }
-    },
-    {
-      "id": "chengdu-silver-pot",
-      "name": "Silver Pot",
-      "city": "Chengdu",
-      "cuisine": "Sichuan",
-      "distinction": "1 Stars",
-      "status": "1 MICHELIN Stars · 2027",
-      "guideBand": "¥¥¥ (relative band, not cash)",
-      "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/silver-pot",
-      "venue": "",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/silver-pot",
-      "flags": [
-        "R01",
-        "R02",
-        "S01"
-      ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Silver%20Pot%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Silver%20Pot%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Silver%20Pot%20Chengdu"
-      }
-    },
-    {
-      "id": "chengdu-mi-xun-teahouse",
-      "name": "Mi Xun Teahouse",
-      "city": "Chengdu",
       "cuisine": "Vegetarian",
-      "distinction": "1 Stars",
-      "status": "1 MICHELIN Stars · 2027",
-      "guideBand": "¥¥ (relative band, not cash)",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/mi-xun-teahouse",
-      "venue": "",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/mi-xun-teahouse",
+      "hours": "Daily 11:00–22:00 (verified Nov 26, 2026 on MICHELIN Guide)",
+      "exceptions": "Live MICHELIN Guide shows 2 Stars (ignore older 3-star videos, R05); three lacto-ovo menus (vegan on request). Confirm 2027 holiday hours.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.kingsjoy.com/",
+      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Kings+Joy+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=Kings%20Joy%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/kingsjoybeijing/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Mar 2026 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=mT6hdUcRRIs",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Feb 2024 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=jnZ_d6uAPLs",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "@thesamtyler dining clip (third-party)",
+          "url": "https://www.tiktok.com/@thesamtyler/video/7429173283184020754",
+          "kind": "Direct video"
+        }
+      ],
       "flags": [
         "R01",
         "R02",
+        "R05",
+        "H03",
         "S01"
       ],
-      "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Mi%20Xun%20Teahouse%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Mi%20Xun%20Teahouse%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Mi%20Xun%20Teahouse%20Chengdu"
-      }
+      "dashboard": false
     },
     {
-      "id": "chengdu-xin-rong-ji-1207940",
-      "name": "Xin Rong Ji",
-      "city": "Chengdu",
-      "cuisine": "Taizhou",
-      "distinction": "3 Stars",
-      "status": "3 MICHELIN Stars · 2027",
-      "guideBand": "¥¥¥ (relative band, not cash)",
+      "id": "trb-hutong",
+      "city": "Beijing",
+      "name": "TRB Hutong",
+      "area": "Dongcheng (23 Shatan North St)",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "French Contemporary",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "",
-      "hours": "",
-      "exceptions": "Regular service and 2027 exceptions need confirmation from the venue.",
-      "guide": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/xin-rong-ji-1207940",
-      "venue": "",
-      "official_url": "https://guide.michelin.com/en/chengdu-municipality/chengdu/restaurant/xin-rong-ji-1207940",
+      "hours": "Daily Lunch 11:30–14:30; Dinner 17:30–22:00 (verified Nov 26, 2026 on MICHELIN Guide)",
+      "exceptions": "Set inside a historic temple courtyard; confirm 2027 menu pricing & holiday closures on trbhutong.com.",
+      "official": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.trbhutong.com/",
+      "official_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=TRB+Hutong+Beijing+review",
+        "tiktok": "https://www.tiktok.com/search?q=TRB%20Hutong%20Beijing",
+        "instagram": "https://www.instagram.com/explore/tags/trbhutong/"
+      },
+      "reviews": [],
       "flags": [
         "R01",
         "R02",
+        "H03",
         "S01"
       ],
+      "dashboard": false
+    },
+    {
+      "id": "taian-gz",
+      "city": "Guangzhou",
+      "name": "Taian Table (Guangzhou)",
+      "area": "Yuexiu · Guangzhou",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Innovative",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Confirm seatings, tasting menu price & 2027 holiday schedule directly with Guangzhou branch.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/taian-table-guangzhou",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/taian-table-guangzhou",
       "socials": {
-        "YouTube search": "https://www.youtube.com/results?search_query=Xin%20Rong%20Ji%20Chengdu",
-        "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xin%20Rong%20Ji%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Chengdu"
-      }
+        "youtube": "https://www.youtube.com/results?search_query=Taian+Table+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Taian%20Table%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/taiantableguangzhou/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "jiang",
+      "city": "Guangzhou",
+      "name": "Jiang by Chef Fei",
+      "area": "Tianhe (Mandarin Oriental Guangzhou)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "Lunch Mon–Fri 11:30–14:30, Sat–Sun & Public Holidays 10:00–15:00; Dinner Daily 17:30–22:00",
+      "exceptions": "Official Mandarin Oriental dining page verified Nov 26, 2026; confirm 2027 Spring Festival reservation lead time.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.mandarinoriental.com/en/guangzhou/tianhe/dine/jiang-by-chef-fei",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/jiang-by-chef-fei",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Jiang+by+Chef+Fei+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Jiang%20by%20Chef%20Fei%20Guangzhou",
+        "instagram": "https://www.instagram.com/mo_guangzhou/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2024 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=_EklcxRlpck",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "Instagram",
+          "label": "@mo_guangzhou (official hotel profile)",
+          "url": "https://www.instagram.com/mo_guangzhou/",
+          "kind": "Official profile"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "imperial-treasure-gz",
+      "city": "Guangzhou",
+      "name": "Imperial Treasure Fine Chinese Cuisine (Guangzhou)",
+      "area": "Tianhe (IGC Mall)",
+      "edition": "2026",
+      "status": "2 MICHELIN Stars · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Confirm dim sum/dinner hours and 2027 holiday schedule directly.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/imperial-treasure-fine-chinese-cuisine-guangzhou",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/imperial-treasure-fine-chinese-cuisine-guangzhou",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Imperial+Treasure+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=Imperial%20Treasure%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/imperialtreasureguangzhou/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "bingsheng",
+      "city": "Guangzhou",
+      "name": "BingSheng Mansion",
+      "area": "Tianhe · Guangzhou",
+      "edition": "2026",
+      "status": "1 MICHELIN Star · 2026",
+      "cuisine": "Cantonese",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Confirm exact operating hours & 2027 holiday schedule via bingsheng.com or concierge.",
+      "official": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.bingsheng.com/",
+      "official_url": "https://guide.michelin.com/en/guangdong-province/guangzhou/restaurant/bingsheng-mansion",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=BingSheng+Mansion+Guangzhou+review",
+        "tiktok": "https://www.tiktok.com/search?q=BingSheng%20Mansion%20Guangzhou",
+        "instagram": "https://www.instagram.com/explore/tags/bingshengmansion/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Feb 2026 Cantonese review (third-party)",
+          "url": "https://www.youtube.com/watch?v=MElCeNUJLTw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Oct 2025 dining vlog (third-party)",
+          "url": "https://www.youtube.com/watch?v=oQEFZ8NaaGU",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "May 2025 food review (third-party)",
+          "url": "https://www.youtube.com/watch?v=P7PDzqeJhQY",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "xin-rong-ji-cd",
+      "city": "Chengdu",
+      "name": "Xin Rong Ji (Chengdu)",
+      "area": "Wuhou · Chengdu",
+      "edition": "2027",
+      "status": "3 MICHELIN Stars · 2027",
+      "cuisine": "Taizhou",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "2027 Chengdu MICHELIN Guide edition; confirm hours & holiday calendar via xinrongji.com.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/xin-rong-ji-chengdu",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.xinrongji.com/",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/xin-rong-ji-chengdu",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Xin+Rong+Ji+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/xinrongjichengdu/"
+      },
+      "reviews": [],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "yu-zhi-lan",
+      "city": "Chengdu",
+      "name": "Yu Zhi Lan",
+      "area": "Qingyang · Chengdu",
+      "edition": "2027",
+      "status": "2 MICHELIN Stars · 2027",
+      "cuisine": "Sichuan",
+      "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "Very small intimate dining room; book far ahead and confirm 2027 Spring Festival schedule directly.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/yu-zhi-lan",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/yu-zhi-lan",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Yu+Zhi+Lan+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Yu%20Zhi%20Lan%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/yuzhilan/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jan 2025 tasting review (third-party)",
+          "url": "https://www.youtube.com/watch?v=N0sUApoNLlg",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "silver-pot",
+      "city": "Chengdu",
+      "name": "Silver Pot",
+      "area": "Jinjiang · Chengdu",
+      "edition": "2027",
+      "status": "1 MICHELIN Star · 2027",
+      "cuisine": "Sichuan",
+      "guideBand": "¥¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "",
+      "hours": "",
+      "exceptions": "2027 Chengdu MICHELIN Guide edition; confirm hours & 2027 holiday closures directly.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/silver-pot",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/silver-pot",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Silver+Pot+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Silver%20Pot%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/silverpotchengdu/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Jun 2025 Sichuan review (third-party)",
+          "url": "https://www.youtube.com/watch?v=9_sWXD_J0Wg",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "YouTube",
+          "label": "Dec 2023 dining review (third-party)",
+          "url": "https://www.youtube.com/watch?v=HghLw5mcsNU",
+          "kind": "Direct video"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
+    },
+    {
+      "id": "mi-xun",
+      "city": "Chengdu",
+      "name": "Mi Xun Teahouse",
+      "area": "Taikoo Li (The Upper House Chengdu)",
+      "edition": "2027",
+      "status": "1 MICHELIN Star + MICHELIN Green Star · 2027",
+      "cuisine": "Vegetarian",
+      "guideBand": "¥¥ (guide band; not a meal quote)",
+      "coupleTotal": "¥620 / set (Vegetarian Hot Pot for Two per official Upper House Chengdu offer page; confirm tax/service & Feb/Mar 2027 availability)",
+      "hours": "Daily: Lunch 12:00–14:00, Afternoon Tea 14:00–17:30, Dinner 17:30–22:00",
+      "exceptions": "Verified Nov 26, 2026 on Upper House Chengdu dining page; holds both 1 Star and MICHELIN Green Star. Confirm Feb/Mar 2027 menu.",
+      "official": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/mi-xun-teahouse",
+      "officialLabel": "MICHELIN Guide",
+      "venue": "https://www.upperhouse.com/en/chengdu/restaurants-and-bars/mi-xun-teahouse/",
+      "official_url": "https://guide.michelin.com/en/sichuan-province/chengdu/restaurant/mi-xun-teahouse",
+      "socials": {
+        "youtube": "https://www.youtube.com/results?search_query=Mi+Xun+Teahouse+Chengdu+review",
+        "tiktok": "https://www.tiktok.com/search?q=Mi%20Xun%20Teahouse%20Chengdu",
+        "instagram": "https://www.instagram.com/explore/tags/mixunteahouse/"
+      },
+      "reviews": [
+        {
+          "platform": "YouTube",
+          "label": "Chengdu vegetarian teahouse video (third-party)",
+          "url": "https://www.youtube.com/watch?v=Q7TQLQ3DuGw",
+          "kind": "Direct video"
+        },
+        {
+          "platform": "TikTok",
+          "label": "Chengdu teahouse discover page",
+          "url": "https://www.tiktok.com/discover/chengdu-teahouse",
+          "kind": "TikTok discover"
+        }
+      ],
+      "flags": [
+        "R01",
+        "R02",
+        "H03",
+        "S01"
+      ],
+      "dashboard": false
     }
   ]
 }

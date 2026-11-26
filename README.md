@@ -1,19 +1,19 @@
 # China trip planning desk
 
-Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Mar 23, 2027**, with **Feb 15–18 preferred starts** and a **seven-night working stay**.
+Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Mar 23, 2027**, with **Feb 15–18 preferred starts** supporting both **1–2 week** and **2–4 week** itineraries.
 
 **Live site:** https://kanlerxz87-cyber.github.io/ChinaFun2/
 
 ## Start here
 
-- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional research-first base; Beijing, Guangzhou and Chengdu remain real alternatives, not a fabricated value ranking.
-- [Hotels](hotels.html): 16 candidates, exact Queen+/King and private ensuite fit where supported; room confirmation, official seven-night total and route rank stay blank when unverified.
-- [Michelin](michelin.html): 24 actual venues, distinctions/editions, hours and current published menu arithmetic where available. No secondary cash estimates.
-- [Activities](activities.html): 22 records, published schedules, closure traps, product-specific couple tickets, and explicitly unqualified excursions.
-- [Dates & costs](costs-booking.html): preferred-start and later seven-night windows through Mar 23; actual 90/60/30/14-day calendar checkpoints.
-- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), and [entry/health audit](entry-audit.html).
+- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional 7-night research base; Beijing, Guangzhou and Chengdu remain full alternatives (or multi-city 2–4 week pairings), with zero fabricated value rankings.
+- [Hotels](hotels.html): 20 candidates across 4 cities with interactive city filter chips and live-verified official room specs where published; dated 2027 all-in totals, literal private-bath confirmation and ≤60m transit ranks stay blank when unverified.
+- [Michelin](michelin.html): 27 curated listings across 4 cities with separated Days/Hours, Exceptions/Deposits, Official Links (MICHELIN + venue) and clearly labelled third-party YouTube/TikTok/Instagram reviews.
+- [Activities](activities.html): 29 verified attractions across 4 cities with Monday/Tuesday closure traps, Shanghai Museum East vs People's Square Americas-only notice, Mar 1 Panda Base & Mar 16 Mutianyu seasonal switches, two-adult ticket costs and direct third-party walkthrough videos.
+- [Dates & costs](costs-booking.html): 7-night and 2–4 week stay windows through Mar 23, plus 90/60/30/14-day calendar checkpoints.
+- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html) (17 flags), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. This updates the calendar arithmetic and records a targeted activity-source pass only; hotel, dining, cost, entry and health records were not re-reviewed and retain their prior review dates. Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
+As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. Full live audit logs are recorded in [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md) and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
 
 ## Research discipline
 
