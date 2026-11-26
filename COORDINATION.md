@@ -9,7 +9,7 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Current active session:** `99044301` (branch `arena/99044301-chinafun2`, reconciled with `origin/main` through PR #12 `371b0dc`). Earlier session IDs below are historical.
+**Current active session:** `ba4eabb3` (branch `arena/ba4eabb3-chinafun2`, reconciled onto `origin/main` `d26aaf2` preserving PRs #12–#16 in full). Earlier session IDs below are historical.
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
 **Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
@@ -151,17 +151,17 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
 
-## Session `a16d9048` — targeted activity-source reconciliation (PR #12 merged `371b0dc`), 2026-11-26
+## Session `a16d9048` — targeted activity-source reconciliation (PR #12 merged `371b0dc` & PR #14 merged `593b8de`), 2026-11-26
 
 - Corrected date arithmetic to **81–84 days** for Feb 15–18, 2027 as of Nov 26. README, dashboard, generated detail pages, and costs checkpoint copy stated explicitly that this was a targeted activity-source pass, not a re-review of hotel, dining, cost, entry, or health data.
 - Reconciled all 22 activity records against specific official pages where available. Replaced unsupported Tower and Oriental Pearl schedules/fares with blanks, left other unverified admission prices blank, preserved Temple of Heaven hours/ticket snippet conflict and Wuhou concession disagreement, and added source-specific season/old-price caveats for West Lake, Mutianyu, Yu Garden night tour, and Huangpu cruise. Added linked official secondary sources to the activity table/source register.
-- Specific facts and access failures are retained intact in `research/final-verification-2026-11-26.md`. Merged to `main` via PR #12 (`371b0dc`).
+- Specific facts and access failures are retained intact in `research/final-verification-2026-11-26.md`. Merged to `main` via PR #12 (`371b0dc`) and PR #14 (`593b8de`).
 
 ---
 
-## Session `99044301` — Full 4-domain live audit, verified social media reviews & PR #12 reconciliation (2026-11-26)
+## Session `99044301` — Full 4-domain live audit, verified social media reviews & PR #12 reconciliation (PR #13 merged `e29fd91`, 2026-11-26)
 
-**Branch:** `arena/99044301-chinafun2` (reconciled with `origin/main` `371b0dc` / PR #12)
+**Branch:** `arena/99044301-chinafun2` (reconciled with `origin/main` `371b0dc` / PR #12; merged as PR #13 `e29fd91`)
 **Reconciliation note:** Preserved `research/final-verification-2026-11-26.md`, PR #12's official domains (`gzcjc.com.cn`, `tiantanpark.com`, `summerpalace.net.cn`, `mutianyugreatwall.com`), and activity micro-facts (Chen Clan `gzcjc.com.cn` visitor rules, Panda Base No. 6 Villa/Museum Monday closure, Wuhou 14-day English ticket rules) alongside our full 4-domain live audit.
 
 | ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
@@ -176,23 +176,37 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 ---
 
-## Session `5e433db0` — Line-by-line room/menu/ticket primary-source reconciliation onto `main` (`e29fd91`), 2026-11-26
+## Session `5e433db0` — Line-by-line room/menu/ticket primary-source reconciliation onto `main` (`e29fd91` / PR #15), 2026-11-26
 
-**Branch:** `arena/5e433db0-chinafun2` (merged cleanly with `origin/main` `e29fd91`, preserving 100% of PRs #12, #13 & #14 plus `shanghai-planner/`)
+**Branch:** `arena/5e433db0-chinafun2` (merged cleanly with `origin/main` `e29fd91` as PR #15 `f20df40`, preserving 100% of PRs #12, #13 & #14 plus `shanghai-planner/`)
 
 | ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
 |----|------|--------|-----------------|----------------|-----------------|
 | T09-5e433db0 | Primary-source verification audit across 2027 State Council holidays, hotel room/bath pages, Michelin Guide + venue menus, attraction ticketing portals, and direct social review URLs | **done** | `5e433db0` | `research/session-5e433db0-audit.md`, `scripts/audit_5e433db0.py`, `COORDINATION.md` | Documented primary-source verification and automated content-integrity checks (`audit_5e433db0.py`). |
-| T10-5e433db0 | Additive reconciliation onto merged `main` (`e29fd91`), factual bug fixes (`fabula` Selected vs 1★, `taian-table` current FAQ menu totals & 90-day window), hotel bed/bath fill (`14/20` beds, `7/20` baths), `trb-hutong` & `chen-clan` official pricing, and dashboard city filter pills | **done · publishing PR** | `5e433db0` | `data/{hotels,michelin,activities}.json`, `scripts/{build_pages,verify_project,audit_5e433db0,test_ui}.*`, `index.html`, `app.js`, `styles.css`, `*.html`, `data.js`, `RESEARCH_REVIEW.md`, `README.md`, `.github/workflows/validate.yml` | Preserved all 20 hotels, 27 restaurants, 29 activities, 17 flags, `research/final-verification-2026-11-26.md`, and `research/live-audit-2026-11-26.md` from PRs #12–#14 while fixing `fabula` distinction, updating `taian-table` / `trb-hutong` / `tang-court` / `da-vittorio` published menu totals, adding `chen-clan` official `¥20` two-adult fare + Tuesday closure, filling 7 official hotel bathroom specs & 7 additional hotel bed specs, and adding interactive city filter pills to `index.html`. |
+| T10-5e433db0 | Additive reconciliation onto merged `main` (`e29fd91`), factual bug fixes (`fabula` Selected vs 1★, `taian-table` current FAQ menu totals & 90-day window), hotel bed/bath fill (`14/20` beds, `7/20` baths), `trb-hutong` & `chen-clan` official pricing, and dashboard city filter pills | **done** | `5e433db0` | `data/{hotels,michelin,activities}.json`, `scripts/{build_pages,verify_project,audit_5e433db0,test_ui}.*`, `index.html`, `app.js`, `styles.css`, `*.html`, `data.js`, `RESEARCH_REVIEW.md`, `README.md`, `.github/workflows/validate.yml` | Merged as PR #15 (`f20df40`). |
 
 ---
 
-## Session `ae77cbdf` — Additive primary-source verification, closure & security catches, and PR #12–#15 reconciliation (2026-11-26)
+## Session `ae77cbdf` — Additive primary-source verification, closure & security catches, and PR #12–#15 reconciliation (PR #16 `d26aaf2`, 2026-11-26)
 
-**Active branch:** `arena/ae77cbdf-chinafun2` (reconciled with `origin/main` `f20df40` / PRs #12–#15, preserving `shanghai-planner/`, `research/final-verification-2026-11-26.md`, `research/live-audit-2026-11-26.md`, `research/session-5e433db0-audit.md`, `scripts/audit_5e433db0.py`, interactive city-filter chips/pills, and all prior sessions' records intact).
+**Active branch:** `arena/ae77cbdf-chinafun2` (merged as PR #16 `d26aaf2`, preserving `shanghai-planner/`, `research/final-verification-2026-11-26.md`, `research/live-audit-2026-11-26.md`, `research/session-5e433db0-audit.md`, `scripts/audit_5e433db0.py`, interactive city-filter chips/pills, and all prior sessions' records intact).
 
 | ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
 |----|------|--------|-----------------|----------------|-----------------|
 | T09-ae77cbdf | Line-by-line primary-source verification & additive reconciliation onto `origin/main` (`f20df40`) | **done** | `ae77cbdf` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, `research/line-by-line-audit-2026-11-26.md`, `data/*.json` | Expanded to **27 hotels (22 beds, 7 baths), 35 Michelin venues (8 published couple totals, 20 with direct social reviews), 31 activities (27 with direct social reviews), 19 flags**. Fixed `Renaissance Shanghai Yu Garden` Marriott code (`shasy`, replacing 404 `shayg`), updated `The Middle House` to **`Upper House Shanghai`** (`upperhouse.com`), populated `Zhujiajiao` Kezhi Garden `¥40 = 2 × ¥20`, and added **Jinsha Site Museum full-window closure (`Dec 5, 2025 – Apr 30, 2027`, `A04`)**, **Shanghai Disneyland (`from ¥950` for 2)**, **`lameloise.com.cn` script-injection quarantine (`R06`)**, `The House of Rong` (2★), `Ling Long` (1★), `le Comptoir de Pierre Gagnaire` (1★), `Da Hu Chun`, `Mi Thai`, `Yuge · Zhanjiang`, `Jing Hua Lou`, plus 7 verified hotel candidates (`Waldorf Astoria Bund`, `Andaz Xintiandi`, `Hilton City Center`, `Rosewood Beijing`, `China World Summit Wing`, `Ritz-Carlton Guangzhou`, `Upper House Chengdu`). |
-| T10-ae77cbdf | Additional verified YouTube, TikTok & Instagram review links + quarantined-host hardening | **done** | `ae77cbdf` | `data/michelin.json`, `data/activities.json`, `scripts/verify_project.py` | Merged additional verified direct YouTube, TikTok (`@cornettomind`, `@eatplorer`, `@hereis_jess`, `@arafcamelshoes`, `@meetinshanghai`, `@jacmartin_`, `@megsandalex`, `@monikkuu`), and official Instagram (`@stefan_stiller_taian_table`, `@ottoemezzobombanashanghai`, `@shanghaidisneyresort_park`, `@mutianyu_greatwall_official`) links into `reviews` arrays; enforced `BANNED_LINK_HOSTS` in `verify_project.py`. |
-| T11-ae77cbdf | Rebuild static pages, pass all 5 validators & DOM/HTTP suites, merge PR to `main` & verify live Pages | **in progress** | `ae77cbdf` | `scripts/build_pages.py`, `scripts/test_ui.cjs`, `index.html`, `app.js`, `*.html`, `data.js` | Rebuilt all 10 detail pages + `data.js` (`v=20261126-v5`), passed `verify_project.py --base-url`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, and `test_ui.cjs`. Opening PR to `main`, merging, and confirming live GitHub Pages deployment next. |
+| T10-ae77cbdf | Additional verified YouTube, TikTok & Instagram review links + quarantined-host hardening | **done** | `ae77cbdf` | `data/michelin.json`, `data/activities.json`, `scripts/verify_project.py` | Merged additional verified direct YouTube, TikTok, and official Instagram links into `reviews` arrays; enforced `BANNED_LINK_HOSTS` in `verify_project.py`. |
+| T11-ae77cbdf | Rebuild static pages, pass all 5 validators & DOM/HTTP suites, merge PR to `main` & verify live Pages | **done** | `ae77cbdf` | `scripts/build_pages.py`, `scripts/test_ui.cjs`, `index.html`, `app.js`, `*.html`, `data.js` | Merged as PR #16 (`d26aaf2`). |
+
+---
+
+## Session `ba4eabb3` — 2026-11-26 live external URL audit, broken/wrong-city MICHELIN link fixes & Guide-listed completeness
+
+**Session ID:** `ba4eabb3` (fixed workspace branch `arena/ba4eabb3-chinafun2`, rebased onto `origin/main` `d26aaf2` preserving PRs #12–#16 in full)
+
+| ID | Task | Status | Owner | Files in scope | Notes / coordination rule |
+|----|------|--------|-------|----------------|---------------------------|
+| T09-ba4eabb3 | Line-by-line official-source verification of existing repo records (hotels, Michelin, activities, 2027 holiday/date window, 1–4 week duration framing), removal of remaining non-official table links, and verified YouTube/TikTok/Instagram review link enrichment | **in progress** | `ba4eabb3` | `COORDINATION.md`, `research/session-ba4eabb3-audit.md` (isolated research phase) | Preserves `shanghai-planner/` and all prior audit files & scripts (`audit_5e433db0.py`, `final-verification-2026-11-26.md`, `live-audit-2026-11-26.md`, `session-5e433db0-audit.md`, `line-by-line-audit-2026-11-26.md`) untouched. |
+| T10-ba4eabb3 | Final integration & GitHub Pages publication pass (fix remaining 404 & wrong-city-redirecting MICHELIN/activity URLs on `d26aaf2`, add Guangzhou & Chengdu Guide-Listed Bib Gourmand / Selected rows, rebuild `*.html` + `data.js`, pass all 5 validators + JSDOM + HTTP checks, open & merge PR, verify live Pages deploy) | **unclaimed → queued after T09-ba4eabb3** | `ba4eabb3` | `data/{michelin,activities}.json`, `data.js`, `*.html`, `scripts/{build_pages,verify_project,test_ui}.*`, `README.md`, `RESEARCH_REVIEW.md`, `COORDINATION.md` | Rebased cleanly onto `origin/main` (`d26aaf2`), preserving PRs #12–#16 in full. |
+
+### Claim log update (2026-11-26)
+- `2026-11-26` · `ba4eabb3`: Read `COORDINATION.md`, claimed `T09-ba4eabb3` and queued `T10-ba4eabb3` onto latest `origin/main` (`d26aaf2`).
