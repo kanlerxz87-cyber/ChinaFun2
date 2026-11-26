@@ -148,3 +148,11 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+## Session `6229d61a` — independent current-state audit (2026-11-26)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Current-state verification, identify actionable inaccuracies, and integration/publication | in progress | 6229d61a | `COORDINATION.md`, `research/session-6229d61a-audit.md` (other files only if unowned or explicitly requested here) |
+
+The prior board records completed and needs-review tasks; this audit does not take over their files. Any requested changes to owned files will be recorded here before proceeding.
