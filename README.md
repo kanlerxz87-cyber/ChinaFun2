@@ -6,14 +6,14 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 
 ## Start here
 
-- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional research-first base; Beijing, Guangzhou and Chengdu remain real alternatives, not a fabricated value ranking.
-- [Hotels](hotels.html): 16 candidates, exact Queen+/King and private ensuite fit where supported; room confirmation, official seven-night total and route rank stay blank when unverified.
-- [Michelin](michelin.html): 24 actual venues, distinctions/editions, hours and current published menu arithmetic where available. No secondary cash estimates.
-- [Activities](activities.html): 22 records, published schedules, closure traps, product-specific couple tickets, and explicitly unqualified excursions.
+- [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional research-first base; Beijing, Guangzhou and Chengdu remain real alternatives, with interactive city filter pills across hotel, dining and activity views.
+- [Hotels](hotels.html): 16 candidates; 13/16 Queen+/King beds and 11/16 private/marble bathrooms verified from static official brand room pages (`Shanghai Marriott Marquis City Centre` rebrand and updated `shanghai.sukhothai.com` / `okura.com` portals included). Official seven-night total and route rank stay blank until live checkout quotes and transit matrices are recorded.
+- [Michelin](michelin.html): 26 actual venues across four cities (including Bib Gourmand benchmarks in Beijing, Guangzhou and Chengdu), distinctions/editions, hours, **6 official published two-adult set-menu totals**, and direct YouTube/Instagram/TikTok review links distinguished from search fallbacks.
+- [Activities](activities.html): 23 records (including Shanghai Museum East alongside the People’s Square Jul 2026–Nov 2027 renovation alert), published schedules, Monday & Tuesday closure traps (including Chen Clan Ancestral Hall’s Tuesday closure), official two-adult ticket totals across all major museums/towers/gardens, and explicitly unqualified intercity excursions.
 - [Dates & costs](costs-booking.html): preferred-start and later seven-night windows through Mar 23; actual 90/60/30/14-day calendar checkpoints.
-- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), and [entry/health audit](entry-audit.html).
+- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html), [sources](sources.html), [entry/health audit](entry-audit.html), and [Nov 26 primary-source audit](research/session-5e433db0-audit.md).
 
-Today is **Nov 25, 2026**, 82–85 days before the preferred starts. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
+Today is **Nov 26, 2026**, **81–84 days** before the preferred Feb 15–18 starts — already inside Taian Table’s 90-day reservation window. Monitoring refundable rates now is actionable; a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined, never used as official quotes or savings proof.
 
 ## Research discipline
 
@@ -30,6 +30,7 @@ Canonical records: `data/{brief,hotels,michelin,activities,costs,flags}.json`.
 ```sh
 python3 scripts/build_pages.py       # Regenerate 10 detail pages and data.js
 python3 scripts/verify_project.py    # Links, anchors, sources, flags, dates, data parity
+python3 scripts/audit_5e433db0.py    # Nov 26 primary-source content invariants
 node --check app.js
 node --check assets/js/app.js
 python3 -m http.server 8000 --bind 0.0.0.0

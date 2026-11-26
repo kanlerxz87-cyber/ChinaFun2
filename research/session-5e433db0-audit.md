@@ -2,7 +2,7 @@
 
 **Audit date:** November 26, 2026 (UTC) — 81 days before Mon Feb 15, 2027 and 84 days before Thu Feb 18, 2027  
 **Branch:** `arena/5e433db0-chinafun2`  
-**Scope:** Line-by-line primary-source verification across 2027 State Council holidays, all 16 hotel candidates, 26 Michelin Guide listings (including Guangzhou & Chengdu Bib Gourmand additions), 22 cultural/sightseeing activities across Shanghai, Beijing, Guangzhou, Chengdu + Suzhou/Hangzhou excursions, and direct YouTube / Instagram / TikTok review links.
+**Scope:** Line-by-line primary-source verification across 2027 State Council holidays, all 16 hotel candidates, 26 Michelin Guide listings (including Guangzhou & Chengdu Bib Gourmand additions), 23 cultural/sightseeing activities across Shanghai, Beijing, Guangzhou, Chengdu + Suzhou/Hangzhou excursions, and direct YouTube / Instagram / TikTok review links.
 
 ---
 
@@ -66,7 +66,7 @@ All 24 prior `data/michelin.json` venues were re-fetched on `guide.michelin.com`
 
 ---
 
-## 4. Sightseeing & Cultural Activities Verification (22 Entries)
+## 4. Sightseeing & Cultural Activities Verification (23 Entries)
 
 Eight previously blank two-adult admission cells were resolved from official museum and municipal government portals, and two critical scheduling traps were surfaced:
 

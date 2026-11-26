@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -21,7 +21,7 @@
     {
       "id": "H02",
       "scope": "All hotels",
-      "issue": "Exact Queen+/King room and explicit ensuite/private-bathroom fit not consistently confirmed. Existing official room descriptions retained; secondary specifications removed.",
+      "issue": "13 of 16 hotels show Queen/King beds and 11 of 16 show explicit marble/in-room bathroom fixtures on static official room pages, but WAF/JS-gated room pages (Renaissance Yu Garden, Hilton Shanghai City Center, Hilton Beijing Wangfujing) and exact rate-card categories still require checkout confirmation.",
       "next": "Confirm the bookable room category directly with the property.",
       "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
       "status": "needs review · non-blocking publication"
@@ -36,8 +36,8 @@
     },
     {
       "id": "R01",
-      "scope": "All restaurants except published Taian menu",
-      "issue": "No reliable official cash total for two, including service/tax/drinks. ¥ tiers are not amounts.",
+      "scope": "Restaurants without an official published set-menu price (20 of 26)",
+      "issue": "Six venues publish official set-menu totals for two adults (Taian Table, T'ang Court, Bao Li Xuan, Da Vittorio, TRB Hutong, Mi Xun Teahouse); all remaining listings show relative MICHELIN ¥–¥¥¥¥ bands only, and published menus can change before Feb 2027.",
       "next": "Obtain dated venue menu; Taian arithmetic excludes add-ons and is not a 2027 guarantee.",
       "source": "https://bookings.taian-table.com/faq",
       "status": "needs review · non-blocking publication"
@@ -103,13 +103,13 @@
       "scope": "OTA observations / Sukhothai anomaly",
       "issue": "Aggregator figures are quarantined from official columns. Prior $35,148 Sukhothai observation is an unexplained outlier, not a validated seven-night price.",
       "next": "Exclude until room/date/currency/tax data are reproducible; never use 2026 proxies as 2027 prices.",
-      "source": "https://www.sukhothai.com/shanghai/en",
+      "source": "https://shanghai.sukhothai.com/en/",
       "status": "needs review · non-blocking publication"
     },
     {
       "id": "S01",
       "scope": "Social / video links",
-      "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
+      "issue": "Direct indexed YouTube reviews, verified venue/museum Instagram profiles, and TikTok videos/topic pages are labelled distinctly from search fallbacks, but creator reviews are third-party opinions and never override official venue hours or fares.",
       "next": "Verify creator, venue and upload date before relying on a post.",
       "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
       "status": "needs review · non-blocking publication"
@@ -124,8 +124,8 @@
     },
     {
       "id": "L01",
-      "scope": "External source access / Hilton Beijing Wangfujing",
-      "issue": "Hilton property-page fetch failed during integration. Structural tests check local links and official domains, not complete external reachability or source content.",
+      "scope": "External WAF/JS-gated hotel room pages (Hilton & Renaissance Yu Garden)",
+      "issue": "Static non-browser fetches to Hilton Shanghai City Center, Hilton Beijing Wangfujing, and Renaissance Shanghai Yu Garden /rooms/ returned WAF/500 responses. Their bed/bath cells remain intentionally blank rather than inferred.",
       "next": "Reopen the linked official property page and confirm the exact room; do not treat an inaccessible page as fresh verification. Recheck other external source links before booking.",
       "source": "https://www.hilton.com/en/hotels/bjswfhi-hilton-beijing-wangfujing/",
       "status": "needs review · non-blocking publication"

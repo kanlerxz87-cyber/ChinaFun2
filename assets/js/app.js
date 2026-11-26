@@ -22,6 +22,22 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       var counter = document.getElementById(tableId + '-count');
       if (counter) counter.textContent = shown + ' of ' + rows.length + ' rows shown';
+      document.querySelectorAll('[data-quick-filter="' + tableId + '"]').forEach(function (btn) {
+        var match = btn.getAttribute('data-value').toLowerCase() === q;
+        btn.classList.toggle('active', match);
+        btn.setAttribute('aria-pressed', match ? 'true' : 'false');
+      });
+    });
+  });
+
+  // Quick city filter pills
+  document.querySelectorAll('[data-quick-filter]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var tableId = btn.getAttribute('data-quick-filter');
+      var input = document.getElementById(tableId + '-search');
+      if (!input) return;
+      input.value = btn.getAttribute('data-value') || '';
+      input.dispatchEvent(new Event('input'));
     });
   });
 

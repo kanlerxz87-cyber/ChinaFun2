@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -14,7 +14,7 @@
       "title": "Preferred-start 7-night stay",
       "dates": "Mon Feb 15 → Mon Feb 22, 2027",
       "nights": "7 nights",
-      "fit": "Meets the 1–2 week request and uses preferred start date",
+      "fit": "Meets 1–2 week request; starts Mon Feb 15 right after Feb 5–13 statutory holiday (Monday museum closures apply Feb 15 & 22; Sat Feb 20 is Lantern Festival)",
       "price": "",
       "priceNote": "Official 2-adult, 7-night total not verified",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
@@ -24,7 +24,7 @@
       "title": "Preferred-start 14-night stay",
       "dates": "Mon Feb 15 → Mon Mar 1, 2027",
       "nights": "14 nights",
-      "fit": "Meets 2-week upper limit; compare transport/second city costs separately",
+      "fit": "Meets 2-week upper limit; allows pairing two cities via high-speed rail once intercity fares and hotel totals are priced separately",
       "price": "",
       "priceNote": "Official 2-adult, 14-night total not verified",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
@@ -46,9 +46,9 @@
     },
     {
       "q": "Does each candidate room have a private bathroom?",
-      "answer": "The reviewed official room pages show bathroom/bath details but do not explicitly certify a private bathroom for these specific room categories.",
-      "next": "Ask the hotel to confirm the exact bookable room is ensuite/private, then retain the written confirmation.",
-      "state": "Open · blocker"
+      "answer": "11 of 16 candidate hotels now have explicit in-room/marble bathroom proof on static official room pages (Peninsula, EDITION, Grand Hyatt, Hyatt on the Bund, Marriott Marquis, Okura Garden, Jing An Shangri-La, Sukhothai, Rosewood, Regent, Ritz-Carlton), and 13 of 16 confirm Queen/King beds. Three WAF/JS-gated room pages (Renaissance Yu Garden, Hilton Shanghai City Center, Hilton Beijing Wangfujing) plus Sofitel/St. Regis fixture details still require checkout-step confirmation.",
+      "next": "Confirm exact bookable King/Queen room and private en-suite wording at checkout before paying any deposit.",
+      "state": "Partly answered"
     },
     {
       "q": "Which hotel has the best verified 7-night total for two?",
@@ -70,15 +70,15 @@
     },
     {
       "q": "Which venues are open on the exact visit days in 2027?",
-      "answer": "Published regular hours are shown where available; 2027 holiday/event exceptions are not confirmed.",
+      "answer": "Official regular schedules and weekly closures are verified across all 23 activity entries (including Shanghai Museum People's Square renovation alert through Nov 2027, Monday museum/garden closures on Feb 15 & 22, and Tuesday closures at Shanghai Museum East and Chen Clan Ancestral Hall). Exact Feb 2027 event exceptions still require pre-trip reconfirmation.",
       "next": "Re-check each official venue calendar and bookable dates before finalizing each day.",
       "state": "Open"
     },
     {
       "q": "What dining budget is acceptable for two?",
-      "answer": "Not provided. MICHELIN bands are relative; Taian Table has current menu arithmetic, while other official couple totals remain blank.",
-      "next": "Set a per-meal ceiling, then compare published set-menu prices and supplements on restaurant booking pages.",
-      "state": "Open"
+      "answer": "Six Michelin venues publish official set-menu arithmetic for two adults before optional beverages: Mi Xun Teahouse ¥620, T'ang Court ¥888 lunch / ¥2,288 all-day, TRB Hutong ¥1,812.40 lunch / ¥3,882.40–¥5,262.40 dinner, Bao Li Xuan ¥3,576, Taian Table ¥5,176 / ¥5,776, and Da Vittorio ¥5,253.60 / ¥9,653.60. Other venues publish relative ¥–¥¥¥¥ Guide bands only.",
+      "next": "Set a per-meal ceiling for two, then mix 1–2 splurge tasting menus with Bib Gourmand (¥–¥¥) benchmarks.",
+      "state": "Partly answered"
     },
     {
       "q": "How should visa, flights, mobility and dietary constraints affect the plan?",

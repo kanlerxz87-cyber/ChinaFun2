@@ -2,7 +2,7 @@ name: Validate planning desk
 
 on:
   push:
-    branches: [main, arena/55de3f9a-chinafun2]
+    branches: [main, arena/55de3f9a-chinafun2, arena/5e433db0-chinafun2]
   pull_request:
     branches: [main]
 
@@ -26,6 +26,8 @@ jobs:
           git diff --exit-code -- '*.html' data.js
       - name: Check sources, links, flags, dates and JavaScript syntax
         run: python3 scripts/verify_project.py
+      - name: Check 2026-11-26 primary-source audit invariants
+        run: python3 scripts/audit_5e433db0.py
       - name: Retained independent planner integrity
         run: python3 shanghai-planner/scripts/validate_research.py
       - name: Install DOM-test tooling (not shipped to Pages)

@@ -25,7 +25,7 @@ class Document(HTMLParser):
  def handle_endtag(self,t):
   if t=='tr' and self.row is not None:self.rows.append(self.row);self.row=None
   if t=='tbody':self.body=False
-OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
+OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','okura.com','gardenhotelshanghai.com','sukhothai.com','shanghai.sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','intl.dpm.org.cn','en.mutianyugreatwall.com','gz.gov.cn','gzchenjiaci.com','cantontower.com','mallpc.cantontower.com','panda.org.cn','wuhouci.net.cn','en.wuhouci.net.cn','suzhou.gov.cn','english.suzhou.gov.cn','hangzhou.gov.cn','wgly.hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','sh.taian-table.cn','kingsjoy.com','trbhutong.com','langhamhotels.com','bulgarihotels.com','ottoemezzobombana.com','davittorio.com','vivantshanghai.com','fabula.restaurant','mandarinoriental.com','upperhouse.com'}
 def official(u):
  h=(urlsplit(u).hostname or '').removeprefix('www.');return h in OFFICIAL and u.startswith('https://')
 files=list(P.glob('*.html'));docs={x:Document(x.read_text()) for x in files}
@@ -38,7 +38,7 @@ for f,d in docs.items():
   check(target.is_relative_to(P) and target.exists(),f'{f.name}: missing local resource {ref}')
   if u.fragment and target in docs:check(unquote(u.fragment) in docs[target].ids,f'{f.name}: missing anchor {ref}')
  for row in d.rows:check(any(official(u) for u in row),f'{f.name}: table row has no official source: {row[:2]}')
- for stale in ['Feb 2026 (now)','~28','not yet released','Verify ↗','eastchinatrip.com','its.holiday','chinafortravelers.com']:
+ for stale in ['Feb 2026 (now)','~28','not yet released','Verify ↗','eastchinatrip.com','its.holiday','chinafortravelers.com','rachelgouk.com']:
   check(stale not in text,f'{f.name}: stale unsupported assertion {stale}')
 # Verify canonical data, all source links, blank official metrics, review references.
 def load(n):return json.loads((P/'data'/f'{n}.json').read_text())
@@ -48,6 +48,8 @@ for name,key in [('hotels','hotels'),('michelin','restaurants'),('activities','a
  rows=load(name)[key];ids=[x['id'] for x in rows];check(len(ids)==len(set(ids)),name+': duplicate records')
  for x in rows:
   check(official(x['official_url']),name+': non-official source '+x['id'])
+  for ufield in ['venue','roomSource','propertySource','bookSource','source','officialLink','guide']:
+   if x.get(ufield):check(official(x[ufield]),f"{name}: non-official {ufield} on {x['id']}: {x[ufield]}")
   check(bool(x['flags']),name+': missing flags '+x['id'])
   for flag in x['flags']:check(flag in flagids,'unknown flag '+flag)
   check(len(x.get('socials',{}))>=3 or name=='hotels',name+': missing discovery platforms '+x['id'])
