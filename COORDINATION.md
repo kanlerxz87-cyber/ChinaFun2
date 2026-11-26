@@ -148,3 +148,11 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+## Session `708d6b98` — current verification pass (2026-11-26)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Audit current site against strict source policy; correct concrete defects and verify publication | in progress | `708d6b98` | `COORDINATION.md`, `data.js`, root generated HTML, `scripts/`, `.github/workflows/` if required |
+
+Claim: previous integration tasks above are historical; this session will preserve independent planner and research files, and will record any unresolved issues. The session branch is fixed by the workspace as `arena/708d6b98-chinafun2`.
