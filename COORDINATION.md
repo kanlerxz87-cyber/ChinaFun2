@@ -148,3 +148,20 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - PR #9 merged as `eab882010c7b8a0cf4fe95ad194cc5f266820f95`; main validation and configured Pages run **45628202721 passed**. The cached-release hardening and cleaned costs page are published.
 - The duplicate custom publisher again failed initial artifact lookup; a retry then found duplicate artifacts. This is isolated from the successful configured branch publisher. To avoid repeating two deployments per push, the inherited custom workflow is now a **manual main-only fallback**. Its build/deploy jobs are separated, with a unique immutable artifact name passed between them, so deploy-only retries do not upload duplicate artifacts. Current official upload/deploy action v5 releases are used.
 - Automatic publication remains GitHub Pages **Deploy from a branch: main /**, confirmed by API and successful production builds. The validation workflow still runs automatically on pushes/PRs. No other session's planner or research is removed.
+
+---
+
+## Session `99044301` — Line-by-line repo audit, verified social media reviews & data reconciliation (2026-11-26)
+
+**Branch:** `arena/99044301-chinafun2` (base `04b6d65` of `main`)
+**Prior claims check:** All prior session claims are from `2026-11-25` (>24 hours old, merged to `main` via PRs #1–#10). No active overlapping session.
+
+| ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
+|----|------|--------|-----------------|----------------|-----------------|
+| T09 | Line-by-line audit of existing repo data, URLs, and `shanghai-planner/` reconciliation | **in progress** | `99044301` | `COORDINATION.md`, `RESEARCH_REVIEW.md`, `data/*.json` | Audit every official URL/fact; remove non-official `rachelgouk.com` venue link; fix typos; reconcile verified official data from `shanghai-planner/` after independent verification; add 2–4 week duration coverage; update review date to `2026-11-26`. |
+| T10 | Verified social media review discovery (YouTube, TikTok, Instagram) for every restaurant & activity | **in progress** | `99044301` | `data/michelin.json`, `data/activities.json` | Find real, direct review videos/reels/posts via web search for every restaurant and activity; separate verified review links from official venue sources; flag any platform without a verified direct review. |
+| T11 | Site UX upgrade, strict verification pass, build, PR, merge & live Pages confirmation | **in progress** | `99044301` | `scripts/build_pages.py`, `scripts/verify_project.py`, `scripts/test_ui.cjs`, `index.html`, `app.js`, `assets/js/app.js`, `assets/css/style.css`, `styles.css`, `*.html`, `data.js`, `README.md`, `.github/workflows/validate.yml` | Dedicated Open Days/Hours, Exceptions, Venue Link, and Social Review columns; city/status filters; clean workflow branch trigger; full validation + JSDOM + HTTP tests; PR to `main`, merge, verify live GitHub Pages deploy. |
+
+### Claim log (2026-11-26)
+- `2026-11-26` · `99044301` · Read `COORDINATION.md`; claimed T09–T11 on branch `arena/99044301-chinafun2`. Preserving `shanghai-planner/` and `research/` archives intact.
+
