@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -84,10 +84,10 @@
     },
     {
       "id": "A03",
-      "scope": "Shanghai Tower / Yu Garden / renovation notices",
-      "issue": "Older conflicting hours and garden prices superseded by current official visitor rules; renovation/event closures remain unverified, not assumed absent.",
-      "next": "Recheck official dated operating notices; do not mix garden, bazaar, festival and night tickets.",
-      "source": "https://www.shanghaitower.com/",
+      "scope": "Shanghai Tower visitor hours and ticket price",
+      "issue": "The official English Shanghai Tower observatory page identifies the visitor route but gives no current visitor operating hours or ticket price. Older hours/amounts in the prior ledger are not current evidence; 2027 notices remain unresolved.",
+      "next": "Keep Shanghai Tower visitor hours and prices blank; check a date-specific official ticket/calendar notice before planning.",
+      "source": "https://en.shanghaitower.com/shagnhai.html",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -95,7 +95,7 @@
       "scope": "Booking lead-time analysis",
       "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim.",
       "next": "Use the dated checkpoints as a monitoring plan, not a price prediction.",
-      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "source": "",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -108,10 +108,10 @@
     },
     {
       "id": "S01",
-      "scope": "Social / video links",
-      "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
-      "next": "Verify creator, venue and upload date before relying on a post.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "scope": "Social/video links across activities and restaurants",
+      "issue": "A small set of direct YouTube page metadata (title, creator/channel, date and venue match) was checked; the videos were not watched. These unofficial past-visit links and the remaining platform search shortcuts are discovery only, not evidence for current reviews, hours, prices, Michelin status or 2027 operations.",
+      "next": "Do not rely on a video for current facts or treat it as an endorsement. Inspect the exact video/creator if desired; verify schedules, tickets and restaurant status against the current official venue source.",
+      "source": "",
       "status": "needs review · non-blocking publication"
     },
     {

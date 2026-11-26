@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -14,12 +14,12 @@
       "id": "shanghai-museum",
       "name": "Shanghai Museum — People’s Square",
       "city": "Shanghai",
-      "schedule": "09:00–17:00; last entry 15:00 under current exhibition notice. Closed Monday except national holidays.",
-      "cost": "General admission ¥0; special exhibitions may charge.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "officialLink": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "exception": "Advance reservation required under exhibition notice through Nov 14, 2027; recheck specific exhibition fees. Closed Mon Feb 15 and 22 under normal rules.",
+      "schedule": "Day session: Tue–Sun 09:00–17:00, last entry 15:00. Day-and-evening session: 09:00–21:00, last entry 19:00; follow the museum’s official updates for evening sessions and adjustments. Closed Monday except national holidays.",
+      "cost": "",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
+      "officialLink": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
+      "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
+      "exception": "The current People’s Square page says it hosts no other exhibitions during “On Top of the World Tree: Ancient Civilizations of the Americas” (9 Jul 2026–14 Nov 2027); permanent displays and other special exhibitions are directed to the East museum. The 2025 walk-in notice says individual reservations are generally not required, but peak periods and major special exhibitions may require them. Check the exact 2027 session, exhibition access and any fee. Feb 15 and 22, 2027 are Mondays under the ordinary closure rule.",
       "transit": "",
       "flags": [
         "A01",
@@ -31,19 +31,26 @@
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Shanghai%20Museum%20%E2%80%94%20People%E2%80%99s%20Square%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Shanghai%20Museum%20%E2%80%94%20People%E2%80%99s%20Square%20Shanghai",
         "Museum YouTube profile": "https://www.youtube.com/@theshanghaimuseum",
-        "Museum Instagram profile": "https://www.instagram.com/theshanghaimuseum"
-      }
+        "Museum Instagram profile": "https://www.instagram.com/theshanghaimuseum",
+        "YouTube past visit · Tim Chambers (2023; not watched)": "https://www.youtube.com/watch?v=nufswGvpxHM"
+      },
+      "secondarySources": [
+        {
+          "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797",
+          "label": "2025 individual walk-in / reservation notice"
+        }
+      ]
     },
     {
       "id": "yu-garden",
       "name": "Yu Garden — daytime garden (not bazaar)",
       "city": "Shanghai",
       "schedule": "09:00–16:30; last entry 16:00. Closed Monday except national holidays.",
-      "cost": "¥60 = 2 × ¥30 (Dec–Mar standard adult daytime admission)",
+      "cost": "¥60 = 2 × ¥30 off-season adult garden admission (Dec–Mar; current official rate, not a 2027 quote).",
       "source": "https://www.yugarden.com.cn/page/articleview/message.html",
       "officialLink": "https://www.yugarden.com.cn/page/articleview/message.html",
       "official_url": "https://www.yugarden.com.cn/page/articleview/message.html",
-      "exception": "Monday closure includes Feb 15 and 22 under regular rules. Night tour and Lantern Festival tickets are separate; no 2027 event price confirmed.",
+      "exception": "The official visitor page lists regular daytime hours and the Dec–Mar adult rate; neither is a guaranteed Feb/Mar 2027 product. Night-tour and Lantern Festival tickets are separate, and no 2027 event program or price is confirmed. Feb 15 and 22, 2027 are Mondays under the ordinary closure rule.",
       "transit": "",
       "flags": [
         "A01",
@@ -53,19 +60,20 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai"
+        "TikTok search": "https://www.tiktok.com/search?q=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai",
+        "YouTube past visit · LADmob (2025; not watched)": "https://www.youtube.com/watch?v=k3GLwFmBB7Y"
       }
     },
     {
       "id": "yuyuan-night",
       "name": "Yu Garden — winter/spring night tour",
       "city": "Shanghai",
-      "schedule": "Published seasonal notice: Fri–Sun 18:00–21:20; last entry 20:30.",
+      "schedule": "2025 seasonal program: Fri–Sun 18:00–21:20; last entry 20:30.",
       "cost": "",
       "source": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
       "officialLink": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
       "official_url": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250729/25cfb8bce97d4e798f99ac62986255ff.html",
-      "exception": "Seasonal notice, not a confirmed Feb 2027 program. Mon–Thu closed except public holidays.",
+      "exception": "This is the 2025 municipal notice, not a confirmed Feb/Mar 2027 program. The notice gives Mon–Thu closure except public holidays; 2027 dates, tickets and program remain unverified.",
       "transit": "",
       "flags": [
         "A01",
@@ -83,11 +91,11 @@
       "name": "The Bund promenade",
       "city": "Shanghai",
       "schedule": "Public outdoor area; access may be restricted for events.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://english.shanghai.gov.cn/en-CityTour/20240528/8e2cdfe54e7c46f9844b1ce9ec615fed.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20240528/8e2cdfe54e7c46f9844b1ce9ec615fed.html",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20240528/8e2cdfe54e7c46f9844b1ce9ec615fed.html",
+      "exception": "The 2024 municipal city-walk page includes the Bund route; it does not establish a 2027 event or access schedule. Public promenade access may be restricted for events; businesses and attractions have separate hours.",
       "transit": "",
       "flags": [
         "A01",
@@ -105,11 +113,11 @@
       "name": "Nanjing Road pedestrian street",
       "city": "Shanghai",
       "schedule": "Public outdoor area; access may be restricted for events.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://english.shanghai.gov.cn/en-CityTour/20240528/a0144c45cb65402480a122828833fa23.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20240528/a0144c45cb65402480a122828833fa23.html",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20240528/a0144c45cb65402480a122828833fa23.html",
+      "exception": "The 2024 municipal city-walk page specifically describes Nanjing Road Pedestrian Street; it is not a date-specific 2027 access notice. Individual shops, attractions and event restrictions have separate rules.",
       "transit": "",
       "flags": [
         "A01",
@@ -124,14 +132,14 @@
     },
     {
       "id": "french-concession",
-      "name": "Wukang / Anfu Road neighborhood walk",
+      "name": "Wukang Road architecture walk",
       "city": "Shanghai",
       "schedule": "Public outdoor area; access may be restricted for events.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://english.shanghai.gov.cn/en-CityTour/20240124/f7e7a55118fc43b4aa5d191bb18253a3.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20240124/f7e7a55118fc43b4aa5d191bb18253a3.html",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20240124/f7e7a55118fc43b4aa5d191bb18253a3.html",
+      "exception": "The 2024 municipal route lists Wukang Building, the tourism information centre, Midget Apartments, Romeo Balcony and No. 2 Wukang Road. It does not set venue-wide hours or guarantee 2027 event access.",
       "transit": "",
       "flags": [
         "A01",
@@ -148,12 +156,12 @@
       "id": "xintiandi",
       "name": "Xintiandi",
       "city": "Shanghai",
-      "schedule": "Outdoor precinct; individual shops have separate hours.",
+      "schedule": "Outdoor heritage/leisure block; no venue-wide operating hours are listed on the cited government page.",
       "cost": "",
-      "source": "https://www.xintiandi.com/",
-      "officialLink": "https://www.xintiandi.com/",
-      "official_url": "https://www.xintiandi.com/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "source": "https://english.shanghai.gov.cn/en-HeritageZones/20240104/292e9fb43eec407783af83e547e61281.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-HeritageZones/20240104/292e9fb43eec407783af83e547e61281.html",
+      "official_url": "https://english.shanghai.gov.cn/en-HeritageZones/20240104/292e9fb43eec407783af83e547e61281.html",
+      "exception": "The municipal page describes the restored Shikumen block as a heritage/leisure district with dining and fashion, not a single ticketed venue. Individual businesses and events have separate hours and prices; no 2027 program is confirmed.",
       "transit": "",
       "flags": [
         "A01",
@@ -170,12 +178,12 @@
       "id": "shanghai-tower",
       "name": "Shanghai Tower — 118F",
       "city": "Shanghai",
-      "schedule": "08:30–22:00 (current published schedule)",
-      "cost": "¥360 = 2 × ¥180; standard observation product",
-      "source": "https://www.shanghaitower.com/",
-      "officialLink": "https://www.shanghaitower.com/",
-      "official_url": "https://www.shanghaitower.com/",
-      "exception": "Ticket product, last entry and 2027 schedule require reconfirmation; conflicting older hours retained as A03.",
+      "schedule": "",
+      "cost": "",
+      "source": "https://en.shanghaitower.com/shagnhai.html",
+      "officialLink": "https://en.shanghaitower.com/shagnhai.html",
+      "official_url": "https://en.shanghaitower.com/shagnhai.html",
+      "exception": "The official English observatory page describes the route (B1 exhibition hall, 118F observatory, and 125F/126F SKY632) and inquiry hotline hours only. Hotline hours are not visitor operating hours. No current visitor schedule, last entry or ticket price was established; older 2017/2022 posts are historical, not a 2027 schedule. Recheck the date-specific ticket and closure notice.",
       "transit": "",
       "flags": [
         "A01",
@@ -192,12 +200,12 @@
       "id": "oriental-pearl",
       "name": "Oriental Pearl Tower",
       "city": "Shanghai",
-      "schedule": "09:00–21:00 (current schedule)",
+      "schedule": "",
       "cost": "",
-      "source": "https://www.orientalpearltower.com/",
-      "officialLink": "https://www.orientalpearltower.com/",
-      "official_url": "https://www.orientalpearltower.com/",
-      "exception": "Multiple ticket bundles: no single two-person product confirmed for the travel dates.",
+      "source": "https://www.orientalpearltower.com/shop.php",
+      "officialLink": "https://www.orientalpearltower.com/shop.php",
+      "official_url": "https://www.orientalpearltower.com/shop.php",
+      "exception": "The current operator page reviewed here did not establish visitor hours, last entry or one consistent two-adult ticket product. A Jan 2022 operator post listed 09:00–21:00, but that is historical and is not used as a current schedule or 2027 promise. Choose a ticket product and recheck the operating calendar.",
       "transit": "",
       "flags": [
         "A01",
@@ -207,19 +215,20 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Oriental%20Pearl%20Tower%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Oriental%20Pearl%20Tower%20Shanghai",
-        "TikTok search": "https://www.tiktok.com/search?q=Oriental%20Pearl%20Tower%20Shanghai"
+        "TikTok search": "https://www.tiktok.com/search?q=Oriental%20Pearl%20Tower%20Shanghai",
+        "YouTube past visit · Kangaroo Island TV (2026; not watched)": "https://www.youtube.com/watch?v=2kN3DSlRr94"
       }
     },
     {
       "id": "power-station-art",
       "name": "Power Station of Art",
       "city": "Shanghai",
-      "schedule": "Tue–Sun 11:00–19:00; closed Monday.",
-      "cost": "General entry ¥0; paid exhibitions separate",
-      "source": "https://www.powerstationofart.com/",
-      "officialLink": "https://www.powerstationofart.com/",
-      "official_url": "https://www.powerstationofart.com/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Tue–Sun 11:00–19:00; last entry 18:00. Closed Monday; open on statutory holidays.",
+      "cost": "",
+      "source": "https://www.powerstationofart.com/visit-and-tickets",
+      "officialLink": "https://www.powerstationofart.com/visit-and-tickets",
+      "official_url": "https://www.powerstationofart.com/visit-and-tickets",
+      "exception": "The official visitor page lists these regular hours; special exhibitions may be ticketed. Current schedule, not a guarantee for the Feb/Mar 2027 visit dates.",
       "transit": "",
       "flags": [
         "A01",
@@ -238,10 +247,10 @@
       "city": "Shanghai",
       "schedule": "",
       "cost": "",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Operator, route, timetable and fare not confirmed. Discovery candidate only; not an approved one-hour activity.",
+      "source": "https://english.shanghai.gov.cn/en-CityTour/20240124/f7e7a55118fc43b4aa5d191bb18253a3.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20240124/f7e7a55118fc43b4aa5d191bb18253a3.html",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20240124/f7e7a55118fc43b4aa5d191bb18253a3.html",
+      "exception": "A 2024 municipal half-day route mentions a specific “Birthplace of the Party” cruise and Shiliupu Wharf; it does not verify the operator, timetable or fare for a general Huangpu sightseeing cruise. Discovery candidate only; hours, price and door-to-door transit remain blank.",
       "transit": "",
       "flags": [
         "A01",
@@ -302,12 +311,12 @@
       "id": "forbidden-city",
       "name": "Forbidden City",
       "city": "Beijing",
-      "schedule": "Nov–Mar 08:30–16:30; closed Monday (holiday exceptions).",
-      "cost": "¥80 = 2 × ¥40 off-season general entry",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Book via official Palace Museum channel; regular 7-day release. Extra exhibitions separate. Monday Feb 15 is unsuitable under normal rules.",
+      "schedule": "Nov 1–Mar 31 (regular off-season): 08:30–16:30; last entry 15:30. Closed Monday except statutory holidays.",
+      "cost": "¥80 = 2 × ¥40 off-season general admission (current published tariff, not a 2027 quote); Treasure Gallery and Clock Gallery are separate ¥10/person each.",
+      "source": "https://www.dpm.org.cn/Visit.html#block3",
+      "officialLink": "https://www.dpm.org.cn/Visit.html#block3",
+      "official_url": "https://www.dpm.org.cn/Visit.html#block3",
+      "exception": "The official ticket portal says all visitors need real-name advance booking, accepts passports for non-mainland visitors, opens sales 7 days before at 20:00 Beijing time, and sells no same-day tickets. Optional galleries and exhibitions have separate tickets/reservations. Feb 15, 2027 is Monday; under the ordinary rule the museum is closed unless a statutory-holiday or special notice applies. Recheck all prices and hours for 2027.",
       "transit": "",
       "flags": [
         "A01",
@@ -317,19 +326,26 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Forbidden%20City%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Forbidden%20City%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Forbidden%20City%20Beijing"
-      }
+        "TikTok search": "https://www.tiktok.com/search?q=Forbidden%20City%20Beijing",
+        "YouTube past visit · Our Travel Journal (2025; not watched)": "https://www.youtube.com/watch?v=OH5gVfYuM3k"
+      },
+      "secondarySources": [
+        {
+          "url": "https://ticket.dpm.org.cn/",
+          "label": "Official ticket portal · price and advance-booking rules"
+        }
+      ]
     },
     {
       "id": "temple-heaven",
       "name": "Temple of Heaven",
       "city": "Beijing",
-      "schedule": "Park and inner monuments have different schedules; inner monuments closed Monday.",
-      "cost": "¥56 = 2 × ¥28 off-season combination ticket",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Park: 06:00–22:00 (last entry 21:00). Separately charged monuments: Tue–Sun 08:00–18:00 (last entry 17:30); closed Monday except statutory holidays (Beijing government page dated 2024).",
+      "cost": "",
+      "source": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753312.html",
+      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753312.html",
+      "official_url": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753312.html",
+      "exception": "The cited 2024 municipal page lists a high-season combo at CNY 34 and a passport admission ticket at CNY 20; it does not establish an applicable Feb/Mar 2027 adult combo total. Current off-season ticket product and visitor-specific booking rules need rechecking. Do not use the earlier ¥28 couple estimate as a 2027 quote.",
       "transit": "",
       "flags": [
         "A01",
@@ -339,19 +355,20 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Temple%20of%20Heaven%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Temple%20of%20Heaven%20Beijing",
-        "TikTok search": "https://www.tiktok.com/search?q=Temple%20of%20Heaven%20Beijing"
+        "TikTok search": "https://www.tiktok.com/search?q=Temple%20of%20Heaven%20Beijing",
+        "YouTube past visit · DRelicious Story 4K (2025 visit; not watched)": "https://www.youtube.com/watch?v=Vf2iuqpw0Z0"
       }
     },
     {
       "id": "summer-palace",
       "name": "Summer Palace",
       "city": "Beijing",
-      "schedule": "Winter schedule; exact gate/inner-site hours need reconfirmation.",
-      "cost": "¥40 general entry for two; combination ticket ¥100 for two",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Off-season (Nov 1–Mar 31): park gates 06:30–18:00, park closes 19:00. Separately charged attractions: Tue–Sun 08:30–16:30, close 17:00; closed Monday except important festivals/holidays (Beijing government page dated 2024).",
+      "cost": "¥40 = 2 × ¥20 full-price off-season general-admission tickets (official 2024 listing; separately charged attractions extra; not a 2027 quote).",
+      "source": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753037.html",
+      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753037.html",
+      "official_url": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753037.html",
+      "exception": "The 2024 Beijing government page says passports may be used for timed booking 1–7 days ahead. Separately charged attractions have distinct hours, tickets and Monday closure. Recheck date-specific 2027 schedules and prices.",
       "transit": "",
       "flags": [
         "A01",
@@ -368,12 +385,12 @@
       "id": "mutianyu",
       "name": "Mutianyu Great Wall",
       "city": "Beijing",
-      "schedule": "",
-      "cost": "",
-      "source": "https://english.beijing.gov.cn/",
-      "officialLink": "https://english.beijing.gov.cn/",
-      "official_url": "https://english.beijing.gov.cn/",
-      "exception": "Outlying destination; no <=60 minute public-transit route established. Treat as a separate day-trip, not a qualified near-hotel activity.",
+      "schedule": "Off-peak (Nov 16–Mar 15): 08:00–17:30; peak (Mar 16–Nov 15): 07:30–18:00 (Beijing government page dated 2024).",
+      "cost": "Reference only: ¥90 = 2 × ¥45 adult tickets (Beijing government page dated 2024; other ticket/transport products are not included in this arithmetic; not a live 2027 quote).",
+      "source": "https://english.beijing.gov.cn/specials/ticketing/attractions/202407/t20240717_3751593.html",
+      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/attractions/202407/t20240717_3751593.html",
+      "official_url": "https://english.beijing.gov.cn/specials/ticketing/attractions/202407/t20240717_3751593.html",
+      "exception": "The cited 2024 Beijing government page says advance reservation is not required. No complete ≤60-minute public-transit route from a candidate hotel base is established; treat as a separate day trip. The cited seasonal hours and adult ticket are dated references, not 2027 inventory or transport quotes.",
       "transit": "",
       "flags": [
         "A01",
@@ -390,12 +407,12 @@
       "id": "canton-tower",
       "name": "Canton Tower",
       "city": "Guangzhou",
-      "schedule": "09:30–22:30 (current schedule)",
-      "cost": "",
-      "source": "https://www.cantontower.com/",
-      "officialLink": "https://www.cantontower.com/",
-      "official_url": "https://www.cantontower.com/",
-      "exception": "Observation height and ticket bundle must be chosen before quoting a couple total.",
+      "schedule": "Tower 09:30–22:30; general ticketing and visitor entry 09:30–22:00 (current official ticket page; holidays and special events may differ).",
+      "cost": "Current official adult product listings (not 2027 quotes): ¥300 for 2 × ¥150 433m; ¥456 for 2 × ¥228 450m; ¥596 for 2 × ¥298 Ferris wheel; ¥536 for 2 × ¥268 Sky Drop; ¥656 for 2 × ¥328 488m; ¥796 for 2 × ¥398 all-attractions. Product bundles differ.",
+      "source": "https://mallpc.cantontower.com/ticket",
+      "officialLink": "https://mallpc.cantontower.com/ticket",
+      "official_url": "https://mallpc.cantontower.com/ticket",
+      "exception": "Couple totals are arithmetic from per-person products displayed on the official ticket site on 2026-11-26, not a 2027 quote. Select the observation height/ride bundle and recheck date-specific availability, maintenance and holiday hours before planning.",
       "transit": "",
       "flags": [
         "A01",
@@ -405,19 +422,20 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Canton%20Tower%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Canton%20Tower%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Canton%20Tower%20Guangzhou"
+        "TikTok search": "https://www.tiktok.com/search?q=Canton%20Tower%20Guangzhou",
+        "YouTube past visit · ActionKid (2025; not watched)": "https://www.youtube.com/watch?v=g_49IVpABy0"
       }
     },
     {
       "id": "chen-clan",
       "name": "Chen Clan Ancestral Hall",
       "city": "Guangzhou",
-      "schedule": "09:00–17:30; Tuesday closure reported, confirm current museum notice.",
+      "schedule": "09:00–17:30; last entry 17:00; closed Tuesday except statutory holidays (Guangzhou municipal travel guide published 2026-02-12).",
       "cost": "",
-      "source": "https://www.gz.gov.cn/",
-      "officialLink": "https://www.gz.gov.cn/",
-      "official_url": "https://www.gz.gov.cn/",
-      "exception": "Municipal discovery source only; precise 2027 museum closure/ticket notice remains unverified.",
+      "source": "https://www.gz.gov.cn/zt/jrshts/2026n/nwzgz/nwgz/content/post_10686807.html",
+      "officialLink": "https://www.gz.gov.cn/zt/jrshts/2026n/nwzgz/nwgz/content/post_10686807.html",
+      "official_url": "https://www.gz.gov.cn/zt/jrshts/2026n/nwzgz/nwgz/content/post_10686807.html",
+      "exception": "The 2026 municipal visitor guide supports the regular hours and Tuesday closure, but does not give a ticket price. Current adult price and 2027 holiday/schedule exceptions remain unverified.",
       "transit": "",
       "flags": [
         "A01",
@@ -427,19 +445,20 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Chen%20Clan%20Ancestral%20Hall%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chen%20Clan%20Ancestral%20Hall%20Guangzhou",
-        "TikTok search": "https://www.tiktok.com/search?q=Chen%20Clan%20Ancestral%20Hall%20Guangzhou"
+        "TikTok search": "https://www.tiktok.com/search?q=Chen%20Clan%20Ancestral%20Hall%20Guangzhou",
+        "YouTube past visit · Travel Travel (2025; not watched)": "https://www.youtube.com/watch?v=yqmljLoE3SY"
       }
     },
     {
       "id": "shamian",
       "name": "Shamian Island",
       "city": "Guangzhou",
-      "schedule": "Public outdoor streets; event restrictions possible.",
-      "cost": "¥0 for public street walk",
-      "source": "https://www.gz.gov.cn/",
-      "officialLink": "https://www.gz.gov.cn/",
-      "official_url": "https://www.gz.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Public island streets listed open all day in the 2026 municipal guide; individual attractions and shops set their own hours.",
+      "cost": "",
+      "source": "https://www.gz.gov.cn/zt/jrshts/2026n/nwzgz/nwgz/content/post_10686807.html",
+      "officialLink": "https://www.gz.gov.cn/zt/jrshts/2026n/nwzgz/nwgz/content/post_10686807.html",
+      "official_url": "https://www.gz.gov.cn/zt/jrshts/2026n/nwzgz/nwgz/content/post_10686807.html",
+      "exception": "The 2026 city guide describes Shamian Island as part of an official Xiguan route; it does not quote a ticket total. Shops, attractions and river rides are separate products. No date-specific 2027 event or access guarantee.",
       "transit": "",
       "flags": [
         "A01",
@@ -456,12 +475,12 @@
       "id": "panda-base",
       "name": "Chengdu Research Base of Giant Panda Breeding",
       "city": "Chengdu",
-      "schedule": "",
-      "cost": "",
-      "source": "https://www.panda.org.cn/en/about/introduction/",
-      "officialLink": "https://www.panda.org.cn/en/about/introduction/",
-      "official_url": "https://www.panda.org.cn/en/about/introduction/",
-      "exception": "Official introduction confirms location, not ticket price or opening hours. Those cells remain blank pending visitor-service notice; no one-hour hotel route established.",
+      "schedule": "Nov–Feb entry: morning 08:00–12:00 or afternoon 12:00–16:30; park clearance starts 17:30. Mar–Oct entry: morning 07:30–12:00 or afternoon 12:00–17:00; clearance starts 18:00.",
+      "cost": "¥110 = 2 × ¥55 adult tickets (current official price; not a 2027 quote).",
+      "source": "https://www.panda.org.cn/en/service/ticket/",
+      "officialLink": "https://www.panda.org.cn/en/service/ticket/",
+      "official_url": "https://www.panda.org.cn/en/service/ticket/",
+      "exception": "For ordinary adult tickets, online real-name advance reservation is required up to 14 days ahead; bring the original ID used for booking. The official page lists exceptions for seniors aged 60+ and qualifying children. No. 6 Panda Villa and Panda Art Museum close Mondays except statutory holidays; this does not mean the whole Base is closed. Quotas, current prices and hours may change before Feb/Mar 2027. No hotel-based ≤60-minute route is established.",
       "transit": "",
       "flags": [
         "A01",
@@ -471,19 +490,26 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu"
-      }
+        "TikTok search": "https://www.tiktok.com/search?q=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu",
+        "YouTube past visit · DRelicious Story 4K (2025; not watched)": "https://www.youtube.com/watch?v=l9bDs00utZI"
+      },
+      "secondarySources": [
+        {
+          "url": "https://www.panda.org.cn/en/service/notice/",
+          "label": "Official visitor notices · Monday subsite closures"
+        }
+      ]
     },
     {
       "id": "wuhou",
       "name": "Wuhou Shrine / Jinli",
       "city": "Chengdu",
-      "schedule": "Shrine and adjacent Jinli have separate opening rules.",
-      "cost": "",
-      "source": "https://www.wuhouci.net.cn/",
-      "officialLink": "https://www.wuhouci.net.cn/",
-      "official_url": "https://www.wuhouci.net.cn/",
-      "exception": "Do not combine paid shrine admission with free street access; exact 2027 product pending.",
+      "schedule": "09:00–18:00; admission stops at 17:00 (current official visitor page).",
+      "cost": "¥100 = 2 × ¥50 full admission (current official tariff; not a 2027 quote).",
+      "source": "https://wuhouci.net.cn/pwxx",
+      "officialLink": "https://wuhouci.net.cn/pwxx",
+      "official_url": "https://wuhouci.net.cn/pwxx",
+      "exception": "The official ticket page lists a ¥25 half-price category for eligible full-time students aged 18–23; no discount is assumed for two adults. Jinli is adjacent but is a separate area, not bundled admission. Summer extensions, events and 2027 hours/prices require rechecking.",
       "transit": "",
       "flags": [
         "A01",
@@ -493,7 +519,8 @@
       "socials": {
         "YouTube search": "https://www.youtube.com/results?search_query=Wuhou%20Shrine%20/%20Jinli%20Chengdu",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Wuhou%20Shrine%20/%20Jinli%20Chengdu",
-        "TikTok search": "https://www.tiktok.com/search?q=Wuhou%20Shrine%20/%20Jinli%20Chengdu"
+        "TikTok search": "https://www.tiktok.com/search?q=Wuhou%20Shrine%20/%20Jinli%20Chengdu",
+        "YouTube past visit · Walk_CN (2022; not watched)": "https://www.youtube.com/watch?v=P4hp5lqCgMs"
       }
     }
   ]

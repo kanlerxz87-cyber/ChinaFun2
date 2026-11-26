@@ -1,6 +1,6 @@
 {
   "meta": {
-    "reviewed": "2026-11-25",
+    "reviewed": "2026-11-26",
     "travelers": 2,
     "window": [
       "2027-02-15",
@@ -15,7 +15,7 @@
       "checkout": "2027-02-22",
       "nights": 7,
       "official_total": "",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "source": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
       "flags": [
         "H01"
       ]
@@ -25,7 +25,7 @@
       "checkout": "2027-02-23",
       "nights": 7,
       "official_total": "",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "source": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
       "flags": [
         "H01"
       ]
@@ -35,7 +35,7 @@
       "checkout": "2027-02-24",
       "nights": 7,
       "official_total": "",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "source": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
       "flags": [
         "H01"
       ]
@@ -45,7 +45,7 @@
       "checkout": "2027-02-25",
       "nights": 7,
       "official_total": "",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "source": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
       "flags": [
         "H01"
       ]
@@ -55,7 +55,7 @@
       "checkout": "2027-03-08",
       "nights": 7,
       "official_total": "",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "source": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
       "flags": [
         "H01"
       ]
@@ -65,7 +65,7 @@
       "checkout": "2027-03-23",
       "nights": 7,
       "official_total": "",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "source": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
       "flags": [
         "H01"
       ]
@@ -77,7 +77,7 @@
       "target_start": "2026-11-17",
       "target_end": "2026-11-20",
       "action": "Past reference checkpoint, not a proven cheapest day.",
-      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "source": "",
       "flags": [
         "H01",
         "B01"
@@ -88,7 +88,7 @@
       "target_start": "2026-12-17",
       "target_end": "2026-12-20",
       "action": "Compare like-for-like refundable official quotes now through this checkpoint.",
-      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "source": "",
       "flags": [
         "H01",
         "B01"
@@ -99,7 +99,7 @@
       "target_start": "2027-01-16",
       "target_end": "2027-01-19",
       "action": "Reprice; do not assume a spike is inevitable.",
-      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "source": "",
       "flags": [
         "H01",
         "B01"
@@ -110,7 +110,7 @@
       "target_start": "2027-02-01",
       "target_end": "2027-02-04",
       "action": "Recheck only if the existing rate can still be cancelled without penalty.",
-      "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
+      "source": "",
       "flags": [
         "H01",
         "B01"

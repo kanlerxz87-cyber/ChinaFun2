@@ -153,6 +153,16 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 | Task | Status | Owner | Scope |
 |---|---|---|---|
-| T09 — Follow-up final compliance audit against the current user brief; correct stale date-dependent copy, verify strict row/source policy and identify/fix evidence gaps without presenting estimates as facts | **in progress** | `3a60fcf4` / `arena/3a60fcf4-chinafun2` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, root `*.html`, `data/*.json`, `app.js`, `styles.css`, `scripts/verify_project.py`, `research/` |
+| T09 — Follow-up final compliance audit against the current user brief; correct stale date-dependent copy, verify strict row/source policy and identify/fix evidence gaps without presenting estimates as facts | **done · open evidence gaps remain flagged** | `3a60fcf4` / `arena/3a60fcf4-chinafun2` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, root `*.html`, `data/*.json`, `app.js`, `styles.css`, `scripts/verify_project.py`, `research/` |
 
 **Claim note:** Prior tasks are already integrated on `main`; there are no current active owners listed above. This is a follow-up final-integration/audit pass on the assigned branch, not a new branch or an attempt to replace earlier session work. Historical research remains flagged unless independently re-verified against an official source.
+
+### T09 — Follow-up evidence audit and compliance corrections (2026-11-26, session `3a60fcf4`)
+
+- Corrected the current holiday citation to the 5 November 2026 State Council notice; it states the Feb 5–13 Spring Festival break and Feb 14 makeup workday. Updated the canonical date records, dashboard, generated summary and sources register.
+- Reconciled activity claims against direct official pages. Added current Yu Garden, Chengdu Panda Base, Canton Tower and Palace Museum details; corrected museum reservation/schedule language; blanked unsupported prices for Temple of Heaven, Shanghai Tower, Oriental Pearl, Chen Clan, Xintiandi and unticketed street walks. Historical/seasonal information is labelled and not carried forward as a 2027 guarantee.
+- Added current/source-specific caveats for Shanghai Museum, Power Station of Art, Beijing parks and Mutianyu, Guangzhou’s 2026 Xiguan walk, city-walk precincts and the 2025 Yu Garden night-tour notice. No complete ≤60-minute routes or exact 2027 inventory are claimed.
+- Added exact-video discovery links only where page metadata had been checked. **No video was watched.** Direct videos and search shortcuts remain non-official discovery leads under `S01`; they are not evidence for current facts or endorsements.
+- Kept hotel totals, private-ensuite fit, full route matrices, 2027 schedules, passport-specific eligibility and dining totals unresolved and flagged. Preserved the Nov 25 historical verification notes and aggregator observation dates.
+- Validation: `python3 scripts/build_pages.py`, `python3 scripts/verify_project.py`, `python3 shanghai-planner/scripts/validate_research.py`, and `git diff --check` passed. Structural tests do not establish external-source accuracy or future availability.
+- **T09 status:** audit/corrections complete; remaining evidence gaps are non-blocking and still open. No pull request, merge or deployment was made in this audit.
