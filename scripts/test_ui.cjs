@@ -18,7 +18,13 @@ assert.equal(d.querySelectorAll('#hotel-list article').length, 3);
 assert.equal(d.querySelectorAll('#dining-list article').length, 3);
 assert.equal(d.querySelectorAll('#cluster-list article').length, 4);
 assert.equal(d.querySelectorAll('#activity-list article').length, 3);
+assert(d.querySelector('.verified-video-links a[href*="youtube.com/watch"]'));
+assert(d.querySelector('.media-discovery summary').textContent.includes('not verified reviews'));
 assert(!d.body.textContent.includes('undefined'));
+for (const id of ['trb-hutong','chengdu-silver-pot','chengdu-mi-xun-teahouse']) {
+  const record=home.window.TRIP_DATA.restaurants.find(x=>x.id===id);
+  assert(record && !(record.directVideos||[]).length, id+' private/unavailable video excluded');
+}
 d.querySelector('.menu-toggle').click();
 assert.equal(d.querySelector('.menu-toggle').getAttribute('aria-expanded'), 'true');
 assert(d.querySelector('.sidebar').classList.contains('is-open'));
@@ -30,6 +36,9 @@ for (const [file,id,term,count] of [['hotels.html','hotels','guangzhou',2],['mic
   const dom = load(file, ['assets/js/app.js']);
   const doc=dom.window.document;
   const input=doc.querySelector('input[data-filter]');
+  if(id==='restaurants')assert.equal(doc.querySelectorAll('#restaurants a[href*="youtube.com/watch"]').length,10,'direct restaurant videos');
+  if(id==='activities')assert.equal(doc.querySelectorAll('#activities a[href*="youtube.com/watch"]').length,16,'direct activity videos');
+  if(id!=='hotels')assert(doc.querySelector('details.social-discovery summary').textContent.includes('not verified reviews'));
   input.value=term;input.dispatchEvent(new dom.window.Event('input'));
   const rows=[...doc.querySelectorAll(`#${id} tbody tr`)];
   assert.equal(rows.filter(r=>r.style.display!=='none').length,count,file+' filtered rows');

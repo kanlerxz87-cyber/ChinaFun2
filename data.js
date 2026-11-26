@@ -627,7 +627,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Taian%20Table%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Taian%20Table%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8&t=314s",
+          "publisher": "Alexander On The Road",
+          "published": "2026-07-16",
+          "content": "Dedicated Taian Table dinner review; dinner segment starts at 05:14.",
+          "note": "The title says 3 Michelin stars; it is third-party content, not current-status evidence or a 2027 menu quote. Use the 2026 MICHELIN Guide and official venue menu."
+        }
+      ]
     },
     {
       "city": "Shanghai",
@@ -653,7 +662,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Fu%20He%20Hui%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Fu%20He%20Hui%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=9kg84n9XtD4",
+          "publisher": "Dina Does",
+          "published": "2017-10-02",
+          "content": "Shanghai dining-vlog segment naming Fu He Hui (福和慧).",
+          "note": "Historic creator visit; not current menu, hours, price or Michelin-status evidence."
+        }
+      ]
     },
     {
       "city": "Beijing",
@@ -679,7 +697,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=King%27s%20Joy%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=King%27s%20Joy%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=King%27s%20Joy%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=mT6hdUcRRIs",
+          "publisher": "Tiff Again",
+          "published": "2026-03-09",
+          "content": "Dedicated Beijing visit / tasting-menu review.",
+          "note": "The video title/description claims 3 stars; the current official 2026 MICHELIN Guide entry here is 2 stars. Its ¥1,399/person claim is not an official current price."
+        }
+      ]
     },
     {
       "city": "Beijing",
@@ -772,7 +799,7 @@ window.TRIP_DATA = {
       "hours": "",
       "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
       "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
-      "venue": "https://rachelgouk.com/listings/canton-8/",
+      "venue": "",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
       "flags": [
         "R01",
@@ -783,7 +810,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=MerTf4Wl8Gg",
+          "publisher": "Christian Grossi",
+          "published": "2026-01-31",
+          "content": "Canton 8 review in Shanghai; the video does not identify the Huangpu branch.",
+          "note": "The creator-reported $42 / ~¥300 tasting-menu amount is one historical visit, not official or current pricing; branch match is not established."
+        }
+      ]
     },
     {
       "id": "tang-court",
@@ -833,7 +869,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=6zxepoFgqJk",
+          "publisher": "pop rainbow",
+          "published": "2019-03-28",
+          "content": "Historic Bao Li Xuan visit at Bvlgari Hotel Shanghai.",
+          "note": "The video is from 2019; its Michelin wording and any prices do not establish current Guide status, hours or menu."
+        }
+      ]
     },
     {
       "id": "otto-mezzo",
@@ -933,7 +978,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=szt1Lu7IeHs&t=73s",
+          "publisher": "Gibbon Travelogue",
+          "published": "2025-02-03",
+          "content": "Segment at 01:13 within an 11-place Shanghai food tour; not a standalone review.",
+          "note": "A direct venue mention, but not a dedicated restaurant review. Star, performance, hours and food claims in the video are not current official evidence."
+        }
+      ]
     },
     {
       "id": "jin-xuan",
@@ -1033,7 +1087,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=6SvqIT2SW7M",
+          "publisher": "Ana Loh",
+          "published": "2025-02-03",
+          "content": "Beijing Xin Rong Ji dining review; exact Xinyuan South Road branch is not stated.",
+          "note": "The video describes a Beijing visit, but does not pin this branch. Its star wording is third-party and time-specific; use the current official Guide entry."
+        }
+      ]
     },
     {
       "id": "beijing-chao-shang-chao",
@@ -1083,7 +1146,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Jiang%20by%20Chef%20Fei%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jiang%20by%20Chef%20Fei%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=Jiang%20by%20Chef%20Fei%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=_EklcxRlpck",
+          "publisher": "Anita C. First Take",
+          "published": "2024-01-21",
+          "content": "Dinner visit naming Jiang by Chef Fei at Mandarin Oriental Guangzhou.",
+          "note": "Historic independent video; its star claim is not current official status, nor does it verify 2027 hours or prices."
+        }
+      ]
     },
     {
       "id": "guangzhou-bingsheng-mansion",
@@ -1108,7 +1180,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=oQEFZ8NaaGU",
+          "publisher": "Collys Life Adventure in China",
+          "published": "2025-10-09",
+          "content": "Dedicated Guangzhou Bingsheng Mansion dining review.",
+          "note": "The video names Bingsheng Mansion but does not independently establish the Xiancun Road branch. Its star, menu and price remarks are not current official evidence."
+        }
+      ]
     },
     {
       "id": "chengdu-yu-zhi-lan-1196150",
@@ -1133,7 +1214,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Yu%20Zhi%20Lan%20Chengdu",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Zhi%20Lan%20Chengdu",
         "TikTok search": "https://www.tiktok.com/search?q=Yu%20Zhi%20Lan%20Chengdu"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=N0sUApoNLlg&t=332s",
+          "publisher": "Aden Films",
+          "published": "2025-01-28",
+          "content": "Yu Zhi Lan visit segment starts at 05:32 in a three-restaurant Chengdu video.",
+          "note": "This is a specific visit segment, not a standalone review. The video's Michelin label is time-specific and not authoritative for current status."
+        }
+      ]
     },
     {
       "id": "chengdu-silver-pot",
@@ -1216,12 +1306,12 @@ window.TRIP_DATA = {
       "id": "shanghai-museum",
       "name": "Shanghai Museum — People’s Square",
       "city": "Shanghai",
-      "schedule": "09:00–17:00; last entry 15:00 under current exhibition notice. Closed Monday except national holidays.",
-      "cost": "General admission ¥0; special exhibitions may charge.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "officialLink": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
-      "exception": "Advance reservation required under exhibition notice through Nov 14, 2027; recheck specific exhibition fees. Closed Mon Feb 15 and 22 under normal rules.",
+      "schedule": "Tue–Sun 09:00–17:00; last entry 15:00. Closed Monday except national holidays.",
+      "cost": "",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
+      "officialLink": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/I00004797",
+      "official_url": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
+      "exception": "The People’s Square visitor page says the current “On Top of the World Tree” exhibition runs 2026-07-09–2027-11-14 and no other exhibitions are hosted there during that run. The linked Aug 25, 2025 official notice says individual visitors generally do not need reservations and lists last entry at 16:00; the newer visitor page lists last entry at 15:00 and provides booking guidance. These official pages conflict. Confirm the 2027 date’s last-entry/reservation rule and any exhibition ticket before visiting. Closed Mondays Feb 15 and 22 under normal rules.",
       "transit": "",
       "flags": [
         "A01",
@@ -1256,7 +1346,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Yu%20Garden%20%E2%80%94%20daytime%20garden%20%28not%20bazaar%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=hNXTlKNqVGk",
+          "publisher": "Araf Unmapped",
+          "published": "2024-11-03",
+          "content": "Independent tour of Yu Garden / Yuyuan area, including food and shopping context.",
+          "note": "A 2024 visitor video, not an official visitor guide and not specifically a 2027 winter night-tour review; use the official page for hours and tickets."
+        }
+      ]
     },
     {
       "id": "yuyuan-night",
@@ -1285,11 +1384,11 @@ window.TRIP_DATA = {
       "name": "The Bund promenade",
       "city": "Shanghai",
       "schedule": "Public outdoor area; access may be restricted for events.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "official_url": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "exception": "Official Shanghai citywalk guide identifies this public route; no fixed ticket price or date-specific 2027 event access is established here. Paid attractions, food and transport are excluded.",
       "transit": "",
       "flags": [
         "A01",
@@ -1300,18 +1399,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=The%20Bund%20promenade%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=The%20Bund%20promenade%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=The%20Bund%20promenade%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=9x3E8DkKZnY",
+          "publisher": "ActionKid",
+          "published": "2026-07-09",
+          "content": "Night walk starts at the Bund and continues down East Nanjing Road.",
+          "note": "Independent walking video; not an official route, access notice or hours source."
+        }
+      ]
     },
     {
       "id": "nanjing-road",
       "name": "Nanjing Road pedestrian street",
       "city": "Shanghai",
       "schedule": "Public outdoor area; access may be restricted for events.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "official_url": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "exception": "Official Shanghai citywalk guide identifies this public route; no fixed ticket price or date-specific 2027 event access is established here. Paid attractions, food and transport are excluded.",
       "transit": "",
       "flags": [
         "A01",
@@ -1322,18 +1430,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Nanjing%20Road%20pedestrian%20street%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Nanjing%20Road%20pedestrian%20street%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Nanjing%20Road%20pedestrian%20street%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=9x3E8DkKZnY",
+          "publisher": "ActionKid",
+          "published": "2026-07-09",
+          "content": "Same direct walk from the Bund down East Nanjing Road; the video covers the street route.",
+          "note": "Independent walking video; not an official route, access notice or hours source."
+        }
+      ]
     },
     {
       "id": "french-concession",
       "name": "Wukang / Anfu Road neighborhood walk",
       "city": "Shanghai",
       "schedule": "Public outdoor area; access may be restricted for events.",
-      "cost": "¥0 for public street walk",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "official_url": "https://english.shanghai.gov.cn/en-FAQs-StudyinShanghai/20251124/9f1658ae899240d19c52784bddfed782.html",
+      "exception": "Official Shanghai citywalk guide identifies this public route; no fixed ticket price or date-specific 2027 event access is established here. Paid attractions, food and transport are excluded.",
       "transit": "",
       "flags": [
         "A01",
@@ -1344,7 +1461,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Wukang%20/%20Anfu%20Road%20neighborhood%20walk%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Wukang%20/%20Anfu%20Road%20neighborhood%20walk%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Wukang%20/%20Anfu%20Road%20neighborhood%20walk%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=2BZrI9i5fsc&t=932s",
+          "publisher": "Wandering to the East",
+          "published": "2024-06-12",
+          "content": "Walk covering Wukang Mansion and Anfu Road; Wukang chapter starts at 15:32.",
+          "note": "Independent 2024 walking tour; not official opening/access guidance for any individual business or building."
+        }
+      ]
     },
     {
       "id": "xintiandi",
@@ -1353,7 +1479,7 @@ window.TRIP_DATA = {
       "schedule": "Outdoor precinct; individual shops have separate hours.",
       "cost": "",
       "source": "https://www.xintiandi.com/",
-      "officialLink": "https://www.xintiandi.com/",
+      "officialLink": "https://english.shanghai.gov.cn/en-144-hourtransfer-stayinShanghai/20240104/d25575598d6444e49dc75f7a23b985d2.html",
       "official_url": "https://www.xintiandi.com/",
       "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
       "transit": "",
@@ -1366,18 +1492,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Xintiandi%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xintiandi%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Xintiandi%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=J-EyWuurVWk",
+          "publisher": "DRelicious Story 4K",
+          "published": "2024-07-20",
+          "content": "Walk-around of Xintiandi’s historic houses, shopping street and mall; visit was in April 2024.",
+          "note": "Independent area walk, not a current shop-hours, event or ticket source."
+        }
+      ]
     },
     {
       "id": "shanghai-tower",
       "name": "Shanghai Tower — 118F",
       "city": "Shanghai",
-      "schedule": "08:30–22:00 (current published schedule)",
-      "cost": "¥360 = 2 × ¥180; standard observation product",
-      "source": "https://www.shanghaitower.com/",
-      "officialLink": "https://www.shanghaitower.com/",
-      "official_url": "https://www.shanghaitower.com/",
-      "exception": "Ticket product, last entry and 2027 schedule require reconfirmation; conflicting older hours retained as A03.",
+      "schedule": "",
+      "cost": "",
+      "source": "https://www.shanghaitower.com/shagnhai.html",
+      "officialLink": "https://www.shanghaitower.com/shagnhai.html",
+      "official_url": "https://www.shanghaitower.com/shagnhai.html",
+      "exception": "The official observatory page confirms the attraction and official ticket channels, but the current date-specific opening hours and standard ticket amount were not established in this audit. Older conflicting hours and unsupported totals are intentionally blank; reconfirm the 2027 product and schedule.",
       "transit": "",
       "flags": [
         "A01",
@@ -1394,12 +1529,12 @@ window.TRIP_DATA = {
       "id": "oriental-pearl",
       "name": "Oriental Pearl Tower",
       "city": "Shanghai",
-      "schedule": "09:00–21:00 (current schedule)",
+      "schedule": "",
       "cost": "",
       "source": "https://www.orientalpearltower.com/",
       "officialLink": "https://www.orientalpearltower.com/",
       "official_url": "https://www.orientalpearltower.com/",
-      "exception": "Multiple ticket bundles: no single two-person product confirmed for the travel dates.",
+      "exception": "Official ticket products have multiple bundles; this audit did not establish a current schedule or one two-adult ticket product from the official page. Verify both on the official ticket channel for the visit date.",
       "transit": "",
       "flags": [
         "A01",
@@ -1410,18 +1545,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Oriental%20Pearl%20Tower%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Oriental%20Pearl%20Tower%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Oriental%20Pearl%20Tower%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=6HHv3yrzNB0",
+          "publisher": "Sherrie And Chris",
+          "published": "2026-07-05",
+          "content": "Inside visit to the Oriental Pearl Tower and observation levels in Shanghai.",
+          "note": "Third-party visitor video; any hours, ticket bundles or advice in its description are not official current terms."
+        }
+      ]
     },
     {
       "id": "power-station-art",
       "name": "Power Station of Art",
       "city": "Shanghai",
-      "schedule": "Tue–Sun 11:00–19:00; closed Monday.",
-      "cost": "General entry ¥0; paid exhibitions separate",
-      "source": "https://www.powerstationofart.com/",
-      "officialLink": "https://www.powerstationofart.com/",
-      "official_url": "https://www.powerstationofart.com/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Tue–Sun 11:00–19:00; last entry 18:00. Closed Monday; open on national holidays (current official visitor page).",
+      "cost": "",
+      "source": "https://www.powerstationofart.com/visit-and-tickets",
+      "officialLink": "https://www.powerstationofart.com/visit-and-tickets",
+      "official_url": "https://www.powerstationofart.com/visit-and-tickets",
+      "exception": "The official visitor page describes ticket sales for special exhibitions but does not establish a general-entry price; exhibition fees vary. Recheck the 2027 exhibition calendar and ticket requirement.",
       "transit": "",
       "flags": [
         "A01",
@@ -1432,7 +1576,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Power%20Station%20of%20Art%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Power%20Station%20of%20Art%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Power%20Station%20of%20Art%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=H4nkvd4Ar20",
+          "publisher": "Buluolaohu 部落老虎",
+          "published": "2024-12-30",
+          "content": "Vlog exploring Shanghai Power Station of Art and contemporary installations.",
+          "note": "Independent 2024 visit; exhibition names and visitor rules may have changed. Use the museum’s official page for current information."
+        }
+      ]
     },
     {
       "id": "huangpu-cruise",
@@ -1440,10 +1593,10 @@ window.TRIP_DATA = {
       "city": "Shanghai",
       "schedule": "",
       "cost": "",
-      "source": "https://english.shanghai.gov.cn/",
-      "officialLink": "https://english.shanghai.gov.cn/",
-      "official_url": "https://english.shanghai.gov.cn/",
-      "exception": "Operator, route, timetable and fare not confirmed. Discovery candidate only; not an approved one-hour activity.",
+      "source": "https://english.shanghai.gov.cn/en-CityTour/20251107/961bba2de75a44b1ab4d20b5ce9c5d62.html",
+      "officialLink": "https://english.shanghai.gov.cn/en-CityTour/20251107/961bba2de75a44b1ab4d20b5ce9c5d62.html",
+      "official_url": "https://english.shanghai.gov.cn/en-CityTour/20251107/961bba2de75a44b1ab4d20b5ce9c5d62.html",
+      "exception": "The official municipal article describes a cruise/observatory route and identifies official ticket channels; it is not a 2027 sailing timetable or fare. Operator, pier, route, schedule and two-adult price must be selected and reconfirmed.",
       "transit": "",
       "flags": [
         "A01",
@@ -1454,7 +1607,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Huangpu%20River%20cruise%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Huangpu%20River%20cruise%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Huangpu%20River%20cruise%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=VuDyjTOk75k",
+          "publisher": "John / Triptools",
+          "published": "2026-04-06",
+          "content": "A 45-minute time-lapse cruise recorded in November 2025, departing Shiliupu Pier.",
+          "note": "Independent visitor video, not an official operator, 2027 timetable or fare quote."
+        }
+      ]
     },
     {
       "id": "suzhou-daytrip",
@@ -1504,12 +1666,12 @@ window.TRIP_DATA = {
       "id": "forbidden-city",
       "name": "Forbidden City",
       "city": "Beijing",
-      "schedule": "Nov–Mar 08:30–16:30; closed Monday (holiday exceptions).",
-      "cost": "¥80 = 2 × ¥40 off-season general entry",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Book via official Palace Museum channel; regular 7-day release. Extra exhibitions separate. Monday Feb 15 is unsuitable under normal rules.",
+      "schedule": "Nov 1–Mar 31: 08:30–16:30; last entry 15:40. Closed Monday (holiday exceptions apply).",
+      "cost": "¥80 = 2 × ¥40 off-season general admission (current official page; reconfirm for 2027).",
+      "source": "https://en.dpm.org.cn/visit/",
+      "officialLink": "https://ticket.dpm.org.cn/",
+      "official_url": "https://en.dpm.org.cn/visit/",
+      "exception": "The official English visitor pages returned HTTP 500 during this audit; hours and ¥40 base admission were derived from official-site search results, not a directly fetched page. Reconfirm on the official ticketing channel; general admission and separate galleries may differ. These current postings are not a 2027 guarantee. Monday Feb 15 is unsuitable under normal rules.",
       "transit": "",
       "flags": [
         "A01",
@@ -1520,18 +1682,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Forbidden%20City%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Forbidden%20City%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=Forbidden%20City%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=c8DGj3vKbPk",
+          "publisher": "Hussmeister",
+          "published": "2026-11-06",
+          "content": "First-visit tour inside Beijing’s Forbidden City, including galleries and crowds.",
+          "note": "Independent visitor experience; ticketing tips and gallery access are not official current rules."
+        }
+      ]
     },
     {
       "id": "temple-heaven",
       "name": "Temple of Heaven",
       "city": "Beijing",
-      "schedule": "Park and inner monuments have different schedules; inner monuments closed Monday.",
-      "cost": "¥56 = 2 × ¥28 off-season combination ticket",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Nov 1–Mar 31: park 06:30–21:00 (closes 22:00); core monuments Tue–Sun 08:00–16:30 (close 17:00). Core monuments close Monday except official holiday exceptions.",
+      "cost": "¥56 = 2 × ¥28 off-season combination tickets (current official posted rate; reconfirm for 2027).",
+      "source": "https://www.tiantanpark.com/english/",
+      "officialLink": "https://www.tiantanpark.com/",
+      "official_url": "https://www.tiantanpark.com/english/",
+      "exception": "The park and separately-ticketed core monuments have different hours; the monuments are normally closed Monday. The official English page did not load during this audit; winter hours came from official-site search results, while the posted ¥10 park / ¥28 combination prices came from the official Chinese site. Reconfirm the product, schedule and 2027 changes directly.",
       "transit": "",
       "flags": [
         "A01",
@@ -1542,18 +1713,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Temple%20of%20Heaven%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Temple%20of%20Heaven%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=Temple%20of%20Heaven%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Vf2iuqpw0Z0",
+          "publisher": "DRelicious Story 4K",
+          "published": "2026-01-15",
+          "content": "Temple of Heaven walking tour; creator says the visit was in July 2025.",
+          "note": "Independent summer visit; not a current winter schedule, ticket or Monday-closure source."
+        }
+      ]
     },
     {
       "id": "summer-palace",
       "name": "Summer Palace",
       "city": "Beijing",
-      "schedule": "Winter schedule; exact gate/inner-site hours need reconfirmation.",
-      "cost": "¥40 general entry for two; combination ticket ¥100 for two",
-      "source": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "official_url": "https://english.beijing.gov.cn/specials/ticketing/index.html",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "schedule": "Nov 1–Mar 31: gates 06:30–18:00; park closes 19:00. Separately-ticketed attractions Tue–Sun 08:30–16:30; close 17:00. Those attractions close Monday except major holidays.",
+      "cost": "¥40 = 2 × ¥20 off-season basic admission; separately-ticketed attractions excluded (2024 official listing; reconfirm for 2027).",
+      "source": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753037.html",
+      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753037.html",
+      "official_url": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753037.html",
+      "exception": "The cited municipal page is dated 2024. Separately-ticketed attractions have different hours and Monday closures; confirm current 2027 admission, openings and gallery tickets.",
       "transit": "",
       "flags": [
         "A01",
@@ -1572,10 +1752,10 @@ window.TRIP_DATA = {
       "city": "Beijing",
       "schedule": "",
       "cost": "",
-      "source": "https://english.beijing.gov.cn/",
-      "officialLink": "https://english.beijing.gov.cn/",
-      "official_url": "https://english.beijing.gov.cn/",
-      "exception": "Outlying destination; no <=60 minute public-transit route established. Treat as a separate day-trip, not a qualified near-hotel activity.",
+      "source": "https://english.beijing.gov.cn/specials/ticketing/attractions/202407/t20240717_3751593.html",
+      "officialLink": "https://english.beijing.gov.cn/specials/ticketing/attractions/202407/t20240717_3751593.html",
+      "official_url": "https://english.beijing.gov.cn/specials/ticketing/attractions/202407/t20240717_3751593.html",
+      "exception": "The official municipal page is dated July 2024 and lists seasonal information; this is not a 2027 ticket or a verified ≤60-minute public-transit trip. Treat as a separate day-trip and reconfirm access, hours and add-on transport.",
       "transit": "",
       "flags": [
         "A01",
@@ -1586,18 +1766,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Mutianyu%20Great%20Wall%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Mutianyu%20Great%20Wall%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=Mutianyu%20Great%20Wall%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=ozIZAd5YZuA",
+          "publisher": "DRelicious Story 4K",
+          "published": "2026-01-09",
+          "content": "Mutianyu Great Wall tour video; creator says the visit was in July 2025.",
+          "note": "Independent visit, not an official ticket/operating-hours source or proof of a ≤60-minute public-transit journey."
+        }
+      ]
     },
     {
       "id": "canton-tower",
       "name": "Canton Tower",
       "city": "Guangzhou",
-      "schedule": "09:30–22:30 (current schedule)",
+      "schedule": "Tower business hours 09:30–22:30; ticketing/visitor entry 09:30–22:00 under the current official page.",
       "cost": "",
-      "source": "https://www.cantontower.com/",
-      "officialLink": "https://www.cantontower.com/",
-      "official_url": "https://www.cantontower.com/",
-      "exception": "Observation height and ticket bundle must be chosen before quoting a couple total.",
+      "source": "https://www.cantontower.com/en/ticket/guidelines/",
+      "officialLink": "https://mallpc.cantontower.com/ticket",
+      "official_url": "https://www.cantontower.com/en/ticket/guidelines/",
+      "exception": "Observation and ride bundles have different prices/hours; holiday and special-event schedules follow posted notices. Select a specific two-adult product and recheck for 2027.",
       "transit": "",
       "flags": [
         "A01",
@@ -1608,18 +1797,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Canton%20Tower%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Canton%20Tower%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=Canton%20Tower%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=g_49IVpABy0",
+          "publisher": "ActionKid",
+          "published": "2025-08-16",
+          "content": "Canton Tower visit, with APM approach and observation-level chapters.",
+          "note": "Independent 2025 visit; ride availability, schedules and ticket products must be checked with the official tower."
+        }
+      ]
     },
     {
       "id": "chen-clan",
       "name": "Chen Clan Ancestral Hall",
       "city": "Guangzhou",
-      "schedule": "09:00–17:30; Tuesday closure reported, confirm current museum notice.",
+      "schedule": "",
       "cost": "",
-      "source": "https://www.gz.gov.cn/",
-      "officialLink": "https://www.gz.gov.cn/",
-      "official_url": "https://www.gz.gov.cn/",
-      "exception": "Municipal discovery source only; precise 2027 museum closure/ticket notice remains unverified.",
+      "source": "https://www.gz.gov.cn/guangzhouinternational/home/whatson/content/post_9209869.html",
+      "officialLink": "https://www.gz.gov.cn/guangzhouinternational/home/whatson/content/post_9209869.html",
+      "official_url": "https://www.gz.gov.cn/guangzhouinternational/home/whatson/content/post_9209869.html",
+      "exception": "The linked municipal page is a 2023 exhibition announcement, not the current museum schedule or ticket notice. An older city guide is not treated as 2027 confirmation; verify current opening days, hours and admission.",
       "transit": "",
       "flags": [
         "A01",
@@ -1630,18 +1828,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Chen%20Clan%20Ancestral%20Hall%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chen%20Clan%20Ancestral%20Hall%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=Chen%20Clan%20Ancestral%20Hall%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=yqmljLoE3SY",
+          "publisher": "Travel Travel",
+          "published": "2025-01-03",
+          "content": "Interior tour of Chen Clan Ancestral Hall and its Lingnan carvings and exhibits.",
+          "note": "Independent visitor video; not current official museum hours or ticket guidance."
+        }
+      ]
     },
     {
       "id": "shamian",
       "name": "Shamian Island",
       "city": "Guangzhou",
       "schedule": "Public outdoor streets; event restrictions possible.",
-      "cost": "¥0 for public street walk",
-      "source": "https://www.gz.gov.cn/",
-      "officialLink": "https://www.gz.gov.cn/",
-      "official_url": "https://www.gz.gov.cn/",
-      "exception": "Current published information, not a date-specific 2027 ticket. Recheck before booking.",
+      "cost": "",
+      "source": "https://www.gz.gov.cn/guangzhouinternational/home/citynews/content/post_9663579.html",
+      "officialLink": "https://www.gz.gov.cn/guangzhouinternational/home/citynews/content/post_9663579.html",
+      "official_url": "https://www.gz.gov.cn/guangzhouinternational/home/citynews/content/post_9663579.html",
+      "exception": "The linked municipal feature describes the historic district but does not establish a 2027 event schedule or paid admission. No fixed ticket amount is recorded; individual attractions and commercial stops may have separate terms.",
       "transit": "",
       "flags": [
         "A01",
@@ -1652,7 +1859,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Shamian%20Island%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Shamian%20Island%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=Shamian%20Island%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=S4Xt6dnOQ94",
+          "publisher": "sunny abroad",
+          "published": "2025-07-31",
+          "content": "Broader Guangzhou day-vlog/city walk that includes Shamian Island; not a standalone island review.",
+          "note": "The video is broader city content; no current hours, access restrictions or ticket price should be inferred from it."
+        }
+      ]
     },
     {
       "id": "panda-base",
@@ -1674,18 +1890,27 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu",
         "TikTok search": "https://www.tiktok.com/search?q=Chengdu%20Research%20Base%20of%20Giant%20Panda%20Breeding%20Chengdu"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=l9bDs00utZI",
+          "publisher": "DRelicious Story 4K",
+          "published": "2025-09-26",
+          "content": "Panda Base walk-around; creator says the visit was in June 2025.",
+          "note": "Independent past visit; use the official Panda Base for current hours, ticketing and visitor conditions."
+        }
+      ]
     },
     {
       "id": "wuhou",
       "name": "Wuhou Shrine / Jinli",
       "city": "Chengdu",
-      "schedule": "Shrine and adjacent Jinli have separate opening rules.",
-      "cost": "",
-      "source": "https://www.wuhouci.net.cn/",
+      "schedule": "Official English visitor page: daily 09:00–18:00; no admission after 17:00.",
+      "cost": "¥100 = 2 × ¥50 adult admission (current official ticket page; reconfirm for 2027).",
+      "source": "https://en.wuhouci.net.cn/visit-ticket",
       "officialLink": "https://www.wuhouci.net.cn/",
-      "official_url": "https://www.wuhouci.net.cn/",
-      "exception": "Do not combine paid shrine admission with free street access; exact 2027 product pending.",
+      "official_url": "https://en.wuhouci.net.cn/visit-ticket",
+      "exception": "Official page says tickets are sold through the museum’s own website/WeChat and pre-sold 14 days ahead. The nearby Jinli area is separate; the official schedule and price above are for Wuhou Shrine Museum only.",
       "transit": "",
       "flags": [
         "A01",
@@ -1696,7 +1921,16 @@ window.TRIP_DATA = {
         "YouTube search": "https://www.youtube.com/results?search_query=Wuhou%20Shrine%20/%20Jinli%20Chengdu",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Wuhou%20Shrine%20/%20Jinli%20Chengdu",
         "TikTok search": "https://www.tiktok.com/search?q=Wuhou%20Shrine%20/%20Jinli%20Chengdu"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=P4hp5lqCgMs",
+          "publisher": "Walk_CN",
+          "published": "2022-05-29",
+          "content": "Walking video of Wuhou Temple and the adjacent Jinli Ancient Street.",
+          "note": "Older independent visit; the shrine and Jinli have separate rules. Do not use the video for current hours or admission."
+        }
+      ]
     }
   ],
   "costs": {
@@ -1992,7 +2226,7 @@ window.TRIP_DATA = {
       "scope": "All activities",
       "issue": "Current prices and schedules are not guaranteed date-specific 2027 inventory; blank costs are unknown, not free.",
       "next": "Recheck ticket product, reservation release, special exhibitions and 2027 notices on linked official pages.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -2006,9 +2240,9 @@ window.TRIP_DATA = {
     {
       "id": "A03",
       "scope": "Shanghai Tower / Yu Garden / renovation notices",
-      "issue": "Older conflicting hours and garden prices superseded by current official visitor rules; renovation/event closures remain unverified, not assumed absent.",
-      "next": "Recheck official dated operating notices; do not mix garden, bazaar, festival and night tickets.",
-      "source": "https://www.shanghaitower.com/",
+      "issue": "Older Shanghai Tower hours and price figures lacked a current official date-specific basis and have been blanked; Yu Garden uses its current official visitor page. Renovation/event notices remain unverified, not assumed absent.",
+      "next": "Check the official Shanghai Tower ticket page and dated venue notices; do not mix garden, bazaar, festival and night-tour products.",
+      "source": "https://www.shanghaitower.com/shagnhai.html",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -2030,8 +2264,8 @@ window.TRIP_DATA = {
     {
       "id": "S01",
       "scope": "Social / video links",
-      "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
-      "next": "Verify creator, venue and upload date before relying on a post.",
+      "issue": "Direct public YouTube pages are now linked only where venue/content metadata was checked, with date/content caveats. They are independent videos, not official evidence for current Michelin status, hours or prices. Search/profile links are discovery-only; private/unavailable videos are excluded.",
+      "next": "Use official Guide/venue sources for current facts; recheck video availability and content match before relying on any creator post.",
       "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
       "status": "needs review · non-blocking publication"
     },

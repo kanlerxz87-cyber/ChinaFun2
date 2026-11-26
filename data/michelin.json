@@ -7,7 +7,9 @@
       "2027-03-23"
     ],
     "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
-    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank.",
+    "direct_video_links_checked": "2026-11-26",
+    "direct_video_policy": "Independent videos are discovery context only; current Michelin status, hours and prices come from official Guide/venue sources. Search links are not verified reviews."
   },
   "clusters": [
     {
@@ -68,7 +70,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Taian%20Table%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Taian%20Table%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Taian%20Table%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=RYsEUZJSrN8&t=314s",
+          "publisher": "Alexander On The Road",
+          "published": "2026-07-16",
+          "content": "Dedicated Taian Table dinner review; dinner segment starts at 05:14.",
+          "note": "The title says 3 Michelin stars; it is third-party content, not current-status evidence or a 2027 menu quote. Use the 2026 MICHELIN Guide and official venue menu."
+        }
+      ]
     },
     {
       "city": "Shanghai",
@@ -94,7 +105,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Fu%20He%20Hui%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Fu%20He%20Hui%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Fu%20He%20Hui%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=9kg84n9XtD4",
+          "publisher": "Dina Does",
+          "published": "2017-10-02",
+          "content": "Shanghai dining-vlog segment naming Fu He Hui (福和慧).",
+          "note": "Historic creator visit; not current menu, hours, price or Michelin-status evidence."
+        }
+      ]
     },
     {
       "city": "Beijing",
@@ -120,7 +140,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=King%27s%20Joy%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=King%27s%20Joy%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=King%27s%20Joy%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=mT6hdUcRRIs",
+          "publisher": "Tiff Again",
+          "published": "2026-03-09",
+          "content": "Dedicated Beijing visit / tasting-menu review.",
+          "note": "The video title/description claims 3 stars; the current official 2026 MICHELIN Guide entry here is 2 stars. Its ¥1,399/person claim is not an official current price."
+        }
+      ]
     },
     {
       "city": "Beijing",
@@ -213,7 +242,7 @@
       "hours": "",
       "exceptions": "Exact service days and 2027 calendar require direct confirmation. Secondary menu estimates removed.",
       "guide": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
-      "venue": "https://rachelgouk.com/listings/canton-8/",
+      "venue": "",
       "official_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street",
       "flags": [
         "R01",
@@ -224,7 +253,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Canton%208%20%28%E5%96%9C%E7%B2%A48%E5%8F%B7%2C%20Huangpu%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=MerTf4Wl8Gg",
+          "publisher": "Christian Grossi",
+          "published": "2026-01-31",
+          "content": "Canton 8 review in Shanghai; the video does not identify the Huangpu branch.",
+          "note": "The creator-reported $42 / ~¥300 tasting-menu amount is one historical visit, not official or current pricing; branch match is not established."
+        }
+      ]
     },
     {
       "id": "tang-court",
@@ -274,7 +312,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Bao%20Li%20Xuan%20%28%E5%AE%9D%E4%B8%BD%E8%BD%A9%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=6zxepoFgqJk",
+          "publisher": "pop rainbow",
+          "published": "2019-03-28",
+          "content": "Historic Bao Li Xuan visit at Bvlgari Hotel Shanghai.",
+          "note": "The video is from 2019; its Michelin wording and any prices do not establish current Guide status, hours or menu."
+        }
+      ]
     },
     {
       "id": "otto-mezzo",
@@ -374,7 +421,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai",
         "TikTok search": "https://www.tiktok.com/search?q=Ren%20He%20Guan%20%28%E4%BB%81%E5%92%8C%E9%A6%86%29%20Shanghai"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=szt1Lu7IeHs&t=73s",
+          "publisher": "Gibbon Travelogue",
+          "published": "2025-02-03",
+          "content": "Segment at 01:13 within an 11-place Shanghai food tour; not a standalone review.",
+          "note": "A direct venue mention, but not a dedicated restaurant review. Star, performance, hours and food claims in the video are not current official evidence."
+        }
+      ]
     },
     {
       "id": "jin-xuan",
@@ -474,7 +530,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing",
         "TikTok search": "https://www.tiktok.com/search?q=Xin%20Rong%20Ji%20%28Xinyuan%20South%20Road%29%20Beijing"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=6SvqIT2SW7M",
+          "publisher": "Ana Loh",
+          "published": "2025-02-03",
+          "content": "Beijing Xin Rong Ji dining review; exact Xinyuan South Road branch is not stated.",
+          "note": "The video describes a Beijing visit, but does not pin this branch. Its star wording is third-party and time-specific; use the current official Guide entry."
+        }
+      ]
     },
     {
       "id": "beijing-chao-shang-chao",
@@ -524,7 +589,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Jiang%20by%20Chef%20Fei%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Jiang%20by%20Chef%20Fei%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=Jiang%20by%20Chef%20Fei%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=_EklcxRlpck",
+          "publisher": "Anita C. First Take",
+          "published": "2024-01-21",
+          "content": "Dinner visit naming Jiang by Chef Fei at Mandarin Oriental Guangzhou.",
+          "note": "Historic independent video; its star claim is not current official status, nor does it verify 2027 hours or prices."
+        }
+      ]
     },
     {
       "id": "guangzhou-bingsheng-mansion",
@@ -549,7 +623,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou",
         "TikTok search": "https://www.tiktok.com/search?q=BingSheng%20Mansion%20%28Xiancun%20Road%29%20Guangzhou"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=oQEFZ8NaaGU",
+          "publisher": "Collys Life Adventure in China",
+          "published": "2025-10-09",
+          "content": "Dedicated Guangzhou Bingsheng Mansion dining review.",
+          "note": "The video names Bingsheng Mansion but does not independently establish the Xiancun Road branch. Its star, menu and price remarks are not current official evidence."
+        }
+      ]
     },
     {
       "id": "chengdu-yu-zhi-lan-1196150",
@@ -574,7 +657,16 @@
         "YouTube search": "https://www.youtube.com/results?search_query=Yu%20Zhi%20Lan%20Chengdu",
         "Instagram search": "https://www.instagram.com/explore/search/keyword/?q=Yu%20Zhi%20Lan%20Chengdu",
         "TikTok search": "https://www.tiktok.com/search?q=Yu%20Zhi%20Lan%20Chengdu"
-      }
+      },
+      "directVideos": [
+        {
+          "url": "https://www.youtube.com/watch?v=N0sUApoNLlg&t=332s",
+          "publisher": "Aden Films",
+          "published": "2025-01-28",
+          "content": "Yu Zhi Lan visit segment starts at 05:32 in a three-restaurant Chengdu video.",
+          "note": "This is a specific visit segment, not a standalone review. The video's Michelin label is time-specific and not authoritative for current status."
+        }
+      ]
     },
     {
       "id": "chengdu-silver-pot",

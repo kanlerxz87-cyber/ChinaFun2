@@ -7,7 +7,8 @@
       "2027-03-23"
     ],
     "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
-    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank.",
+    "social_links_checked": "2026-11-26"
   },
   "flags": [
     {
@@ -71,7 +72,7 @@
       "scope": "All activities",
       "issue": "Current prices and schedules are not guaranteed date-specific 2027 inventory; blank costs are unknown, not free.",
       "next": "Recheck ticket product, reservation release, special exhibitions and 2027 notices on linked official pages.",
-      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
+      "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-west",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -85,9 +86,9 @@
     {
       "id": "A03",
       "scope": "Shanghai Tower / Yu Garden / renovation notices",
-      "issue": "Older conflicting hours and garden prices superseded by current official visitor rules; renovation/event closures remain unverified, not assumed absent.",
-      "next": "Recheck official dated operating notices; do not mix garden, bazaar, festival and night tickets.",
-      "source": "https://www.shanghaitower.com/",
+      "issue": "Older Shanghai Tower hours and price figures lacked a current official date-specific basis and have been blanked; Yu Garden uses its current official visitor page. Renovation/event notices remain unverified, not assumed absent.",
+      "next": "Check the official Shanghai Tower ticket page and dated venue notices; do not mix garden, bazaar, festival and night-tour products.",
+      "source": "https://www.shanghaitower.com/shagnhai.html",
       "status": "needs review · non-blocking publication"
     },
     {
@@ -109,8 +110,8 @@
     {
       "id": "S01",
       "scope": "Social / video links",
-      "issue": "Search shortcuts are not verified direct posts or evidence for hours/costs. Only explicitly labelled museum profiles are treated as official profiles.",
-      "next": "Verify creator, venue and upload date before relying on a post.",
+      "issue": "Direct public YouTube pages are now linked only where venue/content metadata was checked, with date/content caveats. They are independent videos, not official evidence for current Michelin status, hours or prices. Search/profile links are discovery-only; private/unavailable videos are excluded.",
+      "next": "Use official Guide/venue sources for current facts; recheck video availability and content match before relying on any creator post.",
       "source": "https://www.shanghaimuseum.net/mu/frontend/pg/en/index",
       "status": "needs review · non-blocking publication"
     },

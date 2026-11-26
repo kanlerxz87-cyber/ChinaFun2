@@ -2,7 +2,7 @@
 import argparse, json, re, subprocess
 from pathlib import Path
 from html.parser import HTMLParser
-from urllib.parse import urlsplit, unquote, urljoin
+from urllib.parse import urlsplit, unquote, urljoin, parse_qs
 from urllib.request import urlopen
 from datetime import date
 P=Path(__file__).resolve().parents[1]
@@ -25,7 +25,7 @@ class Document(HTMLParser):
  def handle_endtag(self,t):
   if t=='tr' and self.row is not None:self.rows.append(self.row);self.row=None
   if t=='tbody':self.body=False
-OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','panda.org.cn','wuhouci.net.cn','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
+OFFICIAL={'guide.michelin.com','michelin.com','marriott.com','ritzcarlton.com','hyatt.com','ihg.com','rosewoodhotels.com','hilton.com','shangri-la.com','okura-nikko.com','sukhothai.com','all.accor.com','peninsula.com','shanghaimuseum.net','yugarden.com.cn','english.shanghai.gov.cn','shanghaitower.com','orientalpearltower.com','powerstationofart.com','xintiandi.com','english.beijing.gov.cn','gz.gov.cn','cantontower.com','mallpc.cantontower.com','panda.org.cn','wuhouci.net.cn','en.wuhouci.net.cn','en.dpm.org.cn','ticket.dpm.org.cn','tiantanpark.com','suzhou.gov.cn','hangzhou.gov.cn','english.www.gov.cn','travel.state.gov','us.china-embassy.gov.cn','cdc.gov','bookings.taian-table.com','kingsjoy.com','trbhutong.com'}
 def official(u):
  h=(urlsplit(u).hostname or '').removeprefix('www.');return h in OFFICIAL and u.startswith('https://')
 files=list(P.glob('*.html'));docs={x:Document(x.read_text()) for x in files}
@@ -48,9 +48,19 @@ for name,key in [('hotels','hotels'),('michelin','restaurants'),('activities','a
  rows=load(name)[key];ids=[x['id'] for x in rows];check(len(ids)==len(set(ids)),name+': duplicate records')
  for x in rows:
   check(official(x['official_url']),name+': non-official source '+x['id'])
+  if x.get('officialLink'):check(official(x['officialLink']),name+': non-official visitor/ticket link '+x['id'])
   check(bool(x['flags']),name+': missing flags '+x['id'])
   for flag in x['flags']:check(flag in flagids,'unknown flag '+flag)
   check(len(x.get('socials',{}))>=3 or name=='hotels',name+': missing discovery platforms '+x['id'])
+  for label,url in x.get('socials',{}).items():
+   if 'search' in label.lower():check('search' in url.lower(),name+': search label is not a search URL '+x['id']+' / '+label)
+  if name=='restaurants' and x['id'] in {'trb-hutong','chengdu-silver-pot','chengdu-mi-xun-teahouse'}:check(not x.get('directVideos'),name+': private/unavailable videos must remain excluded '+x['id'])
+  for item in x.get('directVideos',[]):
+   u=urlsplit(item.get('url',''));video_id=parse_qs(u.query).get('v',[''])[0]
+   check(u.scheme=='https' and u.hostname=='www.youtube.com' and u.path=='/watch' and bool(video_id),name+': direct video is not a YouTube watch page '+x['id'])
+   check(all(item.get(k) for k in ['publisher','published','content','note']),name+': direct video needs publisher/date/content/caveat '+x['id'])
+   try:date.fromisoformat(item['published'])
+   except (KeyError,ValueError):check(False,name+': direct video publication date is not ISO '+x['id'])
   if name=='hotels':
    for k in ['total','transit','activityTransit','rank']:check(x[k]=='',x['id']+': unsupported official metric '+k)
  for city in ['Shanghai','Beijing','Guangzhou','Chengdu']:check(any(x['city']==city for x in rows),name+': missing city '+city)
