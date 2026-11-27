@@ -9,7 +9,7 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Current active session:** `3ce362a7` (Arena-supplied fixed branch `arena/3ce362a7-chinafun2`, rebased onto latest merged `main` `d8e0ecc`). Earlier session IDs below are historical or merged.
+**Current active session:** `3ce362a7` (Arena-supplied fixed branch `arena/3ce362a7-chinafun2`, rebased onto latest merged `main` `3b4ab59`). Earlier session IDs below are historical or merged.
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7–14-night options, 2 adults
 **Primary base:** No city has been selected by the user; Shanghai, Beijing, Guangzhou and Chengdu remain candidates. Catalog counts are research coverage, not rankings.
@@ -60,7 +60,7 @@ _None yet._
 ## Handoffs / conflicts
 
 - Parallel overlap: session `6dd273f8` owns a read-only external-verification log in `COORDINATION.md`; session `74e12331` is preserving its entries while adding a separate date-only record. Resolved additively during rebase onto PR #20; no external-source audit claims were overwritten.
-- 2026-11-27 rebase: `origin/main` advanced from `91922ff` to `d8e0ecc` (PRs #23–#25) after T15 was claimed. Kept the latest main coordination record, re-added T15 without removing merged-session entries, and updated this branch's base. No data work was discarded.
+- 2026-11-27 rebase: `origin/main` advanced from `91922ff` to `3b4ab59` while T15 was in progress. Kept the latest main coordination record, re-added T15, and merged the original pushed claim commit into the rebased branch to avoid force-pushing. No data work was discarded.
 
 ## Verification log (per finished task)
 
