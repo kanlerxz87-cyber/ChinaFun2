@@ -9,7 +9,7 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Current active session:** `74e12331` (fixed branch `arena/74e12331-chinafun2`, rebased onto merged `main` commit `23cc4de`). Earlier session IDs below are historical.
+**Current active session:** `3ce362a7` (Arena-supplied fixed branch `arena/3ce362a7-chinafun2`, rebased onto latest merged `main` `91922ff`). Earlier session IDs below are historical or merged.
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
 **Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
@@ -29,11 +29,10 @@
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
 | T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
 | T09 | Current-session final audit: date freshness, evidence labels, source/social verification, build/tests, publish | **done** | `a16d9048` / `arena/a16d9048-chinafun2` | `COORDINATION.md`, `README.md`, `data/*.json`, `scripts/build_pages.py`, generated root pages, `research/final-verification-2026-11-26.md` | Targeted 22-activity source reconciliation and local build/validator/UI/HTTP checks passed; PR #12 merged, main validation and Pages deployment succeeded on `371b0dca`. Hotel, dining, cost, entry, and health data were not re-reviewed; unknowns remain blank/flagged. |
-| T13 | Current session `6dd273f8`: independent external verification of official facts (State Council 2027 holiday, MICHELIN Guide Shanghai/Jiangsu/Zhejiang 2026 release, Taian Table FAQ) + publication PR/merge from `arena/6dd273f8-chinafun2` to `main` | **in progress** | `6dd273f8` / `arena/6dd273f8-chinafun2` | `COORDINATION.md` (claim log + verification log only) | Read-only external fact checks against official domains; no data files changed because all table rows already carry official-source links and unknowns stay blank. |
+| T13 | Independent external verification of official holiday, MICHELIN Guide and Taian Table facts | **done** | `6dd273f8` / `arena/6dd273f8-chinafun2` | `COORDINATION.md` (claim + verification log only) | Read-only official-source checks; merged as PR #20 at `0a5615b`. Follow-up in this session narrows the English-source gap for makeup workdays using the State Council General Office notice at gov.cn. |
 
-| T14 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only refresh; Nov 26 remains the latest factual-source audit date. Structural, DOM and local HTTP checks pass; PR #19 awaiting merge/Pages confirmation. |
-
-| T13 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `COORDINATION.md`, `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only values updated to Nov 27; Nov 26 remains the factual-source audit date. Reproducible build, structural validators, DOM suite and 33-resource local HTTP checks passed. PR/publish check pending. |
+| T14 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `COORDINATION.md`, `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only values updated to Nov 27; Nov 26 remains the factual-source audit date. Reproducible build, structural validators, DOM suite and 33-resource local HTTP checks passed. PR #19 merged at `91922ff` (2026-11-27). |
+| T15 | Final-integration follow-up: official holiday schedule erratum, 2-adult menu arithmetic, hotel bathroom evidence labels, scope/data consistency and regression checks | **in progress** | `3ce362a7` / `arena/3ce362a7-chinafun2` | `COORDINATION.md`, `RESEARCH_REVIEW.md`, `README.md`, `data/{brief,costs,hotels,michelin,flags}.json`, `scripts/{build_pages,verify_project}.py`, `app.js`, `index.html`, generated `*.html` + `data.js`, `research/session-3ce362a7-audit-2026-11-27.md` | Targeted 2026-11-27 official-source correction and evidence-label pass; not a full re-audit of every record. Exact official hotel totals, explicit private-ensuite guarantees, 2027 hours/prices and complete ≤60-minute routes remain blank/flagged.
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -50,6 +49,7 @@
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
 | 2026-11-26 | a16d9048 | Claimed T09 for current-session final audit, date/evidence cleanup, structural verification and publication; scope listed in the task board. Current session remains on the supplied active Arena branch. |
 | 2026-11-27 | 74e12331 | Claimed T14 for date-only arithmetic refresh and publication smoke test on fixed active branch `arena/74e12331-chinafun2`; factual-source snapshot remains dated Nov 26. |
+| 2026-11-27 | 3ce362a7 | Claimed T15 on fixed active branch `arena/3ce362a7-chinafun2` for official holiday-source correction, menu-price reconciliation and explicit hotel ensuite-evidence labeling; latest main was `91922ff`. |
 
 ## Change requests (file owned by another session)
 
@@ -57,7 +57,8 @@ _None yet._
 
 ## Handoffs / conflicts
 
-- Parallel overlap: session `6dd273f8` owns a read-only external-verification log in `COORDINATION.md`; session `74e12331` is preserving its entries while adding a separate date-only record. Resolved additively during rebase onto PR #20; no external-source audit claims were overwritten.
+- Parallel overlap: session `6dd273f8` owns a read-only external-verification log in `COORDINATION.md`; session `74e12331` preserved its entries while adding a separate date-only record. Resolved additively during rebase onto PR #20; no external-source audit claims were overwritten.
+- 2026-11-27 rebase conflict: this branch's initial T13 claim overlapped with merged main's T13/T14 entries from sessions `6dd273f8` and `74e12331`. Resolved by retaining latest main's entries, updating their completed PR statuses, removing the duplicate 74e T13 row (its work remains in T14), and renumbering this session's task to T15. No data or audit work from PRs #18–#20 was discarded.
 
 ## Verification log (per finished task)
 
