@@ -9,10 +9,10 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Current active session:** `74e12331` (fixed branch `arena/74e12331-chinafun2`, rebased onto merged `main` commit `23cc4de`). Earlier session IDs below are historical.
+**Current active session:** `3ce362a7` (Arena-supplied fixed branch `arena/3ce362a7-chinafun2`, rebased onto latest merged `main` `d8e0ecc`). Earlier session IDs below are historical or merged.
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
-**Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
-**Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
+**Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7–14-night options, 2 adults
+**Primary base:** No city has been selected by the user; Shanghai, Beijing, Guangzhou and Chengdu remain candidates. Catalog counts are research coverage, not rankings.
 
 ---
 
@@ -34,7 +34,7 @@
 | T14 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only refresh; Nov 26 remains the latest factual-source audit date. PR #19 merged as `91922ffe`; validation and Pages run `46060117544` succeeded; Pages API reports `built` from `main /`. |
 
 | T13 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `COORDINATION.md`, `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only values updated to Nov 27; Nov 26 remains the factual-source audit date. Reproducible build, structural validators, DOM suite and 33-resource local HTTP checks passed. PR/publish check pending. |
-
+| T15 | Final-integration follow-up: official holiday schedule erratum, 2-adult menu arithmetic, hotel bathroom evidence labels, scope/data consistency and regression checks | **in progress** | `3ce362a7` / `arena/3ce362a7-chinafun2` | `COORDINATION.md`, `RESEARCH_REVIEW.md`, `README.md`, `data/{brief,costs,hotels,michelin,flags}.json`, `scripts/{build_pages,verify_project}.py`, `app.js`, `index.html`, generated `*.html` + `data.js`, `research/session-3ce362a7-audit-2026-11-27.md` | Targeted 2026-11-27 official-source correction and evidence-label pass; not a full re-audit of every record. Exact official hotel totals, explicit private-ensuite guarantees, 2027 hours/prices and complete ≤60-minute routes remain blank/flagged.
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -51,6 +51,7 @@
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
 | 2026-11-26 | a16d9048 | Claimed T09 for current-session final audit, date/evidence cleanup, structural verification and publication; scope listed in the task board. Current session remains on the supplied active Arena branch. |
 | 2026-11-27 | 74e12331 | Claimed T14 for date-only arithmetic refresh and publication smoke test on fixed active branch `arena/74e12331-chinafun2`; factual-source snapshot remains dated Nov 26. |
+| 2026-11-27 | 3ce362a7 | Claimed T15 on fixed active branch `arena/3ce362a7-chinafun2` for official holiday-source correction, menu-price reconciliation and explicit hotel ensuite-evidence labeling; latest main at claim time was `91922ff`. |
 
 ## Change requests (file owned by another session)
 
@@ -59,6 +60,7 @@ _None yet._
 ## Handoffs / conflicts
 
 - Parallel overlap: session `6dd273f8` owns a read-only external-verification log in `COORDINATION.md`; session `74e12331` is preserving its entries while adding a separate date-only record. Resolved additively during rebase onto PR #20; no external-source audit claims were overwritten.
+- 2026-11-27 rebase: `origin/main` advanced from `91922ff` to `d8e0ecc` (PRs #23–#25) after T15 was claimed. Kept the latest main coordination record, re-added T15 without removing merged-session entries, and updated this branch's base. No data work was discarded.
 
 ## Verification log (per finished task)
 
