@@ -296,11 +296,18 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Not done this session:** full line-by-line re-fetch of all 118 official sources; hotel 7-night totals and transit ≤60-minute ranks (remain blank, unverified, by design).
 
 ### Publication log — T09-cb12e6ac
-- Branch `arena/cb12e6ac-chinafun2` pushed; PR to `main` opened and merged with explicit PR number; GitHub Pages deploy checked (see PR entry below).
+- **PR #23** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/23>) from `arena/cb12e6ac-chinafun2` into `main`: **merged** as merge commit `d12d95079c8343898d45c570315a6835d78b5349` (2026-11-27 19:59 UTC) after the `Validate planning desk` check passed on head `33856bd`.
+- Post-merge: `Validate planning desk` **success** and `pages build and deployment` **success** on `d12d950`; GitHub Pages reports `built` from `main /`.
+- Live content checked with cache-busting fetches (`index.html?v=d12d9507`, `flagged.html?v=d12d9507`): countdown "80–83 days", "Review flags (24)", flagged page lists 24 flags.
+- Live review found two copy issues (dashboard said "Review all 23 flags"; it stated Lantern Festival Feb 20, 2027 as fact). Fixed in a follow-up PR from the same branch (see the follow-up entry below).
 
 ### Handoffs / conflicts — cb12e6ac (2026-11-27)
 - While this session worked, `origin/main` advanced with **PR #18** (`24a77f0b`, flags E02–E04 and D01) and **PR #20** (`6dd273f8`, read-only verification log). Rebasing onto `0a5615b` conflicted in `COORDINATION.md`, `README.md`, `index.html`, `data/flags.json`, and generated `*.html`/`data.js`.
 - Resolution (no other session's work discarded): kept both COORDINATION sections; kept E02–E04 and D01 from `24a77f0b`; re-applied the countdown, Bvlgari, Upper House, Taian and C01 changes on top; updated E03 (now confirmed by the official Beijing reprint) and E04 (advisory page now loads) and marked D01's countdown part resolved; regenerated all pages from source. Flag count now **24**.
 - Second merge (same day): `origin/main` then advanced with **PR #19** (`74e12331`, calendar-only countdown refresh). Its countdown wording was kept as-is; this session re-applied only its non-duplicate corrections (Bvlgari marble, Upper House bed, Taian Feb 15 Monday, E01/E03/E04/D01 updates, C01). Merged by a single `git merge origin/main` (no force-push).
 - Note for the owners of `24a77f0b` and `6dd273f8`: their E03 'open' item is now confirmed by the official Beijing reprint; their E04 'page could not be fetched' note is updated.
+
+### Follow-up — T09-cb12e6ac (2026-11-27)
+- Dashboard copy fix after the live check: "Review all 23 flags" → "24 flags"; the Lantern Festival date is now labelled as a lunar-calendar derivation with a link to flag **C01**. Validators re-run: `verify_project.py` and `test_ui.cjs` pass.
+- Shipped as a follow-up PR from `arena/cb12e6ac-chinafun2` to `main`; its merge result is in the GitHub PR record and the final session summary.
 
