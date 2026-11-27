@@ -9,7 +9,7 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Current active session:** `ba4eabb3` (branch `arena/ba4eabb3-chinafun2`, reconciled onto `origin/main` `d26aaf2` preserving PRs #12–#16 in full). Earlier session IDs below are historical.
+**Current active session:** `205fe987` (branch `arena/205fe987-chinafun2`, based on `main` `e910cb5`, the PR #17 integration). This session owns T13 below; prior session entries are historical. Earlier session IDs below are historical.
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
 **Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
@@ -29,6 +29,7 @@
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
 | T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
 | T09 | Current-session final audit: date freshness, evidence labels, source/social verification, build/tests, publish | **done** | `a16d9048` / `arena/a16d9048-chinafun2` | `COORDINATION.md`, `README.md`, `data/*.json`, `scripts/build_pages.py`, generated root pages, `research/final-verification-2026-11-26.md` | Targeted 22-activity source reconciliation and local build/validator/UI/HTTP checks passed; PR #12 merged, main validation and Pages deployment succeeded on `371b0dca`. Hotel, dining, cost, entry, and health data were not re-reviewed; unknowns remain blank/flagged. |
+| T13 | Current brief: end-to-end requirements audit, date refresh, source/evidence gaps, build and live publication verification | **in progress** | `205fe987` / `arena/205fe987-chinafun2` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, `data/*.json`, generated `*.html`/`data.js`, `scripts/*`, `research/session-205fe987-final-audit.md` | Review existing evidence and current-date claims; no price, timetable, transit, or availability inference. Preserve blank/flagged values unless an official current source confirms them. |
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -44,6 +45,7 @@
 |------------|---------|--------|
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
 | 2026-11-26 | a16d9048 | Claimed T09 for current-session final audit, date/evidence cleanup, structural verification and publication; scope listed in the task board. Current session remains on the supplied active Arena branch. |
+| 2026-11-27 | 205fe987 | Read the shared task board and claimed T13 for a current-brief end-to-end requirements audit, freshness/evidence review, reproducible checks and publication follow-through; files in scope listed above. |
 
 ## Change requests (file owned by another session)
 
