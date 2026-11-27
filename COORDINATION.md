@@ -29,6 +29,7 @@
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
 | T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
 | T09 | Current-session final audit: date freshness, evidence labels, source/social verification, build/tests, publish | **done** | `a16d9048` / `arena/a16d9048-chinafun2` | `COORDINATION.md`, `README.md`, `data/*.json`, `scripts/build_pages.py`, generated root pages, `research/final-verification-2026-11-26.md` | Targeted 22-activity source reconciliation and local build/validator/UI/HTTP checks passed; PR #12 merged, main validation and Pages deployment succeeded on `371b0dca`. Hotel, dining, cost, entry, and health data were not re-reviewed; unknowns remain blank/flagged. |
+| T13 | Current session `6dd273f8`: independent external verification of official facts (State Council 2027 holiday, MICHELIN Guide Shanghai/Jiangsu/Zhejiang 2026 release, Taian Table FAQ) + publication PR/merge from `arena/6dd273f8-chinafun2` to `main` | **in progress** | `6dd273f8` / `arena/6dd273f8-chinafun2` | `COORDINATION.md` (claim log + verification log only) | Read-only external fact checks against official domains; no data files changed because all table rows already carry official-source links and unknowns stay blank. |
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -234,3 +235,22 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Status:** pending PR and merge; will be marked done after merge.
 
 - `2026-11-27` · `24a77f0b`: Opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge and Pages deployment result recorded below after merge.
+
+---
+
+## Session `6dd273f8` — independent external verification log, 2026-11-27
+
+**Scope:** read-only external checks of the official facts cited by the repo; no `data/*.json` or page values were changed because all table rows already carry official-source links and all unknowns (2027 hotel totals, ≤60-minute transit rankings, cheapest booking day) remain correctly blank/flagged.
+
+| # | Fact checked | Official source checked | Result | Irregularity |
+|---|--------------|-------------------------|--------|--------------|
+| V1 | 2027 Spring Festival holiday dates & make-up workdays | General Office of the State Council notice via [english.beijing.gov.cn](https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html) | Confirmed: Feb 5–13, 2027 (9 days); make-up workdays Jan 31 & Feb 14, 2027. Repo dashboard/costs/flags use these dates correctly. | None. |
+| V2 | MICHELIN Guide Shanghai\|Jiangsu\|Zhejiang 2026 release scope & star counts | [guide.michelin.com ceremony article](https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang) and [michelin.com publication page](https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang) | Confirmed: 409 restaurants, 77 starred (1×3★, 14×2★, 62×1★), 164 Bib Gourmand, 168 Selected; 156 listed in Shanghai. | None. |
+| V3 | Shanghai city subset star count | [Shanghai Tourism official Michelin guide page](https://www.shanghaitourism.org/michelin-restaurants-shanghai/) | Confirmed: 51 starred in Shanghai (1×3★, 12×2★, 38×1★), 35 Bib Gourmand; Ultraviolet closed Mar 29, 2025. Repo treats 77 as regional, 51 as city subset. | None. |
+| V4 | Structural verification of the working tree | `python3 scripts/verify_project.py` + `scripts/build_pages.py` | PASS: 11 HTML pages, official link on every table row, canonical data parity, four-city coverage, 19 flags, social-URL validation, JS syntax. Build: 10 detail pages; 27 hotels, 37 restaurants, 31 activities, 19 flags, 117 official sources. | None. |
+
+**Open non-blocking items (intentionally unverified, left blank per project rule):** official 2027 all-in 7-night/14-night hotel totals (H01), literal private-bathroom guarantees on 5 WAF/modal-gated hotel pages (H02), door-to-door ≤60-minute subway/bus route matrix and hotel Michelin ranking (H03), cheapest booking day / lead-time curve (B01), venue 2027 Spring/Lantern Festival notices (R02/A01), Hong Yu Fang/Fabula schedule conflicts (R03), traveler passport/visa eligibility (E01). All are published on `flagged.html` with sources and next steps.
+
+### Claim & publication log update (2026-11-27)
+- `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; claimed T13-24a77f0b; opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`.
+- `2026-11-27` · `6dd273f8`: Claimed `T13` on `arena/6dd273f8-chinafun2` (equals `origin/main` `e910cb5`, PR #17 merge). Ran read-only external verification; no data files changed. Committing this claim log and verification log; proceeding to push, open PR from this branch to `main`, merge, and confirm GitHub Pages deployment.
