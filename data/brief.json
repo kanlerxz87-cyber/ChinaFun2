@@ -60,7 +60,7 @@
     },
     {
       "q": "Is the trip 1–2 weeks or 2–4 weeks within Feb 15–Mar 23, 2027?",
-      "answer": "Preferred start is Feb 15–18, 2027 (currently 81–84 days away as of Nov 26, 2026); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
+      "answer": "Preferred start is Feb 15–18, 2027 (80–83 days away on the date-only check of Nov 27, 2026); factual sources were last audited Nov 26. All travel must finish by Mar 23, 2027. Final checkout date is undecided.",
       "next": "Decide between 7 nights (Feb 15–22), 14 nights (Feb 15–Mar 1), or 21–36 nights (ending by Mar 23) and check visa limits for stays over 10 days.",
       "state": "Open · blocker"
     },
@@ -78,7 +78,7 @@
     },
     {
       "q": "When is the cheapest time to book?",
-      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 26, 2026 (81–84 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
+      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. On the Nov 27, 2026 date-only check, preferred starts are 80–83 days away; the 90-day reference dates (Nov 17–20) have passed. The next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4). Factual sources were last audited Nov 26.",
       "next": "Lock a refundable official rate early and reprice at the 60d/30d/14d checkpoints without assuming a guaranteed spike or drop.",
       "state": "Open"
     },
