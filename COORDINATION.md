@@ -211,3 +211,13 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 ### Claim & publication log update (2026-11-26)
 - `2026-11-26` · `ba4eabb3`: Read `COORDINATION.md`, claimed `T09-ba4eabb3` and queued `T10-ba4eabb3` onto latest `origin/main` (`d26aaf2`).
 - `2026-11-26` · `ba4eabb3`: Completed `T09-ba4eabb3` (`research/session-ba4eabb3-audit.md`) and `T10-ba4eabb3`; opened & merged **PR #17** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/17>) to `main` (`merged`), confirming GitHub Actions validation & live GitHub Pages publication (<https://kanlerxz87-cyber.github.io/ChinaFun2/>).
+
+---
+
+## Session `cb12e6ac` — 2026-11-27 date-freshness, live-link spot audit & integration publish (branch `arena/cb12e6ac-chinafun2`)
+
+**Claim (2026-11-27 UTC):** `cb12e6ac` claimed `T09-cb12e6ac` at `e910cb5` (`origin/main` after PR #17). No other session holds an active claim on the board (all prior tasks are `done` or `needs review`). Because this session is the only active writer, it also acts as the final integration session for this round.
+
+| ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
+|----|------|--------|-----------------|----------------|-----------------|
+| T09-cb12e6ac | Re-date all "today" countdowns from Nov 26 to **Nov 27, 2026** (Feb 15 = 80 days, Feb 18 = 83 days, Mar 23 = 116 days); spot-check live official sources; re-run all validators; publish via PR to `main`; confirm Pages deploy | **in progress** | `cb12e6ac` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, `research/session-cb12e6ac-audit.md`, `data/brief.json`, `data/costs.json`, `data/flags.json` (countdown copy only), regenerated `data.js` and `*.html` | Verification dates on individual official-source claims stay at their original check date (Nov 25/26) unless re-fetched this session. |
