@@ -31,6 +31,8 @@
 | T09 | Current-session final audit: date freshness, evidence labels, source/social verification, build/tests, publish | **done** | `a16d9048` / `arena/a16d9048-chinafun2` | `COORDINATION.md`, `README.md`, `data/*.json`, `scripts/build_pages.py`, generated root pages, `research/final-verification-2026-11-26.md` | Targeted 22-activity source reconciliation and local build/validator/UI/HTTP checks passed; PR #12 merged, main validation and Pages deployment succeeded on `371b0dca`. Hotel, dining, cost, entry, and health data were not re-reviewed; unknowns remain blank/flagged. |
 | T13 | Current session `6dd273f8`: independent external verification of official facts (State Council 2027 holiday, MICHELIN Guide Shanghai/Jiangsu/Zhejiang 2026 release, Taian Table FAQ) + publication PR/merge from `arena/6dd273f8-chinafun2` to `main` | **in progress** | `6dd273f8` / `arena/6dd273f8-chinafun2` | `COORDINATION.md` (claim log + verification log only) | Read-only external fact checks against official domains; no data files changed because all table rows already carry official-source links and unknowns stay blank. |
 
+| T14 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **in progress** | `74e12331` / `arena/74e12331-chinafun2` | `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only refresh; Nov 26 remains the latest factual-source audit date. Preserve parallel session 6dd273f8 external verification scope in COORDINATION.md. |
+
 ### Status legend
 - `unclaimed` — no owner yet
 - `in progress` — claimed, actively worked
@@ -45,6 +47,7 @@
 |------------|---------|--------|
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
 | 2026-11-26 | a16d9048 | Claimed T09 for current-session final audit, date/evidence cleanup, structural verification and publication; scope listed in the task board. Current session remains on the supplied active Arena branch. |
+| 2026-11-27 | 74e12331 | Claimed T14 for date-only arithmetic refresh and publication smoke test on fixed active branch `arena/74e12331-chinafun2`; factual-source snapshot remains dated Nov 26. |
 
 ## Change requests (file owned by another session)
 
@@ -52,7 +55,7 @@ _None yet._
 
 ## Handoffs / conflicts
 
-_None yet._
+- Parallel overlap: session `6dd273f8` owns a read-only external-verification log in `COORDINATION.md`; session `74e12331` is preserving its entries while adding a separate date-only record. Resolved additively during rebase onto PR #20; no external-source audit claims were overwritten.
 
 ## Verification log (per finished task)
 
