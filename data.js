@@ -4033,6 +4033,38 @@ window.TRIP_DATA = {
       "next": "Search and reserve under current 2026 official names/slugs, and use only guide.michelin.com (maison-lameloise-563686) or Shanghai Tower concierge for Maison Lameloise.",
       "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
       "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E02",
+      "scope": "Brief conformance: trip length (1–2 weeks only)",
+      "issue": "The brief the site must answer asks for a trip of 1–2 weeks between Feb 15 and Mar 23, 2027 (preferred Feb 15–18). The site still carries 2–4 week windows (21–36 nights, multi-city splits) on the dashboard, costs page and executive summary. Those windows are outside the stated brief and are kept only for comparison until the owner confirms.",
+      "next": "Owner to confirm 1–2 weeks as the only in-scope length. If confirmed, the 21–36-night and 3–4 week rows should be removed or moved to an 'out of scope' note in a follow-up integration pass.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E03",
+      "scope": "2027 holiday calendar: Feb 14 makeup workday",
+      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way.",
+      "next": "Open the full Chinese State Council notice on gov.cn and confirm the makeup-workday dates before quoting them as official.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E04",
+      "scope": "US passport entry: L visa vs 240-hour transit",
+      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source.",
+      "next": "Check travel.state.gov and the Chinese consulate that will serve the traveler (cova.mfa.gov.cn) for current L-visa fee, processing time and transit rules before booking.",
+      "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "D01",
+      "scope": "Date freshness: countdown and snapshot dates",
+      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date.",
+      "next": "Refresh snapshot labels and countdowns in the next integration pass, and re-check every live price on or after the refresh date.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "status": "needs review · non-blocking publication"
     }
   ]
 };
