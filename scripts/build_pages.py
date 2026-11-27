@@ -229,7 +229,7 @@ page(
 
 # 5. Dates, costs & booking
 body = '''<div class="grid">
-<article class="card"><h2>Today: 80–83 days out (Nov 27, 2026)</h2><p>November 27, 2026 is 80 days before Feb 15 (a Monday) and 83 days before Feb 18, 2027. The 90-day reference mark has passed; track like-for-like refundable quotes through the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints.</p></article>
+<article class="card"><h2>Date-only check: 80–83 days out (Nov 27, 2026)</h2><p>Calendar arithmetic only: Nov 27, 2026 is 80 days before Feb 15 and 83 days before Feb 18, 2027. Factual sources were last audited Nov 26; no hotel rate or other trip fact was re-verified in this refresh. The 90-day reference dates (Nov 17–20) have passed; track like-for-like refundable quotes through the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints. <a href="research/date-refresh-2026-11-27.md">Read the date-refresh log</a>.</p></article>
 <article class="card"><h2>Track like-for-like totals</h2><p>Two adults, one Queen+/King room with verified private ensuite, exact stay dates, all taxes/service charges included, and matching cancellation terms. Airfare, visas, dining and intercity rail are separate and currently unpriced.</p></article>
 </div>'''
 body += '<h2 class="section">7-night single-city comparison windows</h2>'

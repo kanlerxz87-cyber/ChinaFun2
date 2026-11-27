@@ -4,7 +4,7 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 
 **Live site:** https://kanlerxz87-cyber.github.io/ChinaFun2/
 
-## Start here (as of Nov 27, 2026 · 80–83 days out)
+## Start here (source audit Nov 26, 2026 · date-only refresh Nov 27 · 80–83 days out)
 
 - [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional 7-night research base; Beijing, Guangzhou and Chengdu remain full alternatives (or multi-city 2–4 week pairings), with zero fabricated value rankings.
 - [Hotels](hotels.html): 27 candidates across 4 cities with interactive city filter chips, Swire Upper House Shanghai/Chengdu rebrands, corrected Marriott/Hilton property codes (`shasy`, `shamshi`), and live-verified official room specs where published; dated 2027 all-in totals, literal private-bath confirmation and ≤60m transit ranks stay blank when unverified.
@@ -13,7 +13,7 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 - [Dates & costs](costs-booking.html): 7-night and 2–4 week stay windows through Mar 23, plus 90/60/30/14-day calendar checkpoints.
 - [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html) (24 flags), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-As of **Nov 27, 2026**, the preferred starts are **80–83 days away**; Feb 15, 2027 is a Monday, and the Taian Table record reflects its Tue–Sat dinner-only schedule. Full live audit logs are recorded in [research/line-by-line-audit-2026-11-26.md](research/line-by-line-audit-2026-11-26.md), [research/session-5e433db0-audit.md](research/session-5e433db0-audit.md), [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md), and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md), and the 2026-11-27 spot-check in [research/session-cb12e6ac-audit.md](research/session-cb12e6ac-audit.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
+A **date-only calendar check on Nov 27, 2026** puts preferred starts **80–83 days away**. The latest source-content audit remains **Nov 26, 2026**; no hotel quote, opening hour, route, or other fact was newly verified in this date refresh. See [the date-refresh log](research/date-refresh-2026-11-27.md). Full live audit logs are recorded in [research/line-by-line-audit-2026-11-26.md](research/line-by-line-audit-2026-11-26.md), [research/session-5e433db0-audit.md](research/session-5e433db0-audit.md), [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md), and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns, and the 2026-11-27 spot-check in [research/session-cb12e6ac-audit.md](research/session-cb12e6ac-audit.md).
 
 ## Brief scope (2026-11-27)
 

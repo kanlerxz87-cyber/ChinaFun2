@@ -61,7 +61,7 @@ window.TRIP_DATA = {
     },
     {
       "q": "Is the trip 1–2 weeks or 2–4 weeks within Feb 15–Mar 23, 2027?",
-      "answer": "Preferred start is Feb 15–18, 2027 (currently 80–83 days away as of Nov 27, 2026; Feb 15, 2027 is a Monday); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
+      "answer": "Preferred start is Feb 15–18, 2027 (80–83 days away on the date-only check of Nov 27, 2026); factual sources were last audited Nov 26. All travel must finish by Mar 23, 2027. Final checkout date is undecided.",
       "next": "Decide between 7 nights (Feb 15–22), 14 nights (Feb 15–Mar 1), or 21–36 nights (ending by Mar 23) and check visa limits for stays over 10 days.",
       "state": "Open · blocker"
     },
@@ -79,7 +79,7 @@ window.TRIP_DATA = {
     },
     {
       "q": "When is the cheapest time to book?",
-      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 27, 2026 (80–83 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
+      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. On the Nov 27, 2026 date-only check, preferred starts are 80–83 days away; the 90-day reference dates (Nov 17–20) have passed. The next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4). Factual sources were last audited Nov 26.",
       "next": "Lock a refundable official rate early and reprice at the 60d/30d/14d checkpoints without assuming a guaranteed spike or drop.",
       "state": "Open"
     },
@@ -3615,7 +3615,8 @@ window.TRIP_DATA = {
         "2027-03-23"
       ],
       "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
-      "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+      "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank.",
+      "date_arithmetic_checked": "2026-11-27 (calendar arithmetic only; factual-source audit remains 2026-11-26)"
     },
     "stay_options": [
       {
@@ -3727,7 +3728,7 @@ window.TRIP_DATA = {
         "lead_days": 90,
         "target_start": "2026-11-17",
         "target_end": "2026-11-20",
-        "action": "Past reference checkpoint (as of Nov 27, 2026 we are 80–83 days before Feb 15–18); not a proven cheapest day.",
+        "action": "Past calendar checkpoint (date-only check Nov 27, 2026: preferred starts are 80–83 days away); not a proven cheapest day.",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
@@ -3989,7 +3990,7 @@ window.TRIP_DATA = {
     {
       "id": "B01",
       "scope": "Booking lead-time analysis",
-      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-27 we are 80–83 days before Feb 15–18, 2027.",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. Date-only arithmetic on 2026-11-27 puts Feb 15–18, 2027 80–83 days away; the source audit remains dated 2026-11-26.",
       "next": "Use the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints as a refundable repricing plan, not a forecast.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "status": "needs review · non-blocking publication"
@@ -4045,15 +4046,15 @@ window.TRIP_DATA = {
     {
       "id": "E03",
       "scope": "2027 holiday calendar: Feb 14 makeup workday",
-      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way. UPDATE 2026-11-27 (session cb12e6ac): confirmed on the English Beijing municipal government reprint of the General Office of the State Council notice (english.beijing.gov.cn, dated 2026-11-09): Spring Festival is a nine-day holiday from Feb 5 (Fri) to Feb 13 (Sat); make-up workdays are Sun Jan 31 and Sun Feb 14, 2027. The Chinese State Council original was not opened.",
+      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way. CONFIRMED 2026-11-27 (session cb12e6ac): the English Beijing municipal government reprint of the General Office of the State Council notice (english.beijing.gov.cn, dated 2026-11-09) states Spring Festival is a nine-day holiday from Feb 5 (Fri) to Feb 13 (Sat) with make-up workdays on Sun Jan 31 and Sun Feb 14, 2027. The Chinese State Council original was not opened.",
       "next": "Open the full Chinese State Council notice on gov.cn and confirm the makeup-workday dates before quoting them as official.",
       "source": "https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html",
-      "status": "needs review · non-blocking publication"
+      "status": "confirmed on official reprint 2026-11-27 · Chinese original not opened · non-blocking publication"
     },
     {
       "id": "E04",
       "scope": "US passport entry: L visa vs 240-hour transit",
-      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source. UPDATE 2026-11-27: the travel.state.gov China advisory page now fetches (Level 2, issued Oct 19, 2026; see E01). Its visa and transit sections were not re-checked in this pass.",
+      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source. UPDATE 2026-11-27: the travel.state.gov China advisory page now loads (Level 2, issued Oct 19, 2026; see E01). Its visa and transit sections were not re-checked in this pass.",
       "next": "Check travel.state.gov and the Chinese consulate that will serve the traveler (cova.mfa.gov.cn) for current L-visa fee, processing time and transit rules before booking.",
       "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
@@ -4061,7 +4062,7 @@ window.TRIP_DATA = {
     {
       "id": "D01",
       "scope": "Date freshness: countdown and snapshot dates",
-      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date. UPDATE 2026-11-27 (session cb12e6ac): countdown copy has been refreshed to Nov 27 (80–83 days) across the dashboard, README, costs card, flags and data records. Remaining 'Nov 26' strings are per-claim verification dates and are kept on purpose.",
+      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date. UPDATE 2026-11-27 (session cb12e6ac): countdown copy is refreshed to Nov 27 (80–83 days) across the dashboard, README, costs card and data records. Remaining 'Nov 26' strings are per-claim verification dates and are kept on purpose.",
       "next": "Refresh snapshot labels and countdowns in the next integration pass, and re-check every live price on or after the refresh date.",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "status": "countdown resolved 2026-11-27 · live price re-checks still needed · non-blocking publication"

@@ -117,7 +117,7 @@
     {
       "id": "B01",
       "scope": "Booking lead-time analysis",
-      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-27 we are 80–83 days before Feb 15–18, 2027.",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. Date-only arithmetic on 2026-11-27 puts Feb 15–18, 2027 80–83 days away; the source audit remains dated 2026-11-26.",
       "next": "Use the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints as a refundable repricing plan, not a forecast.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "status": "needs review · non-blocking publication"
@@ -173,15 +173,15 @@
     {
       "id": "E03",
       "scope": "2027 holiday calendar: Feb 14 makeup workday",
-      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way. UPDATE 2026-11-27 (session cb12e6ac): confirmed on the English Beijing municipal government reprint of the General Office of the State Council notice (english.beijing.gov.cn, dated 2026-11-09): Spring Festival is a nine-day holiday from Feb 5 (Fri) to Feb 13 (Sat); make-up workdays are Sun Jan 31 and Sun Feb 14, 2027. The Chinese State Council original was not opened.",
+      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way. CONFIRMED 2026-11-27 (session cb12e6ac): the English Beijing municipal government reprint of the General Office of the State Council notice (english.beijing.gov.cn, dated 2026-11-09) states Spring Festival is a nine-day holiday from Feb 5 (Fri) to Feb 13 (Sat) with make-up workdays on Sun Jan 31 and Sun Feb 14, 2027. The Chinese State Council original was not opened.",
       "next": "Open the full Chinese State Council notice on gov.cn and confirm the makeup-workday dates before quoting them as official.",
       "source": "https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html",
-      "status": "needs review · non-blocking publication"
+      "status": "confirmed on official reprint 2026-11-27 · Chinese original not opened · non-blocking publication"
     },
     {
       "id": "E04",
       "scope": "US passport entry: L visa vs 240-hour transit",
-      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source. UPDATE 2026-11-27: the travel.state.gov China advisory page now fetches (Level 2, issued Oct 19, 2026; see E01). Its visa and transit sections were not re-checked in this pass.",
+      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source. UPDATE 2026-11-27: the travel.state.gov China advisory page now loads (Level 2, issued Oct 19, 2026; see E01). Its visa and transit sections were not re-checked in this pass.",
       "next": "Check travel.state.gov and the Chinese consulate that will serve the traveler (cova.mfa.gov.cn) for current L-visa fee, processing time and transit rules before booking.",
       "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
@@ -189,7 +189,7 @@
     {
       "id": "D01",
       "scope": "Date freshness: countdown and snapshot dates",
-      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date. UPDATE 2026-11-27 (session cb12e6ac): countdown copy has been refreshed to Nov 27 (80–83 days) across the dashboard, README, costs card, flags and data records. Remaining 'Nov 26' strings are per-claim verification dates and are kept on purpose.",
+      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date. UPDATE 2026-11-27 (session cb12e6ac): countdown copy is refreshed to Nov 27 (80–83 days) across the dashboard, README, costs card and data records. Remaining 'Nov 26' strings are per-claim verification dates and are kept on purpose.",
       "next": "Refresh snapshot labels and countdowns in the next integration pass, and re-check every live price on or after the refresh date.",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "status": "countdown resolved 2026-11-27 · live price re-checks still needed · non-blocking publication"

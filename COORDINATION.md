@@ -9,7 +9,7 @@
 > `needs review` = published on the Flagged for Review page; does not block anything.
 > Never mark anything verified without an official-source link.
 
-**Current active session:** `ba4eabb3` (branch `arena/ba4eabb3-chinafun2`, reconciled onto `origin/main` `d26aaf2` preserving PRs #12–#16 in full). Earlier session IDs below are historical.
+**Current active session:** `74e12331` (fixed branch `arena/74e12331-chinafun2`, rebased onto merged `main` commit `23cc4de`). Earlier session IDs below are historical.
 **Repo:** `kanlerxz87-cyber/ChinaFun2`
 **Trip window:** 15 Feb 2027 – 23 Mar 2027 (preferred start 15–18 Feb 2027), 7-night stays, 2 adults
 **Primary base selected:** Shanghai (densest Michelin cluster + metro + 1-hour day trips) — see Executive Summary for rationale and alternatives.
@@ -31,6 +31,11 @@
 | T09 | Current-session final audit: date freshness, evidence labels, source/social verification, build/tests, publish | **done** | `a16d9048` / `arena/a16d9048-chinafun2` | `COORDINATION.md`, `README.md`, `data/*.json`, `scripts/build_pages.py`, generated root pages, `research/final-verification-2026-11-26.md` | Targeted 22-activity source reconciliation and local build/validator/UI/HTTP checks passed; PR #12 merged, main validation and Pages deployment succeeded on `371b0dca`. Hotel, dining, cost, entry, and health data were not re-reviewed; unknowns remain blank/flagged. |
 | T13 | Current session `6dd273f8`: independent external verification of official facts (State Council 2027 holiday, MICHELIN Guide Shanghai/Jiangsu/Zhejiang 2026 release, Taian Table FAQ) + publication PR/merge from `arena/6dd273f8-chinafun2` to `main` | **in progress** | `6dd273f8` / `arena/6dd273f8-chinafun2` | `COORDINATION.md` (claim log + verification log only) | Read-only external fact checks against official domains; no data files changed because all table rows already carry official-source links and unknowns stay blank. |
 
+| T14 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only refresh; Nov 26 remains the latest factual-source audit date. Structural, DOM and local HTTP checks pass; PR #19 awaiting merge/Pages confirmation. |
+
+| T13 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `COORDINATION.md`, `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only values updated to Nov 27; Nov 26 remains the factual-source audit date. Reproducible build, structural validators, DOM suite and 33-resource local HTTP checks passed. PR/publish check pending. |
+
+
 ### Status legend
 - `unclaimed` — no owner yet
 - `in progress` — claimed, actively worked
@@ -45,6 +50,7 @@
 |------------|---------|--------|
 | 2026-11-25 | 91622d32 | Created COORDINATION.md; claimed T01–T06 (single-session build, no other sessions active at start). |
 | 2026-11-26 | a16d9048 | Claimed T09 for current-session final audit, date/evidence cleanup, structural verification and publication; scope listed in the task board. Current session remains on the supplied active Arena branch. |
+| 2026-11-27 | 74e12331 | Claimed T14 for date-only arithmetic refresh and publication smoke test on fixed active branch `arena/74e12331-chinafun2`; factual-source snapshot remains dated Nov 26. |
 
 ## Change requests (file owned by another session)
 
@@ -52,7 +58,7 @@ _None yet._
 
 ## Handoffs / conflicts
 
-_None yet._
+- Parallel overlap: session `6dd273f8` owns a read-only external-verification log in `COORDINATION.md`; session `74e12331` is preserving its entries while adding a separate date-only record. Resolved additively during rebase onto PR #20; no external-source audit claims were overwritten.
 
 ## Verification log (per finished task)
 
@@ -221,6 +227,8 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 | ID | Task | Status | Owner | Files in scope | Notes / coordination rule |
 |----|------|--------|-------|----------------|---------------------------|
+| T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **done** (PR #18 merged) | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
+
 | T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **done** (PR #18 — see merge record below) | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
 
 ### Claim log (2026-11-27)
@@ -232,6 +240,8 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Changes:** added flags `E02` (brief says 1–2 weeks; 2–4 week content retained for comparison), `E03` (Feb 14 makeup workday not on official page — secondary only), `E04` (US visa/transit rules — official travel.state.gov not fetched), `D01` (snapshot freshness Nov 26 vs today Nov 27). Flag count 19 → 23 across README, index, nav counters. README gained a "Brief scope" section.
 - **Validators:** `build_pages.py` regenerated; `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `test_ui.cjs` all PASS after changes.
 - **Irregularities flagged for review:** E02, E03, E04, D01 (see Flagged for Review page). Stale hard-coded `Nov 26` snapshot labels were left in generated pages intentionally and are covered by D01.
+- **Status:** done; PR #18 merged to `main` at `23cc4de25a093405a057cee3fc0af62231b686bf`; validation and GitHub Pages deployment runs 46059763948 and 46059763996 succeeded; Pages API reports `built` from `main /`.
+
 - **Status:** pending PR and merge; will be marked done after merge.
 
 - `2026-11-27` · `24a77f0b`: Opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge and Pages deployment result recorded below after merge.
@@ -255,6 +265,18 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; claimed T13-24a77f0b; opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`.
 - `2026-11-27` · `6dd273f8`: Claimed `T13` on `arena/6dd273f8-chinafun2` (equals `origin/main` `e910cb5`, PR #17 merge). Ran read-only external verification; no data files changed. Committing this claim log and verification log; proceeding to push, open PR from this branch to `main`, merge, and confirm GitHub Pages deployment.
 
+- `2026-11-27` · `24a77f0b`: Opened and merged **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge commit `23cc4de25a093405a057cee3fc0af62231b686bf`. Main validation run `46059763948` and Pages deployment `46059763996` succeeded; Pages API reports `built` at https://kanlerxz87-cyber.github.io/ChinaFun2/.
+
+## Session `74e12331` — Nov 27 calendar-only refresh and publication QA
+
+**Branch:** `arena/74e12331-chinafun2` (fixed Arena working branch; rebased onto merged `main` commit `23cc4de`).
+
+- Updated the preferred-start countdown from 81–84 days on Nov 26 to **80–83 days on Nov 27, 2026**. This is date arithmetic only; the source-content audit remains dated Nov 26. No new hotel rate, schedule, transit, restaurant, ticket, or visa claim was made.
+- Preserved unresolved values as blank/flagged. The 90-day target dates (Nov 17–20) are past; 60/30/14-day targets remain Dec 17–20, Jan 16–19 and Feb 1–4, respectively. No lowest booking day is claimed.
+- **Verification:** `python3 scripts/build_pages.py`; `python3 scripts/verify_project.py`; `python3 scripts/audit_5e433db0.py`; `python3 shanghai-planner/scripts/validate_research.py`; JSDOM UI tests; `python3 scripts/verify_project.py --base-url http://127.0.0.1:8000/` (33 HTML/JSON/CSS/JS resources returned HTTP 200). Independent Python `datetime.date` assertions passed for 80 and 83 days.
+- **Limitations:** Structural/local tests do not establish external-source reachability or re-verify the factual accuracy, prices, route times or live 2027 availability of the prior records. See `research/date-refresh-2026-11-27.md` and the Nov 26 audit reports for scope.
+- **PR / live deployment:** PR #19 is open and CI validation passed; merge and this change’s Pages deployment remain pending.
+
 ## Session `cb12e6ac` — 2026-11-27 date-freshness, live-link spot audit & integration publish (branch `arena/cb12e6ac-chinafun2`)
 
 **Claim (2026-11-27 UTC):** `cb12e6ac` claimed `T09-cb12e6ac` at `e910cb5` (`origin/main` after PR #17). No other session holds an active claim on the board (all prior tasks are `done` or `needs review`). Because this session is the only active writer, it also acts as the final integration session for this round.
@@ -277,5 +299,6 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 ### Handoffs / conflicts — cb12e6ac (2026-11-27)
 - While this session worked, `origin/main` advanced with **PR #18** (`24a77f0b`, flags E02–E04 and D01) and **PR #20** (`6dd273f8`, read-only verification log). Rebasing onto `0a5615b` conflicted in `COORDINATION.md`, `README.md`, `index.html`, `data/flags.json`, and generated `*.html`/`data.js`.
 - Resolution (no other session's work discarded): kept both COORDINATION sections; kept E02–E04 and D01 from `24a77f0b`; re-applied the countdown, Bvlgari, Upper House, Taian and C01 changes on top; updated E03 (now confirmed by the official Beijing reprint) and E04 (advisory page now loads) and marked D01's countdown part resolved; regenerated all pages from source. Flag count now **24**.
+- Second merge (same day): `origin/main` then advanced with **PR #19** (`74e12331`, calendar-only countdown refresh). Its countdown wording was kept as-is; this session re-applied only its non-duplicate corrections (Bvlgari marble, Upper House bed, Taian Feb 15 Monday, E01/E03/E04/D01 updates, C01). Merged by a single `git merge origin/main` (no force-push).
 - Note for the owners of `24a77f0b` and `6dd273f8`: their E03 'open' item is now confirmed by the official Beijing reprint; their E04 'page could not be fetched' note is updated.
 
