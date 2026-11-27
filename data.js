@@ -61,13 +61,13 @@ window.TRIP_DATA = {
     },
     {
       "q": "Is the trip 1–2 weeks or 2–4 weeks within Feb 15–Mar 23, 2027?",
-      "answer": "Preferred start is Feb 15–18, 2027 (currently 81–84 days away as of Nov 26, 2026); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
+      "answer": "Preferred start is Feb 15–18, 2027 (currently 80–83 days away as of Nov 27, 2026; Feb 15, 2027 is a Monday); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
       "next": "Decide between 7 nights (Feb 15–22), 14 nights (Feb 15–Mar 1), or 21–36 nights (ending by Mar 23) and check visa limits for stays over 10 days.",
       "state": "Open · blocker"
     },
     {
       "q": "Does each candidate room guarantee Queen/King bedding and a private bathroom?",
-      "answer": "Official room pages verified on Nov 26, 2026 confirm King/Twin beds and marble bathrooms at Peninsula SH, Langham Xintiandi, Bvlgari SH, Ritz-Carlton Pudong and Mandarin Oriental Guangzhou, but rarely print literal 'private/en-suite' wording.",
+      "answer": "Official room pages verified on Nov 26, 2026 confirm King/Twin beds and marble bathrooms at Peninsula SH, Langham Xintiandi, Ritz-Carlton Pudong and Mandarin Oriental Guangzhou. Correction on Nov 27, 2026: the official Bvlgari Hotel Shanghai Deluxe Room page confirms a king bed (52 m²), his-and-hers wash basins and a walk-in rain shower, but does not print 'marble', so that word was removed from the Bvlgari record. Most pages rarely print literal 'private/en-suite' wording.",
       "next": "Confirm exact bed guarantee and explicit private/en-suite bathroom wording in writing from the chosen hotel before payment.",
       "state": "Partly answered · blocker"
     },
@@ -79,7 +79,7 @@ window.TRIP_DATA = {
     },
     {
       "q": "When is the cheapest time to book?",
-      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 26, 2026 (81–84 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
+      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 27, 2026 (80–83 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
       "next": "Lock a refundable official rate early and reprice at the 60d/30d/14d checkpoints without assuming a guaranteed spike or drop.",
       "state": "Open"
     },
@@ -265,7 +265,7 @@ window.TRIP_DATA = {
       "activityTransit": "",
       "rank": "",
       "tier": "Luxury",
-      "evidence": "Verified Nov 26, 2026 on official Deluxe Room page: 52 m², King bed, marble bathroom with his-and-hers basins, walk-in rain shower, Toto heated toilet and walk-in closet; houses 2★ Bao Li Xuan. Literal 'private/en-suite' phrasing not printed.",
+      "evidence": "Verified Nov 26, 2026 and re-checked Nov 27, 2026 on official Deluxe Room page: 52 m², King bed, bathroom with his-and-hers wash basins, walk-in rain shower, Toto heated toilet and walk-in closet (the page does not print 'marble'); houses 2★ Bao Li Xuan. Literal 'private/en-suite' phrasing not printed.",
       "fitNote": "On-site 2★ Bao Li Xuan; confirm 2027 dates, taxes and cancellation policy on bulgarihotels.com.",
       "roomSource": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room",
       "official_url": "https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room",
@@ -358,7 +358,7 @@ window.TRIP_DATA = {
       "city": "Shanghai",
       "name": "Upper House Shanghai (formerly The Middle House)",
       "area": "West Nanjing Road · Jing'an",
-      "bed": "1 King (Studio 50 / 60 / 70 · 50–70 m²)",
+      "bed": "King (Studio 60 / 70 · 60–70 m²); King or Twin (Studio 50 · 50 m²)",
       "bath": "",
       "total": "",
       "totalNote": "No official 2027 7-night total verified",
@@ -366,7 +366,7 @@ window.TRIP_DATA = {
       "activityTransit": "",
       "rank": "",
       "tier": "Luxury",
-      "evidence": "Swire Hotels rebranded The Middle House to Upper House Shanghai; official rooms page confirms Studio 50/60/70 (50–70 m²) with King bed and spa-inspired bathroom.",
+      "evidence": "Swire Hotels rebranded The Middle House to Upper House Shanghai; official rooms page (checked Nov 27, 2026) lists Studio 50 (50 m², King or Twin, deep soaking bathtub), Studio 60 (60 m², King, spa-like bathroom) and Studio 70 (70 m², King, walk-in wardrobe).",
       "fitNote": "HKRI Taikoo Hui / Nanjing West Rd hub; verify literal private ensuite wording and all-in 2027 7-night rate at upperhouse.com.",
       "roomSource": "https://www.upperhouse.com/en/shanghai/rooms/",
       "official_url": "https://www.upperhouse.com/en/shanghai/rooms/",
@@ -881,8 +881,8 @@ window.TRIP_DATA = {
       "cuisine": "Innovative",
       "guideBand": "¥¥¥¥ (guide band; not a meal quote)",
       "coupleTotal": "¥5,176 (Classic, 2 × ¥2,588) / ¥5,776 (Seasonal, 2 × ¥2,888) per current bookings.taian-table.com/faq; excludes drinks, supplements & any 2027 price change",
-      "hours": "Tue–Sat Dinner (counter seatings per venue booking system); Closed Sun & Mon (confirm 2027 schedule on bookings.taian-table.com)",
-      "exceptions": "Bookings open up to 90 days ahead with ¥2,000/person deposit (Feb 15–18, 2027 dates are already inside the 90-day window on Nov 26, 2026). Official homepage: https://sh.taian-table.cn/.",
+      "hours": "Tue–Sat dinner only (official FAQ, checked Nov 27, 2026): first booking 6:00 pm, last booking 8:00 pm; closed Sun & Mon. Confirm the 2027 schedule on bookings.taian-table.com.",
+      "exceptions": "Official FAQ (checked Nov 27, 2026): bookings open up to 90 days ahead with a ¥2,000/person deposit. Feb 15, 2027 is a Monday, so the restaurant is closed; Feb 16–18, 2027 (Tue–Thu) are open for dinner. Official homepage: https://sh.taian-table.cn/.",
       "official": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table",
       "officialLabel": "MICHELIN Guide",
       "venue": "https://bookings.taian-table.com/faq",
@@ -3727,7 +3727,7 @@ window.TRIP_DATA = {
         "lead_days": 90,
         "target_start": "2026-11-17",
         "target_end": "2026-11-20",
-        "action": "Past reference checkpoint (as of Nov 26, 2026 we are 81–84 days before Feb 15–18); not a proven cheapest day.",
+        "action": "Past reference checkpoint (as of Nov 27, 2026 we are 80–83 days before Feb 15–18); not a proven cheapest day.",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
@@ -3893,7 +3893,7 @@ window.TRIP_DATA = {
     {
       "id": "H02",
       "scope": "All hotels",
-      "issue": "Official room pages verify King/Twin beds and marble/rain-shower bathrooms for several candidates (Peninsula, Langham Xintiandi, Bvlgari, Ritz-Carlton Pudong, Mandarin Oriental Guangzhou, Marriott Marquis, Jing An Shangri-La), but rarely print literal 'private/en-suite bathroom' wording on the category card.",
+      "issue": "Official room pages verify King/Twin beds and marble/rain-shower bathrooms for several candidates (Peninsula, Langham Xintiandi, Ritz-Carlton Pudong, Mandarin Oriental Guangzhou, Marriott Marquis, Jing An Shangri-La), but rarely print literal 'private/en-suite bathroom' wording on the category card. Correction 2026-11-27: the official Bvlgari Deluxe Room page prints his-and-hers wash basins and a walk-in rain shower but not 'marble'; the Bvlgari record no longer claims marble.",
       "next": "Confirm exact Queen+/King bed guarantee and explicit private/en-suite bathroom status directly with the property before booking.",
       "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
       "status": "needs review · non-blocking publication"
@@ -3989,7 +3989,7 @@ window.TRIP_DATA = {
     {
       "id": "B01",
       "scope": "Booking lead-time analysis",
-      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-26 we are 81–84 days before Feb 15–18, 2027.",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-27 we are 80–83 days before Feb 15–18, 2027.",
       "next": "Use the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints as a refundable repricing plan, not a forecast.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "status": "needs review · non-blocking publication"
@@ -4013,7 +4013,7 @@ window.TRIP_DATA = {
     {
       "id": "E01",
       "scope": "Entry / visa / health / 1–2 week vs 2–4 week duration",
-      "issue": "Passport nationalities, visa eligibility, onward routing and final trip length (1–2 weeks vs 2–4 weeks within Feb 15–Mar 23, 2027) are unconfirmed. China's 240-hour (10-day) transit without visa is strictly conditional and CANNOT cover a 14-night or 2–4 week stay.",
+      "issue": "Passport nationalities, visa eligibility, onward routing and final trip length (1–2 weeks vs 2–4 weeks within Feb 15–Mar 23, 2027) are unconfirmed. China's 240-hour (10-day) transit without visa is strictly conditional and CANNOT cover a 14-night or 2–4 week stay. Re-checked 2026-11-27 on the official US State Department page: mainland China is Level 2 'Exercise increased caution' (issued Oct 19, 2026), citing arbitrary enforcement of local laws, exit bans and wrongful-detention risk.",
       "next": "Confirm passport nationalities and duration first, then verify visa or visa-free eligibility via official embassy/NIA channels (see entry-audit.html).",
       "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
@@ -4032,6 +4032,46 @@ window.TRIP_DATA = {
       "issue": "Xin Rong Ji (170 Nanyang Road) now appears on the live 2026 MICHELIN Guide Shanghai as 'The House of Rong' (2★). Ling Long at Waldorf Astoria on the Bund (ling-long-1209951) holds 1 MICHELIN Star (correcting older 2★ references). Prior Bib Gourmand Lan Ting (/lan-ting) returns 404. Separately, Maison Lameloise Shanghai's standalone domain (lameloise.com.cn) served an injected external script tag on Nov 26, 2026 and is quarantined from clickable links.",
       "next": "Search and reserve under current 2026 official names/slugs, and use only guide.michelin.com (maison-lameloise-563686) or Shanghai Tower concierge for Maison Lameloise.",
       "source": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/maison-lameloise-563686",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E02",
+      "scope": "Brief conformance: trip length (1–2 weeks only)",
+      "issue": "The brief the site must answer asks for a trip of 1–2 weeks between Feb 15 and Mar 23, 2027 (preferred Feb 15–18). The site still carries 2–4 week windows (21–36 nights, multi-city splits) on the dashboard, costs page and executive summary. Those windows are outside the stated brief and are kept only for comparison until the owner confirms.",
+      "next": "Owner to confirm 1–2 weeks as the only in-scope length. If confirmed, the 21–36-night and 3–4 week rows should be removed or moved to an 'out of scope' note in a follow-up integration pass.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E03",
+      "scope": "2027 holiday calendar: Feb 14 makeup workday",
+      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way. UPDATE 2026-11-27 (session cb12e6ac): confirmed on the English Beijing municipal government reprint of the General Office of the State Council notice (english.beijing.gov.cn, dated 2026-11-09): Spring Festival is a nine-day holiday from Feb 5 (Fri) to Feb 13 (Sat); make-up workdays are Sun Jan 31 and Sun Feb 14, 2027. The Chinese State Council original was not opened.",
+      "next": "Open the full Chinese State Council notice on gov.cn and confirm the makeup-workday dates before quoting them as official.",
+      "source": "https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "E04",
+      "scope": "US passport entry: L visa vs 240-hour transit",
+      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source. UPDATE 2026-11-27: the travel.state.gov China advisory page now fetches (Level 2, issued Oct 19, 2026; see E01). Its visa and transit sections were not re-checked in this pass.",
+      "next": "Check travel.state.gov and the Chinese consulate that will serve the traveler (cova.mfa.gov.cn) for current L-visa fee, processing time and transit rules before booking.",
+      "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
+      "status": "needs review · non-blocking publication"
+    },
+    {
+      "id": "D01",
+      "scope": "Date freshness: countdown and snapshot dates",
+      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date. UPDATE 2026-11-27 (session cb12e6ac): countdown copy has been refreshed to Nov 27 (80–83 days) across the dashboard, README, costs card, flags and data records. Remaining 'Nov 26' strings are per-claim verification dates and are kept on purpose.",
+      "next": "Refresh snapshot labels and countdowns in the next integration pass, and re-check every live price on or after the refresh date.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "status": "countdown resolved 2026-11-27 · live price re-checks still needed · non-blocking publication"
+    },
+    {
+      "id": "C01",
+      "scope": "Calendar arithmetic, weekdays & lunar-date derivations (checked 2026-11-27)",
+      "issue": "Days-out counts (80 days to Feb 15, 83 to Feb 18, 116 to Mar 23 from Nov 27, 2026), weekdays (Feb 15, 2027 = Monday; Feb 18 = Thursday; Mar 23 = Tuesday) and the 90/60/30/14-day checkpoint dates were computed by calendar arithmetic, not copied from a source. The Lantern Festival date (Feb 20, 2027) used in the post-Lantern stay fit is a lunar-calendar derivation and is NOT printed on the official 2027 holiday notice. The notice itself confirms only Spring Festival Feb 5–13, 2027.",
+      "next": "Before planning around Lantern Festival events, confirm the date and any Lantern-period closures on an official Chinese government or venue notice. Keep the weekday check when choosing restaurant nights (e.g. Taian Table is closed on Mon Feb 15).",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "status": "needs review · non-blocking publication"
     }
   ]

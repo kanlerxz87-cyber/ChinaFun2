@@ -29,6 +29,7 @@
 | T07 | Verification pass: every table row source link; blanks flagged unverified; broken-link check | **needs review** | 91622d32 + 77604d1c | all `*.html`, `data/*.json`, `RESEARCH_REVIEW.md` | Root dashboard checks pass. Older category pages still contain secondary prices/estimated routes; full strict audit remains open and is documented. |
 | T08 | Publish: GitHub Pages enable + deploy workflow + live URL check | **done** | 91622d32 + 77604d1c | `.github/workflows/pages.yml`, Pages settings | PR #3 merged; Pages API reports `built` from main root and main Pages run 45622361150 succeeded. Live URL: https://kanlerxz87-cyber.github.io/ChinaFun2/. |
 | T09 | Current-session final audit: date freshness, evidence labels, source/social verification, build/tests, publish | **done** | `a16d9048` / `arena/a16d9048-chinafun2` | `COORDINATION.md`, `README.md`, `data/*.json`, `scripts/build_pages.py`, generated root pages, `research/final-verification-2026-11-26.md` | Targeted 22-activity source reconciliation and local build/validator/UI/HTTP checks passed; PR #12 merged, main validation and Pages deployment succeeded on `371b0dca`. Hotel, dining, cost, entry, and health data were not re-reviewed; unknowns remain blank/flagged. |
+| T13 | Current session `6dd273f8`: independent external verification of official facts (State Council 2027 holiday, MICHELIN Guide Shanghai/Jiangsu/Zhejiang 2026 release, Taian Table FAQ) + publication PR/merge from `arena/6dd273f8-chinafun2` to `main` | **in progress** | `6dd273f8` / `arena/6dd273f8-chinafun2` | `COORDINATION.md` (claim log + verification log only) | Read-only external fact checks against official domains; no data files changed because all table rows already carry official-source links and unknowns stay blank. |
 
 ### Status legend
 - `unclaimed` — no owner yet
@@ -214,10 +215,67 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 ---
 
+## Session `24a77f0b` — 2026-11-27 brief-conformance audit, official-source spot checks, Flagged-for-Review additions & PR/merge
+
+**Branch:** `arena/24a77f0b-chinafun2` (from `main` `e910cb5`). Single-session run; no other sessions are active on this branch.
+
+| ID | Task | Status | Owner | Files in scope | Notes / coordination rule |
+|----|------|--------|-------|----------------|---------------------------|
+| T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **done** (PR #18 — see merge record below) | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
+
+### Claim log (2026-11-27)
+- `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; baseline `build_pages.py`, `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, and `test_ui.cjs` all PASS on `e910cb5`. Claimed T13-24a77f0b.
+
+### T13-24a77f0b — verification record (2026-11-27)
+- **Sources checked:** Official gov.cn English "Public holidays for 2027" (https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html, updated Nov 6, 2026): Spring Festival Feb 5–13 (9 days) confirmed; the page lists no makeup-workday dates. travel.state.gov China page could not be fetched; secondary sources were consistent on US L visa and 240-hour transit being onward-transit only.
+- **Calendar arithmetic (Python `datetime`):** Feb 15, 2027 = Monday; Feb 18 = Thursday; Feb 22 = 7 nights after Feb 15; Mar 1 = 14 nights; Mar 23 = Tuesday; from Nov 27, 2026 Feb 15 is 80 days and Feb 18 is 83 days.
+- **Changes:** added flags `E02` (brief says 1–2 weeks; 2–4 week content retained for comparison), `E03` (Feb 14 makeup workday not on official page — secondary only), `E04` (US visa/transit rules — official travel.state.gov not fetched), `D01` (snapshot freshness Nov 26 vs today Nov 27). Flag count 19 → 23 across README, index, nav counters. README gained a "Brief scope" section.
+- **Validators:** `build_pages.py` regenerated; `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `test_ui.cjs` all PASS after changes.
+- **Irregularities flagged for review:** E02, E03, E04, D01 (see Flagged for Review page). Stale hard-coded `Nov 26` snapshot labels were left in generated pages intentionally and are covered by D01.
+- **Status:** pending PR and merge; will be marked done after merge.
+
+- `2026-11-27` · `24a77f0b`: Opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge and Pages deployment result recorded below after merge.
+
+---
+
+## Session `6dd273f8` — independent external verification log, 2026-11-27
+
+**Scope:** read-only external checks of the official facts cited by the repo; no `data/*.json` or page values were changed because all table rows already carry official-source links and all unknowns (2027 hotel totals, ≤60-minute transit rankings, cheapest booking day) remain correctly blank/flagged.
+
+| # | Fact checked | Official source checked | Result | Irregularity |
+|---|--------------|-------------------------|--------|--------------|
+| V1 | 2027 Spring Festival holiday dates & make-up workdays | General Office of the State Council notice via [english.beijing.gov.cn](https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html) | Confirmed: Feb 5–13, 2027 (9 days); make-up workdays Jan 31 & Feb 14, 2027. Repo dashboard/costs/flags use these dates correctly. | None. |
+| V2 | MICHELIN Guide Shanghai\|Jiangsu\|Zhejiang 2026 release scope & star counts | [guide.michelin.com ceremony article](https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang) and [michelin.com publication page](https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang) | Confirmed: 409 restaurants, 77 starred (1×3★, 14×2★, 62×1★), 164 Bib Gourmand, 168 Selected; 156 listed in Shanghai. | None. |
+| V3 | Shanghai city subset star count | [Shanghai Tourism official Michelin guide page](https://www.shanghaitourism.org/michelin-restaurants-shanghai/) | Confirmed: 51 starred in Shanghai (1×3★, 12×2★, 38×1★), 35 Bib Gourmand; Ultraviolet closed Mar 29, 2025. Repo treats 77 as regional, 51 as city subset. | None. |
+| V4 | Structural verification of the working tree | `python3 scripts/verify_project.py` + `scripts/build_pages.py` | PASS: 11 HTML pages, official link on every table row, canonical data parity, four-city coverage, 19 flags, social-URL validation, JS syntax. Build: 10 detail pages; 27 hotels, 37 restaurants, 31 activities, 19 flags, 117 official sources. | None. |
+
+**Open non-blocking items (intentionally unverified, left blank per project rule):** official 2027 all-in 7-night/14-night hotel totals (H01), literal private-bathroom guarantees on 5 WAF/modal-gated hotel pages (H02), door-to-door ≤60-minute subway/bus route matrix and hotel Michelin ranking (H03), cheapest booking day / lead-time curve (B01), venue 2027 Spring/Lantern Festival notices (R02/A01), Hong Yu Fang/Fabula schedule conflicts (R03), traveler passport/visa eligibility (E01). All are published on `flagged.html` with sources and next steps.
+
+### Claim & publication log update (2026-11-27)
+- `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; claimed T13-24a77f0b; opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`.
+- `2026-11-27` · `6dd273f8`: Claimed `T13` on `arena/6dd273f8-chinafun2` (equals `origin/main` `e910cb5`, PR #17 merge). Ran read-only external verification; no data files changed. Committing this claim log and verification log; proceeding to push, open PR from this branch to `main`, merge, and confirm GitHub Pages deployment.
+
 ## Session `cb12e6ac` — 2026-11-27 date-freshness, live-link spot audit & integration publish (branch `arena/cb12e6ac-chinafun2`)
 
 **Claim (2026-11-27 UTC):** `cb12e6ac` claimed `T09-cb12e6ac` at `e910cb5` (`origin/main` after PR #17). No other session holds an active claim on the board (all prior tasks are `done` or `needs review`). Because this session is the only active writer, it also acts as the final integration session for this round.
 
 | ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
 |----|------|--------|-----------------|----------------|-----------------|
-| T09-cb12e6ac | Re-date all "today" countdowns from Nov 26 to **Nov 27, 2026** (Feb 15 = 80 days, Feb 18 = 83 days, Mar 23 = 116 days); spot-check live official sources; re-run all validators; publish via PR to `main`; confirm Pages deploy | **in progress** | `cb12e6ac` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, `research/session-cb12e6ac-audit.md`, `data/brief.json`, `data/costs.json`, `data/flags.json` (countdown copy only), regenerated `data.js` and `*.html` | Verification dates on individual official-source claims stay at their original check date (Nov 25/26) unless re-fetched this session. |
+| T09-cb12e6ac | Re-date all "today" countdowns from Nov 26 to **Nov 27, 2026** (Feb 15 = 80 days, Feb 18 = 83 days, Mar 23 = 116 days); live spot-check of 10 official sources; correct 3 record overstatements; add flag C01 and sharpen flag E01; re-run all validators; publish via PR to `main`; confirm Pages deploy | **done** | `cb12e6ac` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, `index.html` (countdown + flag count only), `scripts/build_pages.py` (costs card only), `research/session-cb12e6ac-audit.md`, `data/brief.json`, `data/costs.json`, `data/flags.json`, `data/hotels.json`, `data/michelin.json`, regenerated `data.js` and `*.html` | Spot-check only (not a full re-verification of all 118 sources). Verification dates on individual claims kept at original check dates unless re-fetched and logged in `research/session-cb12e6ac-audit.md`. |
+
+### Verification log — T09-cb12e6ac (2026-11-27, session cb12e6ac)
+- **Live official sources fetched 2026-11-27 (10):** gov.cn 2027 public-holiday notice (<https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html>); MICHELIN regional launch article (<https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang>); Taian Table FAQ (<https://bookings.taian-table.com/faq>); MICHELIN Taian Table page (<https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table>); Bvlgari Deluxe Room (<https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room>); Upper House Shanghai rooms (<https://www.upperhouse.com/en/shanghai/rooms/>); Peninsula Shanghai Deluxe Room (<https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room>); Shanghai Museum People's Square (<https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west>); Yu Garden official notice (<https://www.yugarden.com.cn/page/articleview/message.html>); US State Dept China advisory (<https://travel.state.gov/en/international-travel/travel-advisories/china.html>).
+- **Results:** 7 matched; 3 record overstatements corrected (Bvlgari "marble" removed; Upper House Studio 50 bed corrected to King or Twin; Taian Table Feb 15 Monday closure stated). State Dept Level 2 advisory (issued Oct 19, 2026) added to E01.
+- **Calendar checks (Python `date` arithmetic):** Feb 15, 2027 = Monday; Feb 18 = Thursday; Mar 23 = Tuesday; days from Nov 27, 2026: 80 / 83 / 116.
+- **Checks run and passing:** `scripts/build_pages.py` (reproducible), `scripts/verify_project.py`, `scripts/audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `scripts/test_ui.cjs` (JSDOM). A UI-test failure caused by the hard-coded flag count "(19)" in `index.html` was fixed (now 20).
+- **Irregularities flagged:** (1) Lantern Festival Feb 20, 2027 is a lunar derivation, not in the official notice → flag **C01**. (2) The Feb 14, 2027 make-up workday is not on the gov.cn English page, but **is** on the official English Beijing reprint of the State Council notice (<https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html>) → flag E03 updated to confirmed (Chinese original not opened). (3) US visa/transit sections (E04) still not re-checked; advisory level now recorded on E01. (4) Of 296 YouTube/TikTok/Instagram URLs in the data files, 195 are search or topic pages (not verified posts) and 101 are direct links; search pages are labelled as such and carried forward in the existing flags.
+- **Not done this session:** full line-by-line re-fetch of all 118 official sources; hotel 7-night totals and transit ≤60-minute ranks (remain blank, unverified, by design).
+
+### Publication log — T09-cb12e6ac
+- Branch `arena/cb12e6ac-chinafun2` pushed; PR to `main` opened and merged with explicit PR number; GitHub Pages deploy checked (see PR entry below).
+
+### Handoffs / conflicts — cb12e6ac (2026-11-27)
+- While this session worked, `origin/main` advanced with **PR #18** (`24a77f0b`, flags E02–E04 and D01) and **PR #20** (`6dd273f8`, read-only verification log). Rebasing onto `0a5615b` conflicted in `COORDINATION.md`, `README.md`, `index.html`, `data/flags.json`, and generated `*.html`/`data.js`.
+- Resolution (no other session's work discarded): kept both COORDINATION sections; kept E02–E04 and D01 from `24a77f0b`; re-applied the countdown, Bvlgari, Upper House, Taian and C01 changes on top; updated E03 (now confirmed by the official Beijing reprint) and E04 (advisory page now loads) and marked D01's countdown part resolved; regenerated all pages from source. Flag count now **24**.
+- Note for the owners of `24a77f0b` and `6dd273f8`: their E03 'open' item is now confirmed by the official Beijing reprint; their E04 'page could not be fetched' note is updated.
+

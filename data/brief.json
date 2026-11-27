@@ -60,13 +60,13 @@
     },
     {
       "q": "Is the trip 1–2 weeks or 2–4 weeks within Feb 15–Mar 23, 2027?",
-      "answer": "Preferred start is Feb 15–18, 2027 (currently 81–84 days away as of Nov 26, 2026); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
+      "answer": "Preferred start is Feb 15–18, 2027 (currently 80–83 days away as of Nov 27, 2026; Feb 15, 2027 is a Monday); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
       "next": "Decide between 7 nights (Feb 15–22), 14 nights (Feb 15–Mar 1), or 21–36 nights (ending by Mar 23) and check visa limits for stays over 10 days.",
       "state": "Open · blocker"
     },
     {
       "q": "Does each candidate room guarantee Queen/King bedding and a private bathroom?",
-      "answer": "Official room pages verified on Nov 26, 2026 confirm King/Twin beds and marble bathrooms at Peninsula SH, Langham Xintiandi, Bvlgari SH, Ritz-Carlton Pudong and Mandarin Oriental Guangzhou, but rarely print literal 'private/en-suite' wording.",
+      "answer": "Official room pages verified on Nov 26, 2026 confirm King/Twin beds and marble bathrooms at Peninsula SH, Langham Xintiandi, Ritz-Carlton Pudong and Mandarin Oriental Guangzhou. Correction on Nov 27, 2026: the official Bvlgari Hotel Shanghai Deluxe Room page confirms a king bed (52 m²), his-and-hers wash basins and a walk-in rain shower, but does not print 'marble', so that word was removed from the Bvlgari record. Most pages rarely print literal 'private/en-suite' wording.",
       "next": "Confirm exact bed guarantee and explicit private/en-suite bathroom wording in writing from the chosen hotel before payment.",
       "state": "Partly answered · blocker"
     },
@@ -78,7 +78,7 @@
     },
     {
       "q": "When is the cheapest time to book?",
-      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 26, 2026 (81–84 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
+      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 27, 2026 (80–83 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
       "next": "Lock a refundable official rate early and reprice at the 60d/30d/14d checkpoints without assuming a guaranteed spike or drop.",
       "state": "Open"
     },

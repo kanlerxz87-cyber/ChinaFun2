@@ -99,3 +99,16 @@ Reviewed 2026-11-25 after fetching the newly merged `main` tree (PR #1, merge `7
 
 - The pre-existing category pages remain in the repository from PR #1. Until their sources and transit/price claims are audited to the same strict standard, the new root dashboard is the conservative summary; do not reuse proxy prices or estimated route counts as verified decisions.
 - Confirm the GitHub Pages deployment after the integration PR is merged. At audit time GitHub reported Pages `built` from `main` root and a successful workflow run; live URL: <https://kanlerxz87-cyber.github.io/ChinaFun2/>.
+
+## 2026-11-27 spot-check (session cb12e6ac)
+
+Full log: [research/session-cb12e6ac-audit.md](research/session-cb12e6ac-audit.md).
+
+- **Countdown refreshed:** Feb 15, 2027 is 80 days away and Feb 18 is 83 days away as of Nov 27, 2026 (was 81–84 on Nov 26). Feb 15, 2027 is a **Monday**.
+- **Corrected:** Bvlgari Hotel Shanghai Deluxe Room — the official page does not print "marble" (it prints his-and-hers wash basins and a walk-in rain shower). Upper House Shanghai — Studio 50 is King **or** Twin, not King only.
+- **Sharpened:** Taian Table — official FAQ says dinner Tue–Sat only, first booking 18:00, last 20:00; Feb 15, 2027 closed, Feb 16–18 open.
+- **Added:** US State Department advisory for mainland China is Level 2 (issued Oct 19, 2026), recorded on flag E01.
+- **New flag C01:** calendar and lunar derivations (Lantern Festival Feb 20, 2027 is not in the official holiday notice).
+- **Confirmed live today:** gov.cn 2027 holiday notice (Spring Festival Feb 5–13), MICHELIN regional article counts, Taian Table FAQ prices and deposit, Michelin Taian page, Peninsula Deluxe Room, Shanghai Museum People's Square notice, Yu Garden official notice.
+- **Not re-verified today:** remaining official links, social-search links, hotel rates, transit times and star status of venues not listed in the log.
+

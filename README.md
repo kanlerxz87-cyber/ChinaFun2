@@ -4,16 +4,20 @@ Mobile-friendly, evidence-first China research for **two adults**, **Feb 15–Ma
 
 **Live site:** https://kanlerxz87-cyber.github.io/ChinaFun2/
 
-## Start here (verified Nov 26, 2026 · 81–84 days out)
+## Start here (as of Nov 27, 2026 · 80–83 days out)
 
 - [Dashboard](index.html) and [executive summary](executive-summary.html): Shanghai is the provisional 7-night research base; Beijing, Guangzhou and Chengdu remain full alternatives (or multi-city 2–4 week pairings), with zero fabricated value rankings.
 - [Hotels](hotels.html): 27 candidates across 4 cities with interactive city filter chips, Swire Upper House Shanghai/Chengdu rebrands, corrected Marriott/Hilton property codes (`shasy`, `shamshi`), and live-verified official room specs where published; dated 2027 all-in totals, literal private-bath confirmation and ≤60m transit ranks stay blank when unverified.
 - [Michelin](michelin.html): 37 curated listings across 4 cities (explicitly contrasting Currently Starred vs. MICHELIN Guide Listed Bib Gourmand & Selected in all four cities) with separated Days/Hours, Exceptions/Deposits, Official Links (MICHELIN + venue), corrected Taian Table FAQ couple basis (`¥5,176–¥5,776`), `lameloise.com.cn` script-injection quarantine (`R06`), and clearly labelled third-party YouTube/TikTok/Instagram reviews.
 - [Activities](activities.html): 31 verified attractions across 4 cities including **Jinsha Site Museum's full-window closure (`Dec 5, 2025 – Apr 30, 2027`, `A04`)**, Shanghai Disneyland (`from ¥950` for 2), Zhujiajiao Kezhi Garden (`¥40` for 2), Shanghai Museum East vs People's Square Americas-only notice, Mar 1 Panda Base & Mar 16 Mutianyu seasonal switches, and direct third-party walkthrough videos.
 - [Dates & costs](costs-booking.html): 7-night and 2–4 week stay windows through Mar 23, plus 90/60/30/14-day calendar checkpoints.
-- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html) (19 flags), [sources](sources.html), and [entry/health audit](entry-audit.html).
+- [Questions](questions.html), [suggestions](suggestions.html), [review flags](flagged.html) (24 flags), [sources](sources.html), and [entry/health audit](entry-audit.html).
 
-As of **Nov 26, 2026**, the preferred starts are **81–84 days away**. Full live audit logs are recorded in [research/line-by-line-audit-2026-11-26.md](research/line-by-line-audit-2026-11-26.md), [research/session-5e433db0-audit.md](research/session-5e433db0-audit.md), [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md), and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
+As of **Nov 27, 2026**, the preferred starts are **80–83 days away**; Feb 15, 2027 is a Monday, and the Taian Table record reflects its Tue–Sat dinner-only schedule. Full live audit logs are recorded in [research/line-by-line-audit-2026-11-26.md](research/line-by-line-audit-2026-11-26.md), [research/session-5e433db0-audit.md](research/session-5e433db0-audit.md), [research/live-audit-2026-11-26.md](research/live-audit-2026-11-26.md), and [research/final-verification-2026-11-26.md](research/final-verification-2026-11-26.md), and the 2026-11-27 spot-check in [research/session-cb12e6ac-audit.md](research/session-cb12e6ac-audit.md). Monitoring refundable rates is actionable, but a proven cheapest booking day is **not established**. Prior aggregator observations lack exact stay/room/tax/cancellation query evidence and are quarantined in `data/costs.json`, never copied into official quote columns.
+
+## Brief scope (2026-11-27)
+
+The stated brief is a **1–2 week** trip between **Feb 15 and Mar 23, 2027** (preferred Feb 15–18, 2027), for two adults. Items for 2–4 week (21–36 night) windows are kept only for comparison and are flagged as out of brief scope ([E02](flagged.html#E02)) until the owner confirms the length.
 
 ## Research discipline
 
