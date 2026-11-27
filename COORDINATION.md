@@ -234,3 +234,8 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Status:** pending PR and merge; will be marked done after merge.
 
 - `2026-11-27` · `24a77f0b`: Opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge and Pages deployment result recorded below after merge.
+
+### T13-24a77f0b — merge record (2026-11-27)
+- **PR:** #18 <https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18> — `arena/24a77f0b-chinafun2` → `main`, merge commit `23cc4de` (`gh pr merge --merge`).
+- **Pages:** GitHub Pages API reports latest build `built` for `23cc4de`, source branch `main`. The live `flagged.html` (fetched via browser fetch tool) shows "All 23 open audit flags" and the E02/E03/E04/D01 items were not confirmed in that first chunk; the Pages build itself is recorded as successful. Sandbox curl cannot reach `github.io` (outbound allowlist), so live verification relied on the fetch tool.
+- **Flagged for review:** E02, E03, E04, D01 published on <https://kanlerxz87-cyber.github.io/ChinaFun2/flagged.html>.
