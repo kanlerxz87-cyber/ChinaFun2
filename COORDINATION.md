@@ -224,3 +224,11 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 ### Claim log (2026-11-27)
 - `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; baseline `build_pages.py`, `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, and `test_ui.cjs` all PASS on `e910cb5`. Claimed T13-24a77f0b.
+
+### T13-24a77f0b — verification record (2026-11-27)
+- **Sources checked:** Official gov.cn English "Public holidays for 2027" (https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html, updated Nov 6, 2026): Spring Festival Feb 5–13 (9 days) confirmed; the page lists no makeup-workday dates. travel.state.gov China page could not be fetched; secondary sources were consistent on US L visa and 240-hour transit being onward-transit only.
+- **Calendar arithmetic (Python `datetime`):** Feb 15, 2027 = Monday; Feb 18 = Thursday; Feb 22 = 7 nights after Feb 15; Mar 1 = 14 nights; Mar 23 = Tuesday; from Nov 27, 2026 Feb 15 is 80 days and Feb 18 is 83 days.
+- **Changes:** added flags `E02` (brief says 1–2 weeks; 2–4 week content retained for comparison), `E03` (Feb 14 makeup workday not on official page — secondary only), `E04` (US visa/transit rules — official travel.state.gov not fetched), `D01` (snapshot freshness Nov 26 vs today Nov 27). Flag count 19 → 23 across README, index, nav counters. README gained a "Brief scope" section.
+- **Validators:** `build_pages.py` regenerated; `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `test_ui.cjs` all PASS after changes.
+- **Irregularities flagged for review:** E02, E03, E04, D01 (see Flagged for Review page). Stale hard-coded `Nov 26` snapshot labels were left in generated pages intentionally and are covered by D01.
+- **Status:** pending PR and merge; will be marked done after merge.
