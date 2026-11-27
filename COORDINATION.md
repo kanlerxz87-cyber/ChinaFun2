@@ -310,4 +310,6 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 ### Follow-up — T09-cb12e6ac (2026-11-27)
 - Dashboard copy fix after the live check: "Review all 23 flags" → "24 flags"; the Lantern Festival date is now labelled as a lunar-calendar derivation with a link to flag **C01**. Validators re-run: `verify_project.py` and `test_ui.cjs` pass.
 - Shipped as a follow-up PR from `arena/cb12e6ac-chinafun2` to `main`; its merge result is in the GitHub PR record and the final session summary.
+- **PR #24** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/24>, dashboard copy fix) from `arena/cb12e6ac-chinafun2`: **merged** as `7b040b271112d799492d7ca32730a965d7a2faf8` (2026-11-27 20:01 UTC). `Validate planning desk` **success** and `pages build and deployment` **success** on that commit; GitHub Pages reports `built` from `main /`. Live check (`index.html?v=7b040b27`): "Review all 24 flags" and the C01-labelled Lantern note are served.
+- **Task status:** `T09-cb12e6ac` **done**. Final integration state: PR #23 + PR #24 on `main`; site live at https://kanlerxz87-cyber.github.io/ChinaFun2/. This bookkeeping line is recorded in a PR (see GitHub) and does not change any data.
 
