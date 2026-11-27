@@ -223,7 +223,7 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 ## Session `24a77f0b` — 2026-11-27 brief-conformance audit, official-source spot checks, Flagged-for-Review additions & PR/merge
 
-**Branch:** `arena/24a77f0b-chinafun2` (from `main` `e910cb5`). Single-session run; no other sessions are active on this branch.
+**Branch:** `arena/24a77f0b-chinafun2` (from `main` `e910cb5`). Merged as PR #18 to `main` at `23cc4de`.
 
 | ID | Task | Status | Owner | Files in scope | Notes / coordination rule |
 |----|------|--------|-------|----------------|---------------------------|
@@ -313,3 +313,22 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **PR #24** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/24>, dashboard copy fix) from `arena/cb12e6ac-chinafun2`: **merged** as `7b040b271112d799492d7ca32730a965d7a2faf8` (2026-11-27 20:01 UTC). `Validate planning desk` **success** and `pages build and deployment` **success** on that commit; GitHub Pages reports `built` from `main /`. Live check (`index.html?v=7b040b27`): "Review all 24 flags" and the C01-labelled Lantern note are served.
 - **Task status:** `T09-cb12e6ac` **done**. Final integration state: PR #23 + PR #24 on `main`; site live at https://kanlerxz87-cyber.github.io/ChinaFun2/. This bookkeeping line is recorded in a PR (see GitHub) and does not change any data.
 
+---
+
+## Session `adb2941f` — Final verification, publication & PR/merge, 2026-11-27
+
+**Branch:** `arena/adb2941f-chinafun2` (rebased onto `origin/main` `91922ff`)
+
+| ID | Task | Status | Owner | Files in scope | Notes |
+|----|------|--------|-------|----------------|-------|
+| T09-adb2941f | Final line-by-line verification pass, official-source spot checks, build/tests, publication, PR & merge | **in progress** | `adb2941f` | `COORDINATION.md`, `data/*.json`, `*.html`, `scripts/*`, `index.html`, root pages | Independent spot-checks: Spring Festival 2027 (Feb 5–13) confirmed via State Council/gov.cn; Michelin Shanghai 2026 (51 starred: 1×3★ Taian Table, 12×2★, 38×1★) confirmed via official MICHELIN release. 2027 hotel totals, ≤60-minute transit ranks and 2027 venue hours remain blank/unverified per policy. Ensuring GitHub Pages live via main-branch publish; open + merge PR. |
+
+### Verification record (2026-11-27)
+- **Sources checked (this session):**
+  - State Council 2027 holiday notice via gov.cn/Xinhua summaries: Spring Festival Feb 5–13, 2027 (9 days), make-up workdays Jan 31 + Feb 14, CNY day Sat Feb 6 — consistent with repo data. [english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html]
+  - Official MICHELIN Guide release (guide.michelin.com, Apr 9 2026): Shanghai–Jiangsu–Zhejiang 2026 regional edition, 409 restaurants, 77 starred (1×3★ Taian Table, 14×2★, 62×1★); Shanghai city subset 51 starred / 156 listed; Ultraviolet closed Mar 2025 — consistent with repo data.
+- **Local validation:** `python3 scripts/build_pages.py` → OK (27 hotels, 37 restaurants, 31 activities, 23 flags, 118 official sources); `python3 scripts/verify_project.py` → PASS (all internal links/anchors, official link on every table row, canonical parity, JS syntax); `node scripts/test_ui.cjs` → PASS (dashboard rendering, filtering, sorting, mobile menu).
+- **Status:** in progress — rebased onto `origin/main` `91922ff`; PR #21 opened; awaiting merge, then confirm GitHub Pages redeploys from `main`.
+
+### Claim log update (2026-11-27)
+- `2026-11-27` · `adb2941f`: Read `COORDINATION.md`; claimed `T09-adb2941f`; rebased onto `origin/main` `91922ff` preserving sessions `24a77f0b` (PR #18), `6dd273f8`, and `74e12331` (PR #19) records; independent official-source spot checks recorded above.
