@@ -7,7 +7,8 @@
       "2027-03-23"
     ],
     "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
-    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+    "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank.",
+    "date_arithmetic_checked": "2026-11-27 (calendar arithmetic only; factual-source audit remains 2026-11-26)"
   },
   "stay_options": [
     {
@@ -119,7 +120,7 @@
       "lead_days": 90,
       "target_start": "2026-11-17",
       "target_end": "2026-11-20",
-      "action": "Past reference checkpoint (as of Nov 26, 2026 we are 81–84 days before Feb 15–18); not a proven cheapest day.",
+      "action": "Past calendar checkpoint (date-only check Nov 27, 2026: preferred starts are 80–83 days away); not a proven cheapest day.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "flags": [
         "H01",

@@ -61,7 +61,7 @@ window.TRIP_DATA = {
     },
     {
       "q": "Is the trip 1–2 weeks or 2–4 weeks within Feb 15–Mar 23, 2027?",
-      "answer": "Preferred start is Feb 15–18, 2027 (currently 81–84 days away as of Nov 26, 2026); all travel must finish by Mar 23, 2027. Final checkout date is undecided.",
+      "answer": "Preferred start is Feb 15–18, 2027 (80–83 days away on the date-only check of Nov 27, 2026); factual sources were last audited Nov 26. All travel must finish by Mar 23, 2027. Final checkout date is undecided.",
       "next": "Decide between 7 nights (Feb 15–22), 14 nights (Feb 15–Mar 1), or 21–36 nights (ending by Mar 23) and check visa limits for stays over 10 days.",
       "state": "Open · blocker"
     },
@@ -79,7 +79,7 @@ window.TRIP_DATA = {
     },
     {
       "q": "When is the cheapest time to book?",
-      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. As of Nov 26, 2026 (81–84 days out), the 90-day reference mark has passed; the next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4).",
+      "answer": "No verified historical rate curve exists to guarantee a lowest booking day. On the Nov 27, 2026 date-only check, preferred starts are 80–83 days away; the 90-day reference dates (Nov 17–20) have passed. The next checkpoints are 60d (Dec 17–20), 30d (Jan 16–19) and 14d (Feb 1–4). Factual sources were last audited Nov 26.",
       "next": "Lock a refundable official rate early and reprice at the 60d/30d/14d checkpoints without assuming a guaranteed spike or drop.",
       "state": "Open"
     },
@@ -3615,7 +3615,8 @@ window.TRIP_DATA = {
         "2027-03-23"
       ],
       "unknown": "Empty means unverified, never zero. Current schedules/prices are not guaranteed 2027 inventory.",
-      "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank."
+      "route_policy": "No door-to-door route set has been recorded. All <=60-minute metrics and rankings remain blank.",
+      "date_arithmetic_checked": "2026-11-27 (calendar arithmetic only; factual-source audit remains 2026-11-26)"
     },
     "stay_options": [
       {
@@ -3727,7 +3728,7 @@ window.TRIP_DATA = {
         "lead_days": 90,
         "target_start": "2026-11-17",
         "target_end": "2026-11-20",
-        "action": "Past reference checkpoint (as of Nov 26, 2026 we are 81–84 days before Feb 15–18); not a proven cheapest day.",
+        "action": "Past calendar checkpoint (date-only check Nov 27, 2026: preferred starts are 80–83 days away); not a proven cheapest day.",
         "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
         "flags": [
           "H01",
@@ -3989,7 +3990,7 @@ window.TRIP_DATA = {
     {
       "id": "B01",
       "scope": "Booking lead-time analysis",
-      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. On 2026-11-26 we are 81–84 days before Feb 15–18, 2027.",
+      "issue": "30/60/90-day aggregator observations lack comparable query evidence. No proven cheapest lead time or 30–56% savings claim is made. Date-only arithmetic on 2026-11-27 puts Feb 15–18, 2027 80–83 days away; the source audit remains dated 2026-11-26.",
       "next": "Use the 60-day (Dec 17–20), 30-day (Jan 16–19) and 14-day (Feb 1–4) checkpoints as a refundable repricing plan, not a forecast.",
       "source": "https://www.ihg.com/regent/hotels/us/en/beijing/pekjb/hoteldetail",
       "status": "needs review · non-blocking publication"
