@@ -220,7 +220,7 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 
 | ID | Task | Status | Owner | Files in scope | Notes / coordination rule |
 |----|------|--------|-------|----------------|---------------------------|
-| T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **in progress** | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
+| T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **done** (PR #18 — see merge record below) | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
 
 ### Claim log (2026-11-27)
 - `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; baseline `build_pages.py`, `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, and `test_ui.cjs` all PASS on `e910cb5`. Claimed T13-24a77f0b.
@@ -232,3 +232,5 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Validators:** `build_pages.py` regenerated; `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `test_ui.cjs` all PASS after changes.
 - **Irregularities flagged for review:** E02, E03, E04, D01 (see Flagged for Review page). Stale hard-coded `Nov 26` snapshot labels were left in generated pages intentionally and are covered by D01.
 - **Status:** pending PR and merge; will be marked done after merge.
+
+- `2026-11-27` · `24a77f0b`: Opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge and Pages deployment result recorded below after merge.
