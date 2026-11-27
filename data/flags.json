@@ -21,7 +21,7 @@
     {
       "id": "H02",
       "scope": "All hotels",
-      "issue": "Official room pages verify King/Twin beds and marble/rain-shower bathrooms for several candidates (Peninsula, Langham Xintiandi, Bvlgari, Ritz-Carlton Pudong, Mandarin Oriental Guangzhou, Marriott Marquis, Jing An Shangri-La), but rarely print literal 'private/en-suite bathroom' wording on the category card.",
+      "issue": "Official room pages verify King/Twin beds and marble/rain-shower bathrooms for several candidates (Peninsula, Langham Xintiandi, Ritz-Carlton Pudong, Mandarin Oriental Guangzhou, Marriott Marquis, Jing An Shangri-La), but rarely print literal 'private/en-suite bathroom' wording on the category card. Correction 2026-11-27: the official Bvlgari Deluxe Room page prints his-and-hers wash basins and a walk-in rain shower but not 'marble'; the Bvlgari record no longer claims marble.",
       "next": "Confirm exact Queen+/King bed guarantee and explicit private/en-suite bathroom status directly with the property before booking.",
       "source": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/rooms/",
       "status": "needs review · non-blocking publication"
@@ -141,7 +141,7 @@
     {
       "id": "E01",
       "scope": "Entry / visa / health / 1–2 week vs 2–4 week duration",
-      "issue": "Passport nationalities, visa eligibility, onward routing and final trip length (1–2 weeks vs 2–4 weeks within Feb 15–Mar 23, 2027) are unconfirmed. China's 240-hour (10-day) transit without visa is strictly conditional and CANNOT cover a 14-night or 2–4 week stay.",
+      "issue": "Passport nationalities, visa eligibility, onward routing and final trip length (1–2 weeks vs 2–4 weeks within Feb 15–Mar 23, 2027) are unconfirmed. China's 240-hour (10-day) transit without visa is strictly conditional and CANNOT cover a 14-night or 2–4 week stay. Re-checked 2026-11-27 on the official US State Department page: mainland China is Level 2 'Exercise increased caution' (issued Oct 19, 2026), citing arbitrary enforcement of local laws, exit bans and wrongful-detention risk.",
       "next": "Confirm passport nationalities and duration first, then verify visa or visa-free eligibility via official embassy/NIA channels (see entry-audit.html).",
       "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
@@ -173,15 +173,15 @@
     {
       "id": "E03",
       "scope": "2027 holiday calendar: Feb 14 makeup workday",
-      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way.",
+      "issue": "The official State Council 2027 holiday page (English gov.cn, updated Nov 6, 2026) confirms Spring Festival as Feb 5–13 (nine days) and lists no makeup-workday dates. The Sunday Jan 31 and Sunday Feb 14 makeup workdays reported by china-panorama.com, fdichina.com and trip.com cite the State Council notice of Nov 5, 2026, but that notice text was not captured here. Feb 14, 2027 is a Sunday and Feb 15 (preferred start) is an ordinary Monday either way. CONFIRMED 2026-11-27 (session cb12e6ac): the English Beijing municipal government reprint of the General Office of the State Council notice (english.beijing.gov.cn, dated 2026-11-09) states Spring Festival is a nine-day holiday from Feb 5 (Fri) to Feb 13 (Sat) with make-up workdays on Sun Jan 31 and Sun Feb 14, 2027. The Chinese State Council original was not opened.",
       "next": "Open the full Chinese State Council notice on gov.cn and confirm the makeup-workday dates before quoting them as official.",
-      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
-      "status": "needs review · non-blocking publication"
+      "source": "https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html",
+      "status": "confirmed on official reprint 2026-11-27 · Chinese original not opened · non-blocking publication"
     },
     {
       "id": "E04",
       "scope": "US passport entry: L visa vs 240-hour transit",
-      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source.",
+      "issue": "The official travel.state.gov China page could not be fetched in this session. Multiple secondary sources (chinavisapath.com, mychina.guide, trip.com, firsttripchina.com) agree that US citizens need a visa for a round-trip US–China–US vacation (10-year L visa, $140 consular fee per those sources), and that the 240-hour visa-free transit applies only when flying onward to a third country or region. Visa fees and rules change, so these values are unverified against an official source. UPDATE 2026-11-27: the travel.state.gov China advisory page now loads (Level 2, issued Oct 19, 2026; see E01). Its visa and transit sections were not re-checked in this pass.",
       "next": "Check travel.state.gov and the Chinese consulate that will serve the traveler (cova.mfa.gov.cn) for current L-visa fee, processing time and transit rules before booking.",
       "source": "https://travel.state.gov/en/international-travel/travel-advisories/china.html",
       "status": "needs review · non-blocking publication"
@@ -189,8 +189,16 @@
     {
       "id": "D01",
       "scope": "Date freshness: countdown and snapshot dates",
-      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date.",
+      "issue": "The site was last audited on Nov 26, 2026 (81–84 days to the preferred start). Today is Nov 27, 2026, so the preferred start is 80 days (Feb 15) to 83 days (Feb 18) away. Snapshot labels in the README and footers still read Nov 26, and prices and availability are not re-checked after that date. UPDATE 2026-11-27 (session cb12e6ac): countdown copy is refreshed to Nov 27 (80–83 days) across the dashboard, README, costs card and data records. Remaining 'Nov 26' strings are per-claim verification dates and are kept on purpose.",
       "next": "Refresh snapshot labels and countdowns in the next integration pass, and re-check every live price on or after the refresh date.",
+      "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
+      "status": "countdown resolved 2026-11-27 · live price re-checks still needed · non-blocking publication"
+    },
+    {
+      "id": "C01",
+      "scope": "Calendar arithmetic, weekdays & lunar-date derivations (checked 2026-11-27)",
+      "issue": "Days-out counts (80 days to Feb 15, 83 to Feb 18, 116 to Mar 23 from Nov 27, 2026), weekdays (Feb 15, 2027 = Monday; Feb 18 = Thursday; Mar 23 = Tuesday) and the 90/60/30/14-day checkpoint dates were computed by calendar arithmetic, not copied from a source. The Lantern Festival date (Feb 20, 2027) used in the post-Lantern stay fit is a lunar-calendar derivation and is NOT printed on the official 2027 holiday notice. The notice itself confirms only Spring Festival Feb 5–13, 2027.",
+      "next": "Before planning around Lantern Festival events, confirm the date and any Lantern-period closures on an official Chinese government or venue notice. Keep the weekday check when choosing restaurant nights (e.g. Taian Table is closed on Mon Feb 15).",
       "source": "https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html",
       "status": "needs review · non-blocking publication"
     }

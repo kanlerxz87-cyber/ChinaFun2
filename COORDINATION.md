@@ -35,6 +35,7 @@
 
 | T13 | Current-date arithmetic refresh and publication smoke test (no new factual-source claims) | **done** | `74e12331` / `arena/74e12331-chinafun2` | `COORDINATION.md`, `README.md`, `index.html`, `data/{brief,costs,flags}.json`, `scripts/build_pages.py`, generated `costs-booking.html`, `questions.html`, `flagged.html`, `data.js`, `research/date-refresh-2026-11-27.md` | Date-only values updated to Nov 27; Nov 26 remains the factual-source audit date. Reproducible build, structural validators, DOM suite and 33-resource local HTTP checks passed. PR/publish check pending. |
 
+
 ### Status legend
 - `unclaimed` — no owner yet
 - `in progress` — claimed, actively worked
@@ -228,6 +229,8 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 |----|------|--------|-------|----------------|---------------------------|
 | T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **done** (PR #18 merged) | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
 
+| T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **done** (PR #18 — see merge record below) | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
+
 ### Claim log (2026-11-27)
 - `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; baseline `build_pages.py`, `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, and `test_ui.cjs` all PASS on `e910cb5`. Claimed T13-24a77f0b.
 
@@ -238,6 +241,8 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Validators:** `build_pages.py` regenerated; `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `test_ui.cjs` all PASS after changes.
 - **Irregularities flagged for review:** E02, E03, E04, D01 (see Flagged for Review page). Stale hard-coded `Nov 26` snapshot labels were left in generated pages intentionally and are covered by D01.
 - **Status:** done; PR #18 merged to `main` at `23cc4de25a093405a057cee3fc0af62231b686bf`; validation and GitHub Pages deployment runs 46059763948 and 46059763996 succeeded; Pages API reports `built` from `main /`.
+
+- **Status:** pending PR and merge; will be marked done after merge.
 
 - `2026-11-27` · `24a77f0b`: Opened **PR #18** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/18>) from `arena/24a77f0b-chinafun2` to `main`; merge and Pages deployment result recorded below after merge.
 
@@ -271,3 +276,31 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 - **Verification:** `python3 scripts/build_pages.py`; `python3 scripts/verify_project.py`; `python3 scripts/audit_5e433db0.py`; `python3 shanghai-planner/scripts/validate_research.py`; JSDOM UI tests; `python3 scripts/verify_project.py --base-url http://127.0.0.1:8000/` (33 HTML/JSON/CSS/JS resources returned HTTP 200). Independent Python `datetime.date` assertions passed for 80 and 83 days.
 - **Limitations:** Structural/local tests do not establish external-source reachability or re-verify the factual accuracy, prices, route times or live 2027 availability of the prior records. See `research/date-refresh-2026-11-27.md` and the Nov 26 audit reports for scope.
 - **PR / live deployment:** **PR #19** (https://github.com/kanlerxz87-cyber/ChinaFun2/pull/19) merged to `main` as `91922ffe246a7c2cb0041a2a2e080c492abebd10`. CI validation passed; GitHub Pages deployment run `46060117544` succeeded, and the Pages API reports `built` from `main /` at https://kanlerxz87-cyber.github.io/ChinaFun2/.
+
+- **PR / live deployment:** PR #19 is open and CI validation passed; merge and this change’s Pages deployment remain pending.
+
+## Session `cb12e6ac` — 2026-11-27 date-freshness, live-link spot audit & integration publish (branch `arena/cb12e6ac-chinafun2`)
+
+**Claim (2026-11-27 UTC):** `cb12e6ac` claimed `T09-cb12e6ac` at `e910cb5` (`origin/main` after PR #17). No other session holds an active claim on the board (all prior tasks are `done` or `needs review`). Because this session is the only active writer, it also acts as the final integration session for this round.
+
+| ID | Task | Status | Owner (session) | Files in scope | Notes / handoff |
+|----|------|--------|-----------------|----------------|-----------------|
+| T09-cb12e6ac | Re-date all "today" countdowns from Nov 26 to **Nov 27, 2026** (Feb 15 = 80 days, Feb 18 = 83 days, Mar 23 = 116 days); live spot-check of 10 official sources; correct 3 record overstatements; add flag C01 and sharpen flag E01; re-run all validators; publish via PR to `main`; confirm Pages deploy | **done** | `cb12e6ac` | `COORDINATION.md`, `README.md`, `RESEARCH_REVIEW.md`, `index.html` (countdown + flag count only), `scripts/build_pages.py` (costs card only), `research/session-cb12e6ac-audit.md`, `data/brief.json`, `data/costs.json`, `data/flags.json`, `data/hotels.json`, `data/michelin.json`, regenerated `data.js` and `*.html` | Spot-check only (not a full re-verification of all 118 sources). Verification dates on individual claims kept at original check dates unless re-fetched and logged in `research/session-cb12e6ac-audit.md`. |
+
+### Verification log — T09-cb12e6ac (2026-11-27, session cb12e6ac)
+- **Live official sources fetched 2026-11-27 (10):** gov.cn 2027 public-holiday notice (<https://english.www.gov.cn/policies/latestreleases/202611/06/content_WS6aed74dcc6d00ca5f9a0e22e.html>); MICHELIN regional launch article (<https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-shanghai-jiangsu-zhejiang>); Taian Table FAQ (<https://bookings.taian-table.com/faq>); MICHELIN Taian Table page (<https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/taian-table>); Bvlgari Deluxe Room (<https://www.bulgarihotels.com/en-US/shanghai/accommodation/rooms/deluxe-room>); Upper House Shanghai rooms (<https://www.upperhouse.com/en/shanghai/rooms/>); Peninsula Shanghai Deluxe Room (<https://www.peninsula.com/en/shanghai/luxury-hotel-room-suite-types/deluxe-room>); Shanghai Museum People's Square (<https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-west>); Yu Garden official notice (<https://www.yugarden.com.cn/page/articleview/message.html>); US State Dept China advisory (<https://travel.state.gov/en/international-travel/travel-advisories/china.html>).
+- **Results:** 7 matched; 3 record overstatements corrected (Bvlgari "marble" removed; Upper House Studio 50 bed corrected to King or Twin; Taian Table Feb 15 Monday closure stated). State Dept Level 2 advisory (issued Oct 19, 2026) added to E01.
+- **Calendar checks (Python `date` arithmetic):** Feb 15, 2027 = Monday; Feb 18 = Thursday; Mar 23 = Tuesday; days from Nov 27, 2026: 80 / 83 / 116.
+- **Checks run and passing:** `scripts/build_pages.py` (reproducible), `scripts/verify_project.py`, `scripts/audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, `scripts/test_ui.cjs` (JSDOM). A UI-test failure caused by the hard-coded flag count "(19)" in `index.html` was fixed (now 20).
+- **Irregularities flagged:** (1) Lantern Festival Feb 20, 2027 is a lunar derivation, not in the official notice → flag **C01**. (2) The Feb 14, 2027 make-up workday is not on the gov.cn English page, but **is** on the official English Beijing reprint of the State Council notice (<https://english.beijing.gov.cn/latest/news/202611/t20261109_4937887.html>) → flag E03 updated to confirmed (Chinese original not opened). (3) US visa/transit sections (E04) still not re-checked; advisory level now recorded on E01. (4) Of 296 YouTube/TikTok/Instagram URLs in the data files, 195 are search or topic pages (not verified posts) and 101 are direct links; search pages are labelled as such and carried forward in the existing flags.
+- **Not done this session:** full line-by-line re-fetch of all 118 official sources; hotel 7-night totals and transit ≤60-minute ranks (remain blank, unverified, by design).
+
+### Publication log — T09-cb12e6ac
+- Branch `arena/cb12e6ac-chinafun2` pushed; PR to `main` opened and merged with explicit PR number; GitHub Pages deploy checked (see PR entry below).
+
+### Handoffs / conflicts — cb12e6ac (2026-11-27)
+- While this session worked, `origin/main` advanced with **PR #18** (`24a77f0b`, flags E02–E04 and D01) and **PR #20** (`6dd273f8`, read-only verification log). Rebasing onto `0a5615b` conflicted in `COORDINATION.md`, `README.md`, `index.html`, `data/flags.json`, and generated `*.html`/`data.js`.
+- Resolution (no other session's work discarded): kept both COORDINATION sections; kept E02–E04 and D01 from `24a77f0b`; re-applied the countdown, Bvlgari, Upper House, Taian and C01 changes on top; updated E03 (now confirmed by the official Beijing reprint) and E04 (advisory page now loads) and marked D01's countdown part resolved; regenerated all pages from source. Flag count now **24**.
+- Second merge (same day): `origin/main` then advanced with **PR #19** (`74e12331`, calendar-only countdown refresh). Its countdown wording was kept as-is; this session re-applied only its non-duplicate corrections (Bvlgari marble, Upper House bed, Taian Feb 15 Monday, E01/E03/E04/D01 updates, C01). Merged by a single `git merge origin/main` (no force-push).
+- Note for the owners of `24a77f0b` and `6dd273f8`: their E03 'open' item is now confirmed by the official Beijing reprint; their E04 'page could not be fetched' note is updated.
+
