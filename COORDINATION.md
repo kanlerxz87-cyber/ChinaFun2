@@ -211,3 +211,16 @@ The initial review on branch `arena/77604d1c-chinafun2` found only the starter R
 ### Claim & publication log update (2026-11-26)
 - `2026-11-26` · `ba4eabb3`: Read `COORDINATION.md`, claimed `T09-ba4eabb3` and queued `T10-ba4eabb3` onto latest `origin/main` (`d26aaf2`).
 - `2026-11-26` · `ba4eabb3`: Completed `T09-ba4eabb3` (`research/session-ba4eabb3-audit.md`) and `T10-ba4eabb3`; opened & merged **PR #17** (<https://github.com/kanlerxz87-cyber/ChinaFun2/pull/17>) to `main` (`merged`), confirming GitHub Actions validation & live GitHub Pages publication (<https://kanlerxz87-cyber.github.io/ChinaFun2/>).
+
+---
+
+## Session `24a77f0b` — 2026-11-27 brief-conformance audit, official-source spot checks, Flagged-for-Review additions & PR/merge
+
+**Branch:** `arena/24a77f0b-chinafun2` (from `main` `e910cb5`). Single-session run; no other sessions are active on this branch.
+
+| ID | Task | Status | Owner | Files in scope | Notes / coordination rule |
+|----|------|--------|-------|----------------|---------------------------|
+| T13-24a77f0b | Re-check brief conformance (1–2 week stay, Feb 15–Mar 23 2027 window, Feb 15–18 preferred), spot-verify holiday/visa primary sources, flag irregularities, regenerate pages, PR & merge to `main`, confirm Pages | **in progress** | `24a77f0b` | `COORDINATION.md`, `README.md`, `data/flags.json`, generated `*.html`, `data.js` | Claimed 2026-11-27. Pages publishes from `main` root, so generated files are rebuilt only by `scripts/build_pages.py`. |
+
+### Claim log (2026-11-27)
+- `2026-11-27` · `24a77f0b`: Read `COORDINATION.md`; baseline `build_pages.py`, `verify_project.py`, `audit_5e433db0.py`, `shanghai-planner/scripts/validate_research.py`, and `test_ui.cjs` all PASS on `e910cb5`. Claimed T13-24a77f0b.
